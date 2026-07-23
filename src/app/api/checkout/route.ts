@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import type { PaidPlan } from "@/lib/access";
+import { getPaymentsMode } from "@/lib/payments-mode";
 import { priceIdForPlan, isStripeConfigured, isSupabaseConfigured } from "@/lib/plans";
 import { getStripe, getSiteUrl } from "@/lib/stripe";
 import { createClient, createServiceRoleClient } from "@/lib/supabase/server";
@@ -8,6 +9,15 @@ const PAID: PaidPlan[] = ["monthly", "yearly", "lifetime"];
 
 export async function POST(request: Request) {
   try {
+    if (getPaymentsMode() === "demo") {
+      return NextResponse.json(
+        {
+          error:
+            "Safe demo mode: real checkout is off. Use Demo unlock on the pricing page.",
+        },
+        { status: 403 }
+      );
+    }
     if (!isSupabaseConfigured()) {
       return NextResponse.json(
         { error: "Auth is not configured yet." },

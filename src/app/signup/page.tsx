@@ -113,6 +113,18 @@ function SignupForm() {
           </p>
         )}
 
+        <p className="text-[11px] leading-relaxed text-text-muted/80">
+          By creating an account you agree to the{" "}
+          <Link href="/terms" className="text-accent-gold hover:underline">
+            Terms of Use
+          </Link>{" "}
+          and{" "}
+          <Link href="/privacy" className="text-accent-gold hover:underline">
+            Privacy Policy
+          </Link>
+          .
+        </p>
+
         <button
           type="submit"
           disabled={loading}

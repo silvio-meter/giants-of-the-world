@@ -18,6 +18,9 @@ const plans: {
   { id: "lifetime", badge: "Best Value", hero: true },
 ];
 
+const paymentsMode =
+  (process.env.NEXT_PUBLIC_PAYMENTS_MODE as "demo" | "test" | "live") || "demo";
+
 function PricingInner() {
   const { plan, isPaid, userId, ready, configured, refresh, signOut } =
     usePlan();
@@ -26,11 +29,18 @@ function PricingInner() {
   const canceled = params.get("canceled") === "1";
 
   const [loadingPlan, setLoadingPlan] = useState<PaidPlan | null>(null);
+  const [demoLoading, setDemoLoading] = useState(false);
   const [error, setError] = useState("");
   const [portalLoading, setPortalLoading] = useState(false);
 
   async function checkout(target: PaidPlan) {
     setError("");
+    if (paymentsMode === "demo") {
+      setError(
+        "Safe demo mode is on — real charges are disabled. Use Demo unlock below."
+      );
+      return;
+    }
     if (!configured) {
       setError(
         "Payments are not configured. Add Supabase + Stripe keys (see SETUP.md)."
@@ -69,6 +79,33 @@ function PricingInner() {
     }
   }
 
+  async function demoUnlock() {
+    setError("");
+    if (!userId) {
+      window.location.href = `/login?next=${encodeURIComponent("/pricing")}`;
+      return;
+    }
+    setDemoLoading(true);
+    try {
+      const res = await fetch("/api/demo/unlock", { method: "POST" });
+      const data = (await res.json()) as { error?: string; redirect?: string };
+      if (res.status === 401 && data.redirect) {
+        window.location.href = data.redirect;
+        return;
+      }
+      if (!res.ok) {
+        setError(data.error || "Demo unlock failed.");
+        setDemoLoading(false);
+        return;
+      }
+      await refresh();
+      setDemoLoading(false);
+    } catch {
+      setError("Demo unlock failed.");
+      setDemoLoading(false);
+    }
+  }
+
   async function openPortal() {
     setError("");
     setPortalLoading(true);
@@ -87,7 +124,6 @@ function PricingInner() {
     }
   }
 
-  // After Stripe success, refresh plan from Supabase (webhook may take a moment)
   useEffect(() => {
     if (!success) return;
     const t = window.setTimeout(() => void refresh(), 1200);
@@ -111,6 +147,26 @@ function PricingInner() {
           Free readers get every giant&apos;s opening account. Members unlock
           the full history, mystery notes, and future premium tools.
         </p>
+
+        {paymentsMode === "demo" && (
+          <div className="mx-auto mt-5 max-w-xl rounded-lg border border-amber-700/50 bg-amber-950/30 px-4 py-3 text-sm text-amber-100/90">
+            <strong className="font-medium text-amber-200">
+              Safe demo mode
+            </strong>
+            {" — "}
+            no real charges. Sign in and use{" "}
+            <em>Demo unlock</em> to preview paid access for the show.
+          </div>
+        )}
+        {paymentsMode === "test" && (
+          <div className="mx-auto mt-5 max-w-xl rounded-lg border border-sky-800/50 bg-sky-950/30 px-4 py-3 text-sm text-sky-100/90">
+            <strong className="font-medium text-sky-200">Stripe test mode</strong>
+            {" — "}
+            use card <code className="text-xs">4242 4242 4242 4242</code>, any
+            future expiry, any CVC.
+          </div>
+        )}
+
         {ready && isPaid && (
           <p className="mt-4 inline-block rounded border border-accent-gold/40 bg-accent-gold/10 px-3 py-1.5 text-xs text-accent-gold">
             Current plan: {formatPlanLabel(plan as UserPlan)}
@@ -174,7 +230,11 @@ function PricingInner() {
               <p className="mt-3 flex-1 text-sm text-text-muted">{meta.blurb}</p>
               <button
                 type="button"
-                disabled={isCurrent || loadingPlan !== null}
+                disabled={
+                  isCurrent ||
+                  loadingPlan !== null ||
+                  paymentsMode === "demo"
+                }
                 onClick={() => void checkout(p.id)}
                 className={`mt-6 w-full rounded px-4 py-3 font-[family-name:var(--font-cinzel)] text-sm tracking-[0.1em] transition disabled:opacity-60 ${
                   p.hero
@@ -184,14 +244,40 @@ function PricingInner() {
               >
                 {isCurrent
                   ? "Current plan"
-                  : loadingPlan === p.id
-                    ? "Redirecting…"
-                    : `Choose ${meta.name}`}
+                  : paymentsMode === "demo"
+                    ? "See demo unlock below"
+                    : loadingPlan === p.id
+                      ? "Redirecting…"
+                      : `Choose ${meta.name}`}
               </button>
             </div>
           );
         })}
       </div>
+
+      {paymentsMode === "demo" && (
+        <div className="mt-8 rounded-lg border border-accent-gold/40 bg-surface p-6 text-center">
+          <p className="font-[family-name:var(--font-cinzel)] text-sm tracking-wide text-accent-gold">
+            Demo unlock (no charge)
+          </p>
+          <p className="mx-auto mt-2 max-w-md text-sm text-text-muted">
+            Sign in, then unlock Lifetime access for this browser session&apos;s
+            account — for demos only.
+          </p>
+          <button
+            type="button"
+            disabled={demoLoading || isPaid}
+            onClick={() => void demoUnlock()}
+            className="mt-4 inline-flex min-w-[220px] items-center justify-center rounded border border-accent-gold bg-accent-gold px-5 py-2.5 font-[family-name:var(--font-cinzel)] text-sm tracking-[0.1em] text-background transition hover:bg-accent-gold/90 disabled:opacity-60"
+          >
+            {isPaid
+              ? "Already unlocked"
+              : demoLoading
+                ? "Unlocking…"
+                : "Unlock full codex (demo)"}
+          </button>
+        </div>
+      )}
 
       {error && (
         <p className="mt-6 text-center text-sm text-rose-300/90" role="alert">
@@ -211,6 +297,17 @@ function PricingInner() {
           <li>- Offline / PWA access (coming)</li>
           <li>- Ad-free experience (coming)</li>
         </ul>
+        <p className="mt-4 text-xs text-text-muted/80">
+          By purchasing you agree to our{" "}
+          <Link href="/terms" className="text-accent-gold hover:underline">
+            Terms
+          </Link>{" "}
+          and{" "}
+          <Link href="/privacy" className="text-accent-gold hover:underline">
+            Privacy Policy
+          </Link>
+          .
+        </p>
       </section>
 
       <div className="mt-8 flex flex-wrap items-center justify-center gap-4 text-sm text-text-muted">
@@ -219,14 +316,16 @@ function PricingInner() {
         </Link>
         {userId ? (
           <>
-            <button
-              type="button"
-              onClick={() => void openPortal()}
-              disabled={portalLoading}
-              className="hover:text-accent-gold disabled:opacity-60"
-            >
-              {portalLoading ? "Opening…" : "Manage billing"}
-            </button>
+            {paymentsMode !== "demo" && (
+              <button
+                type="button"
+                onClick={() => void openPortal()}
+                disabled={portalLoading}
+                className="hover:text-accent-gold disabled:opacity-60"
+              >
+                {portalLoading ? "Opening…" : "Manage billing"}
+              </button>
+            )}
             <button
               type="button"
               onClick={() => void signOut()}
