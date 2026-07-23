@@ -96,9 +96,13 @@ export default async function GiantDetailPage({ params }: Props) {
             Account
           </h2>
           <div className="mt-4 space-y-4 text-base leading-relaxed text-text-primary/90">
-            {giant.fullDescription.split("\n").map((para, i) => (
-              <p key={i}>{para}</p>
-            ))}
+            {giant.fullDescription
+              .split(/\n\n+|\n/)
+              .map((para) => para.trim())
+              .filter(Boolean)
+              .map((para, i) => (
+                <p key={i}>{para}</p>
+              ))}
           </div>
 
           <MysteryNote note={giant.mysteryNote} />
