@@ -21,6 +21,14 @@ export function canViewMysteryNote(plan: UserPlan | null | undefined): boolean {
   return isPaidPlan(plan);
 }
 
+export function canUseFavourites(plan: UserPlan | null | undefined): boolean {
+  return isPaidPlan(plan);
+}
+
+export function canUseMapFilters(plan: UserPlan | null | undefined): boolean {
+  return isPaidPlan(plan);
+}
+
 export function formatPlanLabel(plan: UserPlan): string {
   switch (plan) {
     case "monthly":

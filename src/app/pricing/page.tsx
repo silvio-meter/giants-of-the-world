@@ -293,9 +293,9 @@ function PricingInner() {
           <li>- Full remaining account for every giant</li>
           <li>- Mystery notes (whispered asides)</li>
           <li>- Size comparison tool</li>
-          <li>- Favourites & advanced map filters (coming)</li>
+          <li>- Favourites (saved giants, synced)</li>
+          <li>- Advanced map filters</li>
           <li>- Offline / PWA access (coming)</li>
-          <li>- Ad-free experience (coming)</li>
         </ul>
         <p className="mt-4 text-xs text-text-muted/80">
           By purchasing you agree to our{" "}

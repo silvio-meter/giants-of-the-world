@@ -9,6 +9,7 @@ import {
 } from "@/lib/giants";
 import { ImagePlaceholder } from "@/components/ImagePlaceholder";
 import { FullDescription } from "@/components/FullDescription";
+import { FavouriteButton } from "@/components/FavouriteButton";
 import { SizeComparison } from "@/components/SizeComparison";
 
 interface Props {
@@ -67,9 +68,12 @@ export default async function GiantDetailPage({ params }: Props) {
             {formatType(giant.type)}
           </span>
         </div>
-        <h1 className="mt-3 font-[family-name:var(--font-cinzel)] text-3xl tracking-wide text-accent-gold sm:text-4xl md:text-5xl">
-          {giant.name}
-        </h1>
+        <div className="mt-3 flex flex-wrap items-start justify-between gap-3">
+          <h1 className="min-w-0 font-[family-name:var(--font-cinzel)] text-3xl tracking-wide text-accent-gold sm:text-4xl md:text-5xl">
+            {giant.name}
+          </h1>
+          <FavouriteButton slug={giant.slug} name={giant.name} variant="detail" />
+        </div>
         {giant.alsoKnownAs.length > 0 && (
           <p className="mt-2 text-sm text-text-muted">
             Also known as: {giant.alsoKnownAs.join(", ")}

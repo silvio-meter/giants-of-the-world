@@ -17,6 +17,9 @@ export function Footer() {
           <Link href="/giants" className="hover:text-accent-gold">
             Catalogue
           </Link>
+          <Link href="/favourites" className="hover:text-accent-gold">
+            Favourites
+          </Link>
           <Link href="/map" className="hover:text-accent-gold">
             Map
           </Link>

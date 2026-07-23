@@ -43,17 +43,32 @@ export function getTypes(): GiantType[] {
   return [...new Set(giants.map((g) => g.type))] as GiantType[];
 }
 
+export function getTags(): string[] {
+  return [...new Set(giants.flatMap((g) => g.tags))].sort();
+}
+
 export function filterGiants(opts: {
   culture?: string;
   type?: string;
   region?: string;
   search?: string;
+  tag?: string;
+  slugs?: string[] | null;
+  requireCoordinates?: boolean;
 }): Giant[] {
   const q = opts.search?.toLowerCase().trim() ?? "";
+  const slugSet =
+    opts.slugs === undefined || opts.slugs === null
+      ? null
+      : new Set(opts.slugs);
+
   return giants.filter((g) => {
+    if (slugSet && !slugSet.has(g.slug)) return false;
+    if (opts.requireCoordinates && !g.coordinates) return false;
     if (opts.culture && g.culture !== opts.culture) return false;
     if (opts.type && g.type !== opts.type) return false;
     if (opts.region && g.region !== opts.region) return false;
+    if (opts.tag && !g.tags.includes(opts.tag)) return false;
     if (q) {
       const hay = [
         g.name,

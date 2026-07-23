@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import type { Giant } from "@/lib/types";
 import { formatType } from "@/lib/giants";
+import { FavouriteButton } from "./FavouriteButton";
 import { ImagePlaceholder } from "./ImagePlaceholder";
 
 interface Props {
@@ -17,7 +18,9 @@ export function GiantCard({ giant, index = 0 }: Props) {
       initial={{ opacity: 0, y: 16, scale: 0.98 }}
       animate={{ opacity: 1, y: 0, scale: 1 }}
       transition={{ duration: 0.45, delay: Math.min(index * 0.04, 0.4) }}
+      className="relative"
     >
+      <FavouriteButton slug={giant.slug} name={giant.name} variant="card" />
       <Link
         href={`/giants/${giant.slug}`}
         className="group block overflow-hidden rounded-lg border border-border bg-surface transition hover:border-accent-gold/40 hover:shadow-[0_0_30px_rgba(201,162,39,0.06)]"

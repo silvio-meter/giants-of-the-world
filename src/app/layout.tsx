@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { PlanProvider } from "@/components/PlanProvider";
+import { FavouritesProvider } from "@/components/FavouritesProvider";
 import "./globals.css";
 
 const cinzel = Cinzel({
@@ -80,9 +81,11 @@ export default function RootLayout({
     <html lang="en" className={`${cinzel.variable} ${inter.variable} ${mono.variable}`}>
       <body className="grain flex min-h-screen flex-col antialiased">
         <PlanProvider>
-          <Header />
-          <main className="relative flex-1">{children}</main>
-          <Footer />
+          <FavouritesProvider>
+            <Header />
+            <main className="relative flex-1">{children}</main>
+            <Footer />
+          </FavouritesProvider>
         </PlanProvider>
         <Analytics />
       </body>
