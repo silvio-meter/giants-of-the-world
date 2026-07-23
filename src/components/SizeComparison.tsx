@@ -1,4 +1,8 @@
+"use client";
+
+import Link from "next/link";
 import type { Giant } from "@/lib/types";
+import { usePlan } from "./PlanProvider";
 
 interface Props {
   giant: Giant;
@@ -30,8 +34,28 @@ function estimateMeters(height: string | null): number | null {
 }
 
 export function SizeComparison({ giant }: Props) {
+  const { isPaid, ready } = usePlan();
   const meters = estimateMeters(giant.height);
   if (!meters) return null;
+
+  if (ready && !isPaid) {
+    return (
+      <section className="rounded-lg border border-border bg-surface p-5">
+        <h3 className="font-[family-name:var(--font-cinzel)] text-xs tracking-[0.25em] text-accent-gold uppercase">
+          Scale
+        </h3>
+        <p className="mt-2 text-xs text-text-muted">
+          Size comparison unlocks with any paid plan.
+        </p>
+        <Link
+          href="/pricing"
+          className="mt-3 inline-block text-xs text-accent-gold hover:underline"
+        >
+          View pricing →
+        </Link>
+      </section>
+    );
+  }
 
   const human = 1.75;
   const maxBar = Math.max(meters, human * 1.2);

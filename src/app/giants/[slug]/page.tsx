@@ -8,7 +8,7 @@ import {
   getRelatedGiants,
 } from "@/lib/giants";
 import { ImagePlaceholder } from "@/components/ImagePlaceholder";
-import { MysteryNote } from "@/components/MysteryNote";
+import { FullDescription } from "@/components/FullDescription";
 import { SizeComparison } from "@/components/SizeComparison";
 
 interface Props {
@@ -72,9 +72,14 @@ export default async function GiantDetailPage({ params }: Props) {
             Also known as: {giant.alsoKnownAs.join(", ")}
           </p>
         )}
-        <p className="mt-4 text-lg leading-relaxed text-text-primary/90">
-          {giant.shortDescription}
-        </p>
+        <div className="mt-4">
+          <p className="text-[10px] tracking-[0.25em] text-text-muted uppercase">
+            Basic account
+          </p>
+          <p className="mt-2 text-lg leading-relaxed text-text-primary/90">
+            {giant.shortDescription}
+          </p>
+        </div>
       </header>
 
       {isModern && (
@@ -92,20 +97,10 @@ export default async function GiantDetailPage({ params }: Props) {
 
       <div className="mt-8 grid gap-8 lg:grid-cols-[1fr_220px]">
         <div>
-          <h2 className="font-[family-name:var(--font-cinzel)] text-xs tracking-[0.25em] text-accent-gold uppercase">
-            Account
-          </h2>
-          <div className="mt-4 space-y-4 text-base leading-relaxed text-text-primary/90">
-            {giant.fullDescription
-              .split(/\n\n+|\n/)
-              .map((para) => para.trim())
-              .filter(Boolean)
-              .map((para, i) => (
-                <p key={i}>{para}</p>
-              ))}
-          </div>
-
-          <MysteryNote note={giant.mysteryNote} />
+          <FullDescription
+            fullDescription={giant.fullDescription}
+            mysteryNote={giant.mysteryNote}
+          />
 
           {giant.sources.length > 0 && (
             <section className="mt-8">
