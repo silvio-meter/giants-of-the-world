@@ -18,17 +18,19 @@ export function ImagePlaceholder({
   const [failed, setFailed] = useState(false);
   const [loaded, setLoaded] = useState(false);
 
+  // Avoid min-height + aspect-ratio together: on narrow screens min-h
+  // expands width past the parent (e.g. 280px height ⇒ ~448px width).
   const heights = {
     card: "aspect-[4/3]",
-    detail: "aspect-[16/10] min-h-[280px] sm:min-h-[360px]",
-    hero: "aspect-[21/9] min-h-[200px]",
+    detail: "aspect-[16/10] w-full max-w-full",
+    hero: "aspect-[21/9] w-full max-w-full",
   };
 
   const showImage = !failed && src;
 
   return (
     <div
-      className={`relative overflow-hidden rounded-lg border border-border bg-[#0a0e14] ${heights[size]} ${className}`}
+      className={`relative box-border w-full max-w-full overflow-hidden rounded-lg border border-border bg-[#0a0e14] ${heights[size]} ${className}`}
       role="img"
       aria-label={alt}
     >

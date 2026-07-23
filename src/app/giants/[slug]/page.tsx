@@ -49,12 +49,13 @@ export default async function GiantDetailPage({ params }: Props) {
         <span className="min-w-0 truncate text-text-primary">{giant.name}</span>
       </nav>
 
-      <ImagePlaceholder
-        src={giant.image}
-        alt={giant.imageAlt}
-        size="detail"
-        className="mb-8"
-      />
+      <div className="mb-8 w-full max-w-full">
+        <ImagePlaceholder
+          src={giant.image}
+          alt={giant.imageAlt}
+          size="detail"
+        />
+      </div>
 
       <header>
         <div className="flex flex-wrap items-center gap-2 text-xs tracking-wider text-text-muted uppercase">
