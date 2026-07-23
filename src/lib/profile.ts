@@ -1,4 +1,4 @@
-import { parsePlan, type UserPlan } from "./access";
+import { effectivePlan, parsePlan, type UserPlan } from "./access";
 import { createClient } from "./supabase/server";
 import { isSupabaseConfigured } from "./plans";
 
@@ -39,11 +39,11 @@ export async function getProfile(): Promise<Profile | null> {
       .maybeSingle();
 
     if (error || !data) {
-      // Profile may not exist yet — treat as free member
+      // Profile may not exist yet - treat as free (or grant)
       return {
         id: user.id,
         email: user.email ?? null,
-        plan: "free",
+        plan: effectivePlan("free", user.email),
         stripe_customer_id: null,
         stripe_subscription_id: null,
       };
@@ -52,7 +52,7 @@ export async function getProfile(): Promise<Profile | null> {
     return {
       id: data.id,
       email: data.email,
-      plan: parsePlan(data.plan),
+      plan: effectivePlan(parsePlan(data.plan), user.email ?? data.email),
       stripe_customer_id: data.stripe_customer_id,
       stripe_subscription_id: data.stripe_subscription_id,
     };

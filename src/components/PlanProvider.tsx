@@ -8,7 +8,12 @@ import {
   useState,
   type ReactNode,
 } from "react";
-import { isPaidPlan, parsePlan, type UserPlan } from "@/lib/access";
+import {
+  effectivePlan,
+  isPaidPlan,
+  parsePlan,
+  type UserPlan,
+} from "@/lib/access";
 import { isBrowserSupabaseReady, createClient } from "@/lib/supabase/client";
 
 interface PlanContextValue {
@@ -67,7 +72,7 @@ export function PlanProvider({ children }: { children: ReactNode }) {
         .select("plan")
         .eq("id", user.id)
         .maybeSingle();
-      setPlan(parsePlan(data?.plan));
+      setPlan(effectivePlan(parsePlan(data?.plan), user.email));
     } catch {
       setPlan("free");
       setEmail(null);

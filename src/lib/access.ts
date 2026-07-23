@@ -45,3 +45,22 @@ export function parsePlan(value: unknown): UserPlan {
   }
   return "free";
 }
+
+/** Comped lifetime emails (comma-separated), e.g. founder accounts. */
+export function isLifetimeGrantEmail(email: string | null | undefined): boolean {
+  if (!email) return false;
+  const raw = process.env.LIFETIME_GRANT_EMAILS ?? "";
+  const list = raw
+    .split(",")
+    .map((s) => s.trim().toLowerCase())
+    .filter(Boolean);
+  return list.includes(email.trim().toLowerCase());
+}
+
+export function effectivePlan(
+  plan: UserPlan,
+  email: string | null | undefined
+): UserPlan {
+  if (isLifetimeGrantEmail(email)) return "lifetime";
+  return plan;
+}
