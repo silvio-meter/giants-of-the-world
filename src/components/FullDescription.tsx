@@ -57,7 +57,7 @@ export function FullDescription({ fullDescription, mysteryNote }: Props) {
 
   return (
     <div className="space-y-6">
-      {/* Free opening — real value */}
+      {/* Free opening - real value */}
       <div>
         <h2 className="font-[family-name:var(--font-cinzel)] text-xs tracking-[0.25em] text-accent-gold uppercase">
           Account
@@ -69,7 +69,7 @@ export function FullDescription({ fullDescription, mysteryNote }: Props) {
 
       {hasMore && (
         <div className="relative overflow-hidden rounded-lg border border-border bg-surface">
-          {/* Teaser of remaining text — soft, not unreadable */}
+          {/* Teaser of remaining text - soft, not unreadable */}
           {lockedRest.length > 0 && (
             <div className="pointer-events-none select-none px-5 pt-5 pb-2" aria-hidden>
               <p className="text-[10px] tracking-[0.2em] text-text-muted/60 uppercase">
@@ -118,7 +118,7 @@ export function FullDescription({ fullDescription, mysteryNote }: Props) {
                 href="/pricing"
                 className="mt-4 inline-flex w-full items-center justify-center rounded border border-accent-gold bg-accent-gold px-4 py-2.5 font-[family-name:var(--font-cinzel)] text-sm tracking-[0.1em] text-background transition hover:bg-accent-gold/90 sm:w-auto sm:min-w-[280px]"
               >
-                Unlock forever with Lifetime — $69
+                Unlock forever with Lifetime - $69
               </Link>
               <p className="mt-2.5 text-xs text-text-muted">
                 Or{" "}

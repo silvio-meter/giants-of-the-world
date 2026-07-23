@@ -36,7 +36,7 @@ export default function HomePage() {
             Giants of the World
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-text-muted sm:text-lg">
-            From frost-born Ymir to the whispered shadows of modern conflict —
+            From frost-born Ymir to the whispered shadows of modern conflict -
             a catalogue of the large ones who haunt myth, folklore, and rumor.
             Open carefully. The fog does not clear for everyone.
           </p>
@@ -74,7 +74,7 @@ export default function HomePage() {
           {[
             {
               title: "Myth & Folklore",
-              body: "Classical, biblical, indigenous, and regional giants — kept distinct from modern rumor.",
+              body: "Classical, biblical, indigenous, and regional giants - kept distinct from modern rumor.",
               href: "/giants",
             },
             {
@@ -84,7 +84,7 @@ export default function HomePage() {
             },
             {
               title: "Bones & Shadows",
-              body: "Claims, hoaxes, and unverified legends — labeled so mystery never pretends to be proof.",
+              body: "Claims, hoaxes, and unverified legends - labeled so mystery never pretends to be proof.",
               href: "/findings",
             },
           ].map((card, i) => (

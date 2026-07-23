@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "About Giants of the World — a codex of mythology, folklore, and modern legend.",
+    "About Giants of the World - a codex of mythology, folklore, and modern legend.",
 };
 
 export default function AboutPage() {
@@ -24,7 +24,7 @@ export default function AboutPage() {
           <p className="text-text-muted">
             <em className="text-text-primary">Giants of the World</em> is a
             codex of giants drawn from mythology, folklore, and modern legend.
-            The tone is atmospheric rather than academic — closer to opening a
+            The tone is atmospheric rather than academic - closer to opening a
             forbidden book than browsing a database. Classical myth, living
             folklore, and unverified modern accounts are kept distinct, and
             cultural sources are treated with care.
@@ -37,7 +37,7 @@ export default function AboutPage() {
 
         <section className="rounded-lg border border-amber-800/40 bg-amber-950/20 p-5">
           <h2 className="font-[family-name:var(--font-cinzel)] text-sm tracking-[0.2em] text-amber-200 uppercase">
-            Disclaimer — modern legends
+            Disclaimer - modern legends
           </h2>
           <p className="mt-3 text-sm text-amber-100/85">
             Modern military legends (including accounts associated with
@@ -45,8 +45,8 @@ export default function AboutPage() {
             <strong className="font-medium text-amber-100">
               unverified oral accounts
             </strong>
-            . They are included as contemporary folklore — the way giant stories
-            continue to form in our own century — and{" "}
+            . They are included as contemporary folklore - the way giant stories
+            continue to form in our own century - and{" "}
             <strong className="font-medium text-amber-100">
               must not be read as confirmed historical or scientific fact
             </strong>

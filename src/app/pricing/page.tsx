@@ -25,7 +25,7 @@ const plans: {
     name: "Yearly",
     price: "$39",
     period: "/ year",
-    blurb: "Best recurring value — two months free vs monthly.",
+    blurb: "Best recurring value - two months free vs monthly.",
     badge: "Most Popular",
   },
   {
@@ -127,12 +127,12 @@ export default function PricingPage() {
           What paid unlocks
         </h3>
         <ul className="mt-4 grid gap-2 text-sm text-text-muted sm:grid-cols-2">
-          <li>— Full remaining account for every giant</li>
-          <li>— Mystery notes (whispered asides)</li>
-          <li>— Size comparison tool (coming)</li>
-          <li>— Favourites & advanced map filters (coming)</li>
-          <li>— Offline / PWA access (coming)</li>
-          <li>— Ad-free experience (coming)</li>
+          <li>- Full remaining account for every giant</li>
+          <li>- Mystery notes (whispered asides)</li>
+          <li>- Size comparison tool (coming)</li>
+          <li>- Favourites & advanced map filters (coming)</li>
+          <li>- Offline / PWA access (coming)</li>
+          <li>- Ad-free experience (coming)</li>
         </ul>
         <p className="mt-4 text-xs text-text-muted/80">
           Stripe checkout is not connected yet. Choosing a plan unlocks content

@@ -4,7 +4,7 @@
  * Free: shortDescription (and catalogue cards) always visible.
  * Paid (monthly | yearly | lifetime): fullDescription + mystery notes + future premium features.
  *
- * Stripe auth is not wired yet — plan is resolved client-side for UI development.
+ * Stripe auth is not wired yet - plan is resolved client-side for UI development.
  * When payments land, replace getClientPlan() with session/DB lookup.
  */
 

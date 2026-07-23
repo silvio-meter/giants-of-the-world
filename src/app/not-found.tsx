@@ -10,7 +10,7 @@ export default function NotFound() {
         Entry not found
       </h1>
       <p className="mt-4 max-w-md text-sm text-text-muted">
-        This page has sunk beneath the mist — or never existed in the codex.
+        This page has sunk beneath the mist - or never existed in the codex.
       </p>
       <Link
         href="/giants"

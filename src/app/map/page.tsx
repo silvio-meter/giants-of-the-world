@@ -21,7 +21,7 @@ export default function MapPage() {
           World Map
         </h1>
         <p className="mt-3 max-w-2xl text-sm text-text-muted sm:text-base">
-          Pins mark traditional, literary, or reported associations — not
+          Pins mark traditional, literary, or reported associations - not
           archaeological proof. Click a marker to open the entry.{" "}
           <span className="font-mono text-xs">
             {located.length} of {all.length} with coordinates

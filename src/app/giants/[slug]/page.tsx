@@ -90,7 +90,7 @@ export default async function GiantDetailPage({ params }: Props) {
           <strong className="font-medium text-amber-200">
             Unverified modern legend.
           </strong>{" "}
-          This entry is circulating oral tradition — not confirmed fact. No
+          This entry is circulating oral tradition - not confirmed fact. No
           official records corroborate the account.
         </div>
       )}
@@ -109,7 +109,7 @@ export default async function GiantDetailPage({ params }: Props) {
               </h2>
               <ul className="mt-3 space-y-1 font-mono text-xs text-text-muted">
                 {giant.sources.map((s) => (
-                  <li key={s}>— {s}</li>
+                  <li key={s}>- {s}</li>
                 ))}
               </ul>
             </section>
