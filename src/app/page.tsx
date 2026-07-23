@@ -10,12 +10,12 @@ export default function HomePage() {
 
   return (
     <div className="relative">
-      <section className="relative flex min-h-[calc(100vh-3.5rem)] flex-col items-center justify-center overflow-hidden px-4 py-20">
+      <section className="hero-atmosphere relative flex min-h-[calc(100vh-3.5rem)] flex-col items-center justify-center overflow-hidden px-4 py-20">
         <div className="fog-layer absolute inset-0" aria-hidden />
 
-        {/* Parallax-ish background glow */}
+        {/* Soft gold glow above image, below content */}
         <div
-          className="pointer-events-none absolute left-1/2 top-1/3 h-[480px] w-[480px] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-40"
+          className="pointer-events-none absolute left-1/2 top-1/3 z-[2] h-[480px] w-[480px] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-40"
           style={{
             background:
               "radial-gradient(circle, rgba(201,162,39,0.12) 0%, transparent 65%)",
