@@ -38,13 +38,15 @@ export default async function GiantDetailPage({ params }: Props) {
   const isModern = giant.type === "modern-legend";
 
   return (
-    <article className="mx-auto max-w-4xl px-4 py-10 sm:px-6 sm:py-14">
-      <nav className="mb-6 text-sm text-text-muted">
-        <Link href="/giants" className="hover:text-accent-gold">
+    <article className="mx-auto w-full max-w-4xl px-4 py-10 sm:px-6 sm:py-14">
+      <nav className="mb-6 flex min-w-0 flex-wrap items-center gap-x-2 text-sm text-text-muted">
+        <Link href="/giants" className="shrink-0 hover:text-accent-gold">
           Catalogue
         </Link>
-        <span className="mx-2 opacity-40">/</span>
-        <span className="text-text-primary">{giant.name}</span>
+        <span className="opacity-40" aria-hidden>
+          /
+        </span>
+        <span className="min-w-0 truncate text-text-primary">{giant.name}</span>
       </nav>
 
       <ImagePlaceholder
@@ -132,9 +134,10 @@ export default async function GiantDetailPage({ params }: Props) {
                   {giant.coordinates[1].toFixed(2)}
                 </dd>
                 <Link
-                  href="/map"
-                  className="mt-1 inline-block text-xs text-accent-gold hover:underline"
+                  href={`/map?focus=${encodeURIComponent(giant.slug)}`}
+                  className="mt-3 inline-flex w-full items-center justify-center gap-2 rounded border border-accent-gold/50 bg-accent-gold/10 px-3 py-2 text-xs font-medium tracking-wide text-accent-gold transition hover:border-accent-gold hover:bg-accent-gold/20"
                 >
+                  <span aria-hidden className="inline-block h-2 w-2 rounded-full bg-accent-gold shadow-[0_0_6px_rgba(201,162,39,0.9)]" />
                   View on map
                 </Link>
               </div>

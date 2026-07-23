@@ -12,14 +12,26 @@ interface Props {
 function estimateMeters(height: string | null): number | null {
   if (!height) return null;
   const lower = height.toLowerCase();
-  if (lower.includes("cosmic") || lower.includes("titanic") || lower.includes("vast"))
+  if (
+    lower.includes("cosmic") ||
+    lower.includes("titanic") ||
+    lower.includes("vast")
+  )
     return 30;
   if (lower.includes("mountain")) return 25;
-  if (lower.includes("cyclopean") || lower.includes("gigantic") || lower.includes("colossal"))
+  if (
+    lower.includes("cyclopean") ||
+    lower.includes("gigantic") ||
+    lower.includes("colossal")
+  )
     return 12;
   if (lower.includes("18 feet") || lower.includes("18 ft")) return 5.5;
   if (lower.includes("12 cubit")) return 5.5;
-  if (lower.includes("15 feet") || lower.includes("12–15") || lower.includes("12-15"))
+  if (
+    lower.includes("15 feet") ||
+    lower.includes("12–15") ||
+    lower.includes("12-15")
+  )
     return 4;
   if (lower.includes("10-foot") || lower.includes("ten-foot")) return 3;
   if (lower.includes("six cubits")) return 2.9;
@@ -28,7 +40,11 @@ function estimateMeters(height: string | null): number | null {
   if (feet) return parseFloat(feet[1]) * 0.3048;
   const meters = lower.match(/(\d+(?:\.\d+)?)\s*m(?:eter)?s?\b/);
   if (meters) return parseFloat(meters[1]);
-  if (lower.includes("giant") || lower.includes("jötunn") || lower.includes("jotunn"))
+  if (
+    lower.includes("giant") ||
+    lower.includes("jötunn") ||
+    lower.includes("jotunn")
+  )
     return 4.5;
   return null;
 }
@@ -58,12 +74,14 @@ export function SizeComparison({ giant }: Props) {
   }
 
   const human = 1.75;
-  const maxBar = Math.max(meters, human * 1.2);
-  const giantPct = Math.min(100, (meters / maxBar) * 100);
-  const humanPct = (human / maxBar) * 100;
+  // Cap visual scale so human remains readable (huge mythic heights compress)
+  const visualGiant = Math.min(meters, 12);
+  const chartH = 160;
+  const giantH = Math.max(48, (visualGiant / 12) * chartH);
+  const humanH = Math.max(28, (human / 12) * chartH);
 
   return (
-    <section className="rounded-lg border border-border bg-surface p-5">
+    <section className="rounded-lg border border-border bg-surface p-4 sm:p-5">
       <h3 className="font-[family-name:var(--font-cinzel)] text-xs tracking-[0.25em] text-accent-gold uppercase">
         Scale (illustrative)
       </h3>
@@ -71,24 +89,35 @@ export function SizeComparison({ giant }: Props) {
         Approximate visual only - mythic heights are not measurements.
         {giant.height ? ` Tradition: ${giant.height}` : ""}
       </p>
-      <div className="mt-6 flex h-44 items-end justify-center gap-8">
-        <div className="flex h-full flex-col items-center justify-end gap-2">
+
+      <div
+        className="mt-5 flex items-end justify-center gap-6 sm:gap-10"
+        style={{ height: chartH + 48 }}
+      >
+        <div className="flex w-[40%] max-w-[7rem] flex-col items-center gap-2">
           <div
-            className="w-10 rounded-t border border-accent-gold/30 bg-gradient-to-t from-accent-gold/40 to-accent-gold/10"
-            style={{ height: `${Math.max(giantPct, 18)}%` }}
+            className="w-12 rounded-t border border-accent-gold/40 bg-gradient-to-t from-accent-gold/50 to-accent-gold/15 sm:w-14"
+            style={{ height: giantH }}
+            title={`~${meters} m (illustrative)`}
           />
-          <span className="max-w-[5.5rem] text-center text-xs text-text-muted">
+          <span className="w-full text-center text-xs font-medium leading-tight text-text-primary">
             {giant.name}
           </span>
-        </div>
-        <div className="flex h-full flex-col items-center justify-end gap-2">
-          <div
-            className="w-6 rounded-t border border-border bg-text-muted/30"
-            style={{ height: `${Math.max(humanPct, 10)}%` }}
-          />
-          <span className="max-w-[5.5rem] text-center text-xs text-text-muted">
-            Human (~1.75 m)
+          <span className="text-[10px] text-text-muted">
+            ~{meters >= 10 ? `${Math.round(meters)}` : meters.toFixed(1)} m
           </span>
+        </div>
+
+        <div className="flex w-[40%] max-w-[7rem] flex-col items-center gap-2">
+          <div
+            className="w-8 rounded-t border border-text-muted/50 bg-text-muted/40 sm:w-9"
+            style={{ height: humanH }}
+            title="~1.75 m"
+          />
+          <span className="w-full text-center text-xs font-medium leading-tight text-text-primary">
+            Human
+          </span>
+          <span className="text-[10px] text-text-muted">~1.75 m</span>
         </div>
       </div>
     </section>

@@ -15,6 +15,20 @@ const GiantsMap = dynamic(
   }
 );
 
-export function GiantsMapLoader({ giants }: { giants: Giant[] }) {
-  return <GiantsMap giants={giants} />;
+export function GiantsMapLoader({
+  giants,
+  focusSlug,
+  emphasizeFocus = true,
+}: {
+  giants: Giant[];
+  focusSlug?: string | null;
+  emphasizeFocus?: boolean;
+}) {
+  return (
+    <GiantsMap
+      giants={giants}
+      focusSlug={focusSlug}
+      emphasizeFocus={emphasizeFocus}
+    />
+  );
 }

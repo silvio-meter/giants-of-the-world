@@ -21,13 +21,14 @@ export function Header() {
   const { userId, plan, isPaid, signOut, ready } = usePlan();
 
   return (
-    <header className="sticky top-0 z-40 border-b border-border/80 bg-background/85 backdrop-blur-md">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
+    <header className="sticky top-0 z-40 w-full max-w-[100vw] border-b border-border/80 bg-background/85 backdrop-blur-md">
+      <div className="mx-auto flex min-w-0 max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:gap-4 sm:px-6">
         <Link
           href="/"
-          className="font-[family-name:var(--font-cinzel)] text-sm tracking-[0.2em] text-accent-gold sm:text-base"
+          className="min-w-0 shrink font-[family-name:var(--font-cinzel)] text-[11px] tracking-[0.12em] text-accent-gold sm:text-sm sm:tracking-[0.2em] md:text-base"
         >
-          GIANTS OF THE WORLD
+          <span className="sm:hidden">GIANTS</span>
+          <span className="hidden sm:inline">GIANTS OF THE WORLD</span>
         </Link>
 
         <nav className="hidden items-center gap-6 md:flex">
