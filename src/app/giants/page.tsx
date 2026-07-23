@@ -42,9 +42,7 @@ export default async function GiantsPage({ searchParams }: Props) {
           Catalogue of Giants
         </h1>
         <p className="mt-3 max-w-2xl text-sm text-text-muted sm:text-base">
-          Filter by culture, type, or region. Search by name or tag. Every
-          entry is drawn from the data layer — nothing hard-coded in the
-          shelves.
+          Filter by culture, type, or region. Search by name or tag.
         </p>
       </header>
 

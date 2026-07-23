@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Project statement, methodology, and disclaimer for Giants of the World.",
+    "About Giants of the World — a codex of mythology, folklore, and modern legend.",
 };
 
 export default function AboutPage() {
@@ -21,45 +21,18 @@ export default function AboutPage() {
 
       <div className="space-y-8 text-base leading-relaxed text-text-primary/90">
         <section>
-          <h2 className="font-[family-name:var(--font-cinzel)] text-sm tracking-[0.2em] text-accent-gold uppercase">
-            Statement
-          </h2>
-          <p className="mt-3 text-text-muted">
-            <em className="text-text-primary">Giants of the World</em> is a web
+          <p className="text-text-muted">
+            <em className="text-text-primary">Giants of the World</em> is a
             codex of giants drawn from mythology, folklore, and modern legend.
             The tone is atmospheric rather than academic — closer to opening a
-            forbidden book than querying a database — but the structure remains
-            careful: classical myth, living folklore, and unverified modern
-            accounts are kept distinct.
+            forbidden book than browsing a database. Classical myth, living
+            folklore, and unverified modern accounts are kept distinct, and
+            cultural sources are treated with care.
           </p>
-        </section>
-
-        <section>
-          <h2 className="font-[family-name:var(--font-cinzel)] text-sm tracking-[0.2em] text-accent-gold uppercase">
-            Methodology
-          </h2>
-          <ul className="mt-3 list-inside list-disc space-y-2 text-text-muted">
-            <li>
-              Content lives in a single JSON data layer — pages never hard-code
-              entries.
-            </li>
-            <li>
-              Types separate primordial beings, races, individuals, folklore,
-              tall tales, and modern legends.
-            </li>
-            <li>
-              Sources are listed on each entry; they range from primary epics
-              to oral tradition and secondary compilations.
-            </li>
-            <li>
-              Coordinates are traditional or literary associations, not claims
-              of excavated proof.
-            </li>
-            <li>
-              Living indigenous traditions are summarized respectfully and
-              without claiming secret or restricted knowledge.
-            </li>
-          </ul>
+          <p className="mt-4 text-text-muted">
+            Each entry lists its sources. Locations on the map mark traditional
+            or literary associations, not proof of excavated remains.
+          </p>
         </section>
 
         <section className="rounded-lg border border-amber-800/40 bg-amber-950/20 p-5">
@@ -77,32 +50,12 @@ export default function AboutPage() {
             <strong className="font-medium text-amber-100">
               must not be read as confirmed historical or scientific fact
             </strong>
-            . No official records corroborate these reports. Language such as
-            “Reports claim…”, “According to the circulating account…”, and “No
-            official records corroborate…” is deliberate.
+            . No official records corroborate these reports.
           </p>
         </section>
 
         <section>
-          <h2 className="font-[family-name:var(--font-cinzel)] text-sm tracking-[0.2em] text-accent-gold uppercase">
-            Images
-          </h2>
-          <p className="mt-3 text-text-muted">
-            Final illustrations will be supplied separately into{" "}
-            <code className="rounded bg-surface px-1.5 py-0.5 font-mono text-xs text-accent-gold">
-              /public/images/giants/
-            </code>
-            . Until then, every portrait is an intentional silhouette
-            placeholder — mist, shadow, and form — so the catalogue never shows
-            a broken image.
-          </p>
-        </section>
-
-        <section>
-          <h2 className="font-[family-name:var(--font-cinzel)] text-sm tracking-[0.2em] text-accent-gold uppercase">
-            Explore
-          </h2>
-          <div className="mt-3 flex flex-wrap gap-3 text-sm">
+          <div className="flex flex-wrap gap-4 text-sm">
             <Link href="/giants" className="text-accent-gold hover:underline">
               Catalogue
             </Link>
