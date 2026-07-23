@@ -9,15 +9,19 @@ A dark, atmospheric web codex of giants from mythology, folklore, and modern leg
 - **Framer Motion** (entrance animations)
 - **Leaflet** + CartoDB Dark Matter tiles
 - Local JSON data (`src/data/giants.json`, `src/data/findings.json`)
+- **Supabase** (auth + profiles) + **Stripe** (subscriptions + lifetime)
 
 ## Develop
 
 ```bash
 npm install
+cp .env.example .env.local   # see SETUP.md for Supabase + Stripe
 npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000).
+
+**Payments setup:** see [SETUP.md](./SETUP.md).
 
 ## Scripts
 
@@ -36,7 +40,9 @@ Open [http://localhost:3000](http://localhost:3000).
 | `/giants/[slug]`   | Detail (mystery note, related, sources)      |
 | `/map`             | Dark world map with pins                     |
 | `/findings`        | Bones & Shadows (claims / hoaxes / legends)  |
-| `/about`           | Methodology + modern-legend disclaimer       |
+| `/about`           | About + modern-legend disclaimer             |
+| `/pricing`         | Monthly / Yearly / Lifetime                  |
+| `/login` `/signup` | Auth                                         |
 
 ## Data
 

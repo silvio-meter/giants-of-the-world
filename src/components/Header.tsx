@@ -3,7 +3,9 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { formatPlanLabel } from "@/lib/access";
 import { RandomGiantButton } from "./RandomGiantButton";
+import { usePlan } from "./PlanProvider";
 
 const nav = [
   { href: "/giants", label: "Catalogue" },
@@ -16,6 +18,7 @@ const nav = [
 export function Header() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const { userId, plan, isPaid, signOut, ready } = usePlan();
 
   return (
     <header className="sticky top-0 z-40 border-b border-border/80 bg-background/85 backdrop-blur-md">
@@ -46,6 +49,29 @@ export function Header() {
             );
           })}
           <RandomGiantButton compact />
+          {ready && userId ? (
+            <div className="flex items-center gap-3">
+              {isPaid && (
+                <span className="rounded border border-accent-gold/40 px-2 py-0.5 text-[10px] tracking-wide text-accent-gold uppercase">
+                  {formatPlanLabel(plan)}
+                </span>
+              )}
+              <button
+                type="button"
+                onClick={() => void signOut()}
+                className="text-sm text-text-muted hover:text-accent-gold"
+              >
+                Sign out
+              </button>
+            </div>
+          ) : (
+            <Link
+              href="/login"
+              className="text-sm text-text-muted hover:text-accent-gold"
+            >
+              Sign in
+            </Link>
+          )}
         </nav>
 
         <button
@@ -56,7 +82,14 @@ export function Header() {
           onClick={() => setOpen((v) => !v)}
         >
           <span className="sr-only">Menu</span>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.5"
+          >
             {open ? (
               <path d="M6 6l12 12M18 6L6 18" />
             ) : (
@@ -82,6 +115,29 @@ export function Header() {
             ))}
             <li className="pt-2">
               <RandomGiantButton onNavigate={() => setOpen(false)} />
+            </li>
+            <li>
+              {userId ? (
+                <button
+                  type="button"
+                  className="py-1 text-text-muted"
+                  onClick={() => {
+                    setOpen(false);
+                    void signOut();
+                  }}
+                >
+                  Sign out
+                  {isPaid ? ` (${formatPlanLabel(plan)})` : ""}
+                </button>
+              ) : (
+                <Link
+                  href="/login"
+                  className="block py-1 text-text-muted"
+                  onClick={() => setOpen(false)}
+                >
+                  Sign in
+                </Link>
+              )}
             </li>
           </ul>
         </nav>
