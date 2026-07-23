@@ -57,8 +57,8 @@ export default function PricingPage() {
           Pricing
         </h1>
         <p className="mx-auto mt-3 max-w-xl text-sm text-text-muted sm:text-base">
-          Free readers see every giant&apos;s basic account. Full histories,
-          mystery notes, and future premium tools unlock with any paid plan.
+          Free readers get every giant&apos;s opening account. Members unlock
+          the full history, mystery notes, and future premium tools.
         </p>
         {isPaid && (
           <p className="mt-4 inline-block rounded border border-accent-gold/40 bg-accent-gold/10 px-3 py-1.5 text-xs text-accent-gold">
@@ -127,7 +127,7 @@ export default function PricingPage() {
           What paid unlocks
         </h3>
         <ul className="mt-4 grid gap-2 text-sm text-text-muted sm:grid-cols-2">
-          <li>— Full detailed accounts for every giant</li>
+          <li>— Full remaining account for every giant</li>
           <li>— Mystery notes (whispered asides)</li>
           <li>— Size comparison tool (coming)</li>
           <li>— Favourites & advanced map filters (coming)</li>
