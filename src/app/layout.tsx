@@ -23,13 +23,51 @@ const mono = JetBrains_Mono({
   display: "swap",
 });
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://giants-of-the-world.vercel.app";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: {
     default: "Giants of the World",
     template: "%s · Giants of the World",
   },
   description:
     "A dark codex of giants from mythology, folklore, and modern legend across the world.",
+  applicationName: "Giants of the World",
+  icons: {
+    icon: [
+      { url: "/favicon-16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: siteUrl,
+    siteName: "Giants of the World",
+    title: "Giants of the World",
+    description:
+      "A dark codex of giants from mythology, folklore, and modern legend across the world.",
+    images: [
+      {
+        url: "/images/featured.jpg",
+        width: 1280,
+        height: 720,
+        alt: "Giants of the World - a giant in the mist under a pale moon",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Giants of the World",
+    description:
+      "A dark codex of giants from mythology, folklore, and modern legend across the world.",
+    images: ["/images/featured.jpg"],
+  },
 };
 
 export default function RootLayout({
