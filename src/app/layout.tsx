@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Cinzel, Inter, JetBrains_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { PlanProvider } from "@/components/PlanProvider";
@@ -83,6 +84,7 @@ export default function RootLayout({
           <main className="relative flex-1">{children}</main>
           <Footer />
         </PlanProvider>
+        <Analytics />
       </body>
     </html>
   );
