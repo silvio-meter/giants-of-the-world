@@ -1,0 +1,20 @@
+"use client";
+
+import dynamic from "next/dynamic";
+import type { Giant } from "@/lib/types";
+
+const GiantsMap = dynamic(
+  () => import("./GiantsMap").then((m) => m.GiantsMap),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="flex h-[min(70vh,640px)] w-full items-center justify-center rounded-lg border border-border bg-surface text-sm text-text-muted">
+        Unrolling the dark map…
+      </div>
+    ),
+  }
+);
+
+export function GiantsMapLoader({ giants }: { giants: Giant[] }) {
+  return <GiantsMap giants={giants} />;
+}

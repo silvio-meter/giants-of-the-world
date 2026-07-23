@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Giants of the World
 
-## Getting Started
+A dark, atmospheric web codex of giants from mythology, folklore, and modern legend.
 
-First, run the development server:
+## Stack
+
+- **Next.js** (App Router) + **TypeScript**
+- **Tailwind CSS** + CSS design tokens
+- **Framer Motion** (entrance animations)
+- **Leaflet** + CartoDB Dark Matter tiles
+- Local JSON data (`src/data/giants.json`, `src/data/findings.json`)
+
+## Develop
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Command        | Description              |
+| -------------- | ------------------------ |
+| `npm run dev`  | Development server       |
+| `npm run build`| Production build         |
+| `npm start`    | Serve production build   |
 
-## Learn More
+## Pages
 
-To learn more about Next.js, take a look at the following resources:
+| Route              | Purpose                                      |
+| ------------------ | -------------------------------------------- |
+| `/`                | Hero home + Random Giant                     |
+| `/giants`          | Filterable catalogue                         |
+| `/giants/[slug]`   | Detail (mystery note, related, sources)      |
+| `/map`             | Dark world map with pins                     |
+| `/findings`        | Bones & Shadows (claims / hoaxes / legends)  |
+| `/about`           | Methodology + modern-legend disclaimer       |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Data
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+All giant content lives in `src/data/giants.json`. Do not hard-code entries in components.
 
-## Deploy on Vercel
+Image paths follow `/images/giants/{slug}.jpg`. Until final art arrives, the `ImagePlaceholder` component renders silhouettes with animated mist (no broken-image icons).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deploy
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Vercel-ready: connect the repo and deploy. No environment variables required for the base build.
