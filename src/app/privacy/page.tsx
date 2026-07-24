@@ -103,7 +103,13 @@ export default function PrivacyPage() {
             billing through the Stripe customer portal.
           </p>
           <p className="mt-2">
-            To get a copy of your data or have your account deleted, email{" "}
+            You can delete your account yourself from the{" "}
+            <Link href="/account" className="text-accent-gold hover:underline">
+              Account
+            </Link>{" "}
+            page; it removes your profile, favourites and login immediately,
+            and cancels any running subscription first. To get a copy of your
+            data instead, or if you would rather we did it for you, email{" "}
             <a
               href={`mailto:${supportEmail}?subject=Data%20request`}
               className="text-accent-gold hover:underline"

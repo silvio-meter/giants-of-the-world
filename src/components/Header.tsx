@@ -53,6 +53,12 @@ export function Header() {
           <RandomGiantButton compact />
           {ready && userId ? (
             <div className="flex items-center gap-3">
+              <Link
+                href="/account"
+                className="text-sm text-text-muted hover:text-accent-gold"
+              >
+                Account
+              </Link>
               {isPaid && (
                 <span className="rounded border border-accent-gold/40 px-2 py-0.5 text-[10px] tracking-wide text-accent-gold uppercase">
                   {formatPlanLabel(plan)}
@@ -118,6 +124,17 @@ export function Header() {
             <li className="pt-2" onClick={() => setOpen(false)}>
               <RandomGiantButton />
             </li>
+            {userId && (
+              <li>
+                <Link
+                  href="/account"
+                  className="block py-1 text-text-primary"
+                  onClick={() => setOpen(false)}
+                >
+                  Account
+                </Link>
+              </li>
+            )}
             <li>
               {userId ? (
                 <button
