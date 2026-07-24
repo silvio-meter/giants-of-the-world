@@ -1,56 +1,73 @@
-"use client";
-
+import type { Metadata } from "next";
 import Link from "next/link";
 import { GiantCard } from "@/components/GiantCard";
-import { useFavourites } from "@/components/FavouritesProvider";
-import { usePlan } from "@/components/PlanProvider";
 import { canUseFavourites } from "@/lib/access";
 import { getAllGiants } from "@/lib/giants";
+import { getProfile } from "@/lib/profile";
+import { createClient } from "@/lib/supabase/server";
 
-export default function FavouritesPage() {
-  const { isPaid, userId, plan, ready: planReady } = usePlan();
-  const { slugs, ready: favReady, count } = useFavourites();
-  const allowed = canUseFavourites(plan) && isPaid;
+/** Private page: rendered per request, never indexed. */
+export const dynamic = "force-dynamic";
 
-  const giants = getAllGiants().filter((g) => slugs.has(g.slug));
-  // Preserve favourite order roughly by keeping filter order from set iteration
-  const ordered = giants.sort((a, b) => a.name.localeCompare(b.name));
+export const metadata: Metadata = {
+  title: "Favourites",
+  robots: { index: false, follow: false },
+};
 
-  if (!planReady || (userId && allowed && !favReady)) {
-    return (
-      <div className="mx-auto max-w-6xl px-4 py-20 text-center text-text-muted">
-        Loading favourites…
-      </div>
-    );
+async function getFavouriteSlugs(userId: string): Promise<string[]> {
+  try {
+    const supabase = await createClient();
+    const { data, error } = await supabase
+      .from("favourites")
+      .select("giant_slug")
+      .eq("user_id", userId)
+      .order("created_at", { ascending: false });
+    if (error) throw error;
+    return (data ?? []).map((row) => row.giant_slug as string);
+  } catch (err) {
+    console.error("favourites page", err);
+    return [];
   }
+}
 
-  if (!userId) {
+function Shell({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="mx-auto max-w-lg px-4 py-16 text-center">
+      <h1 className="font-[family-name:var(--font-cinzel)] text-3xl tracking-wide text-accent-gold">
+        Favourites
+      </h1>
+      {children}
+    </div>
+  );
+}
+
+export default async function FavouritesPage() {
+  const profile = await getProfile();
+
+  if (!profile) {
     return (
-      <div className="mx-auto max-w-lg px-4 py-16 text-center">
-        <h1 className="font-[family-name:var(--font-cinzel)] text-3xl tracking-wide text-accent-gold">
-          Favourites
-        </h1>
+      <Shell>
         <p className="mt-4 text-sm text-text-muted">
           Sign in with a paid plan to save giants and return to them later.
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-4 text-sm">
-          <Link href="/login?next=/favourites" className="text-accent-gold hover:underline">
+          <Link
+            href="/login?next=/favourites"
+            className="text-accent-gold hover:underline"
+          >
             Sign in
           </Link>
           <Link href="/pricing" className="text-accent-gold hover:underline">
             View pricing
           </Link>
         </div>
-      </div>
+      </Shell>
     );
   }
 
-  if (!allowed) {
+  if (!canUseFavourites(profile.plan)) {
     return (
-      <div className="mx-auto max-w-lg px-4 py-16 text-center">
-        <h1 className="font-[family-name:var(--font-cinzel)] text-3xl tracking-wide text-accent-gold">
-          Favourites
-        </h1>
+      <Shell>
         <p className="mt-4 text-sm text-text-muted">
           Favourites are included with Monthly, Yearly, or Lifetime access.
         </p>
@@ -60,9 +77,14 @@ export default function FavouritesPage() {
         >
           Unlock favourites →
         </Link>
-      </div>
+      </Shell>
     );
   }
+
+  const slugs = new Set(await getFavouriteSlugs(profile.id));
+  const ordered = getAllGiants()
+    .filter((g) => slugs.has(g.slug))
+    .sort((a, b) => a.name.localeCompare(b.name));
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
@@ -75,7 +97,7 @@ export default function FavouritesPage() {
         </h1>
         <p className="mt-3 text-sm text-text-muted">
           Giants you have marked with a star.{" "}
-          <span className="font-mono text-xs">{count} saved</span>
+          <span className="font-mono text-xs">{ordered.length} saved</span>
         </p>
       </header>
 

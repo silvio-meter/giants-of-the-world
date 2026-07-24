@@ -115,8 +115,8 @@ export function Header() {
                 </Link>
               </li>
             ))}
-            <li className="pt-2">
-              <RandomGiantButton onNavigate={() => setOpen(false)} />
+            <li className="pt-2" onClick={() => setOpen(false)}>
+              <RandomGiantButton />
             </li>
             <li>
               {userId ? (

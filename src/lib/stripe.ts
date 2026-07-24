@@ -1,4 +1,5 @@
 import Stripe from "stripe";
+import { siteUrl } from "./site";
 
 let stripe: Stripe | null = null;
 
@@ -16,8 +17,5 @@ export function getStripe(): Stripe {
 }
 
 export function getSiteUrl(): string {
-  return (
-    process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
-    "https://www.giantscodex.com"
-  );
+  return siteUrl;
 }

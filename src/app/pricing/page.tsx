@@ -22,7 +22,7 @@ const paymentsMode =
   (process.env.NEXT_PUBLIC_PAYMENTS_MODE as "demo" | "test" | "live") || "demo";
 
 function PricingInner() {
-  const { plan, isPaid, userId, ready, configured, refresh, signOut } =
+  const { plan, isPaid, userId, hasBilling, ready, configured, refresh, signOut } =
     usePlan();
   const params = useSearchParams();
   const success = params.get("success") === "1";
@@ -48,7 +48,7 @@ function PricingInner() {
       return;
     }
     if (!userId) {
-      window.location.href = `/login?next=${encodeURIComponent("/pricing")}`;
+      window.location.assign(`/login?next=${encodeURIComponent("/pricing")}`);
       return;
     }
     setLoadingPlan(target);
@@ -64,7 +64,7 @@ function PricingInner() {
         redirect?: string;
       };
       if (res.status === 401 && data.redirect) {
-        window.location.href = data.redirect;
+        window.location.assign(data.redirect);
         return;
       }
       if (!res.ok || !data.url) {
@@ -72,7 +72,7 @@ function PricingInner() {
         setLoadingPlan(null);
         return;
       }
-      window.location.href = data.url;
+      window.location.assign(data.url);
     } catch {
       setError("Checkout failed. Please try again.");
       setLoadingPlan(null);
@@ -82,7 +82,7 @@ function PricingInner() {
   async function demoUnlock() {
     setError("");
     if (!userId) {
-      window.location.href = `/login?next=${encodeURIComponent("/pricing")}`;
+      window.location.assign(`/login?next=${encodeURIComponent("/pricing")}`);
       return;
     }
     setDemoLoading(true);
@@ -90,7 +90,7 @@ function PricingInner() {
       const res = await fetch("/api/demo/unlock", { method: "POST" });
       const data = (await res.json()) as { error?: string; redirect?: string };
       if (res.status === 401 && data.redirect) {
-        window.location.href = data.redirect;
+        window.location.assign(data.redirect);
         return;
       }
       if (!res.ok) {
@@ -117,7 +117,7 @@ function PricingInner() {
         setPortalLoading(false);
         return;
       }
-      window.location.href = data.url;
+      window.location.assign(data.url);
     } catch {
       setError("Could not open billing portal.");
       setPortalLoading(false);
@@ -170,6 +170,13 @@ function PricingInner() {
         {ready && isPaid && (
           <p className="mt-4 inline-block rounded border border-accent-gold/40 bg-accent-gold/10 px-3 py-1.5 text-xs text-accent-gold">
             Current plan: {formatPlanLabel(plan as UserPlan)}
+            {!hasBilling && " · complimentary"}
+          </p>
+        )}
+        {ready && isPaid && !hasBilling && (
+          <p className="mx-auto mt-3 max-w-md text-xs text-text-muted">
+            This access was granted directly, so there is no subscription and
+            nothing to bill. Nothing will ever be charged.
           </p>
         )}
         {success && (
@@ -316,7 +323,9 @@ function PricingInner() {
         </Link>
         {userId ? (
           <>
-            {paymentsMode !== "demo" && (
+            {/* Only offer the portal when a Stripe customer exists. Comped and
+                never-paid accounts have none, and the portal cannot open. */}
+            {paymentsMode !== "demo" && hasBilling && (
               <button
                 type="button"
                 onClick={() => void openPortal()}

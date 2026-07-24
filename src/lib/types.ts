@@ -14,6 +14,8 @@ export interface Giant {
   culture: string;
   region: string;
   type: GiantType;
+  /** Open entry: full lore renders statically, no auth check, indexable. */
+  freeEntry: boolean;
   height: string | null;
   shortDescription: string;
   fullDescription: string;

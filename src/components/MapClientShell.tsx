@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo } from "react";
-import type { GiantCardData } from "@/lib/giants";
+import type { GiantCardData } from "@/lib/format";
 import { GiantsMapLoader } from "./GiantsMapLoader";
 import { useFavourites } from "./FavouritesProvider";
 

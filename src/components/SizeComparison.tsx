@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import type { GiantCardData } from "@/lib/giants";
+import type { GiantCardData } from "@/lib/format";
 import { usePlan } from "./PlanProvider";
 
 interface Props {

@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "About",
   description:
     "About Giants of the World - a codex of mythology, folklore, and modern legend.",
+  alternates: { canonical: "/about" },
 };
 
 export default function AboutPage() {

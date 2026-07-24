@@ -9,9 +9,5 @@ export function createClient() {
   return createBrowserClient(url, key);
 }
 
-export function isBrowserSupabaseReady(): boolean {
-  return Boolean(
-    process.env.NEXT_PUBLIC_SUPABASE_URL &&
-      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
-  );
-}
+/** Re-exported for convenience; import from ./config to avoid loading supabase-js. */
+export { isBrowserSupabaseReady } from "./config";

@@ -1,9 +1,12 @@
 import { NextResponse } from "next/server";
 import { createClient, createServiceRoleClient } from "@/lib/supabase/server";
 import { isSupabaseConfigured } from "@/lib/plans";
+import { siteUrl } from "@/lib/site";
 
 export async function GET(request: Request) {
-  const { searchParams, origin } = new URL(request.url);
+  const { searchParams } = new URL(request.url);
+  // Redirect against the configured origin, not the request Host header.
+  const origin = siteUrl;
   const code = searchParams.get("code");
   const nextRaw = searchParams.get("next") ?? "/";
   // Prevent open redirects

@@ -7,9 +7,26 @@ import { createServiceRoleClient } from "@/lib/supabase/server";
 
 export const runtime = "nodejs";
 
+type Admin = ReturnType<typeof createServiceRoleClient>;
+
+/** Current plan, so a downgrade can tell a real cancellation from a stale one. */
+async function currentPlan(
+  admin: Admin,
+  opts: { userId?: string | null; customerId?: string | null }
+): Promise<UserPlan | null> {
+  const query = admin.from("profiles").select("plan");
+  const { data } = opts.userId
+    ? await query.eq("id", opts.userId).maybeSingle()
+    : opts.customerId
+      ? await query.eq("stripe_customer_id", opts.customerId).maybeSingle()
+      : { data: null };
+  return (data?.plan as UserPlan) ?? null;
+}
+
 async function setUserPlan(opts: {
   userId?: string | null;
   customerId?: string | null;
+  email?: string | null;
   plan: UserPlan;
   subscriptionId?: string | null;
 }) {
@@ -26,20 +43,80 @@ async function setUserPlan(opts: {
   }
 
   if (opts.userId) {
-    const { error } = await admin
-      .from("profiles")
-      .update(payload)
-      .eq("id", opts.userId);
+    // Upsert, not update: a plain update against a missing row reports success
+    // while changing nothing, which would leave a paying customer on free.
+    const { error } = await admin.from("profiles").upsert(
+      {
+        id: opts.userId,
+        ...(opts.email ? { email: opts.email } : {}),
+        ...payload,
+      },
+      { onConflict: "id" }
+    );
     if (error) throw error;
     return;
   }
 
   if (opts.customerId) {
-    const { error } = await admin
+    const { data, error } = await admin
       .from("profiles")
       .update(payload)
-      .eq("stripe_customer_id", opts.customerId);
+      .eq("stripe_customer_id", opts.customerId)
+      .select("id");
     if (error) throw error;
+    if (!data || data.length === 0) {
+      // No user to credit. Loud, because someone has paid for nothing.
+      throw new Error(
+        `No profile matches stripe_customer_id ${opts.customerId} — plan "${opts.plan}" not applied`
+      );
+    }
+  }
+}
+
+/**
+ * Lifetime is a one-time purchase and outlives any subscription.
+ *
+ * Without this guard, a member who bought Lifetime while a Monthly plan was
+ * still running loses everything the moment that old subscription is
+ * cancelled — Stripe sends subscription.deleted and we would write "free".
+ */
+async function downgradeToFree(opts: {
+  userId?: string | null;
+  customerId?: string | null;
+}) {
+  const admin = createServiceRoleClient();
+  const plan = await currentPlan(admin, opts);
+
+  if (plan === "lifetime") {
+    console.info(
+      "Skipping downgrade: account holds lifetime access",
+      opts.userId ?? opts.customerId
+    );
+    return;
+  }
+
+  await setUserPlan({ ...opts, plan: "free", subscriptionId: null });
+}
+
+/** Retires any live subscription for a customer who has just bought Lifetime. */
+async function cancelActiveSubscriptions(
+  stripe: Stripe,
+  customerId: string
+): Promise<void> {
+  try {
+    const subs = await stripe.subscriptions.list({
+      customer: customerId,
+      status: "active",
+      limit: 10,
+    });
+    for (const sub of subs.data) {
+      await stripe.subscriptions.cancel(sub.id, { prorate: true });
+      console.info("Cancelled subscription after lifetime upgrade", sub.id);
+    }
+  } catch (err) {
+    // Never fail the webhook over this — the plan is already granted, and a
+    // stray subscription is a billing cleanup, not an access problem.
+    console.error("Could not cancel subscriptions after lifetime upgrade", err);
   }
 }
 
@@ -121,9 +198,16 @@ export async function POST(request: Request) {
         await setUserPlan({
           userId,
           customerId,
+          email: session.customer_details?.email,
           plan,
           subscriptionId: subscriptionId ?? null,
         });
+
+        // Buying Lifetime while a subscription is running would otherwise keep
+        // charging monthly forever. Retire it as part of the upgrade.
+        if (plan === "lifetime" && customerId) {
+          await cancelActiveSubscriptions(stripe, customerId);
+        }
         break;
       }
 
@@ -149,12 +233,7 @@ export async function POST(request: Request) {
           sub.status === "unpaid" ||
           sub.status === "incomplete_expired"
         ) {
-          await setUserPlan({
-            userId,
-            customerId,
-            plan: "free",
-            subscriptionId: null,
-          });
+          await downgradeToFree({ userId, customerId });
         }
         break;
       }
@@ -164,12 +243,7 @@ export async function POST(request: Request) {
         const customerId =
           typeof sub.customer === "string" ? sub.customer : sub.customer.id;
         const userId = sub.metadata?.supabase_user_id;
-        await setUserPlan({
-          userId,
-          customerId,
-          plan: "free",
-          subscriptionId: null,
-        });
+        await downgradeToFree({ userId, customerId });
         break;
       }
 

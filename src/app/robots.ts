@@ -1,8 +1,5 @@
 import type { MetadataRoute } from "next";
-
-const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
-  "https://www.giantscodex.com";
+import { siteUrl } from "@/lib/site";
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -10,7 +7,16 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/", "/auth/"],
+        disallow: [
+          "/api/",
+          "/auth/",
+          "/login",
+          "/signup",
+          "/forgot-password",
+          "/reset-password",
+          "/favourites",
+          "/giants/random",
+        ],
       },
     ],
     sitemap: `${siteUrl}/sitemap.xml`,
