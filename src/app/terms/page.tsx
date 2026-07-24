@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { refundDays, supportEmail } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Terms of Use",
@@ -17,7 +18,7 @@ export default function TermsPage() {
         <h1 className="mt-2 font-[family-name:var(--font-cinzel)] text-3xl tracking-wide text-accent-gold">
           Terms of Use
         </h1>
-        <p className="mt-2 text-sm text-text-muted">Last updated: 23 July 2026</p>
+        <p className="mt-2 text-sm text-text-muted">Last updated: 24 July 2026</p>
       </header>
 
       <div className="space-y-6 text-sm leading-relaxed text-text-muted">
@@ -65,7 +66,40 @@ export default function TermsPage() {
 
         <section>
           <h2 className="font-[family-name:var(--font-cinzel)] text-xs tracking-[0.2em] text-accent-gold uppercase">
-            4. Content and disclaimers
+            4. Refunds
+          </h2>
+          <p className="mt-2">
+            <strong className="text-text-primary/90">
+              {refundDays} days, no questions asked.
+            </strong>{" "}
+            If the codex is not what you hoped for, email{" "}
+            <a
+              href={`mailto:${supportEmail}?subject=Refund%20request`}
+              className="text-accent-gold hover:underline"
+            >
+              {supportEmail}
+            </a>{" "}
+            within {refundDays} days of your purchase and we will refund it in
+            full. This applies to every plan, Lifetime included. You do not have
+            to give a reason.
+          </p>
+          <p className="mt-2">
+            Refunds go back to the original payment method through Stripe and
+            usually appear within five to ten business days. Paid access ends
+            when the refund is issued.
+          </p>
+          <p className="mt-2">
+            You can cancel a recurring plan at any time from the billing portal.
+            Cancelling stops future charges and keeps your access until the end
+            of the period you have already paid for. Nothing here limits any
+            statutory rights you have as a consumer, including the right of
+            withdrawal for EU customers.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="font-[family-name:var(--font-cinzel)] text-xs tracking-[0.2em] text-accent-gold uppercase">
+            5. Content and disclaimers
           </h2>
           <p className="mt-2">
             Entries are for cultural, literary, and entertainment interest.
@@ -84,7 +118,7 @@ export default function TermsPage() {
 
         <section>
           <h2 className="font-[family-name:var(--font-cinzel)] text-xs tracking-[0.2em] text-accent-gold uppercase">
-            5. Intellectual property
+            6. Intellectual property
           </h2>
           <p className="mt-2">
             Site design, original wording, and arrangement of the codex are
@@ -97,7 +131,7 @@ export default function TermsPage() {
 
         <section>
           <h2 className="font-[family-name:var(--font-cinzel)] text-xs tracking-[0.2em] text-accent-gold uppercase">
-            6. Acceptable use
+            7. Acceptable use
           </h2>
           <p className="mt-2">
             Do not attack the Service, reverse-engineer payment flows, harvest
@@ -108,7 +142,7 @@ export default function TermsPage() {
 
         <section>
           <h2 className="font-[family-name:var(--font-cinzel)] text-xs tracking-[0.2em] text-accent-gold uppercase">
-            7. Availability
+            8. Availability
           </h2>
           <p className="mt-2">
             The Service is provided &quot;as is.&quot; We aim for reliability but do not
@@ -119,12 +153,17 @@ export default function TermsPage() {
 
         <section>
           <h2 className="font-[family-name:var(--font-cinzel)] text-xs tracking-[0.2em] text-accent-gold uppercase">
-            8. Contact
+            9. Contact
           </h2>
           <p className="mt-2">
-            Questions about these terms: use the contact channel you received
-            with this demo, or the project maintainer listed on the repository
-            or site footer when published.
+            Questions about these terms, refunds, or your account:{" "}
+            <a
+              href={`mailto:${supportEmail}`}
+              className="text-accent-gold hover:underline"
+            >
+              {supportEmail}
+            </a>
+            . We aim to reply within a few days.
           </p>
         </section>
 

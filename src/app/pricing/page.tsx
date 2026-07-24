@@ -7,6 +7,7 @@ import { usePlan } from "@/components/PlanProvider";
 import type { PaidPlan, UserPlan } from "@/lib/access";
 import { formatPlanLabel } from "@/lib/access";
 import { PLAN_PRICES } from "@/lib/plans";
+import { refundDays, supportEmail } from "@/lib/site";
 
 const plans: {
   id: PaidPlan;
@@ -21,13 +22,50 @@ const plans: {
 const paymentsMode =
   (process.env.NEXT_PUBLIC_PAYMENTS_MODE as "demo" | "test" | "live") || "demo";
 
-function PricingInner() {
-  const { plan, isPaid, userId, hasBilling, ready, configured, refresh, signOut } =
-    usePlan();
+/**
+ * The only part of this page that reads the URL.
+ *
+ * useSearchParams() opts its subtree out of prerendering, so it lives in its
+ * own Suspense boundary — otherwise the entire pricing page, prices and refund
+ * guarantee included, would be a "Loading…" placeholder in the served HTML.
+ */
+function CheckoutStatus({ onSuccess }: { onSuccess: () => Promise<void> }) {
   const params = useSearchParams();
   const success = params.get("success") === "1";
   const canceled = params.get("canceled") === "1";
 
+  useEffect(() => {
+    if (!success) return;
+    // The webhook lands a moment after the redirect; re-check twice.
+    const t1 = window.setTimeout(() => void onSuccess(), 1200);
+    const t2 = window.setTimeout(() => void onSuccess(), 4000);
+    return () => {
+      window.clearTimeout(t1);
+      window.clearTimeout(t2);
+    };
+  }, [success, onSuccess]);
+
+  if (success) {
+    return (
+      <p className="mt-4 text-sm text-accent-gold" role="status">
+        Payment received. Your access unlocks within a few seconds - refresh if
+        needed.
+      </p>
+    );
+  }
+  if (canceled) {
+    return (
+      <p className="mt-4 text-sm text-text-muted" role="status">
+        Checkout canceled. The sealed pages wait when you are ready.
+      </p>
+    );
+  }
+  return null;
+}
+
+function PricingInner() {
+  const { plan, isPaid, userId, hasBilling, ready, configured, refresh, signOut } =
+    usePlan();
   const [loadingPlan, setLoadingPlan] = useState<PaidPlan | null>(null);
   const [demoLoading, setDemoLoading] = useState(false);
   const [error, setError] = useState("");
@@ -124,16 +162,6 @@ function PricingInner() {
     }
   }
 
-  useEffect(() => {
-    if (!success) return;
-    const t = window.setTimeout(() => void refresh(), 1200);
-    const t2 = window.setTimeout(() => void refresh(), 4000);
-    return () => {
-      window.clearTimeout(t);
-      window.clearTimeout(t2);
-    };
-  }, [success, refresh]);
-
   return (
     <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6 sm:py-14">
       <header className="mb-10 text-center">
@@ -179,17 +207,9 @@ function PricingInner() {
             nothing to bill. Nothing will ever be charged.
           </p>
         )}
-        {success && (
-          <p className="mt-4 text-sm text-accent-gold" role="status">
-            Payment received. Your access unlocks within a few seconds - refresh
-            if needed.
-          </p>
-        )}
-        {canceled && (
-          <p className="mt-4 text-sm text-text-muted" role="status">
-            Checkout canceled. The sealed pages wait when you are ready.
-          </p>
-        )}
+        <Suspense fallback={null}>
+          <CheckoutStatus onSuccess={refresh} />
+        </Suspense>
       </header>
 
       <div className="grid items-stretch gap-5 md:grid-cols-3">
@@ -262,6 +282,20 @@ function PricingInner() {
         })}
       </div>
 
+      <p className="mt-6 text-center text-sm text-text-muted">
+        <span className="text-accent-gold">
+          {refundDays}-day refund, no questions asked.
+        </span>{" "}
+        Every plan, Lifetime included. Email{" "}
+        <a
+          href={`mailto:${supportEmail}?subject=Refund%20request`}
+          className="text-accent-gold hover:underline"
+        >
+          {supportEmail}
+        </a>{" "}
+        and we refund it in full.
+      </p>
+
       {paymentsMode === "demo" && (
         <div className="mt-8 rounded-lg border border-accent-gold/40 bg-surface p-6 text-center">
           <p className="font-[family-name:var(--font-cinzel)] text-sm tracking-wide text-accent-gold">
@@ -305,11 +339,12 @@ function PricingInner() {
           <li>- Offline / PWA access (coming)</li>
         </ul>
         <p className="mt-4 text-xs text-text-muted/80">
-          By purchasing you agree to our{" "}
+          Cancel a recurring plan any time from the billing portal. By
+          purchasing you agree to our{" "}
           <Link href="/terms" className="text-accent-gold hover:underline">
             Terms
           </Link>{" "}
-          and{" "}
+          (including the {refundDays}-day refund) and{" "}
           <Link href="/privacy" className="text-accent-gold hover:underline">
             Privacy Policy
           </Link>
@@ -362,15 +397,5 @@ function PricingInner() {
 }
 
 export default function PricingPage() {
-  return (
-    <Suspense
-      fallback={
-        <div className="mx-auto max-w-5xl px-4 py-20 text-center text-text-muted">
-          Loading pricing…
-        </div>
-      }
-    >
-      <PricingInner />
-    </Suspense>
-  );
+  return <PricingInner />;
 }

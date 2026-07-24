@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { supportEmail } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
@@ -17,7 +18,7 @@ export default function PrivacyPage() {
         <h1 className="mt-2 font-[family-name:var(--font-cinzel)] text-3xl tracking-wide text-accent-gold">
           Privacy Policy
         </h1>
-        <p className="mt-2 text-sm text-text-muted">Last updated: 23 July 2026</p>
+        <p className="mt-2 text-sm text-text-muted">Last updated: 24 July 2026</p>
       </header>
 
       <div className="space-y-6 text-sm leading-relaxed text-text-muted">
@@ -98,10 +99,22 @@ export default function PrivacyPage() {
             6. Your choices
           </h2>
           <p className="mt-2">
-            You can update account email via auth flows, manage billing through
-            the Stripe customer portal when available, and request access or
-            deletion of account data by contacting the maintainer. Depending on
-            your region (e.g. GDPR/CCPA), additional rights may apply.
+            You can update your account email through the auth flows and manage
+            billing through the Stripe customer portal.
+          </p>
+          <p className="mt-2">
+            To get a copy of your data or have your account deleted, email{" "}
+            <a
+              href={`mailto:${supportEmail}?subject=Data%20request`}
+              className="text-accent-gold hover:underline"
+            >
+              {supportEmail}
+            </a>
+            . Deletion removes your profile, your favourites, and your login,
+            and we action it within 30 days. Records we must keep for
+            accounting, such as Stripe payment history, are the exception.
+            Depending on your region (e.g. GDPR/CCPA), additional rights may
+            apply.
           </p>
         </section>
 
@@ -133,6 +146,21 @@ export default function PrivacyPage() {
           <p className="mt-2">
             We may update this policy; the &quot;Last updated&quot; date will change.
             Material changes may be noted on the site.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="font-[family-name:var(--font-cinzel)] text-xs tracking-[0.2em] text-accent-gold uppercase">
+            10. Contact
+          </h2>
+          <p className="mt-2">
+            Questions about this policy, or about the data we hold on you:{" "}
+            <a
+              href={`mailto:${supportEmail}`}
+              className="text-accent-gold hover:underline"
+            >
+              {supportEmail}
+            </a>
           </p>
         </section>
 

@@ -29,6 +29,11 @@ const mono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   alternates: { canonical: "/" },
+  // Search Console token. Public by nature (it ships in the HTML), but kept in
+  // an env var so it can be set or rotated without a code change.
+  verification: process.env.GOOGLE_SITE_VERIFICATION
+    ? { google: process.env.GOOGLE_SITE_VERIFICATION }
+    : undefined,
   title: {
     default: "Giants of the World",
     template: "%s · Giants of the World",

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { supportEmail } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "About",
@@ -52,6 +53,23 @@ export default function AboutPage() {
               must not be read as confirmed historical or scientific fact
             </strong>
             . No official records corroborate these reports.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="font-[family-name:var(--font-cinzel)] text-xs tracking-[0.2em] text-accent-gold uppercase">
+            Get in touch
+          </h2>
+          <p className="mt-2">
+            Corrections, sources we have missed, or a giant that belongs in the
+            codex — write to{" "}
+            <a
+              href={`mailto:${supportEmail}`}
+              className="text-accent-gold hover:underline"
+            >
+              {supportEmail}
+            </a>
+            . Same address for billing and refunds.
           </p>
         </section>
 
