@@ -1,20 +1,36 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import {
   createContext,
   useCallback,
   useContext,
   useEffect,
+  useMemo,
   useState,
   type ReactNode,
 } from "react";
-import {
-  effectivePlan,
-  isPaidPlan,
-  parsePlan,
-  type UserPlan,
-} from "@/lib/access";
-import { isBrowserSupabaseReady, createClient } from "@/lib/supabase/client";
+import { isPaidPlan, parsePlan, type UserPlan } from "@/lib/access";
+import { isBrowserSupabaseReady } from "@/lib/supabase/config";
+
+interface Me {
+  userId: string | null;
+  email: string | null;
+  plan: string;
+}
+
+const SIGNED_OUT: Me = { userId: null, email: null, plan: "free" };
+
+/** Never rejects — a failed lookup simply means "treat as signed out". */
+async function fetchMe(): Promise<Me> {
+  try {
+    const res = await fetch("/api/me", { cache: "no-store" });
+    if (!res.ok) return SIGNED_OUT;
+    return (await res.json()) as Me;
+  } catch {
+    return SIGNED_OUT;
+  }
+}
 
 interface PlanContextValue {
   plan: UserPlan;
@@ -38,88 +54,81 @@ const PlanContext = createContext<PlanContextValue>({
   signOut: async () => {},
 });
 
+/**
+ * Session state via /api/me rather than the supabase browser client.
+ *
+ * The plan is resolved server-side (comped lifetime grants included), so this
+ * provider is a thin cache. Keeping supabase-js out of it removes what was the
+ * largest chunk on every page.
+ */
 export function PlanProvider({ children }: { children: ReactNode }) {
+  const router = useRouter();
   const [plan, setPlan] = useState<UserPlan>("free");
   const [email, setEmail] = useState<string | null>(null);
   const [userId, setUserId] = useState<string | null>(null);
-  const [ready, setReady] = useState(false);
   const configured = isBrowserSupabaseReady();
+  // Without auth configured there is nothing to wait for, so start ready.
+  const [ready, setReady] = useState(!configured);
 
   const refresh = useCallback(async () => {
-    if (!isBrowserSupabaseReady()) {
-      setPlan("free");
-      setEmail(null);
-      setUserId(null);
-      setReady(true);
-      return;
-    }
-    try {
-      const supabase = createClient();
-      const {
-        data: { user },
-      } = await supabase.auth.getUser();
-      if (!user) {
-        setPlan("free");
-        setEmail(null);
-        setUserId(null);
-        setReady(true);
-        return;
-      }
-      setUserId(user.id);
-      setEmail(user.email ?? null);
-      const { data } = await supabase
-        .from("profiles")
-        .select("plan")
-        .eq("id", user.id)
-        .maybeSingle();
-      setPlan(effectivePlan(parsePlan(data?.plan), user.email));
-    } catch {
-      setPlan("free");
-      setEmail(null);
-      setUserId(null);
-    } finally {
-      setReady(true);
-    }
-  }, []);
+    if (!configured) return;
+    const me = await fetchMe();
+    setUserId(me.userId);
+    setEmail(me.email);
+    setPlan(parsePlan(me.plan));
+    setReady(true);
+  }, [configured]);
 
   const signOut = useCallback(async () => {
-    if (!isBrowserSupabaseReady()) return;
-    const supabase = createClient();
-    await supabase.auth.signOut();
-    setPlan("free");
-    setEmail(null);
+    try {
+      await fetch("/api/auth/signout", { method: "POST" });
+    } catch {
+      // Clearing local state below is still the right move.
+    }
     setUserId(null);
-  }, []);
+    setEmail(null);
+    setPlan("free");
+    router.refresh();
+  }, [router]);
 
   useEffect(() => {
-    void refresh();
-    if (!isBrowserSupabaseReady()) return;
+    if (!configured) return;
+    let cancelled = false;
 
-    const supabase = createClient();
-    const {
-      data: { subscription },
-    } = supabase.auth.onAuthStateChange(() => {
-      void refresh();
-    });
-    return () => subscription.unsubscribe();
-  }, [refresh]);
+    // State is written from the promise callbacks rather than the effect body,
+    // so this never triggers a synchronous cascading render.
+    fetchMe()
+      .then((me) => {
+        if (cancelled) return;
+        setUserId(me.userId);
+        setEmail(me.email);
+        setPlan(parsePlan(me.plan));
+        setReady(true);
+      })
+      .catch(() => {
+        if (!cancelled) setReady(true);
+      });
 
-  return (
-    <PlanContext.Provider
-      value={{
-        plan,
-        isPaid: isPaidPlan(plan),
-        email,
-        userId,
-        ready,
-        configured,
-        refresh,
-        signOut,
-      }}
-    >
-      {children}
-    </PlanContext.Provider>
+    return () => {
+      cancelled = true;
+    };
+  }, [configured]);
+
+  const value = useMemo(
+    () => ({
+      plan,
+      isPaid: isPaidPlan(plan),
+      email,
+      userId,
+      ready,
+      configured,
+      refresh,
+      signOut,
+    }),
+    [plan, email, userId, ready, configured, refresh, signOut]
   );
+
+  return <PlanContext.Provider value={value}>{children}</PlanContext.Provider>;
 }
 
 export function usePlan() {

@@ -16,6 +16,7 @@ import {
 export const metadata: Metadata = {
   title: "World Map",
   description: "Dark interactive map of giants across the world.",
+  alternates: { canonical: "/map" },
 };
 
 interface Props {

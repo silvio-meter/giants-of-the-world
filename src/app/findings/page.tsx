@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Bones & Shadows",
   description:
     "Archaeological claims, hoaxes, and modern legends - clearly labelled.",
+  alternates: { canonical: "/findings" },
 };
 
 const categoryStyle: Record<

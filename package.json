@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "build:data": "node scripts/build-data.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test --no-warnings=MODULE_TYPELESS_PACKAGE_JSON \"tests/*.test.mjs\" \"scripts/*.test.mjs\"",
+    "verify": "npm run lint && npm run typecheck && npm test"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.3",

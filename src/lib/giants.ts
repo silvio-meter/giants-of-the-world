@@ -1,11 +1,16 @@
 import giantsData from "@/data/giants.public.json";
 import findingsData from "@/data/findings.json";
-import type { Giant, Finding, GiantType } from "./types";
+import type { Finding, GiantType } from "./types";
+import { formatType, type GiantCardData } from "./format";
 
-/** Client-safe catalog (no fullDescription / mysteryNote). */
-export type GiantCardData = Omit<Giant, "fullDescription" | "mysteryNote">;
+/**
+ * Importing this module pulls the whole catalog JSON into whatever bundle
+ * references it. Keep it out of client components — use `@/lib/format` there.
+ */
+export type { GiantCardData };
+export { formatType };
 
-export const giants = giantsData as GiantCardData[];
+export const giants = giantsData as unknown as GiantCardData[];
 export const findings = findingsData as Finding[];
 
 export function getAllGiants(): GiantCardData[] {
@@ -89,11 +94,8 @@ export function filterGiants(opts: {
   });
 }
 
-export function formatType(type: GiantType): string {
-  return type
-    .split("-")
-    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
-    .join(" ");
+export function getFreeGiants(): GiantCardData[] {
+  return giants.filter((g) => g.freeEntry);
 }
 
 export function getAllFindings(): Finding[] {

@@ -1,15 +1,47 @@
-"use client";
-
 import Link from "next/link";
-import { motion } from "framer-motion";
 import { RandomGiantButton } from "@/components/RandomGiantButton";
-import { getAllGiants } from "@/lib/giants";
+import { getAllGiants, getFreeGiants } from "@/lib/giants";
+import { siteUrl } from "@/lib/site";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Giants of the World",
+  alternateName: "Giants Codex",
+  url: siteUrl,
+  description:
+    "A dark codex of giants from mythology, folklore, and modern legend across the world.",
+  inLanguage: "en",
+};
+
+const cards = [
+  {
+    title: "Myth & Folklore",
+    body: "Classical, biblical, indigenous, and regional giants - kept distinct from modern rumor.",
+    href: "/giants",
+  },
+  {
+    title: "World Map",
+    body: "Pins in the dark. Trace where tradition places the large ones across the earth.",
+    href: "/map",
+  },
+  {
+    title: "Bones & Shadows",
+    body: "Claims, hoaxes, and unverified legends - labeled so mystery never pretends to be proof.",
+    href: "/findings",
+  },
+];
 
 export default function HomePage() {
   const count = getAllGiants().length;
+  const freeCount = getFreeGiants().length;
 
   return (
     <div className="relative">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <section className="hero-atmosphere relative flex min-h-[calc(100vh-3.5rem)] flex-col items-center justify-center overflow-hidden px-4 py-20">
         <div className="fog-layer absolute inset-0" aria-hidden />
 
@@ -23,12 +55,7 @@ export default function HomePage() {
           aria-hidden
         />
 
-        <motion.div
-          className="relative z-10 mx-auto max-w-3xl text-center"
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-        >
+        <div className="rise-in relative z-10 mx-auto max-w-3xl text-center">
           <p className="font-[family-name:var(--font-cinzel)] text-[10px] tracking-[0.4em] text-accent-gold/70 uppercase sm:text-xs">
             A forbidden codex
           </p>
@@ -52,61 +79,34 @@ export default function HomePage() {
           </div>
 
           <p className="mt-12 font-mono text-xs tracking-wider text-text-muted/70">
-            {count} entries · worldwide · dark by design
+            {count} entries · {freeCount} open to read in full · worldwide
           </p>
-        </motion.div>
+        </div>
 
-        <motion.div
-          className="absolute bottom-8 left-1/2 z-10 -translate-x-1/2"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 0.5 }}
-          transition={{ delay: 1.2, duration: 1 }}
-        >
+        <div className="fade-in-late absolute bottom-8 left-1/2 z-10 -translate-x-1/2">
           <div className="flex flex-col items-center gap-2 text-[10px] tracking-[0.3em] text-text-muted uppercase">
             <span>Scroll</span>
             <div className="h-8 w-px bg-gradient-to-b from-text-muted to-transparent" />
           </div>
-        </motion.div>
+        </div>
       </section>
 
       <section className="relative border-t border-border bg-surface/30 px-4 py-20 sm:px-6">
         <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-3">
-          {[
-            {
-              title: "Myth & Folklore",
-              body: "Classical, biblical, indigenous, and regional giants - kept distinct from modern rumor.",
-              href: "/giants",
-            },
-            {
-              title: "World Map",
-              body: "Pins in the dark. Trace where tradition places the large ones across the earth.",
-              href: "/map",
-            },
-            {
-              title: "Bones & Shadows",
-              body: "Claims, hoaxes, and unverified legends - labeled so mystery never pretends to be proof.",
-              href: "/findings",
-            },
-          ].map((card, i) => (
-            <motion.div
+          {cards.map((card, i) => (
+            <Link
               key={card.href}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-40px" }}
-              transition={{ delay: i * 0.1, duration: 0.5 }}
+              href={card.href}
+              className="rise-in group block h-full rounded-lg border border-border bg-surface p-6 transition hover:border-accent-gold/40"
+              style={{ animationDelay: `${i * 0.1}s` }}
             >
-              <Link
-                href={card.href}
-                className="group block h-full rounded-lg border border-border bg-surface p-6 transition hover:border-accent-gold/40"
-              >
-                <h2 className="font-[family-name:var(--font-cinzel)] text-lg tracking-wide text-accent-gold">
-                  {card.title}
-                </h2>
-                <p className="mt-3 text-sm leading-relaxed text-text-muted group-hover:text-text-primary/90">
-                  {card.body}
-                </p>
-              </Link>
-            </motion.div>
+              <h2 className="font-[family-name:var(--font-cinzel)] text-lg tracking-wide text-accent-gold">
+                {card.title}
+              </h2>
+              <p className="mt-3 text-sm leading-relaxed text-text-muted group-hover:text-text-primary/90">
+                {card.body}
+              </p>
+            </Link>
           ))}
         </div>
       </section>

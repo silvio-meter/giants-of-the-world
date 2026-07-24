@@ -10,7 +10,7 @@ import {
 } from "react-leaflet";
 import L from "leaflet";
 import Link from "next/link";
-import type { GiantCardData } from "@/lib/giants";
+import type { GiantCardData } from "@/lib/format";
 
 function makeIcon(focused: boolean) {
   if (focused) {

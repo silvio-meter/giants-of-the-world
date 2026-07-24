@@ -5,6 +5,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { PlanProvider } from "@/components/PlanProvider";
 import { FavouritesProvider } from "@/components/FavouritesProvider";
+import { siteUrl } from "@/lib/site";
 import "./globals.css";
 
 const cinzel = Cinzel({
@@ -25,12 +26,9 @@ const mono = JetBrains_Mono({
   display: "swap",
 });
 
-const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ??
-  "https://www.giantscodex.com";
-
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
+  alternates: { canonical: "/" },
   title: {
     default: "Giants of the World",
     template: "%s · Giants of the World",

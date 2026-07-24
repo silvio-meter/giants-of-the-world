@@ -9,15 +9,18 @@ import {
 } from "@/lib/giants";
 import { getGiantLore } from "@/lib/giants-lore";
 import { getFreePreview, hasMoreContent } from "@/lib/content";
-import { canViewFullDescription } from "@/lib/access";
-import { getUserPlan } from "@/lib/profile";
 import { ImagePlaceholder } from "@/components/ImagePlaceholder";
 import { FullDescription } from "@/components/FullDescription";
+import { LockedLore } from "@/components/LockedLore";
 import { FavouriteButton } from "@/components/FavouriteButton";
 import { SizeComparison } from "@/components/SizeComparison";
+import { siteUrl } from "@/lib/site";
 
-/** Per-request plan check — do not bake full lore into static HTML. */
-export const dynamic = "force-dynamic";
+/**
+ * Statically prerendered. The page contains no per-user content: open entries
+ * render their lore inline, paywalled ones ship only the preview and let
+ * <LockedLore> fetch the rest through a server-checked route.
+ */
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -34,7 +37,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: giant.name,
     description: giant.shortDescription,
+    alternates: { canonical: `/giants/${giant.slug}` },
     openGraph: {
+      type: "article",
+      url: `/giants/${giant.slug}`,
       title: `${giant.name} · Giants of the World`,
       description: giant.shortDescription,
       images: giant.image ? [{ url: giant.image }] : undefined,
@@ -50,16 +56,73 @@ export default async function GiantDetailPage({ params }: Props) {
   const lore = getGiantLore(giant.slug);
   if (!lore) notFound();
 
-  const plan = await getUserPlan();
-  const unlocked = canViewFullDescription(plan);
   const freePreview = getFreePreview(lore.fullDescription);
   const hasMore = hasMoreContent(lore.fullDescription, lore.mysteryNote);
 
   const related = getRelatedGiants(giant);
   const isModern = giant.type === "modern-legend";
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": `${siteUrl}/giants/${giant.slug}#article`,
+        headline: giant.name,
+        description: giant.shortDescription,
+        about: {
+          "@type": "Thing",
+          name: giant.name,
+          alternateName: giant.alsoKnownAs,
+        },
+        image: giant.image ? `${siteUrl}${giant.image}` : undefined,
+        inLanguage: "en",
+        isPartOf: {
+          "@type": "WebSite",
+          name: "Giants of the World",
+          url: siteUrl,
+        },
+        keywords: [giant.culture, giant.region, ...giant.tags].join(", "),
+        citation: giant.sources,
+        // Paywall markup: tells Google the page is intentionally partial
+        // rather than cloaked. Open entries declare themselves fully free.
+        isAccessibleForFree: giant.freeEntry,
+        ...(giant.freeEntry
+          ? {}
+          : {
+              hasPart: {
+                "@type": "WebPageElement",
+                isAccessibleForFree: false,
+                cssSelector: ".paywalled-account",
+              },
+            }),
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Catalogue",
+            item: `${siteUrl}/giants`,
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: giant.name,
+            item: `${siteUrl}/giants/${giant.slug}`,
+          },
+        ],
+      },
+    ],
+  };
+
   return (
     <article className="mx-auto w-full max-w-4xl px-4 py-10 sm:px-6 sm:py-14">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <nav className="mb-6 flex min-w-0 flex-wrap items-center gap-x-2 text-sm text-text-muted">
         <Link href="/giants" className="shrink-0 hover:text-accent-gold">
           Catalogue
@@ -128,14 +191,20 @@ export default async function GiantDetailPage({ params }: Props) {
       )}
 
       <div className="mt-8 grid gap-8 lg:grid-cols-[1fr_220px]">
-        <div>
-          <FullDescription
-            freePreview={freePreview}
-            fullDescription={unlocked ? lore.fullDescription : null}
-            mysteryNote={unlocked ? lore.mysteryNote : null}
-            unlocked={unlocked}
-            hasMore={hasMore}
-          />
+        <div className="paywalled-account">
+          {giant.freeEntry ? (
+            <FullDescription
+              fullDescription={lore.fullDescription}
+              mysteryNote={lore.mysteryNote}
+              heading="Account"
+            />
+          ) : (
+            <LockedLore
+              slug={giant.slug}
+              freePreview={freePreview}
+              hasMore={hasMore}
+            />
+          )}
 
           {giant.sources.length > 0 && (
             <section className="mt-8">

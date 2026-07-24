@@ -48,7 +48,7 @@ function PricingInner() {
       return;
     }
     if (!userId) {
-      window.location.href = `/login?next=${encodeURIComponent("/pricing")}`;
+      window.location.assign(`/login?next=${encodeURIComponent("/pricing")}`);
       return;
     }
     setLoadingPlan(target);
@@ -64,7 +64,7 @@ function PricingInner() {
         redirect?: string;
       };
       if (res.status === 401 && data.redirect) {
-        window.location.href = data.redirect;
+        window.location.assign(data.redirect);
         return;
       }
       if (!res.ok || !data.url) {
@@ -72,7 +72,7 @@ function PricingInner() {
         setLoadingPlan(null);
         return;
       }
-      window.location.href = data.url;
+      window.location.assign(data.url);
     } catch {
       setError("Checkout failed. Please try again.");
       setLoadingPlan(null);
@@ -82,7 +82,7 @@ function PricingInner() {
   async function demoUnlock() {
     setError("");
     if (!userId) {
-      window.location.href = `/login?next=${encodeURIComponent("/pricing")}`;
+      window.location.assign(`/login?next=${encodeURIComponent("/pricing")}`);
       return;
     }
     setDemoLoading(true);
@@ -90,7 +90,7 @@ function PricingInner() {
       const res = await fetch("/api/demo/unlock", { method: "POST" });
       const data = (await res.json()) as { error?: string; redirect?: string };
       if (res.status === 401 && data.redirect) {
-        window.location.href = data.redirect;
+        window.location.assign(data.redirect);
         return;
       }
       if (!res.ok) {
@@ -117,7 +117,7 @@ function PricingInner() {
         setPortalLoading(false);
         return;
       }
-      window.location.href = data.url;
+      window.location.assign(data.url);
     } catch {
       setError("Could not open billing portal.");
       setPortalLoading(false);

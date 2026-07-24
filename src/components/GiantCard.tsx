@@ -1,8 +1,5 @@
-"use client";
-
 import Link from "next/link";
-import { motion } from "framer-motion";
-import { formatType, type GiantCardData } from "@/lib/giants";
+import { formatType, type GiantCardData } from "@/lib/format";
 import { FavouriteButton } from "./FavouriteButton";
 import { ImagePlaceholder } from "./ImagePlaceholder";
 
@@ -13,11 +10,9 @@ interface Props {
 
 export function GiantCard({ giant, index = 0 }: Props) {
   return (
-    <motion.article
-      initial={{ opacity: 0, y: 16, scale: 0.98 }}
-      animate={{ opacity: 1, y: 0, scale: 1 }}
-      transition={{ duration: 0.45, delay: Math.min(index * 0.04, 0.4) }}
-      className="relative"
+    <article
+      className="rise-in relative"
+      style={{ animationDelay: `${Math.min(index * 0.04, 0.4)}s` }}
     >
       <FavouriteButton slug={giant.slug} name={giant.name} variant="card" />
       <Link
@@ -35,6 +30,11 @@ export function GiantCard({ giant, index = 0 }: Props) {
             <span className="text-accent-gold/80">{giant.culture}</span>
             <span aria-hidden>·</span>
             <span>{formatType(giant.type)}</span>
+            {giant.freeEntry && (
+              <span className="rounded-full border border-accent-gold/40 px-1.5 py-px text-[9px] text-accent-gold">
+                Free
+              </span>
+            )}
           </div>
           <h2 className="mt-2 font-[family-name:var(--font-cinzel)] text-lg tracking-wide text-text-primary transition group-hover:text-accent-gold">
             {giant.name}
@@ -44,6 +44,6 @@ export function GiantCard({ giant, index = 0 }: Props) {
           </p>
         </div>
       </Link>
-    </motion.article>
+    </article>
   );
 }

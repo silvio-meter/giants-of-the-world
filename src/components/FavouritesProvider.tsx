@@ -41,21 +41,36 @@ export function FavouritesProvider({ children }: { children: ReactNode }) {
   const [ready, setReady] = useState(false);
 
   const refresh = useCallback(async () => {
-    if (!userId || !canUseFavourites(plan)) {
-      setSlugs(new Set());
-      setReady(true);
-      return;
-    }
-    const list = await fetchFavouriteSlugs();
+    const allowed = Boolean(userId) && canUseFavourites(plan);
+    // Always await exactly once, so state is never written synchronously from
+    // the effect — and free/anonymous readers still cost no request.
+    const list = await (allowed
+      ? fetchFavouriteSlugs()
+      : Promise.resolve<string[]>([]));
     setSlugs(new Set(list));
     setReady(true);
   }, [userId, plan]);
 
   useEffect(() => {
     if (!planReady) return;
-    setReady(false);
-    void refresh();
-  }, [planReady, refresh]);
+    let cancelled = false;
+
+    const allowed = Boolean(userId) && canUseFavourites(plan);
+    // Written from the promise callback, not the effect body.
+    (allowed ? fetchFavouriteSlugs() : Promise.resolve<string[]>([]))
+      .then((list) => {
+        if (cancelled) return;
+        setSlugs(new Set(list));
+        setReady(true);
+      })
+      .catch(() => {
+        if (!cancelled) setReady(true);
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [planReady, userId, plan]);
 
   const isFavourite = useCallback(
     (slug: string) => slugs.has(slug),

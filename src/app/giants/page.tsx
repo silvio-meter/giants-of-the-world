@@ -12,6 +12,7 @@ import {
 export const metadata: Metadata = {
   title: "Catalogue",
   description: "Browse giants by culture, type, region, or search.",
+  alternates: { canonical: "/giants" },
 };
 
 interface Props {
