@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { splitParagraphs } from "@/lib/content";
+import { refundDays } from "@/lib/site";
 import { MysteryNote } from "./MysteryNote";
 import { usePlan } from "./PlanProvider";
 
@@ -126,6 +127,9 @@ export function LockedLore({ slug, freePreview, hasMore }: Props) {
                 >
                   Unlock forever with Lifetime - $69
                 </Link>
+                <p className="mt-2 text-xs text-accent-gold/80">
+                  {refundDays}-day refund, no questions asked
+                </p>
                 <p className="mt-2.5 text-xs text-text-muted">
                   Or{" "}
                   <Link href="/pricing" className="text-accent-gold hover:underline">

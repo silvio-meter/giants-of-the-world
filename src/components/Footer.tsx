@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { refundDays, supportEmail } from "@/lib/site";
 
 export function Footer() {
   return (
@@ -11,6 +12,20 @@ export function Footer() {
           <p className="mt-2 max-w-md text-sm text-text-muted">
             A codex of giants from mythology, folklore, and modern legend.
             Modern military accounts are unverified oral tradition - not fact.
+          </p>
+          <p className="mt-3 text-sm text-text-muted">
+            <a
+              href={`mailto:${supportEmail}`}
+              className="hover:text-accent-gold"
+            >
+              {supportEmail}
+            </a>
+            <span className="mx-2 opacity-40" aria-hidden>
+              ·
+            </span>
+            <Link href="/terms" className="hover:text-accent-gold">
+              {refundDays}-day refund
+            </Link>
           </p>
         </div>
         <div className="flex flex-wrap gap-4 text-sm text-text-muted">
