@@ -10,7 +10,7 @@ import {
 } from "react-leaflet";
 import L from "leaflet";
 import Link from "next/link";
-import type { Giant } from "@/lib/types";
+import type { GiantCardData } from "@/lib/giants";
 
 function makeIcon(focused: boolean) {
   if (focused) {
@@ -67,7 +67,7 @@ function FitOrFocus({
 }
 
 interface Props {
-  giants: Giant[];
+  giants: GiantCardData[];
   focusSlug?: string | null;
   emphasizeFocus?: boolean;
 }

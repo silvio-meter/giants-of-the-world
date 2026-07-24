@@ -1,11 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import type { Giant } from "@/lib/types";
+import type { GiantCardData } from "@/lib/giants";
 import { usePlan } from "./PlanProvider";
 
 interface Props {
-  giant: Giant;
+  giant: Pick<GiantCardData, "name" | "height">;
 }
 
 /** Parse a rough meter estimate from free-text height, if possible. */

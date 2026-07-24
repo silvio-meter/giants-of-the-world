@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo } from "react";
-import type { Giant } from "@/lib/types";
+import type { GiantCardData } from "@/lib/giants";
 import { GiantsMapLoader } from "./GiantsMapLoader";
 import { useFavourites } from "./FavouritesProvider";
 
@@ -11,7 +11,7 @@ export function MapClientShell({
   focusSlug,
   favOnly,
 }: {
-  giants: Giant[];
+  giants: GiantCardData[];
   allCount: number;
   focusSlug: string | null;
   favOnly: boolean;

@@ -7,6 +7,7 @@ import {
   getGiantBySlug,
   getRelatedGiants,
 } from "@/lib/giants";
+import { getGiantLore } from "@/lib/giants-lore";
 import { getFreePreview, hasMoreContent } from "@/lib/content";
 import { canViewFullDescription } from "@/lib/access";
 import { getUserPlan } from "@/lib/profile";
@@ -46,10 +47,13 @@ export default async function GiantDetailPage({ params }: Props) {
   const giant = getGiantBySlug(slug);
   if (!giant) notFound();
 
+  const lore = getGiantLore(giant.slug);
+  if (!lore) notFound();
+
   const plan = await getUserPlan();
   const unlocked = canViewFullDescription(plan);
-  const freePreview = getFreePreview(giant.fullDescription);
-  const hasMore = hasMoreContent(giant.fullDescription, giant.mysteryNote);
+  const freePreview = getFreePreview(lore.fullDescription);
+  const hasMore = hasMoreContent(lore.fullDescription, lore.mysteryNote);
 
   const related = getRelatedGiants(giant);
   const isModern = giant.type === "modern-legend";
@@ -127,8 +131,8 @@ export default async function GiantDetailPage({ params }: Props) {
         <div>
           <FullDescription
             freePreview={freePreview}
-            fullDescription={unlocked ? giant.fullDescription : null}
-            mysteryNote={unlocked ? giant.mysteryNote : null}
+            fullDescription={unlocked ? lore.fullDescription : null}
+            mysteryNote={unlocked ? lore.mysteryNote : null}
             unlocked={unlocked}
             hasMore={hasMore}
           />

@@ -2,13 +2,12 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import type { Giant } from "@/lib/types";
-import { formatType } from "@/lib/giants";
+import { formatType, type GiantCardData } from "@/lib/giants";
 import { FavouriteButton } from "./FavouriteButton";
 import { ImagePlaceholder } from "./ImagePlaceholder";
 
 interface Props {
-  giant: Giant;
+  giant: GiantCardData;
   index?: number;
 }
 

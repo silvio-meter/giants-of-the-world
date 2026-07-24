@@ -1,0 +1,1870 @@
+[
+  {
+    "id": "ymir",
+    "slug": "ymir",
+    "name": "Ymir",
+    "alsoKnownAs": [
+      "Aurgelmir",
+      "Brimir",
+      "Bláinn"
+    ],
+    "culture": "Norse",
+    "region": "Scandinavia",
+    "type": "primordial",
+    "height": "Cosmic",
+    "shortDescription": "The first being. From his corpse the world was made.",
+    "related": [
+      "thrym",
+      "hrungnir",
+      "skrymir",
+      "bestla"
+    ],
+    "coordinates": [
+      64,
+      -19
+    ],
+    "tags": [
+      "creation",
+      "frost",
+      "primordial",
+      "edda"
+    ],
+    "sources": [
+      "Prose Edda",
+      "Poetic Edda (Vafþrúðnismál)"
+    ],
+    "image": "/images/giants/ymir.jpg",
+    "imageAlt": "Ymir, the primordial frost giant"
+  },
+  {
+    "id": "nephilim",
+    "slug": "nephilim",
+    "name": "Nephilim",
+    "alsoKnownAs": [
+      "The Fallen Ones",
+      "Gibborim"
+    ],
+    "culture": "Biblical / Near Eastern",
+    "region": "Near East",
+    "type": "race",
+    "height": "Varied (tradition: great stature)",
+    "shortDescription": "The mighty ones of old - offspring of the sons of God and daughters of men.",
+    "related": [
+      "goliath",
+      "og-of-bashan"
+    ],
+    "coordinates": [
+      31.5,
+      35
+    ],
+    "tags": [
+      "biblical",
+      "race",
+      "watchers",
+      "flood"
+    ],
+    "sources": [
+      "Genesis 6",
+      "Numbers 13",
+      "1 Enoch",
+      "Book of Jubilees"
+    ],
+    "image": "/images/giants/nephilim.jpg",
+    "imageAlt": "The Nephilim, mighty ones of old"
+  },
+  {
+    "id": "goliath",
+    "slug": "goliath",
+    "name": "Goliath of Gath",
+    "alsoKnownAs": [
+      "Goliath"
+    ],
+    "culture": "Biblical / Philistine",
+    "region": "Near East",
+    "type": "individual",
+    "height": "Six cubits and a span (Masoretic); four cubits (Dead Sea Scrolls)",
+    "shortDescription": "The Philistine champion of Gath who fell to a shepherd's stone.",
+    "related": [
+      "nephilim",
+      "og-of-bashan"
+    ],
+    "coordinates": [
+      31.69,
+      34.95
+    ],
+    "tags": [
+      "biblical",
+      "philistine",
+      "champion",
+      "david"
+    ],
+    "sources": [
+      "1 Samuel 17",
+      "2 Samuel 21",
+      "Dead Sea Scrolls (4QSamª)"
+    ],
+    "image": "/images/giants/goliath.jpg",
+    "imageAlt": "Goliath of Gath, Philistine champion"
+  },
+  {
+    "id": "og-of-bashan",
+    "slug": "og-of-bashan",
+    "name": "Og of Bashan",
+    "alsoKnownAs": [
+      "Og"
+    ],
+    "culture": "Biblical / Near Eastern",
+    "region": "Near East",
+    "type": "individual",
+    "height": "Implied by iron bed: ~9 cubits long",
+    "shortDescription": "Last of the Rephaim; king of Bashan whose iron bed was a wonder.",
+    "related": [
+      "nephilim",
+      "goliath"
+    ],
+    "coordinates": [
+      32.8,
+      35.8
+    ],
+    "tags": [
+      "biblical",
+      "rephaim",
+      "king",
+      "bashan"
+    ],
+    "sources": [
+      "Deuteronomy 3",
+      "Numbers 21",
+      "Psalm 135"
+    ],
+    "image": "/images/giants/og-of-bashan.jpg",
+    "imageAlt": "Og of Bashan, last of the Rephaim"
+  },
+  {
+    "id": "atlas",
+    "slug": "atlas",
+    "name": "Atlas",
+    "alsoKnownAs": [],
+    "culture": "Greek",
+    "region": "Mediterranean",
+    "type": "individual",
+    "height": "Titanic",
+    "shortDescription": "Titan condemned to hold the sky upon his shoulders.",
+    "related": [
+      "enceladus",
+      "porphyrion",
+      "alcyoneus"
+    ],
+    "coordinates": [
+      31,
+      -8
+    ],
+    "tags": [
+      "titan",
+      "sky",
+      "punishment",
+      "heracles"
+    ],
+    "sources": [
+      "Hesiod Theogony",
+      "Apollodorus",
+      "Pindar",
+      "Plato Critias"
+    ],
+    "image": "/images/giants/atlas.jpg",
+    "imageAlt": "Atlas bearing the heavens"
+  },
+  {
+    "id": "polyphemus",
+    "slug": "polyphemus",
+    "name": "Polyphemus",
+    "alsoKnownAs": [],
+    "culture": "Greek",
+    "region": "Mediterranean",
+    "type": "individual",
+    "height": "Cyclopean",
+    "shortDescription": "The one-eyed Cyclops who trapped Odysseus in his cave.",
+    "related": [
+      "orion",
+      "antaeus",
+      "geryon"
+    ],
+    "coordinates": [
+      37.5,
+      15.1
+    ],
+    "tags": [
+      "cyclops",
+      "odysseus",
+      "poseidon",
+      "sicily"
+    ],
+    "sources": [
+      "Homer Odyssey IX",
+      "Theocritus Idylls",
+      "Ovid Metamorphoses"
+    ],
+    "image": "/images/giants/polyphemus.jpg",
+    "imageAlt": "Polyphemus the Cyclops"
+  },
+  {
+    "id": "enceladus",
+    "slug": "enceladus",
+    "name": "Enceladus",
+    "alsoKnownAs": [],
+    "culture": "Greek",
+    "region": "Mediterranean",
+    "type": "individual",
+    "height": "Gigantic",
+    "shortDescription": "Giant buried beneath Sicily; his thrashing is said to cause earthquakes.",
+    "related": [
+      "atlas",
+      "porphyrion",
+      "polybotes",
+      "alcyoneus"
+    ],
+    "coordinates": [
+      37.75,
+      15
+    ],
+    "tags": [
+      "gigantomachy",
+      "etna",
+      "earthquake",
+      "athena"
+    ],
+    "sources": [
+      "Apollodorus",
+      "Virgil Aeneid",
+      "Pausanias"
+    ],
+    "image": "/images/giants/enceladus.jpg",
+    "imageAlt": "Enceladus buried beneath Etna"
+  },
+  {
+    "id": "antaeus",
+    "slug": "antaeus",
+    "name": "Antaeus",
+    "alsoKnownAs": [],
+    "culture": "Greek",
+    "region": "North Africa",
+    "type": "individual",
+    "height": "Giant",
+    "shortDescription": "Libyan giant who drew strength from the earth - until Heracles lifted him.",
+    "related": [
+      "polyphemus",
+      "atlas",
+      "geryon"
+    ],
+    "coordinates": [
+      35.8,
+      -5.8
+    ],
+    "tags": [
+      "wrestling",
+      "gaia",
+      "heracles",
+      "libya"
+    ],
+    "sources": [
+      "Apollodorus",
+      "Pindar",
+      "Plutarch Life of Sertorius"
+    ],
+    "image": "/images/giants/antaeus.jpg",
+    "imageAlt": "Antaeus wrestling Heracles"
+  },
+  {
+    "id": "alcyoneus",
+    "slug": "alcyoneus",
+    "name": "Alcyoneus",
+    "alsoKnownAs": [],
+    "culture": "Greek",
+    "region": "Mediterranean",
+    "type": "individual",
+    "height": "Gigantic",
+    "shortDescription": "Immortal on his native soil; slain only when dragged beyond its border.",
+    "related": [
+      "enceladus",
+      "porphyrion",
+      "atlas"
+    ],
+    "coordinates": [
+      40,
+      23.5
+    ],
+    "tags": [
+      "gigantomachy",
+      "immortality",
+      "heracles",
+      "pallene"
+    ],
+    "sources": [
+      "Apollodorus",
+      "Pindar Isthmian 6"
+    ],
+    "image": "/images/giants/alcyoneus.jpg",
+    "imageAlt": "Alcyoneus of the Gigantomachy"
+  },
+  {
+    "id": "porphyrion",
+    "slug": "porphyrion",
+    "name": "Porphyrion",
+    "alsoKnownAs": [],
+    "culture": "Greek",
+    "region": "Mediterranean",
+    "type": "individual",
+    "height": "Gigantic",
+    "shortDescription": "King of the Gigantes who assailed Hera and fell to Zeus and Heracles.",
+    "related": [
+      "enceladus",
+      "alcyoneus",
+      "polybotes",
+      "atlas"
+    ],
+    "coordinates": [
+      40.2,
+      23.3
+    ],
+    "tags": [
+      "gigantomachy",
+      "king",
+      "zeus",
+      "hera"
+    ],
+    "sources": [
+      "Apollodorus",
+      "Pindar"
+    ],
+    "image": "/images/giants/porphyrion.jpg",
+    "imageAlt": "Porphyrion, king of the Gigantes"
+  },
+  {
+    "id": "polybotes",
+    "slug": "polybotes",
+    "name": "Polybotes",
+    "alsoKnownAs": [],
+    "culture": "Greek",
+    "region": "Mediterranean",
+    "type": "individual",
+    "height": "Gigantic",
+    "shortDescription": "Pursued by Poseidon across the sea; crushed under the island of Nisyros.",
+    "related": [
+      "enceladus",
+      "porphyrion"
+    ],
+    "coordinates": [
+      36.59,
+      27.17
+    ],
+    "tags": [
+      "gigantomachy",
+      "poseidon",
+      "nisyros",
+      "island"
+    ],
+    "sources": [
+      "Apollodorus",
+      "Strabo"
+    ],
+    "image": "/images/giants/polybotes.jpg",
+    "imageAlt": "Polybotes crushed beneath Nisyros"
+  },
+  {
+    "id": "briareus",
+    "slug": "briareus",
+    "name": "Briareus",
+    "alsoKnownAs": [
+      "Aegaeon",
+      "The Hundred-Handed"
+    ],
+    "culture": "Greek",
+    "region": "Mediterranean",
+    "type": "primordial",
+    "height": "Vast",
+    "shortDescription": "Hundred-handed giant who aided Zeus against the Titans.",
+    "related": [
+      "atlas",
+      "ymir"
+    ],
+    "coordinates": [
+      38.5,
+      25
+    ],
+    "tags": [
+      "hecatoncheires",
+      "zeus",
+      "titanomachy",
+      "primordial"
+    ],
+    "sources": [
+      "Hesiod Theogony",
+      "Homer Iliad I"
+    ],
+    "image": "/images/giants/briareus.jpg",
+    "imageAlt": "Briareus the Hundred-Handed"
+  },
+  {
+    "id": "orion",
+    "slug": "orion",
+    "name": "Orion",
+    "alsoKnownAs": [],
+    "culture": "Greek",
+    "region": "Mediterranean",
+    "type": "individual",
+    "height": "Giant",
+    "shortDescription": "The hunter so great he was set among the stars.",
+    "related": [
+      "polyphemus",
+      "tityus"
+    ],
+    "coordinates": [
+      38.4,
+      26.1
+    ],
+    "tags": [
+      "hunter",
+      "constellation",
+      "artemis",
+      "scorpion"
+    ],
+    "sources": [
+      "Homer Odyssey",
+      "Hesiod",
+      "Apollodorus",
+      "Ovid"
+    ],
+    "image": "/images/giants/orion.jpg",
+    "imageAlt": "Orion the hunter"
+  },
+  {
+    "id": "geryon",
+    "slug": "geryon",
+    "name": "Geryon",
+    "alsoKnownAs": [
+      "Geryones"
+    ],
+    "culture": "Greek",
+    "region": "Iberia / Mediterranean",
+    "type": "individual",
+    "height": "Giant (three-bodied)",
+    "shortDescription": "Three-bodied giant of the far west whose cattle Heracles stole.",
+    "related": [
+      "antaeus",
+      "polyphemus",
+      "atlas"
+    ],
+    "coordinates": [
+      36.5,
+      -6.2
+    ],
+    "tags": [
+      "heracles",
+      "cattle",
+      "erytheia",
+      "west"
+    ],
+    "sources": [
+      "Hesiod Theogony",
+      "Apollodorus",
+      "Stesichorus Geryoneis"
+    ],
+    "image": "/images/giants/geryon.jpg",
+    "imageAlt": "Geryon of Erytheia"
+  },
+  {
+    "id": "tityus",
+    "slug": "tityus",
+    "name": "Tityus",
+    "alsoKnownAs": [],
+    "culture": "Greek",
+    "region": "Mediterranean",
+    "type": "individual",
+    "height": "Covered nine plethra when stretched",
+    "shortDescription": "Giant punished in the underworld; vultures feast forever on his liver.",
+    "related": [
+      "orion",
+      "polyphemus"
+    ],
+    "coordinates": [
+      38.5,
+      22.5
+    ],
+    "tags": [
+      "underworld",
+      "punishment",
+      "leto",
+      "apollo"
+    ],
+    "sources": [
+      "Homer Odyssey XI",
+      "Apollodorus",
+      "Pindar"
+    ],
+    "image": "/images/giants/tityus.jpg",
+    "imageAlt": "Tityus in the underworld"
+  },
+  {
+    "id": "talos",
+    "slug": "talos",
+    "name": "Talos",
+    "alsoKnownAs": [
+      "Talus"
+    ],
+    "culture": "Greek",
+    "region": "Mediterranean",
+    "type": "individual",
+    "height": "Giant (bronze)",
+    "shortDescription": "The bronze guardian of Crete - automaton giant with a single vein of ichor.",
+    "related": [
+      "orion",
+      "geryon"
+    ],
+    "coordinates": [
+      35.2,
+      25.1
+    ],
+    "tags": [
+      "bronze",
+      "crete",
+      "automaton",
+      "argonauts"
+    ],
+    "sources": [
+      "Apollonius Rhodius Argonautica",
+      "Apollodorus"
+    ],
+    "image": "/images/giants/talos.jpg",
+    "imageAlt": "Talos, bronze guardian of Crete"
+  },
+  {
+    "id": "thrym",
+    "slug": "thrym",
+    "name": "Thrym",
+    "alsoKnownAs": [
+      "Þrymr"
+    ],
+    "culture": "Norse",
+    "region": "Scandinavia",
+    "type": "individual",
+    "height": "Jötunn",
+    "shortDescription": "Frost giant who stole Mjölnir and demanded Freyja as bride.",
+    "related": [
+      "ymir",
+      "hrungnir",
+      "skrymir"
+    ],
+    "coordinates": [
+      65,
+      -18
+    ],
+    "tags": [
+      "jötunn",
+      "mjolnir",
+      "thor",
+      "freyja"
+    ],
+    "sources": [
+      "Poetic Edda (Þrymskviða)"
+    ],
+    "image": "/images/giants/thrym.jpg",
+    "imageAlt": "Thrym the frost giant"
+  },
+  {
+    "id": "hrungnir",
+    "slug": "hrungnir",
+    "name": "Hrungnir",
+    "alsoKnownAs": [],
+    "culture": "Norse",
+    "region": "Scandinavia",
+    "type": "individual",
+    "height": "Jötunn",
+    "shortDescription": "Stone-hearted giant who dueled Thor and left a whetstone in his head.",
+    "related": [
+      "ymir",
+      "thrym",
+      "skrymir"
+    ],
+    "coordinates": [
+      64.5,
+      -21
+    ],
+    "tags": [
+      "jötunn",
+      "thor",
+      "duel",
+      "stone"
+    ],
+    "sources": [
+      "Prose Edda (Skáldskaparmál)"
+    ],
+    "image": "/images/giants/hrungnir.jpg",
+    "imageAlt": "Hrungnir the stone giant"
+  },
+  {
+    "id": "skrymir",
+    "slug": "skrymir",
+    "name": "Skrymir",
+    "alsoKnownAs": [
+      "Útgarða-Loki",
+      "Skrýmir"
+    ],
+    "culture": "Norse",
+    "region": "Scandinavia",
+    "type": "individual",
+    "height": "Mountain-vast (illusion)",
+    "shortDescription": "The vast wanderer whose glove was a hall - master of illusions.",
+    "related": [
+      "ymir",
+      "thrym",
+      "hrungnir"
+    ],
+    "coordinates": [
+      66,
+      -18.5
+    ],
+    "tags": [
+      "jötunn",
+      "illusion",
+      "thor",
+      "utgard"
+    ],
+    "sources": [
+      "Prose Edda (Gylfaginning)"
+    ],
+    "image": "/images/giants/skrymir.jpg",
+    "imageAlt": "Skrymir, the vast illusionist"
+  },
+  {
+    "id": "bestla",
+    "slug": "bestla",
+    "name": "Bestla",
+    "alsoKnownAs": [],
+    "culture": "Norse",
+    "region": "Scandinavia",
+    "type": "individual",
+    "height": "Jötunn",
+    "shortDescription": "Frost-giantess mother of Odin - the gods' giant bloodline.",
+    "related": [
+      "ymir",
+      "thrym"
+    ],
+    "coordinates": [
+      64.8,
+      -19.5
+    ],
+    "tags": [
+      "jötunn",
+      "odin",
+      "mother",
+      "lineage"
+    ],
+    "sources": [
+      "Prose Edda",
+      "Poetic Edda (Hávamál)"
+    ],
+    "image": "/images/giants/bestla.jpg",
+    "imageAlt": "Bestla, mother of Odin"
+  },
+  {
+    "id": "balor",
+    "slug": "balor",
+    "name": "Balor",
+    "alsoKnownAs": [
+      "Balor of the Evil Eye",
+      "Balar"
+    ],
+    "culture": "Celtic / Irish",
+    "region": "Ireland",
+    "type": "individual",
+    "height": "Fomorian giant",
+    "shortDescription": "Fomorian king whose eye destroyed armies - slain by his grandson Lugh.",
+    "related": [
+      "cormoran",
+      "gogmagog"
+    ],
+    "coordinates": [
+      54.3,
+      -8.5
+    ],
+    "tags": [
+      "fomorian",
+      "evil-eye",
+      "lugh",
+      "mag-tuired"
+    ],
+    "sources": [
+      "Cath Maige Tuired",
+      "Lebor Gabála Érenn"
+    ],
+    "image": "/images/giants/balor.jpg",
+    "imageAlt": "Balor of the Evil Eye"
+  },
+  {
+    "id": "cormoran",
+    "slug": "cormoran",
+    "name": "Cormoran",
+    "alsoKnownAs": [],
+    "culture": "Celtic / Cornish",
+    "region": "Britain",
+    "type": "folklore",
+    "height": "About 18 feet (folklore)",
+    "shortDescription": "Cornish giant of St Michael's Mount, felled by Jack the Giant Killer.",
+    "related": [
+      "balor",
+      "gogmagog",
+      "paul-bunyan"
+    ],
+    "coordinates": [
+      50.116,
+      -5.477
+    ],
+    "tags": [
+      "cornwall",
+      "jack",
+      "folklore",
+      "st-michaels-mount"
+    ],
+    "sources": [
+      "Jack the Giant Killer (chapbook tradition)"
+    ],
+    "image": "/images/giants/cormoran.jpg",
+    "imageAlt": "Cormoran of St Michael's Mount"
+  },
+  {
+    "id": "gogmagog",
+    "slug": "gogmagog",
+    "name": "Gogmagog",
+    "alsoKnownAs": [
+      "Goemagot",
+      "Gog and Magog"
+    ],
+    "culture": "Celtic / British",
+    "region": "Britain",
+    "type": "folklore",
+    "height": "12 cubits (Geoffrey of Monmouth)",
+    "shortDescription": "British giant who wrestled Corineus and gave his name to London's guardians.",
+    "related": [
+      "cormoran",
+      "balor"
+    ],
+    "coordinates": [
+      50.7,
+      -4.5
+    ],
+    "tags": [
+      "britain",
+      "geoffrey",
+      "london",
+      "corineus"
+    ],
+    "sources": [
+      "Geoffrey of Monmouth Historia Regum Britanniae",
+      "London civic tradition"
+    ],
+    "image": "/images/giants/gogmagog.jpg",
+    "imageAlt": "Gogmagog the British giant"
+  },
+  {
+    "id": "jentilak",
+    "slug": "jentilak",
+    "name": "Jentilak",
+    "alsoKnownAs": [
+      "Jentil",
+      "Olentzero (related tradition)"
+    ],
+    "culture": "Basque",
+    "region": "Basque Country",
+    "type": "race",
+    "height": "Giant (folklore)",
+    "shortDescription": "Basque giants of the mountains who built megaliths and fled the new faith.",
+    "related": [
+      "olentzero",
+      "ojancanu"
+    ],
+    "coordinates": [
+      43,
+      -1.7
+    ],
+    "tags": [
+      "basque",
+      "megaliths",
+      "pre-christian",
+      "race"
+    ],
+    "sources": [
+      "Basque oral tradition",
+      "Folklore collections"
+    ],
+    "image": "/images/giants/jentilak.jpg",
+    "imageAlt": "Jentilak, Basque mountain giants"
+  },
+  {
+    "id": "olentzero",
+    "slug": "olentzero",
+    "name": "Olentzero",
+    "alsoKnownAs": [
+      "Olentzaro"
+    ],
+    "culture": "Basque",
+    "region": "Basque Country",
+    "type": "folklore",
+    "height": "Large (folklore)",
+    "shortDescription": "The Basque charcoal-burner of Christmas - last echo of the jentilak.",
+    "related": [
+      "jentilak"
+    ],
+    "coordinates": [
+      43.3,
+      -1.9
+    ],
+    "tags": [
+      "basque",
+      "christmas",
+      "folklore",
+      "jentilak"
+    ],
+    "sources": [
+      "Basque folk tradition"
+    ],
+    "image": "/images/giants/olentzero.jpg",
+    "imageAlt": "Olentzero the charcoal-burner"
+  },
+  {
+    "id": "ravana",
+    "slug": "ravana",
+    "name": "Ravana",
+    "alsoKnownAs": [
+      "Dashanana",
+      "Lankesh"
+    ],
+    "culture": "Hindu",
+    "region": "South Asia / Lanka",
+    "type": "individual",
+    "height": "Vast (ten-headed form)",
+    "shortDescription": "Ten-headed king of Lanka - scholar, devotee, abductor of Sita.",
+    "related": [
+      "kumbhakarna",
+      "hiranyakashipu",
+      "mahabali"
+    ],
+    "coordinates": [
+      7.9,
+      80.7
+    ],
+    "tags": [
+      "ramayana",
+      "lanka",
+      "ten-headed",
+      "shiva"
+    ],
+    "sources": [
+      "Vālmīki Rāmāyaṇa",
+      "Later puranic retellings"
+    ],
+    "image": "/images/giants/ravana.jpg",
+    "imageAlt": "Ravana, ten-headed king of Lanka"
+  },
+  {
+    "id": "kumbhakarna",
+    "slug": "kumbhakarna",
+    "name": "Kumbhakarna",
+    "alsoKnownAs": [],
+    "culture": "Hindu",
+    "region": "South Asia / Lanka",
+    "type": "individual",
+    "height": "Colossal",
+    "shortDescription": "Ravana's giant brother who slept six months and woke to war.",
+    "related": [
+      "ravana",
+      "mahabali"
+    ],
+    "coordinates": [
+      7.95,
+      80.75
+    ],
+    "tags": [
+      "ramayana",
+      "sleep",
+      "brother",
+      "lanka"
+    ],
+    "sources": [
+      "Vālmīki Rāmāyaṇa"
+    ],
+    "image": "/images/giants/kumbhakarna.jpg",
+    "imageAlt": "Kumbhakarna awakened for war"
+  },
+  {
+    "id": "hiranyakashipu",
+    "slug": "hiranyakashipu",
+    "name": "Hiranyakashipu",
+    "alsoKnownAs": [],
+    "culture": "Hindu",
+    "region": "South Asia",
+    "type": "individual",
+    "height": "Asura-giant",
+    "shortDescription": "Asura king who could not be killed by man or beast - until Narasimha.",
+    "related": [
+      "ravana",
+      "mahabali"
+    ],
+    "coordinates": [
+      25,
+      78
+    ],
+    "tags": [
+      "asura",
+      "narasimha",
+      "prahlada",
+      "boon"
+    ],
+    "sources": [
+      "Bhāgavata Purāṇa",
+      "Vishnu Purana"
+    ],
+    "image": "/images/giants/hiranyakashipu.jpg",
+    "imageAlt": "Hiranyakashipu and Narasimha"
+  },
+  {
+    "id": "mahabali",
+    "slug": "mahabali",
+    "name": "Mahabali",
+    "alsoKnownAs": [
+      "Bali",
+      "Maveli"
+    ],
+    "culture": "Hindu",
+    "region": "South Asia / Kerala",
+    "type": "individual",
+    "height": "Grew to cosmic size",
+    "shortDescription": "Generous asura king sent to the underworld by Vamana's three steps.",
+    "related": [
+      "ravana",
+      "hiranyakashipu",
+      "kumbhakarna"
+    ],
+    "coordinates": [
+      10.8,
+      76.2
+    ],
+    "tags": [
+      "onam",
+      "vamana",
+      "asura",
+      "kerala"
+    ],
+    "sources": [
+      "Bhāgavata Purāṇa",
+      "Kerala Onam tradition"
+    ],
+    "image": "/images/giants/mahabali.jpg",
+    "imageAlt": "Mahabali and Vamana"
+  },
+  {
+    "id": "svyatogor",
+    "slug": "svyatogor",
+    "name": "Svyatogor",
+    "alsoKnownAs": [
+      "Sviatogor"
+    ],
+    "culture": "Slavic",
+    "region": "Eastern Europe",
+    "type": "folklore",
+    "height": "Bogatyr-giant",
+    "shortDescription": "Mountain-strong bogatyr who could not be lifted by the earth itself.",
+    "related": [
+      "stallo",
+      "rubezahl"
+    ],
+    "coordinates": [
+      50,
+      36
+    ],
+    "tags": [
+      "bogatyr",
+      "bylina",
+      "ilya",
+      "mountain"
+    ],
+    "sources": [
+      "Russian byliny",
+      "Slavic folk tradition"
+    ],
+    "image": "/images/giants/svyatogor.jpg",
+    "imageAlt": "Svyatogor the bogatyr"
+  },
+  {
+    "id": "quinametzin",
+    "slug": "quinametzin",
+    "name": "Quinametzin",
+    "alsoKnownAs": [
+      "Quinames"
+    ],
+    "culture": "Mesoamerican / Aztec",
+    "region": "Mesoamerica",
+    "type": "race",
+    "height": "Giant (mythic race)",
+    "shortDescription": "Giant race of a previous sun who built great structures and fell to divine order.",
+    "related": [
+      "xelhua"
+    ],
+    "coordinates": [
+      19.4,
+      -99.1
+    ],
+    "tags": [
+      "aztec",
+      "previous-sun",
+      "builders",
+      "race"
+    ],
+    "sources": [
+      "Aztec codices and chronicles",
+      "Sahagún and later compilations"
+    ],
+    "image": "/images/giants/quinametzin.jpg",
+    "imageAlt": "Quinametzin, giants of a previous sun"
+  },
+  {
+    "id": "xelhua",
+    "slug": "xelhua",
+    "name": "Xelhua",
+    "alsoKnownAs": [],
+    "culture": "Mesoamerican",
+    "region": "Mesoamerica",
+    "type": "individual",
+    "height": "Giant",
+    "shortDescription": "Giant survivor of the flood who raised the great pyramid of Cholula.",
+    "related": [
+      "quinametzin"
+    ],
+    "coordinates": [
+      19.06,
+      -98.3
+    ],
+    "tags": [
+      "cholula",
+      "flood",
+      "pyramid",
+      "builder"
+    ],
+    "sources": [
+      "Central Mexican chronicles",
+      "Cholula tradition"
+    ],
+    "image": "/images/giants/xelhua.jpg",
+    "imageAlt": "Xelhua, builder of Cholula"
+  },
+  {
+    "id": "kua-fu",
+    "slug": "kua-fu",
+    "name": "Kua Fu",
+    "alsoKnownAs": [
+      "Kuafū"
+    ],
+    "culture": "Chinese",
+    "region": "East Asia",
+    "type": "individual",
+    "height": "Giant",
+    "shortDescription": "The giant who chased the sun and died of thirst - staff becoming a forest.",
+    "related": [
+      "fangfeng"
+    ],
+    "coordinates": [
+      35,
+      110
+    ],
+    "tags": [
+      "sun",
+      "shan-hai-jing",
+      "thirst",
+      "forest"
+    ],
+    "sources": [
+      "Shan Hai Jing (Classic of Mountains and Seas)"
+    ],
+    "image": "/images/giants/kua-fu.jpg",
+    "imageAlt": "Kua Fu chasing the sun"
+  },
+  {
+    "id": "fangfeng",
+    "slug": "fangfeng",
+    "name": "Fangfeng",
+    "alsoKnownAs": [
+      "Fang Feng"
+    ],
+    "culture": "Chinese",
+    "region": "East Asia",
+    "type": "individual",
+    "height": "Giant (one of the tallest in lore)",
+    "shortDescription": "Giant executed by Yu the Great for arriving late to the flood assembly.",
+    "related": [
+      "kua-fu"
+    ],
+    "coordinates": [
+      30.5,
+      120
+    ],
+    "tags": [
+      "yu-the-great",
+      "flood",
+      "execution",
+      "height"
+    ],
+    "sources": [
+      "Guoyu",
+      "Later historical and mythic compilations"
+    ],
+    "image": "/images/giants/fangfeng.jpg",
+    "imageAlt": "Fangfeng the giant"
+  },
+  {
+    "id": "oni",
+    "slug": "oni",
+    "name": "Oni",
+    "alsoKnownAs": [
+      "Japanese ogres"
+    ],
+    "culture": "Japanese",
+    "region": "East Asia",
+    "type": "race",
+    "height": "Larger than human (variable)",
+    "shortDescription": "Horned ogres of Japanese folklore - punishers, marauders, festival demons.",
+    "related": [
+      "shuten-doji"
+    ],
+    "coordinates": [
+      35,
+      135
+    ],
+    "tags": [
+      "yokai",
+      "oni",
+      "setsubun",
+      "race"
+    ],
+    "sources": [
+      "Japanese folk tradition",
+      "Konjaku and later setsua"
+    ],
+    "image": "/images/giants/oni.jpg",
+    "imageAlt": "Oni of Japanese folklore"
+  },
+  {
+    "id": "shuten-doji",
+    "slug": "shuten-doji",
+    "name": "Shuten Dōji",
+    "alsoKnownAs": [
+      "Shuten-dōji"
+    ],
+    "culture": "Japanese",
+    "region": "East Asia",
+    "type": "individual",
+    "height": "Oni-giant",
+    "shortDescription": "Demon king of Mount Ōe - drunkard oni slain by Raikō's band.",
+    "related": [
+      "oni"
+    ],
+    "coordinates": [
+      35,
+      135.5
+    ],
+    "tags": [
+      "oni",
+      "raiko",
+      "mount-oe",
+      "kyoto"
+    ],
+    "sources": [
+      "Ōeyama emaki and related otogi-zōshi"
+    ],
+    "image": "/images/giants/shuten-doji.jpg",
+    "imageAlt": "Shuten Dōji, demon king of Mount Ōe"
+  },
+  {
+    "id": "dzunukwa",
+    "slug": "dzunukwa",
+    "name": "Dzunukwa",
+    "alsoKnownAs": [
+      "Tsonoqua",
+      "Wild Woman of the Woods"
+    ],
+    "culture": "Kwakwaka'wakw / Northwest Coast",
+    "region": "Pacific Northwest",
+    "type": "folklore",
+    "height": "Giantess",
+    "shortDescription": "Giantess of the woods who steals children and owns treasures of copper and power.",
+    "related": [
+      "si-te-cah",
+      "tsul-kalu",
+      "kee-wakw"
+    ],
+    "coordinates": [
+      50.6,
+      -126.5
+    ],
+    "tags": [
+      "kwakwaka'wakw",
+      "forest",
+      "potlatch",
+      "giantess"
+    ],
+    "sources": [
+      "Kwakwaka'wakw oral tradition",
+      "Boas and later ethnography"
+    ],
+    "image": "/images/giants/dzunukwa.jpg",
+    "imageAlt": "Dzunukwa, Wild Woman of the Woods"
+  },
+  {
+    "id": "si-te-cah",
+    "slug": "si-te-cah",
+    "name": "Si-Te-Cah",
+    "alsoKnownAs": [
+      "Sai'i"
+    ],
+    "culture": "Paiute",
+    "region": "North America",
+    "type": "race",
+    "height": "Tall (oral tradition)",
+    "shortDescription": "Red-haired cannibal giants of Paiute tradition, linked to Lovelock Cave.",
+    "related": [
+      "dzunukwa",
+      "tsul-kalu",
+      "gaoh"
+    ],
+    "coordinates": [
+      40.18,
+      -118.47
+    ],
+    "tags": [
+      "paiute",
+      "lovelock",
+      "red-hair",
+      "oral-history"
+    ],
+    "sources": [
+      "Paiute oral tradition",
+      "Lovelock Cave archaeology (context)"
+    ],
+    "image": "/images/giants/si-te-cah.jpg",
+    "imageAlt": "Si-Te-Cah of Paiute tradition"
+  },
+  {
+    "id": "tsul-kalu",
+    "slug": "tsul-kalu",
+    "name": "Tsul 'Kalu",
+    "alsoKnownAs": [
+      "Judaculla",
+      "The Slant-Eyed Giant"
+    ],
+    "culture": "Cherokee",
+    "region": "North America",
+    "type": "individual",
+    "height": "Giant",
+    "shortDescription": "Cherokee lord of the hunt - slant-eyed giant of the mountains.",
+    "related": [
+      "dzunukwa",
+      "si-te-cah",
+      "gaoh"
+    ],
+    "coordinates": [
+      35.3,
+      -83.1
+    ],
+    "tags": [
+      "cherokee",
+      "hunt",
+      "appalachia",
+      "judaculla"
+    ],
+    "sources": [
+      "Cherokee oral tradition",
+      "Mooney Myths of the Cherokee"
+    ],
+    "image": "/images/giants/tsul-kalu.jpg",
+    "imageAlt": "Tsul 'Kalu, the Slant-Eyed Giant"
+  },
+  {
+    "id": "kee-wakw",
+    "slug": "kee-wakw",
+    "name": "Kee-Wakw",
+    "alsoKnownAs": [
+      "Giwakwa",
+      "Kiwakw"
+    ],
+    "culture": "Abenaki / Wabanaki",
+    "region": "North America",
+    "type": "folklore",
+    "height": "Giant",
+    "shortDescription": "Ice-hearted cannibal giant of northern forests - a winter horror.",
+    "related": [
+      "dzunukwa",
+      "si-te-cah"
+    ],
+    "coordinates": [
+      45.5,
+      -70
+    ],
+    "tags": [
+      "abenaki",
+      "winter",
+      "cannibal",
+      "forest"
+    ],
+    "sources": [
+      "Wabanaki oral traditions"
+    ],
+    "image": "/images/giants/kee-wakw.jpg",
+    "imageAlt": "Kee-Wakw of Wabanaki tradition"
+  },
+  {
+    "id": "gaoh",
+    "slug": "gaoh",
+    "name": "Gaoh",
+    "alsoKnownAs": [
+      "Gǎoh"
+    ],
+    "culture": "Iroquois / Haudenosaunee",
+    "region": "North America",
+    "type": "individual",
+    "height": "Spirit-giant",
+    "shortDescription": "Master of the winds - a giant spirit who pens the gales.",
+    "related": [
+      "tsul-kalu",
+      "si-te-cah"
+    ],
+    "coordinates": [
+      43,
+      -76
+    ],
+    "tags": [
+      "haudenosaunee",
+      "wind",
+      "spirit",
+      "sky"
+    ],
+    "sources": [
+      "Haudenosaunee tradition",
+      "Ethnographic collections"
+    ],
+    "image": "/images/giants/gaoh.jpg",
+    "imageAlt": "Gaoh, master of the winds"
+  },
+  {
+    "id": "budj-bim",
+    "slug": "budj-bim",
+    "name": "Budj Bim Giants",
+    "alsoKnownAs": [
+      "Associated with Budj Bim / Tyrendarra country"
+    ],
+    "culture": "Australian Aboriginal (Gunditjmara related landscape)",
+    "region": "Australia",
+    "type": "folklore",
+    "height": "Ancestral / giant scale",
+    "shortDescription": "Ancestral beings of giant scale in the volcanic landscape of Budj Bim.",
+    "related": [
+      "papinijuwari",
+      "murkupang",
+      "thardid-jimbo"
+    ],
+    "coordinates": [
+      -38.05,
+      141.92
+    ],
+    "tags": [
+      "gunditjmara",
+      "budj-bim",
+      "ancestral",
+      "country"
+    ],
+    "sources": [
+      "Gunditjmara knowledge (public aspects)",
+      "Budj Bim UNESCO documentation"
+    ],
+    "image": "/images/giants/budj-bim.jpg",
+    "imageAlt": "Ancestral giants of Budj Bim country"
+  },
+  {
+    "id": "papinijuwari",
+    "slug": "papinijuwari",
+    "name": "Papinijuwari",
+    "alsoKnownAs": [],
+    "culture": "Australian Aboriginal (Tiwi)",
+    "region": "Australia",
+    "type": "folklore",
+    "height": "Giant",
+    "shortDescription": "One-eyed giant spirits of Tiwi tradition who hunt with clubs and bags.",
+    "related": [
+      "budj-bim",
+      "murkupang",
+      "chinny-kinik"
+    ],
+    "coordinates": [
+      -11.6,
+      130.9
+    ],
+    "tags": [
+      "tiwi",
+      "one-eye",
+      "spirit",
+      "islands"
+    ],
+    "sources": [
+      "Tiwi oral tradition",
+      "Published ethnographic summaries"
+    ],
+    "image": "/images/giants/papinijuwari.jpg",
+    "imageAlt": "Papinijuwari of Tiwi tradition"
+  },
+  {
+    "id": "murkupang",
+    "slug": "murkupang",
+    "name": "Murkupang",
+    "alsoKnownAs": [],
+    "culture": "Australian Aboriginal",
+    "region": "Australia",
+    "type": "folklore",
+    "height": "Giant",
+    "shortDescription": "Giant figure in northern Australian story cycles of pursuit and country.",
+    "related": [
+      "budj-bim",
+      "papinijuwari",
+      "thardid-jimbo"
+    ],
+    "coordinates": [
+      -12.5,
+      131
+    ],
+    "tags": [
+      "australia",
+      "songline",
+      "giant",
+      "country"
+    ],
+    "sources": [
+      "Aboriginal oral traditions (public accounts)"
+    ],
+    "image": "/images/giants/murkupang.jpg",
+    "imageAlt": "Murkupang"
+  },
+  {
+    "id": "thardid-jimbo",
+    "slug": "thardid-jimbo",
+    "name": "Thardid Jimbo",
+    "alsoKnownAs": [],
+    "culture": "Australian Aboriginal",
+    "region": "Australia",
+    "type": "folklore",
+    "height": "Giant",
+    "shortDescription": "Cannibal giant of southeastern Aboriginal tales - a terror of the camp edge.",
+    "related": [
+      "papinijuwari",
+      "chinny-kinik",
+      "budj-bim"
+    ],
+    "coordinates": [
+      -37,
+      144
+    ],
+    "tags": [
+      "australia",
+      "cannibal",
+      "folklore"
+    ],
+    "sources": [
+      "Aboriginal story collections (southeastern)"
+    ],
+    "image": "/images/giants/thardid-jimbo.jpg",
+    "imageAlt": "Thardid Jimbo"
+  },
+  {
+    "id": "chinny-kinik",
+    "slug": "chinny-kinik",
+    "name": "Chinny-kinik",
+    "alsoKnownAs": [],
+    "culture": "Australian Aboriginal",
+    "region": "Australia",
+    "type": "folklore",
+    "height": "Giant",
+    "shortDescription": "Giant being in Aboriginal narrative - sparse in print, strong in place.",
+    "related": [
+      "thardid-jimbo",
+      "papinijuwari"
+    ],
+    "coordinates": [
+      -25,
+      135
+    ],
+    "tags": [
+      "australia",
+      "giant",
+      "oral"
+    ],
+    "sources": [
+      "Aboriginal oral / ethnographic notes"
+    ],
+    "image": "/images/giants/chinny-kinik.jpg",
+    "imageAlt": "Chinny-kinik"
+  },
+  {
+    "id": "maero",
+    "slug": "maero",
+    "name": "Maero",
+    "alsoKnownAs": [
+      "Mohoao",
+      "Maeroero"
+    ],
+    "culture": "Māori / Polynesian",
+    "region": "Aotearoa / Polynesia",
+    "type": "race",
+    "height": "Large wild humanoids",
+    "shortDescription": "Wild folk of the forest in Māori tradition - long fingers, fierce, untamed.",
+    "related": [
+      "kahui-tipua",
+      "nawao"
+    ],
+    "coordinates": [
+      -39,
+      176
+    ],
+    "tags": [
+      "maori",
+      "forest",
+      "wild",
+      "aotearoa"
+    ],
+    "sources": [
+      "Māori oral tradition",
+      "Ethnographic collections"
+    ],
+    "image": "/images/giants/maero.jpg",
+    "imageAlt": "Maero of the forest"
+  },
+  {
+    "id": "kahui-tipua",
+    "slug": "kahui-tipua",
+    "name": "Kahui-Tipua",
+    "alsoKnownAs": [
+      "Kāhui Tipua"
+    ],
+    "culture": "Māori",
+    "region": "Aotearoa / Polynesia",
+    "type": "race",
+    "height": "Giant / supernatural",
+    "shortDescription": "Bands of supernatural giants in Māori tradition - tipua of collective power.",
+    "related": [
+      "maero",
+      "nawao"
+    ],
+    "coordinates": [
+      -38.5,
+      175.5
+    ],
+    "tags": [
+      "maori",
+      "tipua",
+      "supernatural",
+      "race"
+    ],
+    "sources": [
+      "Māori oral tradition"
+    ],
+    "image": "/images/giants/kahui-tipua.jpg",
+    "imageAlt": "Kāhui Tipua"
+  },
+  {
+    "id": "nawao",
+    "slug": "nawao",
+    "name": "Nawao",
+    "alsoKnownAs": [
+      "Mū",
+      "Tūrehu related complexes"
+    ],
+    "culture": "Māori",
+    "region": "Aotearoa / Polynesia",
+    "type": "race",
+    "height": "Large",
+    "shortDescription": "Wild people of early Aotearoa tradition - forest dwellers of great strength.",
+    "related": [
+      "maero",
+      "kahui-tipua"
+    ],
+    "coordinates": [
+      -38,
+      176.5
+    ],
+    "tags": [
+      "maori",
+      "wild-people",
+      "forest"
+    ],
+    "sources": [
+      "Māori tradition",
+      "Historical compilations"
+    ],
+    "image": "/images/giants/nawao.jpg",
+    "imageAlt": "Nawao"
+  },
+  {
+    "id": "amazimu",
+    "slug": "amazimu",
+    "name": "Amazimu",
+    "alsoKnownAs": [
+      "Zimu",
+      "Izimu"
+    ],
+    "culture": "Zulu / Nguni",
+    "region": "Southern Africa",
+    "type": "race",
+    "height": "Ogre-giant",
+    "shortDescription": "Cannibal ogres of Zulu and related folklore - shape-shifting eaters of the unwary.",
+    "related": [
+      "giant-of-the-forest"
+    ],
+    "coordinates": [
+      -28.5,
+      30
+    ],
+    "tags": [
+      "zulu",
+      "ogre",
+      "folktale",
+      "race"
+    ],
+    "sources": [
+      "Zulu oral tradition",
+      "Folktale collections"
+    ],
+    "image": "/images/giants/amazimu.jpg",
+    "imageAlt": "Amazimu ogres"
+  },
+  {
+    "id": "giant-of-the-forest",
+    "slug": "giant-of-the-forest",
+    "name": "Giant of the Forest",
+    "alsoKnownAs": [
+      "Dodo (Hausa tradition variants)",
+      "Forest giant"
+    ],
+    "culture": "Hausa / West African",
+    "region": "West Africa",
+    "type": "folklore",
+    "height": "Giant",
+    "shortDescription": "West African forest giant of tale cycles - a being of the deep bush.",
+    "related": [
+      "amazimu"
+    ],
+    "coordinates": [
+      12,
+      8.5
+    ],
+    "tags": [
+      "hausa",
+      "forest",
+      "folktale",
+      "west-africa"
+    ],
+    "sources": [
+      "Hausa and West African oral traditions"
+    ],
+    "image": "/images/giants/giant-of-the-forest.jpg",
+    "imageAlt": "Giant of the Forest"
+  },
+  {
+    "id": "stallo",
+    "slug": "stallo",
+    "name": "Stallo",
+    "alsoKnownAs": [
+      "Stállu",
+      "Stalo"
+    ],
+    "culture": "Sámi",
+    "region": "Northern Europe",
+    "type": "folklore",
+    "height": "Large / troll-giant",
+    "shortDescription": "Sámi giant-troll of the north - strong, dull-witted, dangerous to herders.",
+    "related": [
+      "svyatogor",
+      "rubezahl",
+      "ojancanu"
+    ],
+    "coordinates": [
+      68,
+      22
+    ],
+    "tags": [
+      "sami",
+      "troll",
+      "north",
+      "reindeer"
+    ],
+    "sources": [
+      "Sámi oral tradition",
+      "Folklore collections"
+    ],
+    "image": "/images/giants/stallo.jpg",
+    "imageAlt": "Stallo of Sámi folklore"
+  },
+  {
+    "id": "ojancanu",
+    "slug": "ojancanu",
+    "name": "Ojáncanu",
+    "alsoKnownAs": [
+      "Ojáncano"
+    ],
+    "culture": "Cantabrian",
+    "region": "Iberia",
+    "type": "folklore",
+    "height": "Giant",
+    "shortDescription": "One-eyed Cantabrian giant of the forest - enemy of the good anjana.",
+    "related": [
+      "stallo",
+      "jentilak",
+      "rubezahl"
+    ],
+    "coordinates": [
+      43.2,
+      -4
+    ],
+    "tags": [
+      "cantabria",
+      "one-eye",
+      "forest",
+      "anjana"
+    ],
+    "sources": [
+      "Cantabrian mythology collections"
+    ],
+    "image": "/images/giants/ojancanu.jpg",
+    "imageAlt": "Ojáncanu of Cantabria"
+  },
+  {
+    "id": "rubezahl",
+    "slug": "rubezahl",
+    "name": "Rübezahl",
+    "alsoKnownAs": [
+      "Liczyrzepa",
+      "Duch Gór",
+      "Lord of the Mountains"
+    ],
+    "culture": "German / Silesian / Czech",
+    "region": "Central Europe",
+    "type": "folklore",
+    "height": "Shapeshifting (giant form common)",
+    "shortDescription": "Mountain spirit of the Riesengebirge - trickster, giant, weather-lord.",
+    "related": [
+      "stallo",
+      "svyatogor",
+      "ojancanu"
+    ],
+    "coordinates": [
+      50.75,
+      15.7
+    ],
+    "tags": [
+      "riesengebirge",
+      "trickster",
+      "mountain",
+      "weather"
+    ],
+    "sources": [
+      "Silesian and Bohemian folk tradition",
+      "Musäus and later collections"
+    ],
+    "image": "/images/giants/rubezahl.jpg",
+    "imageAlt": "Rübezahl of the Giant Mountains"
+  },
+  {
+    "id": "giant-of-kandahar",
+    "slug": "giant-of-kandahar",
+    "name": "Giant of Kandahar",
+    "alsoKnownAs": [],
+    "culture": "Modern legend",
+    "region": "Afghanistan",
+    "type": "modern-legend",
+    "height": "Reports claim ~12–15 feet (unverified)",
+    "shortDescription": "Unverified modern military legend of a red-haired giant near Kandahar.",
+    "related": [
+      "giant-of-kunar",
+      "si-te-cah"
+    ],
+    "coordinates": [
+      31.6,
+      65.7
+    ],
+    "tags": [
+      "modern-legend",
+      "unverified",
+      "military",
+      "afghanistan"
+    ],
+    "sources": [
+      "Unverified oral accounts",
+      "Secondary media retellings"
+    ],
+    "image": "/images/giants/giant-of-kandahar.jpg",
+    "imageAlt": "Giant of Kandahar (unverified modern legend)"
+  },
+  {
+    "id": "giant-of-kunar",
+    "slug": "giant-of-kunar",
+    "name": "Giant of Kunar",
+    "alsoKnownAs": [],
+    "culture": "Modern legend",
+    "region": "Afghanistan",
+    "type": "modern-legend",
+    "height": "Reports claim extreme stature (unverified)",
+    "shortDescription": "Unverified legend of a giant observed in Kunar Province.",
+    "related": [
+      "giant-of-kandahar"
+    ],
+    "coordinates": [
+      35,
+      71
+    ],
+    "tags": [
+      "modern-legend",
+      "unverified",
+      "military",
+      "kunar"
+    ],
+    "sources": [
+      "Unverified oral accounts"
+    ],
+    "image": "/images/giants/giant-of-kunar.jpg",
+    "imageAlt": "Giant of Kunar (unverified modern legend)"
+  },
+  {
+    "id": "paul-bunyan",
+    "slug": "paul-bunyan",
+    "name": "Paul Bunyan",
+    "alsoKnownAs": [],
+    "culture": "American tall-tale",
+    "region": "North America",
+    "type": "tall-tale",
+    "height": "As tall as the tale requires",
+    "shortDescription": "Lumberjack giant of American tall tales - Babe the Blue Ox at his side.",
+    "related": [
+      "cormoran",
+      "gogmagog"
+    ],
+    "coordinates": [
+      47.5,
+      -94.5
+    ],
+    "tags": [
+      "tall-tale",
+      "lumberjack",
+      "babe",
+      "america"
+    ],
+    "sources": [
+      "American lumber camp oral tradition",
+      "Laughead and later popularizations"
+    ],
+    "image": "/images/giants/paul-bunyan.jpg",
+    "imageAlt": "Paul Bunyan and Babe the Blue Ox"
+  }
+]

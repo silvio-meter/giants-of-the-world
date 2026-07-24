@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import type { Giant } from "@/lib/types";
+import type { GiantCardData } from "@/lib/giants";
 
 const GiantsMap = dynamic(
   () => import("./GiantsMap").then((m) => m.GiantsMap),
@@ -20,7 +20,7 @@ export function GiantsMapLoader({
   focusSlug,
   emphasizeFocus = true,
 }: {
-  giants: Giant[];
+  giants: GiantCardData[];
   focusSlug?: string | null;
   emphasizeFocus?: boolean;
 }) {
