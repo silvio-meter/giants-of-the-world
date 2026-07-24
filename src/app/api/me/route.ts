@@ -17,6 +17,10 @@ export async function GET() {
       userId: profile?.id ?? null,
       email: profile?.email ?? null,
       plan: profile?.plan ?? "free",
+      // Whether a Stripe customer exists at all. Comped and never-paid
+      // accounts have none, and the billing portal cannot open without one.
+      // Only the boolean is exposed — never the customer id.
+      hasBilling: Boolean(profile?.stripe_customer_id),
     },
     { headers: { "Cache-Control": "private, no-store" } }
   );

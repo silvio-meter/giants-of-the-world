@@ -17,9 +17,15 @@ interface Me {
   userId: string | null;
   email: string | null;
   plan: string;
+  hasBilling: boolean;
 }
 
-const SIGNED_OUT: Me = { userId: null, email: null, plan: "free" };
+const SIGNED_OUT: Me = {
+  userId: null,
+  email: null,
+  plan: "free",
+  hasBilling: false,
+};
 
 /** Never rejects — a failed lookup simply means "treat as signed out". */
 async function fetchMe(): Promise<Me> {
@@ -37,6 +43,8 @@ interface PlanContextValue {
   isPaid: boolean;
   email: string | null;
   userId: string | null;
+  /** A Stripe customer exists, so the billing portal can actually open. */
+  hasBilling: boolean;
   ready: boolean;
   configured: boolean;
   refresh: () => Promise<void>;
@@ -48,6 +56,7 @@ const PlanContext = createContext<PlanContextValue>({
   isPaid: false,
   email: null,
   userId: null,
+  hasBilling: false,
   ready: false,
   configured: false,
   refresh: async () => {},
@@ -66,6 +75,7 @@ export function PlanProvider({ children }: { children: ReactNode }) {
   const [plan, setPlan] = useState<UserPlan>("free");
   const [email, setEmail] = useState<string | null>(null);
   const [userId, setUserId] = useState<string | null>(null);
+  const [hasBilling, setHasBilling] = useState(false);
   const configured = isBrowserSupabaseReady();
   // Without auth configured there is nothing to wait for, so start ready.
   const [ready, setReady] = useState(!configured);
@@ -76,6 +86,7 @@ export function PlanProvider({ children }: { children: ReactNode }) {
     setUserId(me.userId);
     setEmail(me.email);
     setPlan(parsePlan(me.plan));
+    setHasBilling(me.hasBilling);
     setReady(true);
   }, [configured]);
 
@@ -88,6 +99,7 @@ export function PlanProvider({ children }: { children: ReactNode }) {
     setUserId(null);
     setEmail(null);
     setPlan("free");
+    setHasBilling(false);
     router.refresh();
   }, [router]);
 
@@ -103,6 +115,7 @@ export function PlanProvider({ children }: { children: ReactNode }) {
         setUserId(me.userId);
         setEmail(me.email);
         setPlan(parsePlan(me.plan));
+        setHasBilling(me.hasBilling);
         setReady(true);
       })
       .catch(() => {
@@ -120,12 +133,13 @@ export function PlanProvider({ children }: { children: ReactNode }) {
       isPaid: isPaidPlan(plan),
       email,
       userId,
+      hasBilling,
       ready,
       configured,
       refresh,
       signOut,
     }),
-    [plan, email, userId, ready, configured, refresh, signOut]
+    [plan, email, userId, hasBilling, ready, configured, refresh, signOut]
   );
 
   return <PlanContext.Provider value={value}>{children}</PlanContext.Provider>;

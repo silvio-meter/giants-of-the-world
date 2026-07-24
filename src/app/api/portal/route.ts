@@ -28,8 +28,13 @@ export async function POST() {
       .maybeSingle();
 
     if (!profile?.stripe_customer_id) {
+      // Reached by comped accounts and by anyone who never checked out. The UI
+      // hides the button in both cases; this is the direct-request fallback.
       return NextResponse.json(
-        { error: "No billing account found." },
+        {
+          error:
+            "There is no billing account on this profile — nothing has been charged, so there is nothing to manage.",
+        },
         { status: 400 }
       );
     }
