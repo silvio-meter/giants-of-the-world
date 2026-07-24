@@ -12,6 +12,8 @@ import {
   getTags,
   getTypes,
 } from "@/lib/giants";
+import { canUseMapFilters } from "@/lib/access";
+import { getUserPlan } from "@/lib/profile";
 
 export const metadata: Metadata = {
   title: "World Map",
@@ -36,15 +38,24 @@ export default async function MapPage({ searchParams }: Props) {
   const focusSlug = sp.focus?.trim() || null;
   const focusGiant = focusSlug ? getGiantBySlug(focusSlug) : undefined;
 
+  /**
+   * Advertised as a paid tool, so enforce it here rather than only hiding the
+   * controls. Previously any visitor could apply them by typing /map?culture=…
+   *
+   * Focus is not gated: it is how a giant's own page links to the map.
+   */
+  const plan = await getUserPlan();
+  const filtersUnlocked = canUseMapFilters(plan);
+
   const baseFiltered = filterGiants({
-    culture: sp.culture,
-    type: sp.type,
-    region: sp.region,
-    tag: sp.tag,
+    culture: filtersUnlocked ? sp.culture : undefined,
+    type: filtersUnlocked ? sp.type : undefined,
+    region: filtersUnlocked ? sp.region : undefined,
+    tag: filtersUnlocked ? sp.tag : undefined,
     requireCoordinates: true,
   });
 
-  const favOnly = sp.fav === "1";
+  const favOnly = filtersUnlocked && sp.fav === "1";
 
   return (
     <div className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
