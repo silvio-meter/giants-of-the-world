@@ -19,6 +19,27 @@ Follow these steps once. After that, deploy env vars on Vercel.
 
 Optional: disable “Confirm email” under Auth → Providers → Email while testing.
 
+### Google Sign-In
+
+1. [Google Cloud Console](https://console.cloud.google.com/) → create/select a project  
+2. **APIs & Services → OAuth consent screen** → External (or Internal) → fill app name  
+3. **Credentials → Create credentials → OAuth client ID** → type **Web application**  
+4. **Authorized JavaScript origins:**
+   - `http://localhost:3000`
+   - `https://www.giantscodex.com`
+   - `https://giantscodex.com` (if apex is used)
+5. **Authorized redirect URIs** (must match Supabase):
+   - `https://rsalwrpwdwyiupeausbp.supabase.co/auth/v1/callback`
+   - (replace project ref if your Supabase URL differs)
+6. Copy **Client ID** + **Client secret**  
+7. Supabase → **Authentication → Providers → Google** → Enable  
+   - paste Client ID + secret → Save  
+8. Supabase → **URL configuration** — allow:
+   - `https://www.giantscodex.com/auth/callback`
+   - `http://localhost:3000/auth/callback`
+
+App UI: **Continue with Google** on `/login` and `/signup`.
+
 ## 2. Stripe products
 
 In [Stripe Dashboard](https://dashboard.stripe.com) (start in **Test mode**):
