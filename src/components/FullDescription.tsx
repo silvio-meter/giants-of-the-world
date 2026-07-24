@@ -1,41 +1,31 @@
 "use client";
 
 import Link from "next/link";
-import { usePlan } from "./PlanProvider";
 import { MysteryNote } from "./MysteryNote";
+import { splitParagraphs } from "@/lib/content";
 
 interface Props {
-  fullDescription: string;
-  mysteryNote: string;
+  /** Always safe for free users (opening only). */
+  freePreview: string;
+  /** Full lore — only provided server-side when plan is paid. */
+  fullDescription: string | null;
+  /** Only provided when paid. */
+  mysteryNote: string | null;
+  /** Server-determined access (avoids leaking full text while client hydrates). */
+  unlocked: boolean;
+  /** True when there is more content beyond free preview. */
+  hasMore: boolean;
 }
 
-function splitParagraphs(text: string): string[] {
-  const byBreak = text
-    .split(/\n\n+|\n/)
-    .map((p) => p.trim())
-    .filter(Boolean);
-  if (byBreak.length >= 2) return byBreak;
-
-  // Single block: split into ~2–3 sentence chunks so free users still get a real opening
-  const sentences = text.match(/[^.!?]+[.!?]+(?:\s|$)|[^.!?]+$/g);
-  if (!sentences || sentences.length <= 2) return [text.trim()];
-
-  const chunks: string[] = [];
-  for (let i = 0; i < sentences.length; i += 2) {
-    chunks.push(sentences.slice(i, i + 2).join("").trim());
-  }
-  return chunks.filter(Boolean);
-}
-
-export function FullDescription({ fullDescription, mysteryNote }: Props) {
-  const { isPaid, ready } = usePlan();
-  const paragraphs = splitParagraphs(fullDescription);
-
-  if (!ready) {
-    return <div className="mt-4 h-40 animate-pulse rounded-lg bg-surface" />;
-  }
-
-  if (isPaid) {
+export function FullDescription({
+  freePreview,
+  fullDescription,
+  mysteryNote,
+  unlocked,
+  hasMore,
+}: Props) {
+  if (unlocked && fullDescription) {
+    const paragraphs = splitParagraphs(fullDescription);
     return (
       <>
         <h2 className="font-[family-name:var(--font-cinzel)] text-xs tracking-[0.25em] text-accent-gold uppercase">
@@ -46,18 +36,13 @@ export function FullDescription({ fullDescription, mysteryNote }: Props) {
             <p key={i}>{para}</p>
           ))}
         </div>
-        <MysteryNote note={mysteryNote} />
+        {mysteryNote ? <MysteryNote note={mysteryNote} /> : null}
       </>
     );
   }
 
-  const freePreview = paragraphs[0] ?? "";
-  const lockedRest = paragraphs.slice(1);
-  const hasMore = lockedRest.length > 0 || Boolean(mysteryNote);
-
   return (
     <div className="space-y-6">
-      {/* Free opening - real value */}
       <div>
         <h2 className="font-[family-name:var(--font-cinzel)] text-xs tracking-[0.25em] text-accent-gold uppercase">
           Account
@@ -69,43 +54,23 @@ export function FullDescription({ fullDescription, mysteryNote }: Props) {
 
       {hasMore && (
         <div className="relative overflow-hidden rounded-lg border border-border bg-surface">
-          {/* Teaser of remaining text - soft, not unreadable */}
-          {lockedRest.length > 0 && (
-            <div className="pointer-events-none select-none px-5 pt-5 pb-2" aria-hidden>
-              <p className="text-[10px] tracking-[0.2em] text-text-muted/60 uppercase">
-                Continues…
-              </p>
-              <div className="mt-3 space-y-3">
-                {lockedRest.slice(0, 2).map((para, i) => (
-                  <p
-                    key={i}
-                    className="text-sm leading-relaxed text-text-muted/70"
-                    style={{
-                      maskImage:
-                        i === Math.min(lockedRest.length, 2) - 1
-                          ? "linear-gradient(to bottom, black 0%, transparent 100%)"
-                          : undefined,
-                      WebkitMaskImage:
-                        i === Math.min(lockedRest.length, 2) - 1
-                          ? "linear-gradient(to bottom, black 0%, transparent 100%)"
-                          : undefined,
-                    }}
-                  >
-                    {para.length > 280 ? `${para.slice(0, 280)}…` : para}
-                  </p>
-                ))}
-              </div>
-            </div>
-          )}
-
-          {/* Compact upgrade band */}
+          {/* Decorative fog lines — no real lore text in the DOM */}
           <div
-            className={`relative px-5 pb-5 ${
-              lockedRest.length > 0
-                ? "bg-gradient-to-t from-surface via-surface to-transparent pt-8 -mt-10"
-                : "pt-5"
-            }`}
+            className="pointer-events-none select-none px-5 pt-5 pb-2"
+            aria-hidden
           >
+            <p className="text-[10px] tracking-[0.2em] text-text-muted/60 uppercase">
+              Continues…
+            </p>
+            <div className="mt-3 space-y-3 opacity-40">
+              <div className="h-3 w-full rounded bg-text-muted/20" />
+              <div className="h-3 w-[92%] rounded bg-text-muted/15" />
+              <div className="h-3 w-[88%] rounded bg-text-muted/15" />
+              <div className="h-3 w-[70%] rounded bg-text-muted/10" />
+            </div>
+          </div>
+
+          <div className="relative bg-gradient-to-t from-surface via-surface to-transparent px-5 pt-8 pb-5 -mt-6">
             <div className="rounded-lg border border-accent-gold/35 bg-background/80 px-4 py-4 text-center sm:px-5 sm:py-5">
               <p className="font-[family-name:var(--font-cinzel)] text-sm tracking-wide text-accent-gold">
                 Continue the account

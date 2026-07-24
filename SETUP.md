@@ -8,10 +8,10 @@ Follow these steps once. After that, deploy env vars on Vercel.
 2. **SQL Editor** → run `supabase/schema.sql`.
 3. **Authentication → Providers**: enable Email.
 4. **Authentication → URL configuration**:
-   - Site URL: `https://giants-of-the-world.vercel.app` (and `http://localhost:3000` for local)
+   - Site URL: `https://www.giantscodex.com` (and `http://localhost:3000` for local)
    - Redirect URLs:  
      `http://localhost:3000/auth/callback`  
-     `https://giants-of-the-world.vercel.app/auth/callback`
+     `https://www.giantscodex.com/auth/callback`
 5. **Project Settings → API** → copy:
    - Project URL → `NEXT_PUBLIC_SUPABASE_URL`
    - `anon` `public` key → `NEXT_PUBLIC_SUPABASE_ANON_KEY`
@@ -53,7 +53,7 @@ Copy the webhook signing secret → `STRIPE_WEBHOOK_SECRET`.
 
 **Developers → Webhooks → Add endpoint**
 
-- URL: `https://giants-of-the-world.vercel.app/api/webhook/stripe`
+- URL: `https://www.giantscodex.com/api/webhook/stripe`
 - Events:
   - `checkout.session.completed`
   - `customer.subscription.updated`

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 
 interface Props {
@@ -7,6 +8,7 @@ interface Props {
   alt: string;
   size?: "card" | "detail" | "hero";
   className?: string;
+  priority?: boolean;
 }
 
 export function ImagePlaceholder({
@@ -14,6 +16,7 @@ export function ImagePlaceholder({
   alt,
   size = "card",
   className = "",
+  priority = false,
 }: Props) {
   const [failed, setFailed] = useState(false);
   const [loaded, setLoaded] = useState(false);
@@ -26,7 +29,14 @@ export function ImagePlaceholder({
     hero: "aspect-[21/9] w-full max-w-full",
   };
 
-  const showImage = !failed && src;
+  const sizesAttr =
+    size === "detail"
+      ? "(max-width: 896px) 100vw, 896px"
+      : size === "hero"
+        ? "100vw"
+        : "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw";
+
+  const showImage = !failed && Boolean(src);
 
   return (
     <div
@@ -44,21 +54,21 @@ export function ImagePlaceholder({
         style={{ animationDelay: "2.5s" }}
       />
 
-      {/* Silhouette */}
+      {/* Silhouette fallback */}
       <div className="absolute inset-0 flex items-end justify-center pb-[8%]">
-        <GiantSilhouette className="h-[75%] w-auto max-w-[55%] opacity-[0.18] text-text-muted" />
+        <GiantSilhouette className="h-[75%] w-auto max-w-[55%] text-text-muted opacity-[0.18]" />
       </div>
 
-      {/* Soft vignette */}
       <div className="pointer-events-none absolute inset-0 shadow-[inset_0_0_60px_rgba(0,0,0,0.55)]" />
 
-      {/* Real image when available */}
       {showImage && (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img
+        <Image
           src={src}
           alt={alt}
-          className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${
+          fill
+          sizes={sizesAttr}
+          priority={priority}
+          className={`object-cover transition-opacity duration-700 ${
             loaded ? "opacity-100" : "opacity-0"
           }`}
           onLoad={() => setLoaded(true)}
@@ -66,7 +76,6 @@ export function ImagePlaceholder({
         />
       )}
 
-      {/* Gold edge hint */}
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-accent-gold/30 to-transparent" />
     </div>
   );
@@ -80,7 +89,6 @@ function GiantSilhouette({ className = "" }: { className?: string }) {
       className={className}
       aria-hidden
     >
-      {/* Stylized giant: broad shoulders, small head, long limbs */}
       <ellipse cx="60" cy="28" rx="16" ry="18" />
       <path d="M40 42c-8 4-18 18-22 40-3 16-2 36 2 52l12-6c-2-12-2-28 0-40 4-18 12-28 18-32v-14z" />
       <path d="M80 42c8 4 18 18 22 40 3 16 2 36-2 52l-12-6c2-12 2-28 0-40-4-18-12-28-18-32v-14z" />

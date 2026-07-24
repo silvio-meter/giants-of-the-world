@@ -7,10 +7,16 @@ import {
   getGiantBySlug,
   getRelatedGiants,
 } from "@/lib/giants";
+import { getFreePreview, hasMoreContent } from "@/lib/content";
+import { canViewFullDescription } from "@/lib/access";
+import { getUserPlan } from "@/lib/profile";
 import { ImagePlaceholder } from "@/components/ImagePlaceholder";
 import { FullDescription } from "@/components/FullDescription";
 import { FavouriteButton } from "@/components/FavouriteButton";
 import { SizeComparison } from "@/components/SizeComparison";
+
+/** Per-request plan check — do not bake full lore into static HTML. */
+export const dynamic = "force-dynamic";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -27,6 +33,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: giant.name,
     description: giant.shortDescription,
+    openGraph: {
+      title: `${giant.name} · Giants of the World`,
+      description: giant.shortDescription,
+      images: giant.image ? [{ url: giant.image }] : undefined,
+    },
   };
 }
 
@@ -34,6 +45,11 @@ export default async function GiantDetailPage({ params }: Props) {
   const { slug } = await params;
   const giant = getGiantBySlug(slug);
   if (!giant) notFound();
+
+  const plan = await getUserPlan();
+  const unlocked = canViewFullDescription(plan);
+  const freePreview = getFreePreview(giant.fullDescription);
+  const hasMore = hasMoreContent(giant.fullDescription, giant.mysteryNote);
 
   const related = getRelatedGiants(giant);
   const isModern = giant.type === "modern-legend";
@@ -55,6 +71,7 @@ export default async function GiantDetailPage({ params }: Props) {
           src={giant.image}
           alt={giant.imageAlt}
           size="detail"
+          priority
         />
       </div>
 
@@ -72,7 +89,11 @@ export default async function GiantDetailPage({ params }: Props) {
           <h1 className="min-w-0 font-[family-name:var(--font-cinzel)] text-3xl tracking-wide text-accent-gold sm:text-4xl md:text-5xl">
             {giant.name}
           </h1>
-          <FavouriteButton slug={giant.slug} name={giant.name} variant="detail" />
+          <FavouriteButton
+            slug={giant.slug}
+            name={giant.name}
+            variant="detail"
+          />
         </div>
         {giant.alsoKnownAs.length > 0 && (
           <p className="mt-2 text-sm text-text-muted">
@@ -105,8 +126,11 @@ export default async function GiantDetailPage({ params }: Props) {
       <div className="mt-8 grid gap-8 lg:grid-cols-[1fr_220px]">
         <div>
           <FullDescription
-            fullDescription={giant.fullDescription}
-            mysteryNote={giant.mysteryNote}
+            freePreview={freePreview}
+            fullDescription={unlocked ? giant.fullDescription : null}
+            mysteryNote={unlocked ? giant.mysteryNote : null}
+            unlocked={unlocked}
+            hasMore={hasMore}
           />
 
           {giant.sources.length > 0 && (
@@ -142,7 +166,10 @@ export default async function GiantDetailPage({ params }: Props) {
                   href={`/map?focus=${encodeURIComponent(giant.slug)}`}
                   className="mt-3 inline-flex w-full items-center justify-center gap-2 rounded border border-accent-gold/50 bg-accent-gold/10 px-3 py-2 text-xs font-medium tracking-wide text-accent-gold transition hover:border-accent-gold hover:bg-accent-gold/20"
                 >
-                  <span aria-hidden className="inline-block h-2 w-2 rounded-full bg-accent-gold shadow-[0_0_6px_rgba(201,162,39,0.9)]" />
+                  <span
+                    aria-hidden
+                    className="inline-block h-2 w-2 rounded-full bg-accent-gold shadow-[0_0_6px_rgba(201,162,39,0.9)]"
+                  />
                   View on map
                 </Link>
               </div>

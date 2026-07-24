@@ -26,7 +26,8 @@ const mono = JetBrains_Mono({
 });
 
 const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://giants-of-the-world.vercel.app";
+  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ??
+  "https://www.giantscodex.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

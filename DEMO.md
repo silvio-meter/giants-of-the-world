@@ -1,6 +1,6 @@
 # Demo pitch — Giants of the World
 
-**Link:** https://giants-of-the-world.vercel.app
+**Link:** https://www.giantscodex.com
 
 ---
 
@@ -87,5 +87,5 @@ Default for public show: **demo**.
 ```
 Giants of the World — a dark codex of giants from myth, folklore & modern legend.
 Browse free. Unlock the full account when you want to go deeper.
-https://giants-of-the-world.vercel.app
+https://www.giantscodex.com
 ```
