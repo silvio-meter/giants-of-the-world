@@ -1,4 +1,4 @@
-export default {
+const norse_biblical = {
   thrym: {
     motifs: ["outwitted", "war-on-heaven"],
     open: "Thrym, lord of the jötnar, steals Thor's hammer and buries it eight leagues deep. His price for returning it is Freyja as his bride, and the story of how the gods answer is the funniest poem in the Edda.",
@@ -219,3 +219,5 @@ Suggestions that Goliath had a pituitary disorder producing gigantism and visual
     ],
   },
 };
+
+export default norse_biblical;

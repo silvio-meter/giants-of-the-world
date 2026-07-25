@@ -1,4 +1,4 @@
-export default {
+const europe = {
   balor: {
     motifs: ["one-eye", "war-on-heaven", "boon-abused"],
     open: "Balor of the Evil Eye leads the Fomorians. His single eye is kept shut and needs four men to lift the lid, and whatever it looks at dies. He is killed by his own grandson, exactly as prophesied.",
@@ -273,3 +273,5 @@ Much early recording was done by missionaries actively working to suppress Sami 
     ],
   },
 };
+
+export default europe;

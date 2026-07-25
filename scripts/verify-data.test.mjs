@@ -141,7 +141,7 @@ const deep = master.filter((g) => g.sections);
 const words = (s) => s.trim().split(/\s+/).filter(Boolean).length;
 
 test("deep entries carry all three sections, none of them token", () => {
-  for (const giant of deep) {
+  for (const giant of deep.filter((g) => !g.restrained)) {
     for (const key of ["story", "origins", "disputed"]) {
       const text = giant.sections[key];
       assert.ok(text?.trim(), `${giant.slug}: section "${key}" is empty`);
@@ -154,12 +154,43 @@ test("deep entries carry all three sections, none of them token", () => {
 });
 
 test("deep entries put real substance behind the paywall", () => {
-  for (const giant of deep) {
+  for (const giant of deep.filter((g) => !g.restrained)) {
     const paid = words(Object.values(giant.sections).join(" "));
     assert.ok(
       paid >= 350,
       `${giant.slug}: only ${paid} words behind the paywall`
     );
+  }
+});
+
+test("restrained entries are free, and say why they are short", () => {
+  for (const giant of master.filter((g) => g.restrained)) {
+    assert.ok(
+      giant.freeEntry,
+      `${giant.slug}: a restrained entry is behind the paywall — we would be charging for an admission`
+    );
+    assert.ok(
+      giant.sections?.disputed,
+      `${giant.slug}: restrained but gives no account of why`
+    );
+    assert.ok(
+      /cannot|not able|unreliab|not identif|do not know/i.test(
+        giant.sections.disputed
+      ),
+      `${giant.slug}: restrained entries must state the limitation plainly`
+    );
+  }
+});
+
+test("every entry still carries all three sections", () => {
+  for (const giant of master) {
+    assert.ok(giant.sections, `${giant.slug}: no sections`);
+    for (const key of ["story", "origins", "disputed"]) {
+      assert.ok(
+        giant.sections[key]?.trim(),
+        `${giant.slug}: section "${key}" is empty`
+      );
+    }
   }
 });
 

@@ -1,4 +1,4 @@
-export default {
+const americas = {
   quinametzin: {
     motifs: ["pre-people", "builder", "bones-as-proof"],
     open: "The Quinametzin are the giants of central Mexican tradition who inhabited an earlier world-age and built the great structures the Aztecs found already standing. Teotihuacan and Cholula were attributed to them.",
@@ -244,3 +244,5 @@ The names, spellings and attributes vary between nations and between sources, an
     ],
   },
 };
+
+export default americas;

@@ -10,6 +10,7 @@ interface Props {
   sections?: GiantSections;
   motifs?: string[];
   slug: string;
+  restrained?: boolean;
   /** Heading label — "Full account" once unlocked, "Account" for open entries. */
   heading?: string;
 }
@@ -24,6 +25,7 @@ export function FullDescription({
   sections,
   motifs,
   slug,
+  restrained,
   heading = "Full account",
 }: Props) {
   const paragraphs = splitParagraphs(fullDescription);
@@ -40,7 +42,12 @@ export function FullDescription({
       </div>
       {sections && (
         <div className="mt-10">
-          <DeepSections sections={sections} motifs={motifs} slug={slug} />
+          <DeepSections
+            sections={sections}
+            motifs={motifs}
+            slug={slug}
+            restrained={restrained}
+          />
         </div>
       )}
       {mysteryNote ? <MysteryNote note={mysteryNote} /> : null}

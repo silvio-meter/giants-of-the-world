@@ -1658,11 +1658,18 @@
       "country"
     ],
     "sources": [
-      "Gunditjmara knowledge (public aspects)",
-      "Budj Bim UNESCO documentation"
+      "Gunditjmara tradition, via Gunditj Mirring Traditional Owners Aboriginal Corporation",
+      "UNESCO World Heritage inscription, Budj Bim Cultural Landscape (2019)",
+      "Published argon-argon dating of the Budj Bim eruption",
+      "Archaeological literature on the Budj Bim aquaculture systems"
     ],
     "image": "/images/giants/budj-bim.jpg",
-    "imageAlt": "Ancestral giants of Budj Bim country"
+    "imageAlt": "Ancestral giants of Budj Bim country",
+    "motifs": [
+      "landscape-body",
+      "builder",
+      "petrified"
+    ]
   },
   {
     "id": "papinijuwari",
@@ -1691,11 +1698,16 @@
       "islands"
     ],
     "sources": [
-      "Tiwi oral tradition",
-      "Published ethnographic summaries"
+      "Tiwi oral tradition, Bathurst and Melville Islands",
+      "Charles P. Mountford, Tiwi ethnographic work (1950s) - period-bound",
+      "Contemporary Tiwi art centres: Tiwi Design, Jilamara, Munupi"
     ],
     "image": "/images/giants/papinijuwari.jpg",
-    "imageAlt": "Papinijuwari of Tiwi tradition"
+    "imageAlt": "Papinijuwari of Tiwi tradition",
+    "motifs": [
+      "one-eye",
+      "cannibal"
+    ]
   },
   {
     "id": "murkupang",
@@ -1705,7 +1717,7 @@
     "culture": "Australian Aboriginal",
     "region": "Australia",
     "type": "folklore",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Giant",
     "shortDescription": "Giant figure in northern Australian story cycles of pursuit and country.",
     "related": [
@@ -1724,10 +1736,17 @@
       "country"
     ],
     "sources": [
-      "Aboriginal oral traditions (public accounts)"
+      "Australian Aboriginal oral tradition (community not reliably identified in available sources)",
+      "20th-c. compilations of Australian Aboriginal legend - unreliable, see disputed",
+      "AIATSIS protocols for Indigenous knowledge"
     ],
     "image": "/images/giants/murkupang.jpg",
-    "imageAlt": "Murkupang"
+    "imageAlt": "Murkupang",
+    "motifs": [
+      "cannibal",
+      "wild-highland"
+    ],
+    "restrained": true
   },
   {
     "id": "thardid-jimbo",
@@ -1737,7 +1756,7 @@
     "culture": "Australian Aboriginal",
     "region": "Australia",
     "type": "folklore",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Giant",
     "shortDescription": "Cannibal giant of southeastern Aboriginal tales - a terror of the camp edge.",
     "related": [
@@ -1755,10 +1774,17 @@
       "folklore"
     ],
     "sources": [
-      "Aboriginal story collections (southeastern)"
+      "Australian Aboriginal oral tradition (community not reliably identified)",
+      "20th-c. legend compilations - unreliable, see disputed",
+      "AIATSIS protocols for Indigenous knowledge"
     ],
     "image": "/images/giants/thardid-jimbo.jpg",
-    "imageAlt": "Thardid Jimbo"
+    "imageAlt": "Thardid Jimbo",
+    "motifs": [
+      "cannibal",
+      "wild-highland"
+    ],
+    "restrained": true
   },
   {
     "id": "chinny-kinik",
@@ -1768,7 +1794,7 @@
     "culture": "Australian Aboriginal",
     "region": "Australia",
     "type": "folklore",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Giant",
     "shortDescription": "Giant being in Aboriginal narrative - sparse in print, strong in place.",
     "related": [
@@ -1785,10 +1811,17 @@
       "oral"
     ],
     "sources": [
-      "Aboriginal oral / ethnographic notes"
+      "Australian Aboriginal oral tradition (community not reliably identified)",
+      "20th-c. legend compilations - unreliable, see disputed",
+      "AIATSIS protocols for Indigenous knowledge"
     ],
     "image": "/images/giants/chinny-kinik.jpg",
-    "imageAlt": "Chinny-kinik"
+    "imageAlt": "Chinny-kinik",
+    "motifs": [
+      "cannibal",
+      "wild-highland"
+    ],
+    "restrained": true
   },
   {
     "id": "maero",
@@ -1819,11 +1852,17 @@
       "aotearoa"
     ],
     "sources": [
-      "Māori oral tradition",
-      "Ethnographic collections"
+      "Maori oral tradition (varies by iwi)",
+      "John White, The Ancient History of the Maori (1887-90) - period-bound",
+      "Elsdon Best, ethnographic writings on Maori forest lore, early 20th c.",
+      "Te Ara: The Encyclopedia of New Zealand"
     ],
     "image": "/images/giants/maero.jpg",
-    "imageAlt": "Maero of the forest"
+    "imageAlt": "Maero of the forest",
+    "motifs": [
+      "wild-highland",
+      "cannibal"
+    ]
   },
   {
     "id": "kahui-tipua",
@@ -1853,10 +1892,18 @@
       "race"
     ],
     "sources": [
-      "Māori oral tradition"
+      "Southern Maori oral tradition (Ngai Tahu; earlier Waitaha and Kati Mamoe)",
+      "Herries Beattie, southern Maori traditions (20th c.)",
+      "Ngai Tahu published sources and Claims Settlement documentation",
+      "Te Ara: The Encyclopedia of New Zealand"
     ],
     "image": "/images/giants/kahui-tipua.jpg",
-    "imageAlt": "Kāhui Tipua"
+    "imageAlt": "Kāhui Tipua",
+    "motifs": [
+      "landscape-body",
+      "pre-people",
+      "petrified"
+    ]
   },
   {
     "id": "nawao",
@@ -1926,11 +1973,16 @@
       "race"
     ],
     "sources": [
-      "Zulu oral tradition",
-      "Folktale collections"
+      "Zulu and Nguni oral tradition (izinganekwane, intsomi genres)",
+      "Henry Callaway, Nursery Tales, Traditions, and Histories of the Zulus (1868)",
+      "Harold Scheub, studies of Xhosa and Zulu oral performance (1960s onward)"
     ],
     "image": "/images/giants/amazimu.jpg",
-    "imageAlt": "Amazimu ogres"
+    "imageAlt": "Amazimu ogres",
+    "motifs": [
+      "cannibal",
+      "outwitted"
+    ]
   },
   {
     "id": "giant-of-the-forest",
@@ -1943,7 +1995,7 @@
     "culture": "Hausa / West African",
     "region": "West Africa",
     "type": "folklore",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Giant",
     "shortDescription": "West African forest giant of tale cycles - a being of the deep bush.",
     "related": [
@@ -1960,10 +2012,17 @@
       "west-africa"
     ],
     "sources": [
-      "Hausa and West African oral traditions"
+      "Hausa oral tradition (tatsuniyoyi), northern Nigeria and Niger",
+      "Frank Edgar, Litafi na Tatsuniyoyi na Hausa (1911-13)",
+      "Neil Skinner, Hausa Tales and Traditions (partial translation of Edgar)"
     ],
     "image": "/images/giants/giant-of-the-forest.jpg",
-    "imageAlt": "Giant of the Forest"
+    "imageAlt": "Giant of the Forest",
+    "motifs": [
+      "wild-highland",
+      "cannibal"
+    ],
+    "restrained": true
   },
   {
     "id": "stallo",
@@ -2119,11 +2178,17 @@
       "afghanistan"
     ],
     "sources": [
-      "Unverified oral accounts",
-      "Secondary media retellings"
+      "Paranormal radio and internet forum circulation, mid-2000s onward",
+      "Cable television treatments, 2010s (amplification, not evidence)",
+      "Absence of corroborating US military records; reported FOIA results",
+      "Comparative: 19th-c. American giant lore and Nephilim literature"
     ],
     "image": "/images/giants/giant-of-kandahar.jpg",
-    "imageAlt": "Giant of Kandahar (unverified modern legend)"
+    "imageAlt": "Giant of Kandahar (unverified modern legend)",
+    "motifs": [
+      "modern-rumour",
+      "bones-as-proof"
+    ]
   },
   {
     "id": "giant-of-kunar",
@@ -2150,10 +2215,16 @@
       "kunar"
     ],
     "sources": [
-      "Unverified oral accounts"
+      "Paranormal radio and internet forum circulation, mid-2000s onward",
+      "Cable television treatments, 2010s (amplification, not evidence)",
+      "Absence of corroborating military records"
     ],
     "image": "/images/giants/giant-of-kunar.jpg",
-    "imageAlt": "Giant of Kunar (unverified modern legend)"
+    "imageAlt": "Giant of Kunar (unverified modern legend)",
+    "motifs": [
+      "modern-rumour",
+      "wild-highland"
+    ]
   },
   {
     "id": "paul-bunyan",
@@ -2181,10 +2252,17 @@
       "america"
     ],
     "sources": [
-      "American lumber camp oral tradition",
-      "Laughead and later popularizations"
+      "Great Lakes logging-camp oral tradition, late 19th c.",
+      "James MacGillivray, Detroit News-Tribune (1910)",
+      "William Laughead, Red River Lumber Company pamphlets (1916 onward)",
+      "Richard Dorson, on fakelore (mid-20th c. critique)"
     ],
     "image": "/images/giants/paul-bunyan.jpg",
-    "imageAlt": "Paul Bunyan and Babe the Blue Ox"
+    "imageAlt": "Paul Bunyan and Babe the Blue Ox",
+    "motifs": [
+      "tall-tale",
+      "landscape-body",
+      "builder"
+    ]
   }
 ]

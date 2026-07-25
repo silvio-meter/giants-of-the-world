@@ -1929,7 +1929,7 @@
     "freeEntry": false,
     "height": "Ancestral / giant scale",
     "shortDescription": "Ancestral beings of giant scale in the volcanic landscape of Budj Bim.",
-    "fullDescription": "The Budj Bim cultural landscape in southwestern Victoria is a living Aboriginal place of aquaculture, volcano, and ancestral creation, cared for by Gunditjmara people across deep time. Stories of ancestral beings of great power and scale are bound to this country; they are not interchangeable with European giant-tales or colonial \"lost race\" fantasies.\n\nThis entry points respectfully toward that tradition and toward the public recognition of Budj Bim as a UNESCO World Heritage cultural landscape. Specific sacred details remain with Traditional Owners. Outside retellings should stay modest and directed toward the authority of Country and its people.\n\nThe lava is old. The stories are older than the English word giant. The eels and the stone channels remember a care that is not myth alone but ongoing practice.",
+    "fullDescription": "Budj Bim is a volcano in south-west Victoria, and in Gunditjmara tradition it is an ancestral being who revealed himself in the landscape. The lava he produced carries one of the oldest aquaculture systems known anywhere.",
     "mysteryNote": "The lava is old. The stories are older than the word giant - and the Country is not a museum.",
     "related": [
       "papinijuwari",
@@ -1947,11 +1947,23 @@
       "country"
     ],
     "sources": [
-      "Gunditjmara knowledge (public aspects)",
-      "Budj Bim UNESCO documentation"
+      "Gunditjmara tradition, via Gunditj Mirring Traditional Owners Aboriginal Corporation",
+      "UNESCO World Heritage inscription, Budj Bim Cultural Landscape (2019)",
+      "Published argon-argon dating of the Budj Bim eruption",
+      "Archaeological literature on the Budj Bim aquaculture systems"
     ],
     "image": "/images/giants/budj-bim.jpg",
-    "imageAlt": "Ancestral giants of Budj Bim country"
+    "imageAlt": "Ancestral giants of Budj Bim country",
+    "sections": {
+      "story": "This entry is different from the others in the codex, because most of it is verifiable.\n\nGunditjmara tradition holds that Budj Bim is a creation being who revealed himself, and the surrounding landscape records that revelation. The name is commonly translated as \"high head\". The volcano erupted, and the lava flow it produced is the ground everything else sits on.\n\nThe eruption is dated by geological methods to roughly thirty-seven thousand years ago. Gunditjmara people were present. That makes the tradition, in the reading now widely accepted by geologists and archaeologists working with the community, one of the oldest continuously held accounts of an actual event anywhere on earth.\n\nWhat the Gunditjmara built on that lava is the other half. Across the wetlands they constructed an extensive system of channels, weirs and holding ponds to trap, store and harvest kooyang - short-finned eel. Parts of it are dated to around six thousand five hundred years old. It supported permanent stone dwellings and a settled population, which comprehensively contradicts the long-standing colonial claim that Aboriginal Australians were universally nomadic and built nothing.\n\nThe Budj Bim Cultural Landscape was inscribed as a UNESCO World Heritage site in 2019, on cultural criteria, nominated with and managed by the Gunditjmara.\n\nSo the \"giant\" here is a mountain that is a person, remembered accurately across an interval that beggars comparison, by people who then engineered the country around it. Almost nothing else in this collection is that solid.",
+      "origins": "Gunditjmara oral tradition, held by the community and central to the World Heritage nomination.\n\nGeological dating of the Budj Bim - Mount Eccles - eruption places it in the range of tens of thousands of years before present; published argon-argon dating has given figures around thirty-seven thousand years.\n\nArchaeological work on the aquaculture systems has been conducted over decades in partnership with the Gunditjmara, with radiocarbon dates for parts of the system around six thousand five hundred years old.\n\nUNESCO World Heritage inscription documentation (2019) sets out both the cultural traditions and the physical evidence. The Gunditj Mirring Traditional Owners Aboriginal Corporation is the managing body.",
+      "disputed": "The eruption date and the aquaculture dates are established by standard scientific methods and are not seriously contested. What is discussed is precision, not the general picture.\n\nThe claim that the tradition records the eruption itself is widely accepted but rests on the alignment of tradition with dating rather than on a direct chain of evidence, and careful writers phrase it accordingly.\n\nThe extent and chronology of the aquaculture system continue to be refined by ongoing research; earlier phases may yet be dated older.\n\nCultural protocols apply. Some Gunditjmara knowledge is not for general publication, and the community determines what is shared. This entry deliberately stays with what has been made public by the Traditional Owners and in the World Heritage documentation."
+    },
+    "motifs": [
+      "landscape-body",
+      "builder",
+      "petrified"
+    ]
   },
   {
     "id": "papinijuwari",
@@ -1964,7 +1976,7 @@
     "freeEntry": false,
     "height": "Giant",
     "shortDescription": "One-eyed giant spirits of Tiwi tradition who hunt with clubs and bags.",
-    "fullDescription": "In Tiwi tradition of the Tiwi Islands, the Papinijuwari are hostile giant beings - often one-eyed - who prowl for the sick and carry victims away. They belong to a rich island cosmology that also includes creation beings and strict ceremonial law. Their image in bark painting and story is stark: appetite and night on a scale larger than a person.\n\nLike other entries from living cultures, they are presented as folklore of a people, not as cryptid hunting licenses. One eye is enough when the night is on their side. Public documentation is a doorway, not the whole house.\n\nThis race-entry marks presence in the worldwide pattern of larger-than-human danger, held carefully for Tiwi ownership of meaning.",
+    "fullDescription": "The Papinijuwari are one-eyed giants of Tiwi tradition who hunt the sick and drink blood. They belong to a living island cosmology, and what is publicly known about them is a fraction of what exists.",
     "mysteryNote": "One eye is enough when the night is on their side. The islands know the rest of the story.",
     "related": [
       "budj-bim",
@@ -1982,11 +1994,21 @@
       "islands"
     ],
     "sources": [
-      "Tiwi oral tradition",
-      "Published ethnographic summaries"
+      "Tiwi oral tradition, Bathurst and Melville Islands",
+      "Charles P. Mountford, Tiwi ethnographic work (1950s) - period-bound",
+      "Contemporary Tiwi art centres: Tiwi Design, Jilamara, Munupi"
     ],
     "image": "/images/giants/papinijuwari.jpg",
-    "imageAlt": "Papinijuwari of Tiwi tradition"
+    "imageAlt": "Papinijuwari of Tiwi tradition",
+    "sections": {
+      "story": "Tiwi people live on Bathurst and Melville Islands, north of Darwin, and have a distinct language and culture from the mainland.\n\nThe Papinijuwari are described in publicly available accounts as very large beings with a single eye in the forehead. They are associated with sickness and death: they seek out the ill and dying, and they drink blood. In some accounts they carry a torch, and falling stars are connected with them.\n\nThat is close to the limit of what can responsibly be set out here.\n\nThe Tiwi cosmological system is substantial and includes the creation beings, the Pukumani mortuary ceremony with its carved poles, and a body of song and ritual with specific rights and restrictions attached. The Papinijuwari sit inside that system. Removing them from it and presenting them as a monster entry in a catalogue of world giants is, frankly, a distortion of the kind this codex is supposed to be alert to.\n\nThe external record is also thin and old. Most published description traces to a small number of mid-twentieth-century ethnographic sources, and those were produced under conditions and assumptions that would not be acceptable now.\n\nTiwi art - carving, painting, printmaking - is internationally significant and made by named artists working within their own traditions. That is a far better route into this material than any summary written from outside, and it is where an interested reader should go.",
+      "origins": "Tiwi oral tradition, Bathurst and Melville Islands, Northern Territory.\n\nMid-twentieth-century ethnography, principally Charles P. Mountford's work on Tiwi art and belief in the 1950s, is the main external published source and reflects the assumptions of its period.\n\nLater anthropological work on Tiwi society, including Jane Goodale's, provides broader context on ceremony and social organisation.\n\nContemporary Tiwi art centres and artists are the appropriate living source. Tiwi Design and Munupi and Jilamara art centres represent artists working in these traditions today.",
+      "disputed": "The publicly available description rests on a narrow and dated ethnographic base, and should not be treated as comprehensive or authoritative.\n\nCultural protocols apply to much Tiwi knowledge, including restrictions on who may know or repeat certain material. Absence from published sources is not evidence of absence, and is frequently evidence of appropriate restriction.\n\nThe one-eye resemblance to Polyphemus, the ojancanu and other figures is real as a description but should not be read as connection. There is no plausible transmission, and the recurrence more likely reflects something about how humans imagine an inhuman face.\n\nThis entry is written from outside the culture on the basis of limited sources, and says so."
+    },
+    "motifs": [
+      "one-eye",
+      "cannibal"
+    ]
   },
   {
     "id": "murkupang",
@@ -1996,10 +2018,10 @@
     "culture": "Australian Aboriginal",
     "region": "Australia",
     "type": "folklore",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Giant",
     "shortDescription": "Giant figure in northern Australian story cycles of pursuit and country.",
-    "fullDescription": "Murkupang appears in Aboriginal narratives of northern Australia as a giant associated with chase, landscape formation, or moral tale - details varying by community and songline. Published versions available to outsiders are necessarily incomplete; full knowledge sits with custodians of Country and ceremony.\n\nIncluded here as part of the continent's deep archive of larger-than-human beings bound to place. Follow the story only as far as Country allows. This is not a gap in research to be filled by speculation; it is a boundary to be respected.\n\nThe codex records a name and a region. The songlines keep the rest.",
+    "fullDescription": "Murkupang is a cannibal giant recorded in Australian Aboriginal tradition, hunting people and taking children. The external record is thin, and this entry is correspondingly short.",
     "mysteryNote": "Follow the story only as far as Country allows. The map is not entitled to everything.",
     "related": [
       "budj-bim",
@@ -2017,10 +2039,22 @@
       "country"
     ],
     "sources": [
-      "Aboriginal oral traditions (public accounts)"
+      "Australian Aboriginal oral tradition (community not reliably identified in available sources)",
+      "20th-c. compilations of Australian Aboriginal legend - unreliable, see disputed",
+      "AIATSIS protocols for Indigenous knowledge"
     ],
     "image": "/images/giants/murkupang.jpg",
-    "imageAlt": "Murkupang"
+    "imageAlt": "Murkupang",
+    "sections": {
+      "story": "Accounts describe Murkupang as an enormous being who preys on people, and particularly on children - the standard shape of a cannibal-giant tradition, of which Australia has many, held by many different peoples with distinct languages and laws.\n\nWe are going to be brief, and the reason is the reason we gave for Nawao.\n\n\"Australian Aboriginal\" is not one culture. It covers hundreds of distinct nations and language groups with separate traditions, and the material recorded under a single name in colonial-era or mid-century compilations has frequently been detached from the specific people it belongs to. That has happened here: the sources available to us do not reliably identify the community whose tradition this is, which means we cannot attribute it properly, and improper attribution is not a small error.\n\nA great deal of Australian material was also recorded by people who assumed the cultures were dying, who did not seek permission, and who published knowledge that was restricted. Some of what circulates in general reference works should not be in general reference works.\n\nWhat can be said: cannibal-giant figures are widespread in Aboriginal traditions across the continent; they commonly function partly as warnings to children about wandering and about specific dangerous country; and they belong to living cultures whose members are the appropriate authority.\n\nWhat we will not do is compose a detailed portrait to fill the space. If you hold this tradition and we have it wrong, or should not be carrying it at all, please write to us.",
+      "origins": "Australian Aboriginal oral tradition; the specific community is not reliably identified in the sources available to us, which is itself the problem this entry describes.\n\nThe name appears in twentieth-century compilations of Australian Aboriginal legend, a genre that frequently aggregated material across unrelated peoples without adequate attribution.\n\nCommunity-controlled sources, language centres and Indigenous knowledge bodies are the appropriate authority for any specific tradition.\n\nAIATSIS - the Australian Institute of Aboriginal and Torres Strait Islander Studies - maintains protocols and collections relevant to this material.",
+      "disputed": "Attribution is the central problem. Without knowing which people's tradition this is, nothing further can responsibly be said about context, meaning or restriction.\n\nPopular compilations of \"Aboriginal legends\" published through the twentieth century are unreliable as sources. They routinely merged distinct traditions, removed cultural context, and were often published without consent.\n\nWhether this material should appear in a general catalogue at all is a fair question. We have kept a short entry rather than deleting it silently, because the gap and the reason for it are worth showing - but we would remove or correct it on request from the relevant community."
+    },
+    "motifs": [
+      "cannibal",
+      "wild-highland"
+    ],
+    "restrained": true
   },
   {
     "id": "thardid-jimbo",
@@ -2030,10 +2064,10 @@
     "culture": "Australian Aboriginal",
     "region": "Australia",
     "type": "folklore",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Giant",
     "shortDescription": "Cannibal giant of southeastern Aboriginal tales - a terror of the camp edge.",
-    "fullDescription": "Thardid Jimbo appears in some southeastern Australian Aboriginal stories as a cannibal giant who preys upon people. As with related figures, published versions are fragments of wider oral systems. He represents a widespread human narrative need: to give the danger outside the firelight a shape large enough to take seriously.\n\nStay near the fire. The dark has a name in more than one language. This entry does not invent details the sources do not give; it refuses both erasure and invention.\n\nPaired in our image set with Chinny-kinik as neighboring names in the same broad pattern of camp-edge fear.",
+    "fullDescription": "Thardid Jimbo is recorded as a giant of Australian Aboriginal tradition, over two metres tall, who hunted people and was killed after taking a woman as a wife. The record has the same attribution problems as its neighbours.",
     "mysteryNote": "Stay near the fire. The dark has a name in more than one language - and more than one warning.",
     "related": [
       "papinijuwari",
@@ -2050,10 +2084,22 @@
       "folklore"
     ],
     "sources": [
-      "Aboriginal story collections (southeastern)"
+      "Australian Aboriginal oral tradition (community not reliably identified)",
+      "20th-c. legend compilations - unreliable, see disputed",
+      "AIATSIS protocols for Indigenous knowledge"
     ],
     "image": "/images/giants/thardid-jimbo.jpg",
-    "imageAlt": "Thardid Jimbo"
+    "imageAlt": "Thardid Jimbo",
+    "sections": {
+      "story": "The narrative recorded under this name describes a large man-eating being who takes a woman - in some tellings a woman already married - and is eventually killed, in several versions after his intended prey or her kin outwit him.\n\nAs with Murkupang, the material reaches general reference through twentieth-century compilations that did not adequately identify the community it came from, and we are not able to attribute it with confidence.\n\nThere is a general point worth making here rather than repeating it entry by entry.\n\nAustralian Aboriginal cultures are the oldest continuous cultures on earth, with traditions that in documented cases - Budj Bim in this same codex - preserve accurate memory of events tens of thousands of years old. They are not a source of generic monster stories. Treating them as raw material for a curiosity catalogue, which is exactly what much of the twentieth-century publishing did, is both inaccurate and disrespectful.\n\nThe cannibal-giant figures are real traditions with real functions: marking dangerous country, instructing children, encoding law. Detached from the people, the place and the language, almost all of that is lost, and what remains is a monster with a name.\n\nWe are keeping short entries for these rather than removing them, so that the shape of the problem stays visible instead of being tidied away. Fuller and better-sourced treatment would require working with the relevant communities, which is a real undertaking and not one we can shortcut.",
+      "origins": "Australian Aboriginal oral tradition; specific community not reliably identified in available sources.\n\nThe name appears in mid-twentieth-century compilations of Australian Aboriginal legend, with the attribution and consent problems described above.\n\nCommunity-controlled sources and language centres are the appropriate authority.\n\nAIATSIS holds relevant collections and maintains protocols governing use of Indigenous knowledge.",
+      "disputed": "The same attribution failure applies as to Murkupang, and it is not a minor caveat - it means we cannot say whose story this is.\n\nThe published versions vary in detail, and the variation cannot be assessed without knowing the source traditions.\n\nSome Australian Aboriginal knowledge is restricted by law and custom, including by gender and initiation status. General publication of such material has caused real harm, and reference works have participated in it.\n\nThis entry exists to hold the place and state the problem. It should not be read as an account of the tradition."
+    },
+    "motifs": [
+      "cannibal",
+      "wild-highland"
+    ],
+    "restrained": true
   },
   {
     "id": "chinny-kinik",
@@ -2063,10 +2109,10 @@
     "culture": "Australian Aboriginal",
     "region": "Australia",
     "type": "folklore",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Giant",
     "shortDescription": "Giant being in Aboriginal narrative - sparse in print, strong in place.",
-    "fullDescription": "Chinny-kinik is recorded in some ethnographic and story lists as an Aboriginal giant figure. Public documentation is thin compared with living oral authority. This entry marks presence rather than claiming exhaustive knowledge - a name in the worldwide pattern of giant beings, held lightly out of respect for cultural ownership.\n\nSome names are doors. This catalogue only knocks. Where sources are thin, the ethical choice is not to pad them with invention but to admit the thinness and step back.\n\nIf deeper public accounts are shared by custodians later, the codex can grow. Until then, the name stands as a placeholder for respect, not for fantasy.",
+    "fullDescription": "Chinny-Kinik is recorded as a giant of Australian Aboriginal tradition. As with the other entries in this group, the external record is thin and the attribution unreliable.",
     "mysteryNote": "Some names are doors. This catalogue only knocks - and does not pretend to hold the key.",
     "related": [
       "thardid-jimbo",
@@ -2082,10 +2128,22 @@
       "oral"
     ],
     "sources": [
-      "Aboriginal oral / ethnographic notes"
+      "Australian Aboriginal oral tradition (community not reliably identified)",
+      "20th-c. legend compilations - unreliable, see disputed",
+      "AIATSIS protocols for Indigenous knowledge"
     ],
     "image": "/images/giants/chinny-kinik.jpg",
-    "imageAlt": "Chinny-kinik"
+    "imageAlt": "Chinny-kinik",
+    "sections": {
+      "story": "The published material describes a large hostile being of the same broad type as the other Australian entries here - dangerous to people, associated with particular country, defeated or escaped through wit.\n\nWe are treating this the same way, and for the same reasons set out under Murkupang and Thardid Jimbo: we cannot reliably identify the community whose tradition this is, and without that, a detailed account would be fabrication dressed as scholarship.\n\nThere is one further thing worth recording, which applies to this whole group.\n\nThe codex currently carries these entries because the original catalogue did, and the original catalogue took them from the general literature. That literature is not good. A responsible version of this section would be built by approaching the relevant communities, asking whether they wish the material published, and following their answer - including if the answer is no.\n\nUntil that work is done, these are placeholders with an honest label rather than entries with content.\n\nA reader who wants to understand Aboriginal traditions of large beings would be far better served by community-published material, by AIATSIS resources, and by Aboriginal authors writing about their own countries, than by anything this page can offer.",
+      "origins": "Australian Aboriginal oral tradition; specific community not reliably identified in available sources.\n\nThe name appears in twentieth-century compilations of Australian Aboriginal legend, with the problems described.\n\nCommunity-controlled sources, language centres and Aboriginal authors are the appropriate authority.\n\nAIATSIS maintains collections and protocols relevant to this material.",
+      "disputed": "Everything said under Murkupang and Thardid Jimbo applies.\n\nWe cannot verify the spelling, the language of origin, or the community. Names in these compilations were frequently transcribed inconsistently by non-speakers, and a misspelt name can be effectively untraceable.\n\nThe honest position is that this entry records that a tradition exists under approximately this name, and nothing more. We would rather publish that than a confident paragraph we invented."
+    },
+    "motifs": [
+      "cannibal",
+      "wild-highland"
+    ],
+    "restrained": true
   },
   {
     "id": "maero",
@@ -2101,7 +2159,7 @@
     "freeEntry": false,
     "height": "Large wild humanoids",
     "shortDescription": "Wild folk of the forest in Māori tradition - long fingers, fierce, untamed.",
-    "fullDescription": "The maero (or maeroero) are wild beings of the bush in Māori tradition - rough, long-nailed, dwelling beyond the cleared spaces of human order. They fight with trees and stones, may steal people, and embody the untamed forest. Related figures appear across Polynesia under different names.\n\nThey sit between giant and wild human: larger or fiercer than ordinary people, keepers of a world that does not consent to the village. The bush does not need to be taller than you to be larger than you. This entry belongs to Aotearoa's storied interior, not to colonial monster catalogues.\n\nRespect for Māori narrative authority means treating maero as part of a living culture's vocabulary of the wild.",
+    "fullDescription": "Maero are wild forest beings of Maori tradition - hairy, with long bony fingers ending in claws, living apart in the bush and hostile to people who enter it.",
     "mysteryNote": "The bush does not need to be taller than you to be larger than you. The maero already knew.",
     "related": [
       "kahui-tipua",
@@ -2118,11 +2176,22 @@
       "aotearoa"
     ],
     "sources": [
-      "Māori oral tradition",
-      "Ethnographic collections"
+      "Maori oral tradition (varies by iwi)",
+      "John White, The Ancient History of the Maori (1887-90) - period-bound",
+      "Elsdon Best, ethnographic writings on Maori forest lore, early 20th c.",
+      "Te Ara: The Encyclopedia of New Zealand"
     ],
     "image": "/images/giants/maero.jpg",
-    "imageAlt": "Maero of the forest"
+    "imageAlt": "Maero of the forest",
+    "sections": {
+      "story": "Maori tradition includes several kinds of being associated with the forest interior and with places away from settlement, and the maero is among the more consistently hostile.\n\nDescriptions give them a covering of hair, great strength, and long fingers with hard nails or claws used as weapons. They live in the deep bush and in rough country, alone or in small numbers rather than as a people. Encounters go badly for the person who has the encounter.\n\nThey are frequently mentioned alongside other beings of the interior - the ponaturi, the tipua, and various named entities associated with particular places - and the boundaries between these categories are not sharp and vary between iwi.\n\nThe function is recognisable across many traditions with forested or mountainous interiors: the bush beyond the cleared land is not empty, it is occupied, and it is not friendly. That is both a story and, in country like the New Zealand interior, sound advice.\n\nAs with the other Maori material in this codex, most of what reaches English-language reference works passes through nineteenth-century colonial collection, with the distortions that involves - including the standard settler habit of filing distinct beings under \"giant\" or \"wild man\" because those were the available categories.\n\nAccounts differ between iwi and between tellings, and there is no single canonical maero. Maori sources are the authority here, not this one.",
+      "origins": "Maori oral tradition, with variation between iwi.\n\nNineteenth-century collection, including material gathered by John White in The Ancient History of the Maori and by other settler-era compilers, is the main published English-language route and carries the problems of that period.\n\nElsdon Best's early twentieth-century ethnographic writing covers forest beings extensively and is widely cited, though his framing reflects his time.\n\nContemporary Maori scholarship, iwi sources and Te Ara, the online Encyclopedia of New Zealand, are better starting points for current understanding.",
+      "disputed": "Categories overlap. Maero, tipua, ponaturi and related beings are distinguished differently in different traditions, and English-language sources have frequently merged them.\n\nThe colonial collections that carry most of this material into English were shaped by their compilers' assumptions and sometimes by their politics, and cannot be read as neutral transcription.\n\nOccasional attempts to link maero traditions to a real relict population, or to cryptozoology, have no support and repeat a nineteenth-century error.\n\nVariation between iwi is substantial and any single description, including this one, flattens it."
+    },
+    "motifs": [
+      "wild-highland",
+      "cannibal"
+    ]
   },
   {
     "id": "kahui-tipua",
@@ -2137,7 +2206,7 @@
     "freeEntry": false,
     "height": "Giant / supernatural",
     "shortDescription": "Bands of supernatural giants in Māori tradition - tipua of collective power.",
-    "fullDescription": "Kāhui tipua refers to companies or tribes of tipua - supernatural, often gigantic or shape-shifting beings in Māori lore. They appear in migration and landscape stories as previous or parallel inhabitants, sometimes hostile, sometimes simply other. They help explain a world already storied before the most recent human arrangements of the land.\n\nBefore the maps, the bands walked. Some say they never stopped. This race-entry gathers a pattern rather than a single biography: power in the land older than the pā, stranger than the tourist brochure.\n\nAs with other Polynesian entries, depth belongs to iwi and knowledge-holders; the codex offers a respectful public outline.",
+    "fullDescription": "The Kahui Tipua are a band of supernatural giants in southern Maori tradition, credited with shaping parts of the South Island landscape - including, in some accounts, the excavation of the great lakes.",
     "mysteryNote": "Before the maps, the bands walked. Some say they never stopped - only stepped sideways out of ordinary sight.",
     "related": [
       "maero",
@@ -2154,10 +2223,23 @@
       "race"
     ],
     "sources": [
-      "Māori oral tradition"
+      "Southern Maori oral tradition (Ngai Tahu; earlier Waitaha and Kati Mamoe)",
+      "Herries Beattie, southern Maori traditions (20th c.)",
+      "Ngai Tahu published sources and Claims Settlement documentation",
+      "Te Ara: The Encyclopedia of New Zealand"
     ],
     "image": "/images/giants/kahui-tipua.jpg",
-    "imageAlt": "Kāhui Tipua"
+    "imageAlt": "Kāhui Tipua",
+    "sections": {
+      "story": "Tipua is a term for beings or objects of supernatural power, and the Kahui Tipua are an assemblage of such beings in the traditions of the southern South Island, particularly among Ngai Tahu and the earlier peoples whose traditions Ngai Tahu carry.\n\nThey are described as enormous and capable of feats at landscape scale: swallowing rivers, striding across country, transforming shape. Accounts associate them with the making of major features of Te Waipounamu, the South Island.\n\nThe best-known material of this kind concerns the southern lakes. Traditions attach the formation of Lake Wakatipu, and in some versions other lakes, to the actions of great beings - the most widely repeated being the story of Matau, a giant whose burning body left the hollow the lake fills, with the rise and fall of the water explained as his heart still beating. Different accounts and different iwi tell this differently, and Matau is not always grouped with the Kahui Tipua.\n\nWhat holds these together is a way of reading the country. The South Island landscape is dramatic - deep glacial lakes, fault-driven mountains - and southern Maori tradition accounts for it through the actions of beings of the appropriate scale. The features are the evidence and the record at once.\n\nThe formal geological account, of glaciation and tectonics, is not in competition with this. They are answering different questions, and only one of them was available for most of human history.",
+      "origins": "Southern Maori oral tradition, particularly Ngai Tahu, carrying earlier Waitaha and Kati Mamoe traditions. These are distinct peoples whose histories are layered in the south, and the traditions reflect that layering rather than a single line of descent.\n\nNineteenth-century collection includes material recorded by settler-era compilers, with the usual caveats about selection and framing. Herries Beattie's twentieth-century work on southern Maori tradition, based on extensive interviews with elders in Otago and Southland, is frequently cited and remains a substantial body of record.\n\nNgai Tahu published sources are the authoritative modern reference. The Ngai Tahu Claims Settlement Act of 1998 formally recognises traditional associations with named landscape features and restored a number of Maori place-names in dual form, which gives some of this material a standing in New Zealand law as well as in tradition.\n\nTe Ara, the Encyclopedia of New Zealand, provides accessible summary material and is a reasonable starting point for a general reader.",
+      "disputed": "The composition of the Kahui Tipua and which beings belong to it differ between accounts, and the term is used with varying breadth.\n\nThe relationship between the Kahui Tipua and the Matau lake tradition is not consistent across sources; treating them as a single body of story is a simplification.\n\nSouthern Maori traditions were disrupted by nineteenth-century population loss and displacement, and much of the surviving published record was collected late and by outsiders.\n\nAttempts to read these traditions as encoded geology - as memories of actual glacial or seismic events - are occasionally made. Unlike the Budj Bim case, there is no dating evidence supporting such a reading here, and it should be treated as speculation."
+    },
+    "motifs": [
+      "landscape-body",
+      "pre-people",
+      "petrified"
+    ]
   },
   {
     "id": "nawao",
@@ -2220,7 +2302,7 @@
     "freeEntry": false,
     "height": "Ogre-giant",
     "shortDescription": "Cannibal ogres of Zulu and related folklore - shape-shifting eaters of the unwary.",
-    "fullDescription": "Amazimu (singular izimu) are ogre-like beings in Zulu and wider Nguni folklore - often cannibalistic, sometimes shape-shifting, enemies of human order in folktales told to entertain and to warn. They may appear as large men or as more monstrous forms. Cleverness, kinship, and courage defeat appetite in the classic pattern of the tales.\n\nThe clever child lives. The greedy giant does not always. This race-entry places Amazimu in the African giant/ogre continuum without flattening local story-logic into a generic monster manual.\n\nThey operate in a moral landscape where wit is a weapon and hunger is a character flaw with teeth.",
+    "fullDescription": "Amazimu are cannibal ogres of Zulu and wider Nguni tradition - large, dangerous, and consistently defeated by children who pay attention.",
     "mysteryNote": "The clever child lives. The greedy giant does not always - and the tale prefers it that way.",
     "related": [
       "giant-of-the-forest"
@@ -2236,11 +2318,21 @@
       "race"
     ],
     "sources": [
-      "Zulu oral tradition",
-      "Folktale collections"
+      "Zulu and Nguni oral tradition (izinganekwane, intsomi genres)",
+      "Henry Callaway, Nursery Tales, Traditions, and Histories of the Zulus (1868)",
+      "Harold Scheub, studies of Xhosa and Zulu oral performance (1960s onward)"
     ],
     "image": "/images/giants/amazimu.jpg",
-    "imageAlt": "Amazimu ogres"
+    "imageAlt": "Amazimu ogres",
+    "sections": {
+      "story": "The izimu, plural amazimu, appears throughout Zulu and related Nguni storytelling as the standard man-eating antagonist.\n\nThey are large and strong, they eat people, and in many tales they can pass as human or change shape, which is what makes them genuinely dangerous - the threat is not always visible on arrival. Some accounts give them distinguishing marks that a careful person notices in time.\n\nThe stories are overwhelmingly about children outwitting them. A child is captured and escapes by trickery; siblings rescue one another; an ogre is persuaded to look away, to open its mouth, to carry something it should not. Frequently the izimu is destroyed by its own greed or literal-mindedness. In a widespread type, a swallowed person or people are recovered alive when the ogre is cut open.\n\nThis is a body of tales told largely to and for children, and the structure delivers a consistent message: you are small, the world contains things that will eat you, and attention and cleverness are what you have.\n\nNguni oral tradition - Zulu, Xhosa, Swazi, Ndebele - shares a great deal of this material with local variation, and the izimu appears across it. The tales were performed, not recited: intsomi and izinganekwane are living genres with a performer, an audience and improvisation, and reading them as fixed texts loses most of the form.\n\nThe best-known collections in English come from the colonial and mission period and reflect that framing. Nguni-language sources and contemporary scholarship are the better route.",
+      "origins": "Zulu and wider Nguni oral tradition, in the izinganekwane and intsomi performance genres.\n\nHenry Callaway's Nursery Tales, Traditions, and Histories of the Zulus (1868) is the principal early published collection. Callaway was a missionary; his work is valuable and shaped by its purpose.\n\nLater collection and scholarship, notably Harold Scheub's extensive work on Xhosa and Zulu oral performance from the 1960s onward, treats the material as performance rather than text and is a substantial advance.\n\nContemporary southern African scholarship and Nguni-language sources are the appropriate current reference.",
+      "disputed": "The early collections were made by missionaries with an interest in the material's utility for conversion, and their selection and presentation reflect that.\n\nTerminology varies across Nguni languages and the beings differ in detail between traditions; treating izimu as a single fixed figure across all of them is a simplification.\n\nWhether the amazimu should be classed as giants is debatable. They are large man-eating beings, but \"ogre\" fits the tales better than \"giant\", and the classification here follows the catalogue rather than the tradition.\n\nReading these tales as historical memory of a hostile population is occasionally attempted and has no support."
+    },
+    "motifs": [
+      "cannibal",
+      "outwitted"
+    ]
   },
   {
     "id": "giant-of-the-forest",
@@ -2253,10 +2345,10 @@
     "culture": "Hausa / West African",
     "region": "West Africa",
     "type": "folklore",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Giant",
     "shortDescription": "West African forest giant of tale cycles - a being of the deep bush.",
-    "fullDescription": "Across Hausa and neighboring West African storytelling, giant beings of the forest appear as obstacles, judges, or devourers in moral and adventure tales. Names and attributes shift by region and teller; the pattern is stable: the bush holds powers larger than the town, and the hero who enters must use wit as much as strength.\n\nThe path narrows. That is how you know you have been seen. This composite entry gathers that pattern under a clear English label while acknowledging local specificity beyond any single colonial gloss.\n\nIt is folklore of the deep green, not a field guide to an undocumented species.",
+    "fullDescription": "A giant of the forest appears in Hausa storytelling as the large, dangerous inhabitant of the bush beyond the settlement. The specific figure behind this entry is not securely identified.",
     "mysteryNote": "The path narrows. That is how you know you have been seen - and that wit will matter more than height.",
     "related": [
       "amazimu"
@@ -2272,10 +2364,22 @@
       "west-africa"
     ],
     "sources": [
-      "Hausa and West African oral traditions"
+      "Hausa oral tradition (tatsuniyoyi), northern Nigeria and Niger",
+      "Frank Edgar, Litafi na Tatsuniyoyi na Hausa (1911-13)",
+      "Neil Skinner, Hausa Tales and Traditions (partial translation of Edgar)"
     ],
     "image": "/images/giants/giant-of-the-forest.jpg",
-    "imageAlt": "Giant of the Forest"
+    "imageAlt": "Giant of the Forest",
+    "sections": {
+      "story": "Hausa oral tradition, across northern Nigeria and Niger, includes a substantial body of tatsuniyoyi - folk tales, generally told in the evening, often to children, frequently featuring a trickster, an ogre or a spirit of the bush.\n\nThe bush, daji, is a meaningful category. It is what lies beyond the cultivated and settled land, and it is where the dodo and other dangerous beings live. Dodo is the term most often rendered in English as ogre or monster: large, devouring, sometimes shape-shifting, defeated in the tales by cunning, by a clever child, or by a magical helper.\n\nWhether the entry in this codex refers to a specific named figure or is a generic label applied to that category by an English-language source is not something we can establish. The name as we have it is descriptive rather than a transliteration, which is itself a warning sign - it suggests the figure reached the catalogue through paraphrase rather than from a Hausa source.\n\nWe are therefore keeping this short and saying what we can.\n\nHausa is spoken by tens of millions of people and has a large and living oral and written literature, including a substantial body of published tatsuniyoyi in Hausa. Anyone interested should go to that literature rather than to a one-line English gloss, and a properly researched version of this entry would start there.\n\nIf a Hausa-speaking reader can identify what figure this entry was meant to describe, we would like to hear from you.",
+      "origins": "Hausa oral tradition (tatsuniyoyi), northern Nigeria and Niger.\n\nCollections include Frank Edgar's Litafi na Tatsuniyoyi na Hausa (1911-13), a large early compilation in Hausa, later partly translated into English by Neil Skinner as Hausa Tales and Traditions.\n\nSubstantial Hausa-language scholarship and publishing exists and is the appropriate primary route.\n\nThe specific figure behind this catalogue entry is not identified in the sources available to us.",
+      "disputed": "The identification is the problem. A descriptive English name with no Hausa form attached cannot be traced reliably, and we are not going to guess which being was intended.\n\nThe dodo of Hausa tales is a broad category rather than a single character, and its members differ between tellings and regions.\n\nEarly collections, including Edgar's, were made under colonial administration; Edgar was a colonial officer, and while his compilation is large and valuable, the circumstances of collection are relevant.\n\nThis entry is a placeholder with an honest label. It should be either properly researched from Hausa sources or removed."
+    },
+    "motifs": [
+      "wild-highland",
+      "cannibal"
+    ],
+    "restrained": true
   },
   {
     "id": "stallo",
@@ -2437,7 +2541,7 @@
     "freeEntry": false,
     "height": "Reports claim ~12–15 feet (unverified)",
     "shortDescription": "Unverified modern military legend of a red-haired giant near Kandahar.",
-    "fullDescription": "Reports claim that in the early 2000s, during coalition operations in southern Afghanistan, special operations personnel encountered a towering red-haired figure in the mountains near Kandahar. According to the circulating account, the being carried a spear or crude weapon, stood far above human height - figures of twelve to fifteen feet are commonly repeated - and was killed after an armed engagement. Further details in the retellings describe unusual dentition, immense strength, and a body that was allegedly airlifted or photographed before disappearing into classified silence.\n\nNo official records corroborate the story. No verifiable photographs with chain of custody, no after-action reports released to the public, no named units on the record have confirmed the event. The account spread through oral military networks, late-night radio, podcasts, and forums - the twenty-first century's campfire - until it hardened into a modern legend with stable motifs: desert or mountain isolation, elite troops, a red-haired giant, and institutional denial.\n\nThis catalogue includes the Giant of Kandahar strictly as contemporary folklore of conflict zones, not as documented history. It sits beside older giant tales not because it is proven, but because people continue to tell it - and because the telling itself is a fact worth recording. Language here is deliberate: reports claim; according to the circulating account; no official records corroborate.",
+    "fullDescription": "The Giant of Kandahar is a story that a US special forces team killed a red-haired, six-fingered giant in Afghanistan in 2002. There is no evidence for it, and the story's actual history is documentable.",
     "mysteryNote": "War makes large shadows. Not every shadow has a body that a laboratory has held - or that paperwork admits.",
     "related": [
       "giant-of-kunar",
@@ -2454,11 +2558,22 @@
       "afghanistan"
     ],
     "sources": [
-      "Unverified oral accounts",
-      "Secondary media retellings"
+      "Paranormal radio and internet forum circulation, mid-2000s onward",
+      "Cable television treatments, 2010s (amplification, not evidence)",
+      "Absence of corroborating US military records; reported FOIA results",
+      "Comparative: 19th-c. American giant lore and Nephilim literature"
     ],
     "image": "/images/giants/giant-of-kandahar.jpg",
-    "imageAlt": "Giant of Kandahar (unverified modern legend)"
+    "imageAlt": "Giant of Kandahar (unverified modern legend)",
+    "sections": {
+      "story": "The claim, as it circulates, is specific enough to sound like a report. A US special operations patrol goes missing in Kandahar province. A second team is sent, finds a cave, and encounters a giant - variously twelve to fifteen feet tall, red-haired, with six fingers on each hand and two rows of teeth. It kills one soldier with a spear before being shot. The body is flown out and everything is classified.\n\nNone of this is supported by anything.\n\nWhat can be traced is where the story came from. It surfaced through paranormal talk radio and internet forums in the 2000s, gained wide circulation through repetition, and was substantially amplified by cable television treatments in the 2010s. The named witnesses are anonymous or unverifiable. No unit, no date, no casualty record, and no serviceman has ever been identified. US military casualties in Afghanistan are documented in detail, and no death matches the account.\n\nThe physical details are worth noticing because they are not random. Red hair, six fingers and double rows of teeth are the standard inventory of nineteenth-century American giant lore and of the Nephilim literature - the same features attached to the Lovelock Cave claims elsewhere in this codex. The Kandahar story is assembled from an existing kit.\n\nIts persistence is the genuinely interesting part: a war zone that is closed to verification, a claim of classification that makes absence of evidence into evidence, and an audience for whom the giants of Genesis are a live proposition.\n\nWe include it because the codex covers modern legend, and this is a clean specimen of one forming in traceable conditions. It is not a report of an event.",
+      "origins": "The story has no primary source. Its documented history runs through paranormal radio programming and internet forums from the mid-2000s onward.\n\nCable television treatments, particularly in the 2010s, gave it mass circulation and are the route by which most people encountered it.\n\nNo military record, casualty report, unit history or named participant supports it. Freedom of Information requests reported by journalists have produced nothing.\n\nIts component details derive from a long tradition of American giant lore and from Nephilim literature, both of which are documented and considerably older.",
+      "disputed": "There is nothing to dispute in the ordinary sense. No evidence has been produced in more than two decades.\n\nThe classification claim is unfalsifiable by design, and that is a recognised feature of this kind of story rather than an argument in its favour.\n\nWhat is genuinely worth studying is the transmission: how a claim with no source acquires circumstantial detail, named-sounding witnesses and television airtime. The Kandahar story is unusually well documented as a case of that process because it happened recently and online.\n\nTreating this entry as evidence of anything other than how modern legends form would be a misreading of it."
+    },
+    "motifs": [
+      "modern-rumour",
+      "bones-as-proof"
+    ]
   },
   {
     "id": "giant-of-kunar",
@@ -2471,7 +2586,7 @@
     "freeEntry": false,
     "height": "Reports claim extreme stature (unverified)",
     "shortDescription": "Unverified legend of a giant observed in Kunar Province.",
-    "fullDescription": "According to the circulating account, personnel in Kunar Province, eastern Afghanistan, reported a massive humanoid figure in remote terrain during the conflict years of the 2000s. Reports claim physical traits beyond ordinary human range - extreme stature, uncanny presence, an encounter that ends in gunfire or flight depending on the teller. Details migrate between versions; certainty does not increase with repetition.\n\nNo official records corroborate these accounts. Grouped with the Kandahar narrative and older war-story patterns, the Kunar giant is presented here only as unverified modern folklore - the twenty-first century telling giant stories in the language of after-action rumor. Two provinces. One pattern of rumor. Zero paperwork.\n\nTreat every retelling as story until evidence appears. None has, in the public record. The codex records the telling, not the body.",
+    "fullDescription": "A parallel Afghanistan story places a giant in the Kunar valley. Like the Kandahar version, it has no verifiable source, and the two accounts have merged in circulation.",
     "mysteryNote": "Two provinces. One pattern of rumor. Zero paperwork - and a codex that refuses to launder rumor as fact.",
     "related": [
       "giant-of-kandahar"
@@ -2487,10 +2602,21 @@
       "kunar"
     ],
     "sources": [
-      "Unverified oral accounts"
+      "Paranormal radio and internet forum circulation, mid-2000s onward",
+      "Cable television treatments, 2010s (amplification, not evidence)",
+      "Absence of corroborating military records"
     ],
     "image": "/images/giants/giant-of-kunar.jpg",
-    "imageAlt": "Giant of Kunar (unverified modern legend)"
+    "imageAlt": "Giant of Kunar (unverified modern legend)",
+    "sections": {
+      "story": "The Kunar story runs on the same lines as the Kandahar one: a remote valley, a cave, a patrol, an enormous being, casualties, a recovered body, classification.\n\nIn practice the two are frequently told as one. Details migrate between them - the red hair, the six fingers, the spear - and different retellings place the same events in different provinces. That instability is itself informative. A report has a location; a legend has a setting, and settings are interchangeable.\n\nKunar province is mountainous, remote, and was among the harder areas of the Afghan conflict. It is exactly the kind of place a story like this attaches to: difficult terrain, limited access, genuine danger, and a long history of outside forces failing to control it.\n\nEverything said about the Kandahar version applies here. There is no unit, no date, no casualty, no witness who can be identified, and no document. The claim that the evidence is classified performs the same function of insulating the story from checking.\n\nWhat makes the pair worth keeping in a codex like this one is that they show a legend in its formative phase. Most of the entries here reach us through centuries of transmission with the origins lost. These two are perhaps twenty years old, they formed in public on recorded media, and the process can be watched.\n\nThey are also a reminder of the disclaimer this site carries on every modern-legend entry: unverified oral tradition is not a weaker kind of fact. It is a different kind of thing.",
+      "origins": "No primary source exists, and that is the finding rather than a gap in our research.\n\nCirculation runs through the same paranormal radio and internet ecosystem as the Kandahar story, from the mid-2000s onward. The earliest traceable appearances are forum posts and call-in segments, neither of which cite anything, and each subsequent retelling cites the previous one.\n\nTelevision treatments in the 2010s carried both versions, frequently without distinguishing them, and are responsible for most of the story's present reach. Broadcast is not corroboration, though it is regularly mistaken for it.\n\nNo military documentation, casualty record, unit history or identifiable witness exists for either version. US deaths in Afghanistan are individually documented and none matches.\n\nThe two stories have substantially merged in retelling, and many accounts cannot now be assigned to one or the other.",
+      "disputed": "Whether Kunar and Kandahar were ever distinct stories is unclear. They may have separate origins that converged, or one may be a relocated version of the other.\n\nAs with Kandahar, there is no evidence to weigh. The appropriate description is not \"unproven\" but \"unsourced\".\n\nThe value of the entry is documentary: it records that these claims exist and how they spread, not that anything happened.\n\nReaders encountering confident retellings with specific details should note that specificity in this material tends to increase with distance from any source, which is the reverse of how evidence behaves."
+    },
+    "motifs": [
+      "modern-rumour",
+      "wild-highland"
+    ]
   },
   {
     "id": "paul-bunyan",
@@ -2503,7 +2629,7 @@
     "freeEntry": true,
     "height": "As tall as the tale requires",
     "shortDescription": "Lumberjack giant of American tall tales - Babe the Blue Ox at his side.",
-    "fullDescription": "Paul Bunyan is the hyperbole of the North American logging frontier made flesh: a lumberjack so large his footprints became Minnesota's ten thousand lakes, his flapjack griddle greased by skating cooks with hams strapped to their feet, his companion a blue ox named Babe measured in axe-handles between the eyes. He dug Puget Sound as a bay for his ships, straightened crooked roads by hitching Babe to the curves, and logged the Dakotas in a fortnight when the mosquitoes were big enough to breed with eagles.\n\nUnlike sacred giants of older cosmologies, Paul is openly a yarn. He grew from oral camp bragging among loggers and was polished in the early twentieth century by advertising copywriters and children's authors until he became a mascot of industrial folklore - the giant as American work-boast. Statues of Paul and Babe still stand outside gift shops from California to Maine; the smile is painted on, the scale is tourist-sized, and the joke remains fond.\n\nIn this codex he is typed as a tall-tale, not a myth of creation or a modern military rumor. He clears forests because the culture that invented him cleared forests; he grows because the boast always needs one more foot of height. The ox is blue because the winter was cold enough to freeze the color in - or because the story said so. In tall-tale logic, those are the same reason.",
+    "fullDescription": "Paul Bunyan is a giant lumberjack with a blue ox named Babe. He is the best-known giant in American folklore and substantially an advertising creation, which is the most interesting thing about him.",
     "mysteryNote": "The ox is blue because the winter was cold. Or because the story required it. On the frontier, that was evidence enough.",
     "related": [
       "cormoran",
@@ -2520,10 +2646,22 @@
       "america"
     ],
     "sources": [
-      "American lumber camp oral tradition",
-      "Laughead and later popularizations"
+      "Great Lakes logging-camp oral tradition, late 19th c.",
+      "James MacGillivray, Detroit News-Tribune (1910)",
+      "William Laughead, Red River Lumber Company pamphlets (1916 onward)",
+      "Richard Dorson, on fakelore (mid-20th c. critique)"
     ],
     "image": "/images/giants/paul-bunyan.jpg",
-    "imageAlt": "Paul Bunyan and Babe the Blue Ox"
+    "imageAlt": "Paul Bunyan and Babe the Blue Ox",
+    "sections": {
+      "story": "The Paul Bunyan of popular knowledge scoops out the Great Lakes to water Babe, drags his axe behind him and gouges the Grand Canyon, and creates the ten thousand lakes of Minnesota with his and Babe's footprints. He clears forests at impossible speed. His griddle is greased by men skating across it with bacon strapped to their feet.\n\nNone of it asks to be believed. The tall tale is a genre with its own contract: the teller exaggerates, the listener knows, and the pleasure is in the escalation. This makes Bunyan structurally different from every other entry in this codex. He is not a belief that faded into story. He was a joke from the beginning.\n\nHis origins are genuinely in the logging camps of the Great Lakes region and eastern Canada, where oral tall tales about an outsized lumberjack circulated among workers in the later nineteenth century. That much is accepted.\n\nWhat happened next is unusual. In 1916 the Red River Lumber Company, a California logging firm, began publishing promotional pamphlets written by an advertising man named William Laughead, featuring Paul Bunyan as a mascot. Laughead invented a great deal - Babe the Blue Ox appears to be substantially his, along with several of the supporting characters and much of the material now considered traditional.\n\nThe advertising Bunyan then escaped into general culture and became folklore in reverse: a commercial character absorbed into the national repertoire, taught in schools, and commemorated in enormous roadside statues across the northern United States.\n\nFolklorists have argued about him for a century, with some calling the whole thing fakelore. He is a giant made of marketing that people genuinely adopted.",
+      "origins": "Oral tall tales among lumber workers in the Great Lakes region and eastern Canada, later nineteenth century, are the genuine substrate. Documentation of this phase is thin.\n\nEarly print appearances include a 1910 newspaper piece by James MacGillivray in the Detroit News-Tribune.\n\nWilliam Laughead's promotional pamphlets for the Red River Lumber Company, from 1916 onward, are the decisive intervention and introduced much of the now-standard material including Babe.\n\nLater literary treatments by Esther Shephard, James Stevens and others consolidated the figure. Richard Dorson's critique, coining the term fakelore, is the central scholarly intervention.",
+      "disputed": "How much of Bunyan is authentically traditional and how much is Laughead's is the long-running argument. The oral substrate is accepted; its content is poorly documented, which makes the boundary hard to draw.\n\nRichard Dorson's charge of fakelore has been influential and also contested. Critics argue that the distinction between authentic and commercial tradition is less clean than Dorson allowed, and that material genuinely adopted by a public is folklore whatever its origin.\n\nRegional claims to Bunyan's origin - Michigan, Minnesota, Wisconsin, Maine, Quebec - are numerous, competitive and mostly commercially motivated.\n\nSome early logging-camp material was rough and, by modern standards, offensive in ways later versions removed. The sanitised children's Bunyan is itself a further layer of construction."
+    },
+    "motifs": [
+      "tall-tale",
+      "landscape-body",
+      "builder"
+    ]
   }
 ]

@@ -199,6 +199,7 @@ export default async function GiantDetailPage({ params }: Props) {
               sections={lore.sections}
               motifs={giant.motifs}
               slug={giant.slug}
+              restrained={giant.restrained}
               heading="Account"
             />
           ) : (

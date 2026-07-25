@@ -10,6 +10,7 @@ const staticRoutes: {
 }[] = [
   { path: "", priority: 1, freq: "weekly" },
   { path: "/giants", priority: 0.9, freq: "weekly" },
+  { path: "/motifs", priority: 0.8, freq: "monthly" },
   { path: "/map", priority: 0.7, freq: "monthly" },
   { path: "/findings", priority: 0.7, freq: "monthly" },
   { path: "/about", priority: 0.5, freq: "monthly" },

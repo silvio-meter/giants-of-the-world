@@ -34,6 +34,12 @@ export interface Giant {
   sections?: GiantSections;
   /** Keys into motifs.json — the cross-cultural layer. Not lore; safe for the client. */
   motifs?: string[];
+  /**
+   * Deliberately short because the record is thin or the tradition could not
+   * be attributed to a specific community. Always free — we do not charge for
+   * an entry whose main content is an admission.
+   */
+  restrained?: boolean;
   related: string[];
   coordinates: [number, number] | null;
   tags: string[];

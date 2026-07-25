@@ -75,13 +75,29 @@ export function DeepSections({
   sections,
   motifs,
   slug,
+  restrained = false,
 }: {
   sections: GiantSections;
   motifs?: string[];
   slug: string;
+  /** Short on purpose: the record is thin or could not be attributed. */
+  restrained?: boolean;
 }) {
   return (
     <>
+      {restrained && (
+        <div
+          className="mb-8 rounded border border-amber-700/50 bg-amber-950/30 px-4 py-3 text-sm text-amber-100/90"
+          role="note"
+        >
+          <strong className="font-medium text-amber-200">
+            A deliberately short entry.
+          </strong>{" "}
+          We could not attribute this tradition to a specific community from
+          the sources available, so we have not written a fuller account rather
+          than invent one. This entry is free to read.
+        </div>
+      )}
       <section>
         <Heading>The story</Heading>
         <Prose text={sections.story} />

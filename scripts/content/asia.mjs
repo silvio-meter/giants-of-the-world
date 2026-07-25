@@ -1,4 +1,4 @@
-export default {
+const asia = {
   ravana: {
     motifs: ["pious-adversary", "boon-abused", "many-limbed"],
     open: "Ravana, ten-headed king of Lanka, is the antagonist of the Ramayana and one of the most accomplished beings in it - a scholar of the Vedas, a master of the veena, and a devotee of Shiva whose devotion is exactly what makes him dangerous.",
@@ -279,3 +279,5 @@ The date of the earliest written version is uncertain; the illustrated scrolls w
     ],
   },
 };
+
+export default asia;

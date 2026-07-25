@@ -1,4 +1,4 @@
-export default {
+const greek = {
   atlas: {
     motifs: ["sky-bearer", "eternal-punishment", "war-on-heaven"],
     open: "Atlas, a Titan of the generation before the Olympians, stands at the western edge of the world holding the sky away from the earth. The punishment is the portrait: he is remembered almost entirely as a posture.",
@@ -378,3 +378,5 @@ The frequent modern description of Talos as the first robot is defensible in tha
     ],
   },
 };
+
+export default greek;
