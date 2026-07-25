@@ -21,6 +21,16 @@ const chunkDir = join(root, ".next/static/chunks");
 
 const built = existsSync(chunkDir);
 
+// When invoked as `npm run test:bundle` — which is how CI runs it, after the
+// build — a missing build is a failure, not a reason to skip. Skipping there
+// is what made these guards silently useless the first time.
+const requireBuild = process.env.REQUIRE_BUILD === "1";
+if (requireBuild && !built) {
+  throw new Error(
+    "REQUIRE_BUILD=1 but .next/static is missing — run `npm run build` first"
+  );
+}
+
 function allChunks(dir) {
   return readdirSync(dir).flatMap((name) => {
     const full = join(dir, name);
