@@ -43,6 +43,7 @@ export async function GET(
     {
       fullDescription: lore.fullDescription,
       mysteryNote: lore.mysteryNote,
+      ...(lore.sections ? { sections: lore.sections } : {}),
     },
     { headers: { "Cache-Control": "private, no-store" } }
   );

@@ -131,3 +131,138 @@ test("findings reference real giants", () => {
     );
   }
 });
+
+// ---------------------------------------------------------------------------
+// Deep entries: the structured format piloted on a few slugs before rollout.
+// ---------------------------------------------------------------------------
+
+const motifVocabulary = read("src/data/motifs.json");
+const deep = master.filter((g) => g.sections);
+const words = (s) => s.trim().split(/\s+/).filter(Boolean).length;
+
+test("deep entries carry all three sections, none of them token", () => {
+  for (const giant of deep.filter((g) => !g.restrained)) {
+    for (const key of ["story", "origins", "disputed"]) {
+      const text = giant.sections[key];
+      assert.ok(text?.trim(), `${giant.slug}: section "${key}" is empty`);
+      assert.ok(
+        words(text) >= 80,
+        `${giant.slug}: section "${key}" is only ${words(text)} words — too thin to be worth paying for`
+      );
+    }
+  }
+});
+
+test("deep entries put real substance behind the paywall", () => {
+  for (const giant of deep.filter((g) => !g.restrained)) {
+    const paid = words(Object.values(giant.sections).join(" "));
+    assert.ok(
+      paid >= 350,
+      `${giant.slug}: only ${paid} words behind the paywall`
+    );
+  }
+});
+
+test("restrained entries are free, and say why they are short", () => {
+  for (const giant of master.filter((g) => g.restrained)) {
+    assert.ok(
+      giant.freeEntry,
+      `${giant.slug}: a restrained entry is behind the paywall — we would be charging for an admission`
+    );
+    assert.ok(
+      giant.sections?.disputed,
+      `${giant.slug}: restrained but gives no account of why`
+    );
+    assert.ok(
+      /cannot|not able|unreliab|not identif|do not know/i.test(
+        giant.sections.disputed
+      ),
+      `${giant.slug}: restrained entries must state the limitation plainly`
+    );
+  }
+});
+
+test("every entry still carries all three sections", () => {
+  for (const giant of master) {
+    assert.ok(giant.sections, `${giant.slug}: no sections`);
+    for (const key of ["story", "origins", "disputed"]) {
+      assert.ok(
+        giant.sections[key]?.trim(),
+        `${giant.slug}: section "${key}" is empty`
+      );
+    }
+  }
+});
+
+test("motifs come from the controlled vocabulary", () => {
+  for (const giant of master) {
+    for (const key of giant.motifs ?? []) {
+      assert.ok(
+        motifVocabulary[key],
+        `${giant.slug}: motif "${key}" is not in motifs.json`
+      );
+    }
+  }
+});
+
+test("motif vocabulary has no duplicate names", () => {
+  const names = Object.values(motifVocabulary).map((m) => m.name);
+  assert.equal(
+    new Set(names).size,
+    names.length,
+    "two motifs share a display name, which would read as a bug on the page"
+  );
+});
+
+test("deep entries do not echo the mystery note back at the reader", () => {
+  const norm = (s) =>
+    s.toLowerCase().replace(/[^a-z0-9 ]/g, " ").replace(/\s+/g, " ").trim();
+  for (const giant of deep) {
+    const body = norm(
+      giant.fullDescription + " " + Object.values(giant.sections).join(" ")
+    );
+    const opening = norm(giant.mysteryNote).split(" ").slice(0, 6).join(" ");
+    if (opening.length <= 15) continue;
+    assert.ok(
+      !body.includes(opening),
+      `${giant.slug}: the mystery note repeats text already in the entry`
+    );
+  }
+});
+
+test("editorial notes never reach published prose", () => {
+  for (const giant of deep) {
+    const all = giant.fullDescription + " " + Object.values(giant.sections).join(" ");
+    assert.ok(
+      !/\bThis entry (refuses|keeps|treats|presents)\b/.test(all),
+      `${giant.slug}: authoring commentary leaked into the entry`
+    );
+  }
+});
+
+test("deep entries cite something specific", () => {
+  const vague =
+    /^(.*\btradition\b.*|Historical compilations|Folklore|Local legend|Various|Regional folklore)$/i;
+  for (const giant of deep) {
+    const specific = giant.sources.filter((s) => !vague.test(s.trim()));
+    assert.ok(
+      specific.length >= 1,
+      `${giant.slug}: every source is a vague category, none is a citation`
+    );
+  }
+});
+
+test("lore file carries sections; the public catalog never does", () => {
+  for (const giant of deep) {
+    assert.ok(
+      lore[giant.slug].sections,
+      `${giant.slug}: sections missing from the lore file`
+    );
+  }
+  for (const entry of publicEntries) {
+    assert.ok(
+      !("sections" in entry),
+      `${entry.slug}: sections leaked into the client catalog`
+    );
+  }
+});

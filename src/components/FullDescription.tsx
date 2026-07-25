@@ -1,9 +1,16 @@
 import { MysteryNote } from "./MysteryNote";
+import { DeepSections } from "./DeepSections";
 import { splitParagraphs } from "@/lib/content";
+import type { GiantSections } from "@/lib/types";
 
 interface Props {
   fullDescription: string;
   mysteryNote: string;
+  /** Deep entries render structured sections instead of a wall of prose. */
+  sections?: GiantSections;
+  motifs?: string[];
+  slug: string;
+  restrained?: boolean;
   /** Heading label — "Full account" once unlocked, "Account" for open entries. */
   heading?: string;
 }
@@ -15,6 +22,10 @@ interface Props {
 export function FullDescription({
   fullDescription,
   mysteryNote,
+  sections,
+  motifs,
+  slug,
+  restrained,
   heading = "Full account",
 }: Props) {
   const paragraphs = splitParagraphs(fullDescription);
@@ -29,6 +40,16 @@ export function FullDescription({
           <p key={i}>{para}</p>
         ))}
       </div>
+      {sections && (
+        <div className="mt-10">
+          <DeepSections
+            sections={sections}
+            motifs={motifs}
+            slug={slug}
+            restrained={restrained}
+          />
+        </div>
+      )}
       {mysteryNote ? <MysteryNote note={mysteryNote} /> : null}
     </>
   );

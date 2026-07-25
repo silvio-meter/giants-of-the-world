@@ -1,0 +1,60 @@
+import motifData from "@/data/motifs.json";
+import { giants } from "./giants";
+import type { GiantCardData } from "./format";
+
+export interface Motif {
+  key: string;
+  name: string;
+  blurb: string;
+}
+
+const motifs = motifData as Record<string, { name: string; blurb: string }>;
+
+export function getMotif(key: string): Motif | null {
+  const m = motifs[key];
+  return m ? { key, ...m } : null;
+}
+
+export function getAllMotifs(): Motif[] {
+  return Object.entries(motifs).map(([key, m]) => ({ key, ...m }));
+}
+
+/**
+ * Other giants carrying the same motif.
+ *
+ * This is the view Wikipedia has no place for: one article per giant, and
+ * nothing that reads across them. Cross-culture matches are surfaced first,
+ * since those are the ones worth the reader's attention.
+ */
+export function giantsSharingMotif(
+  key: string,
+  excludeSlug?: string
+): GiantCardData[] {
+  const self = excludeSlug
+    ? giants.find((g) => g.slug === excludeSlug)
+    : undefined;
+
+  return giants
+    .filter((g) => g.slug !== excludeSlug && g.motifs?.includes(key))
+    .sort((a, b) => {
+      if (!self) return a.name.localeCompare(b.name);
+      const aCross = a.culture !== self.culture ? 0 : 1;
+      const bCross = b.culture !== self.culture ? 0 : 1;
+      return aCross - bCross || a.name.localeCompare(b.name);
+    });
+}
+
+/** Motifs that appear in more than one culture — the ones that carry weight. */
+export function crossCulturalMotifs(): { motif: Motif; cultures: string[] }[] {
+  return getAllMotifs()
+    .map((motif) => ({
+      motif,
+      cultures: [
+        ...new Set(
+          giants.filter((g) => g.motifs?.includes(motif.key)).map((g) => g.culture)
+        ),
+      ],
+    }))
+    .filter((m) => m.cultures.length > 1)
+    .sort((a, b) => b.cultures.length - a.cultures.length);
+}

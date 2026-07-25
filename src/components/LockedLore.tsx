@@ -5,10 +5,13 @@ import { useEffect, useState } from "react";
 import { splitParagraphs } from "@/lib/content";
 import { refundDays } from "@/lib/site";
 import { MysteryNote } from "./MysteryNote";
+import { DeepSections } from "./DeepSections";
 import { usePlan } from "./PlanProvider";
+import type { GiantSections } from "@/lib/types";
 
 interface Props {
   slug: string;
+  motifs?: string[];
   /** Opening paragraph — safe for everyone, baked into the static page. */
   freePreview: string;
   /** True when there is more text beyond the preview. */
@@ -18,6 +21,7 @@ interface Props {
 interface Lore {
   fullDescription: string;
   mysteryNote: string;
+  sections?: GiantSections;
 }
 
 /**
@@ -28,7 +32,7 @@ interface Lore {
  * the plan server-side. Anonymous readers — the large majority — see the CTA
  * that is already in the static HTML, with no request and no layout shift.
  */
-export function LockedLore({ slug, freePreview, hasMore }: Props) {
+export function LockedLore({ slug, motifs, freePreview, hasMore }: Props) {
   const { isPaid, ready } = usePlan();
   const [lore, setLore] = useState<Lore | null>(null);
   const [attempted, setAttempted] = useState(false);
@@ -70,6 +74,11 @@ export function LockedLore({ slug, freePreview, hasMore }: Props) {
             <p key={i}>{para}</p>
           ))}
         </div>
+        {lore.sections && (
+          <div className="mt-10">
+            <DeepSections sections={lore.sections} motifs={motifs} slug={slug} />
+          </div>
+        )}
         {lore.mysteryNote ? <MysteryNote note={lore.mysteryNote} /> : null}
       </>
     );

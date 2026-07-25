@@ -10,6 +10,7 @@ import { usePlan } from "./PlanProvider";
 const nav = [
   { href: "/giants", label: "Catalogue" },
   { href: "/favourites", label: "Favourites" },
+  { href: "/motifs", label: "Motifs" },
   { href: "/map", label: "Map" },
   { href: "/findings", label: "Bones & Shadows" },
   { href: "/pricing", label: "Pricing" },

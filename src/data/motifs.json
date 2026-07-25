@@ -1,0 +1,110 @@
+{
+  "one-eye": {
+    "name": "The single eye",
+    "blurb": "A giant with one eye, and the blinding or losing of it. The motif recurs on separate continents with no plausible line of transmission between them."
+  },
+  "body-cosmogony": {
+    "name": "A world built from a body",
+    "blurb": "The earth, sky and sea are made from the dismembered corpse of a primordial giant. Mountains are bones; rivers are blood."
+  },
+  "flood-survivor": {
+    "name": "Survivor of the flood",
+    "blurb": "A giant or giant-descended line survives a deluge that destroys the rest of its kind, and so carries the old world into the new one."
+  },
+  "petrified": {
+    "name": "Turned to stone",
+    "blurb": "A giant becomes a rock, hill or island. The landscape is offered as the surviving evidence, which is what makes the story durable."
+  },
+  "builder": {
+    "name": "The giant as builder",
+    "blurb": "Walls, causeways, dolmens and bridges attributed to giants — usually structures whose real makers had been forgotten."
+  },
+  "cannibal": {
+    "name": "Eater of people",
+    "blurb": "The giant as appetite: it takes travellers, children or the sick. Frequently a warning attached to a specific dangerous place."
+  },
+  "pre-people": {
+    "name": "The people who came before",
+    "blurb": "Giants as an earlier race displaced by the present one. Often a way of accounting for ruins, large bones, or an older population."
+  },
+  "outwitted": {
+    "name": "Defeated by cunning",
+    "blurb": "The giant loses to intelligence rather than strength — a trick, a false name, a riddle. Size is set up precisely so that it can fail."
+  },
+  "sky-bearer": {
+    "name": "Holding up the sky",
+    "blurb": "A giant who carries or props the heavens, explaining why the sky stays where it is."
+  },
+  "buried-sleeper": {
+    "name": "Sleeping under the land",
+    "blurb": "The giant is not dead but sleeping beneath a mountain or island, and may yet wake. Ties a named place to an unfinished story."
+  },
+  "wild-highland": {
+    "name": "The wild one of the uplands",
+    "blurb": "A hairy, solitary giant of forest or mountain, hostile to herders and travellers — the shape a frontier takes in story."
+  },
+  "colonial-distortion": {
+    "name": "Flattened by outsiders",
+    "blurb": "A being from a living tradition rewritten by colonial-era writers into a simpler 'giant'. The distortion is itself part of the record."
+  },
+  "war-on-heaven": {
+    "name": "War against the gods",
+    "blurb": "Giants rise against the ruling powers and lose. The defeat is usually the point: it explains why the present order is the order."
+  },
+  "eternal-punishment": {
+    "name": "Punished without end",
+    "blurb": "Bound, stretched, buried or fed upon forever. The giant becomes a fixed feature of the cosmos rather than a character in it."
+  },
+  "strength-from-earth": {
+    "name": "Strength drawn from the ground",
+    "blurb": "The giant is unbeatable while touching its own soil, and is beaten by being lifted from it. Power is local, and that is the lesson."
+  },
+  "many-limbed": {
+    "name": "Excess of body",
+    "blurb": "Extra arms, heads, hands or fingers. Surplus anatomy marks a being as belonging to an older, less regulated order of creation."
+  },
+  "star-become": {
+    "name": "Set among the stars",
+    "blurb": "The dead giant is placed in the sky as a constellation, which keeps the story visible every clear night."
+  },
+  "made-not-born": {
+    "name": "Made, not born",
+    "blurb": "A giant forged rather than fathered — bronze, clay or craft. It raises the question of whether the thing is alive at all."
+  },
+  "boon-abused": {
+    "name": "The gift that undoes",
+    "blurb": "Devotion earns a boon; the boon is worded too cleverly and becomes the exact shape of the giant's destruction."
+  },
+  "pious-adversary": {
+    "name": "The devout enemy",
+    "blurb": "An opponent of the gods who is also learned, generous or genuinely devoted. The tradition refuses to make him simply wicked."
+  },
+  "guardian": {
+    "name": "The giant as guardian",
+    "blurb": "Set to watch a place, an island or a people. Menace pointed outward instead of inward."
+  },
+  "sun-chaser": {
+    "name": "Pursuing the sun",
+    "blurb": "A giant who races, shoots at or swallows the sun, and generally does not survive the attempt."
+  },
+  "bones-as-proof": {
+    "name": "Bones offered as evidence",
+    "blurb": "Large remains — real fossils, misread burials, or claims that no one can now examine — put forward to prove the giants were literal."
+  },
+  "modern-rumour": {
+    "name": "Rumour of our own time",
+    "blurb": "A giant reported in living memory, circulating through soldiers, forums and video. Unverified by definition, and revealing regardless."
+  },
+  "tall-tale": {
+    "name": "Knowingly tall tale",
+    "blurb": "Exaggeration that never asked to be believed. The audience and the teller are both in on it, which makes it a different kind of story."
+  },
+  "seasonal-visitor": {
+    "name": "Comes with the season",
+    "blurb": "A giant tied to a date in the calendar — midwinter, harvest, a feast — who arrives, is fed or feared, and leaves."
+  },
+  "landscape-body": {
+    "name": "The land is the body",
+    "blurb": "A named hill, lake or island is understood as a being, not merely as its memorial. The country is read as a person."
+  }
+}

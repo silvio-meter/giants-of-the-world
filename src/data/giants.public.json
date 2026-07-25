@@ -31,11 +31,17 @@
       "edda"
     ],
     "sources": [
-      "Prose Edda",
-      "Poetic Edda (Vafþrúðnismál)"
+      "Snorri Sturluson, Prose Edda: Gylfaginning (Iceland, c. 1220)",
+      "Poetic Edda: Vafþrúðnismál, stanzas 21 and 28-35",
+      "Poetic Edda: Grímnismál, stanzas 40-41"
     ],
     "image": "/images/giants/ymir.jpg",
-    "imageAlt": "Ymir, the primordial frost giant"
+    "imageAlt": "Ymir, the primordial frost giant",
+    "motifs": [
+      "body-cosmogony",
+      "flood-survivor",
+      "pre-people"
+    ]
   },
   {
     "id": "nephilim",
@@ -66,13 +72,18 @@
       "flood"
     ],
     "sources": [
-      "Genesis 6",
-      "Numbers 13",
-      "1 Enoch",
-      "Book of Jubilees"
+      "Genesis 6:1-4; Numbers 13:33 (Hebrew Bible)",
+      "1 Enoch, the Book of the Watchers, chapters 6-16 (3rd-1st c. BCE)",
+      "Book of Jubilees 5; Dead Sea Scrolls Enoch fragments",
+      "Josephus, Antiquities of the Jews I.3.1"
     ],
     "image": "/images/giants/nephilim.jpg",
-    "imageAlt": "The Nephilim, mighty ones of old"
+    "imageAlt": "The Nephilim, mighty ones of old",
+    "motifs": [
+      "war-on-heaven",
+      "flood-survivor",
+      "bones-as-proof"
+    ]
   },
   {
     "id": "goliath",
@@ -102,12 +113,17 @@
       "david"
     ],
     "sources": [
-      "1 Samuel 17",
-      "2 Samuel 21",
-      "Dead Sea Scrolls (4QSamª)"
+      "1 Samuel 17 (Masoretic Text); Septuagint 1 Kingdoms 17 (shorter version)",
+      "2 Samuel 21:19 and 1 Chronicles 20:5 (the Elhanan problem)",
+      "4QSam-a, Dead Sea Scrolls (height variant)",
+      "Tell es-Safi/Gath ostracon, 10th-9th c. BCE (Philistine names)"
     ],
     "image": "/images/giants/goliath.jpg",
-    "imageAlt": "Goliath of Gath, Philistine champion"
+    "imageAlt": "Goliath of Gath, Philistine champion",
+    "motifs": [
+      "outwitted",
+      "war-on-heaven"
+    ]
   },
   {
     "id": "og-of-bashan",
@@ -137,12 +153,18 @@
       "bashan"
     ],
     "sources": [
-      "Deuteronomy 3",
-      "Numbers 21",
-      "Psalm 135"
+      "Deuteronomy 3:1-13 (the iron bedstead at Rabbah); Numbers 21:33-35",
+      "Joshua 12:4-5, 13:12; Psalms 135:11, 136:20",
+      "Babylonian Talmud, Berakhot 54b and Niddah 24b (rabbinic expansion)",
+      "Ugaritic rpum texts (comparative evidence for the term)"
     ],
     "image": "/images/giants/og-of-bashan.jpg",
-    "imageAlt": "Og of Bashan, last of the Rephaim"
+    "imageAlt": "Og of Bashan, last of the Rephaim",
+    "motifs": [
+      "pre-people",
+      "bones-as-proof",
+      "war-on-heaven"
+    ]
   },
   {
     "id": "atlas",
@@ -171,13 +193,18 @@
       "heracles"
     ],
     "sources": [
-      "Hesiod Theogony",
-      "Apollodorus",
-      "Pindar",
-      "Plato Critias"
+      "Hesiod, Theogony 517-520 and 746-748 (c. 700 BCE)",
+      "Homer, Odyssey I.52-54",
+      "Apollodorus, Bibliotheca II.5.11 (the golden apples)",
+      "Ovid, Metamorphoses IV.627-662 (petrification by Perseus)"
     ],
     "image": "/images/giants/atlas.jpg",
-    "imageAlt": "Atlas bearing the heavens"
+    "imageAlt": "Atlas bearing the heavens",
+    "motifs": [
+      "sky-bearer",
+      "eternal-punishment",
+      "war-on-heaven"
+    ]
   },
   {
     "id": "polyphemus",
@@ -206,12 +233,18 @@
       "sicily"
     ],
     "sources": [
-      "Homer Odyssey IX",
-      "Theocritus Idylls",
-      "Ovid Metamorphoses"
+      "Homer, Odyssey IX.105-566",
+      "Euripides, Cyclops (satyr play, 5th c. BCE)",
+      "Theocritus, Idylls VI and XI",
+      "Ovid, Metamorphoses XIII.750-897 (Polyphemus, Galatea and Acis)"
     ],
     "image": "/images/giants/polyphemus.jpg",
-    "imageAlt": "Polyphemus the Cyclops"
+    "imageAlt": "Polyphemus the Cyclops",
+    "motifs": [
+      "one-eye",
+      "cannibal",
+      "outwitted"
+    ]
   },
   {
     "id": "enceladus",
@@ -241,12 +274,17 @@
       "athena"
     ],
     "sources": [
-      "Apollodorus",
-      "Virgil Aeneid",
-      "Pausanias"
+      "Apollodorus, Bibliotheca I.6.1-2 (the Gigantomachy)",
+      "Virgil, Aeneid III.578-582 (Enceladus beneath Etna)",
+      "Hesiod, Theogony 185 (birth of the Giants from Gaia)",
+      "Pergamon Altar frieze, 2nd c. BCE (Berlin) - major visual source"
     ],
     "image": "/images/giants/enceladus.jpg",
-    "imageAlt": "Enceladus buried beneath Etna"
+    "imageAlt": "Enceladus buried beneath Etna",
+    "motifs": [
+      "war-on-heaven",
+      "buried-sleeper"
+    ]
   },
   {
     "id": "antaeus",
@@ -275,12 +313,17 @@
       "libya"
     ],
     "sources": [
-      "Apollodorus",
-      "Pindar",
-      "Plutarch Life of Sertorius"
+      "Pindar, Isthmian IV",
+      "Apollodorus, Bibliotheca II.5.11",
+      "Lucan, Pharsalia IV.590-660",
+      "Plutarch, Life of Sertorius 9 (the alleged skeleton at Tingis)"
     ],
     "image": "/images/giants/antaeus.jpg",
-    "imageAlt": "Antaeus wrestling Heracles"
+    "imageAlt": "Antaeus wrestling Heracles",
+    "motifs": [
+      "strength-from-earth",
+      "outwitted"
+    ]
   },
   {
     "id": "alcyoneus",
@@ -309,11 +352,16 @@
       "pallene"
     ],
     "sources": [
-      "Apollodorus",
-      "Pindar Isthmian 6"
+      "Apollodorus, Bibliotheca I.6.1",
+      "Pindar, Nemean IV and Isthmian VI",
+      "Pergamon Altar frieze, east side, 2nd c. BCE (Berlin)"
     ],
     "image": "/images/giants/alcyoneus.jpg",
-    "imageAlt": "Alcyoneus of the Gigantomachy"
+    "imageAlt": "Alcyoneus of the Gigantomachy",
+    "motifs": [
+      "war-on-heaven",
+      "strength-from-earth"
+    ]
   },
   {
     "id": "porphyrion",
@@ -343,11 +391,15 @@
       "hera"
     ],
     "sources": [
-      "Apollodorus",
-      "Pindar"
+      "Apollodorus, Bibliotheca I.6.2",
+      "Pindar, Pythian VIII.12-18",
+      "Pergamon Altar frieze, 2nd c. BCE (Berlin)"
     ],
     "image": "/images/giants/porphyrion.jpg",
-    "imageAlt": "Porphyrion, king of the Gigantes"
+    "imageAlt": "Porphyrion, king of the Gigantes",
+    "motifs": [
+      "war-on-heaven"
+    ]
   },
   {
     "id": "polybotes",
@@ -375,11 +427,16 @@
       "island"
     ],
     "sources": [
-      "Apollodorus",
-      "Strabo"
+      "Apollodorus, Bibliotheca I.6.2",
+      "Strabo, Geography X.5.16 (Nisyros and its volcanic character)",
+      "Attic vase painting of the Gigantomachy, 6th-5th c. BCE"
     ],
     "image": "/images/giants/polybotes.jpg",
-    "imageAlt": "Polybotes crushed beneath Nisyros"
+    "imageAlt": "Polybotes crushed beneath Nisyros",
+    "motifs": [
+      "war-on-heaven",
+      "buried-sleeper"
+    ]
   },
   {
     "id": "briareus",
@@ -410,11 +467,17 @@
       "primordial"
     ],
     "sources": [
-      "Hesiod Theogony",
-      "Homer Iliad I"
+      "Hesiod, Theogony 147-153, 617-735",
+      "Homer, Iliad I.396-406 (Briareus called up to Olympus)",
+      "Pausanias, Description of Greece II.1.6 and II.4.7 (Corinthian tradition)",
+      "Apollodorus, Bibliotheca I.1-2"
     ],
     "image": "/images/giants/briareus.jpg",
-    "imageAlt": "Briareus the Hundred-Handed"
+    "imageAlt": "Briareus the Hundred-Handed",
+    "motifs": [
+      "many-limbed",
+      "guardian"
+    ]
   },
   {
     "id": "orion",
@@ -442,13 +505,17 @@
       "scorpion"
     ],
     "sources": [
-      "Homer Odyssey",
-      "Hesiod",
-      "Apollodorus",
-      "Ovid"
+      "Homer, Odyssey XI.572-575; Iliad XVIII.486-489",
+      "Hesiod, Works and Days 598-616 (Orion as agricultural calendar)",
+      "Apollodorus, Bibliotheca I.4.3-5 (competing accounts of his death)",
+      "Hyginus, Astronomica II.34; Pseudo-Eratosthenes, Catasterismi 32"
     ],
     "image": "/images/giants/orion.jpg",
-    "imageAlt": "Orion the hunter"
+    "imageAlt": "Orion the hunter",
+    "motifs": [
+      "star-become",
+      "wild-highland"
+    ]
   },
   {
     "id": "geryon",
@@ -479,12 +546,17 @@
       "west"
     ],
     "sources": [
-      "Hesiod Theogony",
-      "Apollodorus",
-      "Stesichorus Geryoneis"
+      "Hesiod, Theogony 287-294, 979-983",
+      "Stesichorus, Geryoneis (6th c. BCE, surviving in fragments)",
+      "Apollodorus, Bibliotheca II.5.10",
+      "Attic vase painting, 6th c. BCE; Dante, Inferno XVII (medieval reinvention)"
     ],
     "image": "/images/giants/geryon.jpg",
-    "imageAlt": "Geryon of Erytheia"
+    "imageAlt": "Geryon of Erytheia",
+    "motifs": [
+      "many-limbed",
+      "guardian"
+    ]
   },
   {
     "id": "tityus",
@@ -512,12 +584,17 @@
       "apollo"
     ],
     "sources": [
-      "Homer Odyssey XI",
-      "Apollodorus",
-      "Pindar"
+      "Homer, Odyssey XI.576-581",
+      "Apollodorus, Bibliotheca I.4.1",
+      "Pindar, Pythian IV.90-92",
+      "Lucretius, De Rerum Natura III.984-994 (rationalising reading)"
     ],
     "image": "/images/giants/tityus.jpg",
-    "imageAlt": "Tityus in the underworld"
+    "imageAlt": "Tityus in the underworld",
+    "motifs": [
+      "eternal-punishment",
+      "war-on-heaven"
+    ]
   },
   {
     "id": "talos",
@@ -547,11 +624,17 @@
       "argonauts"
     ],
     "sources": [
-      "Apollonius Rhodius Argonautica",
-      "Apollodorus"
+      "Apollonius of Rhodes, Argonautica IV.1638-1688",
+      "Apollodorus, Bibliotheca I.9.26",
+      "Attic red-figure krater, 4th c. BCE (the death of Talos)",
+      "Plato, Minos 320c (the rationalised, law-carrying Talos)"
     ],
     "image": "/images/giants/talos.jpg",
-    "imageAlt": "Talos, bronze guardian of Crete"
+    "imageAlt": "Talos, bronze guardian of Crete",
+    "motifs": [
+      "made-not-born",
+      "guardian"
+    ]
   },
   {
     "id": "thrym",
@@ -582,10 +665,15 @@
       "freyja"
     ],
     "sources": [
-      "Poetic Edda (Þrymskviða)"
+      "Poetic Edda: Þrymskviða (Codex Regius, 13th c.)",
+      "Later Scandinavian ballad tradition (Danish, Swedish, Norwegian variants)"
     ],
     "image": "/images/giants/thrym.jpg",
-    "imageAlt": "Thrym the frost giant"
+    "imageAlt": "Thrym the frost giant",
+    "motifs": [
+      "outwitted",
+      "war-on-heaven"
+    ]
   },
   {
     "id": "hrungnir",
@@ -614,10 +702,15 @@
       "stone"
     ],
     "sources": [
-      "Prose Edda (Skáldskaparmál)"
+      "Snorri Sturluson, Prose Edda: Skáldskaparmál 17",
+      "Þjóðólfr of Hvinir, Haustlöng (9th-10th c., quoted by Snorri)"
     ],
     "image": "/images/giants/hrungnir.jpg",
-    "imageAlt": "Hrungnir the stone giant"
+    "imageAlt": "Hrungnir the stone giant",
+    "motifs": [
+      "war-on-heaven",
+      "petrified"
+    ]
   },
   {
     "id": "skrymir",
@@ -649,10 +742,15 @@
       "utgard"
     ],
     "sources": [
-      "Prose Edda (Gylfaginning)"
+      "Snorri Sturluson, Prose Edda: Gylfaginning 44-47",
+      "Saxo Grammaticus, Gesta Danorum VIII (the Utgarthilocus episode)"
     ],
     "image": "/images/giants/skrymir.jpg",
-    "imageAlt": "Skrymir, the vast illusionist"
+    "imageAlt": "Skrymir, the vast illusionist",
+    "motifs": [
+      "outwitted",
+      "wild-highland"
+    ]
   },
   {
     "id": "bestla",
@@ -680,11 +778,15 @@
       "lineage"
     ],
     "sources": [
-      "Prose Edda",
-      "Poetic Edda (Hávamál)"
+      "Snorri Sturluson, Prose Edda: Gylfaginning 6",
+      "Poetic Edda: Hávamál 140 (the son of Bölthorn)"
     ],
     "image": "/images/giants/bestla.jpg",
-    "imageAlt": "Bestla, mother of Odin"
+    "imageAlt": "Bestla, mother of Odin",
+    "motifs": [
+      "pre-people",
+      "body-cosmogony"
+    ]
   },
   {
     "id": "balor",
@@ -715,11 +817,17 @@
       "mag-tuired"
     ],
     "sources": [
-      "Cath Maige Tuired",
-      "Lebor Gabála Érenn"
+      "Cath Maige Tuired (The Second Battle of Mag Tuired), Old/Middle Irish",
+      "Lebor Gabala Erenn (Book of Invasions)",
+      "Donegal and Tory Island oral tradition, collected 19th-20th c."
     ],
     "image": "/images/giants/balor.jpg",
-    "imageAlt": "Balor of the Evil Eye"
+    "imageAlt": "Balor of the Evil Eye",
+    "motifs": [
+      "one-eye",
+      "war-on-heaven",
+      "boon-abused"
+    ]
   },
   {
     "id": "cormoran",
@@ -748,10 +856,18 @@
       "st-michaels-mount"
     ],
     "sources": [
-      "Jack the Giant Killer (chapbook tradition)"
+      "Jack the Giant Killer chapbooks (earliest known ed. c. 1711)",
+      "Robert Hunt, Popular Romances of the West of England (1865)",
+      "William Bottrell, Traditions and Hearthside Stories of West Cornwall (1870-80)",
+      "Joseph Jacobs, English Fairy Tales (1890)"
     ],
     "image": "/images/giants/cormoran.jpg",
-    "imageAlt": "Cormoran of St Michael's Mount"
+    "imageAlt": "Cormoran of St Michael's Mount",
+    "motifs": [
+      "cannibal",
+      "outwitted",
+      "petrified"
+    ]
   },
   {
     "id": "gogmagog",
@@ -782,11 +898,18 @@
       "corineus"
     ],
     "sources": [
-      "Geoffrey of Monmouth Historia Regum Britanniae",
-      "London civic tradition"
+      "Geoffrey of Monmouth, Historia Regum Britanniae I.16 (c. 1136)",
+      "Wace, Roman de Brut (1155); Layamon, Brut (c. 1200)",
+      "London Guildhall civic records and Lord Mayor's pageant tradition, 15th c. onward",
+      "Ezekiel 38-39; Revelation 20:8 (the biblical names)"
     ],
     "image": "/images/giants/gogmagog.jpg",
-    "imageAlt": "Gogmagog the British giant"
+    "imageAlt": "Gogmagog the British giant",
+    "motifs": [
+      "pre-people",
+      "petrified",
+      "outwitted"
+    ]
   },
   {
     "id": "jentilak",
@@ -817,11 +940,17 @@
       "race"
     ],
     "sources": [
-      "Basque oral tradition",
-      "Folklore collections"
+      "Jose Miguel de Barandiaran, Basque mythology fieldwork and collections (20th c.)",
+      "Resurreccion Maria de Azkue, Euskalerriaren Yakintza (1935-47)",
+      "Basque and Navarrese megalithic place-names (jentiletxe, jentilarri)"
     ],
     "image": "/images/giants/jentilak.jpg",
-    "imageAlt": "Jentilak, Basque mountain giants"
+    "imageAlt": "Jentilak, Basque mountain giants",
+    "motifs": [
+      "builder",
+      "pre-people",
+      "petrified"
+    ]
   },
   {
     "id": "olentzero",
@@ -850,10 +979,16 @@
       "jentilak"
     ],
     "sources": [
-      "Basque folk tradition"
+      "Basque oral tradition via Barandiaran and Azkue collections",
+      "Olentzero song texts, 19th c. onward, with regional variants",
+      "20th-c. Basque cultural documentation of the modern gift-bringer role"
     ],
     "image": "/images/giants/olentzero.jpg",
-    "imageAlt": "Olentzero the charcoal-burner"
+    "imageAlt": "Olentzero the charcoal-burner",
+    "motifs": [
+      "seasonal-visitor",
+      "wild-highland"
+    ]
   },
   {
     "id": "ravana",
@@ -885,11 +1020,18 @@
       "shiva"
     ],
     "sources": [
-      "Vālmīki Rāmāyaṇa",
-      "Later puranic retellings"
+      "Valmiki, Ramayana (Sanskrit); Uttara Kanda for the boon and Kailasa episode",
+      "Tulsidas, Ramcharitmanas (Awadhi, 16th c.)",
+      "Ramakien (Thai) and Reamker (Cambodian) regional recensions",
+      "Shiva Tandava Stotram, traditionally attributed to Ravana"
     ],
     "image": "/images/giants/ravana.jpg",
-    "imageAlt": "Ravana, ten-headed king of Lanka"
+    "imageAlt": "Ravana, ten-headed king of Lanka",
+    "motifs": [
+      "pious-adversary",
+      "boon-abused",
+      "many-limbed"
+    ]
   },
   {
     "id": "kumbhakarna",
@@ -917,10 +1059,18 @@
       "lanka"
     ],
     "sources": [
-      "Vālmīki Rāmāyaṇa"
+      "Valmiki, Ramayana: Yuddha Kanda (the waking and the battle)",
+      "Valmiki, Ramayana: Uttara Kanda (the boon)",
+      "Tulsidas, Ramcharitmanas (Awadhi, 16th c.)",
+      "Ramlila performance tradition, North India"
     ],
     "image": "/images/giants/kumbhakarna.jpg",
-    "imageAlt": "Kumbhakarna awakened for war"
+    "imageAlt": "Kumbhakarna awakened for war",
+    "motifs": [
+      "buried-sleeper",
+      "boon-abused",
+      "pious-adversary"
+    ]
   },
   {
     "id": "hiranyakashipu",
@@ -948,11 +1098,17 @@
       "boon"
     ],
     "sources": [
-      "Bhāgavata Purāṇa",
-      "Vishnu Purana"
+      "Bhagavata Purana, Canto 7 (Prahlada and Narasimha)",
+      "Vishnu Purana, Book 1; Narasimha Purana",
+      "South Indian temple sculpture, Narasimha cycle"
     ],
     "image": "/images/giants/hiranyakashipu.jpg",
-    "imageAlt": "Hiranyakashipu and Narasimha"
+    "imageAlt": "Hiranyakashipu and Narasimha",
+    "motifs": [
+      "boon-abused",
+      "war-on-heaven",
+      "pious-adversary"
+    ]
   },
   {
     "id": "mahabali",
@@ -984,11 +1140,18 @@
       "kerala"
     ],
     "sources": [
-      "Bhāgavata Purāṇa",
-      "Kerala Onam tradition"
+      "Bhagavata Purana, Canto 8 (the Vamana avatar)",
+      "Rigveda 1.154 (Vishnu's three strides, without Bali)",
+      "Vamana Purana",
+      "Malayalam Onam folk verses ('Maveli nadu vaneedum kalam')"
     ],
     "image": "/images/giants/mahabali.jpg",
-    "imageAlt": "Mahabali and Vamana"
+    "imageAlt": "Mahabali and Vamana",
+    "motifs": [
+      "pious-adversary",
+      "seasonal-visitor",
+      "boon-abused"
+    ]
   },
   {
     "id": "svyatogor",
@@ -1018,11 +1181,17 @@
       "mountain"
     ],
     "sources": [
-      "Russian byliny",
-      "Slavic folk tradition"
+      "Russian byliny, Onega and Karelian oral tradition",
+      "Pavel Rybnikov, Songs Collected by P.N. Rybnikov (1861-67)",
+      "Alexander Gilferding, Onega Byliny (1873)"
     ],
     "image": "/images/giants/svyatogor.jpg",
-    "imageAlt": "Svyatogor the bogatyr"
+    "imageAlt": "Svyatogor the bogatyr",
+    "motifs": [
+      "strength-from-earth",
+      "eternal-punishment",
+      "wild-highland"
+    ]
   },
   {
     "id": "quinametzin",
@@ -1051,11 +1220,18 @@
       "race"
     ],
     "sources": [
-      "Aztec codices and chronicles",
-      "Sahagún and later compilations"
+      "Fernando de Alva Ixtlilxochitl, Relaciones and Historia de la nacion chichimeca (late 16th-early 17th c.)",
+      "Bernardino de Sahagun, Florentine Codex (16th c.)",
+      "Diego Duran, Historia de las Indias de Nueva Espana",
+      "Pleistocene megafauna deposits, Valley of Mexico (physical context)"
     ],
     "image": "/images/giants/quinametzin.jpg",
-    "imageAlt": "Quinametzin, giants of a previous sun"
+    "imageAlt": "Quinametzin, giants of a previous sun",
+    "motifs": [
+      "pre-people",
+      "builder",
+      "bones-as-proof"
+    ]
   },
   {
     "id": "xelhua",
@@ -1082,11 +1258,17 @@
       "builder"
     ],
     "sources": [
-      "Central Mexican chronicles",
-      "Cholula tradition"
+      "Diego Duran, Historia de las Indias de Nueva Espana (16th c.)",
+      "Alexander von Humboldt, Vues des Cordilleres (1810) - transmission and amplification",
+      "Archaeological survey of the Great Pyramid of Cholula, 1930s onward"
     ],
     "image": "/images/giants/xelhua.jpg",
-    "imageAlt": "Xelhua, builder of Cholula"
+    "imageAlt": "Xelhua, builder of Cholula",
+    "motifs": [
+      "flood-survivor",
+      "builder",
+      "war-on-heaven"
+    ]
   },
   {
     "id": "kua-fu",
@@ -1115,10 +1297,16 @@
       "forest"
     ],
     "sources": [
-      "Shan Hai Jing (Classic of Mountains and Seas)"
+      "Shanhaijing (Classic of Mountains and Seas), Dahuang Beijing and Haiwai Beijing sections",
+      "Liezi, Tangwen chapter",
+      "Guo Pu, commentary on the Shanhaijing (4th c. CE)"
     ],
     "image": "/images/giants/kua-fu.jpg",
-    "imageAlt": "Kua Fu chasing the sun"
+    "imageAlt": "Kua Fu chasing the sun",
+    "motifs": [
+      "sun-chaser",
+      "landscape-body"
+    ]
   },
   {
     "id": "fangfeng",
@@ -1147,11 +1335,16 @@
       "height"
     ],
     "sources": [
-      "Guoyu",
-      "Later historical and mythic compilations"
+      "Guoyu (Discourses of the States), Lu yu section (Confucius and the bones)",
+      "Sima Qian, Shiji, Annals of Xia (c. 91 BCE)",
+      "Local gazetteers of the Kuaiji/Deqing region, Zhejiang"
     ],
     "image": "/images/giants/fangfeng.jpg",
-    "imageAlt": "Fangfeng the giant"
+    "imageAlt": "Fangfeng the giant",
+    "motifs": [
+      "bones-as-proof",
+      "pre-people"
+    ]
   },
   {
     "id": "oni",
@@ -1180,11 +1373,18 @@
       "race"
     ],
     "sources": [
-      "Japanese folk tradition",
-      "Konjaku and later setsua"
+      "Konjaku Monogatarishu (late Heian period tale collection)",
+      "Otogizoshi illustrated tales (Muromachi period)",
+      "Kamakura-period Buddhist hell scrolls (iconographic source)",
+      "Setsubun observance, documented from the Muromachi period"
     ],
     "image": "/images/giants/oni.jpg",
-    "imageAlt": "Oni of Japanese folklore"
+    "imageAlt": "Oni of Japanese folklore",
+    "motifs": [
+      "cannibal",
+      "wild-highland",
+      "seasonal-visitor"
+    ]
   },
   {
     "id": "shuten-doji",
@@ -1213,10 +1413,17 @@
       "kyoto"
     ],
     "sources": [
-      "Ōeyama emaki and related otogi-zōshi"
+      "Oeyama ekotoba (illustrated handscroll, Muromachi period)",
+      "Otogizoshi versions of the Shuten-doji tale",
+      "Noh and kabuki adaptations; ukiyo-e treatments incl. Tsukioka Yoshitoshi"
     ],
     "image": "/images/giants/shuten-doji.jpg",
-    "imageAlt": "Shuten Dōji, demon king of Mount Ōe"
+    "imageAlt": "Shuten Dōji, demon king of Mount Ōe",
+    "motifs": [
+      "cannibal",
+      "outwitted",
+      "wild-highland"
+    ]
   },
   {
     "id": "dzunukwa",
@@ -1248,11 +1455,17 @@
       "giantess"
     ],
     "sources": [
-      "Kwakwaka'wakw oral tradition",
-      "Boas and later ethnography"
+      "Kwakwaka'wakw oral tradition and hereditary mask traditions",
+      "Franz Boas with George Hunt, Kwakiutl ethnographic corpus (late 19th-early 20th c.)",
+      "Contemporary Kwakwaka'wakw carvers and community sources"
     ],
     "image": "/images/giants/dzunukwa.jpg",
-    "imageAlt": "Dzunukwa, Wild Woman of the Woods"
+    "imageAlt": "Dzunukwa, Wild Woman of the Woods",
+    "motifs": [
+      "cannibal",
+      "wild-highland",
+      "guardian"
+    ]
   },
   {
     "id": "si-te-cah",
@@ -1283,11 +1496,17 @@
       "oral-history"
     ],
     "sources": [
-      "Paiute oral tradition",
-      "Lovelock Cave archaeology (context)"
+      "Sarah Winnemucca Hopkins, Life Among the Piutes (1883)",
+      "L.L. Loud and M.R. Harrington, Lovelock Cave, UC Publications in American Archaeology and Ethnology (1929)",
+      "Subsequent Great Basin archaeological literature"
     ],
     "image": "/images/giants/si-te-cah.jpg",
-    "imageAlt": "Si-Te-Cah of Paiute tradition"
+    "imageAlt": "Si-Te-Cah of Paiute tradition",
+    "motifs": [
+      "cannibal",
+      "pre-people",
+      "bones-as-proof"
+    ]
   },
   {
     "id": "tsul-kalu",
@@ -1319,11 +1538,16 @@
       "judaculla"
     ],
     "sources": [
-      "Cherokee oral tradition",
-      "Mooney Myths of the Cherokee"
+      "James Mooney, Myths of the Cherokee, BAE 19th Annual Report (1900)",
+      "Cherokee oral tradition (Eastern Band; Cherokee Nation)",
+      "Judaculla Rock petroglyph site, Jackson County, North Carolina"
     ],
     "image": "/images/giants/tsul-kalu.jpg",
-    "imageAlt": "Tsul 'Kalu, the Slant-Eyed Giant"
+    "imageAlt": "Tsul 'Kalu, the Slant-Eyed Giant",
+    "motifs": [
+      "wild-highland",
+      "guardian"
+    ]
   },
   {
     "id": "kee-wakw",
@@ -1354,10 +1578,17 @@
       "forest"
     ],
     "sources": [
-      "Wabanaki oral traditions"
+      "Abenaki and wider Wabanaki oral tradition (variation by community)",
+      "Charles G. Leland, Algonquin Legends of New England (1884) - use with caution",
+      "Frank Speck, Penobscot and related ethnographic work, early 20th c.",
+      "Contemporary Wabanaki authors, incl. Joseph Bruchac"
     ],
     "image": "/images/giants/kee-wakw.jpg",
-    "imageAlt": "Kee-Wakw of Wabanaki tradition"
+    "imageAlt": "Kee-Wakw of Wabanaki tradition",
+    "motifs": [
+      "cannibal",
+      "wild-highland"
+    ]
   },
   {
     "id": "gaoh",
@@ -1387,11 +1618,16 @@
       "sky"
     ],
     "sources": [
-      "Haudenosaunee tradition",
-      "Ethnographic collections"
+      "Haudenosaunee oral tradition, Six Nations (variation between nations)",
+      "Harriet Maxwell Converse, Myths and Legends of the New York State Iroquois (1908), ed. A.C. Parker",
+      "Arthur C. Parker, Seneca ethnographic and folkloric writings, early 20th c."
     ],
     "image": "/images/giants/gaoh.jpg",
-    "imageAlt": "Gaoh, master of the winds"
+    "imageAlt": "Gaoh, master of the winds",
+    "motifs": [
+      "sky-bearer",
+      "guardian"
+    ]
   },
   {
     "id": "budj-bim",
@@ -1422,11 +1658,18 @@
       "country"
     ],
     "sources": [
-      "Gunditjmara knowledge (public aspects)",
-      "Budj Bim UNESCO documentation"
+      "Gunditjmara tradition, via Gunditj Mirring Traditional Owners Aboriginal Corporation",
+      "UNESCO World Heritage inscription, Budj Bim Cultural Landscape (2019)",
+      "Published argon-argon dating of the Budj Bim eruption",
+      "Archaeological literature on the Budj Bim aquaculture systems"
     ],
     "image": "/images/giants/budj-bim.jpg",
-    "imageAlt": "Ancestral giants of Budj Bim country"
+    "imageAlt": "Ancestral giants of Budj Bim country",
+    "motifs": [
+      "landscape-body",
+      "builder",
+      "petrified"
+    ]
   },
   {
     "id": "papinijuwari",
@@ -1455,11 +1698,16 @@
       "islands"
     ],
     "sources": [
-      "Tiwi oral tradition",
-      "Published ethnographic summaries"
+      "Tiwi oral tradition, Bathurst and Melville Islands",
+      "Charles P. Mountford, Tiwi ethnographic work (1950s) - period-bound",
+      "Contemporary Tiwi art centres: Tiwi Design, Jilamara, Munupi"
     ],
     "image": "/images/giants/papinijuwari.jpg",
-    "imageAlt": "Papinijuwari of Tiwi tradition"
+    "imageAlt": "Papinijuwari of Tiwi tradition",
+    "motifs": [
+      "one-eye",
+      "cannibal"
+    ]
   },
   {
     "id": "murkupang",
@@ -1469,7 +1717,7 @@
     "culture": "Australian Aboriginal",
     "region": "Australia",
     "type": "folklore",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Giant",
     "shortDescription": "Giant figure in northern Australian story cycles of pursuit and country.",
     "related": [
@@ -1488,10 +1736,17 @@
       "country"
     ],
     "sources": [
-      "Aboriginal oral traditions (public accounts)"
+      "Australian Aboriginal oral tradition (community not reliably identified in available sources)",
+      "20th-c. compilations of Australian Aboriginal legend - unreliable, see disputed",
+      "AIATSIS protocols for Indigenous knowledge"
     ],
     "image": "/images/giants/murkupang.jpg",
-    "imageAlt": "Murkupang"
+    "imageAlt": "Murkupang",
+    "motifs": [
+      "cannibal",
+      "wild-highland"
+    ],
+    "restrained": true
   },
   {
     "id": "thardid-jimbo",
@@ -1501,7 +1756,7 @@
     "culture": "Australian Aboriginal",
     "region": "Australia",
     "type": "folklore",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Giant",
     "shortDescription": "Cannibal giant of southeastern Aboriginal tales - a terror of the camp edge.",
     "related": [
@@ -1519,10 +1774,17 @@
       "folklore"
     ],
     "sources": [
-      "Aboriginal story collections (southeastern)"
+      "Australian Aboriginal oral tradition (community not reliably identified)",
+      "20th-c. legend compilations - unreliable, see disputed",
+      "AIATSIS protocols for Indigenous knowledge"
     ],
     "image": "/images/giants/thardid-jimbo.jpg",
-    "imageAlt": "Thardid Jimbo"
+    "imageAlt": "Thardid Jimbo",
+    "motifs": [
+      "cannibal",
+      "wild-highland"
+    ],
+    "restrained": true
   },
   {
     "id": "chinny-kinik",
@@ -1532,7 +1794,7 @@
     "culture": "Australian Aboriginal",
     "region": "Australia",
     "type": "folklore",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Giant",
     "shortDescription": "Giant being in Aboriginal narrative - sparse in print, strong in place.",
     "related": [
@@ -1549,10 +1811,17 @@
       "oral"
     ],
     "sources": [
-      "Aboriginal oral / ethnographic notes"
+      "Australian Aboriginal oral tradition (community not reliably identified)",
+      "20th-c. legend compilations - unreliable, see disputed",
+      "AIATSIS protocols for Indigenous knowledge"
     ],
     "image": "/images/giants/chinny-kinik.jpg",
-    "imageAlt": "Chinny-kinik"
+    "imageAlt": "Chinny-kinik",
+    "motifs": [
+      "cannibal",
+      "wild-highland"
+    ],
+    "restrained": true
   },
   {
     "id": "maero",
@@ -1583,11 +1852,17 @@
       "aotearoa"
     ],
     "sources": [
-      "Māori oral tradition",
-      "Ethnographic collections"
+      "Maori oral tradition (varies by iwi)",
+      "John White, The Ancient History of the Maori (1887-90) - period-bound",
+      "Elsdon Best, ethnographic writings on Maori forest lore, early 20th c.",
+      "Te Ara: The Encyclopedia of New Zealand"
     ],
     "image": "/images/giants/maero.jpg",
-    "imageAlt": "Maero of the forest"
+    "imageAlt": "Maero of the forest",
+    "motifs": [
+      "wild-highland",
+      "cannibal"
+    ]
   },
   {
     "id": "kahui-tipua",
@@ -1617,10 +1892,18 @@
       "race"
     ],
     "sources": [
-      "Māori oral tradition"
+      "Southern Maori oral tradition (Ngai Tahu; earlier Waitaha and Kati Mamoe)",
+      "Herries Beattie, southern Maori traditions (20th c.)",
+      "Ngai Tahu published sources and Claims Settlement documentation",
+      "Te Ara: The Encyclopedia of New Zealand"
     ],
     "image": "/images/giants/kahui-tipua.jpg",
-    "imageAlt": "Kāhui Tipua"
+    "imageAlt": "Kāhui Tipua",
+    "motifs": [
+      "landscape-body",
+      "pre-people",
+      "petrified"
+    ]
   },
   {
     "id": "nawao",
@@ -1650,11 +1933,17 @@
       "forest"
     ],
     "sources": [
-      "Māori tradition",
-      "Historical compilations"
+      "Māori oral tradition (varies by iwi; not a single canonical account)",
+      "19th-c. settler-era compilations - preserved and distorted the material; treat with caution",
+      "Later scholarship rejecting the pre-Māori settlement thesis"
     ],
     "image": "/images/giants/nawao.jpg",
-    "imageAlt": "Nawao"
+    "imageAlt": "Nawao",
+    "motifs": [
+      "pre-people",
+      "colonial-distortion",
+      "wild-highland"
+    ]
   },
   {
     "id": "amazimu",
@@ -1684,11 +1973,16 @@
       "race"
     ],
     "sources": [
-      "Zulu oral tradition",
-      "Folktale collections"
+      "Zulu and Nguni oral tradition (izinganekwane, intsomi genres)",
+      "Henry Callaway, Nursery Tales, Traditions, and Histories of the Zulus (1868)",
+      "Harold Scheub, studies of Xhosa and Zulu oral performance (1960s onward)"
     ],
     "image": "/images/giants/amazimu.jpg",
-    "imageAlt": "Amazimu ogres"
+    "imageAlt": "Amazimu ogres",
+    "motifs": [
+      "cannibal",
+      "outwitted"
+    ]
   },
   {
     "id": "giant-of-the-forest",
@@ -1701,7 +1995,7 @@
     "culture": "Hausa / West African",
     "region": "West Africa",
     "type": "folklore",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Giant",
     "shortDescription": "West African forest giant of tale cycles - a being of the deep bush.",
     "related": [
@@ -1718,10 +2012,17 @@
       "west-africa"
     ],
     "sources": [
-      "Hausa and West African oral traditions"
+      "Hausa oral tradition (tatsuniyoyi), northern Nigeria and Niger",
+      "Frank Edgar, Litafi na Tatsuniyoyi na Hausa (1911-13)",
+      "Neil Skinner, Hausa Tales and Traditions (partial translation of Edgar)"
     ],
     "image": "/images/giants/giant-of-the-forest.jpg",
-    "imageAlt": "Giant of the Forest"
+    "imageAlt": "Giant of the Forest",
+    "motifs": [
+      "wild-highland",
+      "cannibal"
+    ],
+    "restrained": true
   },
   {
     "id": "stallo",
@@ -1753,11 +2054,18 @@
       "reindeer"
     ],
     "sources": [
-      "Sámi oral tradition",
-      "Folklore collections"
+      "Sami oral tradition, N. Norway, Sweden, Finland and Kola",
+      "Johannes Schefferus, Lapponia (1673)",
+      "J.K. Qvigstad, Lappiske eventyr og sagn (1927-29)",
+      "Archaeological literature on stalotomter, 20th-21st c."
     ],
     "image": "/images/giants/stallo.jpg",
-    "imageAlt": "Stallo of Sámi folklore"
+    "imageAlt": "Stallo of Sámi folklore",
+    "motifs": [
+      "cannibal",
+      "outwitted",
+      "wild-highland"
+    ]
   },
   {
     "id": "ojancanu",
@@ -1788,10 +2096,17 @@
       "anjana"
     ],
     "sources": [
-      "Cantabrian mythology collections"
+      "Manuel Llano, Cantabrian folk tales and regional writings (early 20th c.)",
+      "Regional folklore collections of Cantabria, 19th-20th c.",
+      "Comparative note: Homer, Odyssey IX (Polyphemus), for the one-eye motif"
     ],
     "image": "/images/giants/ojancanu.jpg",
-    "imageAlt": "Ojáncanu of Cantabria"
+    "imageAlt": "Ojáncanu of Cantabria",
+    "motifs": [
+      "one-eye",
+      "wild-highland",
+      "cannibal"
+    ]
   },
   {
     "id": "rubezahl",
@@ -1824,11 +2139,18 @@
       "weather"
     ],
     "sources": [
-      "Silesian and Bohemian folk tradition",
-      "Musäus and later collections"
+      "Martin Helwig, map of Silesia (1561) - early depiction",
+      "Johannes Praetorius, Rubezahl collections (17th c.)",
+      "J.K.A. Musaus, Volksmarchen der Deutschen (1782-86)",
+      "Czech Krakonos tradition, incl. Krkonosske pohadky"
     ],
     "image": "/images/giants/rubezahl.jpg",
-    "imageAlt": "Rübezahl of the Giant Mountains"
+    "imageAlt": "Rübezahl of the Giant Mountains",
+    "motifs": [
+      "wild-highland",
+      "guardian",
+      "outwitted"
+    ]
   },
   {
     "id": "giant-of-kandahar",
@@ -1856,11 +2178,17 @@
       "afghanistan"
     ],
     "sources": [
-      "Unverified oral accounts",
-      "Secondary media retellings"
+      "Paranormal radio and internet forum circulation, mid-2000s onward",
+      "Cable television treatments, 2010s (amplification, not evidence)",
+      "Absence of corroborating US military records; reported FOIA results",
+      "Comparative: 19th-c. American giant lore and Nephilim literature"
     ],
     "image": "/images/giants/giant-of-kandahar.jpg",
-    "imageAlt": "Giant of Kandahar (unverified modern legend)"
+    "imageAlt": "Giant of Kandahar (unverified modern legend)",
+    "motifs": [
+      "modern-rumour",
+      "bones-as-proof"
+    ]
   },
   {
     "id": "giant-of-kunar",
@@ -1887,10 +2215,16 @@
       "kunar"
     ],
     "sources": [
-      "Unverified oral accounts"
+      "Paranormal radio and internet forum circulation, mid-2000s onward",
+      "Cable television treatments, 2010s (amplification, not evidence)",
+      "Absence of corroborating military records"
     ],
     "image": "/images/giants/giant-of-kunar.jpg",
-    "imageAlt": "Giant of Kunar (unverified modern legend)"
+    "imageAlt": "Giant of Kunar (unverified modern legend)",
+    "motifs": [
+      "modern-rumour",
+      "wild-highland"
+    ]
   },
   {
     "id": "paul-bunyan",
@@ -1918,10 +2252,17 @@
       "america"
     ],
     "sources": [
-      "American lumber camp oral tradition",
-      "Laughead and later popularizations"
+      "Great Lakes logging-camp oral tradition, late 19th c.",
+      "James MacGillivray, Detroit News-Tribune (1910)",
+      "William Laughead, Red River Lumber Company pamphlets (1916 onward)",
+      "Richard Dorson, on fakelore (mid-20th c. critique)"
     ],
     "image": "/images/giants/paul-bunyan.jpg",
-    "imageAlt": "Paul Bunyan and Babe the Blue Ox"
+    "imageAlt": "Paul Bunyan and Babe the Blue Ox",
+    "motifs": [
+      "tall-tale",
+      "landscape-body",
+      "builder"
+    ]
   }
 ]
