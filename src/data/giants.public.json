@@ -177,13 +177,18 @@
       "heracles"
     ],
     "sources": [
-      "Hesiod Theogony",
-      "Apollodorus",
-      "Pindar",
-      "Plato Critias"
+      "Hesiod, Theogony 517-520 and 746-748 (c. 700 BCE)",
+      "Homer, Odyssey I.52-54",
+      "Apollodorus, Bibliotheca II.5.11 (the golden apples)",
+      "Ovid, Metamorphoses IV.627-662 (petrification by Perseus)"
     ],
     "image": "/images/giants/atlas.jpg",
-    "imageAlt": "Atlas bearing the heavens"
+    "imageAlt": "Atlas bearing the heavens",
+    "motifs": [
+      "sky-bearer",
+      "eternal-punishment",
+      "war-on-heaven"
+    ]
   },
   {
     "id": "polyphemus",
@@ -212,12 +217,18 @@
       "sicily"
     ],
     "sources": [
-      "Homer Odyssey IX",
-      "Theocritus Idylls",
-      "Ovid Metamorphoses"
+      "Homer, Odyssey IX.105-566",
+      "Euripides, Cyclops (satyr play, 5th c. BCE)",
+      "Theocritus, Idylls VI and XI",
+      "Ovid, Metamorphoses XIII.750-897 (Polyphemus, Galatea and Acis)"
     ],
     "image": "/images/giants/polyphemus.jpg",
-    "imageAlt": "Polyphemus the Cyclops"
+    "imageAlt": "Polyphemus the Cyclops",
+    "motifs": [
+      "one-eye",
+      "cannibal",
+      "outwitted"
+    ]
   },
   {
     "id": "enceladus",
@@ -247,12 +258,17 @@
       "athena"
     ],
     "sources": [
-      "Apollodorus",
-      "Virgil Aeneid",
-      "Pausanias"
+      "Apollodorus, Bibliotheca I.6.1-2 (the Gigantomachy)",
+      "Virgil, Aeneid III.578-582 (Enceladus beneath Etna)",
+      "Hesiod, Theogony 185 (birth of the Giants from Gaia)",
+      "Pergamon Altar frieze, 2nd c. BCE (Berlin) - major visual source"
     ],
     "image": "/images/giants/enceladus.jpg",
-    "imageAlt": "Enceladus buried beneath Etna"
+    "imageAlt": "Enceladus buried beneath Etna",
+    "motifs": [
+      "war-on-heaven",
+      "buried-sleeper"
+    ]
   },
   {
     "id": "antaeus",
@@ -281,12 +297,17 @@
       "libya"
     ],
     "sources": [
-      "Apollodorus",
-      "Pindar",
-      "Plutarch Life of Sertorius"
+      "Pindar, Isthmian IV",
+      "Apollodorus, Bibliotheca II.5.11",
+      "Lucan, Pharsalia IV.590-660",
+      "Plutarch, Life of Sertorius 9 (the alleged skeleton at Tingis)"
     ],
     "image": "/images/giants/antaeus.jpg",
-    "imageAlt": "Antaeus wrestling Heracles"
+    "imageAlt": "Antaeus wrestling Heracles",
+    "motifs": [
+      "strength-from-earth",
+      "outwitted"
+    ]
   },
   {
     "id": "alcyoneus",
@@ -315,11 +336,16 @@
       "pallene"
     ],
     "sources": [
-      "Apollodorus",
-      "Pindar Isthmian 6"
+      "Apollodorus, Bibliotheca I.6.1",
+      "Pindar, Nemean IV and Isthmian VI",
+      "Pergamon Altar frieze, east side, 2nd c. BCE (Berlin)"
     ],
     "image": "/images/giants/alcyoneus.jpg",
-    "imageAlt": "Alcyoneus of the Gigantomachy"
+    "imageAlt": "Alcyoneus of the Gigantomachy",
+    "motifs": [
+      "war-on-heaven",
+      "strength-from-earth"
+    ]
   },
   {
     "id": "porphyrion",
@@ -349,11 +375,15 @@
       "hera"
     ],
     "sources": [
-      "Apollodorus",
-      "Pindar"
+      "Apollodorus, Bibliotheca I.6.2",
+      "Pindar, Pythian VIII.12-18",
+      "Pergamon Altar frieze, 2nd c. BCE (Berlin)"
     ],
     "image": "/images/giants/porphyrion.jpg",
-    "imageAlt": "Porphyrion, king of the Gigantes"
+    "imageAlt": "Porphyrion, king of the Gigantes",
+    "motifs": [
+      "war-on-heaven"
+    ]
   },
   {
     "id": "polybotes",
@@ -381,11 +411,16 @@
       "island"
     ],
     "sources": [
-      "Apollodorus",
-      "Strabo"
+      "Apollodorus, Bibliotheca I.6.2",
+      "Strabo, Geography X.5.16 (Nisyros and its volcanic character)",
+      "Attic vase painting of the Gigantomachy, 6th-5th c. BCE"
     ],
     "image": "/images/giants/polybotes.jpg",
-    "imageAlt": "Polybotes crushed beneath Nisyros"
+    "imageAlt": "Polybotes crushed beneath Nisyros",
+    "motifs": [
+      "war-on-heaven",
+      "buried-sleeper"
+    ]
   },
   {
     "id": "briareus",
@@ -416,11 +451,17 @@
       "primordial"
     ],
     "sources": [
-      "Hesiod Theogony",
-      "Homer Iliad I"
+      "Hesiod, Theogony 147-153, 617-735",
+      "Homer, Iliad I.396-406 (Briareus called up to Olympus)",
+      "Pausanias, Description of Greece II.1.6 and II.4.7 (Corinthian tradition)",
+      "Apollodorus, Bibliotheca I.1-2"
     ],
     "image": "/images/giants/briareus.jpg",
-    "imageAlt": "Briareus the Hundred-Handed"
+    "imageAlt": "Briareus the Hundred-Handed",
+    "motifs": [
+      "many-limbed",
+      "guardian"
+    ]
   },
   {
     "id": "orion",
@@ -448,13 +489,17 @@
       "scorpion"
     ],
     "sources": [
-      "Homer Odyssey",
-      "Hesiod",
-      "Apollodorus",
-      "Ovid"
+      "Homer, Odyssey XI.572-575; Iliad XVIII.486-489",
+      "Hesiod, Works and Days 598-616 (Orion as agricultural calendar)",
+      "Apollodorus, Bibliotheca I.4.3-5 (competing accounts of his death)",
+      "Hyginus, Astronomica II.34; Pseudo-Eratosthenes, Catasterismi 32"
     ],
     "image": "/images/giants/orion.jpg",
-    "imageAlt": "Orion the hunter"
+    "imageAlt": "Orion the hunter",
+    "motifs": [
+      "star-become",
+      "wild-highland"
+    ]
   },
   {
     "id": "geryon",
@@ -485,12 +530,17 @@
       "west"
     ],
     "sources": [
-      "Hesiod Theogony",
-      "Apollodorus",
-      "Stesichorus Geryoneis"
+      "Hesiod, Theogony 287-294, 979-983",
+      "Stesichorus, Geryoneis (6th c. BCE, surviving in fragments)",
+      "Apollodorus, Bibliotheca II.5.10",
+      "Attic vase painting, 6th c. BCE; Dante, Inferno XVII (medieval reinvention)"
     ],
     "image": "/images/giants/geryon.jpg",
-    "imageAlt": "Geryon of Erytheia"
+    "imageAlt": "Geryon of Erytheia",
+    "motifs": [
+      "many-limbed",
+      "guardian"
+    ]
   },
   {
     "id": "tityus",
@@ -518,12 +568,17 @@
       "apollo"
     ],
     "sources": [
-      "Homer Odyssey XI",
-      "Apollodorus",
-      "Pindar"
+      "Homer, Odyssey XI.576-581",
+      "Apollodorus, Bibliotheca I.4.1",
+      "Pindar, Pythian IV.90-92",
+      "Lucretius, De Rerum Natura III.984-994 (rationalising reading)"
     ],
     "image": "/images/giants/tityus.jpg",
-    "imageAlt": "Tityus in the underworld"
+    "imageAlt": "Tityus in the underworld",
+    "motifs": [
+      "eternal-punishment",
+      "war-on-heaven"
+    ]
   },
   {
     "id": "talos",
@@ -553,11 +608,17 @@
       "argonauts"
     ],
     "sources": [
-      "Apollonius Rhodius Argonautica",
-      "Apollodorus"
+      "Apollonius of Rhodes, Argonautica IV.1638-1688",
+      "Apollodorus, Bibliotheca I.9.26",
+      "Attic red-figure krater, 4th c. BCE (the death of Talos)",
+      "Plato, Minos 320c (the rationalised, law-carrying Talos)"
     ],
     "image": "/images/giants/talos.jpg",
-    "imageAlt": "Talos, bronze guardian of Crete"
+    "imageAlt": "Talos, bronze guardian of Crete",
+    "motifs": [
+      "made-not-born",
+      "guardian"
+    ]
   },
   {
     "id": "thrym",
