@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { splitParagraphs } from "@/lib/content";
-import { getMotif, giantsSharingMotif } from "@/lib/motifs";
+import type { ResolvedMotif } from "@/lib/motif-view";
 import type { GiantSections } from "@/lib/types";
 
 function Prose({ text }: { text: string }) {
@@ -24,19 +24,19 @@ function Heading({ children }: { children: React.ReactNode }) {
 /**
  * The motif layer — the part a general encyclopedia has no place for, since it
  * files one article per figure and never reads across them.
+ *
+ * Takes already-resolved data: this component is rendered inside a client
+ * boundary, and reaching into the catalog from here would ship it to the
+ * browser.
  */
-function Motifs({ keys, slug }: { keys: string[]; slug: string }) {
-  const resolved = keys
-    .map((k) => ({ motif: getMotif(k), others: giantsSharingMotif(k, slug) }))
-    .filter((m): m is { motif: NonNullable<ReturnType<typeof getMotif>>; others: ReturnType<typeof giantsSharingMotif> } => m.motif !== null);
-
-  if (resolved.length === 0) return null;
+function Motifs({ motifs }: { motifs: ResolvedMotif[] }) {
+  if (motifs.length === 0) return null;
 
   return (
     <section className="mt-10">
       <Heading>Motifs</Heading>
       <ul className="mt-4 space-y-4">
-        {resolved.map(({ motif, others }) => (
+        {motifs.map((motif) => (
           <li
             key={motif.key}
             className="rounded-lg border border-border bg-surface p-4"
@@ -47,10 +47,10 @@ function Motifs({ keys, slug }: { keys: string[]; slug: string }) {
             <p className="mt-1.5 text-sm leading-relaxed text-text-muted">
               {motif.blurb}
             </p>
-            {others.length > 0 && (
+            {motif.others.length > 0 && (
               <p className="mt-3 text-sm text-text-muted">
-                <span className="text-text-muted/70">Also carried by: </span>
-                {others.map((g, i) => (
+                <span className="text-text-muted/80">Also carried by: </span>
+                {motif.others.map((g, i) => (
                   <span key={g.slug}>
                     {i > 0 && ", "}
                     <Link
@@ -59,7 +59,7 @@ function Motifs({ keys, slug }: { keys: string[]; slug: string }) {
                     >
                       {g.name}
                     </Link>
-                    <span className="text-text-muted/60"> ({g.culture})</span>
+                    <span className="text-text-muted"> ({g.culture})</span>
                   </span>
                 ))}
               </p>
@@ -73,13 +73,12 @@ function Motifs({ keys, slug }: { keys: string[]; slug: string }) {
 
 export function DeepSections({
   sections,
-  motifs,
-  slug,
+  motifs = [],
   restrained = false,
 }: {
   sections: GiantSections;
-  motifs?: string[];
-  slug: string;
+  /** Resolved server-side; see lib/motifs.resolveMotifs. */
+  motifs?: ResolvedMotif[];
   /** Short on purpose: the record is thin or could not be attributed. */
   restrained?: boolean;
 }) {
@@ -108,7 +107,7 @@ export function DeepSections({
         <Prose text={sections.origins} />
       </section>
 
-      {motifs && motifs.length > 0 && <Motifs keys={motifs} slug={slug} />}
+      <Motifs motifs={motifs} />
 
       <section className="mt-10">
         <Heading>What is disputed</Heading>

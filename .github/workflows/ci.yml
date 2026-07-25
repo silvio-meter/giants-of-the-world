@@ -38,3 +38,9 @@ jobs:
         run: npm run build
         env:
           NEXT_PUBLIC_SITE_URL: https://www.giantscodex.com
+
+      # Must run after the build: these inspect .next/static and skip
+      # themselves when it is absent, which is exactly what happened when
+      # they sat in the Tests step above.
+      - name: Bundle guards
+        run: npm run test:bundle

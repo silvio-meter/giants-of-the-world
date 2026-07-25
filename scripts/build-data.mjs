@@ -23,6 +23,31 @@ const LORE_OUT = join(root, "src/data/giants.lore.json");
 
 const LORE_FIELDS = ["fullDescription", "mysteryNote", "sections"];
 
+/**
+ * Rough metres for the size chart, derived once here from the free-text
+ * `height` field rather than re-guessed in the browser on every render.
+ * Returns null when the tradition gives nothing usable — Paul Bunyan is "as
+ * tall as the tale requires", which is not a measurement.
+ */
+export function estimateMeters(height) {
+  if (!height) return null;
+  const l = height.toLowerCase();
+  if (/cosmic|titanic|vast/.test(l)) return 30;
+  if (l.includes("mountain")) return 25;
+  if (/cyclopean|gigantic|colossal/.test(l)) return 12;
+  if (/18 (feet|ft)|12 cubit/.test(l)) return 5.5;
+  if (/15 feet|12[–-]15/.test(l)) return 4;
+  if (/10-foot|ten-foot/.test(l)) return 3;
+  if (l.includes("six cubits")) return 2.9;
+  if (l.includes("four cubits")) return 1.8;
+  const feet = l.match(/(\d+(?:\.\d+)?)\s*(?:feet|ft)/);
+  if (feet) return Number((parseFloat(feet[1]) * 0.3048).toFixed(2));
+  const metres = l.match(/(\d+(?:\.\d+)?)\s*m(?:eter)?s?\b/);
+  if (metres) return parseFloat(metres[1]);
+  if (/giant|j\u00f6tunn|jotunn/.test(l)) return 4.5;
+  return null;
+}
+
 export function splitMaster(master) {
   const publicEntries = [];
   const lore = {};
@@ -33,6 +58,7 @@ export function splitMaster(master) {
       if (!LORE_FIELDS.includes(key)) entry[key] = value;
     }
     entry.freeEntry = giant.freeEntry === true;
+    entry.heightMeters = estimateMeters(giant.height);
     publicEntries.push(entry);
 
     lore[giant.slug] = {

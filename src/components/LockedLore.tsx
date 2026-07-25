@@ -8,10 +8,12 @@ import { MysteryNote } from "./MysteryNote";
 import { DeepSections } from "./DeepSections";
 import { usePlan } from "./PlanProvider";
 import type { GiantSections } from "@/lib/types";
+import type { ResolvedMotif } from "@/lib/motif-view";
 
 interface Props {
   slug: string;
-  motifs?: string[];
+  /** Resolved on the server so the catalog stays out of this bundle. */
+  motifs?: ResolvedMotif[];
   /** Opening paragraph — safe for everyone, baked into the static page. */
   freePreview: string;
   /** True when there is more text beyond the preview. */
@@ -76,7 +78,7 @@ export function LockedLore({ slug, motifs, freePreview, hasMore }: Props) {
         </div>
         {lore.sections && (
           <div className="mt-10">
-            <DeepSections sections={lore.sections} motifs={motifs} slug={slug} />
+            <DeepSections sections={lore.sections} motifs={motifs} />
           </div>
         )}
         {lore.mysteryNote ? <MysteryNote note={lore.mysteryNote} /> : null}
@@ -102,7 +104,7 @@ export function LockedLore({ slug, motifs, freePreview, hasMore }: Props) {
             className="pointer-events-none select-none px-5 pt-5 pb-2"
             aria-hidden
           >
-            <p className="text-[10px] tracking-[0.2em] text-text-muted/60 uppercase">
+            <p className="text-[10px] tracking-[0.2em] text-text-muted uppercase">
               Continues…
             </p>
             <div className="mt-3 space-y-3 opacity-40">

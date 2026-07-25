@@ -15,6 +15,7 @@ import { LockedLore } from "@/components/LockedLore";
 import { FavouriteButton } from "@/components/FavouriteButton";
 import { SizeComparison } from "@/components/SizeComparison";
 import { siteUrl } from "@/lib/site";
+import { resolveMotifs } from "@/lib/motifs";
 
 /**
  * Statically prerendered. The page contains no per-user content: open entries
@@ -59,6 +60,7 @@ export default async function GiantDetailPage({ params }: Props) {
   const freePreview = getFreePreview(lore.fullDescription);
   const hasMore = hasMoreContent(lore.fullDescription, lore.mysteryNote);
 
+  const motifs = resolveMotifs(giant.motifs, giant.slug);
   const related = getRelatedGiants(giant);
   const isModern = giant.type === "modern-legend";
 
@@ -197,15 +199,14 @@ export default async function GiantDetailPage({ params }: Props) {
               fullDescription={lore.fullDescription}
               mysteryNote={lore.mysteryNote}
               sections={lore.sections}
-              motifs={giant.motifs}
-              slug={giant.slug}
+              motifs={motifs}
               restrained={giant.restrained}
               heading="Account"
             />
           ) : (
             <LockedLore
               slug={giant.slug}
-              motifs={giant.motifs}
+              motifs={motifs}
               freePreview={freePreview}
               hasMore={hasMore}
             />

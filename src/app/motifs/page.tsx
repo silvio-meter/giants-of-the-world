@@ -38,7 +38,7 @@ export default function MotifsPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <header className="mb-10">
-        <p className="font-[family-name:var(--font-cinzel)] text-[10px] tracking-[0.35em] text-accent-gold/70 uppercase">
+        <p className="font-[family-name:var(--font-cinzel)] text-[10px] tracking-[0.35em] text-accent-gold/80 uppercase">
           Read across the codex
         </p>
         <h1 className="mt-2 font-[family-name:var(--font-cinzel)] text-3xl tracking-wide text-accent-gold sm:text-4xl">
@@ -86,7 +86,7 @@ export default function MotifsPage() {
                       >
                         {g.name}
                       </Link>
-                      <span className="text-text-muted/60"> ({g.culture})</span>
+                      <span className="text-text-muted"> ({g.culture})</span>
                     </span>
                   ))}
                 </p>

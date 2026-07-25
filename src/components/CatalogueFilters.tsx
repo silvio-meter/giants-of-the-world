@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter, useSearchParams } from "next/navigation";
-import { useCallback, useTransition } from "react";
+import { useCallback, useEffect, useRef, useState, useTransition } from "react";
 
 interface Props {
   cultures: string[];
@@ -18,6 +18,8 @@ export function CatalogueFilters({ cultures, types, regions }: Props) {
   const type = params.get("type") ?? "";
   const region = params.get("region") ?? "";
   const search = params.get("q") ?? "";
+  const [typed, setTyped] = useState(search);
+  const debounce = useRef<number | undefined>(undefined);
 
   const update = useCallback(
     (key: string, value: string) => {
@@ -25,14 +27,24 @@ export function CatalogueFilters({ cultures, types, regions }: Props) {
       if (value) next.set(key, value);
       else next.delete(key);
       startTransition(() => {
-        router.push(`/giants?${next.toString()}`);
+        // replace, not push: typing a query should not fill the back button
+        // with one history entry per keystroke group.
+        router.replace(`/giants?${next.toString()}`);
       });
     },
     [params, router]
   );
 
+  // Debounced search, scoped to the component rather than hung off window.
+  useEffect(() => {
+    if (typed === search) return;
+    debounce.current = window.setTimeout(() => update("q", typed), 250);
+    return () => window.clearTimeout(debounce.current);
+  }, [typed, search, update]);
+
   const clear = () => {
-    startTransition(() => router.push("/giants"));
+    setTyped("");
+    startTransition(() => router.replace("/giants"));
   };
 
   const hasFilters = culture || type || region || search;
@@ -48,18 +60,10 @@ export function CatalogueFilters({ cultures, types, regions }: Props) {
           Search
           <input
             type="search"
-            defaultValue={search}
+            value={typed}
             placeholder="Name, culture, tag…"
-            className="rounded border border-border bg-background px-3 py-2 text-sm text-text-primary placeholder:text-text-muted/60 focus:border-accent-gold focus:outline-none"
-            onChange={(e) => {
-              const v = e.target.value;
-              // Debounce lightly via timeout on each keystroke group
-              window.clearTimeout((window as unknown as { __gq?: number }).__gq);
-              (window as unknown as { __gq?: number }).__gq = window.setTimeout(
-                () => update("q", v),
-                250
-              );
-            }}
+            className="rounded border border-border bg-background px-3 py-2 text-sm text-text-primary placeholder:text-text-muted focus:border-accent-gold focus:outline-none"
+            onChange={(e) => setTyped(e.target.value)}
           />
         </label>
 
