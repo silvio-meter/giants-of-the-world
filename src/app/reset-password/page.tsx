@@ -45,7 +45,7 @@ export default function ResetPasswordPage() {
   return (
     <div className="mx-auto max-w-md px-4 py-14 sm:px-6">
       <header className="mb-8 text-center">
-        <p className="font-[family-name:var(--font-cinzel)] text-[10px] tracking-[0.35em] text-accent-gold/70 uppercase">
+        <p className="font-[family-name:var(--font-cinzel)] text-[10px] tracking-[0.35em] text-accent-gold/80 uppercase">
           A new key
         </p>
         <h1 className="mt-2 font-[family-name:var(--font-cinzel)] text-3xl tracking-wide text-accent-gold">

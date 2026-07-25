@@ -5,53 +5,14 @@ import type { GiantCardData } from "@/lib/format";
 import { usePlan } from "./PlanProvider";
 
 interface Props {
-  giant: Pick<GiantCardData, "name" | "height">;
-}
-
-/** Parse a rough meter estimate from free-text height, if possible. */
-function estimateMeters(height: string | null): number | null {
-  if (!height) return null;
-  const lower = height.toLowerCase();
-  if (
-    lower.includes("cosmic") ||
-    lower.includes("titanic") ||
-    lower.includes("vast")
-  )
-    return 30;
-  if (lower.includes("mountain")) return 25;
-  if (
-    lower.includes("cyclopean") ||
-    lower.includes("gigantic") ||
-    lower.includes("colossal")
-  )
-    return 12;
-  if (lower.includes("18 feet") || lower.includes("18 ft")) return 5.5;
-  if (lower.includes("12 cubit")) return 5.5;
-  if (
-    lower.includes("15 feet") ||
-    lower.includes("12–15") ||
-    lower.includes("12-15")
-  )
-    return 4;
-  if (lower.includes("10-foot") || lower.includes("ten-foot")) return 3;
-  if (lower.includes("six cubits")) return 2.9;
-  if (lower.includes("four cubits")) return 1.8;
-  const feet = lower.match(/(\d+(?:\.\d+)?)\s*(?:feet|ft)/);
-  if (feet) return parseFloat(feet[1]) * 0.3048;
-  const meters = lower.match(/(\d+(?:\.\d+)?)\s*m(?:eter)?s?\b/);
-  if (meters) return parseFloat(meters[1]);
-  if (
-    lower.includes("giant") ||
-    lower.includes("jötunn") ||
-    lower.includes("jotunn")
-  )
-    return 4.5;
-  return null;
+  giant: Pick<GiantCardData, "name" | "height" | "heightMeters">;
 }
 
 export function SizeComparison({ giant }: Props) {
   const { isPaid, ready } = usePlan();
-  const meters = estimateMeters(giant.height);
+  // Precomputed in the data. Entries whose tradition gives no usable figure
+  // carry null and simply do not render a chart.
+  const meters = giant.heightMeters;
   if (!meters) return null;
 
   if (ready && !isPaid) {

@@ -266,3 +266,18 @@ test("lore file carries sections; the public catalog never does", () => {
     );
   }
 });
+
+test("heightMeters is generated and plausible where set", () => {
+  for (const giant of publicEntries) {
+    assert.ok(
+      "heightMeters" in giant,
+      `${giant.slug}: heightMeters missing — run \`npm run build:data\``
+    );
+    const m = giant.heightMeters;
+    if (m === null) continue;
+    assert.ok(
+      typeof m === "number" && m > 0.5 && m <= 100,
+      `${giant.slug}: implausible heightMeters ${m}`
+    );
+  }
+});

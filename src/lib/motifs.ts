@@ -1,6 +1,7 @@
 import motifData from "@/data/motifs.json";
 import { giants } from "./giants";
 import type { GiantCardData } from "./format";
+import type { ResolvedMotif } from "./motif-view";
 
 export interface Motif {
   key: string;
@@ -57,4 +58,31 @@ export function crossCulturalMotifs(): { motif: Motif; cultures: string[] }[] {
     }))
     .filter((m) => m.cultures.length > 1)
     .sort((a, b) => b.cultures.length - a.cultures.length);
+}
+
+/**
+ * Resolves motifs to plain data on the server.
+ *
+ * Client components must receive the result of this rather than calling into
+ * this module, which imports the whole catalog.
+ */
+export function resolveMotifs(
+  keys: string[] | undefined,
+  slug: string
+): ResolvedMotif[] {
+  if (!keys?.length) return [];
+  return keys.flatMap((key) => {
+    const motif = getMotif(key);
+    if (!motif) return [];
+    return [
+      {
+        ...motif,
+        others: giantsSharingMotif(key, slug).map((g) => ({
+          slug: g.slug,
+          name: g.name,
+          culture: g.culture,
+        })),
+      },
+    ];
+  });
 }

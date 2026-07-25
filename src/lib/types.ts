@@ -27,6 +27,12 @@ export interface Giant {
   /** Open entry: full lore renders statically, no auth check, indexable. */
   freeEntry: boolean;
   height: string | null;
+  /**
+   * Rough metres for the size chart, or null where the tradition gives no
+   * usable figure. Baked into the data so 40 lines of free-text guessing do
+   * not run at render time.
+   */
+  heightMeters: number | null;
   shortDescription: string;
   fullDescription: string;
   mysteryNote: string;

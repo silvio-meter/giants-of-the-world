@@ -84,10 +84,16 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${cinzel.variable} ${inter.variable} ${mono.variable}`}>
       <body className="grain flex min-h-screen flex-col antialiased">
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:border focus:border-accent-gold focus:bg-background focus:px-4 focus:py-2 focus:text-sm focus:text-accent-gold"
+        >
+          Skip to content
+        </a>
         <PlanProvider>
           <FavouritesProvider>
             <Header />
-            <main className="relative flex-1">{children}</main>
+            <main id="main" className="relative flex-1">{children}</main>
             <Footer />
           </FavouritesProvider>
         </PlanProvider>

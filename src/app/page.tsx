@@ -56,7 +56,7 @@ export default function HomePage() {
         />
 
         <div className="rise-in relative z-10 mx-auto max-w-3xl text-center">
-          <p className="font-[family-name:var(--font-cinzel)] text-[10px] tracking-[0.4em] text-accent-gold/70 uppercase sm:text-xs">
+          <p className="font-[family-name:var(--font-cinzel)] text-[10px] tracking-[0.4em] text-accent-gold/80 uppercase sm:text-xs">
             A forbidden codex
           </p>
           <h1 className="mt-4 font-[family-name:var(--font-cinzel)] text-4xl leading-tight tracking-wide text-accent-gold sm:text-5xl md:text-6xl">
@@ -78,7 +78,7 @@ export default function HomePage() {
             <RandomGiantButton />
           </div>
 
-          <p className="mt-12 font-mono text-xs tracking-wider text-text-muted/70">
+          <p className="mt-12 font-mono text-xs tracking-wider text-text-muted">
             {count} entries · {freeCount} open to read in full · worldwide
           </p>
         </div>

@@ -41,7 +41,8 @@
       "body-cosmogony",
       "flood-survivor",
       "pre-people"
-    ]
+    ],
+    "heightMeters": 30
   },
   {
     "id": "nephilim",
@@ -83,7 +84,8 @@
       "war-on-heaven",
       "flood-survivor",
       "bones-as-proof"
-    ]
+    ],
+    "heightMeters": null
   },
   {
     "id": "goliath",
@@ -123,7 +125,8 @@
     "motifs": [
       "outwitted",
       "war-on-heaven"
-    ]
+    ],
+    "heightMeters": 2.9
   },
   {
     "id": "og-of-bashan",
@@ -164,7 +167,8 @@
       "pre-people",
       "bones-as-proof",
       "war-on-heaven"
-    ]
+    ],
+    "heightMeters": null
   },
   {
     "id": "atlas",
@@ -204,7 +208,8 @@
       "sky-bearer",
       "eternal-punishment",
       "war-on-heaven"
-    ]
+    ],
+    "heightMeters": 30
   },
   {
     "id": "polyphemus",
@@ -244,7 +249,8 @@
       "one-eye",
       "cannibal",
       "outwitted"
-    ]
+    ],
+    "heightMeters": 12
   },
   {
     "id": "enceladus",
@@ -284,7 +290,8 @@
     "motifs": [
       "war-on-heaven",
       "buried-sleeper"
-    ]
+    ],
+    "heightMeters": 12
   },
   {
     "id": "antaeus",
@@ -323,7 +330,8 @@
     "motifs": [
       "strength-from-earth",
       "outwitted"
-    ]
+    ],
+    "heightMeters": 4.5
   },
   {
     "id": "alcyoneus",
@@ -361,7 +369,8 @@
     "motifs": [
       "war-on-heaven",
       "strength-from-earth"
-    ]
+    ],
+    "heightMeters": 12
   },
   {
     "id": "porphyrion",
@@ -399,7 +408,8 @@
     "imageAlt": "Porphyrion, king of the Gigantes",
     "motifs": [
       "war-on-heaven"
-    ]
+    ],
+    "heightMeters": 12
   },
   {
     "id": "polybotes",
@@ -436,7 +446,8 @@
     "motifs": [
       "war-on-heaven",
       "buried-sleeper"
-    ]
+    ],
+    "heightMeters": 12
   },
   {
     "id": "briareus",
@@ -477,7 +488,8 @@
     "motifs": [
       "many-limbed",
       "guardian"
-    ]
+    ],
+    "heightMeters": 30
   },
   {
     "id": "orion",
@@ -515,7 +527,8 @@
     "motifs": [
       "star-become",
       "wild-highland"
-    ]
+    ],
+    "heightMeters": 4.5
   },
   {
     "id": "geryon",
@@ -556,7 +569,8 @@
     "motifs": [
       "many-limbed",
       "guardian"
-    ]
+    ],
+    "heightMeters": 4.5
   },
   {
     "id": "tityus",
@@ -594,7 +608,8 @@
     "motifs": [
       "eternal-punishment",
       "war-on-heaven"
-    ]
+    ],
+    "heightMeters": null
   },
   {
     "id": "talos",
@@ -634,7 +649,8 @@
     "motifs": [
       "made-not-born",
       "guardian"
-    ]
+    ],
+    "heightMeters": 4.5
   },
   {
     "id": "thrym",
@@ -673,7 +689,8 @@
     "motifs": [
       "outwitted",
       "war-on-heaven"
-    ]
+    ],
+    "heightMeters": 4.5
   },
   {
     "id": "hrungnir",
@@ -710,7 +727,8 @@
     "motifs": [
       "war-on-heaven",
       "petrified"
-    ]
+    ],
+    "heightMeters": 4.5
   },
   {
     "id": "skrymir",
@@ -750,7 +768,8 @@
     "motifs": [
       "outwitted",
       "wild-highland"
-    ]
+    ],
+    "heightMeters": 30
   },
   {
     "id": "bestla",
@@ -786,7 +805,8 @@
     "motifs": [
       "pre-people",
       "body-cosmogony"
-    ]
+    ],
+    "heightMeters": 4.5
   },
   {
     "id": "balor",
@@ -827,7 +847,8 @@
       "one-eye",
       "war-on-heaven",
       "boon-abused"
-    ]
+    ],
+    "heightMeters": 4.5
   },
   {
     "id": "cormoran",
@@ -867,7 +888,8 @@
       "cannibal",
       "outwitted",
       "petrified"
-    ]
+    ],
+    "heightMeters": 5.5
   },
   {
     "id": "gogmagog",
@@ -909,7 +931,8 @@
       "pre-people",
       "petrified",
       "outwitted"
-    ]
+    ],
+    "heightMeters": 5.5
   },
   {
     "id": "jentilak",
@@ -950,7 +973,8 @@
       "builder",
       "pre-people",
       "petrified"
-    ]
+    ],
+    "heightMeters": 4.5
   },
   {
     "id": "olentzero",
@@ -988,7 +1012,8 @@
     "motifs": [
       "seasonal-visitor",
       "wild-highland"
-    ]
+    ],
+    "heightMeters": null
   },
   {
     "id": "ravana",
@@ -1031,7 +1056,8 @@
       "pious-adversary",
       "boon-abused",
       "many-limbed"
-    ]
+    ],
+    "heightMeters": 30
   },
   {
     "id": "kumbhakarna",
@@ -1070,7 +1096,8 @@
       "buried-sleeper",
       "boon-abused",
       "pious-adversary"
-    ]
+    ],
+    "heightMeters": 12
   },
   {
     "id": "hiranyakashipu",
@@ -1108,7 +1135,8 @@
       "boon-abused",
       "war-on-heaven",
       "pious-adversary"
-    ]
+    ],
+    "heightMeters": 4.5
   },
   {
     "id": "mahabali",
@@ -1151,7 +1179,8 @@
       "pious-adversary",
       "seasonal-visitor",
       "boon-abused"
-    ]
+    ],
+    "heightMeters": 30
   },
   {
     "id": "svyatogor",
@@ -1191,7 +1220,8 @@
       "strength-from-earth",
       "eternal-punishment",
       "wild-highland"
-    ]
+    ],
+    "heightMeters": 4.5
   },
   {
     "id": "quinametzin",
@@ -1231,7 +1261,8 @@
       "pre-people",
       "builder",
       "bones-as-proof"
-    ]
+    ],
+    "heightMeters": 4.5
   },
   {
     "id": "xelhua",
@@ -1268,7 +1299,8 @@
       "flood-survivor",
       "builder",
       "war-on-heaven"
-    ]
+    ],
+    "heightMeters": 4.5
   },
   {
     "id": "kua-fu",
@@ -1306,7 +1338,8 @@
     "motifs": [
       "sun-chaser",
       "landscape-body"
-    ]
+    ],
+    "heightMeters": 4.5
   },
   {
     "id": "fangfeng",
@@ -1344,7 +1377,8 @@
     "motifs": [
       "bones-as-proof",
       "pre-people"
-    ]
+    ],
+    "heightMeters": 4.5
   },
   {
     "id": "oni",
@@ -1384,7 +1418,8 @@
       "cannibal",
       "wild-highland",
       "seasonal-visitor"
-    ]
+    ],
+    "heightMeters": null
   },
   {
     "id": "shuten-doji",
@@ -1423,7 +1458,8 @@
       "cannibal",
       "outwitted",
       "wild-highland"
-    ]
+    ],
+    "heightMeters": 4.5
   },
   {
     "id": "dzunukwa",
@@ -1465,7 +1501,8 @@
       "cannibal",
       "wild-highland",
       "guardian"
-    ]
+    ],
+    "heightMeters": 4.5
   },
   {
     "id": "si-te-cah",
@@ -1506,7 +1543,8 @@
       "cannibal",
       "pre-people",
       "bones-as-proof"
-    ]
+    ],
+    "heightMeters": null
   },
   {
     "id": "tsul-kalu",
@@ -1547,7 +1585,8 @@
     "motifs": [
       "wild-highland",
       "guardian"
-    ]
+    ],
+    "heightMeters": 4.5
   },
   {
     "id": "kee-wakw",
@@ -1588,7 +1627,8 @@
     "motifs": [
       "cannibal",
       "wild-highland"
-    ]
+    ],
+    "heightMeters": 4.5
   },
   {
     "id": "gaoh",
@@ -1627,7 +1667,8 @@
     "motifs": [
       "sky-bearer",
       "guardian"
-    ]
+    ],
+    "heightMeters": 4.5
   },
   {
     "id": "budj-bim",
@@ -1669,7 +1710,8 @@
       "landscape-body",
       "builder",
       "petrified"
-    ]
+    ],
+    "heightMeters": 4.5
   },
   {
     "id": "papinijuwari",
@@ -1707,7 +1749,8 @@
     "motifs": [
       "one-eye",
       "cannibal"
-    ]
+    ],
+    "heightMeters": 4.5
   },
   {
     "id": "murkupang",
@@ -1746,7 +1789,8 @@
       "cannibal",
       "wild-highland"
     ],
-    "restrained": true
+    "restrained": true,
+    "heightMeters": 4.5
   },
   {
     "id": "thardid-jimbo",
@@ -1784,7 +1828,8 @@
       "cannibal",
       "wild-highland"
     ],
-    "restrained": true
+    "restrained": true,
+    "heightMeters": 4.5
   },
   {
     "id": "chinny-kinik",
@@ -1821,7 +1866,8 @@
       "cannibal",
       "wild-highland"
     ],
-    "restrained": true
+    "restrained": true,
+    "heightMeters": 4.5
   },
   {
     "id": "maero",
@@ -1862,7 +1908,8 @@
     "motifs": [
       "wild-highland",
       "cannibal"
-    ]
+    ],
+    "heightMeters": null
   },
   {
     "id": "kahui-tipua",
@@ -1903,7 +1950,8 @@
       "landscape-body",
       "pre-people",
       "petrified"
-    ]
+    ],
+    "heightMeters": 4.5
   },
   {
     "id": "nawao",
@@ -1943,7 +1991,8 @@
       "pre-people",
       "colonial-distortion",
       "wild-highland"
-    ]
+    ],
+    "heightMeters": null
   },
   {
     "id": "amazimu",
@@ -1982,7 +2031,8 @@
     "motifs": [
       "cannibal",
       "outwitted"
-    ]
+    ],
+    "heightMeters": 4.5
   },
   {
     "id": "giant-of-the-forest",
@@ -2022,7 +2072,8 @@
       "wild-highland",
       "cannibal"
     ],
-    "restrained": true
+    "restrained": true,
+    "heightMeters": 4.5
   },
   {
     "id": "stallo",
@@ -2065,7 +2116,8 @@
       "cannibal",
       "outwitted",
       "wild-highland"
-    ]
+    ],
+    "heightMeters": 4.5
   },
   {
     "id": "ojancanu",
@@ -2106,7 +2158,8 @@
       "one-eye",
       "wild-highland",
       "cannibal"
-    ]
+    ],
+    "heightMeters": 4.5
   },
   {
     "id": "rubezahl",
@@ -2150,7 +2203,8 @@
       "wild-highland",
       "guardian",
       "outwitted"
-    ]
+    ],
+    "heightMeters": 4.5
   },
   {
     "id": "giant-of-kandahar",
@@ -2188,7 +2242,8 @@
     "motifs": [
       "modern-rumour",
       "bones-as-proof"
-    ]
+    ],
+    "heightMeters": 4
   },
   {
     "id": "giant-of-kunar",
@@ -2224,7 +2279,8 @@
     "motifs": [
       "modern-rumour",
       "wild-highland"
-    ]
+    ],
+    "heightMeters": null
   },
   {
     "id": "paul-bunyan",
@@ -2263,6 +2319,7 @@
       "tall-tale",
       "landscape-body",
       "builder"
-    ]
+    ],
+    "heightMeters": null
   }
 ]

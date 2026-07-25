@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function NotFound() {
   return (
     <div className="flex min-h-[50vh] flex-col items-center justify-center px-4 py-20 text-center">
-      <p className="font-[family-name:var(--font-cinzel)] text-[10px] tracking-[0.35em] text-accent-gold/70 uppercase">
+      <p className="font-[family-name:var(--font-cinzel)] text-[10px] tracking-[0.35em] text-accent-gold/80 uppercase">
         Lost in the fog
       </p>
       <h1 className="mt-3 font-[family-name:var(--font-cinzel)] text-3xl text-accent-gold">
