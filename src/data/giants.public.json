@@ -817,11 +817,17 @@
       "mag-tuired"
     ],
     "sources": [
-      "Cath Maige Tuired",
-      "Lebor Gabála Érenn"
+      "Cath Maige Tuired (The Second Battle of Mag Tuired), Old/Middle Irish",
+      "Lebor Gabala Erenn (Book of Invasions)",
+      "Donegal and Tory Island oral tradition, collected 19th-20th c."
     ],
     "image": "/images/giants/balor.jpg",
-    "imageAlt": "Balor of the Evil Eye"
+    "imageAlt": "Balor of the Evil Eye",
+    "motifs": [
+      "one-eye",
+      "war-on-heaven",
+      "boon-abused"
+    ]
   },
   {
     "id": "cormoran",
@@ -850,10 +856,18 @@
       "st-michaels-mount"
     ],
     "sources": [
-      "Jack the Giant Killer (chapbook tradition)"
+      "Jack the Giant Killer chapbooks (earliest known ed. c. 1711)",
+      "Robert Hunt, Popular Romances of the West of England (1865)",
+      "William Bottrell, Traditions and Hearthside Stories of West Cornwall (1870-80)",
+      "Joseph Jacobs, English Fairy Tales (1890)"
     ],
     "image": "/images/giants/cormoran.jpg",
-    "imageAlt": "Cormoran of St Michael's Mount"
+    "imageAlt": "Cormoran of St Michael's Mount",
+    "motifs": [
+      "cannibal",
+      "outwitted",
+      "petrified"
+    ]
   },
   {
     "id": "gogmagog",
@@ -884,11 +898,18 @@
       "corineus"
     ],
     "sources": [
-      "Geoffrey of Monmouth Historia Regum Britanniae",
-      "London civic tradition"
+      "Geoffrey of Monmouth, Historia Regum Britanniae I.16 (c. 1136)",
+      "Wace, Roman de Brut (1155); Layamon, Brut (c. 1200)",
+      "London Guildhall civic records and Lord Mayor's pageant tradition, 15th c. onward",
+      "Ezekiel 38-39; Revelation 20:8 (the biblical names)"
     ],
     "image": "/images/giants/gogmagog.jpg",
-    "imageAlt": "Gogmagog the British giant"
+    "imageAlt": "Gogmagog the British giant",
+    "motifs": [
+      "pre-people",
+      "petrified",
+      "outwitted"
+    ]
   },
   {
     "id": "jentilak",
@@ -919,11 +940,17 @@
       "race"
     ],
     "sources": [
-      "Basque oral tradition",
-      "Folklore collections"
+      "Jose Miguel de Barandiaran, Basque mythology fieldwork and collections (20th c.)",
+      "Resurreccion Maria de Azkue, Euskalerriaren Yakintza (1935-47)",
+      "Basque and Navarrese megalithic place-names (jentiletxe, jentilarri)"
     ],
     "image": "/images/giants/jentilak.jpg",
-    "imageAlt": "Jentilak, Basque mountain giants"
+    "imageAlt": "Jentilak, Basque mountain giants",
+    "motifs": [
+      "builder",
+      "pre-people",
+      "petrified"
+    ]
   },
   {
     "id": "olentzero",
@@ -952,10 +979,16 @@
       "jentilak"
     ],
     "sources": [
-      "Basque folk tradition"
+      "Basque oral tradition via Barandiaran and Azkue collections",
+      "Olentzero song texts, 19th c. onward, with regional variants",
+      "20th-c. Basque cultural documentation of the modern gift-bringer role"
     ],
     "image": "/images/giants/olentzero.jpg",
-    "imageAlt": "Olentzero the charcoal-burner"
+    "imageAlt": "Olentzero the charcoal-burner",
+    "motifs": [
+      "seasonal-visitor",
+      "wild-highland"
+    ]
   },
   {
     "id": "ravana",
@@ -1148,11 +1181,17 @@
       "mountain"
     ],
     "sources": [
-      "Russian byliny",
-      "Slavic folk tradition"
+      "Russian byliny, Onega and Karelian oral tradition",
+      "Pavel Rybnikov, Songs Collected by P.N. Rybnikov (1861-67)",
+      "Alexander Gilferding, Onega Byliny (1873)"
     ],
     "image": "/images/giants/svyatogor.jpg",
-    "imageAlt": "Svyatogor the bogatyr"
+    "imageAlt": "Svyatogor the bogatyr",
+    "motifs": [
+      "strength-from-earth",
+      "eternal-punishment",
+      "wild-highland"
+    ]
   },
   {
     "id": "quinametzin",
@@ -1914,11 +1953,18 @@
       "reindeer"
     ],
     "sources": [
-      "Sámi oral tradition",
-      "Folklore collections"
+      "Sami oral tradition, N. Norway, Sweden, Finland and Kola",
+      "Johannes Schefferus, Lapponia (1673)",
+      "J.K. Qvigstad, Lappiske eventyr og sagn (1927-29)",
+      "Archaeological literature on stalotomter, 20th-21st c."
     ],
     "image": "/images/giants/stallo.jpg",
-    "imageAlt": "Stallo of Sámi folklore"
+    "imageAlt": "Stallo of Sámi folklore",
+    "motifs": [
+      "cannibal",
+      "outwitted",
+      "wild-highland"
+    ]
   },
   {
     "id": "ojancanu",
@@ -1992,11 +2038,18 @@
       "weather"
     ],
     "sources": [
-      "Silesian and Bohemian folk tradition",
-      "Musäus and later collections"
+      "Martin Helwig, map of Silesia (1561) - early depiction",
+      "Johannes Praetorius, Rubezahl collections (17th c.)",
+      "J.K.A. Musaus, Volksmarchen der Deutschen (1782-86)",
+      "Czech Krakonos tradition, incl. Krkonosske pohadky"
     ],
     "image": "/images/giants/rubezahl.jpg",
-    "imageAlt": "Rübezahl of the Giant Mountains"
+    "imageAlt": "Rübezahl of the Giant Mountains",
+    "motifs": [
+      "wild-highland",
+      "guardian",
+      "outwitted"
+    ]
   },
   {
     "id": "giant-of-kandahar",
