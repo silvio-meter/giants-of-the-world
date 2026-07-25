@@ -72,13 +72,18 @@
       "flood"
     ],
     "sources": [
-      "Genesis 6",
-      "Numbers 13",
-      "1 Enoch",
-      "Book of Jubilees"
+      "Genesis 6:1-4; Numbers 13:33 (Hebrew Bible)",
+      "1 Enoch, the Book of the Watchers, chapters 6-16 (3rd-1st c. BCE)",
+      "Book of Jubilees 5; Dead Sea Scrolls Enoch fragments",
+      "Josephus, Antiquities of the Jews I.3.1"
     ],
     "image": "/images/giants/nephilim.jpg",
-    "imageAlt": "The Nephilim, mighty ones of old"
+    "imageAlt": "The Nephilim, mighty ones of old",
+    "motifs": [
+      "war-on-heaven",
+      "flood-survivor",
+      "bones-as-proof"
+    ]
   },
   {
     "id": "goliath",
@@ -108,12 +113,17 @@
       "david"
     ],
     "sources": [
-      "1 Samuel 17",
-      "2 Samuel 21",
-      "Dead Sea Scrolls (4QSamª)"
+      "1 Samuel 17 (Masoretic Text); Septuagint 1 Kingdoms 17 (shorter version)",
+      "2 Samuel 21:19 and 1 Chronicles 20:5 (the Elhanan problem)",
+      "4QSam-a, Dead Sea Scrolls (height variant)",
+      "Tell es-Safi/Gath ostracon, 10th-9th c. BCE (Philistine names)"
     ],
     "image": "/images/giants/goliath.jpg",
-    "imageAlt": "Goliath of Gath, Philistine champion"
+    "imageAlt": "Goliath of Gath, Philistine champion",
+    "motifs": [
+      "outwitted",
+      "war-on-heaven"
+    ]
   },
   {
     "id": "og-of-bashan",
@@ -143,12 +153,18 @@
       "bashan"
     ],
     "sources": [
-      "Deuteronomy 3",
-      "Numbers 21",
-      "Psalm 135"
+      "Deuteronomy 3:1-13 (the iron bedstead at Rabbah); Numbers 21:33-35",
+      "Joshua 12:4-5, 13:12; Psalms 135:11, 136:20",
+      "Babylonian Talmud, Berakhot 54b and Niddah 24b (rabbinic expansion)",
+      "Ugaritic rpum texts (comparative evidence for the term)"
     ],
     "image": "/images/giants/og-of-bashan.jpg",
-    "imageAlt": "Og of Bashan, last of the Rephaim"
+    "imageAlt": "Og of Bashan, last of the Rephaim",
+    "motifs": [
+      "pre-people",
+      "bones-as-proof",
+      "war-on-heaven"
+    ]
   },
   {
     "id": "atlas",
@@ -649,10 +665,15 @@
       "freyja"
     ],
     "sources": [
-      "Poetic Edda (Þrymskviða)"
+      "Poetic Edda: Þrymskviða (Codex Regius, 13th c.)",
+      "Later Scandinavian ballad tradition (Danish, Swedish, Norwegian variants)"
     ],
     "image": "/images/giants/thrym.jpg",
-    "imageAlt": "Thrym the frost giant"
+    "imageAlt": "Thrym the frost giant",
+    "motifs": [
+      "outwitted",
+      "war-on-heaven"
+    ]
   },
   {
     "id": "hrungnir",
@@ -681,10 +702,15 @@
       "stone"
     ],
     "sources": [
-      "Prose Edda (Skáldskaparmál)"
+      "Snorri Sturluson, Prose Edda: Skáldskaparmál 17",
+      "Þjóðólfr of Hvinir, Haustlöng (9th-10th c., quoted by Snorri)"
     ],
     "image": "/images/giants/hrungnir.jpg",
-    "imageAlt": "Hrungnir the stone giant"
+    "imageAlt": "Hrungnir the stone giant",
+    "motifs": [
+      "war-on-heaven",
+      "petrified"
+    ]
   },
   {
     "id": "skrymir",
@@ -716,10 +742,15 @@
       "utgard"
     ],
     "sources": [
-      "Prose Edda (Gylfaginning)"
+      "Snorri Sturluson, Prose Edda: Gylfaginning 44-47",
+      "Saxo Grammaticus, Gesta Danorum VIII (the Utgarthilocus episode)"
     ],
     "image": "/images/giants/skrymir.jpg",
-    "imageAlt": "Skrymir, the vast illusionist"
+    "imageAlt": "Skrymir, the vast illusionist",
+    "motifs": [
+      "outwitted",
+      "wild-highland"
+    ]
   },
   {
     "id": "bestla",
@@ -747,11 +778,15 @@
       "lineage"
     ],
     "sources": [
-      "Prose Edda",
-      "Poetic Edda (Hávamál)"
+      "Snorri Sturluson, Prose Edda: Gylfaginning 6",
+      "Poetic Edda: Hávamál 140 (the son of Bölthorn)"
     ],
     "image": "/images/giants/bestla.jpg",
-    "imageAlt": "Bestla, mother of Odin"
+    "imageAlt": "Bestla, mother of Odin",
+    "motifs": [
+      "pre-people",
+      "body-cosmogony"
+    ]
   },
   {
     "id": "balor",
@@ -952,11 +987,18 @@
       "shiva"
     ],
     "sources": [
-      "Vālmīki Rāmāyaṇa",
-      "Later puranic retellings"
+      "Valmiki, Ramayana (Sanskrit); Uttara Kanda for the boon and Kailasa episode",
+      "Tulsidas, Ramcharitmanas (Awadhi, 16th c.)",
+      "Ramakien (Thai) and Reamker (Cambodian) regional recensions",
+      "Shiva Tandava Stotram, traditionally attributed to Ravana"
     ],
     "image": "/images/giants/ravana.jpg",
-    "imageAlt": "Ravana, ten-headed king of Lanka"
+    "imageAlt": "Ravana, ten-headed king of Lanka",
+    "motifs": [
+      "pious-adversary",
+      "boon-abused",
+      "many-limbed"
+    ]
   },
   {
     "id": "kumbhakarna",
@@ -984,10 +1026,18 @@
       "lanka"
     ],
     "sources": [
-      "Vālmīki Rāmāyaṇa"
+      "Valmiki, Ramayana: Yuddha Kanda (the waking and the battle)",
+      "Valmiki, Ramayana: Uttara Kanda (the boon)",
+      "Tulsidas, Ramcharitmanas (Awadhi, 16th c.)",
+      "Ramlila performance tradition, North India"
     ],
     "image": "/images/giants/kumbhakarna.jpg",
-    "imageAlt": "Kumbhakarna awakened for war"
+    "imageAlt": "Kumbhakarna awakened for war",
+    "motifs": [
+      "buried-sleeper",
+      "boon-abused",
+      "pious-adversary"
+    ]
   },
   {
     "id": "hiranyakashipu",
@@ -1015,11 +1065,17 @@
       "boon"
     ],
     "sources": [
-      "Bhāgavata Purāṇa",
-      "Vishnu Purana"
+      "Bhagavata Purana, Canto 7 (Prahlada and Narasimha)",
+      "Vishnu Purana, Book 1; Narasimha Purana",
+      "South Indian temple sculpture, Narasimha cycle"
     ],
     "image": "/images/giants/hiranyakashipu.jpg",
-    "imageAlt": "Hiranyakashipu and Narasimha"
+    "imageAlt": "Hiranyakashipu and Narasimha",
+    "motifs": [
+      "boon-abused",
+      "war-on-heaven",
+      "pious-adversary"
+    ]
   },
   {
     "id": "mahabali",
@@ -1051,11 +1107,18 @@
       "kerala"
     ],
     "sources": [
-      "Bhāgavata Purāṇa",
-      "Kerala Onam tradition"
+      "Bhagavata Purana, Canto 8 (the Vamana avatar)",
+      "Rigveda 1.154 (Vishnu's three strides, without Bali)",
+      "Vamana Purana",
+      "Malayalam Onam folk verses ('Maveli nadu vaneedum kalam')"
     ],
     "image": "/images/giants/mahabali.jpg",
-    "imageAlt": "Mahabali and Vamana"
+    "imageAlt": "Mahabali and Vamana",
+    "motifs": [
+      "pious-adversary",
+      "seasonal-visitor",
+      "boon-abused"
+    ]
   },
   {
     "id": "svyatogor",
@@ -1182,10 +1245,16 @@
       "forest"
     ],
     "sources": [
-      "Shan Hai Jing (Classic of Mountains and Seas)"
+      "Shanhaijing (Classic of Mountains and Seas), Dahuang Beijing and Haiwai Beijing sections",
+      "Liezi, Tangwen chapter",
+      "Guo Pu, commentary on the Shanhaijing (4th c. CE)"
     ],
     "image": "/images/giants/kua-fu.jpg",
-    "imageAlt": "Kua Fu chasing the sun"
+    "imageAlt": "Kua Fu chasing the sun",
+    "motifs": [
+      "sun-chaser",
+      "landscape-body"
+    ]
   },
   {
     "id": "fangfeng",
@@ -1214,11 +1283,16 @@
       "height"
     ],
     "sources": [
-      "Guoyu",
-      "Later historical and mythic compilations"
+      "Guoyu (Discourses of the States), Lu yu section (Confucius and the bones)",
+      "Sima Qian, Shiji, Annals of Xia (c. 91 BCE)",
+      "Local gazetteers of the Kuaiji/Deqing region, Zhejiang"
     ],
     "image": "/images/giants/fangfeng.jpg",
-    "imageAlt": "Fangfeng the giant"
+    "imageAlt": "Fangfeng the giant",
+    "motifs": [
+      "bones-as-proof",
+      "pre-people"
+    ]
   },
   {
     "id": "oni",
@@ -1247,11 +1321,18 @@
       "race"
     ],
     "sources": [
-      "Japanese folk tradition",
-      "Konjaku and later setsua"
+      "Konjaku Monogatarishu (late Heian period tale collection)",
+      "Otogizoshi illustrated tales (Muromachi period)",
+      "Kamakura-period Buddhist hell scrolls (iconographic source)",
+      "Setsubun observance, documented from the Muromachi period"
     ],
     "image": "/images/giants/oni.jpg",
-    "imageAlt": "Oni of Japanese folklore"
+    "imageAlt": "Oni of Japanese folklore",
+    "motifs": [
+      "cannibal",
+      "wild-highland",
+      "seasonal-visitor"
+    ]
   },
   {
     "id": "shuten-doji",
@@ -1280,10 +1361,17 @@
       "kyoto"
     ],
     "sources": [
-      "Ōeyama emaki and related otogi-zōshi"
+      "Oeyama ekotoba (illustrated handscroll, Muromachi period)",
+      "Otogizoshi versions of the Shuten-doji tale",
+      "Noh and kabuki adaptations; ukiyo-e treatments incl. Tsukioka Yoshitoshi"
     ],
     "image": "/images/giants/shuten-doji.jpg",
-    "imageAlt": "Shuten Dōji, demon king of Mount Ōe"
+    "imageAlt": "Shuten Dōji, demon king of Mount Ōe",
+    "motifs": [
+      "cannibal",
+      "outwitted",
+      "wild-highland"
+    ]
   },
   {
     "id": "dzunukwa",
