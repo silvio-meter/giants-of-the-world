@@ -196,11 +196,15 @@ export default async function GiantDetailPage({ params }: Props) {
             <FullDescription
               fullDescription={lore.fullDescription}
               mysteryNote={lore.mysteryNote}
+              sections={lore.sections}
+              motifs={giant.motifs}
+              slug={giant.slug}
               heading="Account"
             />
           ) : (
             <LockedLore
               slug={giant.slug}
+              motifs={giant.motifs}
               freePreview={freePreview}
               hasMore={hasMore}
             />

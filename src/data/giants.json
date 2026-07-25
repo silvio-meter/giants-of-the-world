@@ -14,7 +14,7 @@
     "freeEntry": true,
     "height": "Cosmic",
     "shortDescription": "The first being. From his corpse the world was made.",
-    "fullDescription": "In the yawning void called Ginnungagap, where the heat of Muspellheim met the killing ice of Niflheim, the first life stirred. From melting rime rose Ymir - also named Aurgelmir, the clay-roarer - neither fully god nor fully giant, but the wet, roaring beginning of both. The primeval cow Auðumbla licked the ice for salt and nourished him; from the sweat of his body other giants were born, and from under his arm a man and a woman took shape. Thus the jötunn line began before the gods had names.\n\nOdin and his brothers Vili and Vé, children of a giantess themselves, struck Ymir down. His blood became a flood that drowned nearly all his kin; only Bergelmir and his household escaped in a hollowed tree or mill-frame, depending on the telling. From the corpse the brothers shaped the world: flesh into earth, bones into mountains, teeth and broken shards into stones and scree, blood into lakes and sea, skull into the sky's vault, brains into drifting clouds. Four dwarfs were set under the corners of the sky. The maggots in his flesh became the race of dwarfs.\n\nThe Eddas preserve this not as ornament but as cosmogony - a universe built from a murdered body. Every mountain ridge and cloud bank is, in that old logic, a remnant of the first giant. The frost-giants who survived never forgot the slaughter; their enmity with the Æsir is older than Midgard itself. To open the codex at Ymir is to begin where the North begins: with ice, blood, and a corpse large enough to be a world.",
+    "fullDescription": "In the yawning void called Ginnungagap, where the heat of Muspellheim met the killing ice of Niflheim, the first life stirred. From melting rime rose Ymir - also named Aurgelmir, the clay-roarer - neither fully god nor fully giant, but the wet, roaring beginning of both.",
     "mysteryNote": "Some say the surviving giants still taste his blood in every sea. When the tide runs red at sunset, listen - that is not only the sun.",
     "related": [
       "thrym",
@@ -33,11 +33,22 @@
       "edda"
     ],
     "sources": [
-      "Prose Edda",
-      "Poetic Edda (Vafþrúðnismál)"
+      "Snorri Sturluson, Prose Edda: Gylfaginning (Iceland, c. 1220)",
+      "Poetic Edda: Vafþrúðnismál, stanzas 21 and 28-35",
+      "Poetic Edda: Grímnismál, stanzas 40-41"
     ],
     "image": "/images/giants/ymir.jpg",
-    "imageAlt": "Ymir, the primordial frost giant"
+    "imageAlt": "Ymir, the primordial frost giant",
+    "motifs": [
+      "body-cosmogony",
+      "flood-survivor",
+      "pre-people"
+    ],
+    "sections": {
+      "story": "The Norse cosmos does not begin with a maker. It begins with a gap.\n\nGinnungagap lay between Muspellheim's fire and the killing ice of Niflheim, and where the two met the rime began to drip. From that meltwater rose Ymir - called Aurgelmir in the older poems - neither god nor giant but the wet, roaring precondition of both. The primeval cow Auðumbla licked the salt-rime for nourishment and fed him; from his sweat, under his arm, a man and a woman took shape, and from his legs a six-headed son. The jötunn line was established before the gods had names.\n\nHe was killed by his own descendants. Odin, Vili and Vé - sons of Borr and the giantess Bestla, and so Ymir's own kin - struck him down. His blood came out as a flood, and it drowned very nearly all the frost-giants. Only Bergelmir escaped with his household, aboard something the sources will not agree on: a hollowed log, a chest, a mill-frame. Every later giant in the North descends from that one survivor.\n\nThen the brothers built the world from the corpse. Flesh became earth; bone became mountain; teeth and jaw-shards became scree and stone. The blood was poured out as sea and lake. The skull was raised as the sky's vault and set on four dwarfs at the corners, named for the compass. The brains were thrown up as cloud. The maggots that had bred in the dead flesh were given wit and shape, and became the dwarfs.\n\nThis is not decoration. It is a cosmology in which the ground is a body, and every ridge you walk is a piece of someone the gods murdered.",
+      "origins": "The account survives in two thirteenth-century Icelandic compilations of much older material.\n\nSnorri Sturluson's Prose Edda gives the fullest narrative version in Gylfaginning, where the world's construction from the body is laid out piece by piece. Snorri was a Christian writing around 1220, some two centuries after Iceland's conversion, and he is systematising traditions that reached him already fragmented - a point worth holding onto, because his tidiness is partly his own.\n\nThe Poetic Edda preserves the older, stranger layer. Vafþrúðnismál has Odin and the giant Vafþrúðnir trade cosmological riddles, and it is there that Ymir's other name, Aurgelmir, and the detail of Bergelmir's escape appear. Grímnismál gives the body-to-world correspondences in compressed verse form. These poems are undated and probably circulated orally for a long time before anyone wrote them down.\n\nThe two sources do not fully agree, and Snorri appears at points to be reading the poems much as we do: as an inheritor working out what they meant.",
+      "disputed": "What Bergelmir escaped in is genuinely unresolved. The Old Norse phrase á lúðr has been read as a chest, a hollowed trunk, a boat, a cradle and a mill-box; each reading pulls the episode in a different direction, and the flood-and-ark resemblance that some scholars have drawn to Near Eastern material depends heavily on which one you pick.\n\nWhether that resemblance means anything at all is contested. It may be inherited, it may be borrowed, it may be Snorri's Christian formation showing through, or the pattern may simply be one that many flood traditions arrive at independently.\n\nThe relationship between Ymir and Aurgelmir is also not settled - one being under two names, or two beings that merged before the poems were fixed."
+    }
   },
   {
     "id": "nephilim",
@@ -1732,7 +1743,7 @@
     "freeEntry": false,
     "height": "Large",
     "shortDescription": "Wild people of early Aotearoa tradition - forest dwellers of great strength.",
-    "fullDescription": "The Nawao are described in some Māori traditions as a wild, strong people of the interior forests - sometimes framed as pre-Māori or as a distinct group overcome or absorbed in ancestral history. Accounts vary; colonial-era writing sometimes distorted them into simple \"giants\" for European readers.\n\nContemporary understanding treats them within Māori historical and mythic memory, not as a cryptozoological checklist item. Strength in the trees. Memory in the names. Both outlast the clearing.\n\nThis entry refuses the colonial cartoon and keeps the Nawao as a people of story and debate, not a sideshow.",
+    "fullDescription": "The Nawao are described in some Māori traditions as a wild, strong people of the interior forests - sometimes framed as an earlier group overcome or absorbed in ancestral history. Accounts vary, and colonial-era writing distorted them badly.",
     "mysteryNote": "Strength in the trees. Memory in the names. Both outlast the clearing - and the cartoon versions.",
     "related": [
       "maero",
@@ -1748,11 +1759,22 @@
       "forest"
     ],
     "sources": [
-      "Māori tradition",
-      "Historical compilations"
+      "Māori oral tradition (varies by iwi; not a single canonical account)",
+      "19th-c. settler-era compilations - preserved and distorted the material; treat with caution",
+      "Later scholarship rejecting the pre-Māori settlement thesis"
     ],
     "image": "/images/giants/nawao.jpg",
-    "imageAlt": "Nawao"
+    "imageAlt": "Nawao",
+    "motifs": [
+      "pre-people",
+      "colonial-distortion",
+      "wild-highland"
+    ],
+    "sections": {
+      "story": "Some Māori traditions speak of the Nawao as a people of the interior: large, strong, living apart in the forested inland country, and encountered by ancestors who came later. In the accounts that reach us they are overcome, absorbed, or simply cease to be met.\n\nThey are not a single fixed figure. Different iwi and different tellings place them differently, and the name appears alongside other terms for earlier or wild peoples of the interior. What the traditions consistently carry is a relationship - between people who arrived and something already inland - rather than a creature with a stable description.\n\nThat distinction matters here more than usual, because the interesting question about the Nawao is not what they looked like. It is what happened to the accounts.",
+      "origins": "Nearly everything written about the Nawao in English passes through nineteenth-century colonial collection, and that process was not neutral.\n\nSettler-era writers gathering Māori material in the 1800s worked with their own categories to hand, and 'giants' was one of them. A tradition about an earlier inland people, told for reasons internal to Māori history and whakapapa, could be received by a European reader as a story about monsters - and was often printed that way. Some of that writing was also put to use supporting the idea of a pre-Māori population, a claim that served colonial land arguments and has been rejected by subsequent scholarship.\n\nSo the surviving printed record is a double object. It preserves something, and it distorts it, and the two are not easy to separate at this distance.",
+      "disputed": "We are being deliberately brief here, and the reason is worth stating plainly.\n\nThis codex will not reconstruct a detailed portrait of the Nawao from thin and compromised sources. Doing so would mean filling gaps with invention and presenting it with a confidence the record does not support - which is exactly the failure this site exists to avoid.\n\nWhat can be said: the traditions are real, they belong to Māori historical and mythic memory, they vary between tellings, and they were reshaped in transmission by people with other purposes. What cannot responsibly be said is how many there were, what precisely they looked like, or how the encounters ended.\n\nReaders who want to go further should look to iwi and Māori-authored sources rather than to colonial compilations or to us. If you know this material and we have it wrong, we would like to hear from you."
+    }
   },
   {
     "id": "amazimu",
@@ -1876,7 +1898,7 @@
     "freeEntry": false,
     "height": "Giant",
     "shortDescription": "One-eyed Cantabrian giant of the forest - enemy of the good anjana.",
-    "fullDescription": "The ojáncanu is a roughly ten-foot, one-eyed giant of Cantabrian mythology - red-bearded, forest-dwelling, destructive to livestock and people, often given extra fingers as a mark of excess. His female counterpart, the ojáncana, is sometimes even fiercer. They are opposed by the benevolent anjana, fairy-like guardians of the green highlands of northern Spain.\n\nOne eye, many fingers. Count the cattle twice at dusk. The cycle preserves a mountain cosmology of wild violence and protective grace, local as the mist on the Picos and stubborn as regional memory.\n\nIn the European giant map he is kin to cyclopean figures elsewhere, but his passport is Cantabrian.",
+    "fullDescription": "The ojáncanu is a roughly ten-foot, one-eyed giant of Cantabrian mythology - red-bearded, forest-dwelling, destructive to livestock and people, often given extra fingers as a mark of excess. His female counterpart, the ojáncana, is sometimes fiercer still.",
     "mysteryNote": "One eye, many fingers. Count the cattle twice at dusk - and thank the anjana if you still can.",
     "related": [
       "stallo",
@@ -1894,10 +1916,22 @@
       "anjana"
     ],
     "sources": [
-      "Cantabrian mythology collections"
+      "Manuel Llano, Cantabrian folk tales and regional writings (early 20th c.)",
+      "Regional folklore collections of Cantabria, 19th-20th c.",
+      "Comparative note: Homer, Odyssey IX (Polyphemus), for the one-eye motif"
     ],
     "image": "/images/giants/ojancanu.jpg",
-    "imageAlt": "Ojáncanu of Cantabria"
+    "imageAlt": "Ojáncanu of Cantabria",
+    "motifs": [
+      "one-eye",
+      "wild-highland",
+      "cannibal"
+    ],
+    "sections": {
+      "story": "Cantabria is a narrow strip of green between the Bay of Biscay and the Picos de Europa - deep beech forest, high pasture, weather coming off the sea. The ojáncanu is what that country puts in the trees.\n\nHe is described as roughly ten feet, red-bearded, with a single eye in the middle of his forehead. Some tellings give him extra fingers or toes, a mark of excess rather than a functional detail. He lives in caves and the thickest woodland, and what he does is destroy: he tears up trees, rolls boulders onto paths, kills livestock, and is dangerous to people caught out alone. There is no bargain to be struck with him and no riddle to win. He is not a trickster figure.\n\nHis counterpart the ojáncana is in several accounts the worse of the two. She is given long breasts that she throws over her shoulders, and a habit of taking children - the shape a great many traditions give to a female ogre, though the specific inventory here is local.\n\nAgainst them stand the anjanas: small, benevolent, fairy-like guardians of the highlands who help travellers, reward generosity and repair what the ojáncanu breaks. The pairing is the point. Cantabrian folklore sets a destroying force and a mending one in the same forest, and the forest is where people actually had to work.\n\nA common motif holds that the ojáncanu cannot die while a single white hair remains in his beard, which gives villagers something to search for over the body.",
+      "origins": "This material was collected comparatively late, and that shapes what we have.\n\nThe ojáncanu belongs to a body of Cantabrian tradition assembled mainly by nineteenth and twentieth-century folklorists working in the region's villages. Manuel Llano (1898-1938), a Cantabrian writer who drew directly on the oral culture of the Pas and Cabuérniga valleys, is the figure most responsible for carrying these beings into print, and much later popular writing traces back to him.\n\nThat gives the material a particular character. It is genuinely traditional, but it reaches us already selected and shaped by writers with a literary purpose and, in the period concerned, an interest in regional identity. The ojáncanu appears in modern Cantabrian tourism, festivals and children's books, and the line between inherited story and twentieth-century consolidation is not always drawable.",
+      "disputed": "The resemblance to Polyphemus is the obvious question, and there is no agreement on what it means.\n\nA single central eye, a cave, flocks and hostility to travellers describe both. Northern Spain was under Roman administration for centuries and classical material was certainly available, so direct literary influence is possible. It is equally possible that the pairing of one eye with mountain danger is simply a shape that recurs - the same motif turns up in Tiwi tradition in northern Australia, where Roman transmission is not on the table.\n\nHow much of the current figure is old is also unresolved. Nineteenth-century regional folklore across Europe was frequently tidied, and sometimes enlarged, by the people recording it. The ojáncanu as he now appears in print is at minimum a collaboration between village tradition and its collectors."
+    }
   },
   {
     "id": "rubezahl",

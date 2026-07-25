@@ -1,0 +1,50 @@
+{
+  "one-eye": {
+    "name": "The single eye",
+    "blurb": "A giant with one eye, and the blinding or losing of it. The motif recurs on separate continents with no plausible line of transmission between them."
+  },
+  "body-cosmogony": {
+    "name": "A world built from a body",
+    "blurb": "The earth, sky and sea are made from the dismembered corpse of a primordial giant. Mountains are bones; rivers are blood."
+  },
+  "flood-survivor": {
+    "name": "Survivor of the flood",
+    "blurb": "A giant or giant-descended line survives a deluge that destroys the rest of its kind, and so carries the old world into the new one."
+  },
+  "petrified": {
+    "name": "Turned to stone",
+    "blurb": "A giant becomes a rock, hill or island. The landscape is offered as the surviving evidence, which is what makes the story durable."
+  },
+  "builder": {
+    "name": "The giant as builder",
+    "blurb": "Walls, causeways, dolmens and bridges attributed to giants — usually structures whose real makers had been forgotten."
+  },
+  "cannibal": {
+    "name": "Eater of people",
+    "blurb": "The giant as appetite: it takes travellers, children or the sick. Frequently a warning attached to a specific dangerous place."
+  },
+  "pre-people": {
+    "name": "The people who came before",
+    "blurb": "Giants as an earlier race displaced by the present one. Often a way of accounting for ruins, large bones, or an older population."
+  },
+  "outwitted": {
+    "name": "Defeated by cunning",
+    "blurb": "The giant loses to intelligence rather than strength — a trick, a false name, a riddle. Size is set up precisely so that it can fail."
+  },
+  "sky-bearer": {
+    "name": "Holding up the sky",
+    "blurb": "A giant who carries or props the heavens, explaining why the sky stays where it is."
+  },
+  "buried-sleeper": {
+    "name": "Sleeping under the land",
+    "blurb": "The giant is not dead but sleeping beneath a mountain or island, and may yet wake. Ties a named place to an unfinished story."
+  },
+  "wild-highland": {
+    "name": "The wild one of the uplands",
+    "blurb": "A hairy, solitary giant of forest or mountain, hostile to herders and travellers — the shape a frontier takes in story."
+  },
+  "colonial-distortion": {
+    "name": "Flattened by outsiders",
+    "blurb": "A being from a living tradition rewritten by colonial-era writers into a simpler 'giant'. The distortion is itself part of the record."
+  }
+}

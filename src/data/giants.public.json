@@ -31,11 +31,17 @@
       "edda"
     ],
     "sources": [
-      "Prose Edda",
-      "Poetic Edda (Vafþrúðnismál)"
+      "Snorri Sturluson, Prose Edda: Gylfaginning (Iceland, c. 1220)",
+      "Poetic Edda: Vafþrúðnismál, stanzas 21 and 28-35",
+      "Poetic Edda: Grímnismál, stanzas 40-41"
     ],
     "image": "/images/giants/ymir.jpg",
-    "imageAlt": "Ymir, the primordial frost giant"
+    "imageAlt": "Ymir, the primordial frost giant",
+    "motifs": [
+      "body-cosmogony",
+      "flood-survivor",
+      "pre-people"
+    ]
   },
   {
     "id": "nephilim",
@@ -1650,11 +1656,17 @@
       "forest"
     ],
     "sources": [
-      "Māori tradition",
-      "Historical compilations"
+      "Māori oral tradition (varies by iwi; not a single canonical account)",
+      "19th-c. settler-era compilations - preserved and distorted the material; treat with caution",
+      "Later scholarship rejecting the pre-Māori settlement thesis"
     ],
     "image": "/images/giants/nawao.jpg",
-    "imageAlt": "Nawao"
+    "imageAlt": "Nawao",
+    "motifs": [
+      "pre-people",
+      "colonial-distortion",
+      "wild-highland"
+    ]
   },
   {
     "id": "amazimu",
@@ -1788,10 +1800,17 @@
       "anjana"
     ],
     "sources": [
-      "Cantabrian mythology collections"
+      "Manuel Llano, Cantabrian folk tales and regional writings (early 20th c.)",
+      "Regional folklore collections of Cantabria, 19th-20th c.",
+      "Comparative note: Homer, Odyssey IX (Polyphemus), for the one-eye motif"
     ],
     "image": "/images/giants/ojancanu.jpg",
-    "imageAlt": "Ojáncanu of Cantabria"
+    "imageAlt": "Ojáncanu of Cantabria",
+    "motifs": [
+      "one-eye",
+      "wild-highland",
+      "cannibal"
+    ]
   },
   {
     "id": "rubezahl",

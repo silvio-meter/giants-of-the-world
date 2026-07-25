@@ -21,7 +21,7 @@ const MASTER = join(root, "src/data/giants.json");
 const PUBLIC_OUT = join(root, "src/data/giants.public.json");
 const LORE_OUT = join(root, "src/data/giants.lore.json");
 
-const LORE_FIELDS = ["fullDescription", "mysteryNote"];
+const LORE_FIELDS = ["fullDescription", "mysteryNote", "sections"];
 
 export function splitMaster(master) {
   const publicEntries = [];
@@ -38,6 +38,7 @@ export function splitMaster(master) {
     lore[giant.slug] = {
       fullDescription: giant.fullDescription,
       mysteryNote: giant.mysteryNote,
+      ...(giant.sections ? { sections: giant.sections } : {}),
     };
   }
 
