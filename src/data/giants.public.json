@@ -1220,11 +1220,18 @@
       "race"
     ],
     "sources": [
-      "Aztec codices and chronicles",
-      "Sahagún and later compilations"
+      "Fernando de Alva Ixtlilxochitl, Relaciones and Historia de la nacion chichimeca (late 16th-early 17th c.)",
+      "Bernardino de Sahagun, Florentine Codex (16th c.)",
+      "Diego Duran, Historia de las Indias de Nueva Espana",
+      "Pleistocene megafauna deposits, Valley of Mexico (physical context)"
     ],
     "image": "/images/giants/quinametzin.jpg",
-    "imageAlt": "Quinametzin, giants of a previous sun"
+    "imageAlt": "Quinametzin, giants of a previous sun",
+    "motifs": [
+      "pre-people",
+      "builder",
+      "bones-as-proof"
+    ]
   },
   {
     "id": "xelhua",
@@ -1251,11 +1258,17 @@
       "builder"
     ],
     "sources": [
-      "Central Mexican chronicles",
-      "Cholula tradition"
+      "Diego Duran, Historia de las Indias de Nueva Espana (16th c.)",
+      "Alexander von Humboldt, Vues des Cordilleres (1810) - transmission and amplification",
+      "Archaeological survey of the Great Pyramid of Cholula, 1930s onward"
     ],
     "image": "/images/giants/xelhua.jpg",
-    "imageAlt": "Xelhua, builder of Cholula"
+    "imageAlt": "Xelhua, builder of Cholula",
+    "motifs": [
+      "flood-survivor",
+      "builder",
+      "war-on-heaven"
+    ]
   },
   {
     "id": "kua-fu",
@@ -1442,11 +1455,17 @@
       "giantess"
     ],
     "sources": [
-      "Kwakwaka'wakw oral tradition",
-      "Boas and later ethnography"
+      "Kwakwaka'wakw oral tradition and hereditary mask traditions",
+      "Franz Boas with George Hunt, Kwakiutl ethnographic corpus (late 19th-early 20th c.)",
+      "Contemporary Kwakwaka'wakw carvers and community sources"
     ],
     "image": "/images/giants/dzunukwa.jpg",
-    "imageAlt": "Dzunukwa, Wild Woman of the Woods"
+    "imageAlt": "Dzunukwa, Wild Woman of the Woods",
+    "motifs": [
+      "cannibal",
+      "wild-highland",
+      "guardian"
+    ]
   },
   {
     "id": "si-te-cah",
@@ -1477,11 +1496,17 @@
       "oral-history"
     ],
     "sources": [
-      "Paiute oral tradition",
-      "Lovelock Cave archaeology (context)"
+      "Sarah Winnemucca Hopkins, Life Among the Piutes (1883)",
+      "L.L. Loud and M.R. Harrington, Lovelock Cave, UC Publications in American Archaeology and Ethnology (1929)",
+      "Subsequent Great Basin archaeological literature"
     ],
     "image": "/images/giants/si-te-cah.jpg",
-    "imageAlt": "Si-Te-Cah of Paiute tradition"
+    "imageAlt": "Si-Te-Cah of Paiute tradition",
+    "motifs": [
+      "cannibal",
+      "pre-people",
+      "bones-as-proof"
+    ]
   },
   {
     "id": "tsul-kalu",
@@ -1513,11 +1538,16 @@
       "judaculla"
     ],
     "sources": [
-      "Cherokee oral tradition",
-      "Mooney Myths of the Cherokee"
+      "James Mooney, Myths of the Cherokee, BAE 19th Annual Report (1900)",
+      "Cherokee oral tradition (Eastern Band; Cherokee Nation)",
+      "Judaculla Rock petroglyph site, Jackson County, North Carolina"
     ],
     "image": "/images/giants/tsul-kalu.jpg",
-    "imageAlt": "Tsul 'Kalu, the Slant-Eyed Giant"
+    "imageAlt": "Tsul 'Kalu, the Slant-Eyed Giant",
+    "motifs": [
+      "wild-highland",
+      "guardian"
+    ]
   },
   {
     "id": "kee-wakw",
@@ -1548,10 +1578,17 @@
       "forest"
     ],
     "sources": [
-      "Wabanaki oral traditions"
+      "Abenaki and wider Wabanaki oral tradition (variation by community)",
+      "Charles G. Leland, Algonquin Legends of New England (1884) - use with caution",
+      "Frank Speck, Penobscot and related ethnographic work, early 20th c.",
+      "Contemporary Wabanaki authors, incl. Joseph Bruchac"
     ],
     "image": "/images/giants/kee-wakw.jpg",
-    "imageAlt": "Kee-Wakw of Wabanaki tradition"
+    "imageAlt": "Kee-Wakw of Wabanaki tradition",
+    "motifs": [
+      "cannibal",
+      "wild-highland"
+    ]
   },
   {
     "id": "gaoh",
@@ -1581,11 +1618,16 @@
       "sky"
     ],
     "sources": [
-      "Haudenosaunee tradition",
-      "Ethnographic collections"
+      "Haudenosaunee oral tradition, Six Nations (variation between nations)",
+      "Harriet Maxwell Converse, Myths and Legends of the New York State Iroquois (1908), ed. A.C. Parker",
+      "Arthur C. Parker, Seneca ethnographic and folkloric writings, early 20th c."
     ],
     "image": "/images/giants/gaoh.jpg",
-    "imageAlt": "Gaoh, master of the winds"
+    "imageAlt": "Gaoh, master of the winds",
+    "motifs": [
+      "sky-bearer",
+      "guardian"
+    ]
   },
   {
     "id": "budj-bim",
