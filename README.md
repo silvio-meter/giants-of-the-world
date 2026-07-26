@@ -66,7 +66,15 @@ if they drift apart, if a slug has no lore, if a `related` id does not resolve,
 if an image is missing — and if lore ever leaks into the public file. CI runs
 the same check, so a broken entry cannot reach production as a 404.
 
-Image paths follow `/images/giants/{slug}.jpg`. Until final art arrives, the `ImagePlaceholder` component renders silhouettes with animated mist (no broken-image icons).
+Image paths follow `/images/giants/{slug}.jpg`. An entry may set `"image": ""`,
+in which case `ImagePlaceholder` renders its silhouette and mist — the right
+state for an entry whose art is not ready. `npm test` rejects two entries
+sharing the same file, because that means one of them is showing another
+giant's picture.
+
+**Awaiting art:** Olentzero (should be the charcoal-burner — beret, pipe,
+soot-blackened face) and Thardid Jimbo. Both previously reused a neighbouring
+entry's image.
 
 ### Free entries
 

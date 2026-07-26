@@ -8,6 +8,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { existsSync, readFileSync } from "node:fs";
+import { createHash } from "node:crypto";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { splitMaster } from "./build-data.mjs";
@@ -80,13 +81,35 @@ test("related references resolve", () => {
 
 test("images exist on disk", () => {
   for (const giant of publicEntries) {
-    assert.ok(giant.image, `${giant.slug} has no image path`);
-    assert.ok(
-      existsSync(join(root, "public", giant.image)),
-      `${giant.slug}: missing ${giant.image}`
-    );
+    // An empty path is allowed and deliberate: ImagePlaceholder renders its
+    // silhouette, which is the honest state for an entry awaiting art.
+    if (giant.image) {
+      assert.ok(
+        existsSync(join(root, "public", giant.image)),
+        `${giant.slug}: missing ${giant.image}`
+      );
+    }
     assert.ok(giant.imageAlt?.trim(), `${giant.slug} has no imageAlt`);
   }
+});
+
+test("no two entries share the same image file", () => {
+  const byHash = new Map();
+  for (const giant of publicEntries) {
+    if (!giant.image) continue;
+    const hash = createHash("sha256")
+      .update(readFileSync(join(root, "public", giant.image)))
+      .digest("hex");
+    (byHash.get(hash) ?? byHash.set(hash, []).get(hash)).push(giant.slug);
+  }
+  const shared = [...byHash.values()].filter((slugs) => slugs.length > 1);
+  assert.deepEqual(
+    shared,
+    [],
+    `these entries share identical artwork, so one of them is showing another giant's picture: ${shared
+      .map((s) => s.join(" = "))
+      .join("; ")}`
+  );
 });
 
 test("coordinates are plausible", () => {
