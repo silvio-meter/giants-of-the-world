@@ -6,6 +6,9 @@ import { useCallback, useTransition } from "react";
 import { canUseMapFilters } from "@/lib/access";
 import { usePlan } from "./PlanProvider";
 import { useFavourites } from "./FavouritesProvider";
+import { FilterSelect } from "./FilterSelect";
+import { formatType } from "@/lib/format";
+import type { GiantType } from "@/lib/types";
 
 interface Props {
   cultures: string[];
@@ -39,7 +42,7 @@ export function MapFilters({ cultures, types, regions, tags }: Props) {
         router.push(`/map?${next.toString()}`);
       });
     },
-    [allowed, params, router]
+    [allowed, params, router],
   );
 
   const toggleFav = () => {
@@ -117,73 +120,32 @@ export function MapFilters({ cultures, types, regions, tags }: Props) {
         )}
       </div>
 
-      <div className="flex flex-wrap items-end gap-3">
-        <label className="flex min-w-[120px] flex-1 flex-col gap-1.5 text-xs text-text-muted">
-          Culture
-          <select
-            value={culture}
-            onChange={(e) => update("culture", e.target.value)}
-            className="rounded border border-border bg-background px-3 py-2 text-sm text-text-primary focus:border-accent-gold focus:outline-none"
-          >
-            <option value="">All</option>
-            {cultures.map((c) => (
-              <option key={c} value={c}>
-                {c}
-              </option>
-            ))}
-          </select>
-        </label>
-
-        <label className="flex min-w-[120px] flex-1 flex-col gap-1.5 text-xs text-text-muted">
-          Type
-          <select
-            value={type}
-            onChange={(e) => update("type", e.target.value)}
-            className="rounded border border-border bg-background px-3 py-2 text-sm text-text-primary focus:border-accent-gold focus:outline-none"
-          >
-            <option value="">All</option>
-            {types.map((t) => (
-              <option key={t} value={t}>
-                {t
-                  .split("-")
-                  .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
-                  .join(" ")}
-              </option>
-            ))}
-          </select>
-        </label>
-
-        <label className="flex min-w-[120px] flex-1 flex-col gap-1.5 text-xs text-text-muted">
-          Region
-          <select
-            value={region}
-            onChange={(e) => update("region", e.target.value)}
-            className="rounded border border-border bg-background px-3 py-2 text-sm text-text-primary focus:border-accent-gold focus:outline-none"
-          >
-            <option value="">All</option>
-            {regions.map((r) => (
-              <option key={r} value={r}>
-                {r}
-              </option>
-            ))}
-          </select>
-        </label>
-
-        <label className="flex min-w-[120px] flex-1 flex-col gap-1.5 text-xs text-text-muted">
-          Tag
-          <select
-            value={tag}
-            onChange={(e) => update("tag", e.target.value)}
-            className="rounded border border-border bg-background px-3 py-2 text-sm text-text-primary focus:border-accent-gold focus:outline-none"
-          >
-            <option value="">All</option>
-            {tags.map((t) => (
-              <option key={t} value={t}>
-                {t}
-              </option>
-            ))}
-          </select>
-        </label>
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+        <FilterSelect
+          label="Culture"
+          value={culture}
+          options={cultures}
+          onChange={(v) => update("culture", v)}
+        />
+        <FilterSelect
+          label="Type"
+          value={type}
+          options={types}
+          onChange={(v) => update("type", v)}
+          format={(v) => formatType(v as GiantType)}
+        />
+        <FilterSelect
+          label="Region"
+          value={region}
+          options={regions}
+          onChange={(v) => update("region", v)}
+        />
+        <FilterSelect
+          label="Tag"
+          value={tag}
+          options={tags}
+          onChange={(v) => update("tag", v)}
+        />
       </div>
 
       <div className="flex flex-wrap items-center gap-4 pt-1">
