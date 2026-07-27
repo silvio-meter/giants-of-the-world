@@ -108,3 +108,12 @@ test("single-paragraph lore still yields a preview", () => {
   assert.ok(!hasMoreContent(lore, ""));
   assert.ok(hasMoreContent(lore, "but there is a mystery note"));
 });
+
+test("map filters, motifs included, are a paid feature", async () => {
+  const { canUseMapFilters } = await import("../src/lib/access.ts");
+  for (const plan of ["monthly", "yearly", "lifetime"]) {
+    assert.ok(canUseMapFilters(plan), `${plan} should reach map filters`);
+  }
+  assert.ok(!canUseMapFilters("free"), "free must not reach map filters");
+  assert.ok(!canUseMapFilters(null));
+});

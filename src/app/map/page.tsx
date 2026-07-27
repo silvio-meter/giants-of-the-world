@@ -9,10 +9,10 @@ import {
   getCultures,
   getGiantBySlug,
   getRegions,
-  getTags,
   getTypes,
 } from "@/lib/giants";
 import { canUseMapFilters } from "@/lib/access";
+import { motifFilterOptions } from "@/lib/motifs";
 import { getUserPlan } from "@/lib/profile";
 
 export const metadata: Metadata = {
@@ -27,7 +27,7 @@ interface Props {
     culture?: string;
     type?: string;
     region?: string;
-    tag?: string;
+    motif?: string;
     fav?: string;
   }>;
 }
@@ -51,7 +51,7 @@ export default async function MapPage({ searchParams }: Props) {
     culture: filtersUnlocked ? sp.culture : undefined,
     type: filtersUnlocked ? sp.type : undefined,
     region: filtersUnlocked ? sp.region : undefined,
-    tag: filtersUnlocked ? sp.tag : undefined,
+    motif: filtersUnlocked ? sp.motif : undefined,
     requireCoordinates: true,
   });
 
@@ -99,7 +99,7 @@ export default async function MapPage({ searchParams }: Props) {
           cultures={getCultures()}
           types={getTypes()}
           regions={getRegions()}
-          tags={getTags()}
+          motifs={motifFilterOptions()}
         />
       </Suspense>
 

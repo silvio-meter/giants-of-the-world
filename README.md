@@ -73,6 +73,20 @@ sharing the same file, because that means one of them is showing another
 giant's picture.
 
 
+### Tags and motifs
+
+Two vocabularies, doing different jobs:
+
+- **`tags`** — free-form keywords (`edda`, `sicily`, `frost`). They feed
+  catalogue search and the JSON-LD `keywords`, and show as chips on the entry.
+  Fine-grained on purpose; 140 of the 172 match a single giant.
+- **`motifs`** — a controlled vocabulary in `src/data/motifs.json`, drawn from
+  a fixed list and validated by `npm test`. These drive `/motifs` and the map
+  filter, and every one groups at least two entries.
+
+The map used to filter by tag, which meant a 172-option dropdown where most
+choices returned one pin. It filters by motif now.
+
 ### Free entries
 
 An entry with `"freeEntry": true` is fully open: its lore renders inside the
