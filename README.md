@@ -72,9 +72,6 @@ state for an entry whose art is not ready. `npm test` rejects two entries
 sharing the same file, because that means one of them is showing another
 giant's picture.
 
-**Awaiting art:** Olentzero (should be the charcoal-burner — beret, pipe,
-soot-blackened face) and Thardid Jimbo. Both previously reused a neighbouring
-entry's image.
 
 ### Free entries
 
