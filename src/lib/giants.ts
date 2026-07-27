@@ -61,6 +61,7 @@ export function filterGiants(opts: {
   region?: string;
   search?: string;
   tag?: string;
+  motif?: string;
   slugs?: string[] | null;
   requireCoordinates?: boolean;
 }): GiantCardData[] {
@@ -77,6 +78,7 @@ export function filterGiants(opts: {
     if (opts.type && g.type !== opts.type) return false;
     if (opts.region && g.region !== opts.region) return false;
     if (opts.tag && !g.tags.includes(opts.tag)) return false;
+    if (opts.motif && !g.motifs?.includes(opts.motif)) return false;
     if (q) {
       const hay = [
         g.name,

@@ -86,3 +86,20 @@ export function resolveMotifs(
     ];
   });
 }
+
+/**
+ * Motif keys for the map filter, most-used first, each with how many entries
+ * it would show. The tag list this replaced had 172 options, 140 of which
+ * matched a single giant.
+ */
+export function motifFilterOptions(): { key: string; label: string }[] {
+  return getAllMotifs()
+    .map((m) => ({
+      key: m.key,
+      name: m.name,
+      count: giants.filter((g) => g.motifs?.includes(m.key)).length,
+    }))
+    .filter((m) => m.count > 0)
+    .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name))
+    .map((m) => ({ key: m.key, label: `${m.name} (${m.count})` }));
+}

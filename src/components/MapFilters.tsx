@@ -14,10 +14,11 @@ interface Props {
   cultures: string[];
   types: string[];
   regions: string[];
-  tags: string[];
+  /** Curated cross-cultural motifs, with entry counts, replacing the old tag list. */
+  motifs: { key: string; label: string }[];
 }
 
-export function MapFilters({ cultures, types, regions, tags }: Props) {
+export function MapFilters({ cultures, types, regions, motifs }: Props) {
   const router = useRouter();
   const params = useSearchParams();
   const [pending, startTransition] = useTransition();
@@ -28,7 +29,7 @@ export function MapFilters({ cultures, types, regions, tags }: Props) {
   const culture = params.get("culture") ?? "";
   const type = params.get("type") ?? "";
   const region = params.get("region") ?? "";
-  const tag = params.get("tag") ?? "";
+  const motif = params.get("motif") ?? "";
   const fav = params.get("fav") === "1";
   const focus = params.get("focus") ?? "";
 
@@ -64,7 +65,7 @@ export function MapFilters({ cultures, types, regions, tags }: Props) {
     });
   };
 
-  const hasFilters = culture || type || region || tag || fav;
+  const hasFilters = culture || type || region || motif || fav;
 
   if (!ready) {
     return (
@@ -79,7 +80,7 @@ export function MapFilters({ cultures, types, regions, tags }: Props) {
           Advanced map filters
         </p>
         <p className="mt-2 text-sm text-text-muted">
-          Filter pins by culture, type, region, tags, or favourites — a paid
+          Filter pins by culture, type, region, motif, or favourites — a paid
           codex tool.
         </p>
         <div className="mt-3 flex flex-wrap gap-3 text-sm">
@@ -109,15 +110,23 @@ export function MapFilters({ cultures, types, regions, tags }: Props) {
         <p className="font-[family-name:var(--font-cinzel)] text-xs tracking-[0.2em] text-accent-gold uppercase">
           Advanced filters
         </p>
-        {hasFilters && (
-          <button
-            type="button"
-            onClick={clear}
+        <div className="flex items-center gap-3">
+          <Link
+            href="/motifs"
             className="text-xs text-text-muted hover:text-accent-gold"
           >
-            Clear filters
-          </button>
-        )}
+            What are motifs?
+          </Link>
+          {hasFilters && (
+            <button
+              type="button"
+              onClick={clear}
+              className="text-xs text-text-muted hover:text-accent-gold"
+            >
+              Clear filters
+            </button>
+          )}
+        </div>
       </div>
 
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
@@ -141,10 +150,10 @@ export function MapFilters({ cultures, types, regions, tags }: Props) {
           onChange={(v) => update("region", v)}
         />
         <FilterSelect
-          label="Tag"
-          value={tag}
-          options={tags}
-          onChange={(v) => update("tag", v)}
+          label="Motif"
+          value={motif}
+          options={motifs.map((m) => ({ value: m.key, label: m.label }))}
+          onChange={(v) => update("motif", v)}
         />
       </div>
 

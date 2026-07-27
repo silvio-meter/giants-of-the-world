@@ -18,9 +18,10 @@ export function FilterSelect({
 }: {
   label: string;
   value: string;
-  options: string[];
+  /** Plain values, or {value,label} when the two differ. */
+  options: (string | { value: string; label: string })[];
   onChange: (value: string) => void;
-  /** Optional display transform, e.g. "modern-legend" → "Modern Legend". */
+  /** Display transform for plain-string options, e.g. "modern-legend" → "Modern Legend". */
   format?: (value: string) => string;
 }) {
   return (
@@ -32,11 +33,16 @@ export function FilterSelect({
         className="w-full truncate rounded border border-border bg-background px-3 py-2 text-sm text-text-primary transition focus:border-accent-gold focus:outline-none"
       >
         <option value="">All</option>
-        {options.map((o) => (
-          <option key={o} value={o}>
-            {format ? format(o) : o}
-          </option>
-        ))}
+        {options.map((o) => {
+          const value = typeof o === "string" ? o : o.value;
+          const text =
+            typeof o === "string" ? (format ? format(o) : o) : o.label;
+          return (
+            <option key={value} value={value}>
+              {text}
+            </option>
+          );
+        })}
       </select>
     </label>
   );
