@@ -2,6 +2,14 @@
 @import "leaflet/dist/leaflet.css";
 
 :root {
+  /**
+   * Tells the browser this is a dark UI. Without it, native controls the page
+   * cannot style — the option list a mobile <select> opens, form widgets,
+   * scrollbars, date pickers — render in the OS light theme, which is why the
+   * catalogue filters used to open a white sheet over a black page.
+   */
+  color-scheme: dark;
+
   --background: #0d1117;
   --surface: #161b22;
   --border: #30363d;
@@ -247,6 +255,53 @@ a {
 :focus-visible {
   outline: 2px solid var(--accent-gold);
   outline-offset: 2px;
+}
+
+/* Form controls
+   The closed <select> is ours to style; the list it opens belongs to the OS
+   and follows color-scheme above. Keeping the closed state consistent with
+   the rest of the codex is what we can control. */
+select,
+input,
+textarea {
+  color-scheme: dark;
+  font-family: inherit;
+}
+
+select {
+  appearance: none;
+  /* Gold chevron, so the control reads as part of the codex rather than a
+     default browser widget. Inline SVG: no extra request, no CSP exception. */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8' fill='none' stroke='%23c9a227' stroke-width='1.5'%3E%3Cpath d='M1 1.5 6 6.5l5-5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 0.7rem;
+  padding-right: 2.25rem;
+  cursor: pointer;
+}
+
+select:hover {
+  border-color: rgba(201, 162, 39, 0.45);
+}
+
+/* Some engines render option text against the page background; be explicit. */
+select option {
+  background: var(--surface);
+  color: var(--text-primary);
+}
+
+/* Search inputs: drop the UA clear button, which ships light-on-dark. */
+input[type="search"]::-webkit-search-cancel-button {
+  appearance: none;
+  height: 0.85rem;
+  width: 0.85rem;
+  background: var(--text-muted);
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4 4l8 8M12 4l-8 8' stroke='black' stroke-width='2'/%3E%3C/svg%3E") center / contain no-repeat;
+  cursor: pointer;
+}
+
+input[type="search"]::-webkit-search-cancel-button:hover {
+  background: var(--accent-gold);
 }
 
 /* Leaflet dark map tweaks */

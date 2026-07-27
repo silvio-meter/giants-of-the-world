@@ -2,6 +2,9 @@
 
 import { useRouter, useSearchParams } from "next/navigation";
 import { useCallback, useEffect, useRef, useState, useTransition } from "react";
+import { FilterSelect } from "./FilterSelect";
+import { formatType } from "@/lib/format";
+import type { GiantType } from "@/lib/types";
 
 interface Props {
   cultures: string[];
@@ -32,7 +35,7 @@ export function CatalogueFilters({ cultures, types, regions }: Props) {
         router.replace(`/giants?${next.toString()}`);
       });
     },
-    [params, router]
+    [params, router],
   );
 
   // Debounced search, scoped to the component rather than hung off window.
@@ -55,69 +58,40 @@ export function CatalogueFilters({ cultures, types, regions }: Props) {
         pending ? "opacity-70" : ""
       }`}
     >
-      <div className="flex flex-wrap items-end gap-3">
-        <label className="flex min-w-[140px] flex-1 flex-col gap-1.5 text-xs text-text-muted">
-          Search
-          <input
-            type="search"
-            value={typed}
-            placeholder="Name, culture, tag…"
-            className="rounded border border-border bg-background px-3 py-2 text-sm text-text-primary placeholder:text-text-muted focus:border-accent-gold focus:outline-none"
-            onChange={(e) => setTyped(e.target.value)}
-          />
-        </label>
+      <label className="flex flex-col gap-1.5 text-xs tracking-wide text-text-muted">
+        Search
+        <input
+          type="search"
+          value={typed}
+          placeholder="Name, culture, tag…"
+          className="rounded border border-border bg-background px-3 py-2 text-sm text-text-primary placeholder:text-text-muted focus:border-accent-gold focus:outline-none"
+          onChange={(e) => setTyped(e.target.value)}
+        />
+      </label>
 
-        <label className="flex min-w-[120px] flex-col gap-1.5 text-xs text-text-muted">
-          Culture
-          <select
-            value={culture}
-            onChange={(e) => update("culture", e.target.value)}
-            className="rounded border border-border bg-background px-3 py-2 text-sm text-text-primary focus:border-accent-gold focus:outline-none"
-          >
-            <option value="">All</option>
-            {cultures.map((c) => (
-              <option key={c} value={c}>
-                {c}
-              </option>
-            ))}
-          </select>
-        </label>
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+        <FilterSelect
+          label="Culture"
+          value={culture}
+          options={cultures}
+          onChange={(v) => update("culture", v)}
+        />
+        <FilterSelect
+          label="Type"
+          value={type}
+          options={types}
+          onChange={(v) => update("type", v)}
+          format={(v) => formatType(v as GiantType)}
+        />
+        <FilterSelect
+          label="Region"
+          value={region}
+          options={regions}
+          onChange={(v) => update("region", v)}
+        />
+      </div>
 
-        <label className="flex min-w-[120px] flex-col gap-1.5 text-xs text-text-muted">
-          Type
-          <select
-            value={type}
-            onChange={(e) => update("type", e.target.value)}
-            className="rounded border border-border bg-background px-3 py-2 text-sm text-text-primary focus:border-accent-gold focus:outline-none"
-          >
-            <option value="">All</option>
-            {types.map((t) => (
-              <option key={t} value={t}>
-                {t
-                  .split("-")
-                  .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
-                  .join(" ")}
-              </option>
-            ))}
-          </select>
-        </label>
-
-        <label className="flex min-w-[120px] flex-col gap-1.5 text-xs text-text-muted">
-          Region
-          <select
-            value={region}
-            onChange={(e) => update("region", e.target.value)}
-            className="rounded border border-border bg-background px-3 py-2 text-sm text-text-primary focus:border-accent-gold focus:outline-none"
-          >
-            <option value="">All</option>
-            {regions.map((r) => (
-              <option key={r} value={r}>
-                {r}
-              </option>
-            ))}
-          </select>
-        </label>
-
+      <div className="flex justify-end">
         {hasFilters && (
           <button
             type="button"
