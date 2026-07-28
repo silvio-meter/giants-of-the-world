@@ -44,3 +44,16 @@ jobs:
       # they sat in the Tests step above.
       - name: Bundle guards
         run: npm run test:bundle
+
+      # Needs the app actually serving: these check rendered robots.txt,
+      # sitemap and canonical tags rather than the source that produces them.
+      - name: SEO guards
+        run: |
+          npm start &
+          for i in $(seq 1 30); do
+            curl -sf -o /dev/null http://localhost:3000/ && break
+            sleep 2
+          done
+          BASE=http://localhost:3000 npm run test:seo
+        env:
+          NEXT_PUBLIC_SITE_URL: https://www.giantscodex.com
