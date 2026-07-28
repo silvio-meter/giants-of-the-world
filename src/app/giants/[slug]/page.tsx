@@ -217,9 +217,9 @@ export default async function GiantDetailPage({ params }: Props) {
               <h2 className="font-[family-name:var(--font-cinzel)] text-xs tracking-[0.25em] text-accent-gold uppercase">
                 Sources
               </h2>
-              <ul className="mt-3 space-y-1 font-mono text-xs text-text-muted">
+              <ul className="mt-3 list-disc space-y-1 pl-4 font-mono text-xs text-text-muted marker:text-accent-gold/60">
                 {giant.sources.map((s) => (
-                  <li key={s}>- {s}</li>
+                  <li key={s}>{s}</li>
                 ))}
               </ul>
             </section>
