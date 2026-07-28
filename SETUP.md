@@ -19,6 +19,8 @@ Follow these steps once. After that, deploy env vars on Vercel.
 
 Optional: disable “Confirm email” under Auth → Providers → Email while testing.
 
+Also run `supabase/favourites.sql` and `supabase/subscribers.sql`.
+
 ### Google Sign-In
 
 1. [Google Cloud Console](https://console.cloud.google.com/) → create/select a project  
@@ -80,6 +82,16 @@ Copy the webhook signing secret → `STRIPE_WEBHOOK_SECRET`.
   - `customer.subscription.updated`
   - `customer.subscription.deleted`
 - Copy signing secret → `STRIPE_WEBHOOK_SECRET` on Vercel
+
+## 3b. Resend (newsletter)
+
+1. Create a project at [resend.com](https://resend.com).
+2. **Domains** → add `giantscodex.com` → add the three DNS records it shows
+   (DKIM TXT, SPF MX and TXT, all on the `send.` subdomain — this does not
+   touch the root domain's existing mail setup) → wait for verification.
+3. **API Keys** → create a key scoped to **Sending access only** → copy to
+   `RESEND_API_KEY`. A broader key is never needed at runtime.
+4. Run `supabase/subscribers.sql` if not already done in step 1.
 
 ## 4. Local env
 

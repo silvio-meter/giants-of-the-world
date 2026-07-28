@@ -14,6 +14,7 @@ import { FullDescription } from "@/components/FullDescription";
 import { LockedLore } from "@/components/LockedLore";
 import { FavouriteButton } from "@/components/FavouriteButton";
 import { SizeComparison } from "@/components/SizeComparison";
+import { EmailCapture } from "@/components/EmailCapture";
 import { siteUrl } from "@/lib/site";
 import { resolveMotifs } from "@/lib/motifs";
 
@@ -191,6 +192,10 @@ export default async function GiantDetailPage({ params }: Props) {
           official records corroborate the account.
         </div>
       )}
+
+      <div className="mt-8">
+        <EmailCapture variant="detail" sourcePage={`/giants/${giant.slug}`} />
+      </div>
 
       <div className="mt-8 grid gap-8 lg:grid-cols-[1fr_220px]">
         <div className="paywalled-account">
