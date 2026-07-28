@@ -36,7 +36,7 @@ export function MapClientShell({
       </p>
       {favOnly && ready && pinCount === 0 ? (
         <div className="mb-4 rounded-lg border border-border bg-surface px-4 py-10 text-center text-sm text-text-muted">
-          No favourited giants match these filters — or you have no stars yet.
+          No favourited giants match these filters, or you have no stars yet.
         </div>
       ) : null}
       <GiantsMapLoader giants={filtered} focusSlug={focusSlug} />

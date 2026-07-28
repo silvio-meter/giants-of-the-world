@@ -47,7 +47,7 @@ export function SizeComparison({ giant }: Props) {
         Scale (illustrative)
       </h3>
       <p className="mt-1 text-xs text-text-muted">
-        Approximate visual only - mythic heights are not measurements.
+        Approximate visual only. Mythic heights are not measurements.
         {giant.height ? ` Tradition: ${giant.height}` : ""}
       </p>
 

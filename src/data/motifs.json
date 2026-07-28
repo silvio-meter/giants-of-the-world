@@ -17,7 +17,7 @@
   },
   "builder": {
     "name": "The giant as builder",
-    "blurb": "Walls, causeways, dolmens and bridges attributed to giants — usually structures whose real makers had been forgotten."
+    "blurb": "Walls, causeways, dolmens and bridges attributed to giants: usually structures whose real makers had been forgotten."
   },
   "cannibal": {
     "name": "Eater of people",
@@ -29,7 +29,7 @@
   },
   "outwitted": {
     "name": "Defeated by cunning",
-    "blurb": "The giant loses to intelligence rather than strength — a trick, a false name, a riddle. Size is set up precisely so that it can fail."
+    "blurb": "The giant loses to intelligence rather than strength: a trick, a false name, a riddle. Size is set up precisely so that it can fail."
   },
   "sky-bearer": {
     "name": "Holding up the sky",
@@ -41,7 +41,7 @@
   },
   "wild-highland": {
     "name": "The wild one of the uplands",
-    "blurb": "A hairy, solitary giant of forest or mountain, hostile to herders and travellers — the shape a frontier takes in story."
+    "blurb": "A hairy, solitary giant of forest or mountain, hostile to herders and travellers: the shape a frontier takes in story."
   },
   "colonial-distortion": {
     "name": "Flattened by outsiders",
@@ -69,7 +69,7 @@
   },
   "made-not-born": {
     "name": "Made, not born",
-    "blurb": "A giant forged rather than fathered — bronze, clay or craft. It raises the question of whether the thing is alive at all."
+    "blurb": "A giant forged rather than fathered, from bronze, clay or craft. It raises the question of whether the thing is alive at all."
   },
   "boon-abused": {
     "name": "The gift that undoes",
@@ -89,7 +89,7 @@
   },
   "bones-as-proof": {
     "name": "Bones offered as evidence",
-    "blurb": "Large remains — real fossils, misread burials, or claims that no one can now examine — put forward to prove the giants were literal."
+    "blurb": "Large remains, real fossils, misread burials, or claims that no one can now examine, put forward to prove the giants were literal."
   },
   "modern-rumour": {
     "name": "Rumour of our own time",
@@ -101,7 +101,7 @@
   },
   "seasonal-visitor": {
     "name": "Comes with the season",
-    "blurb": "A giant tied to a date in the calendar — midwinter, harvest, a feast — who arrives, is fed or feared, and leaves."
+    "blurb": "A giant tied to a date in the calendar (midwinter, harvest, a feast) who arrives, is fed or feared, and leaves."
   },
   "landscape-body": {
     "name": "The land is the body",

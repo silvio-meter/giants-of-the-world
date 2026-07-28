@@ -46,8 +46,8 @@ export default function MotifsPage() {
         </h1>
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-text-muted sm:text-base">
           An encyclopedia gives each giant its own page and stops there. These
-          are the shapes that recur — a single eye, a world built from a body,
-          the people who came before — in traditions with no route between
+          are the shapes that recur: a single eye, a world built from a body,
+          the people who came before, in traditions with no route between
           them. Recurrence is not evidence of contact. It is the interesting
           part regardless.
         </p>

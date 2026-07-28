@@ -14,7 +14,7 @@ export const PLAN_PRICES: Record<
     name: "Yearly",
     price: "$39",
     period: "/ year",
-    blurb: "Best recurring value - two months free vs monthly.",
+    blurb: "Best recurring value: two months free vs monthly.",
   },
   lifetime: {
     name: "Lifetime",

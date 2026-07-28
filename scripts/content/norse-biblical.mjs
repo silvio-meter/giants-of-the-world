@@ -2,7 +2,7 @@ const norse_biblical = {
   thrym: {
     motifs: ["outwitted", "war-on-heaven"],
     open: "Thrym, lord of the jötnar, steals Thor's hammer and buries it eight leagues deep. His price for returning it is Freyja as his bride, and the story of how the gods answer is the funniest poem in the Edda.",
-    story: `Thor wakes and Mjöllnir is gone. For the gods this is not a theft, it is a strategic emergency - the hammer is the single thing keeping the giants out of Asgard.
+    story: `Thor wakes and Mjöllnir is gone. For the gods this is not a theft, it is a strategic emergency: the hammer is the single thing keeping the giants out of Asgard.
 
 Loki borrows Freyja's feather cloak and flies to Jötunheim, where Thrym is sitting on a burial mound plaiting golden collars for his dogs and trimming his horses' manes. He admits it freely. He has hidden the hammer eight leagues under the earth, and nobody will get it back unless Freyja is brought to him as a wife.
 
@@ -20,7 +20,7 @@ Snorri Sturluson does not retell it in the Prose Edda, which is notable given ho
 The poem was popular in later Scandinavian folk tradition, surviving as ballads in Denmark, Sweden and Norway into the modern period.`,
     disputed: `The age of the poem is the main open question, and it matters: if it is late, then the comedy is a Christian audience enjoying its former gods, and if it is early, then heathen Scandinavians were telling jokes about Thor in a dress.
 
-Thrym's name means something like "noise" or "crash", which may indicate an association with thunder - potentially making him a doublet or rival of Thor rather than a distinct figure. This is suggestive rather than demonstrated.
+Thrym's name means something like "noise" or "crash", which may indicate an association with thunder: potentially making him a doublet or rival of Thor rather than a distinct figure. This is suggestive rather than demonstrated.
 
 The hammer laid in the bride's lap is generally taken as evidence of a real Norse marriage rite involving hallowing with an object, but the poem is the main witness for the custom it is supposed to be describing, which makes the reasoning circular.`,
     sources: [
@@ -41,11 +41,11 @@ Because Hrungnir is unarmed, killing him on the spot would be dishonourable, so 
 Thor's servant Thjálfi tricks Hrungnir into standing on his shield by warning him that Thor will attack from below through the ground. Hrungnir is standing on his only defence when the hammer comes at him through the air. He throws his hone-stone; it meets Mjöllnir in mid-air and shatters. Part of it lodges in Thor's head and stays there. The hammer goes on and breaks Hrungnir's skull.
 
 He falls with one leg across Thor's neck, and Thor cannot get out from under a dead giant until his three-year-old son Magni lifts the leg off.`,
-    origins: `Snorri Sturluson's Prose Edda, in the Skáldskaparmál section, gives the full narrative. Snorri is explaining the origin of a set of poetic kennings, which is why the detail is so rich - the story exists in his text to justify phrases like "slayer of Hrungnir".
+    origins: `Snorri Sturluson's Prose Edda, in the Skáldskaparmál section, gives the full narrative. Snorri is explaining the origin of a set of poetic kennings, which is why the detail is so rich: the story exists in his text to justify phrases like "slayer of Hrungnir".
 
 The older source is Haustlöng, a skaldic poem by Þjóðólfr of Hvinir, probably ninth or tenth century, which describes the duel as depicted on a painted shield. Snorri quotes it, and it is our evidence that the story is genuinely old rather than his invention.
 
-The hone-stone lodged in Thor's head is connected in Snorri to a charm involving the seeress Gróa, who begins to loosen it and stops when distracted by good news - so it remains there permanently.`,
+The hone-stone lodged in Thor's head is connected in Snorri to a charm involving the seeress Gróa, who begins to loosen it and stops when distracted by good news: so it remains there permanently.`,
     disputed: `Haustlöng survives only in quotation and its text is difficult, so the extent to which Snorri elaborated is hard to judge. The clay giant Mökkurkálfi and the mare's heart may be his contribution or may be old.
 
 The stone head and heart have prompted suggestions that Hrungnir is a personification of rock or mountain, but Norse giants are frequently associated with stone in general and the inference is not secure.
@@ -73,7 +73,7 @@ Thor reaches for his hammer and the castle is gone.`,
 
 There is no surviving older poem covering the episode, which sets it apart from most Eddic material. Passing references in skaldic verse suggest the Útgarða-Loki tradition was known, but the detail depends on Snorri alone.
 
-Saxo Grammaticus, writing in Latin in Denmark around the same period, has a very different Utgarthilocus - a bound, foul-smelling giant visited in a cave - which appears to draw on related material through a separate channel.`,
+Saxo Grammaticus, writing in Latin in Denmark around the same period, has a very different Utgarthilocus (a bound, foul-smelling giant visited in a cave), which appears to draw on related material through a separate channel.`,
     disputed: `Because Snorri is the only substantial witness, how much of this is inherited tradition and how much is his own literary construction cannot be settled. The story is unusually shapely, and Snorri was a skilled author writing two centuries after conversion.
 
 Whether Skrymir and Útgarða-Loki are one being is stated plainly in the text, but the doubling has been read as Snorri harmonising two separate figures.
@@ -90,11 +90,11 @@ The relationship between Útgarða-Loki and Loki himself is unexplained. They sh
     open: "Bestla is a giantess, daughter of the jötunn Bölthorn, and the mother of Odin. The gods who kill Ymir and build the world from him are themselves half giant, and Bestla is the half.",
     story: `Norse cosmology has a fact at its centre that it never resolves: the Æsir are descended from the beings they define themselves against.
 
-Borr, son of the first man licked from the ice by Auðumbla, takes Bestla to wife. She is the daughter of a giant. Their sons are Odin, Vili and Vé - the three who kill Ymir and make the earth from his flesh, the mountains from his bones and the sky from his skull.
+Borr, son of the first man licked from the ice by Auðumbla, takes Bestla to wife. She is the daughter of a giant. Their sons are Odin, Vili and Vé: the three who kill Ymir and make the earth from his flesh, the mountains from his bones and the sky from his skull.
 
 So the murder of the first giant is committed by his own kin, and every subsequent conflict between gods and jötnar is a family matter. This is not a marginal detail; it is the structure. Thor's mother Jörð is a giantess. Loki is the son of a giant and lives among the gods. Freyr marries the giantess Gerðr. The boundary the gods spend the entire mythology defending runs straight through their own genealogy.
 
-Bestla herself does almost nothing in the surviving texts. She is named, she is placed, and she is otherwise silent. One tantalising line in Hávamál has Odin refer to learning nine mighty songs from the son of Bölthorn - his own maternal uncle - which places some of his wisdom on the giant side of his family rather than the divine.
+Bestla herself does almost nothing in the surviving texts. She is named, she is placed, and she is otherwise silent. One tantalising line in Hávamál has Odin refer to learning nine mighty songs from the son of Bölthorn, his own maternal uncle, which places some of his wisdom on the giant side of his family rather than the divine.
 
 That is nearly the whole of her. She is one of the most consequential figures in Norse myth and one of the least described, which is worth stating rather than filling in.`,
     origins: `Snorri Sturluson's Prose Edda, Gylfaginning 6, names her as daughter of Bölthorn and mother of the three brothers.
@@ -124,9 +124,9 @@ The sons of God see that the daughters of men are fair and take wives from among
 
 Then the text moves on. No genealogy, no episode, no explanation of what the Nephilim were or what they did. The whole thing is four verses and it reads like a fragment of something much larger that the compiler either did not know or chose not to include.
 
-The word itself is not translated. Nephilim is usually connected to the Hebrew root n-p-l, to fall, giving "the fallen ones" - though whether that means fallen in status, fallen from heaven, or those who cause others to fall is not determinable from the word alone. The Septuagint translators rendered it gigantes, giants, and that decision shaped two thousand years of reading.
+The word itself is not translated. Nephilim is usually connected to the Hebrew root n-p-l, to fall, giving "the fallen ones": though whether that means fallen in status, fallen from heaven, or those who cause others to fall is not determinable from the word alone. The Septuagint translators rendered it gigantes, giants, and that decision shaped two thousand years of reading.
 
-They reappear once, in Numbers 13:33, when the spies sent into Canaan report seeing the Nephilim and say that they seemed like grasshoppers beside them. This is a bad report given by frightened men, and the text frames it as such - but it establishes the image that stuck.
+They reappear once, in Numbers 13:33, when the spies sent into Canaan report seeing the Nephilim and say that they seemed like grasshoppers beside them. This is a bad report given by frightened men, and the text frames it as such: but it establishes the image that stuck.
 
 Later Jewish tradition, particularly the Book of Enoch, filled the silence with an enormous amount of material: named angels, taught forbidden knowledge, monstrous offspring, and a war in heaven.`,
     origins: `Genesis 6:1-4 and Numbers 13:33 are the whole of the biblical material.
@@ -136,7 +136,7 @@ The Book of Enoch, a non-canonical Jewish work whose earliest sections date from
 The Book of Jubilees covers similar ground. The Septuagint's choice of gigantes carried the giant reading into Greek and then Latin Christianity.
 
 Josephus, in Antiquities of the Jews I.3, refers to the tradition and to bones supposedly still shown in his own day.`,
-    disputed: `What the sons of God are is the central unresolved question. The three main readings - divine or angelic beings, the righteous line of Seth intermarrying with the line of Cain, or dynastic rulers claiming divine descent - have each been the majority view at different periods, and the Hebrew supports all three.
+    disputed: `What the sons of God are is the central unresolved question. The three main readings (divine or angelic beings, the righteous line of Seth intermarrying with the line of Cain, or dynastic rulers claiming divine descent) have each been the majority view at different periods, and the Hebrew supports all three.
 
 Whether the Nephilim are the offspring of that union or simply present at the same time is grammatically ambiguous in the Hebrew. Most translations imply causation the text does not clearly state.
 
@@ -153,14 +153,14 @@ Modern claims that giant skeletons confirm the Nephilim are a distinct phenomeno
 
   "og-of-bashan": {
     motifs: ["pre-people", "bones-as-proof", "war-on-heaven"],
-    open: "Og, king of Bashan, is the last survivor of the Rephaim. Deuteronomy offers his iron bed as proof of his size, and notes that it can still be seen in Rabbah - a footnote that turns a king into an exhibit.",
+    open: "Og, king of Bashan, is the last survivor of the Rephaim. Deuteronomy offers his iron bed as proof of his size, and notes that it can still be seen in Rabbah: a footnote that turns a king into an exhibit.",
     story: `Og rules Bashan, east of the Jordan, with sixty fortified cities. Israel meets him at Edrei, defeats him, and takes the territory. As conquest narratives go it is brief.
 
-What makes Og memorable is the aside. Deuteronomy 3:11 pauses to observe that he alone remained of the remnant of the Rephaim, and that his bedstead was of iron, nine cubits long and four wide - roughly four metres by two - and adds, almost conversationally, that it is still in Rabbah of the Ammonites.
+What makes Og memorable is the aside. Deuteronomy 3:11 pauses to observe that he alone remained of the remnant of the Rephaim, and that his bedstead was of iron, nine cubits long and four wide, roughly four metres by two, and adds, almost conversationally, that it is still in Rabbah of the Ammonites.
 
 That single verse does several things at once. It classifies him as the last of an older people. It gives a measurement. And it points at an object a reader could in principle go and look at, which is a form of evidence the Hebrew Bible rarely offers.
 
-The Rephaim appear throughout the text as a pre-Israelite population of large stature, listed alongside the Anakim, the Emim and the Zamzummim - all named as earlier inhabitants displaced by later arrivals. Deuteronomy 2 is unusually systematic about this, working through which nation drove out which giants from which land.
+The Rephaim appear throughout the text as a pre-Israelite population of large stature, listed alongside the Anakim, the Emim and the Zamzummim: all named as earlier inhabitants displaced by later arrivals. Deuteronomy 2 is unusually systematic about this, working through which nation drove out which giants from which land.
 
 Og's defeat becomes a fixed reference point. Psalms 135 and 136 name him in liturgical recitals of what God did for Israel, paired always with Sihon. He is remembered less as a person than as an item on a list of things overcome.
 
@@ -169,14 +169,14 @@ Later rabbinic tradition made him enormously larger and gave him a flood-surviva
 
 Psalms 135:11 and 136:20 preserve him in liturgy, which indicates the tradition was well established.
 
-The rabbinic expansions appear in the Talmud, particularly tractates Berakhot and Niddah, and in later midrash. These make Og a figure of legendary scale - carrying a mountain to throw at the Israelite camp, surviving the flood on the ark's roof - and are clearly homiletic elaboration rather than historical claim.
+The rabbinic expansions appear in the Talmud, particularly tractates Berakhot and Niddah, and in later midrash. These make Og a figure of legendary scale (carrying a mountain to throw at the Israelite camp, surviving the flood on the ark's roof), and are clearly homiletic elaboration rather than historical claim.
 
 The word rendered "bedstead" can also mean sarcophagus, which has been argued since antiquity.`,
     disputed: `Whether the iron object was a bed or a basalt sarcophagus is a live question. Basalt is common in the Bashan region, dark and iron-like in appearance, and a large stone sarcophagus would fit both the dimensions and the "still to be seen" remark. On that reading Deuteronomy is describing a monument, not furniture.
 
-Who the Rephaim were is contested. The term is used both for a living people and, elsewhere in the Hebrew Bible and in Ugaritic texts, for shades of the dead - a double sense that may indicate an ancient population remembered as ancestral spirits, or two unrelated words.
+Who the Rephaim were is contested. The term is used both for a living people and, elsewhere in the Hebrew Bible and in Ugaritic texts, for shades of the dead: a double sense that may indicate an ancient population remembered as ancestral spirits, or two unrelated words.
 
-The dolmens and megalithic structures scattered across the Golan and Transjordan have often been linked to the Rephaim traditions. The association is plausible as a mechanism - unexplained large structures inviting explanation by large builders - but is not demonstrated.`,
+The dolmens and megalithic structures scattered across the Golan and Transjordan have often been linked to the Rephaim traditions. The association is plausible as a mechanism, unexplained large structures inviting explanation by large builders, but is not demonstrated.`,
     sources: [
       "Deuteronomy 3:1-13 (the iron bedstead at Rabbah); Numbers 21:33-35",
       "Joshua 12:4-5, 13:12; Psalms 135:11, 136:20",
@@ -190,23 +190,23 @@ The dolmens and megalithic structures scattered across the Golan and Transjordan
     open: "Goliath of Gath stands in the valley of Elah for forty days and challenges Israel to send one man against him. The armour is described piece by piece before the fight, which is how the story tells you what is about to be irrelevant.",
     story: `The Philistines and Israel face each other across the valley, each on a hill, neither willing to descend. Goliath proposes single combat to settle it: their champion against Israel's, winner takes the war.
 
-1 Samuel 17 catalogues his equipment with unusual precision - a bronze helmet, a coat of mail weighing five thousand shekels, greaves, a bronze javelin, a spear whose shaft is like a weaver's beam with a head of six hundred shekels of iron, and a shield-bearer walking ahead of him. The inventory is doing work. It establishes a system of warfare, comprehensively.
+1 Samuel 17 catalogues his equipment with unusual precision: a bronze helmet, a coat of mail weighing five thousand shekels, greaves, a bronze javelin, a spear whose shaft is like a weaver's beam with a head of six hundred shekels of iron, and a shield-bearer walking ahead of him. The inventory is doing work. It establishes a system of warfare, comprehensively.
 
 David is a boy delivering bread and cheese to his brothers. He hears the challenge and volunteers. Saul offers his own armour; David tries it, cannot walk in it, and takes it off. He goes down to the brook, chooses five smooth stones, and approaches with a sling.
 
-Goliath is insulted - "Am I a dog, that thou comest to me with staves?" David answers with a speech about whose battle it is. Then he runs at him, which is the tactical detail everyone forgets: he closes the distance while slinging rather than waiting to be reached.
+Goliath is insulted: "Am I a dog, that thou comest to me with staves?" David answers with a speech about whose battle it is. Then he runs at him, which is the tactical detail everyone forgets: he closes the distance while slinging rather than waiting to be reached.
 
 The stone sinks into the forehead and Goliath falls face down. David takes the giant's own sword and cuts off his head. The Philistines break and run.
 
-The story is not about strength. It is about a man who has optimised for one kind of fight meeting someone who declined to have it. A sling in trained hands was a genuine military weapon with real range - the mismatch is the reverse of how it looks.`,
+The story is not about strength. It is about a man who has optimised for one kind of fight meeting someone who declined to have it. A sling in trained hands was a genuine military weapon with real range: the mismatch is the reverse of how it looks.`,
     origins: `1 Samuel 17 is the main text. 1 Samuel 21:9 and 22:10 refer back to the sword kept at Nob.
 
 The textual situation is complicated and important. The Septuagint version of 1 Samuel 17 is substantially shorter than the Masoretic Hebrew, omitting roughly half the narrative, and the two appear to preserve different stages of the story's development.
 
-2 Samuel 21:19 states that Elhanan son of Jaare-oregim killed Goliath the Gittite. 1 Chronicles 20:5 adjusts this so that Elhanan kills Goliath's brother Lahmi - visibly a later harmonisation.
+2 Samuel 21:19 states that Elhanan son of Jaare-oregim killed Goliath the Gittite. 1 Chronicles 20:5 adjusts this so that Elhanan kills Goliath's brother Lahmi: visibly a later harmonisation.
 
 An inscription from tenth-to-ninth-century Tell es-Safi, the site generally identified as Gath, contains two names etymologically similar to Goliath, indicating the name is authentically Philistine and of the right period.`,
-    disputed: `Goliath's height differs between manuscripts. The Masoretic text gives six cubits and a span, around 2.9 metres. The Septuagint, the Dead Sea Scrolls fragment 4QSam-a and Josephus all give four cubits and a span, around 2 metres - tall but within human range. The larger figure appears to be the later reading.
+    disputed: `Goliath's height differs between manuscripts. The Masoretic text gives six cubits and a span, around 2.9 metres. The Septuagint, the Dead Sea Scrolls fragment 4QSam-a and Josephus all give four cubits and a span, around 2 metres: tall but within human range. The larger figure appears to be the later reading.
 
 Who killed him is a real problem in the text, not a modern invention. The Elhanan attribution in 2 Samuel is difficult to explain away, and the Chronicles version reads as an attempt to fix it.
 

@@ -3,8 +3,9 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { formatPlanLabel } from "@/lib/access";
 import { RandomGiantButton } from "./RandomGiantButton";
+import { UserMenu } from "./UserMenu";
+import { formatPlanLabel } from "@/lib/access";
 import { usePlan } from "./PlanProvider";
 
 const nav = [
@@ -33,7 +34,7 @@ export function Header() {
           <span className="hidden sm:inline">GIANTS OF THE WORLD</span>
         </Link>
 
-        <nav className="hidden items-center gap-6 md:flex">
+        <nav className="hidden items-center gap-5 md:flex">
           {nav.map((item) => {
             const active =
               pathname === item.href || pathname.startsWith(item.href + "/");
@@ -53,26 +54,7 @@ export function Header() {
           })}
           <RandomGiantButton compact />
           {ready && userId ? (
-            <div className="flex items-center gap-3">
-              <Link
-                href="/account"
-                className="text-sm text-text-muted hover:text-accent-gold"
-              >
-                Account
-              </Link>
-              {isPaid && (
-                <span className="rounded border border-accent-gold/40 px-2 py-0.5 text-[10px] tracking-wide text-accent-gold uppercase">
-                  {formatPlanLabel(plan)}
-                </span>
-              )}
-              <button
-                type="button"
-                onClick={() => void signOut()}
-                className="text-sm text-text-muted hover:text-accent-gold"
-              >
-                Sign out
-              </button>
-            </div>
+            <UserMenu />
           ) : (
             <Link
               href="/login"

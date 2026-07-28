@@ -80,7 +80,7 @@ export function MapFilters({ cultures, types, regions, motifs }: Props) {
           Advanced map filters
         </p>
         <p className="mt-2 text-sm text-text-muted">
-          Filter pins by culture, type, region, motif, or favourites — a paid
+          Filter pins by culture, type, region, motif, or favourites: a paid
           codex tool.
         </p>
         <div className="mt-3 flex flex-wrap gap-3 text-sm">

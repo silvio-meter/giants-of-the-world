@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Cinzel, Inter, JetBrains_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { Header } from "@/components/Header";
@@ -25,6 +25,18 @@ const mono = JetBrains_Mono({
   variable: "--font-mono",
   display: "swap",
 });
+
+/**
+ * Emits <meta name="color-scheme" content="dark">, read by the browser before
+ * CSS parses. The globals.css `color-scheme: dark` on :root is the durable
+ * declaration; this meta tag is the documented belt-and-braces addition
+ * (see web.dev/articles/color-scheme) so native controls — the mobile
+ * <select> picker in particular — theme correctly from the first paint
+ * rather than waiting on stylesheet load.
+ */
+export const viewport: Viewport = {
+  colorScheme: "dark",
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -63,7 +75,7 @@ export const metadata: Metadata = {
         url: "/images/featured.jpg",
         width: 1280,
         height: 720,
-        alt: "Giants of the World - a giant in the mist under a pale moon",
+        alt: "Giants of the World: a giant in the mist under a pale moon",
       },
     ],
   },
