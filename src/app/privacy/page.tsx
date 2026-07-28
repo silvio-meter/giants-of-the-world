@@ -45,7 +45,7 @@ export default function PrivacyPage() {
             <li>
               <strong className="text-text-primary/90">Billing:</strong>{" "}
               payment status, Stripe customer and subscription IDs, plan type.
-              Card details are handled by Stripe - we do not store full card
+              Card details are handled by Stripe; we do not store full card
               numbers.
             </li>
             <li>

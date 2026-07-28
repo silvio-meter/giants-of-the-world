@@ -21,7 +21,7 @@ export function getPaymentsMode(): PaymentsMode {
 export function paymentsModeLabel(mode: PaymentsMode): string {
   switch (mode) {
     case "demo":
-      return "Safe demo - no real charges";
+      return "Safe demo: no real charges";
     case "test":
       return "Stripe test mode";
     default:

@@ -33,7 +33,7 @@ export async function POST() {
       return NextResponse.json(
         {
           error:
-            "There is no billing account on this profile — nothing has been charged, so there is nothing to manage.",
+            "There is no billing account on this profile. Nothing has been charged, so there is nothing to manage.",
         },
         { status: 400 }
       );

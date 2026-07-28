@@ -4,13 +4,13 @@ const americas = {
     open: "The Quinametzin are the giants of central Mexican tradition who inhabited an earlier world-age and built the great structures the Aztecs found already standing. Teotihuacan and Cholula were attributed to them.",
     story: `Nahua cosmology runs in world-ages, or suns, each ending in catastrophe. The Quinametzin belong to an earlier one.
 
-They were enormous, they built on a scale later peoples did not attempt, and they were destroyed - by flood, by wind, by the collapse of their age, depending on the account. What they left behind was architecture.
+They were enormous, they built on a scale later peoples did not attempt, and they were destroyed: by flood, by wind, by the collapse of their age, depending on the account. What they left behind was architecture.
 
 This matters for a specific reason. When the Mexica arrived in the Valley of Mexico, Teotihuacan had already been abandoned for centuries. It is a vast city with pyramids among the largest in the ancient world, and nobody living knew who had built it. The name Teotihuacan is Nahuatl, not the builders' own, and it means something like "the place where the gods were made". The Great Pyramid of Cholula, the largest pyramid by volume anywhere, was likewise ancient and overgrown.
 
 Attributing this to a previous race of giants is a coherent response to the evidence available. The buildings were there; the builders were not; the scale was beyond what the observers were doing themselves.
 
-Colonial-era chroniclers recorded the tradition, and it collided immediately with two other things: European interest in the biblical giants of Genesis, and the discovery of large fossil bones in the Valley of Mexico, which are abundant - mammoth, mastodon and other Pleistocene megafauna. Bones were sent to Europe as proof. Spanish writers fitted the Quinametzin into a scriptural framework where they became descendants of Noah or relatives of the Nephilim.
+Colonial-era chroniclers recorded the tradition, and it collided immediately with two other things: European interest in the biblical giants of Genesis, and the discovery of large fossil bones in the Valley of Mexico, which are abundant: mammoth, mastodon and other Pleistocene megafauna. Bones were sent to Europe as proof. Spanish writers fitted the Quinametzin into a scriptural framework where they became descendants of Noah or relatives of the Nephilim.
 
 Separating the indigenous tradition from what colonial recording did to it is the central difficulty with this entry.`,
     origins: `The tradition is preserved chiefly through colonial-period sources written after the conquest, which is the fundamental constraint.
@@ -38,17 +38,17 @@ Modern pseudo-archaeological use of the Quinametzin, particularly in ancient-ast
   xelhua: {
     motifs: ["flood-survivor", "builder", "war-on-heaven"],
     open: "Xelhua is one of the giants who survived the flood, and he built the Great Pyramid of Cholula to reach the sky. The gods stopped him, which is the part of the story that has caused all the argument.",
-    story: `The account, as it reaches us, runs like this. A flood destroys the world. A small number of giants survive. One of them, Xelhua, arrives at Cholula and begins to build - a mountain of brick raised toward the heavens, either as a refuge from any future deluge or as an approach to the sky.
+    story: `The account, as it reaches us, runs like this. A flood destroys the world. A small number of giants survive. One of them, Xelhua, arrives at Cholula and begins to build: a mountain of brick raised toward the heavens, either as a refuge from any future deluge or as an approach to the sky.
 
 The gods object. Fire is thrown down, or the builders are scattered, and the work stops unfinished.
 
-The Great Pyramid of Cholula is real and it is enormous - by volume the largest pyramid in the world, a structure built in stages over many centuries, now grassed over and carrying a Spanish church on its summit. It was already ancient and partly overgrown when the Spanish arrived, which is why they built on it rather than through it.
+The Great Pyramid of Cholula is real and it is enormous: by volume the largest pyramid in the world, a structure built in stages over many centuries, now grassed over and carrying a Spanish church on its summit. It was already ancient and partly overgrown when the Spanish arrived, which is why they built on it rather than through it.
 
 The difficulty with this entry is not the pyramid. It is the story attached to it.
 
 The version above is close to the Tower of Babel. A great tower, an attempt to reach heaven, divine intervention, dispersal. That resemblance is so exact that it has to be examined rather than admired, because every version we have was written down by or for Spanish readers who knew Genesis extremely well.
 
-There is a plausible indigenous core: a flood tradition, giants of an earlier age, and a genuinely vast ancient structure needing explanation. There is also an obvious mechanism for a colonial writer to hear that and reach for a familiar shape - or for a Nahua informant, decades into evangelisation, to tell it in terms a friar would credit.
+There is a plausible indigenous core: a flood tradition, giants of an earlier age, and a genuinely vast ancient structure needing explanation. There is also an obvious mechanism for a colonial writer to hear that and reach for a familiar shape: or for a Nahua informant, decades into evangelisation, to tell it in terms a friar would credit.
 
 We cannot separate the two, and this entry is not going to pretend otherwise.`,
     origins: `Chiefly colonial sources. Diego Duran records the Cholula tradition in the sixteenth century.
@@ -67,26 +67,26 @@ The pyramid's actual construction history is well studied and has nothing to do 
 Flood traditions are widespread in Mesoamerica and do not require external origin. The flood element is the part of this story most likely to be genuinely pre-conquest.`,
     sources: [
       "Diego Duran, Historia de las Indias de Nueva Espana (16th c.)",
-      "Alexander von Humboldt, Vues des Cordilleres (1810) - transmission and amplification",
+      "Alexander von Humboldt, Vues des Cordilleres (1810): transmission and amplification",
       "Archaeological survey of the Great Pyramid of Cholula, 1930s onward",
     ],
   },
 
   dzunukwa: {
     motifs: ["cannibal", "wild-highland", "guardian"],
-    open: "Dzunukwa is the wild woman of the woods in Kwakwaka'wakw tradition - enormous, dark, drowsy, with pursed lips and a basket for carrying children. She is also a source of wealth, and both facts matter equally.",
-    story: `Dzunukwa - anglicised various ways, including Dzunukwa and Tsonoqua - belongs to the Kwakwaka'wakw of the Pacific Northwest Coast, and she is not a simple monster.
+    open: "Dzunukwa is the wild woman of the woods in Kwakwaka'wakw tradition: enormous, dark, drowsy, with pursed lips and a basket for carrying children. She is also a source of wealth, and both facts matter equally.",
+    story: `Dzunukwa (anglicised various ways, including Dzunukwa and Tsonoqua) belongs to the Kwakwaka'wakw of the Pacific Northwest Coast, and she is not a simple monster.
 
-She is described as very large, hairy, dark-skinned, with sunken eyes and lips pushed forward as though calling out - her cry is rendered as "hu, hu". She is slow and often sleepy, and her eyesight is poor. She lives in the deep forest, away from the villages. She carries a basket on her back, and she takes children who wander, intending to eat them.
+She is described as very large, hairy, dark-skinned, with sunken eyes and lips pushed forward as though calling out: her cry is rendered as "hu, hu". She is slow and often sleepy, and her eyesight is poor. She lives in the deep forest, away from the villages. She carries a basket on her back, and she takes children who wander, intending to eat them.
 
 Children in the stories usually escape, because she is dull and they are not.
 
 But she is also the keeper of great wealth, and this is inseparable from her. She possesses coppers, treasure and supernatural gifts, and a person who encounters her and survives, or who takes something from her, can return with the means to hold a potlatch. Dzunukwa masks are property of specific chiefly families and are displayed in that context. She appears in the potlatch as a figure whose wealth is being distributed.
 
-So she is a danger to children, a bringer of status to lineages, and a figure of considerable artistic power - the masks, with their hollowed cheeks and forward lips, are among the most striking objects in Northwest Coast art, and were made by named carvers within specific traditions.
+So she is a danger to children, a bringer of status to lineages, and a figure of considerable artistic power: the masks, with their hollowed cheeks and forward lips, are among the most striking objects in Northwest Coast art, and were made by named carvers within specific traditions.
 
 This is a living culture, not a closed record. Kwakwaka'wakw artists continue to carve Dzunukwa, and the figure carries meaning and ownership rights in the present, not only the past.`,
-    origins: `Kwakwaka'wakw oral tradition, and material culture - masks, house posts, feast dishes - held by families with hereditary rights to them.
+    origins: `Kwakwaka'wakw oral tradition, and material culture (masks, house posts, feast dishes) held by families with hereditary rights to them.
 
 Franz Boas recorded extensive Kwakwaka'wakw material in the late nineteenth and early twentieth centuries, largely in collaboration with George Hunt, whose contribution was substantial and long under-credited. Their published corpus remains the largest external documentation.
 
@@ -134,7 +134,7 @@ The reddish hair is explained by post-depositional chemical change. This is not 
 
 What the original Paiute tradition described is a genuine question worth care. Winnemucca's account is the primary published source and does not mention size; whether other Paiute traditions did is not something we can establish from outside, and Northern Paiute voices are the appropriate authority.
 
-The site's real significance - the tule duck decoys, the Great Basin sequence - is regularly overshadowed by the giant claims, which is a loss.`,
+The site's real significance (the tule duck decoys, the Great Basin sequence) is regularly overshadowed by the giant claims, which is a loss.`,
     sources: [
       "Sarah Winnemucca Hopkins, Life Among the Piutes (1883)",
       "L.L. Loud and M.R. Harrington, Lovelock Cave, UC Publications in American Archaeology and Ethnology (1929)",
@@ -145,15 +145,15 @@ The site's real significance - the tule duck decoys, the Great Basin sequence - 
   "tsul-kalu": {
     motifs: ["wild-highland", "guardian"],
     open: "Tsul'kalu is the slant-eyed giant of Cherokee tradition, lord of the game animals and master of the hunt. A mountain in North Carolina carries a version of his name, and so does the rock face he is said to have marked.",
-    story: `Tsul'kalu - the name is commonly explained as referring to his slanting or oblique eyes - is a great being of the Cherokee highlands who owns the game. Hunters address themselves to him, because success in hunting is not simply a matter of skill.
+    story: `Tsul'kalu, the name is commonly explained as referring to his slanting or oblique eyes, is a great being of the Cherokee highlands who owns the game. Hunters address themselves to him, because success in hunting is not simply a matter of skill.
 
 The best-known narrative concerns his marriage. A woman living with her mother wishes for a husband who is a good hunter. A man arrives at night, brings game, and proves an extraordinary provider, but will not be seen in daylight and refuses to meet her mother. When the mother finally looks, she sees his size and is frightened, and speaks against him. He is offended and leaves, and the woman goes with him, and they are gone into the mountains.
 
-He is associated with specific places. Judaculla Rock in Jackson County, North Carolina, is a soapstone boulder covered in petroglyphs, and Cherokee tradition holds that Tsul'kalu left his mark on it - a handprint or scratch - when he leapt from the mountain. Judaculla is an anglicisation of his name. Nearby Tanasee Bald and other locations in the Balsam range are connected to him, and the area contains what were described as his townhouse and his fields.
+He is associated with specific places. Judaculla Rock in Jackson County, North Carolina, is a soapstone boulder covered in petroglyphs, and Cherokee tradition holds that Tsul'kalu left his mark on it, a handprint or scratch, when he leapt from the mountain. Judaculla is an anglicisation of his name. Nearby Tanasee Bald and other locations in the Balsam range are connected to him, and the area contains what were described as his townhouse and his fields.
 
 The petroglyphs are real and pre-date European contact, though their age and meaning are not established. The rock is a protected site.
 
-He is not a hostile figure in the way most giants in this codex are. He is an owner and a regulator - a being one has a relationship with, and can offend.`,
+He is not a hostile figure in the way most giants in this codex are. He is an owner and a regulator: a being one has a relationship with, and can offend.`,
     origins: `James Mooney's Myths of the Cherokee, published in 1900 by the Bureau of American Ethnology, is the principal published source. Mooney worked with Cherokee informants in North Carolina in the 1880s and 1890s, and his collection remains the largest external compilation.
 
 Cherokee oral tradition, in both the Eastern Band and the Cherokee Nation, is the living source and is not confined to what Mooney recorded.
@@ -177,12 +177,12 @@ As with other entries here, this is described from outside a living tradition, a
 
   "kee-wakw": {
     motifs: ["cannibal", "wild-highland"],
-    open: "The Kee-wakw is a cannibal giant of Abenaki and wider Wabanaki tradition - a being of winter, hunger and the frozen forest, whose appetite grows the more it eats.",
+    open: "The Kee-wakw is a cannibal giant of Abenaki and wider Wabanaki tradition: a being of winter, hunger and the frozen forest, whose appetite grows the more it eats.",
     story: `Across the Wabanaki peoples of the northeast woodlands and maritime regions there are traditions of enormous cannibal beings associated with winter. Names and details vary considerably between communities and languages; kee-wakw is one Abenaki form, and related figures are known elsewhere in the region.
 
-The core is consistent. The being is huge, it is starving, and eating does not satisfy it - the hunger increases with feeding. It hunts people, particularly the isolated, particularly in deep winter. In several traditions a person can become one, through cannibalism, through greed, or through the conditions of a hard winter itself, which makes the figure a transformation as much as a species.
+The core is consistent. The being is huge, it is starving, and eating does not satisfy it: the hunger increases with feeding. It hunts people, particularly the isolated, particularly in deep winter. In several traditions a person can become one, through cannibalism, through greed, or through the conditions of a hard winter itself, which makes the figure a transformation as much as a species.
 
-This last point is what distinguishes these traditions from most giant stories. The threat is not only external. It is a state a person can enter, and the stories function partly as a moral boundary around behaviour in famine conditions - selfishness, hoarding, eating what must not be eaten.
+This last point is what distinguishes these traditions from most giant stories. The threat is not only external. It is a state a person can enter, and the stories function partly as a moral boundary around behaviour in famine conditions: selfishness, hoarding, eating what must not be eaten.
 
 Northeastern winters were genuinely lethal, and starvation was a real historical experience in the region. Reading these figures as purely fantastical misses that they encode a survival ethic with actual consequences attached.
 
@@ -205,7 +205,7 @@ The extent to which these beings are understood as literal, as moral instruction
 The popular-culture wendigo is a modern invention with little relationship to the traditions it borrows from, and should not be used to interpret them.`,
     sources: [
       "Abenaki and wider Wabanaki oral tradition (variation by community)",
-      "Charles G. Leland, Algonquin Legends of New England (1884) - use with caution",
+      "Charles G. Leland, Algonquin Legends of New England (1884): use with caution",
       "Frank Speck, Penobscot and related ethnographic work, early 20th c.",
       "Contemporary Wabanaki authors, incl. Joseph Bruchac",
     ],
@@ -214,7 +214,7 @@ The popular-culture wendigo is a modern invention with little relationship to th
   gaoh: {
     motifs: ["sky-bearer", "guardian"],
     open: "Gaoh is the master of the winds in Haudenosaunee tradition, keeping the four directional winds in his charge. Each wind has its animal, and what the weather does depends on which one he releases.",
-    story: `In Haudenosaunee - Iroquois - tradition, the winds are not weather. They are beings, and they are kept.
+    story: `In Haudenosaunee, Iroquois, tradition, the winds are not weather. They are beings, and they are kept.
 
 Gaoh, also written Ga-oh and other ways, holds them. The scheme most often recorded assigns an animal to each direction: the Bear to the north, bringing winter storms; the Panther to the west, bringing violent wind and rain; the Moose to the east, bringing damp and mist off the water; and the Fawn to the south, bringing gentle warm weather. When Gaoh looses one, that is what the season does.
 
@@ -222,10 +222,10 @@ The characterisations are apt in a way that reads as close observation. The nort
 
 Gaoh's role is containment. The winds are not benign and would be destructive if unrestrained, so the office is a form of guardianship over forces that need managing rather than defeating.
 
-He belongs to a wider Haudenosaunee cosmology - the Sky Woman, the twins, the Three Sisters, the Great Law - which is a coherent and living system of thought, not a collection of separable stories. Extracting one figure from it, as this codex does by its nature, loses most of what makes it work.
+He belongs to a wider Haudenosaunee cosmology (the Sky Woman, the twins, the Three Sisters, the Great Law), which is a coherent and living system of thought, not a collection of separable stories. Extracting one figure from it, as this codex does by its nature, loses most of what makes it work.
 
 The Haudenosaunee Confederacy is a functioning political and cultural body today, and its own account of this material is the one that carries authority.`,
-    origins: `Haudenosaunee oral tradition, across the Six Nations - Mohawk, Oneida, Onondaga, Cayuga, Seneca and Tuscarora - with variation between them.
+    origins: `Haudenosaunee oral tradition, across the Six Nations (Mohawk, Oneida, Onondaga, Cayuga, Seneca and Tuscarora) with variation between them.
 
 Harriet Maxwell Converse's Myths and Legends of the New York State Iroquois, published posthumously in 1908 and edited by Arthur C. Parker, is a commonly cited published source for the Gaoh material, including the four-animal scheme.
 

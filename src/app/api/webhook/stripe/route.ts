@@ -67,7 +67,7 @@ async function setUserPlan(opts: {
     if (!data || data.length === 0) {
       // No user to credit. Loud, because someone has paid for nothing.
       throw new Error(
-        `No profile matches stripe_customer_id ${opts.customerId} — plan "${opts.plan}" not applied`
+        `No profile matches stripe_customer_id ${opts.customerId}; plan "${opts.plan}" not applied`
       );
     }
   }

@@ -101,7 +101,7 @@ export function FavouriteButton({
       </button>
       {!allowed && userId && (
         <Link href="/pricing" className="text-[10px] text-text-muted hover:text-accent-gold">
-          Paid feature — view pricing
+          Paid feature: view pricing
         </Link>
       )}
       {!userId && planReady && (

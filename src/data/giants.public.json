@@ -57,7 +57,7 @@
     "type": "race",
     "freeEntry": true,
     "height": "Varied (tradition: great stature)",
-    "shortDescription": "The mighty ones of old - offspring of the sons of God and daughters of men.",
+    "shortDescription": "The mighty ones of old: offspring of the sons of God and daughters of men.",
     "related": [
       "goliath",
       "og-of-bashan"
@@ -283,7 +283,7 @@
       "Apollodorus, Bibliotheca I.6.1-2 (the Gigantomachy)",
       "Virgil, Aeneid III.578-582 (Enceladus beneath Etna)",
       "Hesiod, Theogony 185 (birth of the Giants from Gaia)",
-      "Pergamon Altar frieze, 2nd c. BCE (Berlin) - major visual source"
+      "Pergamon Altar frieze, 2nd c. BCE (Berlin): major visual source"
     ],
     "image": "/images/giants/enceladus.jpg",
     "imageAlt": "Enceladus buried beneath Etna",
@@ -303,7 +303,7 @@
     "type": "individual",
     "freeEntry": false,
     "height": "Giant",
-    "shortDescription": "Libyan giant who drew strength from the earth - until Heracles lifted him.",
+    "shortDescription": "Libyan giant who drew strength from the earth: until Heracles lifted him.",
     "related": [
       "polyphemus",
       "atlas",
@@ -623,7 +623,7 @@
     "type": "individual",
     "freeEntry": false,
     "height": "Giant (bronze)",
-    "shortDescription": "The bronze guardian of Crete - automaton giant with a single vein of ichor.",
+    "shortDescription": "The bronze guardian of Crete: automaton giant with a single vein of ichor.",
     "related": [
       "orion",
       "geryon"
@@ -743,7 +743,7 @@
     "type": "individual",
     "freeEntry": false,
     "height": "Mountain-vast (illusion)",
-    "shortDescription": "The vast wanderer whose glove was a hall - master of illusions.",
+    "shortDescription": "The vast wanderer whose glove was a hall: master of illusions.",
     "related": [
       "ymir",
       "thrym",
@@ -781,7 +781,7 @@
     "type": "individual",
     "freeEntry": false,
     "height": "Jötunn",
-    "shortDescription": "Frost-giantess mother of Odin - the gods' giant bloodline.",
+    "shortDescription": "Frost-giantess mother of Odin: the gods' giant bloodline.",
     "related": [
       "ymir",
       "thrym"
@@ -821,7 +821,7 @@
     "type": "individual",
     "freeEntry": false,
     "height": "Fomorian giant",
-    "shortDescription": "Fomorian king whose eye destroyed armies - slain by his grandson Lugh.",
+    "shortDescription": "Fomorian king whose eye destroyed armies: slain by his grandson Lugh.",
     "related": [
       "cormoran",
       "gogmagog"
@@ -988,7 +988,7 @@
     "type": "folklore",
     "freeEntry": false,
     "height": "Large (folklore)",
-    "shortDescription": "The Basque charcoal-burner of Christmas - last echo of the jentilak.",
+    "shortDescription": "The Basque charcoal-burner of Christmas: last echo of the jentilak.",
     "related": [
       "jentilak"
     ],
@@ -1028,7 +1028,7 @@
     "type": "individual",
     "freeEntry": true,
     "height": "Vast (ten-headed form)",
-    "shortDescription": "Ten-headed king of Lanka - scholar, devotee, abductor of Sita.",
+    "shortDescription": "Ten-headed king of Lanka: scholar, devotee, abductor of Sita.",
     "related": [
       "kumbhakarna",
       "hiranyakashipu",
@@ -1109,7 +1109,7 @@
     "type": "individual",
     "freeEntry": false,
     "height": "Asura-giant",
-    "shortDescription": "Asura king who could not be killed by man or beast - until Narasimha.",
+    "shortDescription": "Asura king who could not be killed by man or beast: until Narasimha.",
     "related": [
       "ravana",
       "mahabali"
@@ -1290,7 +1290,7 @@
     ],
     "sources": [
       "Diego Duran, Historia de las Indias de Nueva Espana (16th c.)",
-      "Alexander von Humboldt, Vues des Cordilleres (1810) - transmission and amplification",
+      "Alexander von Humboldt, Vues des Cordilleres (1810): transmission and amplification",
       "Archaeological survey of the Great Pyramid of Cholula, 1930s onward"
     ],
     "image": "/images/giants/xelhua.jpg",
@@ -1314,7 +1314,7 @@
     "type": "individual",
     "freeEntry": false,
     "height": "Giant",
-    "shortDescription": "The giant who chased the sun and died of thirst - staff becoming a forest.",
+    "shortDescription": "The giant who chased the sun and died of thirst: staff becoming a forest.",
     "related": [
       "fangfeng"
     ],
@@ -1392,7 +1392,7 @@
     "type": "race",
     "freeEntry": true,
     "height": "Larger than human (variable)",
-    "shortDescription": "Horned ogres of Japanese folklore - punishers, marauders, festival demons.",
+    "shortDescription": "Horned ogres of Japanese folklore: punishers, marauders, festival demons.",
     "related": [
       "shuten-doji"
     ],
@@ -1433,7 +1433,7 @@
     "type": "individual",
     "freeEntry": false,
     "height": "Oni-giant",
-    "shortDescription": "Demon king of Mount Ōe - drunkard oni slain by Raikō's band.",
+    "shortDescription": "Demon king of Mount Ōe: drunkard oni slain by Raikō's band.",
     "related": [
       "oni"
     ],
@@ -1559,7 +1559,7 @@
     "type": "individual",
     "freeEntry": true,
     "height": "Giant",
-    "shortDescription": "Cherokee lord of the hunt - slant-eyed giant of the mountains.",
+    "shortDescription": "Cherokee lord of the hunt: slant-eyed giant of the mountains.",
     "related": [
       "dzunukwa",
       "si-te-cah",
@@ -1601,7 +1601,7 @@
     "type": "folklore",
     "freeEntry": false,
     "height": "Giant",
-    "shortDescription": "Ice-hearted cannibal giant of northern forests - a winter horror.",
+    "shortDescription": "Ice-hearted cannibal giant of northern forests: a winter horror.",
     "related": [
       "dzunukwa",
       "si-te-cah"
@@ -1618,7 +1618,7 @@
     ],
     "sources": [
       "Abenaki and wider Wabanaki oral tradition (variation by community)",
-      "Charles G. Leland, Algonquin Legends of New England (1884) - use with caution",
+      "Charles G. Leland, Algonquin Legends of New England (1884): use with caution",
       "Frank Speck, Penobscot and related ethnographic work, early 20th c.",
       "Contemporary Wabanaki authors, incl. Joseph Bruchac"
     ],
@@ -1642,7 +1642,7 @@
     "type": "individual",
     "freeEntry": false,
     "height": "Spirit-giant",
-    "shortDescription": "Master of the winds - a giant spirit who pens the gales.",
+    "shortDescription": "Master of the winds: a giant spirit who pens the gales.",
     "related": [
       "tsul-kalu",
       "si-te-cah"
@@ -1741,7 +1741,7 @@
     ],
     "sources": [
       "Tiwi oral tradition, Bathurst and Melville Islands",
-      "Charles P. Mountford, Tiwi ethnographic work (1950s) - period-bound",
+      "Charles P. Mountford, Tiwi ethnographic work (1950s): period-bound",
       "Contemporary Tiwi art centres: Tiwi Design, Jilamara, Munupi"
     ],
     "image": "/images/giants/papinijuwari.jpg",
@@ -1780,7 +1780,7 @@
     ],
     "sources": [
       "Australian Aboriginal oral tradition (community not reliably identified in available sources)",
-      "20th-c. compilations of Australian Aboriginal legend - unreliable, see disputed",
+      "20th-c. compilations of Australian Aboriginal legend: unreliable, see disputed",
       "AIATSIS protocols for Indigenous knowledge"
     ],
     "image": "/images/giants/murkupang.jpg",
@@ -1802,7 +1802,7 @@
     "type": "folklore",
     "freeEntry": true,
     "height": "Giant",
-    "shortDescription": "Cannibal giant of southeastern Aboriginal tales - a terror of the camp edge.",
+    "shortDescription": "Cannibal giant of southeastern Aboriginal tales: a terror of the camp edge.",
     "related": [
       "papinijuwari",
       "chinny-kinik",
@@ -1819,7 +1819,7 @@
     ],
     "sources": [
       "Australian Aboriginal oral tradition (community not reliably identified)",
-      "20th-c. legend compilations - unreliable, see disputed",
+      "20th-c. legend compilations: unreliable, see disputed",
       "AIATSIS protocols for Indigenous knowledge"
     ],
     "image": "/images/giants/thardid-jimbo.jpg",
@@ -1841,7 +1841,7 @@
     "type": "folklore",
     "freeEntry": true,
     "height": "Giant",
-    "shortDescription": "Giant being in Aboriginal narrative - sparse in print, strong in place.",
+    "shortDescription": "Giant being in Aboriginal narrative: sparse in print, strong in place.",
     "related": [
       "thardid-jimbo",
       "papinijuwari"
@@ -1857,7 +1857,7 @@
     ],
     "sources": [
       "Australian Aboriginal oral tradition (community not reliably identified)",
-      "20th-c. legend compilations - unreliable, see disputed",
+      "20th-c. legend compilations: unreliable, see disputed",
       "AIATSIS protocols for Indigenous knowledge"
     ],
     "image": "/images/giants/chinny-kinik.jpg",
@@ -1882,7 +1882,7 @@
     "type": "race",
     "freeEntry": false,
     "height": "Large wild humanoids",
-    "shortDescription": "Wild folk of the forest in Māori tradition - long fingers, fierce, untamed.",
+    "shortDescription": "Wild folk of the forest in Māori tradition: long fingers, fierce, untamed.",
     "related": [
       "kahui-tipua",
       "nawao"
@@ -1899,7 +1899,7 @@
     ],
     "sources": [
       "Maori oral tradition (varies by iwi)",
-      "John White, The Ancient History of the Maori (1887-90) - period-bound",
+      "John White, The Ancient History of the Maori (1887-90): period-bound",
       "Elsdon Best, ethnographic writings on Maori forest lore, early 20th c.",
       "Te Ara: The Encyclopedia of New Zealand"
     ],
@@ -1923,7 +1923,7 @@
     "type": "race",
     "freeEntry": false,
     "height": "Giant / supernatural",
-    "shortDescription": "Bands of supernatural giants in Māori tradition - tipua of collective power.",
+    "shortDescription": "Bands of supernatural giants in Māori tradition: tipua of collective power.",
     "related": [
       "maero",
       "nawao"
@@ -1966,7 +1966,7 @@
     "type": "race",
     "freeEntry": false,
     "height": "Large",
-    "shortDescription": "Wild people of early Aotearoa tradition - forest dwellers of great strength.",
+    "shortDescription": "Wild people of early Aotearoa tradition: forest dwellers of great strength.",
     "related": [
       "maero",
       "kahui-tipua"
@@ -2007,7 +2007,7 @@
     "type": "race",
     "freeEntry": false,
     "height": "Ogre-giant",
-    "shortDescription": "Cannibal ogres of Zulu and related folklore - shape-shifting eaters of the unwary.",
+    "shortDescription": "Cannibal ogres of Zulu and related folklore: shape-shifting eaters of the unwary.",
     "related": [
       "giant-of-the-forest"
     ],
@@ -2047,7 +2047,7 @@
     "type": "folklore",
     "freeEntry": true,
     "height": "Giant",
-    "shortDescription": "West African forest giant of tale cycles - a being of the deep bush.",
+    "shortDescription": "West African forest giant of tale cycles: a being of the deep bush.",
     "related": [
       "amazimu"
     ],
@@ -2088,7 +2088,7 @@
     "type": "folklore",
     "freeEntry": false,
     "height": "Large / troll-giant",
-    "shortDescription": "Sámi giant-troll of the north - strong, dull-witted, dangerous to herders.",
+    "shortDescription": "Sámi giant-troll of the north: strong, dull-witted, dangerous to herders.",
     "related": [
       "svyatogor",
       "rubezahl",
@@ -2131,7 +2131,7 @@
     "type": "folklore",
     "freeEntry": false,
     "height": "Giant",
-    "shortDescription": "One-eyed Cantabrian giant of the forest - enemy of the good anjana.",
+    "shortDescription": "One-eyed Cantabrian giant of the forest: enemy of the good anjana.",
     "related": [
       "stallo",
       "jentilak",
@@ -2175,7 +2175,7 @@
     "type": "folklore",
     "freeEntry": false,
     "height": "Shapeshifting (giant form common)",
-    "shortDescription": "Mountain spirit of the Riesengebirge - trickster, giant, weather-lord.",
+    "shortDescription": "Mountain spirit of the Riesengebirge: trickster, giant, weather-lord.",
     "related": [
       "stallo",
       "svyatogor",
@@ -2192,7 +2192,7 @@
       "weather"
     ],
     "sources": [
-      "Martin Helwig, map of Silesia (1561) - early depiction",
+      "Martin Helwig, map of Silesia (1561): early depiction",
       "Johannes Praetorius, Rubezahl collections (17th c.)",
       "J.K.A. Musaus, Volksmarchen der Deutschen (1782-86)",
       "Czech Krakonos tradition, incl. Krkonosske pohadky"
@@ -2292,7 +2292,7 @@
     "type": "tall-tale",
     "freeEntry": true,
     "height": "As tall as the tale requires",
-    "shortDescription": "Lumberjack giant of American tall tales - Babe the Blue Ox at his side.",
+    "shortDescription": "Lumberjack giant of American tall tales: Babe the Blue Ox at his side.",
     "related": [
       "cormoran",
       "gogmagog"

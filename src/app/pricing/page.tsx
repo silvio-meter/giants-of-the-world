@@ -48,7 +48,7 @@ function CheckoutStatus({ onSuccess }: { onSuccess: () => Promise<void> }) {
   if (success) {
     return (
       <p className="mt-4 text-sm text-accent-gold" role="status">
-        Payment received. Your access unlocks within a few seconds - refresh if
+        Payment received. Your access unlocks within a few seconds; refresh if
         needed.
       </p>
     );
@@ -75,7 +75,7 @@ function PricingInner() {
     setError("");
     if (paymentsMode === "demo") {
       setError(
-        "Safe demo mode is on — real charges are disabled. Use Demo unlock below."
+        "Safe demo mode is on: real charges are disabled. Use Demo unlock below."
       );
       return;
     }
@@ -179,17 +179,15 @@ function PricingInner() {
         {paymentsMode === "demo" && (
           <div className="mx-auto mt-5 max-w-xl rounded-lg border border-amber-700/50 bg-amber-950/30 px-4 py-3 text-sm text-amber-100/90">
             <strong className="font-medium text-amber-200">
-              Safe demo mode
-            </strong>
-            {" — "}
+              Safe demo mode:
+            </strong>{" "}
             no real charges. Sign in and use{" "}
             <em>Demo unlock</em> to preview paid access for the show.
           </div>
         )}
         {paymentsMode === "test" && (
           <div className="mx-auto mt-5 max-w-xl rounded-lg border border-sky-800/50 bg-sky-950/30 px-4 py-3 text-sm text-sky-100/90">
-            <strong className="font-medium text-sky-200">Stripe test mode</strong>
-            {" — "}
+            <strong className="font-medium text-sky-200">Stripe test mode:</strong>{" "}
             use card <code className="text-xs">4242 4242 4242 4242</code>, any
             future expiry, any CVC.
           </div>
@@ -303,7 +301,7 @@ function PricingInner() {
           </p>
           <p className="mx-auto mt-2 max-w-md text-sm text-text-muted">
             Sign in, then unlock Lifetime access for this browser session&apos;s
-            account — for demos only.
+            account, for demos only.
           </p>
           <button
             type="button"

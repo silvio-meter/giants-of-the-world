@@ -11,7 +11,7 @@ export function Footer() {
           </p>
           <p className="mt-2 max-w-md text-sm text-text-muted">
             A codex of giants from mythology, folklore, and modern legend.
-            Modern military accounts are unverified oral tradition - not fact.
+            Modern military accounts are unverified oral tradition, not fact.
           </p>
           <p className="mt-3 text-sm text-text-muted">
             <a

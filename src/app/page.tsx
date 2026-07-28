@@ -17,7 +17,7 @@ const jsonLd = {
 const cards = [
   {
     title: "Myth & Folklore",
-    body: "Classical, biblical, indigenous, and regional giants - kept distinct from modern rumor.",
+    body: "Classical, biblical, indigenous, and regional giants, kept distinct from modern rumor.",
     href: "/giants",
   },
   {
@@ -27,7 +27,7 @@ const cards = [
   },
   {
     title: "Bones & Shadows",
-    body: "Claims, hoaxes, and unverified legends - labeled so mystery never pretends to be proof.",
+    body: "Claims, hoaxes, and unverified legends, labeled so mystery never pretends to be proof.",
     href: "/findings",
   },
 ];
