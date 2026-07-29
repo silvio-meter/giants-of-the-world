@@ -276,6 +276,13 @@ export default async function GiantDetailPage({ params }: Props) {
           </dl>
 
           <SizeComparison giant={giant} />
+
+          <Link
+            href={`/compare?a=${encodeURIComponent(giant.slug)}`}
+            className="flex items-center justify-center gap-2 rounded-lg border border-border bg-surface px-3 py-2.5 text-xs font-medium tracking-wide text-text-muted transition hover:border-accent-gold/50 hover:text-accent-gold"
+          >
+            Compare with another giant
+          </Link>
         </aside>
       </div>
 

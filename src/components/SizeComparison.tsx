@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import type { GiantCardData } from "@/lib/format";
+import { HUMAN_HEIGHT_M, barHeightPx, formatMeters } from "@/lib/scale";
 import { usePlan } from "./PlanProvider";
 
 interface Props {
@@ -34,12 +35,9 @@ export function SizeComparison({ giant }: Props) {
     );
   }
 
-  const human = 1.75;
-  // Cap visual scale so human remains readable (huge mythic heights compress)
-  const visualGiant = Math.min(meters, 12);
   const chartH = 160;
-  const giantH = Math.max(48, (visualGiant / 12) * chartH);
-  const humanH = Math.max(28, (human / 12) * chartH);
+  const giantH = barHeightPx(meters, chartH, 48);
+  const humanH = barHeightPx(HUMAN_HEIGHT_M, chartH);
 
   return (
     <section className="rounded-lg border border-border bg-surface p-4 sm:p-5">
@@ -65,7 +63,7 @@ export function SizeComparison({ giant }: Props) {
             {giant.name}
           </span>
           <span className="text-[10px] text-text-muted">
-            ~{meters >= 10 ? `${Math.round(meters)}` : meters.toFixed(1)} m
+            {formatMeters(meters)}
           </span>
         </div>
 
@@ -73,12 +71,16 @@ export function SizeComparison({ giant }: Props) {
           <div
             className="w-8 rounded-t border border-text-muted/50 bg-text-muted/40 sm:w-9"
             style={{ height: humanH }}
-            title="~1.75 m"
+            title={`~${HUMAN_HEIGHT_M} m`}
           />
           <span className="w-full text-center text-xs font-medium leading-tight text-text-primary">
             Human
           </span>
-          <span className="text-[10px] text-text-muted">~1.75 m</span>
+          {/* Not formatMeters: that rounds to 1 decimal for approximate mythic
+              heights, which would show 1.75 as "1.8" — this figure is exact. */}
+          <span className="text-[10px] text-text-muted">
+            ~{HUMAN_HEIGHT_M} m
+          </span>
         </div>
       </div>
     </section>

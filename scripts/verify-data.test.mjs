@@ -304,3 +304,18 @@ test("heightMeters is generated and plausible where set", () => {
     );
   }
 });
+
+test("every entry has a fate line, and it stays out of the public catalog", () => {
+  for (const giant of master) {
+    assert.ok(giant.fate?.trim(), `${giant.slug}: fate is missing or empty`);
+  }
+  for (const entry of publicEntries) {
+    assert.ok(
+      !("fate" in entry),
+      `${entry.slug}: fate leaked into the client catalog`
+    );
+  }
+  for (const slug of Object.keys(lore)) {
+    assert.ok(lore[slug].fate?.trim(), `${slug}: fate missing from lore file`);
+  }
+});

@@ -100,6 +100,27 @@ export function getFreeGiants(): GiantCardData[] {
   return giants.filter((g) => g.freeEntry);
 }
 
+export interface ComparePickerOption {
+  slug: string;
+  name: string;
+  culture: string;
+  image: string;
+}
+
+/**
+ * Slim projection for the Compare tool's autocomplete pickers.
+ *
+ * The full catalog is ~55 KB; a client component that imported it directly
+ * would ship that to every visitor who loads /compare. This is name, slug,
+ * culture and image only — under 6 KB for all 57 entries — computed here on
+ * the server and passed down as plain props.
+ */
+export function getComparePickerOptions(): ComparePickerOption[] {
+  return giants
+    .map((g) => ({ slug: g.slug, name: g.name, culture: g.culture, image: g.image }))
+    .sort((a, b) => a.name.localeCompare(b.name));
+}
+
 export function getAllFindings(): Finding[] {
   return findings;
 }

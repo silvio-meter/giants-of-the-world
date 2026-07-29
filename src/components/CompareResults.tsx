@@ -1,0 +1,179 @@
+import Link from "next/link";
+import { canViewFullDescription } from "@/lib/access";
+import { getGiantLore } from "@/lib/giants-lore";
+import { formatType, type GiantCardData } from "@/lib/format";
+import { getUserPlan } from "@/lib/profile";
+import { sharedMotifs } from "@/lib/motifs";
+import { barHeightPx, formatMeters } from "@/lib/scale";
+import { CompareExportButton } from "./CompareExportButton";
+import { PremiumLock } from "./PremiumLock";
+
+function ScaleBar({ giant }: { giant: GiantCardData }) {
+  const chartH = 140;
+  return (
+    <div className="flex w-[45%] max-w-[9rem] flex-col items-center gap-2">
+      {giant.heightMeters ? (
+        <>
+          <div
+            className="w-14 rounded-t border border-accent-gold/40 bg-gradient-to-t from-accent-gold/50 to-accent-gold/15 sm:w-16"
+            style={{ height: barHeightPx(giant.heightMeters, chartH, 40) }}
+          />
+          <span className="text-[10px] text-text-muted">
+            {formatMeters(giant.heightMeters)}
+          </span>
+        </>
+      ) : (
+        <>
+          <div className="flex h-[140px] w-14 items-end justify-center sm:w-16">
+            <span className="pb-2 text-center text-[10px] leading-tight text-text-muted">
+              Scale beyond measurement
+            </span>
+          </div>
+        </>
+      )}
+      <Link
+        href={`/giants/${giant.slug}`}
+        className="text-center text-sm font-medium leading-tight text-text-primary hover:text-accent-gold"
+      >
+        {giant.name}
+      </Link>
+    </div>
+  );
+}
+
+function Row({ label, a, b }: { label: string; a: string; b: string }) {
+  return (
+    <div className="grid grid-cols-[80px_1fr_1fr] gap-2 border-b border-border py-2.5 text-sm last:border-0 sm:grid-cols-[120px_1fr_1fr]">
+      <dt className="text-text-muted">{label}</dt>
+      <dd className="text-text-primary/90">{a}</dd>
+      <dd className="text-text-primary/90">{b}</dd>
+    </div>
+  );
+}
+
+export async function CompareResults({
+  giantA,
+  giantB,
+}: {
+  giantA: GiantCardData;
+  giantB: GiantCardData;
+}) {
+  const plan = await getUserPlan();
+  const unlocked = canViewFullDescription(plan);
+
+  const loreA = unlocked ? getGiantLore(giantA.slug) : null;
+  const loreB = unlocked ? getGiantLore(giantB.slug) : null;
+  const shared = unlocked ? sharedMotifs(giantA.slug, giantB.slug) : [];
+
+  return (
+    <div className="space-y-8">
+      <section className="rounded-lg border border-border bg-surface p-5 sm:p-6">
+        <div className="flex items-end justify-center gap-6" style={{ height: 200 }}>
+          <ScaleBar giant={giantA} />
+          <span className="pb-8 font-[family-name:var(--font-cinzel)] text-xs text-text-muted">
+            vs
+          </span>
+          <ScaleBar giant={giantB} />
+        </div>
+        <p className="mt-4 text-center text-xs text-text-muted">
+          Approximate visual only. Mythic heights are not measurements.
+        </p>
+      </section>
+
+      <section className="rounded-lg border border-border bg-surface p-5 sm:p-6">
+        <div className="grid grid-cols-[80px_1fr_1fr] gap-2 pb-2 text-xs text-text-muted uppercase tracking-wide sm:grid-cols-[120px_1fr_1fr]">
+          <span />
+          <span className="truncate text-accent-gold">{giantA.name}</span>
+          <span className="truncate text-accent-gold">{giantB.name}</span>
+        </div>
+        <dl>
+          <Row label="Culture" a={giantA.culture} b={giantB.culture} />
+          <Row label="Region" a={giantA.region} b={giantB.region} />
+          <Row label="Type" a={formatType(giantA.type)} b={formatType(giantB.type)} />
+          <Row
+            label="Height"
+            a={giantA.height ?? "—"}
+            b={giantB.height ?? "—"}
+          />
+        </dl>
+
+        <div className="mt-4">
+          {unlocked && loreA && loreB ? (
+            <dl>
+              <Row label="Fate" a={loreA.fate} b={loreB.fate} />
+            </dl>
+          ) : (
+            <PremiumLock label="Unlock the fate of both giants" />
+          )}
+        </div>
+      </section>
+
+      <section className="rounded-lg border border-border bg-surface p-5 sm:p-6">
+        <h2 className="font-[family-name:var(--font-cinzel)] text-xs tracking-[0.25em] text-accent-gold uppercase">
+          Shared threads
+        </h2>
+        {!unlocked ? (
+          <div className="mt-4">
+            <PremiumLock label="Unlock the traditions this pair shares" />
+          </div>
+        ) : shared.length > 0 ? (
+          <ul className="mt-4 space-y-3">
+            {shared.map((m) => (
+              <li key={m.key} className="rounded border border-border p-3">
+                <p className="text-sm text-accent-gold">{m.name}</p>
+                <p className="mt-1 text-sm text-text-muted">{m.blurb}</p>
+                <p className="mt-2 text-xs text-text-muted/80">
+                  Carried by both {giantA.name} and {giantB.name}.
+                </p>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p className="mt-3 text-sm text-text-muted">
+            No shared motif between these two, at least none catalogued yet.
+            That is not nothing — most pairs do not share one.
+          </p>
+        )}
+      </section>
+
+      <section className="rounded-lg border border-border bg-surface p-5 sm:p-6">
+        <h2 className="font-[family-name:var(--font-cinzel)] text-xs tracking-[0.25em] text-accent-gold uppercase">
+          Mystery notes
+        </h2>
+        {unlocked && loreA && loreB ? (
+          <div className="mt-4 grid gap-4 sm:grid-cols-2">
+            <blockquote className="border-l-2 border-accent-gold/60 pl-3 font-serif text-sm italic leading-relaxed text-accent-gold">
+              “{loreA.mysteryNote}”
+            </blockquote>
+            <blockquote className="border-l-2 border-accent-gold/60 pl-3 font-serif text-sm italic leading-relaxed text-accent-gold">
+              “{loreB.mysteryNote}”
+            </blockquote>
+          </div>
+        ) : (
+          <div className="mt-4">
+            <PremiumLock label="Unlock both mystery notes" />
+          </div>
+        )}
+      </section>
+
+      <div className="flex justify-center">
+        <CompareExportButton
+          a={{
+            name: giantA.name,
+            culture: giantA.culture,
+            image: giantA.image,
+            heightMeters: giantA.heightMeters,
+            fate: unlocked ? loreA?.fate : undefined,
+          }}
+          b={{
+            name: giantB.name,
+            culture: giantB.culture,
+            image: giantB.image,
+            heightMeters: giantB.heightMeters,
+            fate: unlocked ? loreB?.fate : undefined,
+          }}
+        />
+      </div>
+    </div>
+  );
+}
