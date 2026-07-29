@@ -1,9 +1,4 @@
-/** Deterministic hue from a motif key, so each seal reads distinctly without hand-drawn art. */
-function seedHue(key: string): number {
-  let h = 0;
-  for (let i = 0; i < key.length; i++) h = (h * 31 + key.charCodeAt(i)) % 360;
-  return h;
-}
+import { motifHue } from "@/lib/motif-color";
 
 /**
  * A collectible wax-seal stamp for a motif shared by two or more of a
@@ -11,7 +6,7 @@ function seedHue(key: string): number {
  * exists for this yet, so the seal is built entirely from inline SVG.
  */
 export function MotifSeal({ motif }: { motif: { key: string; name: string } }) {
-  const hue = seedHue(motif.key);
+  const hue = motifHue(motif.key);
   return (
     <div className="flex flex-col items-center gap-2" title={motif.name}>
       <svg width="64" height="64" viewBox="0 0 64 64" aria-hidden className="shrink-0">
