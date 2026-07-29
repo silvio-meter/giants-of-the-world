@@ -30,9 +30,11 @@ const mono = JetBrains_Mono({
  * Emits <meta name="color-scheme" content="dark">, read by the browser before
  * CSS parses. The globals.css `color-scheme: dark` on :root is the durable
  * declaration; this meta tag is the documented belt-and-braces addition
- * (see web.dev/articles/color-scheme) so native controls — the mobile
- * <select> picker in particular — theme correctly from the first paint
- * rather than waiting on stylesheet load.
+ * (see web.dev/articles/color-scheme) so native controls theme correctly from
+ * the first paint rather than waiting on stylesheet load.
+ *
+ * Note this does not cover a mobile <select>'s option list, which Chrome for
+ * Android themes from the OS regardless — hence FilterSelect.tsx.
  */
 export const viewport: Viewport = {
   colorScheme: "dark",
