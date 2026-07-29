@@ -80,6 +80,14 @@ export function UserMenu() {
           >
             Account
           </Link>
+          <Link
+            href="/my-codex"
+            role="menuitem"
+            onClick={() => setOpen(false)}
+            className="block px-4 py-2 text-sm text-text-primary hover:bg-background/60 hover:text-accent-gold"
+          >
+            My Codex
+          </Link>
           <button
             type="button"
             role="menuitem"

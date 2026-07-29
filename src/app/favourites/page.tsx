@@ -4,7 +4,7 @@ import { GiantCard } from "@/components/GiantCard";
 import { canUseFavourites } from "@/lib/access";
 import { getAllGiants } from "@/lib/giants";
 import { getProfile } from "@/lib/profile";
-import { createClient } from "@/lib/supabase/server";
+import { getFavouriteSlugs } from "@/lib/favourites-server";
 
 /** Private page: rendered per request, never indexed. */
 export const dynamic = "force-dynamic";
@@ -13,22 +13,6 @@ export const metadata: Metadata = {
   title: "Favourites",
   robots: { index: false, follow: false },
 };
-
-async function getFavouriteSlugs(userId: string): Promise<string[]> {
-  try {
-    const supabase = await createClient();
-    const { data, error } = await supabase
-      .from("favourites")
-      .select("giant_slug")
-      .eq("user_id", userId)
-      .order("created_at", { ascending: false });
-    if (error) throw error;
-    return (data ?? []).map((row) => row.giant_slug as string);
-  } catch (err) {
-    console.error("favourites page", err);
-    return [];
-  }
-}
 
 function Shell({ children }: { children: React.ReactNode }) {
   return (

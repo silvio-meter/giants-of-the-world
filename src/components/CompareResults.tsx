@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { canViewFullDescription } from "@/lib/access";
+import { incrementComparisonsMade } from "@/lib/comparisons";
 import { getGiantLore } from "@/lib/giants-lore";
 import { formatType, type GiantCardData } from "@/lib/format";
-import { getUserPlan } from "@/lib/profile";
+import { getProfile } from "@/lib/profile";
 import { sharedMotifs } from "@/lib/motifs";
 import { barHeightPx, formatMeters } from "@/lib/scale";
 import { CompareExportButton } from "./CompareExportButton";
@@ -58,12 +59,17 @@ export async function CompareResults({
   giantA: GiantCardData;
   giantB: GiantCardData;
 }) {
-  const plan = await getUserPlan();
-  const unlocked = canViewFullDescription(plan);
+  const profile = await getProfile();
+  const unlocked = canViewFullDescription(profile?.plan);
 
   const loreA = unlocked ? getGiantLore(giantA.slug) : null;
   const loreB = unlocked ? getGiantLore(giantB.slug) : null;
   const shared = unlocked ? sharedMotifs(giantA.slug, giantB.slug) : [];
+
+  if (profile) {
+    // Fire-and-forget: a comparison view shouldn't block on the counter write.
+    void incrementComparisonsMade(profile.id);
+  }
 
   return (
     <div className="space-y-8">
