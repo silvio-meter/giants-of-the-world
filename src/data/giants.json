@@ -48,7 +48,8 @@
       "story": "The Norse cosmos does not begin with a maker. It begins with a gap.\n\nGinnungagap lay between Muspellheim's fire and the killing ice of Niflheim, and where the two met the rime began to drip. From that meltwater rose Ymir, called Aurgelmir in the older poems, neither god nor giant but the wet, roaring precondition of both. The primeval cow Auðumbla licked the salt-rime for nourishment and fed him; from his sweat, under his arm, a man and a woman took shape, and from his legs a six-headed son. The jötunn line was established before the gods had names.\n\nHe was killed by his own descendants. Odin, Vili and Vé (sons of Borr and the giantess Bestla, and so Ymir's own kin) struck him down. His blood came out as a flood, and it drowned very nearly all the frost-giants. Only Bergelmir escaped with his household, aboard something the sources will not agree on: a hollowed log, a chest, a mill-frame. Every later giant in the North descends from that one survivor.\n\nThen the brothers built the world from the corpse. Flesh became earth; bone became mountain; teeth and jaw-shards became scree and stone. The blood was poured out as sea and lake. The skull was raised as the sky's vault and set on four dwarfs at the corners, named for the compass. The brains were thrown up as cloud. The maggots that had bred in the dead flesh were given wit and shape, and became the dwarfs.\n\nThis is not decoration. It is a cosmology in which the ground is a body, and every ridge you walk is a piece of someone the gods murdered.",
       "origins": "The account survives in two thirteenth-century Icelandic compilations of much older material.\n\nSnorri Sturluson's Prose Edda gives the fullest narrative version in Gylfaginning, where the world's construction from the body is laid out piece by piece. Snorri was a Christian writing around 1220, some two centuries after Iceland's conversion, and he is systematising traditions that reached him already fragmented: a point worth holding onto, because his tidiness is partly his own.\n\nThe Poetic Edda preserves the older, stranger layer. Vafþrúðnismál has Odin and the giant Vafþrúðnir trade cosmological riddles, and it is there that Ymir's other name, Aurgelmir, and the detail of Bergelmir's escape appear. Grímnismál gives the body-to-world correspondences in compressed verse form. These poems are undated and probably circulated orally for a long time before anyone wrote them down.\n\nThe two sources do not fully agree, and Snorri appears at points to be reading the poems much as we do: as an inheritor working out what they meant.",
       "disputed": "What Bergelmir escaped in is genuinely unresolved. The Old Norse phrase á lúðr has been read as a chest, a hollowed trunk, a boat, a cradle and a mill-box; each reading pulls the episode in a different direction, and the flood-and-ark resemblance that some scholars have drawn to Near Eastern material depends heavily on which one you pick.\n\nWhether that resemblance means anything at all is contested. It may be inherited, it may be borrowed, it may be Snorri's Christian formation showing through, or the pattern may simply be one that many flood traditions arrive at independently.\n\nThe relationship between Ymir and Aurgelmir is also not settled: one being under two names, or two beings that merged before the poems were fixed."
-    }
+    },
+    "fate": "Killed by Odin, Vili and Vé; the world was built from his corpse."
   },
   {
     "id": "nephilim",
@@ -97,7 +98,8 @@
       "war-on-heaven",
       "flood-survivor",
       "bones-as-proof"
-    ]
+    ],
+    "fate": "No fate is recorded — the text moves to the flood without one."
   },
   {
     "id": "goliath",
@@ -144,7 +146,8 @@
     "motifs": [
       "outwitted",
       "war-on-heaven"
-    ]
+    ],
+    "fate": "Killed by a sling-stone from David, then beheaded with his own sword."
   },
   {
     "id": "og-of-bashan",
@@ -192,7 +195,8 @@
       "pre-people",
       "bones-as-proof",
       "war-on-heaven"
-    ]
+    ],
+    "fate": "Defeated by Israel at Edrei; only his iron bed is said to remain."
   },
   {
     "id": "atlas",
@@ -239,7 +243,8 @@
       "sky-bearer",
       "eternal-punishment",
       "war-on-heaven"
-    ]
+    ],
+    "fate": "Still holds up the sky at the world's western edge, in the older telling."
   },
   {
     "id": "polyphemus",
@@ -286,7 +291,8 @@
       "one-eye",
       "cannibal",
       "outwitted"
-    ]
+    ],
+    "fate": "Blinded by Odysseus; survives, and curses him to Poseidon."
   },
   {
     "id": "enceladus",
@@ -333,7 +339,8 @@
     "motifs": [
       "war-on-heaven",
       "buried-sleeper"
-    ]
+    ],
+    "fate": "Buried alive under Sicily by Athena; Etna is his breath."
   },
   {
     "id": "antaeus",
@@ -379,7 +386,8 @@
     "motifs": [
       "strength-from-earth",
       "outwitted"
-    ]
+    ],
+    "fate": "Lifted off the earth and crushed by Heracles, mid-air."
   },
   {
     "id": "alcyoneus",
@@ -424,7 +432,8 @@
     "motifs": [
       "war-on-heaven",
       "strength-from-earth"
-    ]
+    ],
+    "fate": "Dragged beyond his home ground and killed there by Heracles."
   },
   {
     "id": "porphyrion",
@@ -469,7 +478,8 @@
     },
     "motifs": [
       "war-on-heaven"
-    ]
+    ],
+    "fate": "Struck by Zeus's thunderbolt and finished by Heracles' arrow."
   },
   {
     "id": "polybotes",
@@ -513,7 +523,8 @@
     "motifs": [
       "war-on-heaven",
       "buried-sleeper"
-    ]
+    ],
+    "fate": "Fled to Kos; buried under the island fragment now called Nisyros."
   },
   {
     "id": "briareus",
@@ -561,7 +572,8 @@
     "motifs": [
       "many-limbed",
       "guardian"
-    ]
+    ],
+    "fate": "No death — set to guard the defeated Titans in Tartarus."
   },
   {
     "id": "orion",
@@ -606,7 +618,8 @@
     "motifs": [
       "star-become",
       "wild-highland"
-    ]
+    ],
+    "fate": "Accounts conflict: killed by Artemis, or by a scorpion; set among the stars either way."
   },
   {
     "id": "geryon",
@@ -654,7 +667,8 @@
     "motifs": [
       "many-limbed",
       "guardian"
-    ]
+    ],
+    "fate": "Shot by Heracles with an arrow poisoned in Hydra blood."
   },
   {
     "id": "tityus",
@@ -699,7 +713,8 @@
     "motifs": [
       "eternal-punishment",
       "war-on-heaven"
-    ]
+    ],
+    "fate": "Killed by Apollo and Artemis; his liver eaten forever in the underworld."
   },
   {
     "id": "talos",
@@ -746,7 +761,8 @@
     "motifs": [
       "made-not-born",
       "guardian"
-    ]
+    ],
+    "fate": "Undone by Medea, who drew the nail sealing his one vein."
   },
   {
     "id": "thrym",
@@ -792,7 +808,8 @@
     "motifs": [
       "outwitted",
       "war-on-heaven"
-    ]
+    ],
+    "fate": "Killed at his own wedding feast, along with his household."
   },
   {
     "id": "hrungnir",
@@ -836,7 +853,8 @@
     "motifs": [
       "war-on-heaven",
       "petrified"
-    ]
+    ],
+    "fate": "Killed by Thor's hammer in a duel; fell with his leg across Thor's neck."
   },
   {
     "id": "skrymir",
@@ -883,7 +901,8 @@
     "motifs": [
       "outwitted",
       "wild-highland"
-    ]
+    ],
+    "fate": "Never real — revealed as Útgarða-Loki once the trick was over."
   },
   {
     "id": "bestla",
@@ -926,7 +945,8 @@
     "motifs": [
       "pre-people",
       "body-cosmogony"
-    ]
+    ],
+    "fate": "No fate recorded; she disappears from the story after bearing Odin."
   },
   {
     "id": "balor",
@@ -974,7 +994,8 @@
       "one-eye",
       "war-on-heaven",
       "boon-abused"
-    ]
+    ],
+    "fate": "Killed by his own grandson Lugh, with a sling-stone through the eye."
   },
   {
     "id": "cormoran",
@@ -1021,7 +1042,8 @@
       "cannibal",
       "outwitted",
       "petrified"
-    ]
+    ],
+    "fate": "Tricked into a pit by Jack and killed with a pickaxe."
   },
   {
     "id": "gogmagog",
@@ -1070,7 +1092,8 @@
       "pre-people",
       "petrified",
       "outwitted"
-    ]
+    ],
+    "fate": "Thrown from a cliff by Corineus after losing a wrestling match."
   },
   {
     "id": "jentilak",
@@ -1118,7 +1141,8 @@
       "builder",
       "pre-people",
       "petrified"
-    ]
+    ],
+    "fate": "Fled underground or overseas at the news of Christianity's arrival."
   },
   {
     "id": "olentzero",
@@ -1163,7 +1187,8 @@
     "motifs": [
       "seasonal-visitor",
       "wild-highland"
-    ]
+    ],
+    "fate": "The one Jentilak who stayed; still comes down from the hills each midwinter."
   },
   {
     "id": "ravana",
@@ -1213,7 +1238,8 @@
       "pious-adversary",
       "boon-abused",
       "many-limbed"
-    ]
+    ],
+    "fate": "Killed by Rama, whom he taught statecraft with his dying breath."
   },
   {
     "id": "kumbhakarna",
@@ -1259,7 +1285,8 @@
       "buried-sleeper",
       "boon-abused",
       "pious-adversary"
-    ]
+    ],
+    "fate": "Dismembered and beheaded by Rama's arrows, fighting for a war he called unjust."
   },
   {
     "id": "hiranyakashipu",
@@ -1304,7 +1331,8 @@
       "boon-abused",
       "war-on-heaven",
       "pious-adversary"
-    ]
+    ],
+    "fate": "Torn apart by Narasimha at twilight, on a threshold, on a lap."
   },
   {
     "id": "mahabali",
@@ -1354,7 +1382,8 @@
       "pious-adversary",
       "seasonal-visitor",
       "boon-abused"
-    ]
+    ],
+    "fate": "Pushed into the netherworld by Vishnu's third step; returns once a year."
   },
   {
     "id": "svyatogor",
@@ -1401,7 +1430,8 @@
       "strength-from-earth",
       "eternal-punishment",
       "wild-highland"
-    ]
+    ],
+    "fate": "Died sealed in a stone coffin that fit no one else."
   },
   {
     "id": "quinametzin",
@@ -1448,7 +1478,8 @@
       "pre-people",
       "builder",
       "bones-as-proof"
-    ]
+    ],
+    "fate": "Destroyed with their entire age of the world, by flood or fire."
   },
   {
     "id": "xelhua",
@@ -1492,7 +1523,8 @@
       "flood-survivor",
       "builder",
       "war-on-heaven"
-    ]
+    ],
+    "fate": "Building stopped by the gods; whether he survived after is not told."
   },
   {
     "id": "kua-fu",
@@ -1537,7 +1569,8 @@
     "motifs": [
       "sun-chaser",
       "landscape-body"
-    ]
+    ],
+    "fate": "Died of thirst chasing the sun; his staff became a forest."
   },
   {
     "id": "fangfeng",
@@ -1582,7 +1615,8 @@
     "motifs": [
       "bones-as-proof",
       "pre-people"
-    ]
+    ],
+    "fate": "Executed by Yu the Great for arriving late to a summons."
   },
   {
     "id": "oni",
@@ -1629,7 +1663,8 @@
       "cannibal",
       "wild-highland",
       "seasonal-visitor"
-    ]
+    ],
+    "fate": "No single fate — driven out of the house each Setsubun, forever."
   },
   {
     "id": "shuten-doji",
@@ -1675,7 +1710,8 @@
       "cannibal",
       "outwitted",
       "wild-highland"
-    ]
+    ],
+    "fate": "Poisoned at his own banquet, then beheaded by Raikō."
   },
   {
     "id": "dzunukwa",
@@ -1724,7 +1760,8 @@
       "cannibal",
       "wild-highland",
       "guardian"
-    ]
+    ],
+    "fate": "No death in the record; still keeps to the deep forest."
   },
   {
     "id": "si-te-cah",
@@ -1772,7 +1809,8 @@
       "cannibal",
       "pre-people",
       "bones-as-proof"
-    ]
+    ],
+    "fate": "Said to have been burned in a cave; no remains have ever been confirmed."
   },
   {
     "id": "tsul-kalu",
@@ -1820,7 +1858,8 @@
     "motifs": [
       "wild-highland",
       "guardian"
-    ]
+    ],
+    "fate": "No death recorded; still owns the game animals of the highlands."
   },
   {
     "id": "kee-wakw",
@@ -1868,7 +1907,8 @@
     "motifs": [
       "cannibal",
       "wild-highland"
-    ]
+    ],
+    "fate": "No fixed fate — some accounts have hunger itself defeat them."
   },
   {
     "id": "gaoh",
@@ -1914,7 +1954,8 @@
     "motifs": [
       "sky-bearer",
       "guardian"
-    ]
+    ],
+    "fate": "No death; still holds the four winds in check."
   },
   {
     "id": "budj-bim",
@@ -1963,7 +2004,8 @@
       "landscape-body",
       "builder",
       "petrified"
-    ]
+    ],
+    "fate": "Not applicable — Budj Bim is a landscape, not a life that ends."
   },
   {
     "id": "papinijuwari",
@@ -2008,7 +2050,8 @@
     "motifs": [
       "one-eye",
       "cannibal"
-    ]
+    ],
+    "fate": "Not recorded in the sources available to us."
   },
   {
     "id": "murkupang",
@@ -2054,7 +2097,8 @@
       "cannibal",
       "wild-highland"
     ],
-    "restrained": true
+    "restrained": true,
+    "fate": "Not recorded in the sources available to us."
   },
   {
     "id": "thardid-jimbo",
@@ -2099,7 +2143,8 @@
       "cannibal",
       "wild-highland"
     ],
-    "restrained": true
+    "restrained": true,
+    "fate": "Accounts describe him being killed, but no single version is confirmed."
   },
   {
     "id": "chinny-kinik",
@@ -2143,7 +2188,8 @@
       "cannibal",
       "wild-highland"
     ],
-    "restrained": true
+    "restrained": true,
+    "fate": "Not recorded in the sources available to us."
   },
   {
     "id": "maero",
@@ -2191,7 +2237,8 @@
     "motifs": [
       "wild-highland",
       "cannibal"
-    ]
+    ],
+    "fate": "No fixed fate; encounters end however the individual story requires."
   },
   {
     "id": "kahui-tipua",
@@ -2239,7 +2286,8 @@
       "landscape-body",
       "pre-people",
       "petrified"
-    ]
+    ],
+    "fate": "No single fate; some became the landscape itself."
   },
   {
     "id": "nawao",
@@ -2286,7 +2334,8 @@
       "story": "Some Māori traditions speak of the Nawao as a people of the interior: large, strong, living apart in the forested inland country, and encountered by ancestors who came later. In the accounts that reach us they are overcome, absorbed, or simply cease to be met.\n\nThey are not a single fixed figure. Different iwi and different tellings place them differently, and the name appears alongside other terms for earlier or wild peoples of the interior. What the traditions consistently carry is a relationship, between people who arrived and something already inland, rather than a creature with a stable description.\n\nThat distinction matters here more than usual, because the interesting question about the Nawao is not what they looked like. It is what happened to the accounts.",
       "origins": "Nearly everything written about the Nawao in English passes through nineteenth-century colonial collection, and that process was not neutral.\n\nSettler-era writers gathering Māori material in the 1800s worked with their own categories to hand, and 'giants' was one of them. A tradition about an earlier inland people, told for reasons internal to Māori history and whakapapa, could be received by a European reader as a story about monsters, and was often printed that way. Some of that writing was also put to use supporting the idea of a pre-Māori population, a claim that served colonial land arguments and has been rejected by subsequent scholarship.\n\nSo the surviving printed record is a double object. It preserves something, and it distorts it, and the two are not easy to separate at this distance.",
       "disputed": "We are being deliberately brief here, and the reason is worth stating plainly.\n\nThis codex will not reconstruct a detailed portrait of the Nawao from thin and compromised sources. Doing so would mean filling gaps with invention and presenting it with a confidence the record does not support: which is exactly the failure this site exists to avoid.\n\nWhat can be said: the traditions are real, they belong to Māori historical and mythic memory, they vary between tellings, and they were reshaped in transmission by people with other purposes. What cannot responsibly be said is how many there were, what precisely they looked like, or how the encounters ended.\n\nReaders who want to go further should look to iwi and Māori-authored sources rather than to colonial compilations or to us. If you know this material and we have it wrong, we would like to hear from you."
-    }
+    },
+    "fate": "Unknown — the record does not say how, or whether, the encounters ended."
   },
   {
     "id": "amazimu",
@@ -2332,7 +2381,8 @@
     "motifs": [
       "cannibal",
       "outwitted"
-    ]
+    ],
+    "fate": "Typically destroyed by its own greed or by the child it tried to eat."
   },
   {
     "id": "giant-of-the-forest",
@@ -2379,7 +2429,8 @@
       "wild-highland",
       "cannibal"
     ],
-    "restrained": true
+    "restrained": true,
+    "fate": "Not recorded — the specific tradition behind this entry is unidentified."
   },
   {
     "id": "stallo",
@@ -2429,7 +2480,8 @@
       "cannibal",
       "outwitted",
       "wild-highland"
-    ]
+    ],
+    "fate": "Consistently outwitted rather than killed; usually simply defeated."
   },
   {
     "id": "ojancanu",
@@ -2477,7 +2529,8 @@
       "story": "Cantabria is a narrow strip of green between the Bay of Biscay and the Picos de Europa: deep beech forest, high pasture, weather coming off the sea. The ojáncanu is what that country puts in the trees.\n\nHe is described as roughly ten feet, red-bearded, with a single eye in the middle of his forehead. Some tellings give him extra fingers or toes, a mark of excess rather than a functional detail. He lives in caves and the thickest woodland, and what he does is destroy: he tears up trees, rolls boulders onto paths, kills livestock, and is dangerous to people caught out alone. There is no bargain to be struck with him and no riddle to win. He is not a trickster figure.\n\nHis counterpart the ojáncana is in several accounts the worse of the two. She is given long breasts that she throws over her shoulders, and a habit of taking children: the shape a great many traditions give to a female ogre, though the specific inventory here is local.\n\nAgainst them stand the anjanas: small, benevolent, fairy-like guardians of the highlands who help travellers, reward generosity and repair what the ojáncanu breaks. The pairing is the point. Cantabrian folklore sets a destroying force and a mending one in the same forest, and the forest is where people actually had to work.\n\nA common motif holds that the ojáncanu cannot die while a single white hair remains in his beard, which gives villagers something to search for over the body.",
       "origins": "This material was collected comparatively late, and that shapes what we have.\n\nThe ojáncanu belongs to a body of Cantabrian tradition assembled mainly by nineteenth and twentieth-century folklorists working in the region's villages. Manuel Llano (1898-1938), a Cantabrian writer who drew directly on the oral culture of the Pas and Cabuérniga valleys, is the figure most responsible for carrying these beings into print, and much later popular writing traces back to him.\n\nThat gives the material a particular character. It is genuinely traditional, but it reaches us already selected and shaped by writers with a literary purpose and, in the period concerned, an interest in regional identity. The ojáncanu appears in modern Cantabrian tourism, festivals and children's books, and the line between inherited story and twentieth-century consolidation is not always drawable.",
       "disputed": "The resemblance to Polyphemus is the obvious question, and there is no agreement on what it means.\n\nA single central eye, a cave, flocks and hostility to travellers describe both. Northern Spain was under Roman administration for centuries and classical material was certainly available, so direct literary influence is possible. It is equally possible that the pairing of one eye with mountain danger is simply a shape that recurs: the same motif turns up in Tiwi tradition in northern Australia, where Roman transmission is not on the table.\n\nHow much of the current figure is old is also unresolved. Nineteenth-century regional folklore across Europe was frequently tidied, and sometimes enlarged, by the people recording it. The ojáncanu as he now appears in print is at minimum a collaboration between village tradition and its collectors."
-    }
+    },
+    "fate": "Said to die only once every white hair is found in his beard."
   },
   {
     "id": "rubezahl",
@@ -2528,7 +2581,8 @@
       "wild-highland",
       "guardian",
       "outwitted"
-    ]
+    ],
+    "fate": "No death — still rules the Giant Mountains under different names."
   },
   {
     "id": "giant-of-kandahar",
@@ -2573,7 +2627,8 @@
     "motifs": [
       "modern-rumour",
       "bones-as-proof"
-    ]
+    ],
+    "fate": "No verified fate — the claim has no primary source at all."
   },
   {
     "id": "giant-of-kunar",
@@ -2616,7 +2671,8 @@
     "motifs": [
       "modern-rumour",
       "wild-highland"
-    ]
+    ],
+    "fate": "No verified fate — the claim has no primary source at all."
   },
   {
     "id": "paul-bunyan",
@@ -2662,6 +2718,7 @@
       "tall-tale",
       "landscape-body",
       "builder"
-    ]
+    ],
+    "fate": "No death — a tall tale does not require one."
   }
 ]

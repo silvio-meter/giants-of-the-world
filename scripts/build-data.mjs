@@ -21,7 +21,7 @@ const MASTER = join(root, "src/data/giants.json");
 const PUBLIC_OUT = join(root, "src/data/giants.public.json");
 const LORE_OUT = join(root, "src/data/giants.lore.json");
 
-const LORE_FIELDS = ["fullDescription", "mysteryNote", "sections"];
+const LORE_FIELDS = ["fullDescription", "mysteryNote", "sections", "fate"];
 
 /**
  * Rough metres for the size chart, derived once here from the free-text
@@ -64,6 +64,7 @@ export function splitMaster(master) {
     lore[giant.slug] = {
       fullDescription: giant.fullDescription,
       mysteryNote: giant.mysteryNote,
+      fate: giant.fate,
       ...(giant.sections ? { sections: giant.sections } : {}),
     };
   }

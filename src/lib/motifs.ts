@@ -88,6 +88,22 @@ export function resolveMotifs(
 }
 
 /**
+ * Motifs two specific giants both carry — the Compare tool's "Shared
+ * Threads" section. Reads the same motifs field every other feature does;
+ * no separate tagging system for this.
+ */
+export function sharedMotifs(slugA: string, slugB: string): Motif[] {
+  const a = giants.find((g) => g.slug === slugA);
+  const b = giants.find((g) => g.slug === slugB);
+  if (!a || !b) return [];
+  const bKeys = new Set(b.motifs ?? []);
+  return (a.motifs ?? [])
+    .filter((key) => bKeys.has(key))
+    .map((key) => getMotif(key))
+    .filter((m): m is Motif => m !== null);
+}
+
+/**
  * Motif keys for the map filter, most-used first, each with how many entries
  * it would show. The tag list this replaced had 172 options, 140 of which
  * matched a single giant.

@@ -36,6 +36,9 @@ export function Footer() {
           <Link href="/giants" className="hover:text-accent-gold">
             Catalogue
           </Link>
+          <Link href="/compare" className="hover:text-accent-gold">
+            Compare
+          </Link>
           <Link href="/favourites" className="hover:text-accent-gold">
             Favourites
           </Link>

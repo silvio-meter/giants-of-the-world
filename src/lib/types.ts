@@ -36,6 +36,12 @@ export interface Giant {
   shortDescription: string;
   fullDescription: string;
   mysteryNote: string;
+  /**
+   * One-line ending, for the Compare tool's premium data row. Lore, not
+   * catalog data — stays out of the public/client bundle the same way
+   * fullDescription and mysteryNote do.
+   */
+  fate: string;
   /** Present on deep entries only. */
   sections?: GiantSections;
   /** Keys into motifs.json — the cross-cultural layer. Not lore; safe for the client. */

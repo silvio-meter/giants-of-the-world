@@ -75,3 +75,31 @@ test(
     );
   }
 );
+
+// html2canvas (~200 KB) must only ever load from inside the Compare export
+// button's click handler. Unlike the two guards above, this needs a live
+// server: whether a chunk is "eager" or "lazy" is a fact about which pages
+// reference it in their served <script> tags, not something visible from
+// the files on disk alone.
+const BASE = process.env.BASE;
+
+test(
+  "html2canvas never loads eagerly on any page",
+  { skip: BASE ? false : "BASE not set — needs a running production server" },
+  async () => {
+    const chunkFiles = allChunks(chunkDir);
+    const html2canvasChunk = chunkFiles.find((f) =>
+      readFileSync(f, "utf8").includes("html2canvas")
+    );
+    assert.ok(html2canvasChunk, "expected exactly one chunk to contain html2canvas");
+    const chunkName = html2canvasChunk.split("/").pop();
+
+    for (const path of ["/", "/compare", "/giants/ymir"]) {
+      const html = await (await fetch(`${BASE}${path}`)).text();
+      assert.ok(
+        !html.includes(chunkName),
+        `${path} references the html2canvas chunk eagerly — it must only load from the export button's click handler`
+      );
+    }
+  }
+);

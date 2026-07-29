@@ -6,6 +6,7 @@ import type { GiantSections } from "./types";
 type LoreEntry = {
   fullDescription: string;
   mysteryNote: string;
+  fate: string;
   sections?: GiantSections;
 };
 
