@@ -1,16 +1,20 @@
 "use client";
 
-import { useEffect, useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import {
+  Circle,
   MapContainer,
   TileLayer,
   Marker,
+  Polyline,
   Popup,
+  Tooltip,
   useMap,
 } from "react-leaflet";
 import L from "leaflet";
 import Link from "next/link";
 import type { GiantCardData } from "@/lib/format";
+import { densityCells, motifChains } from "@/lib/map-connections";
 
 function makeIcon(focused: boolean) {
   if (focused) {
@@ -70,16 +74,37 @@ interface Props {
   giants: GiantCardData[];
   focusSlug?: string | null;
   emphasizeFocus?: boolean;
+  /** Motif connection lines — a paid tool, enforced server-side like the other filters. */
+  showLines?: boolean;
+  /** Motif key -> display name, for the connection-line tooltip. Names only, already public on /motifs. */
+  motifNames?: Record<string, string>;
 }
 
 export function GiantsMap({
   giants,
   focusSlug = null,
   emphasizeFocus = true,
+  showLines = false,
+  motifNames = {},
 }: Props) {
+  const [showDensity, setShowDensity] = useState(false);
+
   const located = useMemo(
     () => giants.filter((g) => g.coordinates !== null),
     [giants]
+  );
+
+  const chains = useMemo(
+    () => (showLines ? motifChains(located) : []),
+    [located, showLines]
+  );
+
+  const cells = useMemo(
+    () =>
+      showDensity
+        ? densityCells(located.map((g) => g.coordinates as [number, number]))
+        : [],
+    [located, showDensity]
   );
 
   const focusGiant = useMemo(
@@ -107,10 +132,21 @@ export function GiantsMap({
         </p>
       )}
       <div
-        className={`w-full ${
+        className={`relative w-full ${
           focusGiant ? "h-[min(65vh,600px)]" : "h-[min(70vh,640px)]"
         }`}
       >
+        <button
+          type="button"
+          onClick={() => setShowDensity((v) => !v)}
+          className={`absolute top-3 right-3 z-[1000] rounded-full border px-3 py-1 text-xs tracking-wide transition ${
+            showDensity
+              ? "border-accent-gold bg-accent-gold/20 text-accent-gold"
+              : "border-border bg-surface/90 text-text-muted hover:text-accent-gold"
+          }`}
+        >
+          Mist {showDensity ? "on" : "off"}
+        </button>
         <MapContainer
           center={focusPoint ?? [20, 10]}
           zoom={focusPoint ? 5 : 2}
@@ -125,6 +161,39 @@ export function GiantsMap({
             url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
           />
           <FitOrFocus points={points} focus={focusPoint} />
+
+          {cells.map((cell, i) => (
+            <Circle
+              key={i}
+              center={cell.center}
+              radius={80000 + cell.count * 60000}
+              pathOptions={{
+                stroke: false,
+                fillColor: "#c9a227",
+                fillOpacity: Math.min(0.05 + cell.count * 0.03, 0.28),
+              }}
+              interactive={false}
+            />
+          ))}
+
+          {chains.map((chain) => (
+            <Polyline
+              key={chain.key}
+              positions={chain.points}
+              pathOptions={{
+                color: "#c9a227",
+                weight: 1.5,
+                opacity: 0.55,
+                dashArray: "4 6",
+              }}
+              interactive
+            >
+              <Tooltip sticky>
+                {motifNames[chain.key] ?? chain.key}
+              </Tooltip>
+            </Polyline>
+          ))}
+
           {located.map((g) => {
             const focused = Boolean(focusSlug && g.slug === focusSlug);
             const dimmed = Boolean(emphasizeFocus && focusSlug && !focused);

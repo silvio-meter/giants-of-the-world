@@ -31,6 +31,7 @@ export function MapFilters({ cultures, types, regions, motifs }: Props) {
   const region = params.get("region") ?? "";
   const motif = params.get("motif") ?? "";
   const fav = params.get("fav") === "1";
+  const lines = params.get("lines") === "1";
   const focus = params.get("focus") ?? "";
 
   const update = useCallback(
@@ -56,6 +57,16 @@ export function MapFilters({ cultures, types, regions, motifs }: Props) {
     });
   };
 
+  const toggleLines = () => {
+    if (!allowed) return;
+    const next = new URLSearchParams(params.toString());
+    if (lines) next.delete("lines");
+    else next.set("lines", "1");
+    startTransition(() => {
+      router.push(`/map?${next.toString()}`);
+    });
+  };
+
   const clear = () => {
     if (!allowed) return;
     const next = new URLSearchParams();
@@ -65,7 +76,7 @@ export function MapFilters({ cultures, types, regions, motifs }: Props) {
     });
   };
 
-  const hasFilters = culture || type || region || motif || fav;
+  const hasFilters = culture || type || region || motif || fav || lines;
 
   if (!ready) {
     return (
@@ -171,6 +182,15 @@ export function MapFilters({ cultures, types, regions, motifs }: Props) {
               ({favCount})
             </span>
           )}
+        </label>
+        <label className="inline-flex cursor-pointer items-center gap-2 text-sm text-text-muted">
+          <input
+            type="checkbox"
+            checked={lines}
+            onChange={toggleLines}
+            className="rounded border-border accent-[#c9a227]"
+          />
+          Show motif connections
         </label>
       </div>
     </div>

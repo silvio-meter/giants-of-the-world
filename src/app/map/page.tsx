@@ -12,8 +12,9 @@ import {
   getTypes,
 } from "@/lib/giants";
 import { canUseMapFilters } from "@/lib/access";
-import { motifFilterOptions } from "@/lib/motifs";
+import { getAllMotifs, motifFilterOptions } from "@/lib/motifs";
 import { getUserPlan } from "@/lib/profile";
+import { MyJourneyButton } from "@/components/MyJourneyButton";
 
 export const metadata: Metadata = {
   title: "World Map",
@@ -29,6 +30,7 @@ interface Props {
     region?: string;
     motif?: string;
     fav?: string;
+    lines?: string;
   }>;
 }
 
@@ -56,6 +58,10 @@ export default async function MapPage({ searchParams }: Props) {
   });
 
   const favOnly = filtersUnlocked && sp.fav === "1";
+  const showLines = filtersUnlocked && sp.lines === "1";
+  const motifNames = Object.fromEntries(
+    getAllMotifs().map((m) => [m.key, m.name])
+  );
 
   return (
     <div className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
@@ -108,7 +114,13 @@ export default async function MapPage({ searchParams }: Props) {
         allCount={all.filter((g) => g.coordinates).length}
         focusSlug={focusSlug}
         favOnly={favOnly}
+        showLines={showLines}
+        motifNames={motifNames}
       />
+
+      <div className="mt-6 flex justify-center">
+        <MyJourneyButton />
+      </div>
     </div>
   );
 }

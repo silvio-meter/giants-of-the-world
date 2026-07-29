@@ -19,16 +19,22 @@ export function GiantsMapLoader({
   giants,
   focusSlug,
   emphasizeFocus = true,
+  showLines = false,
+  motifNames = {},
 }: {
   giants: GiantCardData[];
   focusSlug?: string | null;
   emphasizeFocus?: boolean;
+  showLines?: boolean;
+  motifNames?: Record<string, string>;
 }) {
   return (
     <GiantsMap
       giants={giants}
       focusSlug={focusSlug}
       emphasizeFocus={emphasizeFocus}
+      showLines={showLines}
+      motifNames={motifNames}
     />
   );
 }

@@ -10,11 +10,15 @@ export function MapClientShell({
   allCount,
   focusSlug,
   favOnly,
+  showLines,
+  motifNames,
 }: {
   giants: GiantCardData[];
   allCount: number;
   focusSlug: string | null;
   favOnly: boolean;
+  showLines: boolean;
+  motifNames: Record<string, string>;
 }) {
   const { slugs, ready } = useFavourites();
 
@@ -39,7 +43,12 @@ export function MapClientShell({
           No favourited giants match these filters, or you have no stars yet.
         </div>
       ) : null}
-      <GiantsMapLoader giants={filtered} focusSlug={focusSlug} />
+      <GiantsMapLoader
+        giants={filtered}
+        focusSlug={focusSlug}
+        showLines={showLines}
+        motifNames={motifNames}
+      />
     </div>
   );
 }

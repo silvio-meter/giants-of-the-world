@@ -94,7 +94,7 @@ test(
     assert.ok(html2canvasChunk, "expected exactly one chunk to contain html2canvas");
     const chunkName = html2canvasChunk.split("/").pop();
 
-    for (const path of ["/", "/compare", "/giants/ymir"]) {
+    for (const path of ["/", "/compare", "/giants/ymir", "/map"]) {
       const html = await (await fetch(`${BASE}${path}`)).text();
       assert.ok(
         !html.includes(chunkName),
