@@ -15,6 +15,7 @@ import { LockedLore } from "@/components/LockedLore";
 import { FavouriteButton } from "@/components/FavouriteButton";
 import { SizeComparison } from "@/components/SizeComparison";
 import { EmailCapture } from "@/components/EmailCapture";
+import { DiscoveryTracker } from "@/components/DiscoveryTracker";
 import { siteUrl } from "@/lib/site";
 import { resolveMotifs } from "@/lib/motifs";
 
@@ -126,6 +127,7 @@ export default async function GiantDetailPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <DiscoveryTracker slug={giant.slug} />
       <nav className="mb-6 flex min-w-0 flex-wrap items-center gap-x-2 text-sm text-text-muted">
         <Link href="/giants" className="shrink-0 hover:text-accent-gold">
           Catalogue

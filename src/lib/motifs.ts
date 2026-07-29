@@ -88,19 +88,36 @@ export function resolveMotifs(
 }
 
 /**
+ * Motifs carried by two or more of the given giants — the general case
+ * behind both the Compare tool's "Shared Threads" and the Codex's Motif
+ * Seals (a seal unlocks when two or more saved giants share a motif).
+ */
+export function sharedMotifsAmong(slugs: string[]): Motif[] {
+  const selected = slugs
+    .map((slug) => giants.find((g) => g.slug === slug))
+    .filter((g): g is GiantCardData => g !== undefined);
+  if (selected.length < 2) return [];
+
+  const counts = new Map<string, number>();
+  for (const g of selected) {
+    for (const key of new Set(g.motifs ?? [])) {
+      counts.set(key, (counts.get(key) ?? 0) + 1);
+    }
+  }
+
+  return [...counts.entries()]
+    .filter(([, count]) => count >= 2)
+    .map(([key]) => getMotif(key))
+    .filter((m): m is Motif => m !== null);
+}
+
+/**
  * Motifs two specific giants both carry — the Compare tool's "Shared
  * Threads" section. Reads the same motifs field every other feature does;
  * no separate tagging system for this.
  */
 export function sharedMotifs(slugA: string, slugB: string): Motif[] {
-  const a = giants.find((g) => g.slug === slugA);
-  const b = giants.find((g) => g.slug === slugB);
-  if (!a || !b) return [];
-  const bKeys = new Set(b.motifs ?? []);
-  return (a.motifs ?? [])
-    .filter((key) => bKeys.has(key))
-    .map((key) => getMotif(key))
-    .filter((m): m is Motif => m !== null);
+  return sharedMotifsAmong([slugA, slugB]);
 }
 
 /**
