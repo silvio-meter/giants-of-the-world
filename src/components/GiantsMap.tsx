@@ -15,6 +15,7 @@ import L from "leaflet";
 import Link from "next/link";
 import type { GiantCardData } from "@/lib/format";
 import { densityCells, motifChains } from "@/lib/map-connections";
+import { motifColor } from "@/lib/motif-color";
 
 function makeIcon(focused: boolean) {
   if (focused) {
@@ -44,6 +45,15 @@ function makeIcon(focused: boolean) {
     iconAnchor: [6, 6],
     popupAnchor: [0, -8],
   });
+}
+
+/** Drops Leaflet's own "Leaflet" branding link from the attribution control, keeping the OSM/CARTO copyright their tile terms require. */
+function TrimAttribution() {
+  const map = useMap();
+  useEffect(() => {
+    map.attributionControl.setPrefix("");
+  }, [map]);
+  return null;
 }
 
 function FitOrFocus({
@@ -147,6 +157,29 @@ export function GiantsMap({
         >
           Mist {showDensity ? "on" : "off"}
         </button>
+
+        {showLines && chains.length > 0 && (
+          <div className="absolute top-3 left-3 z-[1000] max-h-[calc(100%-24px)] max-w-[190px] overflow-y-auto rounded-lg border border-border bg-surface/90 px-3 py-2.5">
+            <p className="sticky -top-2.5 -mt-2.5 bg-surface/95 pt-2.5 pb-1.5 text-[10px] tracking-[0.15em] text-text-muted uppercase">
+              Shared motifs
+            </p>
+            <ul className="space-y-1 pb-0.5">
+              {chains.map((chain) => (
+                <li key={chain.key} className="flex items-center gap-2 text-xs">
+                  <span
+                    aria-hidden
+                    className="h-0.5 w-4 shrink-0 rounded-full"
+                    style={{ background: motifColor(chain.key) }}
+                  />
+                  <span className="truncate text-text-muted">
+                    {motifNames[chain.key] ?? chain.key}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
         <MapContainer
           center={focusPoint ?? [20, 10]}
           zoom={focusPoint ? 5 : 2}
@@ -161,6 +194,7 @@ export function GiantsMap({
             url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
           />
           <FitOrFocus points={points} focus={focusPoint} />
+          <TrimAttribution />
 
           {cells.map((cell, i) => (
             <Circle
@@ -181,9 +215,9 @@ export function GiantsMap({
               key={chain.key}
               positions={chain.points}
               pathOptions={{
-                color: "#c9a227",
-                weight: 1.5,
-                opacity: 0.55,
+                color: motifColor(chain.key),
+                weight: 1.75,
+                opacity: 0.7,
                 dashArray: "4 6",
               }}
               interactive
