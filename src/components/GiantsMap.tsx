@@ -84,9 +84,9 @@ interface Props {
   giants: GiantCardData[];
   focusSlug?: string | null;
   emphasizeFocus?: boolean;
-  /** Motif connection lines — a paid tool, enforced server-side like the other filters. */
-  showLines?: boolean;
-  /** Motif key -> display name, for the connection-line tooltip. Names only, already public on /motifs. */
+  /** Motif keys to draw connection lines for — a paid tool, enforced server-side like the other filters. */
+  selectedLineMotifs?: string[];
+  /** Motif key -> display name, for the connection-line tooltip and legend. Names only, already public on /motifs. */
   motifNames?: Record<string, string>;
 }
 
@@ -94,7 +94,7 @@ export function GiantsMap({
   giants,
   focusSlug = null,
   emphasizeFocus = true,
-  showLines = false,
+  selectedLineMotifs = [],
   motifNames = {},
 }: Props) {
   const [showDensity, setShowDensity] = useState(false);
@@ -104,10 +104,11 @@ export function GiantsMap({
     [giants]
   );
 
-  const chains = useMemo(
-    () => (showLines ? motifChains(located) : []),
-    [located, showLines]
-  );
+  const chains = useMemo(() => {
+    if (selectedLineMotifs.length === 0) return [];
+    const selected = new Set(selectedLineMotifs);
+    return motifChains(located).filter((c) => selected.has(c.key));
+  }, [located, selectedLineMotifs]);
 
   const cells = useMemo(
     () =>
@@ -158,7 +159,7 @@ export function GiantsMap({
           Mist {showDensity ? "on" : "off"}
         </button>
 
-        {showLines && chains.length > 0 && (
+        {chains.length > 0 && (
           <div className="absolute top-3 left-3 z-[1000] max-h-[calc(100%-24px)] max-w-[190px] overflow-y-auto rounded-lg border border-border bg-surface/90 px-3 py-2.5">
             <p className="sticky -top-2.5 -mt-2.5 bg-surface/95 pt-2.5 pb-1.5 text-[10px] tracking-[0.15em] text-text-muted uppercase">
               Shared motifs
@@ -216,8 +217,8 @@ export function GiantsMap({
               positions={chain.points}
               pathOptions={{
                 color: motifColor(chain.key),
-                weight: 1.75,
-                opacity: 0.7,
+                weight: 1.5,
+                opacity: 0.6,
                 dashArray: "4 6",
               }}
               interactive

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useCallback, useTransition } from "react";
 import { canUseMapFilters } from "@/lib/access";
+import { motifColor } from "@/lib/motif-color";
 import { usePlan } from "./PlanProvider";
 import { useFavourites } from "./FavouritesProvider";
 import { FilterSelect } from "./FilterSelect";
@@ -16,9 +17,20 @@ interface Props {
   regions: string[];
   /** Curated cross-cultural motifs, with entry counts, replacing the old tag list. */
   motifs: { key: string; label: string }[];
+  /** Motifs with two or more located giants right now — the only ones with anything to connect. */
+  lineMotifOptions: { key: string; name: string; count: number }[];
+  /** Server-resolved selection: the "lines" URL param if present, otherwise the one-motif default. */
+  selectedLineMotifs: string[];
 }
 
-export function MapFilters({ cultures, types, regions, motifs }: Props) {
+export function MapFilters({
+  cultures,
+  types,
+  regions,
+  motifs,
+  lineMotifOptions,
+  selectedLineMotifs,
+}: Props) {
   const router = useRouter();
   const params = useSearchParams();
   const [pending, startTransition] = useTransition();
@@ -31,7 +43,8 @@ export function MapFilters({ cultures, types, regions, motifs }: Props) {
   const region = params.get("region") ?? "";
   const motif = params.get("motif") ?? "";
   const fav = params.get("fav") === "1";
-  const lines = params.get("lines") === "1";
+  const linesTouched = params.has("lines");
+  const selectedLines = new Set(selectedLineMotifs);
   const focus = params.get("focus") ?? "";
 
   const update = useCallback(
@@ -57,11 +70,15 @@ export function MapFilters({ cultures, types, regions, motifs }: Props) {
     });
   };
 
-  const toggleLines = () => {
+  const toggleLineMotif = (key: string) => {
     if (!allowed) return;
+    const nextSelected = new Set(selectedLines);
+    if (nextSelected.has(key)) nextSelected.delete(key);
+    else nextSelected.add(key);
     const next = new URLSearchParams(params.toString());
-    if (lines) next.delete("lines");
-    else next.set("lines", "1");
+    // Set (even to empty) rather than delete — an explicit empty list must
+    // stay empty on the next load instead of falling back to the default.
+    next.set("lines", [...nextSelected].join(","));
     startTransition(() => {
       router.push(`/map?${next.toString()}`);
     });
@@ -76,7 +93,7 @@ export function MapFilters({ cultures, types, regions, motifs }: Props) {
     });
   };
 
-  const hasFilters = culture || type || region || motif || fav || lines;
+  const hasFilters = culture || type || region || motif || fav || linesTouched;
 
   if (!ready) {
     return (
@@ -168,7 +185,7 @@ export function MapFilters({ cultures, types, regions, motifs }: Props) {
         />
       </div>
 
-      <div className="flex flex-wrap items-center gap-4 pt-1">
+      <div className="pt-1">
         <label className="inline-flex cursor-pointer items-center gap-2 text-sm text-text-muted">
           <input
             type="checkbox"
@@ -183,16 +200,40 @@ export function MapFilters({ cultures, types, regions, motifs }: Props) {
             </span>
           )}
         </label>
-        <label className="inline-flex cursor-pointer items-center gap-2 text-sm text-text-muted">
-          <input
-            type="checkbox"
-            checked={lines}
-            onChange={toggleLines}
-            className="rounded border-border accent-[#c9a227]"
-          />
-          Show motif connections
-        </label>
       </div>
+
+      {lineMotifOptions.length > 0 && (
+        <div className="pt-1">
+          <p className="mb-1.5 text-xs text-text-muted">
+            Motif connections — pick one or more to draw
+          </p>
+          <div className="flex max-h-28 flex-wrap gap-x-4 gap-y-1.5 overflow-y-auto rounded border border-border/60 p-2">
+            {lineMotifOptions.map((m) => {
+              const checked = selectedLines.has(m.key);
+              return (
+                <label
+                  key={m.key}
+                  className="inline-flex cursor-pointer items-center gap-1.5 text-xs"
+                >
+                  <input
+                    type="checkbox"
+                    checked={checked}
+                    onChange={() => toggleLineMotif(m.key)}
+                    className="rounded border-border accent-[#c9a227]"
+                  />
+                  <span
+                    style={checked ? { color: motifColor(m.key) } : undefined}
+                    className={checked ? "" : "text-text-muted"}
+                  >
+                    {m.name}
+                  </span>
+                  <span className="text-text-muted/70">({m.count})</span>
+                </label>
+              );
+            })}
+          </div>
+        </div>
+      )}
     </div>
   );
 }

@@ -12,6 +12,7 @@ import {
   getTypes,
 } from "@/lib/giants";
 import { canUseMapFilters } from "@/lib/access";
+import { motifChains } from "@/lib/map-connections";
 import { getAllMotifs, motifFilterOptions } from "@/lib/motifs";
 import { getUserPlan } from "@/lib/profile";
 import { MyJourneyButton } from "@/components/MyJourneyButton";
@@ -58,10 +59,33 @@ export default async function MapPage({ searchParams }: Props) {
   });
 
   const favOnly = filtersUnlocked && sp.fav === "1";
-  const showLines = filtersUnlocked && sp.lines === "1";
   const motifNames = Object.fromEntries(
     getAllMotifs().map((m) => [m.key, m.name])
   );
+
+  /**
+   * Which motifs actually have two or more located giants right now (so the
+   * picker never offers a motif with nothing to draw), most-connected first.
+   * The single most-connected one is selected by default — otherwise a
+   * first-time visitor sees every motif's lines at once, an unreadable
+   * hairball across ~20 colors.
+   */
+  const lineMotifOptions = (filtersUnlocked ? motifChains(baseFiltered) : [])
+    .map((c) => ({
+      key: c.key,
+      name: motifNames[c.key] ?? c.key,
+      count: c.points.length,
+    }))
+    .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
+
+  const selectedLineMotifs = filtersUnlocked
+    ? sp.lines !== undefined
+      ? sp.lines
+          .split(",")
+          .map((s) => s.trim())
+          .filter(Boolean)
+      : lineMotifOptions.slice(0, 1).map((m) => m.key)
+    : [];
 
   return (
     <div className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
@@ -106,6 +130,8 @@ export default async function MapPage({ searchParams }: Props) {
           types={getTypes()}
           regions={getRegions()}
           motifs={motifFilterOptions()}
+          lineMotifOptions={lineMotifOptions}
+          selectedLineMotifs={selectedLineMotifs}
         />
       </Suspense>
 
@@ -114,7 +140,7 @@ export default async function MapPage({ searchParams }: Props) {
         allCount={all.filter((g) => g.coordinates).length}
         focusSlug={focusSlug}
         favOnly={favOnly}
-        showLines={showLines}
+        selectedLineMotifs={selectedLineMotifs}
         motifNames={motifNames}
       />
 

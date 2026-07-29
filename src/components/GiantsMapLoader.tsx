@@ -19,13 +19,13 @@ export function GiantsMapLoader({
   giants,
   focusSlug,
   emphasizeFocus = true,
-  showLines = false,
+  selectedLineMotifs = [],
   motifNames = {},
 }: {
   giants: GiantCardData[];
   focusSlug?: string | null;
   emphasizeFocus?: boolean;
-  showLines?: boolean;
+  selectedLineMotifs?: string[];
   motifNames?: Record<string, string>;
 }) {
   return (
@@ -33,7 +33,7 @@ export function GiantsMapLoader({
       giants={giants}
       focusSlug={focusSlug}
       emphasizeFocus={emphasizeFocus}
-      showLines={showLines}
+      selectedLineMotifs={selectedLineMotifs}
       motifNames={motifNames}
     />
   );
