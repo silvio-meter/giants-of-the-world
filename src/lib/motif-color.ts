@@ -7,7 +7,7 @@ export function motifHue(key: string): number {
 
 export function motifColor(
   key: string,
-  { saturation = 65, lightness = 60 }: { saturation?: number; lightness?: number } = {}
+  { saturation = 38, lightness = 52 }: { saturation?: number; lightness?: number } = {}
 ): string {
   return `hsl(${motifHue(key)} ${saturation}% ${lightness}%)`;
 }

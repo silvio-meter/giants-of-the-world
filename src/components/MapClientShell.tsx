@@ -10,14 +10,14 @@ export function MapClientShell({
   allCount,
   focusSlug,
   favOnly,
-  showLines,
+  selectedLineMotifs,
   motifNames,
 }: {
   giants: GiantCardData[];
   allCount: number;
   focusSlug: string | null;
   favOnly: boolean;
-  showLines: boolean;
+  selectedLineMotifs: string[];
   motifNames: Record<string, string>;
 }) {
   const { slugs, ready } = useFavourites();
@@ -46,7 +46,7 @@ export function MapClientShell({
       <GiantsMapLoader
         giants={filtered}
         focusSlug={focusSlug}
-        showLines={showLines}
+        selectedLineMotifs={selectedLineMotifs}
         motifNames={motifNames}
       />
     </div>
