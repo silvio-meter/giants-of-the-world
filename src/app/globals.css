@@ -3,10 +3,14 @@
 
 :root {
   /**
-   * Tells the browser this is a dark UI. Without it, native controls the page
-   * cannot style — the option list a mobile <select> opens, form widgets,
-   * scrollbars, date pickers — render in the OS light theme, which is why the
-   * catalogue filters used to open a white sheet over a black page.
+   * Tells the browser this is a dark UI, so native controls the page cannot
+   * style — form widgets, scrollbars, date pickers — render dark rather than
+   * in the OS light theme.
+   *
+   * It does not reach every native control: Chrome for Android draws a
+   * <select>'s option list as an OS dialog that ignores this entirely. That
+   * is why the filter dropdowns are a DOM listbox now and not a <select> —
+   * see FilterSelect.tsx.
    */
   color-scheme: dark;
 
@@ -258,9 +262,11 @@ a {
 }
 
 /* Form controls
-   The closed <select> is ours to style; the list it opens belongs to the OS
-   and follows color-scheme above. Keeping the closed state consistent with
-   the rest of the codex is what we can control. */
+   No <select> ships in the app any more — the filter dropdowns are a DOM
+   listbox (FilterSelect.tsx) precisely because a native one's option list is
+   unstyleable on Android. These rules stay as the floor for any native select
+   added later: they get the closed control right, and nothing more is
+   possible for the list it opens. */
 select,
 input,
 textarea {
