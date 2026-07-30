@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useCallback, useTransition } from "react";
+import { track } from "@/lib/track";
 import { canUseMapFilters } from "@/lib/access";
 import { motifColor } from "@/lib/motif-color";
 import { usePlan } from "./PlanProvider";
@@ -72,9 +73,11 @@ export function MapFilters({
 
   const toggleLineMotif = (key: string) => {
     if (!allowed) return;
+    const wasSelected = selectedLines.has(key);
     const nextSelected = new Set(selectedLines);
-    if (nextSelected.has(key)) nextSelected.delete(key);
+    if (wasSelected) nextSelected.delete(key);
     else nextSelected.add(key);
+    track("Map connections toggled", { motif: key, on: !wasSelected });
     const next = new URLSearchParams(params.toString());
     // Set (even to empty) rather than delete — an explicit empty list must
     // stay empty on the next load instead of falling back to the default.

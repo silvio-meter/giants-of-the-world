@@ -2,6 +2,7 @@
 
 import { useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
+import { track } from "@/lib/track";
 import { CompareExportCard, type ExportGiant } from "./CompareExportCard";
 
 interface Props {
@@ -55,6 +56,7 @@ export function CompareExportButton({ a, b }: Props) {
         .replace(/\s+/g, "-");
       link.href = canvas.toDataURL("image/png");
       link.click();
+      track("Compare image downloaded");
     } catch (err) {
       console.error("compare export", err);
       setError("Could not generate the image. Try again.");

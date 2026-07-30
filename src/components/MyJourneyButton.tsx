@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { createRoot } from "react-dom/client";
+import { track } from "@/lib/track";
 import { usePlan } from "./PlanProvider";
 import { PremiumLock } from "./PremiumLock";
 import { MyJourneyCard, type JourneyStop } from "./MyJourneyCard";
@@ -67,6 +68,7 @@ export function MyJourneyButton() {
         link.download = "giants-codex-my-journey.png";
         link.href = canvas.toDataURL("image/png");
         link.click();
+        track("My Journey downloaded", { stopCount: stops.length });
       } finally {
         root.unmount();
         host.remove();
