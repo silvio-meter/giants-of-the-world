@@ -21,7 +21,14 @@ const MASTER = join(root, "src/data/giants.json");
 const PUBLIC_OUT = join(root, "src/data/giants.public.json");
 const LORE_OUT = join(root, "src/data/giants.lore.json");
 
-const LORE_FIELDS = ["fullDescription", "mysteryNote", "sections", "fate"];
+const LORE_FIELDS = [
+  "fullDescription",
+  "mysteryNote",
+  "sections",
+  "fate",
+  "scholarlyNotes",
+  "scholarlySources",
+];
 
 /**
  * Rough metres for the size chart, derived once here from the free-text
@@ -59,6 +66,7 @@ export function splitMaster(master) {
     }
     entry.freeEntry = giant.freeEntry === true;
     entry.heightMeters = estimateMeters(giant.height);
+    entry.hasScholarlyNotes = Boolean(giant.scholarlyNotes?.length);
     publicEntries.push(entry);
 
     lore[giant.slug] = {
@@ -66,6 +74,12 @@ export function splitMaster(master) {
       mysteryNote: giant.mysteryNote,
       fate: giant.fate,
       ...(giant.sections ? { sections: giant.sections } : {}),
+      ...(giant.scholarlyNotes
+        ? {
+            scholarlyNotes: giant.scholarlyNotes,
+            scholarlySources: giant.scholarlySources ?? [],
+          }
+        : {}),
     };
   }
 

@@ -1,13 +1,15 @@
 import "server-only";
 import loreData from "@/data/giants.lore.json";
 
-import type { GiantSections } from "./types";
+import type { GiantSections, ScholarlyNote } from "./types";
 
 type LoreEntry = {
   fullDescription: string;
   mysteryNote: string;
   fate: string;
   sections?: GiantSections;
+  scholarlyNotes?: ScholarlyNote[];
+  scholarlySources?: string[];
 };
 
 const lore = loreData as Record<string, LoreEntry>;

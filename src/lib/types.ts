@@ -16,6 +16,12 @@ export interface GiantSections {
   disputed: string;
 }
 
+/** One named entry in a giant's Scholarly Notes — etymology, comparative myth, disputed readings. */
+export interface ScholarlyNote {
+  heading: string;
+  body: string;
+}
+
 export interface Giant {
   id: string;
   slug: string;
@@ -44,6 +50,21 @@ export interface Giant {
   fate: string;
   /** Present on deep entries only. */
   sections?: GiantSections;
+  /**
+   * Academic/etymological commentary, gated independently of freeEntry —
+   * a second premium layer on top of the base account, so it stays locked
+   * even on entries (like Ymir) whose main text is open. Lore, not catalog
+   * data; stripped from the public bundle like fullDescription.
+   */
+  scholarlyNotes?: ScholarlyNote[];
+  /** Shared citation list for scholarlyNotes, distinct from the entry's own `sources`. */
+  scholarlySources?: string[];
+  /**
+   * Public flag mirroring whether scholarlyNotes is non-empty, so the static
+   * page knows whether to render the (locked) section at all — without the
+   * lore content itself ever reaching the client bundle.
+   */
+  hasScholarlyNotes?: boolean;
   /** Keys into motifs.json — the cross-cultural layer. Not lore; safe for the client. */
   motifs?: string[];
   /**

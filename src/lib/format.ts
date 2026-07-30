@@ -8,8 +8,11 @@
 
 import type { Giant, GiantType } from "./types";
 
-/** Client-safe catalog shape (no fullDescription / mysteryNote). */
-export type GiantCardData = Omit<Giant, "fullDescription" | "mysteryNote">;
+/** Client-safe catalog shape (no fullDescription / mysteryNote / scholarlyNotes). */
+export type GiantCardData = Omit<
+  Giant,
+  "fullDescription" | "mysteryNote" | "scholarlyNotes" | "scholarlySources"
+>;
 
 export function formatType(type: GiantType): string {
   return type
