@@ -7,6 +7,7 @@ import { getProfile } from "@/lib/profile";
 import { sharedMotifs } from "@/lib/motifs";
 import { barHeightPx, formatMeters } from "@/lib/scale";
 import { CompareExportButton } from "./CompareExportButton";
+import { CompareViewTracker } from "./CompareViewTracker";
 import { PremiumLock } from "./PremiumLock";
 
 function ScaleBar({ giant }: { giant: GiantCardData }) {
@@ -73,6 +74,8 @@ export async function CompareResults({
 
   return (
     <div className="space-y-8">
+      <CompareViewTracker a={giantA.slug} b={giantB.slug} unlocked={unlocked} />
+
       <section className="rounded-lg border border-border bg-surface p-5 sm:p-6">
         <div className="flex items-end justify-center gap-6" style={{ height: 200 }}>
           <ScaleBar giant={giantA} />

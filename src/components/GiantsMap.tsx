@@ -13,6 +13,7 @@ import {
 } from "react-leaflet";
 import L from "leaflet";
 import Link from "next/link";
+import { track } from "@/lib/track";
 import type { GiantCardData } from "@/lib/format";
 import { densityCells, motifChains } from "@/lib/map-connections";
 import { motifColor } from "@/lib/motif-color";
@@ -149,7 +150,11 @@ export function GiantsMap({
       >
         <button
           type="button"
-          onClick={() => setShowDensity((v) => !v)}
+          onClick={() => {
+            const next = !showDensity;
+            setShowDensity(next);
+            track("Map density toggled", { on: next });
+          }}
           className={`absolute top-3 right-3 z-[1000] rounded-full border px-3 py-1 text-xs tracking-wide transition ${
             showDensity
               ? "border-accent-gold bg-accent-gold/20 text-accent-gold"
