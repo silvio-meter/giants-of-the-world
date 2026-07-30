@@ -42,14 +42,34 @@
     "motifs": [
       "body-cosmogony",
       "flood-survivor",
-      "pre-people"
+      "pre-people",
+      "first-and-last"
     ],
     "sections": {
       "story": "The Norse cosmos does not begin with a maker. It begins with a gap.\n\nGinnungagap lay between Muspellheim's fire and the killing ice of Niflheim, and where the two met the rime began to drip. From that meltwater rose Ymir, called Aurgelmir in the older poems, neither god nor giant but the wet, roaring precondition of both. The primeval cow Auðumbla licked the salt-rime for nourishment and fed him; from his sweat, under his arm, a man and a woman took shape, and from his legs a six-headed son. The jötunn line was established before the gods had names.\n\nHe was killed by his own descendants. Odin, Vili and Vé (sons of Borr and the giantess Bestla, and so Ymir's own kin) struck him down. His blood came out as a flood, and it drowned very nearly all the frost-giants. Only Bergelmir escaped with his household, aboard something the sources will not agree on: a hollowed log, a chest, a mill-frame. Every later giant in the North descends from that one survivor.\n\nThen the brothers built the world from the corpse. Flesh became earth; bone became mountain; teeth and jaw-shards became scree and stone. The blood was poured out as sea and lake. The skull was raised as the sky's vault and set on four dwarfs at the corners, named for the compass. The brains were thrown up as cloud. The maggots that had bred in the dead flesh were given wit and shape, and became the dwarfs.\n\nThis is not decoration. It is a cosmology in which the ground is a body, and every ridge you walk is a piece of someone the gods murdered.",
       "origins": "The account survives in two thirteenth-century Icelandic compilations of much older material.\n\nSnorri Sturluson's Prose Edda gives the fullest narrative version in Gylfaginning, where the world's construction from the body is laid out piece by piece. Snorri was a Christian writing around 1220, some two centuries after Iceland's conversion, and he is systematising traditions that reached him already fragmented: a point worth holding onto, because his tidiness is partly his own.\n\nThe Poetic Edda preserves the older, stranger layer. Vafþrúðnismál has Odin and the giant Vafþrúðnir trade cosmological riddles, and it is there that Ymir's other name, Aurgelmir, and the detail of Bergelmir's escape appear. Grímnismál gives the body-to-world correspondences in compressed verse form. These poems are undated and probably circulated orally for a long time before anyone wrote them down.\n\nThe two sources do not fully agree, and Snorri appears at points to be reading the poems much as we do: as an inheritor working out what they meant.",
       "disputed": "What Bergelmir escaped in is genuinely unresolved. The Old Norse phrase á lúðr has been read as a chest, a hollowed trunk, a boat, a cradle and a mill-box; each reading pulls the episode in a different direction, and the flood-and-ark resemblance that some scholars have drawn to Near Eastern material depends heavily on which one you pick.\n\nWhether that resemblance means anything at all is contested. It may be inherited, it may be borrowed, it may be Snorri's Christian formation showing through, or the pattern may simply be one that many flood traditions arrive at independently.\n\nThe relationship between Ymir and Aurgelmir is also not settled: one being under two names, or two beings that merged before the poems were fixed."
     },
-    "fate": "Killed by Odin, Vili and Vé; the world was built from his corpse."
+    "fate": "Killed by Odin, Vili and Vé; the world was built from his corpse.",
+    "scholarlyNotes": [
+      {
+        "heading": "The Yemo/Manu complex",
+        "body": "Ymir is one of the clearest surviving examples of a shared Indo-European root myth. Bruce Lincoln's work on the reconstructed *Yemo/*Manu complex traces a consistent pattern across Indo-European traditions: a primordial twin (*Yemo, \"twin\") is sacrificed by his brother (*Manu, \"man\") to build the world from his body. Ymir, killed by Odin, Vili, and Vé, and the Vedic Purusha, dismembered by the gods in the Rigveda's Purusha Sukta, are two of the best preserved branches of that same root myth. A possible third branch survives in the Roman legend of Remus.\n\nThe Mesopotamian creation myth in the Enuma Elish, where Marduk kills Tiamat and splits her corpse into sky and earth, follows the same \"world built from a slain primordial body\" pattern but is not part of this lineage. Akkadian and Babylonian traditions sit outside the Indo-European language family entirely, so the resemblance is convergent, not inherited. Separate cultures appear to have arrived at the same narrative solution independently, which arguably makes the pattern more interesting than a single shared origin would."
+      },
+      {
+        "heading": "Etymology: twin, not scream",
+        "body": "Ymir's name is sometimes glossed as related to a word for \"scream\" or \"roar,\" but this is not the mainstream philological reading. The more widely accepted etymology derives Ymir from Proto-Germanic *jumjaz, \"twin,\" the same root reconstructed for *Yemo above, and cognate with the Vedic Yama and Avestan Yima, both twins in their respective traditions. The \"scream\" reading appears in some older scholarship but has not held up as the primary etymology."
+      },
+      {
+        "heading": "Not simply a frost giant",
+        "body": "Ymir is conventionally described as a frost giant, but this framing may oversimplify the textual evidence. Ymir carries the alternate names Aurgelmir, Brimir, and Bláinn. Brimir in particular has been read as pointing toward brim, \"surf\" or \"sea,\" rather than ice specifically, a reading noted in Edward Pettit's translation and commentary on the Poetic Edda. If Brimir and Bláinn point toward sea and stone rather than ice, the opposition sometimes drawn between Ymir and Surtr may be better described as \"the sea and stone that predate order\" against \"the fire that ends it,\" rather than a clean ice-versus-fire binary. This fits Ymir's origin point in the Eddas: he rises from meltwater in Ginnungagap, a liminal, transitional substance rather than ice in a settled state."
+      }
+    ],
+    "scholarlySources": [
+      "Bruce Lincoln, Death, War, and Sacrifice (Indo-European comparative mythology)",
+      "Edward Pettit, translation and commentary on the Poetic Edda",
+      "Prose Edda, Gylfaginning"
+    ]
   },
   {
     "id": "nephilim",
@@ -2720,5 +2740,69 @@
       "builder"
     ],
     "fate": "No death — a tall tale does not require one."
+  },
+  {
+    "id": "surtr",
+    "slug": "surtr",
+    "name": "Surtr",
+    "alsoKnownAs": [],
+    "culture": "Norse",
+    "region": "Scandinavia",
+    "type": "primordial",
+    "freeEntry": false,
+    "height": "Cosmic",
+    "shortDescription": "The fire giant who guarded the world's edge before it existed, and will burn it down at the end.",
+    "fullDescription": "Where Ymir has an origin, Surtr has none. He is already there: a fire giant standing guard at the border of Muspellheim since before the ordered cosmos began, waiting for the day he leads the sons of Muspell against the gods and burns the nine worlds to ash.",
+    "mysteryNote": "The lava tube in Iceland that bears his name is still there, and still warm in places no one can explain. Locals stopped naming which places those are.",
+    "related": [
+      "ymir",
+      "thrym",
+      "hrungnir"
+    ],
+    "coordinates": [
+      64.8,
+      -20.5
+    ],
+    "tags": [
+      "fire",
+      "primordial",
+      "edda",
+      "ragnarok"
+    ],
+    "sources": [
+      "Snorri Sturluson, Prose Edda: Gylfaginning (Iceland, c. 1220)",
+      "Poetic Edda: Völuspá, stanzas 51-53",
+      "Surtshellir archaeological surveys (Iceland)"
+    ],
+    "image": "",
+    "imageAlt": "Surtr, the fire giant of Muspellheim",
+    "motifs": [
+      "guardian",
+      "first-and-last"
+    ],
+    "sections": {
+      "story": "Unlike Ymir, Surtr has no origin story. He is simply already there, guarding the border of Muspellheim since before the ordered cosmos began. Where Ymir's whole existence is explained in careful, sequential detail, Surtr is only ever described in terms of his function: a fixed point of destruction at the edge of the world.\n\nAt Ragnarök, he leads the sons of Muspell against the gods, kills Freyr, and sets the entire world ablaze with his flaming sword, said to shine brighter than the sun itself. He is Ymir's structural mirror: a primordial being from the opposite element, present at both the beginning and the end of the world, but where Ymir dies so the world can be built, Surtr survives to burn that same world down.\n\nThe Prose Edda's Gylfaginning describes Surtr conversationally, alongside Muspell, rather than placing him in a creation sequence. Even the text's own structure resists giving him a timeline. He is just already there, waiting.",
+      "origins": "Surtr's textual footprint is thin compared to Ymir's, and it is scattered across sources of different kinds and dates. The Poetic Edda's Völuspá, the oldest and most authoritative account of Ragnarök, places him at the final battle: he comes from the south bearing fire, and the sun goes black once his flame has done its work. Snorri Sturluson's Prose Edda, compiled in Iceland around 1220, gives the fuller narrative context in Gylfaginning, where Surtr is introduced as already guarding Muspellheim's border, alongside a description of Muspell itself as a realm of fire predating the ordered world. Snorri is working roughly two centuries after Iceland's conversion, synthesising oral and poetic material that had already fragmented by the time it reached him.",
+      "disputed": "It is sometimes asked whether Gylfaginning's placement of Surtr alongside Muspell during the account of creation implies he predates Ymir. The stronger reading is that it does not: Gylfaginning is framed as a dialogue between Hár, Jafnhár and Þriði on one side and Gylfi on the other, so topics surface as they become conversationally relevant rather than in strict chronological order. Describing Surtr as already present at that point in the exchange states what exists at the time of narration, not a creation sequence. A separate, older uncertainty concerns Muspell itself: the Eddas are not fully consistent about whether it names a place, a being, or a people, and that ambiguity extends to how precisely Surtr's own role within it should be understood."
+    },
+    "fate": "Leads the sons of Muspell at Ragnarök and burns the nine worlds to ash.",
+    "scholarlyNotes": [
+      {
+        "heading": "A being with no origin",
+        "body": "Surtr is Ymir's structural mirror in Norse cosmology: a primordial being present at both the beginning and the end of the world. But where Ymir's origin is described in careful, sequential detail (his formation from meltwater, his death, the construction of the world from his body), Surtr has no origin story at all. He is simply already present, guarding the border of Muspellheim, and will still be standing there to burn the world down at Ragnarök. Ymir dies so the ordered world can be built; Surtr survives to end that same world."
+      },
+      {
+        "heading": "Why the sources don't place him on a timeline",
+        "body": "It is sometimes asked whether the Prose Edda's Gylfaginning implies Surtr existed before Ymir, since he is mentioned alongside Muspell during the account of creation. The stronger reading is that this is not the case. Gylfaginning is structured as a conversation between Hár, Jafnhár, and Þriði on one side and Gylfi on the other, so topics are introduced as they become conversationally relevant, not necessarily in chronological order. Mentioning that Surtr already guards Muspellheim's border at that point in the dialogue describes what exists at the time of narration; it does not assert a creation sequence. This fits the broader pattern above: Surtr is treated as a fixed, ever-present guardian rather than a being with a beginning, and even the structure of the source text resists placing him on a timeline."
+      },
+      {
+        "heading": "A physical trace: Surtshellir",
+        "body": "Unlike most figures in the Norse corpus, Surtr has a documented physical site associated with his name: Surtshellir, a lava tube in Iceland literally named after him. The site shows archaeological evidence of activity dating to the pagan period, with later fortification. This is unusually direct: most Norse deities exist almost entirely in text, but Surtshellir suggests active cultic association with a specific, visitable location, not simply a name applied after the fact."
+      }
+    ],
+    "scholarlySources": [
+      "Prose Edda, Gylfaginning",
+      "Surtshellir archaeological surveys (Iceland)"
+    ]
   }
 ]

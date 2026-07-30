@@ -21,6 +21,16 @@ export function canViewMysteryNote(plan: UserPlan | null | undefined): boolean {
   return isPaidPlan(plan);
 }
 
+/**
+ * Gates Scholarly Notes independently of an entry's own freeEntry flag — a
+ * second premium layer that stays locked even on entries whose main account
+ * text is open, unlike canViewFullDescription/canViewMysteryNote which a
+ * free entry bypasses entirely.
+ */
+export function canViewScholarlyNotes(plan: UserPlan | null | undefined): boolean {
+  return isPaidPlan(plan);
+}
+
 export function canUseFavourites(plan: UserPlan | null | undefined): boolean {
   return isPaidPlan(plan);
 }

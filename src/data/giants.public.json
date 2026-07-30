@@ -40,9 +40,11 @@
     "motifs": [
       "body-cosmogony",
       "flood-survivor",
-      "pre-people"
+      "pre-people",
+      "first-and-last"
     ],
-    "heightMeters": 30
+    "heightMeters": 30,
+    "hasScholarlyNotes": true
   },
   {
     "id": "nephilim",
@@ -85,7 +87,8 @@
       "flood-survivor",
       "bones-as-proof"
     ],
-    "heightMeters": null
+    "heightMeters": null,
+    "hasScholarlyNotes": false
   },
   {
     "id": "goliath",
@@ -126,7 +129,8 @@
       "outwitted",
       "war-on-heaven"
     ],
-    "heightMeters": 2.9
+    "heightMeters": 2.9,
+    "hasScholarlyNotes": false
   },
   {
     "id": "og-of-bashan",
@@ -168,7 +172,8 @@
       "bones-as-proof",
       "war-on-heaven"
     ],
-    "heightMeters": null
+    "heightMeters": null,
+    "hasScholarlyNotes": false
   },
   {
     "id": "atlas",
@@ -209,7 +214,8 @@
       "eternal-punishment",
       "war-on-heaven"
     ],
-    "heightMeters": 30
+    "heightMeters": 30,
+    "hasScholarlyNotes": false
   },
   {
     "id": "polyphemus",
@@ -250,7 +256,8 @@
       "cannibal",
       "outwitted"
     ],
-    "heightMeters": 12
+    "heightMeters": 12,
+    "hasScholarlyNotes": false
   },
   {
     "id": "enceladus",
@@ -291,7 +298,8 @@
       "war-on-heaven",
       "buried-sleeper"
     ],
-    "heightMeters": 12
+    "heightMeters": 12,
+    "hasScholarlyNotes": false
   },
   {
     "id": "antaeus",
@@ -331,7 +339,8 @@
       "strength-from-earth",
       "outwitted"
     ],
-    "heightMeters": 4.5
+    "heightMeters": 4.5,
+    "hasScholarlyNotes": false
   },
   {
     "id": "alcyoneus",
@@ -370,7 +379,8 @@
       "war-on-heaven",
       "strength-from-earth"
     ],
-    "heightMeters": 12
+    "heightMeters": 12,
+    "hasScholarlyNotes": false
   },
   {
     "id": "porphyrion",
@@ -409,7 +419,8 @@
     "motifs": [
       "war-on-heaven"
     ],
-    "heightMeters": 12
+    "heightMeters": 12,
+    "hasScholarlyNotes": false
   },
   {
     "id": "polybotes",
@@ -447,7 +458,8 @@
       "war-on-heaven",
       "buried-sleeper"
     ],
-    "heightMeters": 12
+    "heightMeters": 12,
+    "hasScholarlyNotes": false
   },
   {
     "id": "briareus",
@@ -489,7 +501,8 @@
       "many-limbed",
       "guardian"
     ],
-    "heightMeters": 30
+    "heightMeters": 30,
+    "hasScholarlyNotes": false
   },
   {
     "id": "orion",
@@ -528,7 +541,8 @@
       "star-become",
       "wild-highland"
     ],
-    "heightMeters": 4.5
+    "heightMeters": 4.5,
+    "hasScholarlyNotes": false
   },
   {
     "id": "geryon",
@@ -570,7 +584,8 @@
       "many-limbed",
       "guardian"
     ],
-    "heightMeters": 4.5
+    "heightMeters": 4.5,
+    "hasScholarlyNotes": false
   },
   {
     "id": "tityus",
@@ -609,7 +624,8 @@
       "eternal-punishment",
       "war-on-heaven"
     ],
-    "heightMeters": null
+    "heightMeters": null,
+    "hasScholarlyNotes": false
   },
   {
     "id": "talos",
@@ -650,7 +666,8 @@
       "made-not-born",
       "guardian"
     ],
-    "heightMeters": 4.5
+    "heightMeters": 4.5,
+    "hasScholarlyNotes": false
   },
   {
     "id": "thrym",
@@ -690,7 +707,8 @@
       "outwitted",
       "war-on-heaven"
     ],
-    "heightMeters": 4.5
+    "heightMeters": 4.5,
+    "hasScholarlyNotes": false
   },
   {
     "id": "hrungnir",
@@ -728,7 +746,8 @@
       "war-on-heaven",
       "petrified"
     ],
-    "heightMeters": 4.5
+    "heightMeters": 4.5,
+    "hasScholarlyNotes": false
   },
   {
     "id": "skrymir",
@@ -769,7 +788,8 @@
       "outwitted",
       "wild-highland"
     ],
-    "heightMeters": 30
+    "heightMeters": 30,
+    "hasScholarlyNotes": false
   },
   {
     "id": "bestla",
@@ -806,7 +826,8 @@
       "pre-people",
       "body-cosmogony"
     ],
-    "heightMeters": 4.5
+    "heightMeters": 4.5,
+    "hasScholarlyNotes": false
   },
   {
     "id": "balor",
@@ -848,7 +869,8 @@
       "war-on-heaven",
       "boon-abused"
     ],
-    "heightMeters": 4.5
+    "heightMeters": 4.5,
+    "hasScholarlyNotes": false
   },
   {
     "id": "cormoran",
@@ -889,7 +911,8 @@
       "outwitted",
       "petrified"
     ],
-    "heightMeters": 5.5
+    "heightMeters": 5.5,
+    "hasScholarlyNotes": false
   },
   {
     "id": "gogmagog",
@@ -932,7 +955,8 @@
       "petrified",
       "outwitted"
     ],
-    "heightMeters": 5.5
+    "heightMeters": 5.5,
+    "hasScholarlyNotes": false
   },
   {
     "id": "jentilak",
@@ -974,7 +998,8 @@
       "pre-people",
       "petrified"
     ],
-    "heightMeters": 4.5
+    "heightMeters": 4.5,
+    "hasScholarlyNotes": false
   },
   {
     "id": "olentzero",
@@ -1013,7 +1038,8 @@
       "seasonal-visitor",
       "wild-highland"
     ],
-    "heightMeters": null
+    "heightMeters": null,
+    "hasScholarlyNotes": false
   },
   {
     "id": "ravana",
@@ -1057,7 +1083,8 @@
       "boon-abused",
       "many-limbed"
     ],
-    "heightMeters": 30
+    "heightMeters": 30,
+    "hasScholarlyNotes": false
   },
   {
     "id": "kumbhakarna",
@@ -1097,7 +1124,8 @@
       "boon-abused",
       "pious-adversary"
     ],
-    "heightMeters": 12
+    "heightMeters": 12,
+    "hasScholarlyNotes": false
   },
   {
     "id": "hiranyakashipu",
@@ -1136,7 +1164,8 @@
       "war-on-heaven",
       "pious-adversary"
     ],
-    "heightMeters": 4.5
+    "heightMeters": 4.5,
+    "hasScholarlyNotes": false
   },
   {
     "id": "mahabali",
@@ -1180,7 +1209,8 @@
       "seasonal-visitor",
       "boon-abused"
     ],
-    "heightMeters": 30
+    "heightMeters": 30,
+    "hasScholarlyNotes": false
   },
   {
     "id": "svyatogor",
@@ -1221,7 +1251,8 @@
       "eternal-punishment",
       "wild-highland"
     ],
-    "heightMeters": 4.5
+    "heightMeters": 4.5,
+    "hasScholarlyNotes": false
   },
   {
     "id": "quinametzin",
@@ -1262,7 +1293,8 @@
       "builder",
       "bones-as-proof"
     ],
-    "heightMeters": 4.5
+    "heightMeters": 4.5,
+    "hasScholarlyNotes": false
   },
   {
     "id": "xelhua",
@@ -1300,7 +1332,8 @@
       "builder",
       "war-on-heaven"
     ],
-    "heightMeters": 4.5
+    "heightMeters": 4.5,
+    "hasScholarlyNotes": false
   },
   {
     "id": "kua-fu",
@@ -1339,7 +1372,8 @@
       "sun-chaser",
       "landscape-body"
     ],
-    "heightMeters": 4.5
+    "heightMeters": 4.5,
+    "hasScholarlyNotes": false
   },
   {
     "id": "fangfeng",
@@ -1378,7 +1412,8 @@
       "bones-as-proof",
       "pre-people"
     ],
-    "heightMeters": 4.5
+    "heightMeters": 4.5,
+    "hasScholarlyNotes": false
   },
   {
     "id": "oni",
@@ -1419,7 +1454,8 @@
       "wild-highland",
       "seasonal-visitor"
     ],
-    "heightMeters": null
+    "heightMeters": null,
+    "hasScholarlyNotes": false
   },
   {
     "id": "shuten-doji",
@@ -1459,7 +1495,8 @@
       "outwitted",
       "wild-highland"
     ],
-    "heightMeters": 4.5
+    "heightMeters": 4.5,
+    "hasScholarlyNotes": false
   },
   {
     "id": "dzunukwa",
@@ -1502,7 +1539,8 @@
       "wild-highland",
       "guardian"
     ],
-    "heightMeters": 4.5
+    "heightMeters": 4.5,
+    "hasScholarlyNotes": false
   },
   {
     "id": "si-te-cah",
@@ -1544,7 +1582,8 @@
       "pre-people",
       "bones-as-proof"
     ],
-    "heightMeters": null
+    "heightMeters": null,
+    "hasScholarlyNotes": false
   },
   {
     "id": "tsul-kalu",
@@ -1586,7 +1625,8 @@
       "wild-highland",
       "guardian"
     ],
-    "heightMeters": 4.5
+    "heightMeters": 4.5,
+    "hasScholarlyNotes": false
   },
   {
     "id": "kee-wakw",
@@ -1628,7 +1668,8 @@
       "cannibal",
       "wild-highland"
     ],
-    "heightMeters": 4.5
+    "heightMeters": 4.5,
+    "hasScholarlyNotes": false
   },
   {
     "id": "gaoh",
@@ -1668,7 +1709,8 @@
       "sky-bearer",
       "guardian"
     ],
-    "heightMeters": 4.5
+    "heightMeters": 4.5,
+    "hasScholarlyNotes": false
   },
   {
     "id": "budj-bim",
@@ -1711,7 +1753,8 @@
       "builder",
       "petrified"
     ],
-    "heightMeters": 4.5
+    "heightMeters": 4.5,
+    "hasScholarlyNotes": false
   },
   {
     "id": "papinijuwari",
@@ -1750,7 +1793,8 @@
       "one-eye",
       "cannibal"
     ],
-    "heightMeters": 4.5
+    "heightMeters": 4.5,
+    "hasScholarlyNotes": false
   },
   {
     "id": "murkupang",
@@ -1790,7 +1834,8 @@
       "wild-highland"
     ],
     "restrained": true,
-    "heightMeters": 4.5
+    "heightMeters": 4.5,
+    "hasScholarlyNotes": false
   },
   {
     "id": "thardid-jimbo",
@@ -1829,7 +1874,8 @@
       "wild-highland"
     ],
     "restrained": true,
-    "heightMeters": 4.5
+    "heightMeters": 4.5,
+    "hasScholarlyNotes": false
   },
   {
     "id": "chinny-kinik",
@@ -1867,7 +1913,8 @@
       "wild-highland"
     ],
     "restrained": true,
-    "heightMeters": 4.5
+    "heightMeters": 4.5,
+    "hasScholarlyNotes": false
   },
   {
     "id": "maero",
@@ -1909,7 +1956,8 @@
       "wild-highland",
       "cannibal"
     ],
-    "heightMeters": null
+    "heightMeters": null,
+    "hasScholarlyNotes": false
   },
   {
     "id": "kahui-tipua",
@@ -1951,7 +1999,8 @@
       "pre-people",
       "petrified"
     ],
-    "heightMeters": 4.5
+    "heightMeters": 4.5,
+    "hasScholarlyNotes": false
   },
   {
     "id": "nawao",
@@ -1992,7 +2041,8 @@
       "colonial-distortion",
       "wild-highland"
     ],
-    "heightMeters": null
+    "heightMeters": null,
+    "hasScholarlyNotes": false
   },
   {
     "id": "amazimu",
@@ -2032,7 +2082,8 @@
       "cannibal",
       "outwitted"
     ],
-    "heightMeters": 4.5
+    "heightMeters": 4.5,
+    "hasScholarlyNotes": false
   },
   {
     "id": "giant-of-the-forest",
@@ -2073,7 +2124,8 @@
       "cannibal"
     ],
     "restrained": true,
-    "heightMeters": 4.5
+    "heightMeters": 4.5,
+    "hasScholarlyNotes": false
   },
   {
     "id": "stallo",
@@ -2117,7 +2169,8 @@
       "outwitted",
       "wild-highland"
     ],
-    "heightMeters": 4.5
+    "heightMeters": 4.5,
+    "hasScholarlyNotes": false
   },
   {
     "id": "ojancanu",
@@ -2159,7 +2212,8 @@
       "wild-highland",
       "cannibal"
     ],
-    "heightMeters": 4.5
+    "heightMeters": 4.5,
+    "hasScholarlyNotes": false
   },
   {
     "id": "rubezahl",
@@ -2204,7 +2258,8 @@
       "guardian",
       "outwitted"
     ],
-    "heightMeters": 4.5
+    "heightMeters": 4.5,
+    "hasScholarlyNotes": false
   },
   {
     "id": "giant-of-kandahar",
@@ -2243,7 +2298,8 @@
       "modern-rumour",
       "bones-as-proof"
     ],
-    "heightMeters": 4
+    "heightMeters": 4,
+    "hasScholarlyNotes": false
   },
   {
     "id": "giant-of-kunar",
@@ -2280,7 +2336,8 @@
       "modern-rumour",
       "wild-highland"
     ],
-    "heightMeters": null
+    "heightMeters": null,
+    "hasScholarlyNotes": false
   },
   {
     "id": "paul-bunyan",
@@ -2320,6 +2377,47 @@
       "landscape-body",
       "builder"
     ],
-    "heightMeters": null
+    "heightMeters": null,
+    "hasScholarlyNotes": false
+  },
+  {
+    "id": "surtr",
+    "slug": "surtr",
+    "name": "Surtr",
+    "alsoKnownAs": [],
+    "culture": "Norse",
+    "region": "Scandinavia",
+    "type": "primordial",
+    "freeEntry": false,
+    "height": "Cosmic",
+    "shortDescription": "The fire giant who guarded the world's edge before it existed, and will burn it down at the end.",
+    "related": [
+      "ymir",
+      "thrym",
+      "hrungnir"
+    ],
+    "coordinates": [
+      64.8,
+      -20.5
+    ],
+    "tags": [
+      "fire",
+      "primordial",
+      "edda",
+      "ragnarok"
+    ],
+    "sources": [
+      "Snorri Sturluson, Prose Edda: Gylfaginning (Iceland, c. 1220)",
+      "Poetic Edda: Völuspá, stanzas 51-53",
+      "Surtshellir archaeological surveys (Iceland)"
+    ],
+    "image": "",
+    "imageAlt": "Surtr, the fire giant of Muspellheim",
+    "motifs": [
+      "guardian",
+      "first-and-last"
+    ],
+    "heightMeters": 30,
+    "hasScholarlyNotes": true
   }
 ]

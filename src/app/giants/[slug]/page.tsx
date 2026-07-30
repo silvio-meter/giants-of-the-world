@@ -16,6 +16,7 @@ import { FavouriteButton } from "@/components/FavouriteButton";
 import { SizeComparison } from "@/components/SizeComparison";
 import { EmailCapture } from "@/components/EmailCapture";
 import { DiscoveryTracker } from "@/components/DiscoveryTracker";
+import { ScholarlyNotesSection } from "@/components/ScholarlyNotesSection";
 import { siteUrl } from "@/lib/site";
 import { resolveMotifs } from "@/lib/motifs";
 
@@ -287,6 +288,8 @@ export default async function GiantDetailPage({ params }: Props) {
           </Link>
         </aside>
       </div>
+
+      {giant.hasScholarlyNotes && <ScholarlyNotesSection slug={giant.slug} />}
 
       {related.length > 0 && (
         <section className="mt-14 border-t border-border pt-10">

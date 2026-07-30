@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { canViewFullDescription } from "@/lib/access";
+import { canViewFullDescription, canViewScholarlyNotes } from "@/lib/access";
 import { getGiantBySlug } from "@/lib/giants";
 import { getGiantLore } from "@/lib/giants-lore";
 import { getUserPlan } from "@/lib/profile";
@@ -31,8 +31,12 @@ export async function GET(
 
   const plan = await getUserPlan();
   const allowed = giant.freeEntry || canViewFullDescription(plan);
+  // Independent of `allowed` — Scholarly Notes stays locked even when the
+  // entry's own account text is open (freeEntry gives that a free pass;
+  // scholarly notes never gets one).
+  const scholarlyAllowed = canViewScholarlyNotes(plan);
 
-  if (!allowed) {
+  if (!allowed && !scholarlyAllowed) {
     return NextResponse.json(
       { error: "Paid plan required.", locked: true },
       { status: 402, headers: { "Cache-Control": "private, no-store" } }
@@ -41,9 +45,19 @@ export async function GET(
 
   return NextResponse.json(
     {
-      fullDescription: lore.fullDescription,
-      mysteryNote: lore.mysteryNote,
-      ...(lore.sections ? { sections: lore.sections } : {}),
+      ...(allowed
+        ? {
+            fullDescription: lore.fullDescription,
+            mysteryNote: lore.mysteryNote,
+            ...(lore.sections ? { sections: lore.sections } : {}),
+          }
+        : {}),
+      ...(scholarlyAllowed && lore.scholarlyNotes
+        ? {
+            scholarlyNotes: lore.scholarlyNotes,
+            scholarlySources: lore.scholarlySources ?? [],
+          }
+        : {}),
     },
     { headers: { "Cache-Control": "private, no-store" } }
   );

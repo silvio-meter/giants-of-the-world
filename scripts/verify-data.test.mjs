@@ -319,3 +319,41 @@ test("every entry has a fate line, and it stays out of the public catalog", () =
     assert.ok(lore[slug].fate?.trim(), `${slug}: fate missing from lore file`);
   }
 });
+
+const withScholarlyNotes = master.filter((g) => g.scholarlyNotes);
+
+test("scholarlyNotes stays out of the public catalog; only the boolean flag ships", () => {
+  for (const entry of publicEntries) {
+    assert.ok(
+      !("scholarlyNotes" in entry) && !("scholarlySources" in entry),
+      `${entry.slug}: scholarlyNotes leaked into the client catalog`
+    );
+  }
+  for (const giant of master) {
+    assert.equal(
+      publicEntries.find((e) => e.slug === giant.slug).hasScholarlyNotes,
+      Boolean(giant.scholarlyNotes?.length),
+      `${giant.slug}: hasScholarlyNotes flag doesn't match whether scholarlyNotes is actually set`
+    );
+  }
+});
+
+test("scholarlyNotes entries carry a heading and a substantial body", () => {
+  for (const giant of withScholarlyNotes) {
+    assert.ok(
+      giant.scholarlyNotes.length > 0,
+      `${giant.slug}: scholarlyNotes is present but empty`
+    );
+    for (const note of giant.scholarlyNotes) {
+      assert.ok(note.heading?.trim(), `${giant.slug}: a scholarly note has no heading`);
+      assert.ok(
+        words(note.body) >= 20,
+        `${giant.slug}: scholarly note "${note.heading}" is only ${words(note.body)} words`
+      );
+    }
+    assert.ok(
+      lore[giant.slug].scholarlyNotes,
+      `${giant.slug}: scholarlyNotes missing from the lore file`
+    );
+  }
+});
