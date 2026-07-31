@@ -18,6 +18,7 @@ const read = (p) => JSON.parse(readFileSync(join(root, p), "utf8"));
 
 const master = read("src/data/giants.json");
 const publicEntries = read("src/data/giants.public.json");
+const glossary = read("src/data/glossary.json");
 const lore = read("src/data/giants.lore.json");
 const findings = read("src/data/findings.json");
 
@@ -355,5 +356,30 @@ test("scholarlyNotes entries carry a heading and a substantial body", () => {
       lore[giant.slug].scholarlyNotes,
       `${giant.slug}: scholarlyNotes missing from the lore file`
     );
+  }
+});
+
+test("glossary entries are short by design and well-formed", () => {
+  const seenAliases = new Map();
+  for (const [key, entry] of Object.entries(glossary)) {
+    assert.ok(entry.term?.trim(), `glossary["${key}"]: no display term`);
+    assert.ok(
+      Array.isArray(entry.aliases) && entry.aliases.length > 0,
+      `glossary["${key}"]: no aliases to match against`
+    );
+    assert.ok(
+      words(entry.definition) <= 60,
+      `glossary["${key}"]: definition is ${words(entry.definition)} words — tooltips are meant to be 2-3 sentences, not an essay`
+    );
+    for (const alias of entry.aliases) {
+      const lower = alias.toLowerCase();
+      assert.equal(alias, lower, `glossary["${key}"]: alias "${alias}" should be lowercase`);
+      const owner = seenAliases.get(lower);
+      assert.ok(
+        !owner || owner === key,
+        `glossary["${key}"]: alias "${alias}" already belongs to "${owner}" — an ambiguous match`
+      );
+      seenAliases.set(lower, key);
+    }
   }
 });

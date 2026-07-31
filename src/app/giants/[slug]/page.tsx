@@ -17,6 +17,7 @@ import { SizeComparison } from "@/components/SizeComparison";
 import { EmailCapture } from "@/components/EmailCapture";
 import { DiscoveryTracker } from "@/components/DiscoveryTracker";
 import { ScholarlyNotesSection } from "@/components/ScholarlyNotesSection";
+import { GlossaryText } from "@/components/GlossaryText";
 import { siteUrl } from "@/lib/site";
 import { resolveMotifs } from "@/lib/motifs";
 
@@ -239,7 +240,9 @@ export default async function GiantDetailPage({ params }: Props) {
             {giant.height && (
               <div className="border-b border-border pb-3">
                 <dt className="text-xs text-text-muted">Height (tradition)</dt>
-                <dd className="mt-1 text-text-primary">{giant.height}</dd>
+                <dd className="mt-1 text-text-primary">
+                  <GlossaryText text={giant.height} />
+                </dd>
               </div>
             )}
             {giant.coordinates && (
