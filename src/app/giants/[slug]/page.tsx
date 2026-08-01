@@ -156,7 +156,7 @@ export default async function GiantDetailPage({ params }: Props) {
           <span>{giant.region}</span>
           <span aria-hidden>·</span>
           <span className="rounded border border-border px-2 py-0.5">
-            {formatType(giant.type)}
+            <GlossaryText text={formatType(giant.type)} />
           </span>
         </div>
         <div className="mt-3 flex flex-wrap items-start justify-between gap-3">
@@ -273,7 +273,7 @@ export default async function GiantDetailPage({ params }: Props) {
                       key={t}
                       className="rounded border border-border px-2 py-0.5 text-[10px] tracking-wide text-text-muted"
                     >
-                      {t}
+                      <GlossaryText text={t} />
                     </span>
                   ))}
                 </dd>

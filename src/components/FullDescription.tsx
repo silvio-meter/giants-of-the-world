@@ -1,5 +1,6 @@
 import { MysteryNote } from "./MysteryNote";
 import { DeepSections } from "./DeepSections";
+import { GlossaryText } from "./GlossaryText";
 import { splitParagraphs } from "@/lib/content";
 import type { GiantSections } from "@/lib/types";
 import type { ResolvedMotif } from "@/lib/motif-view";
@@ -36,7 +37,9 @@ export function FullDescription({
       </h2>
       <div className="mt-4 space-y-4 text-base leading-relaxed text-text-primary/90">
         {paragraphs.map((para, i) => (
-          <p key={i}>{para}</p>
+          <p key={i}>
+            <GlossaryText text={para} />
+          </p>
         ))}
       </div>
       {sections && (

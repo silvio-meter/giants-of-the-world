@@ -6,6 +6,7 @@ import { splitParagraphs } from "@/lib/content";
 import { refundDays } from "@/lib/site";
 import { MysteryNote } from "./MysteryNote";
 import { DeepSections } from "./DeepSections";
+import { GlossaryText } from "./GlossaryText";
 import { usePlan } from "./PlanProvider";
 import type { GiantSections } from "@/lib/types";
 import type { ResolvedMotif } from "@/lib/motif-view";
@@ -73,7 +74,9 @@ export function LockedLore({ slug, motifs, freePreview, hasMore }: Props) {
         </h2>
         <div className="mt-4 space-y-4 text-base leading-relaxed text-text-primary/90">
           {splitParagraphs(lore.fullDescription).map((para, i) => (
-            <p key={i}>{para}</p>
+            <p key={i}>
+              <GlossaryText text={para} />
+            </p>
           ))}
         </div>
         {lore.sections && (
@@ -93,7 +96,7 @@ export function LockedLore({ slug, motifs, freePreview, hasMore }: Props) {
           Account
         </h2>
         <p className="mt-4 text-base leading-relaxed text-text-primary/90">
-          {freePreview}
+          <GlossaryText text={freePreview} />
         </p>
       </div>
 

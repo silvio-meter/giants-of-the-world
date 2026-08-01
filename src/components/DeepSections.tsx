@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { splitParagraphs } from "@/lib/content";
+import { GlossaryText } from "./GlossaryText";
 import type { ResolvedMotif } from "@/lib/motif-view";
 import type { GiantSections } from "@/lib/types";
 
@@ -7,7 +8,9 @@ function Prose({ text }: { text: string }) {
   return (
     <div className="mt-4 space-y-4 text-base leading-relaxed text-text-primary/90">
       {splitParagraphs(text).map((p, i) => (
-        <p key={i}>{p}</p>
+        <p key={i}>
+          <GlossaryText text={p} />
+        </p>
       ))}
     </div>
   );
