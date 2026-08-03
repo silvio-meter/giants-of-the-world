@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
-import { gaEvent } from "@/lib/ga";
+import { umamiEvent } from "@/lib/umami";
 
 interface Props {
   /** "footer" is a compact single row; "detail" has room for the fuller line. */
@@ -53,7 +53,7 @@ export function EmailCapture({ variant, sourcePage }: Props) {
         return;
       }
       setStatus("done");
-      gaEvent("newsletter_signup", { source_page: sourcePage, variant });
+      umamiEvent("email_signup", { source_page: sourcePage, variant });
     } catch {
       setError("The ledger did not take that. Try again.");
       setStatus("error");

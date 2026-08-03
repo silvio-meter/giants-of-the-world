@@ -5,9 +5,12 @@ import type { NextConfig } from "next";
  *  - CartoDB   dark map tiles on /map
  *  - Supabase  browser auth client on /login and /signup
  *  - Vercel    analytics; same-origin in production, va.* on previews
- *  - Google    GA4: gtag.js itself, then the hit-collection beacons it sends
- *              (region-sharded — e.g. region1.google-analytics.com — hence
- *              the wildcard rather than a single fixed host)
+ *  - Umami     cookieless analytics, and it needs TWO different origins:
+ *              cloud.umami.is serves the tracker script, but the tracker
+ *              posts its hits to gateway.umami.is. Missing the gateway
+ *              origin blocks every event while looking completely healthy,
+ *              because the tracker wraps its fetch in a try/catch that
+ *              swallows the CSP rejection without logging anything.
  */
 const supabaseOrigin = process.env.NEXT_PUBLIC_SUPABASE_URL
   ? new URL(process.env.NEXT_PUBLIC_SUPABASE_URL).origin
@@ -15,8 +18,8 @@ const supabaseOrigin = process.env.NEXT_PUBLIC_SUPABASE_URL
 
 const VERCEL_ANALYTICS = "https://va.vercel-scripts.com";
 const CARTO_TILES = "https://*.basemaps.cartocdn.com";
-const GTAG_SCRIPT = "https://www.googletagmanager.com";
-const GA_COLLECT = "https://*.google-analytics.com";
+const UMAMI_SCRIPT = "https://cloud.umami.is";
+const UMAMI_COLLECT = "https://gateway.umami.is";
 
 /**
  * 'unsafe-inline' in script-src is deliberate. Next's bootstrap and our
@@ -28,11 +31,11 @@ const GA_COLLECT = "https://*.google-analytics.com";
  */
 const csp = [
   "default-src 'self'",
-  `script-src 'self' 'unsafe-inline' ${VERCEL_ANALYTICS} ${GTAG_SCRIPT}`,
+  `script-src 'self' 'unsafe-inline' ${VERCEL_ANALYTICS} ${UMAMI_SCRIPT}`,
   "style-src 'self' 'unsafe-inline'",
   `img-src 'self' data: blob: ${CARTO_TILES}`,
   "font-src 'self' data:",
-  `connect-src 'self' ${supabaseOrigin} ${VERCEL_ANALYTICS} ${GTAG_SCRIPT} ${GA_COLLECT}`,
+  `connect-src 'self' ${supabaseOrigin} ${VERCEL_ANALYTICS} ${UMAMI_SCRIPT} ${UMAMI_COLLECT}`,
   "frame-ancestors 'none'",
   "base-uri 'self'",
   "form-action 'self'",

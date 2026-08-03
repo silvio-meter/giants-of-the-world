@@ -4,8 +4,7 @@ import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { Suspense, useEffect, useState } from "react";
 import { usePlan } from "@/components/PlanProvider";
-import { GAPageEvent } from "@/components/GAPageEvent";
-import { gaEvent } from "@/lib/ga";
+import { umamiEvent } from "@/lib/umami";
 import type { PaidPlan, UserPlan } from "@/lib/access";
 import { formatPlanLabel } from "@/lib/access";
 import { PLAN_PRICES } from "@/lib/plans";
@@ -92,7 +91,6 @@ function PricingInner() {
       return;
     }
     setLoadingPlan(target);
-    gaEvent("checkout_start", { plan: target });
     try {
       const res = await fetch("/api/checkout", {
         method: "POST",
@@ -113,6 +111,13 @@ function PricingInner() {
         setLoadingPlan(null);
         return;
       }
+      // Fired here rather than on click, so the event means what its name
+      // says: the visitor actually reached Stripe checkout. Attempts that
+      // bounce to login or fail to create a session are not counted.
+      // Safe against the navigation on the next line because Umami's tracker
+      // posts with keepalive, which the browser completes after unload
+      // (verified against the tracker source, not assumed).
+      umamiEvent("checkout_start", { plan: target });
       window.location.assign(data.url);
     } catch {
       setError("Checkout failed. Please try again.");
@@ -167,7 +172,6 @@ function PricingInner() {
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6 sm:py-14">
-      <GAPageEvent name="pricing_view" />
       <header className="mb-10 text-center">
         <p className="font-[family-name:var(--font-cinzel)] text-[10px] tracking-[0.35em] text-accent-gold/80 uppercase">
           Open the sealed pages

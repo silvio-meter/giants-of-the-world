@@ -16,7 +16,6 @@ import { motifChains } from "@/lib/map-connections";
 import { getAllMotifs, motifFilterOptions } from "@/lib/motifs";
 import { getUserPlan } from "@/lib/profile";
 import { MyJourneyButton } from "@/components/MyJourneyButton";
-import { GAPageEvent } from "@/components/GAPageEvent";
 
 export const metadata: Metadata = {
   title: "World Map",
@@ -90,7 +89,6 @@ export default async function MapPage({ searchParams }: Props) {
 
   return (
     <div className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
-      <GAPageEvent name="map_open" />
       <header className="mb-6">
         <p className="font-[family-name:var(--font-cinzel)] text-[10px] tracking-[0.35em] text-accent-gold/80 uppercase">
           Geography of the large
