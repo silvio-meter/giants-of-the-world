@@ -49,8 +49,8 @@ In [Stripe Dashboard](https://dashboard.stripe.com) (start in **Test mode**):
 | Plan     | Type           | Amount   | Env var                 |
 |----------|----------------|----------|-------------------------|
 | Monthly  | Recurring month| $4.99    | `STRIPE_PRICE_MONTHLY`  |
-| Yearly   | Recurring year | $39      | `STRIPE_PRICE_YEARLY`   |
-| Lifetime | One-time       | $69      | `STRIPE_PRICE_LIFETIME` |
+| Yearly   | Recurring year | $49      | `STRIPE_PRICE_YEARLY`   |
+| Lifetime | One-time       | $129     | `STRIPE_PRICE_LIFETIME` |
 
 Copy each **Price ID** (`price_...`).
 
