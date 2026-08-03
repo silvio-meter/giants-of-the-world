@@ -336,13 +336,18 @@ function PricingInner() {
         <h3 className="font-[family-name:var(--font-cinzel)] text-xs tracking-[0.25em] text-accent-gold uppercase">
           What paid unlocks
         </h3>
-        <ul className="mt-4 grid gap-2 text-sm text-text-muted sm:grid-cols-2">
-          <li>- Full remaining account for every giant</li>
-          <li>- Mystery notes (whispered asides)</li>
-          <li>- Size comparison tool</li>
-          <li>- Favourites (saved giants, synced)</li>
-          <li>- Advanced map filters</li>
-          <li>- Offline / PWA access (coming)</li>
+        <ul className="mt-4 grid list-disc gap-2 pl-4 text-sm text-text-muted marker:text-accent-gold/60 sm:grid-cols-2">
+          <li>Full remaining account for every giant</li>
+          <li>Mystery notes (whispered asides)</li>
+          <li>First access to new giants</li>
+          <li>Full Compare data (fate, shared traditions)</li>
+          <li>Motif connections on the map</li>
+          <li>Size comparison tool</li>
+          <li>My Journey (your map, exported)</li>
+          <li>Favourites (saved giants, synced)</li>
+          <li>Scholarly Notes (etymology, sources)</li>
+          <li>Discord community (coming)</li>
+          <li>Offline / PWA access (coming)</li>
         </ul>
         <p className="mt-4 text-xs text-text-muted/80">
           Cancel a recurring plan any time from the billing portal. By
