@@ -32,7 +32,7 @@ export const socialLinks: { platform: string; handle: string; url: string }[] = 
   },
   {
     platform: "Pinterest",
-    handle: "giantsoheworld",
-    url: "https://www.pinterest.com/giantsoheworld/",
+    handle: "giantsoftheworld",
+    url: "https://www.pinterest.com/giantsoftheworld/",
   },
 ];
