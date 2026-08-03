@@ -12,15 +12,15 @@ export const PLAN_PRICES: Record<
   },
   yearly: {
     name: "Yearly",
-    price: "$39",
+    price: "$49",
     period: "/ year",
     blurb: "Best recurring value: two months free vs monthly.",
   },
   lifetime: {
     name: "Lifetime",
-    price: "$69",
+    price: "$129",
     period: " once",
-    blurb: "Pay once, own forever. The codex stays open.",
+    blurb: "The codex stays open.",
   },
 };
 

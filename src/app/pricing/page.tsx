@@ -17,8 +17,8 @@ const plans: {
   hero?: boolean;
 }[] = [
   { id: "monthly" },
-  { id: "yearly", badge: "Most Popular" },
-  { id: "lifetime", badge: "Best Value", hero: true },
+  { id: "yearly", badge: "Best Value", hero: true },
+  { id: "lifetime" },
 ];
 
 const paymentsMode =
@@ -251,8 +251,12 @@ function PricingInner() {
                 </span>
                 <span className="text-sm text-text-muted">{meta.period}</span>
               </p>
-              {p.hero && (
-                <p className="mt-2 text-xs tracking-wide text-accent-gold">
+              {p.id === "lifetime" && (
+                <p
+                  className={`mt-2 text-xs tracking-wide ${
+                    p.hero ? "text-accent-gold" : "text-text-muted"
+                  }`}
+                >
                   Pay once, own forever
                 </p>
               )}
