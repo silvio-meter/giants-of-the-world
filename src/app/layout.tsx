@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Cinzel, Inter, JetBrains_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { PlanProvider } from "@/components/PlanProvider";
@@ -112,6 +113,16 @@ export default function RootLayout({
           </FavouritesProvider>
         </PlanProvider>
         <Analytics />
+        {/*
+          Guarded so `npm run dev` never fires real events at the live GA4
+          property — NODE_ENV is "development" there and "production" for
+          every real build (including Vercel preview deploys), which is the
+          same level of guarding the rest of the stack relies on elsewhere.
+        */}
+        {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID &&
+          process.env.NODE_ENV === "production" && (
+            <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />
+          )}
       </body>
     </html>
   );

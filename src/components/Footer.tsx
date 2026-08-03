@@ -1,6 +1,14 @@
 import Link from "next/link";
 import { EmailCapture } from "./EmailCapture";
-import { refundDays, supportEmail } from "@/lib/site";
+import { XIcon, YouTubeIcon, TikTokIcon, PinterestIcon } from "./SocialIcons";
+import { refundDays, socialLinks, supportEmail } from "@/lib/site";
+
+const SOCIAL_ICONS: Record<string, React.ComponentType<React.SVGProps<SVGSVGElement>>> = {
+  X: XIcon,
+  YouTube: YouTubeIcon,
+  TikTok: TikTokIcon,
+  Pinterest: PinterestIcon,
+};
 
 export function Footer() {
   return (
@@ -31,6 +39,23 @@ export function Footer() {
               {refundDays}-day refund
             </Link>
           </p>
+          <div className="mt-4 flex gap-4">
+            {socialLinks.map(({ platform, url }) => {
+              const Icon = SOCIAL_ICONS[platform];
+              return (
+                <a
+                  key={platform}
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`${platform} (opens in a new tab)`}
+                  className="text-text-muted transition hover:text-accent-gold"
+                >
+                  <Icon className="h-5 w-5" aria-hidden />
+                </a>
+              );
+            })}
+          </div>
         </div>
         <div className="flex flex-wrap gap-4 text-sm text-text-muted">
           <Link href="/giants" className="hover:text-accent-gold">
