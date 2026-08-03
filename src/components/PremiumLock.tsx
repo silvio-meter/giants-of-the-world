@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { PLAN_PRICES } from "@/lib/plans";
 
 /**
  * A locked section, for content gated behind any paid plan.
@@ -28,16 +29,16 @@ export function PremiumLock({
         href="/pricing"
         className="mt-4 inline-flex w-full items-center justify-center rounded border border-accent-gold bg-accent-gold px-4 py-2.5 font-[family-name:var(--font-cinzel)] text-sm tracking-[0.1em] text-background transition hover:bg-accent-gold/90 sm:w-auto sm:min-w-[280px]"
       >
-        Unlock forever with Lifetime: $69
+        Unlock forever with Lifetime: {PLAN_PRICES.lifetime.price}
       </Link>
       <p className="mt-2.5 text-xs text-text-muted">
         Or{" "}
         <Link href="/pricing" className="text-accent-gold hover:underline">
-          Monthly ($4.99)
+          Monthly ({PLAN_PRICES.monthly.price})
         </Link>
         {" · "}
         <Link href="/pricing" className="text-accent-gold hover:underline">
-          Yearly ($39)
+          Yearly ({PLAN_PRICES.yearly.price})
         </Link>
       </p>
     </div>
