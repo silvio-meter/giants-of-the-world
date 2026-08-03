@@ -1,12 +1,12 @@
 import type { Metadata, Viewport } from "next";
 import { Cinzel, Inter, JetBrains_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import Script from "next/script";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { PlanProvider } from "@/components/PlanProvider";
 import { FavouritesProvider } from "@/components/FavouritesProvider";
-import { siteUrl } from "@/lib/site";
+import { siteUrl, UMAMI_SCRIPT_SRC } from "@/lib/site";
 import "./globals.css";
 
 const cinzel = Cinzel({
@@ -114,14 +114,21 @@ export default function RootLayout({
         </PlanProvider>
         <Analytics />
         {/*
-          Guarded so `npm run dev` never fires real events at the live GA4
-          property — NODE_ENV is "development" there and "production" for
-          every real build (including Vercel preview deploys), which is the
-          same level of guarding the rest of the stack relies on elsewhere.
+          Umami Cloud, cookieless by design, which is why this site carries no
+          consent banner and needs none. Replaced GA4, which set cookies and
+          would have required one.
+
+          Guarded so `npm run dev` never fires at the real property: NODE_ENV
+          is "development" there and "production" for every real build,
+          matching how the rest of the stack guards this.
         */}
-        {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID &&
+        {process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID &&
           process.env.NODE_ENV === "production" && (
-            <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />
+            <Script
+              src={UMAMI_SCRIPT_SRC}
+              data-website-id={process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID}
+              strategy="afterInteractive"
+            />
           )}
       </body>
     </html>

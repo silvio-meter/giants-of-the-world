@@ -36,3 +36,11 @@ export const socialLinks: { platform: string; handle: string; url: string }[] = 
     url: "https://www.pinterest.com/giantsoftheworld/",
   },
 ];
+
+/**
+ * Umami Cloud's tracker. The origin here must stay in step with the
+ * script-src and connect-src entries in next.config.ts, or the browser's own
+ * CSP will block analytics exactly the way it silently blocked GA4 before
+ * that policy was widened.
+ */
+export const UMAMI_SCRIPT_SRC = "https://cloud.umami.is/script.js";

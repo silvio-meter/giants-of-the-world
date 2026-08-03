@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { splitParagraphs } from "@/lib/content";
 import { refundDays } from "@/lib/site";
-import { gaEvent } from "@/lib/ga";
 import { PLAN_PRICES } from "@/lib/plans";
 import { MysteryNote } from "./MysteryNote";
 import { DeepSections } from "./DeepSections";
@@ -63,15 +62,6 @@ export function LockedLore({ slug, motifs, freePreview, hasMore }: Props) {
       cancelled = true;
     };
   }, [ready, isPaid, slug, lore, attempted]);
-
-  // Only once the plan is confirmed free/anon — not during the brief window
-  // where a paying member also sees this CTA before their own fetch swaps
-  // it out — and only when there is actually more behind it to hit.
-  useEffect(() => {
-    if (ready && !isPaid && hasMore) {
-      gaEvent("paywall_view", { slug });
-    }
-  }, [ready, isPaid, hasMore, slug]);
 
   // Members briefly see the CTA that is baked into the static page, then the
   // real text swaps in. Derived rather than stored so the effect stays clean.
