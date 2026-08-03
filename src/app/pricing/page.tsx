@@ -4,6 +4,8 @@ import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { Suspense, useEffect, useState } from "react";
 import { usePlan } from "@/components/PlanProvider";
+import { GAPageEvent } from "@/components/GAPageEvent";
+import { gaEvent } from "@/lib/ga";
 import type { PaidPlan, UserPlan } from "@/lib/access";
 import { formatPlanLabel } from "@/lib/access";
 import { PLAN_PRICES } from "@/lib/plans";
@@ -90,6 +92,7 @@ function PricingInner() {
       return;
     }
     setLoadingPlan(target);
+    gaEvent("checkout_start", { plan: target });
     try {
       const res = await fetch("/api/checkout", {
         method: "POST",
@@ -164,6 +167,7 @@ function PricingInner() {
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6 sm:py-14">
+      <GAPageEvent name="pricing_view" />
       <header className="mb-10 text-center">
         <p className="font-[family-name:var(--font-cinzel)] text-[10px] tracking-[0.35em] text-accent-gold/80 uppercase">
           Open the sealed pages

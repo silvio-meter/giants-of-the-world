@@ -5,6 +5,9 @@ import type { NextConfig } from "next";
  *  - CartoDB   dark map tiles on /map
  *  - Supabase  browser auth client on /login and /signup
  *  - Vercel    analytics; same-origin in production, va.* on previews
+ *  - Google    GA4: gtag.js itself, then the hit-collection beacons it sends
+ *              (region-sharded — e.g. region1.google-analytics.com — hence
+ *              the wildcard rather than a single fixed host)
  */
 const supabaseOrigin = process.env.NEXT_PUBLIC_SUPABASE_URL
   ? new URL(process.env.NEXT_PUBLIC_SUPABASE_URL).origin
@@ -12,6 +15,8 @@ const supabaseOrigin = process.env.NEXT_PUBLIC_SUPABASE_URL
 
 const VERCEL_ANALYTICS = "https://va.vercel-scripts.com";
 const CARTO_TILES = "https://*.basemaps.cartocdn.com";
+const GTAG_SCRIPT = "https://www.googletagmanager.com";
+const GA_COLLECT = "https://*.google-analytics.com";
 
 /**
  * 'unsafe-inline' in script-src is deliberate. Next's bootstrap and our
@@ -23,11 +28,11 @@ const CARTO_TILES = "https://*.basemaps.cartocdn.com";
  */
 const csp = [
   "default-src 'self'",
-  `script-src 'self' 'unsafe-inline' ${VERCEL_ANALYTICS}`,
+  `script-src 'self' 'unsafe-inline' ${VERCEL_ANALYTICS} ${GTAG_SCRIPT}`,
   "style-src 'self' 'unsafe-inline'",
   `img-src 'self' data: blob: ${CARTO_TILES}`,
   "font-src 'self' data:",
-  `connect-src 'self' ${supabaseOrigin} ${VERCEL_ANALYTICS}`,
+  `connect-src 'self' ${supabaseOrigin} ${VERCEL_ANALYTICS} ${GTAG_SCRIPT} ${GA_COLLECT}`,
   "frame-ancestors 'none'",
   "base-uri 'self'",
   "form-action 'self'",

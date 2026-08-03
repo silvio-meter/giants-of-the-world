@@ -50,6 +50,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: giant.shortDescription,
       images: giant.image ? [{ url: giant.image }] : undefined,
     },
+    // Without this, Twitter/X and Discord fall back to the root layout's
+    // twitter block (site-wide title + featured.jpg) — Next only merges
+    // metadata one level deep, so a page that sets openGraph but not
+    // twitter does not inherit per-page data into the sibling key.
+    twitter: {
+      card: "summary_large_image",
+      title: `${giant.name} · Giants of the World`,
+      description: giant.shortDescription,
+      images: giant.image ? [giant.image] : undefined,
+    },
   };
 }
 

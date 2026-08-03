@@ -11,3 +11,23 @@ export const supportEmail = "hello@giantscodex.com";
 
 /** Days a customer has to ask for a full refund, no questions asked. */
 export const refundDays = 14;
+
+/** Social accounts linked from the footer. */
+export const socialLinks: { platform: string; handle: string; url: string }[] = [
+  { platform: "X", handle: "@TheGiantsCodex", url: "https://x.com/TheGiantsCodex" },
+  {
+    platform: "YouTube",
+    handle: "@GiantsCodex",
+    url: "https://www.youtube.com/@GiantsCodex",
+  },
+  {
+    platform: "TikTok",
+    handle: "@giantscodex",
+    url: "https://www.tiktok.com/@giantscodex",
+  },
+  {
+    platform: "Pinterest",
+    handle: "giantsoheworld",
+    url: "https://www.pinterest.com/giantsoheworld/",
+  },
+];
