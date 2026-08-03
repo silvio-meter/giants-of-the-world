@@ -14,6 +14,7 @@ const staticRoutes: {
   { path: "/compare", priority: 0.6, freq: "monthly" },
   { path: "/map", priority: 0.7, freq: "monthly" },
   { path: "/findings", priority: 0.7, freq: "monthly" },
+  { path: "/evidence", priority: 0.6, freq: "monthly" },
   { path: "/about", priority: 0.5, freq: "monthly" },
   { path: "/pricing", priority: 0.6, freq: "monthly" },
   { path: "/terms", priority: 0.3, freq: "monthly" },

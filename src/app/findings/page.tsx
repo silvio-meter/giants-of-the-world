@@ -49,6 +49,14 @@ export default function FindingsPage() {
           labels. Mystery is welcome; misrepresentation is not. Verified hoaxes
           are marked as such. Unverified stories stay unverified.
         </p>
+        <p className="mt-3 text-sm">
+          <Link
+            href="/evidence"
+            className="text-accent-gold underline underline-offset-2 hover:text-accent-gold/80"
+          >
+            How this archive treats evidence
+          </Link>
+        </p>
       </header>
 
       <div className="mb-8 flex flex-wrap gap-2 text-[10px] tracking-wide uppercase">

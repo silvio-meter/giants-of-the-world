@@ -1,7 +1,7 @@
 "use client";
 
+import Link from "next/link";
 import { useState, type FormEvent } from "react";
-import { umamiEvent } from "@/lib/umami";
 
 interface Props {
   /** "footer" is a compact single row; "detail" has room for the fuller line. */
@@ -12,12 +12,14 @@ interface Props {
 
 const COPY = {
   footer: {
+    heading: null,
     prompt: "Enter your name in the ledger. New giants surface without warning.",
     button: "Enter the ledger",
   },
   detail: {
+    heading: "New giants surface without warning.",
     prompt:
-      "The fog does not announce itself. Leave your email and it will find you first.",
+      "Get told when an entry goes up, and when a new motif connects giants who never met.",
     button: "Enter the ledger",
   },
 };
@@ -34,7 +36,7 @@ export function EmailCapture({ variant, sourcePage }: Props) {
     "idle"
   );
   const [error, setError] = useState("");
-  const { prompt, button } = COPY[variant];
+  const { heading, prompt, button } = COPY[variant];
 
   async function onSubmit(e: FormEvent) {
     e.preventDefault();
@@ -52,8 +54,10 @@ export function EmailCapture({ variant, sourcePage }: Props) {
         setStatus("error");
         return;
       }
+      // No event here on purpose. email_signup fires on the confirm page,
+      // once the link in the confirmation email is actually opened, so a
+      // submission that never confirms does not count as a subscriber.
       setStatus("done");
-      umamiEvent("email_signup", { source_page: sourcePage, variant });
     } catch {
       setError("The ledger did not take that. Try again.");
       setStatus("error");
@@ -70,7 +74,13 @@ export function EmailCapture({ variant, sourcePage }: Props) {
             : "rounded-lg border border-accent-gold/35 bg-background/60 px-4 py-4 text-center text-sm text-accent-gold"
         }
       >
-        You are now marked in the codex.
+        {/*
+          Under double opt-in this cannot say "you are now marked in the
+          codex", because at this point they are not. The row exists but is
+          unconfirmed, and stays that way until the emailed link is opened.
+        */}
+        Check your email and open the link to confirm. Nothing is recorded
+        until you do.
       </p>
     );
   }
@@ -86,6 +96,11 @@ export function EmailCapture({ variant, sourcePage }: Props) {
           : "rounded-lg border border-border bg-surface p-4 sm:p-5"
       }
     >
+      {heading && (
+        <p className="mb-1.5 font-[family-name:var(--font-cinzel)] text-sm tracking-wide text-accent-gold">
+          {heading}
+        </p>
+      )}
       <p
         className={
           isFooter
@@ -134,6 +149,18 @@ export function EmailCapture({ variant, sourcePage }: Props) {
           {error}
         </p>
       )}
+      {/*
+        Submitting is the consent action, so there is no pre-ticked box and no
+        box at all: an unticked checkbox nobody ticks would just block signups
+        without adding consent that pressing the button does not already give.
+      */}
+      <p className={`text-xs text-text-muted/80 ${isFooter ? "mt-2" : "mt-3"}`}>
+        Confirmation required. Unsubscribe any time. See our{" "}
+        <Link href="/privacy" className="text-accent-gold hover:underline">
+          Privacy Policy
+        </Link>
+        .
+      </p>
     </form>
   );
 }

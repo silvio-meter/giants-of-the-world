@@ -7,12 +7,29 @@ import { siteUrl } from "./site";
  * for that is not worth it yet. Reconsider if Audiences/broadcast sending
  * gets built later.
  */
-export async function sendWelcomeEmail(email: string): Promise<void> {
+
+/**
+ * The confirmation email is the single point of failure in double opt-in: if
+ * it does not arrive, the person never becomes a subscriber, and there is no
+ * DMARC record on the domain yet.
+ *
+ * So it is deliberately plain. No dark background, no gold headings, no
+ * imagery, nothing that reads as a campaign. One sentence, one link, and a
+ * line saying what to do if it was not you. It also ships a text/plain
+ * alternative alongside the HTML, because HTML-only mail scores worse with
+ * spam filters than a proper multipart message.
+ */
+export async function sendConfirmationEmail(
+  email: string,
+  token: string
+): Promise<void> {
   const key = process.env.RESEND_API_KEY;
   if (!key) {
-    console.error("RESEND_API_KEY is not set — welcome email not sent");
+    console.error("RESEND_API_KEY is not set, confirmation email not sent");
     return;
   }
+
+  const url = `${siteUrl}/subscribe/confirm?token=${encodeURIComponent(token)}`;
 
   const res = await fetch("https://api.resend.com/emails", {
     method: "POST",
@@ -23,36 +40,31 @@ export async function sendWelcomeEmail(email: string): Promise<void> {
     body: JSON.stringify({
       from: "Giants of the World <hello@giantscodex.com>",
       to: email,
-      subject: "You are now marked in the codex",
-      html: welcomeEmailHtml(),
+      subject: "Confirm your subscription",
+      text: [
+        "Please confirm you want emails from Giants of the World.",
+        "",
+        `Confirm: ${url}`,
+        "",
+        "You will not be subscribed until you open that link.",
+        "If you did not request this, ignore this email and nothing happens.",
+      ].join("\n"),
+      html: confirmationEmailHtml(url),
     }),
   });
 
   if (!res.ok) {
-    // Signup already succeeded (the DB row is the source of truth); a failed
-    // welcome email is not a reason to tell the reader signup failed.
     console.error("Resend send failed", res.status, await res.text());
   }
 }
 
-function welcomeEmailHtml(): string {
+function confirmationEmailHtml(url: string): string {
   return `
-    <div style="background:#0d1117;color:#e6edf3;font-family:Georgia,serif;padding:40px 24px;">
-      <div style="max-width:480px;margin:0 auto;">
-        <p style="font-size:11px;letter-spacing:0.3em;text-transform:uppercase;color:#c9a227;margin:0 0 16px;">
-          Giants of the World
-        </p>
-        <h1 style="font-size:22px;color:#c9a227;margin:0 0 20px;font-weight:normal;">
-          You are now marked in the codex.
-        </h1>
-        <p style="font-size:15px;line-height:1.6;color:#8b949e;margin:0 0 16px;">
-          New giants surface without warning. When they do, you will hear
-          about it first.
-        </p>
-        <p style="font-size:15px;line-height:1.6;color:#8b949e;margin:0;">
-          <a href="${siteUrl}/giants" style="color:#c9a227;">Return to the catalogue</a>
-        </p>
-      </div>
+    <div style="font-family:Helvetica,Arial,sans-serif;font-size:15px;line-height:1.6;color:#222;">
+      <p>Please confirm you want emails from Giants of the World.</p>
+      <p><a href="${url}">Confirm your subscription</a></p>
+      <p>You will not be subscribed until you open that link.</p>
+      <p style="color:#666;">If you did not request this, ignore this email and nothing happens.</p>
     </div>
   `;
 }

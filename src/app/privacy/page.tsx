@@ -49,9 +49,21 @@ export default function PrivacyPage() {
               numbers.
             </li>
             <li>
+              <strong className="text-text-primary/90">Newsletter:</strong> if
+              you subscribe, your email address, the page you subscribed from,
+              the wording you agreed to, and the times you submitted and
+              confirmed. You are not subscribed until you confirm by email.
+            </li>
+            <li>
               <strong className="text-text-primary/90">Usage:</strong> basic
               technical logs (e.g. errors, server requests) needed to run and
               secure the Service.
+            </li>
+            <li>
+              <strong className="text-text-primary/90">Analytics:</strong>{" "}
+              aggregate page views and a small number of events (newsletter
+              confirmation, reaching checkout). Both analytics tools we use are
+              cookieless and neither builds a profile of you across sites.
             </li>
           </ul>
         </section>
@@ -75,10 +87,14 @@ export default function PrivacyPage() {
             <strong className="text-text-primary/90">Supabase</strong>{" "}
             (authentication and database),{" "}
             <strong className="text-text-primary/90">Stripe</strong>{" "}
-            (payments), and{" "}
+            (payments),{" "}
             <strong className="text-text-primary/90">Vercel</strong>{" "}
-            (hosting). Each processes data under their own policies as needed
-            to deliver the Service.
+            (hosting, and cookieless site analytics),{" "}
+            <strong className="text-text-primary/90">Resend</strong>{" "}
+            (sending the newsletter confirmation email), and{" "}
+            <strong className="text-text-primary/90">Umami</strong>{" "}
+            (cookieless analytics, hosted in the EU region). Each processes
+            data under their own policies as needed to deliver the Service.
           </p>
         </section>
 
@@ -130,8 +146,9 @@ export default function PrivacyPage() {
           </h2>
           <p className="mt-2">
             We use essential cookies/local storage for sessions (auth) and
-            similar technical needs. We do not run third-party advertising
-            trackers in the current version.
+            similar technical needs. Our analytics do not use cookies: neither
+            Umami nor Vercel Analytics sets one. We do not run third-party
+            advertising trackers in the current version.
           </p>
         </section>
 
