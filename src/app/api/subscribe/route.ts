@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server";
+import { NextResponse, after } from "next/server";
 import { sendWelcomeEmail } from "@/lib/resend";
 import { createServiceRoleClient } from "@/lib/supabase/server";
 
@@ -44,9 +44,20 @@ export async function POST(request: Request) {
 
     // Best-effort: a signup is complete once the row exists. A Resend outage
     // should not turn into a user-facing failure for something that worked.
+    //
+    // Runs via after(), not a bare fire-and-forget call — a serverless
+    // invocation can be frozen the instant the response below is sent, which
+    // kills any unawaited promise mid-flight. That was the actual bug here:
+    // the DB row landed every time, but the email's fetch to Resend never
+    // got the chance to leave the function, so nothing ever reached Resend
+    // at all (confirmed: zero sends in Resend's dashboard despite successful
+    // signups in Supabase). after() extends the invocation until this
+    // callback settles, without delaying the response the user gets.
     if (!error) {
-      void sendWelcomeEmail(email).catch((err) =>
-        console.error("welcome email", err)
+      after(() =>
+        sendWelcomeEmail(email).catch((err) =>
+          console.error("welcome email", err)
+        )
       );
     }
 
