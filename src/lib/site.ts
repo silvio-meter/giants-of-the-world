@@ -16,6 +16,11 @@ export const refundDays = 14;
 export const socialLinks: { platform: string; handle: string; url: string }[] = [
   { platform: "X", handle: "@TheGiantsCodex", url: "https://x.com/TheGiantsCodex" },
   {
+    platform: "Instagram",
+    handle: "@giantscodex",
+    url: "https://www.instagram.com/giantscodex/",
+  },
+  {
     platform: "YouTube",
     handle: "@GiantsCodex",
     url: "https://www.youtube.com/@GiantsCodex",

@@ -1,10 +1,17 @@
 import Link from "next/link";
 import { EmailCapture } from "./EmailCapture";
-import { XIcon, YouTubeIcon, TikTokIcon, PinterestIcon } from "./SocialIcons";
+import {
+  XIcon,
+  InstagramIcon,
+  YouTubeIcon,
+  TikTokIcon,
+  PinterestIcon,
+} from "./SocialIcons";
 import { refundDays, socialLinks, supportEmail } from "@/lib/site";
 
 const SOCIAL_ICONS: Record<string, React.ComponentType<React.SVGProps<SVGSVGElement>>> = {
   X: XIcon,
+  Instagram: InstagramIcon,
   YouTube: YouTubeIcon,
   TikTok: TikTokIcon,
   Pinterest: PinterestIcon,
