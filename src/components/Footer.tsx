@@ -80,6 +80,9 @@ export function Footer() {
           <Link href="/findings" className="hover:text-accent-gold">
             Findings
           </Link>
+          <Link href="/evidence" className="hover:text-accent-gold">
+            Evidence
+          </Link>
           <Link href="/pricing" className="hover:text-accent-gold">
             Pricing
           </Link>

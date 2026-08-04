@@ -203,13 +203,21 @@ export default async function GiantDetailPage({ params }: Props) {
             Unverified modern legend.
           </strong>{" "}
           This entry is circulating oral tradition, not confirmed fact. No
-          official records corroborate the account.
+          official records corroborate the account.{" "}
+          {/*
+            The primary placement for the evidence page. This is the exact
+            moment a reader is being told something is not confirmed, so it is
+            where the question "how do you decide that?" actually occurs to
+            them.
+          */}
+          <Link
+            href="/evidence"
+            className="text-amber-200 underline underline-offset-2 hover:text-amber-100"
+          >
+            How this archive treats evidence
+          </Link>
         </div>
       )}
-
-      <div className="mt-8">
-        <EmailCapture variant="detail" sourcePage={`/giants/${giant.slug}`} />
-      </div>
 
       <div className="mt-8 grid gap-8 lg:grid-cols-[1fr_220px]">
         <div className="paywalled-account">
@@ -329,6 +337,17 @@ export default async function GiantDetailPage({ params }: Props) {
           </ul>
         </section>
       )}
+
+      {/*
+        Bottom of the entry, on every entry, free and paid alike.
+        On a paid entry this sits well below the paywall block, so the buy ask
+        is always seen before the email ask. Someone who hits the paywall is a
+        better capture candidate than someone who finished a free entry, which
+        is why it is not restricted to free entries.
+      */}
+      <div className="mt-14 border-t border-border pt-10">
+        <EmailCapture variant="detail" sourcePage={`/giants/${giant.slug}`} />
+      </div>
     </article>
   );
 }
