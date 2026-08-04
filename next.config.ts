@@ -55,10 +55,31 @@ const securityHeaders = [
   },
 ];
 
+/**
+ * Short links for social profiles.
+ *
+ * A profile bio has to show the URL it links to, and a raw UTM string reads
+ * as clutter next to a handle: giantscodex.com/?utm_source=x&utm_medium=bio
+ * is what X actually prints on the profile. These give the same attribution
+ * behind a link that looks like something a person would type.
+ *
+ * Not permanent: a 308 gets cached hard by browsers, and the destination here
+ * is marketing metadata that may well be retuned later. A temporary redirect
+ * keeps that editable.
+ */
+const socialShortLinks = ["x", "instagram", "youtube", "pinterest", "tiktok"];
+
 const nextConfig: NextConfig = {
   images: {
     // Local /public assets; formats help Lighthouse / mobile.
     formats: ["image/avif", "image/webp"],
+  },
+  async redirects() {
+    return socialShortLinks.map((source) => ({
+      source: `/${source}`,
+      destination: `/?utm_source=${source}&utm_medium=bio`,
+      permanent: false,
+    }));
   },
   async headers() {
     return [{ source: "/:path*", headers: securityHeaders }];

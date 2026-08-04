@@ -24,6 +24,17 @@ export default function robots(): MetadataRoute.Robots {
           // Redirect-only for a crawler: no HTML, so noindex is not an option.
           "/account",
           "/giants/random",
+          // Social bio short links. Same situation: they only ever redirect,
+          // and the thing they redirect to is the homepage carrying campaign
+          // parameters, which is not a page anyone should land on from search.
+          "/x",
+          "/instagram",
+          "/youtube",
+          "/pinterest",
+          "/tiktok",
+          // The confirmation link is noindex in its own metadata, but it is
+          // also pointless to crawl and carries a token.
+          "/subscribe/confirm",
         ],
       },
     ],
