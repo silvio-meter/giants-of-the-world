@@ -39,8 +39,31 @@ const FOLDED = [
   "Musaus",
   "Volksmarchen",
   "Krakonos",
+  "Krkonos",
   "Krkonosske",
   "pohadky",
+];
+
+/**
+ * Swept across every entry, not just the three that were once damaged.
+ *
+ * "Krkonose" survived the first pass because that pass matched on
+ * "Krkonosske" and this is the shorter stem, in a different field of the same
+ * row. Checking the whole corpus for the folded spelling costs nothing and
+ * does not depend on anyone naming the right row in advance.
+ *
+ * Only forms that are genuinely wrong belong here. A name that simply does
+ * not appear in the corpus is not a defect, and adding it would make this
+ * list read as though it were.
+ */
+const FOLDED_ANYWHERE = [
+  "Barandiaran",
+  "Musaus",
+  "Volksmarchen",
+  "Krakonos",
+  "Krkonos",
+  "pohadky",
+  "Ojancanu",
 ];
 
 const master = read("src/data/giants.json");
@@ -168,3 +191,58 @@ test(
     }
   }
 );
+
+// ---------------------------------------------------------------------------
+// Corpus-wide sweeps. The named-row checks above only protect rows someone
+// already knew about.
+// ---------------------------------------------------------------------------
+
+test("no ASCII-folded name anywhere in the catalogue", () => {
+  for (const giant of master) {
+    // slug and id are deliberately ASCII: they are URLs.
+    const { slug, id, image, ...rest } = giant;
+    void slug;
+    void id;
+    void image;
+    const text = JSON.stringify(rest);
+    for (const folded of FOLDED_ANYWHERE) {
+      assert.ok(
+        !text.includes(folded),
+        `${giant.slug}: ASCII-folded "${folded}" in entry text`
+      );
+    }
+  }
+});
+
+test("no em dash in any entry's visible text", () => {
+  for (const giant of master) {
+    const text = JSON.stringify(giant);
+    assert.ok(
+      !text.includes("—"),
+      `${giant.slug}: em dash in entry text, use a comma, colon or full stop`
+    );
+  }
+});
+
+test("the removal offer is one string, byte identical on every entry that carries it", () => {
+  const notes = master
+    .filter((g) => g.communityNote)
+    .map((g) => g.communityNote);
+
+  // murkupang carries it inside its disputed section rather than the field.
+  const murkupang = master.find((g) => g.slug === "murkupang");
+  const start = murkupang.sections.disputed.indexOf("Whether this material");
+  assert.ok(start !== -1, "murkupang no longer carries the removal offer");
+  notes.push(murkupang.sections.disputed.slice(start));
+
+  assert.equal(notes.length, 5, "expected the offer on exactly five entries");
+  assert.equal(
+    new Set(notes).size,
+    1,
+    "the removal offer has drifted apart between entries"
+  );
+  assert.ok(
+    notes[0].endsWith("Requests can be sent to hello@giantscodex.com."),
+    "the offer must say where a request can actually be sent"
+  );
+});
