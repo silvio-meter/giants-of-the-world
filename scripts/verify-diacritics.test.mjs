@@ -214,7 +214,12 @@ test("no ASCII-folded name anywhere in the catalogue", () => {
   }
 });
 
-test("no em dash in any entry's visible text", () => {
+/**
+ * Entry data only. Kept because it runs without a server and fails fast in
+ * CI, but it is not the real guard: it cannot see copy that lives outside
+ * giants.json. The rendered sweep below is the one that matters.
+ */
+test("no em dash in any entry's data", () => {
   for (const giant of master) {
     const text = JSON.stringify(giant);
     assert.ok(
@@ -223,6 +228,60 @@ test("no em dash in any entry's visible text", () => {
     );
   }
 });
+
+/**
+ * The real guard: every route's rendered HTML.
+ *
+ * A source-file check is the wrong shape for this. Two defects proved it.
+ * The glossary shipped five em dashes in definitions that no entry-level
+ * check could ever see, and /map carried one in a component prop rather
+ * than in any data file at all. Both were live and indexed.
+ *
+ * Scanning the served HTML catches copy wherever it comes from: entry data,
+ * glossary, motifs, findings, plan blurbs, or a string typed directly into
+ * JSX. Scripts are deliberately not stripped, because props passed to client
+ * components live in the RSC payload inside a script tag, which is exactly
+ * where the glossary definitions were hiding.
+ */
+test(
+  "no em dash in the rendered HTML of any route",
+  { skip: BASE ? false : "BASE not set" },
+  async () => {
+    const routes = [
+      "/",
+      "/giants",
+      "/motifs",
+      "/map",
+      "/findings",
+      "/evidence",
+      "/about",
+      "/pricing",
+      "/compare",
+      "/privacy",
+      "/terms",
+      "/login",
+      "/signup",
+      ...master.map((g) => `/giants/${g.slug}`),
+    ];
+
+    const offenders = [];
+    for (const route of routes) {
+      const html = await (await fetch(`${BASE}${route}`)).text();
+      const at = html.indexOf("—");
+      if (at !== -1) {
+        offenders.push(
+          `${route}: ...${html.slice(Math.max(0, at - 70), at + 70).replace(/\s+/g, " ")}...`
+        );
+      }
+    }
+
+    assert.deepEqual(
+      offenders,
+      [],
+      `em dash in rendered output, use a comma, colon or full stop:\n${offenders.join("\n")}`
+    );
+  }
+);
 
 test("the removal offer is one string, byte identical on every entry that carries it", () => {
   const notes = master
