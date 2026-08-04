@@ -68,6 +68,19 @@ export interface Giant {
   /** Keys into motifs.json — the cross-cultural layer. Not lore; safe for the client. */
   motifs?: string[];
   /**
+   * An offer to remove or correct the entry at a community's request.
+   *
+   * Deliberately public rather than lore, and rendered outside the paywalled
+   * account: an offer to withdraw material that a reader has to pay 4.99 USD
+   * to discover is worse than not making the offer.
+   */
+  communityNote?: string;
+  /**
+   * Overrides the default text of the unverified warning box. Set where the
+   * standard "Unverified modern legend" wording is not the right claim.
+   */
+  statusLine?: string;
+  /**
    * Deliberately short because the record is thin or the tradition could not
    * be attributed to a specific community. Always free — we do not charge for
    * an entry whose main content is an admission.

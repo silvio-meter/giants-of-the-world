@@ -72,6 +72,58 @@ export default function EvidencePage() {
           the entry stops.
         </p>
       </div>
+
+      {/*
+        Public, no paywall, no login. A corrections log that a reader has to
+        sign in to see would not be a corrections log.
+        Newest first: add new entries directly below this comment.
+      */}
+      <section className="mt-14 border-t border-border pt-10">
+        <h2 className="font-[family-name:var(--font-cinzel)] text-xs tracking-[0.25em] text-accent-gold uppercase">
+          Corrections
+        </h2>
+
+        <article className="mt-6">
+          <h3 className="font-[family-name:var(--font-cinzel)] text-sm text-accent-gold">
+            4 August 2026, the daeva post
+          </h3>
+          <div className="mt-3 space-y-4 text-sm leading-relaxed text-text-primary/90">
+            <p>
+              A long post published on X on 4 August traced the word for giant
+              from Proto-Indo-European through Avestan into Persian, Georgian,
+              South Slavic and Albanian. Four things in it were stated more
+              firmly than the evidence allows.
+            </p>
+            <p>
+              The post said the usual reading is that a reform demonised the
+              gods of a rival cult. That sentence merges two different
+              scholarly explanations of the Avestan inversion into one, and
+              they are not the same argument.
+            </p>
+            <p>
+              The post said the reversal itself is not in doubt. Encyclopaedia
+              Iranica lists whether the daivas were originally gods among the
+              questions still open, so that was too strong.
+            </p>
+            <p>
+              The post glossed the Proto-Indo-European root as the shining one.
+              The standard gloss is the celestial one, and Slavic divo and
+              diviti se sit on the same root without meaning god at all.
+            </p>
+            <p>
+              The post named Albanian div and dif in its opening line. We have
+              not been able to source that to a reference work we can cite, and
+              we are not repeating it until we can.
+            </p>
+            <p>
+              The Georgian point stands. Georgian is Kartvelian, the word did
+              not descend into it, and it was carried in. The borrowing route
+              into South Slavic stands too, and is better supported than the
+              post allowed.
+            </p>
+          </div>
+        </article>
+      </section>
     </article>
   );
 }

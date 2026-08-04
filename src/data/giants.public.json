@@ -987,8 +987,8 @@
       "race"
     ],
     "sources": [
-      "Jose Miguel de Barandiaran, Basque mythology fieldwork and collections (20th c.)",
-      "Resurreccion Maria de Azkue, Euskalerriaren Yakintza (1935-47)",
+      "José Miguel de Barandiarán, Basque mythology fieldwork and collections (20th c.)",
+      "Resurrección María de Azkue, Euskalerriaren Yakintza (1935-47)",
       "Basque and Navarrese megalithic place-names (jentiletxe, jentilarri)"
     ],
     "image": "/images/giants/jentilak.jpg",
@@ -1028,7 +1028,7 @@
       "jentilak"
     ],
     "sources": [
-      "Basque oral tradition via Barandiaran and Azkue collections",
+      "Basque oral tradition via Barandiarán and Azkue collections",
       "Olentzero song texts, 19th c. onward, with regional variants",
       "20th-c. Basque cultural documentation of the modern gift-bringer role"
     ],
@@ -1551,10 +1551,10 @@
     ],
     "culture": "Paiute",
     "region": "North America",
-    "type": "race",
-    "freeEntry": false,
+    "type": "modern-legend",
+    "freeEntry": true,
     "height": "Tall (oral tradition)",
-    "shortDescription": "Red-haired cannibal giants of Paiute tradition, linked to Lovelock Cave.",
+    "shortDescription": "A Northern Paiute tradition about a people-eating tribe, and how it became a story about giants.",
     "related": [
       "dzunukwa",
       "tsul-kalu",
@@ -1567,13 +1567,13 @@
     "tags": [
       "paiute",
       "lovelock",
-      "red-hair",
       "oral-history"
     ],
     "sources": [
       "Sarah Winnemucca Hopkins, Life Among the Piutes (1883)",
       "L.L. Loud and M.R. Harrington, Lovelock Cave, UC Publications in American Archaeology and Ethnology (1929)",
-      "Subsequent Great Basin archaeological literature"
+      "Subsequent Great Basin archaeological literature",
+      "Adrienne Mayor, Fossil Legends of the First Americans (2005)"
     ],
     "image": "/images/giants/si-te-cah.jpg",
     "imageAlt": "Si-Te-Cah of Paiute tradition",
@@ -1582,6 +1582,7 @@
       "pre-people",
       "bones-as-proof"
     ],
+    "statusLine": "Modern claim, unverified",
     "heightMeters": null,
     "hasScholarlyNotes": false
   },
@@ -1722,7 +1723,7 @@
     "culture": "Australian Aboriginal (Gunditjmara related landscape)",
     "region": "Australia",
     "type": "folklore",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Ancestral / giant scale",
     "shortDescription": "Ancestral beings of giant scale in the volcanic landscape of Budj Bim.",
     "related": [
@@ -1744,7 +1745,8 @@
       "Gunditjmara tradition, via Gunditj Mirring Traditional Owners Aboriginal Corporation",
       "UNESCO World Heritage inscription, Budj Bim Cultural Landscape (2019)",
       "Published argon-argon dating of the Budj Bim eruption",
-      "Archaeological literature on the Budj Bim aquaculture systems"
+      "Archaeological literature on the Budj Bim aquaculture systems",
+      "AIATSIS protocols for Indigenous knowledge"
     ],
     "image": "/images/giants/budj-bim.jpg",
     "imageAlt": "Ancestral giants of Budj Bim country",
@@ -1753,6 +1755,7 @@
       "builder",
       "petrified"
     ],
+    "communityNote": "Whether this material should appear in a general catalogue at all is a fair question. We have kept a short entry rather than deleting it silently, because the gap and the reason for it are worth showing, but we would remove or correct it on request from the relevant community.",
     "heightMeters": 4.5,
     "hasScholarlyNotes": false
   },
@@ -1764,7 +1767,7 @@
     "culture": "Australian Aboriginal (Tiwi)",
     "region": "Australia",
     "type": "folklore",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Giant",
     "shortDescription": "One-eyed giant spirits of Tiwi tradition who hunt with clubs and bags.",
     "related": [
@@ -1785,7 +1788,9 @@
     "sources": [
       "Tiwi oral tradition, Bathurst and Melville Islands",
       "Charles P. Mountford, Tiwi ethnographic work (1950s): period-bound",
-      "Contemporary Tiwi art centres: Tiwi Design, Jilamara, Munupi"
+      "Contemporary Tiwi art centres: Tiwi Design, Jilamara, Munupi",
+      "AIATSIS protocols for Indigenous knowledge",
+      "Charles P. Mountford's Tiwi work is bound to its period and its permissions, and is cited here as a record of what was published, not as a grant of consent."
     ],
     "image": "/images/giants/papinijuwari.jpg",
     "imageAlt": "Papinijuwari of Tiwi tradition",
@@ -1793,6 +1798,7 @@
       "one-eye",
       "cannibal"
     ],
+    "communityNote": "Whether this material should appear in a general catalogue at all is a fair question. We have kept a short entry rather than deleting it silently, because the gap and the reason for it are worth showing, but we would remove or correct it on request from the relevant community.",
     "heightMeters": 4.5,
     "hasScholarlyNotes": false
   },
@@ -1874,6 +1880,7 @@
       "wild-highland"
     ],
     "restrained": true,
+    "communityNote": "Whether this material should appear in a general catalogue at all is a fair question. We have kept a short entry rather than deleting it silently, because the gap and the reason for it are worth showing, but we would remove or correct it on request from the relevant community.",
     "heightMeters": 4.5,
     "hasScholarlyNotes": false
   },
@@ -1913,6 +1920,7 @@
       "wild-highland"
     ],
     "restrained": true,
+    "communityNote": "Whether this material should appear in a general catalogue at all is a fair question. We have kept a short entry rather than deleting it silently, because the gap and the reason for it are worth showing, but we would remove or correct it on request from the relevant community.",
     "heightMeters": 4.5,
     "hasScholarlyNotes": false
   },
@@ -2247,9 +2255,9 @@
     ],
     "sources": [
       "Martin Helwig, map of Silesia (1561): early depiction",
-      "Johannes Praetorius, Rubezahl collections (17th c.)",
-      "J.K.A. Musaus, Volksmarchen der Deutschen (1782-86)",
-      "Czech Krakonos tradition, incl. Krkonosske pohadky"
+      "Johannes Praetorius, Rübezahl collections (17th c.)",
+      "J.K.A. Musäus, Volksmärchen der Deutschen (1782-86)",
+      "Czech Krakonoš tradition, incl. Krkonošské pohádky"
     ],
     "image": "/images/giants/rubezahl.jpg",
     "imageAlt": "Rübezahl of the Giant Mountains",
