@@ -10,8 +10,13 @@ import { siteUrl } from "./site";
 
 /**
  * The confirmation email is the single point of failure in double opt-in: if
- * it does not arrive, the person never becomes a subscriber, and there is no
- * DMARC record on the domain yet.
+ * it does not arrive, the person never becomes a subscriber.
+ *
+ * The domain is now fully authenticated: SPF on the sending subdomain, DKIM
+ * via resend._domainkey, and DMARC at p=none, which is monitoring rather than
+ * enforcement. That covers the mechanics, but authentication only proves the
+ * mail is genuinely from us. It does not stop a filter deciding a message
+ * looks promotional.
  *
  * So it is deliberately plain. No dark background, no gold headings, no
  * imagery, nothing that reads as a campaign. One sentence, one link, and a

@@ -29,15 +29,20 @@ just produces columns nobody reads.
 
 ## Ready to paste
 
-Profile and bio links:
+Profile and bio links. Use the short form: a profile prints the URL it links
+to, and a raw UTM string reads as clutter next to a handle. Each of these
+redirects to the tagged homepage, so attribution is identical.
 
-| Platform  | Link to use                                                   |
-|-----------|---------------------------------------------------------------|
-| X         | `https://www.giantscodex.com/?utm_source=x&utm_medium=bio`         |
-| Instagram | `https://www.giantscodex.com/?utm_source=instagram&utm_medium=bio` |
-| YouTube   | `https://www.giantscodex.com/?utm_source=youtube&utm_medium=bio`   |
-| Pinterest | `https://www.giantscodex.com/?utm_source=pinterest&utm_medium=bio` |
-| TikTok    | `https://www.giantscodex.com/?utm_source=tiktok&utm_medium=bio`    |
+| Platform  | Put this in the bio                  | It redirects to                                                    |
+|-----------|--------------------------------------|--------------------------------------------------------------------|
+| X         | `https://www.giantscodex.com/x`         | `/?utm_source=x&utm_medium=bio`         |
+| Instagram | `https://www.giantscodex.com/instagram` | `/?utm_source=instagram&utm_medium=bio` |
+| YouTube   | `https://www.giantscodex.com/youtube`   | `/?utm_source=youtube&utm_medium=bio`   |
+| Pinterest | `https://www.giantscodex.com/pinterest` | `/?utm_source=pinterest&utm_medium=bio` |
+| TikTok    | `https://www.giantscodex.com/tiktok`    | `/?utm_source=tiktok&utm_medium=bio`    |
+
+The redirects are defined in `next.config.ts`. Adding a platform means adding
+it to that list and to the disallow list in `src/app/robots.ts`.
 
 Links inside a post, pin or video description point at the relevant entry
 rather than the homepage, with `utm_medium=post`:
