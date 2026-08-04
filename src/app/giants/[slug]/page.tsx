@@ -199,8 +199,14 @@ export default async function GiantDetailPage({ params }: Props) {
           className="mt-6 rounded border border-amber-700/50 bg-amber-950/30 px-4 py-3 text-sm text-amber-100/90"
           role="note"
         >
+          {/*
+            statusLine overrides the default claim where "modern legend" is
+            not what the entry is actually saying. si-te-cah is a nineteenth
+            century written account that later grew into a giant story, so
+            calling it a modern legend would misdescribe it.
+          */}
           <strong className="font-medium text-amber-200">
-            Unverified modern legend.
+            {giant.statusLine ?? "Unverified modern legend."}
           </strong>{" "}
           This entry is circulating oral tradition, not confirmed fact. No
           official records corroborate the account.{" "}
@@ -249,6 +255,20 @@ export default async function GiantDetailPage({ params }: Props) {
                   <li key={s}>{s}</li>
                 ))}
               </ul>
+            </section>
+          )}
+
+          {/*
+            Below the sources block and outside the paywalled account on
+            purpose. This is an offer to withdraw material at a community's
+            request, and an offer a reader has to pay to discover is not an
+            offer. It renders identically whether or not anyone is signed in.
+          */}
+          {giant.communityNote && (
+            <section className="mt-8 rounded border border-border bg-surface/60 px-4 py-3">
+              <p className="text-sm leading-relaxed text-text-muted">
+                {giant.communityNote}
+              </p>
             </section>
           )}
         </div>

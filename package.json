@@ -9,7 +9,7 @@
     "lint": "eslint",
     "build:data": "node scripts/build-data.mjs",
     "typecheck": "tsc --noEmit",
-    "test": "node --test --no-warnings=MODULE_TYPELESS_PACKAGE_JSON \"tests/*.test.mjs\" \"scripts/verify-data.test.mjs\"",
+    "test": "node --test --no-warnings=MODULE_TYPELESS_PACKAGE_JSON \"tests/*.test.mjs\" \"scripts/verify-data.test.mjs\" \"scripts/verify-diacritics.test.mjs\"",
     "verify": "npm run lint && npm run typecheck && npm test",
     "test:bundle": "REQUIRE_BUILD=1 node --test --no-warnings=MODULE_TYPELESS_PACKAGE_JSON \"scripts/verify-bundle.test.mjs\"",
     "test:seo": "node --test --no-warnings=MODULE_TYPELESS_PACKAGE_JSON \"scripts/verify-seo.test.mjs\""

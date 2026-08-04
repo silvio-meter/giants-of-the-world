@@ -57,13 +57,13 @@ export default function HomePage() {
 
         <div className="rise-in relative z-10 mx-auto max-w-3xl text-center">
           <p className="font-[family-name:var(--font-cinzel)] text-[10px] tracking-[0.4em] text-accent-gold/80 uppercase sm:text-xs">
-            A forbidden codex
+            A sourced codex
           </p>
           <h1 className="mt-4 font-[family-name:var(--font-cinzel)] text-4xl leading-tight tracking-wide text-accent-gold sm:text-5xl md:text-6xl">
             Giants of the World
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-text-muted sm:text-lg">
-            From frost-born Ymir to the whispered shadows of modern conflict -
+            From frost-born Ymir to the whispered shadows of modern conflict:
             a catalogue of the large ones who haunt myth, folklore, and rumor.
             Open carefully. The fog does not clear for everyone.
           </p>

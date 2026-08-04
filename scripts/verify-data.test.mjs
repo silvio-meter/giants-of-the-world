@@ -164,21 +164,44 @@ const motifVocabulary = read("src/data/motifs.json");
 const deep = master.filter((g) => g.sections);
 const words = (s) => s.trim().split(/\s+/).filter(Boolean).length;
 
-test("deep entries carry all three sections, none of them token", () => {
-  for (const giant of deep.filter((g) => !g.restrained)) {
+/**
+ * Both length guards below exist to stop a paywalled entry being thin, which
+ * their own failure messages say outright. A free entry is not sold, so the
+ * rationale does not reach it: si-te-cah closes on two short paragraphs
+ * because that is where its argument ends, and there is nothing to pay for.
+ *
+ * Scoped to paid entries rather than deleted, so the protection still applies
+ * everywhere money changes hands. Sections must still exist and be non-empty
+ * on every entry, free or not, which the separate test below enforces.
+ */
+const paidDeep = deep.filter((g) => !g.restrained && !g.freeEntry);
+
+test("paid entries carry all three sections, none of them token", () => {
+  for (const giant of paidDeep) {
     for (const key of ["story", "origins", "disputed"]) {
       const text = giant.sections[key];
       assert.ok(text?.trim(), `${giant.slug}: section "${key}" is empty`);
       assert.ok(
         words(text) >= 80,
-        `${giant.slug}: section "${key}" is only ${words(text)} words — too thin to be worth paying for`
+        `${giant.slug}: section "${key}" is only ${words(text)} words, too thin to be worth paying for`
       );
     }
   }
 });
 
-test("deep entries put real substance behind the paywall", () => {
-  for (const giant of deep.filter((g) => !g.restrained)) {
+test("free entries still carry three non-empty sections", () => {
+  for (const giant of deep.filter((g) => g.freeEntry)) {
+    for (const key of ["story", "origins", "disputed"]) {
+      assert.ok(
+        giant.sections[key]?.trim(),
+        `${giant.slug}: section "${key}" is empty`
+      );
+    }
+  }
+});
+
+test("paid entries put real substance behind the paywall", () => {
+  for (const giant of paidDeep) {
     const paid = words(Object.values(giant.sections).join(" "));
     assert.ok(
       paid >= 350,
