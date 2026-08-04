@@ -1,52 +1,84 @@
 {
   "jotunn": {
     "term": "Jötunn",
-    "aliases": ["jotunn", "jötunn", "jötnar", "jotnar"],
+    "aliases": [
+      "jotunn",
+      "jötunn",
+      "jötnar",
+      "jotnar"
+    ],
     "definition": "Old Norse term conventionally translated \"giant,\" but the category is broader and messier than that English word implies, covering beings closer to gods, ancestors, or primal forces depending on context. \"Giant\" is a useful shorthand, not a precise equivalent."
   },
   "cubit": {
     "term": "Cubit",
-    "aliases": ["cubit", "cubits"],
+    "aliases": [
+      "cubit",
+      "cubits"
+    ],
     "definition": "An ancient unit of length based on the forearm, roughly 18 inches / 45 cm, but it varied by region and era. Treat cubit-based height figures as approximate, not precise measurements."
   },
   "span": {
     "term": "Span",
-    "aliases": ["span", "spans"],
-    "definition": "An ancient unit of length based on the spread hand, thumb to little finger — roughly half a cubit, about 9 inches / 23 cm. Like the cubit, it varied by region and era."
+    "aliases": [
+      "span",
+      "spans"
+    ],
+    "definition": "An ancient unit of length based on the spread hand, thumb to little finger: roughly half a cubit, about 9 inches / 23 cm. Like the cubit, it varied by region and era."
   },
   "ell": {
     "term": "Ell",
-    "aliases": ["ell", "ells"],
+    "aliases": [
+      "ell",
+      "ells"
+    ],
     "definition": "A unit of length once used across Europe, typically based on the arm from shoulder to wrist or fingertip. It was never standardized: an English ell, a Scottish ell, and a Flemish ell were three different lengths."
   },
   "primordial": {
     "term": "Primordial",
-    "aliases": ["primordial"],
-    "definition": "Existing before, or at, the ordering of the world — not simply \"very old.\" The category groups beings whose role is cosmological (shaping or predating creation itself) rather than historical, though traditions disagree on exactly where the line falls."
+    "aliases": [
+      "primordial"
+    ],
+    "definition": "Existing before, or at, the ordering of the world, not simply \"very old.\" The category groups beings whose role is cosmological (shaping or predating creation itself) rather than historical, though traditions disagree on exactly where the line falls."
   },
   "cyclopean": {
     "term": "Cyclopean",
-    "aliases": ["cyclopean", "cyclops", "cyclopes"],
+    "aliases": [
+      "cyclopean",
+      "cyclops",
+      "cyclopes"
+    ],
     "definition": "Relating to the Cyclopes, one-eyed giants of Greek myth, and by extension anything on their scale. The word is also used for a real style of massive, roughly-fitted stone masonry once credited to giants because no other builder seemed plausible."
   },
   "titan": {
     "term": "Titan",
-    "aliases": ["titan", "titans", "titanic"],
-    "definition": "In Greek myth, the generation of primordial deities before the Olympians — not \"giants\" in the folkloric sense, though the English word \"titanic\" borrows their scale. Their defeat by the Olympians (the Titanomachy) is a war-against-the-old-order story, not a monster story."
+    "aliases": [
+      "titan",
+      "titans",
+      "titanic"
+    ],
+    "definition": "In Greek myth, the generation of primordial deities before the Olympians, not \"giants\" in the folkloric sense, though the English word \"titanic\" borrows their scale. Their defeat by the Olympians (the Titanomachy) is a war-against-the-old-order story, not a monster story."
   },
   "gigante": {
     "term": "Gigante",
-    "aliases": ["gigante", "gigantes"],
+    "aliases": [
+      "gigante",
+      "gigantes"
+    ],
     "definition": "\"Giant\" in Spanish, Italian, and Portuguese, used across Iberian and Latin American folklore. Like the English word, it covers a wide range of beings and is not a precise category on its own."
   },
   "oni": {
     "term": "Oni",
-    "aliases": ["oni"],
-    "definition": "Demon-like ogres of Japanese folklore, usually depicted as horned, fanged, and immensely strong. \"Giant\" captures their scale but not their nature — they're closer to malevolent spirits than to a giant race."
+    "aliases": [
+      "oni"
+    ],
+    "definition": "Demon-like ogres of Japanese folklore, usually depicted as horned, fanged, and immensely strong. \"Giant\" captures their scale but not their nature: they're closer to malevolent spirits than to a giant race."
   },
   "frost giant": {
     "term": "Frost giant",
-    "aliases": ["frost giant", "frost giants"],
-    "definition": "A common English label for Norse jötnar associated with ice and cold, but the sources are less tidy than the label suggests — several so-called frost giants carry alternate names pointing toward sea or stone rather than ice specifically."
+    "aliases": [
+      "frost giant",
+      "frost giants"
+    ],
+    "definition": "A common English label for Norse jötnar associated with ice and cold, but the sources are less tidy than the label suggests: several so-called frost giants carry alternate names pointing toward sea or stone rather than ice specifically."
   }
 }

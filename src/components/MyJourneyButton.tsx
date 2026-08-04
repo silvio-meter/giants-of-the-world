@@ -23,7 +23,7 @@ export function MyJourneyButton() {
   if (!userId || !isPaid) {
     return (
       <PremiumLock
-        label="Unlock My Journey — a shareable map of your saved giants"
+        label="Unlock My Journey: a shareable map of your saved giants"
         className="max-w-sm"
       />
     );
