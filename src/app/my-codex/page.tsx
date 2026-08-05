@@ -151,7 +151,7 @@ export default async function MyCodexPage() {
             {seals.length > 0 && (
               <div className="mt-5">
                 <p className="text-xs text-text-muted">
-                  Motif seals — unlocked when two or more saved giants share a tradition.
+                  Motif seals: unlocked when two or more saved giants share a tradition.
                 </p>
                 <div className="mt-4 flex flex-wrap gap-5">
                   {seals.map((m) => (

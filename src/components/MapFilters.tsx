@@ -208,7 +208,7 @@ export function MapFilters({
       {lineMotifOptions.length > 0 && (
         <div className="pt-1">
           <p className="mb-1.5 text-xs text-text-muted">
-            Motif connections — pick one or more to draw
+            Motif connections: pick one or more to draw
           </p>
           <div className="flex max-h-28 flex-wrap gap-x-4 gap-y-1.5 overflow-y-auto rounded border border-border/60 p-2">
             {lineMotifOptions.map((m) => {
