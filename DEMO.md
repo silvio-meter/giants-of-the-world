@@ -2,7 +2,9 @@
 
 **Link:** https://www.giantscodex.com
 
-58 entries, 14 readable in full for free, 31 cultures.
+The homepage prints the live counts and computes them from the data. Read
+them there rather than quoting a figure here that will age the moment an
+entry is added or opened up.
 
 ---
 
