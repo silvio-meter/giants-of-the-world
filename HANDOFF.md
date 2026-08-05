@@ -196,10 +196,15 @@ the bundle/SEO guards were green as of the last change.
 
 ## Data snapshot (as of the last content change)
 
-58 giants (was 57; Surtr added), 14 free entries, 31 cultures, 28 motifs (was
-27; `first-and-last` added), all 58 have map coordinates. `npm test` is
-42 tests as of the last merge — if it's a different number, something
-changed since this was written; trust the code.
+Do not trust a count written down here. Every one of them is computed, and
+this file has already been wrong once: it said 14 free entries after three
+more had been opened up.
+
+    node -e 'const g=require("./src/data/giants.json");console.log(g.length,"entries,",g.filter(x=>x.freeEntry).length,"free")'
+
+The homepage prints the entry and free counts. `npm test` prints the test
+count. The catalogue is about to expand, so anything numeric in this file is
+stale by design.
 
 ## Open items
 
