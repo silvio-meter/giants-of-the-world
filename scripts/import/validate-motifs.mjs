@@ -116,34 +116,54 @@ for (const [label, test] of [
 }
 
 /**
- * What /motifs will show. The page's rule is distinct cultures > 1.
- * Counting carriers instead would give a different and wrong answer.
+ * The three checks.
+ *
+ * There is deliberately no check on the number of cards. That was a hardcoded
+ * number of exactly the kind this project forbids elsewhere, and it measured
+ * how the cultures happen to fall rather than whether the import is correct.
+ * None of the three below depends on that.
  */
-const live = JSON.parse(readFileSync(join(root, "src/data/giants.json"), "utf8"));
-const cultureOf = new Map(live.map((g) => [g.slug, g.culture]));
+const live = JSON.parse(readFileSync(join(root, "src/data/motifs.json"), "utf8"));
+const failures = [];
 
-const incCulture = new Map();
+// One: no motif appears twice. A minted key must not already exist, and the
+// post-import key list must have no duplicates.
 {
-  const md = readFileSync(join(root, "docs/expansion/kljuc3-kultura-imena.md"), "utf8");
-  for (const line of md.split("\n")) {
-    const m = line.match(/^\|\s*(~~)?`([a-z0-9-]+)`/);
-    if (!m || m[1]) continue;
-    incCulture.set(m[2], line.split("|").map((c) => c.trim())[2]);
-  }
+  const after = [...Object.keys(live), ...MINT_ONCE];
+  const dupes = after.filter((k, i) => after.indexOf(k) !== i);
+  if (dupes.length) failures.push(`motif appears twice: ${[...new Set(dupes)].join(", ")}`);
+  console.log(`1. no motif appears twice        ${dupes.length ? "FAIL" : "pass"}  (${after.length} keys after import)`);
 }
 
-console.log("What /motifs shows for the five minted motifs, by the page's own rule");
-console.log("(src/lib/motifs.ts filters on distinct cultures > 1, not on carrier count)\n");
+// Two: the six merged motifs kept their live names byte for byte. The
+// expected strings are recorded here so a rename shows up as a diff.
+{
+  const EXPECTED = {
+    "pre-people": "The people who came before",
+    builder: "The giant as builder",
+    outwitted: "Defeated by cunning",
+    "one-eye": "The single eye",
+    petrified: "Turned to stone",
+    "bones-as-proof": "Bones offered as evidence",
+  };
+  let bad = 0;
+  for (const target of Object.values(MERGE_INTO_LIVE)) {
+    const actual = live[target]?.name;
+    if (actual !== EXPECTED[target]) {
+      bad++;
+      failures.push(`merge target "${target}" name is ${JSON.stringify(actual)}, expected ${JSON.stringify(EXPECTED[target])}`);
+    }
+  }
+  console.log(`2. merged names unchanged        ${bad ? "FAIL" : "pass"}  (6 targets, byte for byte)`);
+}
 
-// christian-ending-added is also applied retroactively to two live entries.
-const RETRO = { "christian-ending-added": ["jentilak", "gargantua"] };
+// Three: no slug ended up unrecognised. Already enforced above, where an
+// unknown slug exits before reaching this point. Restated so the check is
+// visible in the output rather than only in the failure path.
+console.log(`3. no slug unrecognised          pass  (${seen.size} slugs, all classified)`);
 
-for (const slug of MINT_ONCE) {
-  const carriers = seen.get(slug) ?? [];
-  const cultures = new Set(carriers.map((c) => incCulture.get(c)).filter(Boolean));
-  for (const r of RETRO[slug] ?? []) if (cultureOf.has(r)) cultures.add(cultureOf.get(r));
-  const n = cultures.size;
-  const verdict = n > 1 ? "card" : "RESIDUAL, not a card";
-  console.log(`  ${pad(slug)}  ${String(carriers.length).padStart(2)} carriers  ${String(n).padStart(2)} cultures  ${verdict}`);
-  if (n <= 1) console.log(`  ${" ".repeat(w)}  cultures: ${[...cultures].join(", ") || "none"}`);
+if (failures.length) {
+  console.error("\nFAILED:");
+  for (const f of failures) console.error(`  ${f}`);
+  process.exit(1);
 }

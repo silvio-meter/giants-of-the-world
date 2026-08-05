@@ -40,3 +40,14 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 .env.local
+
+# expansion source material, never committed
+#
+# These files carry the full paid text of unpublished entries. Git history is
+# permanent: once committed, one fork or one extra collaborator puts that text
+# beyond recall, and rewriting history to remove it is unreliable and always
+# too late. Versioning and backup for this content live outside the repository.
+#
+# tests/no-expansion-tracked.test.mjs enforces this. The ignore rule states the
+# intention; the test is what actually stops it.
+docs/expansion/

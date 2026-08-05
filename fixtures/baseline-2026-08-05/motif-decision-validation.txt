@@ -13,7 +13,6 @@ MINT once
   christian-ending-added         1 shipping  
   ended-by-christianity          3 shipping  
   real-site-attached            22 shipping  
-  river-from-a-giant             2 shipping  
   shaped-the-land-while-living   3 shipping  
 
 STAGE as a literal string, nothing created
@@ -23,13 +22,8 @@ STAGE as a literal string, nothing created
   invulnerable-hide              1 shipping  
   named-for-the-dead             1 shipping  
   raised-by-animals              1 shipping  
+  river-from-a-giant             2 shipping  
 
-What /motifs shows for the five minted motifs, by the page's own rule
-(src/lib/motifs.ts filters on distinct cultures > 1, not on carrier count)
-
-  real-site-attached            22 carriers  19 cultures  card
-  ended-by-christianity          3 carriers   3 cultures  card
-  shaped-the-land-while-living   3 carriers   3 cultures  card
-  river-from-a-giant             2 carriers   1 cultures  RESIDUAL, not a card
-                                cultures: Croatian
-  christian-ending-added         1 carriers   2 cultures  card
+1. no motif appears twice        pass  (32 keys after import)
+2. merged names unchanged        pass  (6 targets, byte for byte)
+3. no slug unrecognised          pass  (17 slugs, all classified)

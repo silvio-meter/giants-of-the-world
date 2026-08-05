@@ -1,8 +1,10 @@
 /**
  * The motif decision, loaded for the importer.
  *
- * Source of truth: docs/expansion/ODLUKA-motivi.md, 5 August 2026. That file
- * is a decision, not a proposal. This is it in a form the importer can read.
+ * Source of truth: docs/expansion/ODLUKA-motivi.md as revised on 5 August
+ * 2026, the revision that changed the minting rule from two bearers to two
+ * cultures. That file is a decision, not a proposal. This is it in a form the
+ * importer can read.
  *
  * Nothing here mints, merges or writes anything. It classifies, and it stops
  * on anything it does not recognise.
@@ -27,32 +29,40 @@ export const MERGE_INTO_LIVE = {
 };
 
 /**
- * Five are minted, once, on first encounter.
+ * Four are minted, once, on first encounter.
  *
- * The rule behind the list is that a motif needs at least two named cases.
- * One case is a label, not a motif. christian-ending-added passes only
- * because the South America brief requires retroactive tagging onto jentilak
- * and gargantua, which takes it from one to three.
+ * The rule is at least two distinct cultures, not at least two bearers. That
+ * is the rule crossCulturalMotifs() in src/lib/motifs.ts already enforces, on
+ * the grounds the motifs page itself gives: two cases from one tradition are
+ * one tradition twice, not recurrence across cultures.
+ *
+ * christian-ending-added passes only because the South America brief requires
+ * retroactive tagging onto jentilak and gargantua, which takes it to three
+ * cultures.
  */
 export const MINT_ONCE = [
   "real-site-attached",
   "ended-by-christianity",
   "shaped-the-land-while-living",
-  "river-from-a-giant",
   "christian-ending-added",
 ];
 
 /**
- * Six are written to staging as literal strings. Nothing is created.
+ * Seven are written to staging as literal strings. Nothing is created.
  *
- * Not discarded: when a second case arrives they get minted then. Discarding
- * would lose the first case silently.
+ * Not discarded: when a case from another culture arrives they get minted
+ * then. Discarding would lose the first case silently.
  *
- * buried-under-volcanoes is the trap in this list. The metadata shows two
- * cases, but one of them is cherufe, which is held back and does not ship, so
- * its real count on publication day is one.
+ * Two of these are here for reasons worth keeping written down.
+ *
+ * river-from-a-giant has two bearers, dragonja and klek, but both are
+ * Croatian, so it has one culture and waits.
+ *
+ * buried-under-volcanoes looks like two cases, but one is cherufe, which is
+ * held back, so its real count on publication day is one.
  */
 export const STAGE_AND_WAIT = [
+  "river-from-a-giant",
   "buried-under-volcanoes",
   "named-for-the-dead",
   "giants-as-heroes",
