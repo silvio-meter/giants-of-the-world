@@ -1,0 +1,35 @@
+entries read: 32  (held back and excluded: cherufe)
+distinct incoming motif slugs: 17
+
+MERGE into an existing motif, nothing created
+  bones-read-as-giants           2 shipping  -> bones-as-proof
+  built-the-megaliths            7 shipping  -> builder
+  killed-by-cunning              7 shipping  -> outwitted
+  one-eye                        5 shipping  -> one-eye
+  petrified-into-landscape       3 shipping  -> petrified
+  those-who-came-before         18 shipping  -> pre-people
+
+MINT once
+  christian-ending-added         1 shipping  
+  ended-by-christianity          3 shipping  
+  real-site-attached            22 shipping  
+  river-from-a-giant             2 shipping  
+  shaped-the-land-while-living   3 shipping  
+
+STAGE as a literal string, nothing created
+  arrived-by-sea                 1 shipping  
+  buried-under-volcanoes         1 shipping  
+  giants-as-heroes               1 shipping  
+  invulnerable-hide              1 shipping  
+  named-for-the-dead             1 shipping  
+  raised-by-animals              1 shipping  
+
+What /motifs shows for the five minted motifs, by the page's own rule
+(src/lib/motifs.ts filters on distinct cultures > 1, not on carrier count)
+
+  real-site-attached            22 carriers  19 cultures  card
+  ended-by-christianity          3 carriers   3 cultures  card
+  shaped-the-land-while-living   3 carriers   3 cultures  card
+  river-from-a-giant             2 carriers   1 cultures  RESIDUAL, not a card
+                                cultures: Croatian
+  christian-ending-added         1 carriers   2 cultures  card
