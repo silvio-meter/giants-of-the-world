@@ -101,8 +101,8 @@ export async function CompareResults({
           <Row label="Type" a={formatType(giantA.type)} b={formatType(giantB.type)} />
           <Row
             label="Height"
-            a={giantA.height ?? "—"}
-            b={giantB.height ?? "—"}
+            a={giantA.height ?? "Not recorded"}
+            b={giantB.height ?? "Not recorded"}
           />
         </dl>
 
@@ -140,7 +140,7 @@ export async function CompareResults({
         ) : (
           <p className="mt-3 text-sm text-text-muted">
             No shared motif between these two, at least none catalogued yet.
-            That is not nothing — most pairs do not share one.
+            That is not nothing: most pairs do not share one.
           </p>
         )}
       </section>
