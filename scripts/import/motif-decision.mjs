@@ -29,41 +29,44 @@ export const MERGE_INTO_LIVE = {
 };
 
 /**
- * Four are minted, once, on first encounter.
+ * Three are minted, once, on first encounter.
  *
  * The rule is at least two distinct cultures, not at least two bearers. That
  * is the rule crossCulturalMotifs() in src/lib/motifs.ts already enforces, on
  * the grounds the motifs page itself gives: two cases from one tradition are
  * one tradition twice, not recurrence across cultures.
- *
- * christian-ending-added passes only because the South America brief requires
- * retroactive tagging onto jentilak and gargantua, which takes it to three
- * cultures.
  */
 export const MINT_ONCE = [
   "real-site-attached",
   "ended-by-christianity",
   "shaped-the-land-while-living",
-  "christian-ending-added",
 ];
 
 /**
- * Seven are written to staging as literal strings. Nothing is created.
+ * Eight are written to staging as literal strings. Nothing is created.
  *
  * Not discarded: when a case from another culture arrives they get minted
  * then. Discarding would lose the first case silently.
  *
- * Two of these are here for reasons worth keeping written down.
+ * Three of these are here for reasons worth keeping written down.
  *
  * river-from-a-giant has two bearers, dragonja and klek, but both are
  * Croatian, so it has one culture and waits.
  *
  * buried-under-volcanoes looks like two cases, but one is cherufe, which is
  * held back, so its real count on publication day is one.
+ *
+ * christian-ending-added has one bearer in the series, santa-elena-giants. Its
+ * other two, jentilak and gargantua, exist only if the retroactive tagging in
+ * the South America brief is carried out, and that edits live entries in
+ * src/data. Minting it before then would create a motif with one bearer and
+ * one culture, which is the exact fault that stopped buried-under-volcanoes.
+ * It mints when the retroactive tagging is actually done, not before.
  */
 export const STAGE_AND_WAIT = [
   "river-from-a-giant",
   "buried-under-volcanoes",
+  "christian-ending-added",
   "named-for-the-dead",
   "giants-as-heroes",
   "raised-by-animals",

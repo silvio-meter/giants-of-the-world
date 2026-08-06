@@ -10,7 +10,6 @@ MERGE into an existing motif, nothing created
   those-who-came-before         18 shipping  -> pre-people
 
 MINT once
-  christian-ending-added         1 shipping  
   ended-by-christianity          3 shipping  
   real-site-attached            22 shipping  
   shaped-the-land-while-living   3 shipping  
@@ -18,12 +17,13 @@ MINT once
 STAGE as a literal string, nothing created
   arrived-by-sea                 1 shipping  
   buried-under-volcanoes         1 shipping  
+  christian-ending-added         1 shipping  
   giants-as-heroes               1 shipping  
   invulnerable-hide              1 shipping  
   named-for-the-dead             1 shipping  
   raised-by-animals              1 shipping  
   river-from-a-giant             2 shipping  
 
-1. no motif appears twice        pass  (32 keys after import)
+1. no motif appears twice        pass  (31 keys after import)
 2. merged names unchanged        pass  (6 targets, byte for byte)
 3. no slug unrecognised          pass  (17 slugs, all classified)
