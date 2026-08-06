@@ -743,8 +743,7 @@
     "image": "/images/giants/hrungnir.jpg",
     "imageAlt": "Hrungnir the stone giant",
     "motifs": [
-      "war-on-heaven",
-      "petrified"
+      "war-on-heaven"
     ],
     "heightMeters": 4.5,
     "hasScholarlyNotes": false
@@ -952,7 +951,6 @@
     "imageAlt": "Gogmagog the British giant",
     "motifs": [
       "pre-people",
-      "petrified",
       "outwitted"
     ],
     "heightMeters": 5.5,
@@ -998,8 +996,7 @@
     "imageAlt": "Jentilak, Basque mountain giants",
     "motifs": [
       "builder",
-      "pre-people",
-      "petrified"
+      "pre-people"
     ],
     "heightMeters": 4.5,
     "hasScholarlyNotes": false
@@ -2008,8 +2005,7 @@
     "imageAlt": "Kāhui Tipua",
     "motifs": [
       "landscape-body",
-      "pre-people",
-      "petrified"
+      "pre-people"
     ],
     "heightMeters": 4.5,
     "hasScholarlyNotes": false
@@ -2264,7 +2260,7 @@
     "sources": [
       "Martin Helwig, map of Silesia (1561): early depiction",
       "Johannes Praetorius, Rübezahl collections (17th c.)",
-      "J.K.A. Musäus, Volksmärchen der Deutschen (1782-86)",
+      "J.K.A. Musäus, Volksmährchen der Deutschen, vol. 2 (1783)",
       "Czech Krakonoš tradition, incl. Krkonošské pohádky"
     ],
     "image": "/images/giants/rubezahl.jpg",
