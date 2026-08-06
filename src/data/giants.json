@@ -2812,5 +2812,47 @@
       "Prose Edda, Gylfaginning",
       "Surtshellir archaeological surveys (Iceland)"
     ]
+  },
+  {
+    "id": "ispolini",
+    "slug": "ispolini",
+    "name": "Ispolini",
+    "alsoKnownAs": [],
+    "culture": "Bulgarian",
+    "region": "Bulgaria",
+    "type": "race",
+    "freeEntry": false,
+    "height": "up to 3 metres",
+    "shortDescription": "God made three attempts at people. The dwarves were too small to survive. The ispolini were the correction.",
+    "fullDescription": "God made three attempts at people. The dwarves were too small to survive. The ispolini were the correction.",
+    "mysteryNote": "There is a peak in the Balkan range called Ispolin.",
+    "related": [],
+    "coordinates": [
+      42.7,
+      25.3
+    ],
+    "tags": [
+      "balkans",
+      "second-race",
+      "dragons",
+      "blackberry"
+    ],
+    "sources": [
+      "Стойнев, Попов, Василева and Попов, \"Исполини\", Българска митология: Енциклопедичен речник, 2006",
+      "Атанас Илиев, Български предания за исполини, наречени елини, жидови и латини, Сборник за народни умотворения 3, 1890",
+      "Макс Фасмер, \"исполин\", Этимологический словарь русского языка, 1964 to 1973, for the Spali derivation and for Meillet's objection",
+      "Jordanes and Pliny the Elder as cited there"
+    ],
+    "image": "",
+    "imageAlt": "Ispolini, the Bulgarian giants of the second creation",
+    "motifs": [
+      "pre-people"
+    ],
+    "sections": {
+      "story": "Bulgarian tradition places its giants inside a full sequence. The first people God made were dwarves, and they were too small to defend themselves from wild animals or to work the land, so they died out. To replace them God made the ispolini, deliberately as the opposite. We are the third attempt.\n\nThey stood up to three metres with enormous heads, though the regional variants differ: some give them three heads, some a single eye the size of an egg set in the forehead, some a single leg. They lived in the mountains and in caves before history and ate their meat raw. They fought dragons. Their voices carried so far that two of them could hold a conversation from separate mountaintops.\n\nAnd they were frightened of blackberries. The danger was tripping over the brambles and dying, and so the ispolini made sacrifices to the plant.",
+      "origins": "The word is old, and where it comes from is an argument rather than a fact. Ispolin appears meaning giant in Old Church Slavonic texts of Rus by the eleventh century. Max Vasmer derived it from the Spali, a people the Goths defeated somewhere north of the Black Sea. Jordanes records that defeat in the sixth century, and Pliny the Elder had already listed a people called Spalaei in the same region in the first.\n\nIf Vasmer is right, the Bulgarian word for a giant is the name of a nation that lost, which is the same move the folklore itself makes when it calls its giants Greeks and Latins.\n\nHe was not unopposed. Antoine Meillet argued that the initial vowel points to the word reaching Slavic through a Romance intermediary rather than directly from the ethnonym. Vasmer went through the other proposals and turned down each: a Greek Asphaloi, a Celtic Spali, a Turkic Spali, a link to Old Icelandic spjalla, and the folk reading that hears the Slavic word for field inside it.",
+      "disputed": "The names given to them are worth pausing on. Atanas Iliev's 1890 collection is titled, in translation, Bulgarian legends about the ispolini, called Greeks, Jews and Latins. Romanian tradition does the same thing, calling its giants jidovi, novaci and tătari. Two neighbouring traditions independently naming their prehistoric giants after historical neighbouring peoples. The giant here is not only the one who came before. He is the one who is not us, and the vocabulary gets borrowed from whoever the nearest outsider happens to be."
+    },
+    "fate": "No fate is recorded: the sequence simply moves on to us, the third attempt."
   }
 ]
