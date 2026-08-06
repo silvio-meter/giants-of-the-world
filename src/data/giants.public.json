@@ -989,7 +989,10 @@
     "sources": [
       "José Miguel de Barandiarán, Basque mythology fieldwork and collections (20th c.)",
       "Resurrección María de Azkue, Euskalerriaren Yakintza (1935-47)",
-      "Basque and Navarrese megalithic place-names (jentiletxe, jentilarri)"
+      "Basque and Navarrese megalithic place-names (jentiletxe, jentilarri)",
+      "Anton Erkoreka, Los gentiles: el mito de los gigantes en el País Vasco, Cuadernos de Etnología y Etnografía de Navarra 23 (1976)",
+      "Anuntxi Arana, Euskal mitologiaz: jentilak eta kristauak (2008)",
+      "Emilio Xabier Dueñas, 'El carbonero Olentzero y el obispo (San) Nicolás', Eusko Ikaskuntza, Lankidetzan 41"
     ],
     "image": "/images/giants/jentilak.jpg",
     "imageAlt": "Jentilak, Basque mountain giants",
@@ -1985,8 +1988,8 @@
       "nawao"
     ],
     "coordinates": [
-      -38.5,
-      175.5
+      -45,
+      169
     ],
     "tags": [
       "maori",
@@ -1995,10 +1998,11 @@
       "race"
     ],
     "sources": [
-      "Southern Maori oral tradition (Ngai Tahu; earlier Waitaha and Kati Mamoe)",
-      "Herries Beattie, southern Maori traditions (20th c.)",
-      "Ngai Tahu published sources and Claims Settlement documentation",
-      "Te Ara: The Encyclopedia of New Zealand"
+      "Southern Māori oral tradition (Ngāi Tahu; earlier Waitaha and Kati Mamoe)",
+      "Herries Beattie, \"Nature-lore of the Southern Maori\", Transactions and Proceedings of the New Zealand Institute 52 (1920)",
+      "Ngāi Tahu published sources and Claims Settlement documentation",
+      "Te Ara: The Encyclopedia of New Zealand",
+      "James W. Stack, \"Sketch of the Traditional History of the South Island Maoris\", Transactions and Proceedings of the New Zealand Institute 10 (1877)"
     ],
     "image": "/images/giants/kahui-tipua.jpg",
     "imageAlt": "Kāhui Tipua",
@@ -2165,10 +2169,14 @@
       "reindeer"
     ],
     "sources": [
-      "Sami oral tradition, N. Norway, Sweden, Finland and Kola",
-      "Johannes Schefferus, Lapponia (1673)",
+      "Sámi oral tradition, N. Norway, Sweden, Finland and Kola",
+      "Johan Turi, Muitalus sámiid birra (1910)",
       "J.K. Qvigstad, Lappiske eventyr og sagn (1927-29)",
-      "Archaeological literature on stalotomter, 20th-21st c."
+      "Eldar Heide, 'The Wild Host and the Etymology of Sámi Stállu', Arv (2019)",
+      "J.A. Friis, Lappisk Mythologi (1871); Rolf Kjellström, Fataburen (1976)",
+      "Anders Wepsäläinen on the stállotomter (2011); Olof Holm, Fornvännen 111 (2016)",
+      "Liedgren and Bergman (2009); Bergman et al. (2008); Storli (1993-94)",
+      "Johannes Schefferus, Lapponia (1673): external account of Sámi religion, cited for collection history"
     ],
     "image": "/images/giants/stallo.jpg",
     "imageAlt": "Stallo of Sámi folklore",
@@ -2230,7 +2238,7 @@
     "alsoKnownAs": [
       "Liczyrzepa",
       "Duch Gór",
-      "Lord of the Mountains"
+      "Krakonoš"
     ],
     "culture": "German / Silesian / Czech",
     "region": "Central Europe",
