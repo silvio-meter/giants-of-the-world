@@ -110,5 +110,41 @@
   "landscape-body": {
     "name": "The land is the body",
     "blurb": "A named hill, lake or island is understood as a being, not merely as its memorial. The country is read as a person."
+  },
+  "real-site-attached": {
+    "name": "Attached to a real place",
+    "blurb": "The tradition is anchored to a site you can still walk to: a dolmen, a cave, a hill fort, a named rock. The story travels with the ground rather than with the teller."
+  },
+  "shaped-the-land-while-living": {
+    "name": "Shaped the land while living",
+    "blurb": "The giant made the country by working it: dropping stones, digging channels, dragging a heel. Distinct from the giant whose corpse becomes the world, and distinct again from the giant who is the hill."
+  },
+  "river-from-a-giant": {
+    "name": "The river came from a giant",
+    "blurb": "A watercourse is explained as a giant's tear, blood, urine, furrow or dropped burden. The river is permanent, so the explanation has somewhere to live."
+  },
+  "ended-by-christianity": {
+    "name": "Ended by Christianity",
+    "blurb": "The giants do not lose a battle: they leave, die or turn to stone at the moment the new religion arrives. The tradition dates its own displacement."
+  },
+  "christian-ending-added": {
+    "name": "A Christian ending, added later",
+    "blurb": "The story is recorded from a living tradition and then closed with a Christian conclusion by a named hand. The seam is visible, and scholarship can usually say who sewed it."
+  },
+  "giants-as-heroes": {
+    "name": "The giant as hero",
+    "blurb": "The giant is on the side of the people: a protector, a champion, a founder. Where this occurs, the monstrous reading is usually the later layer, not the earlier one."
+  },
+  "buried-under-volcanoes": {
+    "name": "Buried under fire",
+    "blurb": "A giant is pinned beneath a volcano or a lava field, and the mountain's activity is read as the body still moving."
+  },
+  "arrived-by-sea": {
+    "name": "Arrived by sea",
+    "blurb": "The giants come from the water, on rafts, in reed boats, or simply out of it. The sea supplies an origin that needs no genealogy."
+  },
+  "invulnerable-hide": {
+    "name": "The hide nothing pierces",
+    "blurb": "Skin, scale or bark that no weapon can cut, and usually a single place where it can. The invulnerability exists to make the exception matter."
   }
 }

@@ -2858,5 +2858,1203 @@
       "disputed": "The names given to them are worth pausing on. Atanas Iliev's 1890 collection is titled, in translation, Bulgarian legends about the ispolini, called Greeks, Jews and Latins. Romanian tradition does the same thing, calling its giants jidovi, novaci and tătari. Two neighbouring traditions independently naming their prehistoric giants after historical neighbouring peoples. The giant here is not only the one who came before. He is the one who is not us, and the vocabulary gets borrowed from whoever the nearest outsider happens to be."
     },
     "fate": "Replaced. They were the second of three attempts, and we are the third."
+  },
+  {
+    "id": "gargantua",
+    "slug": "gargantua",
+    "name": "Gargantua",
+    "alsoKnownAs": [
+      "Grand-Tua",
+      "Grand-Tuard",
+      "Guergintua",
+      "Jergantua",
+      "Gargountoun",
+      "Gargantoua"
+    ],
+    "culture": "French",
+    "region": "France",
+    "type": "individual",
+    "freeEntry": true,
+    "height": "unmeasured",
+    "shortDescription": "Folk giant older than Rabelais: over four hundred French megaliths and rocks are named for him.",
+    "fullDescription": "Rabelais did not invent him. The name was already in use as a nickname in 1470, and by then the countryside was full of his furniture.",
+    "mysteryNote": "He left his quoit, his chair and his bowl lying about across France, and never came back for them. The Church renamed them for the devil, and the stones stayed exactly where they were.",
+    "related": [],
+    "coordinates": [
+      47,
+      2.5
+    ],
+    "tags": [
+      "megalith",
+      "folk",
+      "france",
+      "celtic"
+    ],
+    "sources": [
+      "Paul Sébillot, Gargantua dans les traditions populaires, Maisonneuve, Paris, 1883",
+      "Félix Bourquelot, 1844",
+      "Henri Gaidoz",
+      "Henri Dontenville",
+      "Guy-Édouard Pillard, Le Vrai Gargantua: mythologie d'un géant, 1987",
+      "Les grandes et inestimables chroniques du grand et énorme géant Gargantua, anonymous, 1532"
+    ],
+    "image": "/images/giants/gargantua.jpg",
+    "imageAlt": "Gargantua, french tradition",
+    "motifs": [
+      "builder",
+      "ended-by-christianity",
+      "real-site-attached"
+    ],
+    "sections": {
+      "story": "Across rural France, standing stones and strange rock formations carry his name and, more precisely, the names of his belongings. His quoit. His distaff. His skittle. His chair, his armchair, his bowl, his gravel. Sébillot, Dontenville and their successors catalogued more than four hundred such place-names, under regional variants including Grand-Tua, Grand-Tuard, Guergintua, Jergantua, Gargountoun and Gargantoua.\n\nThis is the megalith tradition at its largest recorded scale anywhere. Not a vanished race who raised the stones, but one named giant who left his things lying about.\n\nThe case that he predates literature was made by the palaeographer Félix Bourquelot in 1844 and settled by the Breton ethnologist Paul Sébillot, who in the 1880s sent a questionnaire to mythographers and local scholars across the country and published the returns in 1883. George Sand had already said it plainly: Gargantua is the work of the people, and Rabelais, like every great creator, took his material where he found it.\n\nThen the Church took the landscape back. The places, the chasms, the rock chaoses and the standing stones called Gargantua's were rebaptised as the devil's, and the giant was set against Christian figures. The stones did not move. Only the owner's name changed.\n\nHe grew so large in the popular imagination that he absorbed the local giants around him, and anonymous or half-remembered figures across France ended up with his name attached. A few escaped: Roland in the Basque country, Hok Bras and Rannou in Lower Brittany.",
+      "origins": "The literary Gargantua reaches print in 1532, in the anonymous chapbook *Les grandes et inestimables chroniques du grand et énorme géant Gargantua*, printed at Lyon, alongside Rabelais's own books of the 1530s. The folk figure is older, and it was recovered by nineteenth-century collectors rather than by literary scholarship.\n\nFélix Bourquelot set out the case for a Gargantua preceding Rabelais in a notice of 1844, published in the Mémoires de la Société des antiquaires de France. Henri Gaidoz followed in 1868 with *Gargantua, essai de mythologie celtique*, a paper read to the Société de linguistique de Paris in the sessions of 6 and 20 June that year.\n\nPaul Sébillot's *Gargantua dans les traditions populaires* (Maisonneuve, Paris, 1883) gathered the returns of his circulated questionnaire into the standard collection. Henri Dontenville, founder in 1950 of the Société de mythologie française, and Guy-Édouard Pillard, in *Le Vrai Gargantua* (Imago, 1987), carried the survey forward.",
+      "disputed": "Sébillot read the name as meaning the devourer. Later scholarship prefers something closer to the fierce or the wild. Some argue Gargantua is the residue of a Celtic god named Gargan, but there is no archaeological trace supporting that, and at least one popular etymology used to support it, reading the islet name Tombelaine as containing a Gaulish god's name, does not hold: the name derives from an older form built on *Tumba*."
+    },
+    "fate": "No death: he absorbed the local giants around him, and his stones were rebaptised as the devil's."
+  },
+  {
+    "id": "mouros",
+    "slug": "mouros",
+    "name": "Mouros",
+    "alsoKnownAs": [
+      "mouros encantados",
+      "moura encantada",
+      "mouras",
+      "mourinhos",
+      "xentís"
+    ],
+    "culture": "Galician, Asturian, Portuguese",
+    "region": "Northwest Iberia",
+    "type": "race",
+    "freeEntry": true,
+    "height": "varies; sometimes giants, sometimes not",
+    "shortDescription": "Builders of the megaliths of north-west Iberia: unbaptised people of the earth whose name may mean the dead.",
+    "fullDescription": "They raised the standing stones in a single night, and their name may mean the dead.",
+    "mysteryNote": "The stones were standing before morning. Whoever set them there went under the ground, and did not come back up.",
+    "related": [],
+    "coordinates": [
+      42.3,
+      -7.9
+    ],
+    "tags": [
+      "megalith",
+      "underground",
+      "iberia",
+      "race"
+    ],
+    "sources": [
+      "Isidoro Millán on the etymology",
+      "Galician and Asturian folk collections",
+      "the mouros are also documented under Portuguese tradition as the moura encantada"
+    ],
+    "image": "/images/giants/mouros.jpg",
+    "imageAlt": "Mouros, galician, asturian, portuguese tradition",
+    "motifs": [
+      "builder",
+      "pre-people",
+      "ended-by-christianity"
+    ],
+    "sections": {
+      "story": "The mouros are found across Galicia, Asturias, León, Zamora and northern Portugal. They are described as unbaptised and pagan, and in older usage they were also called xentís, the same word the Basques use for their own megalith builders.\n\nEvery mámoa, every burial tumulus, every castro, every Roman mine, and by extension every ruin of unremembered origin is theirs. Some accounts have them raising the stones overnight. They live underground now and rarely come out, except to fetch food and at midsummer. Their money is enchanted and disappears after it is spent.\n\nThe mouras, the women, are pale from living beneath the earth or the water, blue-eyed, and guard treasure. They can take other shapes and most often choose the serpent. Some of them could fly, and carried the stones through the air themselves. Bargains made with them and then broken bring blindness, barrenness, or ruin on a family line.\n\nThe philologist Isidoro Millán derived the word not from *moro*, Moor, but from a Celtic form *mrvos*, related to the Indo-European *mr-tuos* that gives Latin *mortuus*. On that reading the people who built the old stones and live under the ground are named, quite literally, the dead. The confusion with the Moors came later, after the Muslim conquest, and runs the wrong way round.",
+      "origins": "No medieval text stands behind the mouros. The tradition is oral, and reaches print only through nineteenth and twentieth century collectors.\n\nIn Portugal José Leite de Vasconcelos gathered the material from Tradições populares de Portugal (1882) onward and returned to it in Opúsculos, volume V, Etnologia (Lisbon: Imprensa Nacional, 1938). Zófimo Consiglieri Pedroso read the mouras as water spirits. Revista Lusitana, the journal Leite de Vasconcelos founded, printed Abílio Brandão's \"Lendas de Mouras encantadas\" in volume XIV (1911). The archaeologist Francisco Martins Sarmento treated the legends as a guide to unexcavated monuments.\n\nAsturian versions were collected by Aurelio de Llano Roza de Ampudia in Del folklore asturiano: mitos, supersticiones, costumbres (1922). Galician versions run through the ethnographic writing of Vicente Risco and later collections such as Camiño Noia's Contos galegos de tradición oral. Alexandre Parafita's A Mitologia dos Mouros (Porto: Gailivro, 2006) is the modern Portuguese synthesis.\n\nThe Celtic etymology is a philological proposal by Isidoro Millán González-Pardo (1922 to 2002), not a folk claim.",
+      "disputed": "Whether the mouros are properly giants at all. Some accounts describe them as enormous, others as living much as ordinary Galician peasants did. The mouros encantados sometimes appear as giants or warriors, and a separate tradition of mourinhos describes very small underground people instead. They are best understood as the previous inhabitants rather than as a size."
+    },
+    "fate": "Went underground with the stones they raised, and stayed there."
+  },
+  {
+    "id": "dragonja",
+    "slug": "dragonja",
+    "name": "Dragonja",
+    "alsoKnownAs": [
+      "Dragonja the Ploughman",
+      "Div Orač"
+    ],
+    "culture": "Croatian",
+    "region": "Istria",
+    "type": "individual",
+    "freeEntry": true,
+    "height": "unmeasured",
+    "shortDescription": "Istrian giant who ploughed the Mirna into being; his kind built the hill towns.",
+    "fullDescription": "He dragged a plough from the mountains to the sea. Water followed the furrow, and he named it Mirna.",
+    "mysteryNote": "You can walk the whole of his day's work between breakfast and dusk, and the furrow still has water in it. Only the giants are missing.",
+    "related": [],
+    "coordinates": [
+      45.33,
+      13.83
+    ],
+    "tags": [
+      "croatia",
+      "landscape",
+      "builder",
+      "istria"
+    ],
+    "sources": [
+      "Maja Bošković-Stulli, Istarske narodne priče",
+      "Carlo De Franceschi, who recorded giant traditions around Motovun"
+    ],
+    "image": "/images/giants/dragonja.jpg",
+    "imageAlt": "Dragonja, croatian tradition",
+    "motifs": [
+      "shaped-the-land-while-living",
+      "builder",
+      "river-from-a-giant",
+      "real-site-attached"
+    ],
+    "sections": {
+      "story": "Before people settled Istria, the valley of the Mirna belonged to giants. The chief among them was Dragonja, called the Ploughman, because he cut the furrow from Ćićarija down to the coast and let the river in. The border river Dragonja still carries his name.\n\nThe giants built the hill towns: Motovun, Vrh, Sovinjak, Oprtalj, Završje, Roč and Grožnjan. They were so large that each worked his own hilltop and they passed tools and building stone to one another across the valleys between. When the towns were finished there was stone left over, and rather than waste it they built one more. That is Hum, which now advertises itself as the smallest town in the world.\n\nAfter the work they rested at Kotli, where the water falls in steps and where people still walk today.\n\nDragonja's son Gorazd is said to be in the forests of the Istrian highlands still, watching them.\n\nSet him beside Daidarabotchi in Japan. Both are giants who made a real, named, walkable landscape by working on it while they were alive, which is the opposite of Ymir, who had to die first.",
+      "origins": "This is local place-legend from the Mirna valley in central Istria, tied to named ground rather than to any medieval text: the rivers Mirna and Dragonja, the hill towns above them, the water steps at Kotli.\n\nNineteenth-century collecting in Istria concentrated on song. The circle around the newspaper Naša sloga gathered oral material from 1879, printed as Hrvatske narodne pjesme što se pjevaju po Istri i Kvarnerskih otocih in 1880, and Jakov Volčić recorded songs, tales and proverbs. Prose legend was the poorer relation. Carlo De Franceschi (1809 to 1893), historian of Istria and secretary of the Istrian Diet from 1861 to 1876, is the name cited for giant traditions from the Motovun district.\n\nSystematic prose collecting came in the 1950s, when the Institut za narodnu umjetnost in Zagreb, now the Institute of Ethnology and Folklore Research, worked across the peninsula. Maja Bošković-Stulli edited the result as Istarske narodne priče (Zagreb, 1959), the first volume of the series Narodno stvaralaštvo Istre, with her introduction and commentary.\n\nThe tradition now travels largely through local tourism, which has an interest in it.",
+      "disputed": "The most famous Istrian giant, Veli Jože, is not folk tradition. He comes from Vladimir Nazor's novel of 1908, which draws on Istrian material but is an authored work written with a national awakening in mind. He is frequently presented as ancient. He is not."
+    },
+    "fate": "No death recorded. His son Gorazd is said to watch the Istrian highlands still."
+  },
+  {
+    "id": "daidarabotchi",
+    "slug": "daidarabotchi",
+    "name": "Daidarabotchi",
+    "alsoKnownAs": [
+      "Deidarabotchi",
+      "Derabotchi",
+      "Daidarabō",
+      "Daidarabocchi",
+      "Daidara-hōshi (大太法師)"
+    ],
+    "culture": "Japanese",
+    "region": "Kantō and Chūbu",
+    "type": "individual",
+    "freeEntry": false,
+    "height": "unmeasured",
+    "shortDescription": "Japanese landscape giant: Fuji is his spoil heap, Lake Biwa the hole it came from.",
+    "fullDescription": "Mount Fuji is the soil he dug out of one province. Lake Biwa is the hole he left in another.",
+    "mysteryNote": "No one records a single word he said. Everything known about him is the shape he left in the ground: a lake, a mountain, and a plateau where he lay down.",
+    "related": [],
+    "coordinates": [
+      36.33,
+      140.55
+    ],
+    "tags": [
+      "japan",
+      "landscape",
+      "yokai",
+      "benevolent"
+    ],
+    "sources": [
+      "Hitachi no Kuni Fudoki, 8th century",
+      "Kunio Yanagita, \"The Footprints of Daidarabou\", Chūō Kōron, 1927, the first systematic collection of the scattered footprint legends"
+    ],
+    "image": "/images/giants/daidarabotchi.jpg",
+    "imageAlt": "Daidarabotchi, japanese tradition",
+    "motifs": [
+      "shaped-the-land-while-living",
+      "real-site-attached"
+    ],
+    "sections": {
+      "story": "Daidarabotchi is a giant of the Kantō and Chūbu regions, known also as Deidarabotchi, Derabotchi and Daidarabō depending on where the story is told. That spread of names is itself evidence: separate local traditions arriving at the same figure.\n\nHe built Fuji from earth he scooped out of Kai Province, which is why the land around the mountain is a wide basin. When he needed more he dug again in Ōmi, and that pit filled with water and became Lake Biwa, the largest lake in Japan. He once picked up Fuji and Tsukuba to weigh them against each other and split Tsukuba's summit doing it.\n\nSenba Lake in Ibaraki fills a single one of his footprints. The Takabocchi Plateau in Nagano is where he lay down to rest his back. The towns of Daita and Daitakubo carry his name. The earliest textual trace is in the eighth-century *Hitachi no Kuni Fudoki*, which records a giant seated on a hill eating clams from the beach and piling the shells into mounds.\n\nUnlike almost everything else in this catalogue, he is not a threat. In Ibaraki he is remembered warmly, as a giant who shifted mountains to make life easier for the people below. He is felt through the ground he left behind rather than through any encounter.",
+      "origins": "The oldest written trace is the Hitachi no Kuni Fudoki, one of the provincial gazetteers ordered by the edict of 713 and compiled in the decade after it. Its Naka district notice describes a giant on the hill at Ōkushi who reached from the hilltop to the shore for clams, the discarded shells becoming the hill itself. That hill is the Ōgushi shell mound at Shiozaki in Mito, a real Jōmon midden, protected as a national historic site since 1970. The giant there is called only ōhito, a great person. The Harima no Kuni Fudoki carries a comparable figure whose footprints filled with water and became marshes.\n\nThe name Daidarabotchi belongs to later oral tradition. Ryūtei Tanehiko noted the word in his miscellany Yōshabako, printed in 1841. The scattered local legends were first gathered as a single body of material by Yanagita Kunio in \"Daidarabō no ashiato\", published in Chūō Kōron in April 1927 and collected in Hitotsume Kozō sono ta (Koyama Shoten, 1934).",
+      "disputed": "The etymology is unsettled. Ryūtei Tanehiko, in his miscellany Yōshabako of 1841, took the word as an insult aimed at large men, the inverse of Issun-bōshi, the one-inch boy. Yanagita derived it from Daitarō-hōshi and read the tara element as an old term of respect for a person of rank. Minakata Kumagusu took daida as a contraction of the personal name Daitarō. A separate proposal, recorded in the Nipponica encyclopedia beside Yanagita's own, links tara to tatara, the foot-bellows of iron smelting, and reads the giant as a trace of the spread of smiths.\n\nWhat he originally was is also argued. Watanabe Shōgo's Nipponica article on giant legends treats him as a land-making god degraded into a comic figure as belief fell away, in company with oni and tengu. The reverse account, a yōkai tradition swelling into a giant one, also has currency.\n\nThe fudoki giants are not named Daidarabotchi. They are ōhito, great people, and the Hitachi text survives only in an abridged recension."
+    },
+    "fate": "No death: he is felt through the ground he left behind rather than through any encounter."
+  },
+  {
+    "id": "baqbaq-devi",
+    "slug": "baqbaq-devi",
+    "name": "Baqbaq-Devi",
+    "alsoKnownAs": [
+      "Baqbaq-Devi",
+      "devi",
+      "dev"
+    ],
+    "culture": "Georgian",
+    "region": "Caucasus",
+    "type": "race",
+    "freeEntry": false,
+    "height": "unmeasured",
+    "shortDescription": "Many-headed giants of the Georgian mountains: their strongest was outriddled, not outfought.",
+    "fullDescription": "Cut off a devi's head and another grows. So the hero did not bring a sword. He brought a riddle.",
+    "mysteryNote": "Cut one head and another answers. So the hero came carrying a question instead, and kept asking until the last head slept.",
+    "related": [],
+    "coordinates": [
+      42.5,
+      43.5
+    ],
+    "tags": [
+      "caucasus",
+      "many-headed",
+      "riddle",
+      "devi"
+    ],
+    "sources": [
+      "Kartlis Tskhovreba",
+      "Dodona Kiziria, \"Amirani: A Georgian Folk Hero\", Folklore Forum 7, no. 7, 1974, p. 133",
+      "living oral tradition of the Georgian highlands, Christianised roughly ten centuries later than the lowlands"
+    ],
+    "image": "/images/giants/baqbaq-devi.jpg",
+    "imageAlt": "Baqbaq-Devi, georgian tradition",
+    "motifs": [
+      "outwitted",
+      "real-site-attached"
+    ],
+    "sections": {
+      "story": "The devi are the giants of the Georgian mountains. They are many-headed, and a severed head simply grows back, which is why Georgian heroes do not win these fights by force. They win by outthinking them, or by striking at the heart.\n\nThey live underground or high in the remote Caucasus peaks, usually as a family of seven or nine brothers in a castle with their wives, their children and their hoard. When the ground shakes and a hillside tears loose, that is them.\n\nThe strongest of all of them was Baqbaq-Devi, the one the other giants deferred to. Amirani, the great Georgian culture hero, could not beat him in a straight fight and did not try. He challenged the giant to a contest of riddles instead, and used the rhythm of his own voice to put the many heads to sleep one after another. Then he stabbed him through the heart.\n\nThe word itself has travelled a long way. Georgian *devi* is kin to the Persian *div* and behind that the Zoroastrian *daeva*, the old Indo-Iranian word for a hostile spirit. The same word surfaces in South Slavic as *div* and in Albanian as *div* and *dif*. One name for a hostile giant, carried along the corridor between the Caspian and the Adriatic.\n\nIn one tale Amirani threw a devi into a ravine, and a lake formed where he fell. It is called Devi Lake. In drought the villagers still go there, throw stones into the water, and ask for rain.",
+      "origins": "The devi belong to the oral tradition of the Georgian highlands rather than to any single book. The literary trace begins with *Amiran-Darejaniani*, a prose romance attributed to Mose Khoneli and usually placed in the twelfth century, though its surviving manuscripts are seventeenth and eighteenth century copies and it was not printed until Zakaria Chichinadze's edition of 1896.\n\nSystematic collection began in the nineteenth century. Teimuraz Batonishvili published variants of the Amirani legend in 1848 and was the first to link them with Prometheus.\n\nMarjory Wardrop's *Georgian Folk Tales* (London, David Nutt, 1894) carried devi stories into English, translated from the Aghniashvili collection *Khalkhuri Zghaprebi* (Tiflis, 1891) and from Mingrelian and Gurian collections printed at St Petersburg.\n\nMikheil Chikovani assembled sixty-eight recorded versions of the chained Amirani, taken down across Georgia between 1848 and 1945.",
+      "disputed": "Amirani, who killed Baqbaq-Devi, was himself chained to a Caucasus peak for bringing fire and metalworking to humanity, with an eagle at his liver by day and the liver regrowing by night, and a dog wearing the chain thin until smiths renew it each year. That is the Prometheus myth point for point. The Greeks placed Prometheus's rock in the Caucasus. Some scholars argue the Georgian version is older, or arose independently, which would put the famous Greek story downstream of this one. The question is open."
+    },
+    "fate": "Stabbed through the heart by Amirani, after a riddle contest put every head to sleep."
+  },
+  {
+    "id": "gigantes",
+    "slug": "gigantes",
+    "name": "The Gigantes",
+    "alsoKnownAs": [
+      "Gigantes",
+      "the Giants",
+      "Gigantes (Γίγαντες)"
+    ],
+    "culture": "Greek",
+    "region": "Greece",
+    "type": "race",
+    "freeEntry": false,
+    "height": "disputed; possibly human-sized",
+    "shortDescription": "Earth-born Greek race defeated by the Olympians: man-sized in the earliest art, snake-legged only later.",
+    "fullDescription": "The Greek giants may not have been giants. In the earliest art they are painted as ordinary armed men.",
+    "mysteryNote": "The oldest painters gave them helmets, shields and spears, and nothing stranger than that. The snakes grew later, once losing to gods seemed to require a different sort of body.",
+    "related": [],
+    "coordinates": [
+      37.98,
+      23.73
+    ],
+    "tags": [
+      "greek",
+      "gigantomachy",
+      "volcano",
+      "chthonic"
+    ],
+    "sources": [
+      "Hesiod, Theogony 185",
+      "Homer, Odyssey vii.59, 206, x.120",
+      "Apollodorus, Bibliotheca 1.6.1-2",
+      "Hyginus, Fabulae, Preface",
+      "the Gigantomachy frieze of the Pergamon Altar, 2nd century BCE"
+    ],
+    "image": "/images/giants/gigantes.jpg",
+    "imageAlt": "The Gigantes, greek tradition",
+    "motifs": [
+      "buried-under-volcanoes",
+      "outwitted",
+      "pre-people"
+    ],
+    "sections": {
+      "story": "They were born out of violence. When Cronus castrated Ouranos, the blood fell on Gaia, and from it came three things: the Erinyes, the Meliai, and the Gigantes. Hesiod calls them strong and great, which may or may not be a statement about size.\n\nIn archaic and classical art they are shown as hoplites, man-sized and fully human, fighting in armour like anyone else. The snake legs everyone pictures do not appear until after roughly 380 BCE. The defining trait in the earliest material is strength and aggression, not stature.\n\nAlcyoneus was immortal, but only inside his own country, so Heracles dragged him over the border and killed him there. Porphyrion attacked Heracles and Hera, and Zeus made him burn with desire for Hera instead, which was enough of a distraction to finish him. Ephialtes took an arrow in the left eye from Apollo and one in the right from Heracles.\n\nThe defeated were buried under volcanoes. Every eruption and every earthquake since is one of them moving.",
+      "origins": "Hesiod's Theogony, composed around 700 BCE, gives the earliest surviving account of their birth, at line 185. Homer's Odyssey mentions them three times, as a mortal race in the far west, with no war against the Olympians attached.\n\nThere was probably an archaic epic Gigantomachia, now lost. Xenophanes, in the sixth century BCE, lists the battles of Titans, Giants and Centaurs among the stock subjects of symposium song. Pindar supplies early detail, placing the fight at Phlegra and naming Porphyrion as king.\n\nMuch of the transmission is visual rather than textual: the north frieze of the Siphnian Treasury at Delphi around 525 BCE, the east metopes of the Parthenon, the peplos woven for Athena at the Panathenaia, and the great frieze of the Pergamon Altar, raised under Eumenes II between roughly 166 and 156 BCE, excavated by Carl Humann from 1878 and now in Berlin.\n\nThe fullest connected narrative is late: Apollodorus, Bibliotheca 1.6, compiled in the first or second century CE.",
+      "disputed": "The war is younger than the giants. Homer knows a savage race in the far west, ruled by Eurymedon, wiped out by their own king for their insolence toward the gods, and knows nothing whatever about a battle with the Olympians. Hesiod gives them a birth but not a war. The Gigantomachy comes later, and later writers went on to confuse the Gigantes with the Titans, an earlier and separate generation. Much of what is now assumed about them is a late assembly."
+    },
+    "fate": "Defeated by the Olympians and buried under volcanoes. Every eruption is one of them moving."
+  },
+  {
+    "id": "patagonian-giants",
+    "slug": "patagonian-giants",
+    "name": "The Patagonian Giants",
+    "alsoKnownAs": [
+      "Patagones",
+      "Patagons",
+      "the giants of Patagonia"
+    ],
+    "culture": "European accounts of the Tehuelche and Selk'nam",
+    "region": "Patagonia",
+    "type": "modern-legend",
+    "freeEntry": true,
+    "height": "claimed 12 to 15 feet; measured 5 ft 9 in",
+    "shortDescription": "European voyage reports of a giant race in Patagonia, ended by measurement in the 1760s.",
+    "fullDescription": "Fifteen feet in 1520. Four inches taller than a sailor in 1773. Nothing in Patagonia changed. Only who was doing the measuring.",
+    "mysteryNote": "Magellan's men sailed home with a story that held Europe for three centuries. Two of the people in it were taken aboard, and neither reached Spain.",
+    "related": [],
+    "coordinates": [
+      -49.32,
+      -67.73
+    ],
+    "tags": [
+      "unverified",
+      "south-america",
+      "exploration",
+      "collapse"
+    ],
+    "sources": [
+      "Antonio Pigafetta, 1520s",
+      "The World Encompassed, 1628",
+      "Louis de Bougainville, 1767",
+      "the official account of the Byron voyage, 1773"
+    ],
+    "image": "/images/giants/patagonian-giants.jpg",
+    "imageAlt": "The Patagonian Giants, european accounts of the tehuelche and selk'nam tradition",
+    "motifs": [
+      "pre-people"
+    ],
+    "sections": {
+      "story": "The first account comes from Antonio Pigafetta, who chronicled Magellan's voyage in the 1520s. Near what is now Puerto San Julián in Argentina they saw a man on the shore, naked, dancing and singing and throwing sand over his head. Magellan sent a crewman toward him with instructions to dance and sing the same way, to show they meant no harm. The man came, and was afraid, and pointed upward.\n\nFrom that meeting the giants of Patagonia entered European imagination and stayed for close to three hundred years. Francis Drake's nephew repeated the claim in 1628. Later accounts put them at twelve feet, then fifteen, then higher.\n\nThe collapse came from measurement. Bougainville reported in 1767 that the tallest Patagonian he met stood five feet nine. The official account of the Byron voyage in 1773 found them roughly four inches taller than the tallest men in the crew. Europeans of that period averaged around five feet, which accounts for nearly all of it.\n\nThe people underneath the story were real: the Tehuelche, from a Mapudungun word meaning fierce people, and possibly the Selk'nam. Both were genuinely taller than the men writing them down.\n\nMagellan took two of them aboard to bring back to Spain. They died on the voyage home.",
+      "origins": "This is a European textual tradition rather than an indigenous one, and it is carried in voyage narratives and their reprintings.\n\nAntonio Pigafetta wrote his account of the Magellan expedition in the mid 1520s. It survives in four manuscripts, three in French and one in Italian, the Italian copy in the Biblioteca Ambrosiana in Milan. Giovanni Battista Ramusio printed a version in his Navigationi et Viaggi from 1550, and Carlo Amoretti published the Ambrosiana manuscript in 1800.\n\nThe World Encompassed by Sir Francis Drake, London 1628, was compiled by Drake's nephew from the notes of the expedition's chaplain Francis Fletcher and other papers.\n\nThe eighteenth-century revival ran through the periodical press: a report in the Gentleman's Magazine in 1766, then Charles Clerke's letter to the Royal Society on the very tall men seen near the Strait of Magellan, printed in the Philosophical Transactions in 1767. Bougainville's Voyage autour du monde followed in 1771, and John Hawkesworth's official Account of the Voyages in 1773.",
+      "disputed": "Even the name is uncertain. Patagonia is often read as the land of the big foot, which fed the legend. But Magellan may simply have taken the name from Patagón, a character in the sixteenth-century Spanish romance *Primaleón*, which he had probably read. Explorers of that period named places after their reading habits: California came out of another Spanish romance."
+    },
+    "fate": "Ended by measurement: Bougainville found the tallest at five feet nine in 1767."
+  },
+  {
+    "id": "katallani",
+    "slug": "katallani",
+    "name": "Katallani",
+    "alsoKnownAs": [
+      "Katallan",
+      "Katalla",
+      "Syqenhenjeri",
+      "Symadh",
+      "Syqorr",
+      "Syqen",
+      "Syklysh",
+      "Vigan",
+      "Gjigant",
+      "Div",
+      "Dif",
+      "Lutran",
+      "Gavell",
+      "Garravell",
+      "Dragumn",
+      "Reks"
+    ],
+    "culture": "Albanian",
+    "region": "Albania",
+    "type": "individual",
+    "freeEntry": false,
+    "height": "unmeasured",
+    "shortDescription": "One-eyed Albanian man-eater with no knees: he cannot bend his legs to chase you.",
+    "fullDescription": "One eye, and no knees. He ate people, but he could not bend his legs to chase them.",
+    "mysteryNote": "He cannot kneel and he cannot run. Every story about him is built on the small distance that gives you.",
+    "related": [],
+    "coordinates": [
+      41.15,
+      20.1
+    ],
+    "tags": [
+      "one-eye",
+      "balkans",
+      "man-eater",
+      "albania"
+    ],
+    "sources": [
+      "Gjon Buzuku, Meshari, 1555",
+      "Gustav Meyer, who records Katalla in a pagan sense",
+      "Eqrem Çabej, Diana dhe Zana, 1942, and Disa figura të besimeve popullore shqiptare, 1972",
+      "Shtjefën Gjeçovi"
+    ],
+    "image": "/images/giants/katallani.jpg",
+    "imageAlt": "Katallani, albanian tradition",
+    "motifs": [
+      "one-eye",
+      "pre-people"
+    ],
+    "sections": {
+      "story": "The Katallani is the one-eyed giant of Albanian tradition, and the detail that sets him apart from every other cyclops in this catalogue is that he has no knees. A man-eater who cannot bend his legs is a different sort of danger from one who can run you down, and the stories are built around that difference.\n\nIn southern Albania he goes by Syqenhenjeri, which is glossed as the eye that eats people.\n\nAlbanian does not really have one word for him. It has a family of them, and most describe the eye rather than the body: Symadh, big-eye. Syqorr, blind-eye. Syqen, dog-eye. Syklysh. Syqenhenjeri. Alongside these sit Vigan, Gjigant, Katalla, Lutran, Gavell, Garravell, Dragumn, and among the Arbëresh of Greece, Reks. And, twice over, Div and Dif.\n\nThat last pair matters. The same word that gives the Georgian devi and the Persian div turns up here in a language belonging to neither family.\n\nHis name is on the ground at Shllak, in the field called Fusha e Katallajve and the graves called Vorret e Katallajve, and in the stream Përroi i Vigjanit near Mullens. It survives as a surname too: an M. Catalano recorded at Bar in 1517, and Catalano families among the Arbëresh of Italy in the fifteenth century.\n\nGiants appear in the first book ever printed in Albanian. Gjon Buzuku's *Meshari* of 1555 names the gjigantë, phantoms of great height and warlike nature, and the modern Albanian word vigan descends from it.",
+      "origins": "The written record begins with Gjon Buzuku's Meshari of 1555, the first book printed in Albanian, which names the gjigantë. It survives in a single incomplete copy in the Vatican Library, noticed in 1740 and rediscovered in 1909.\n\nThe folkloric material was collected far later. Gustav Meyer, the nineteenth-century lexicographer of Albanian, records katalla in a pagan sense. Shtjefën Gjeçovi (1874 to 1929), the Franciscan priest usually called the father of Albanian folklore studies, worked among the northern highland tribes between 1905 and 1920 and identified the figure with Homer's Polyphemus.\n\nEqrem Çabej returned to the popular-belief figures in Diana dhe Zana (1942) and Disa figura të besimeve popullore shqiptare (1972).\n\nThe name is also carried by documents and by the ground: a surname recorded at Bar in 1517, Arbëresh families in Italy in the fifteenth century, and the field and graves called Katallajve at Shllak. Azem Qazimi's Fjalor i mitologjisë dhe demonologjisë shqiptare gathers the modern summary.",
+      "disputed": "Whether the Balkan cyclops is Greek at all. A number of researchers have argued for the independence of the one-eyed giant among the non-Greek peoples of the Balkans, the Illyrians included, rather than treating it as a borrowing from Homer. The catalogue holds four of these traditions within a few hundred kilometres of each other: Polyphemus, the Katallani, the one-eyed giants of Brač and Paklenica, and further out Balor. Whether they are independent, a shared inheritance older than all of them, or later borrowings is not settled."
+    },
+    "fate": "No single death: Albanian tradition keeps him as a type, named across the ground rather than killed in one story."
+  },
+  {
+    "id": "waligora-wyrwidab",
+    "slug": "waligora-wyrwidab",
+    "name": "Waligóra and Wyrwidąb",
+    "alsoKnownAs": [
+      "Wyrwidąb i Waligóra",
+      "Wali-góra and Wyrwi-dąb",
+      "O Waligórze i Wyrwidębie"
+    ],
+    "culture": "Polish",
+    "region": "Poland",
+    "type": "individual",
+    "freeEntry": true,
+    "height": "unmeasured",
+    "shortDescription": "Twin strongmen raised by a wolf and a bear: Polish dragon-slayers who ruled the kingdom they saved.",
+    "fullDescription": "Almost every giant in this catalogue is something to be survived. These two are the heroes.",
+    "mysteryNote": "One brother moved the mountain, the other pulled up the oak. Between them they killed a dragon without ever drawing a weapon.",
+    "related": [],
+    "coordinates": [
+      50.06,
+      19.95
+    ],
+    "tags": [
+      "heroes",
+      "twins",
+      "dragon",
+      "poland"
+    ],
+    "sources": [
+      "Kazimierz Władysław Wójcicki, among the first to record it",
+      "Antoni Józef Gliński",
+      "classified as tale type ATU 300, The Dragon-Slayer"
+    ],
+    "image": "/images/giants/waligora-wyrwidab.jpg",
+    "imageAlt": "Waligóra and Wyrwidąb, polish tradition",
+    "motifs": [
+      "giants-as-heroes",
+      "outwitted"
+    ],
+    "sections": {
+      "story": "A hunter's wife went into the forest to pick berries and gave birth to twin boys there. She died at once. No woman came to nurse them, so a she-wolf fed one and a she-bear fed the other.\n\nThe wolf's foster-son was Waligóra, the mountain-feller. The bear's was Wyrwidąb, the oak-tearer. Their names are their strength and nothing else: one pushes mountains out of the way, the other pulls up the oldest oaks the way a man pulls ears of grain.\n\nThey went out together to see the world. A mountain blocked the road and Waligóra shouldered it half a mile aside. A great oak blocked the road and Wyrwidąb tore it up by the roots and threw it in the river. They met a small man with shoes that covered a mile at a step and two at a jump, and a carpet that flew, and he carried them to a kingdom where a dragon was eating people daily.\n\nThey killed it between them. Waligóra pinned the tail under a boulder so the thing could not move, and Wyrwidąb crushed the head with an oak. The king gave them his two daughters and princely titles, and when he died they divided the kingdom and ruled it together.\n\nIn Gliński's version the dragon is the Wawel dragon and the king holds Kraków, which ties the brothers into the city's foundation story. The Panieńskie Rocks there are named as traces of Wyrwidąb's work.",
+      "origins": "The tale was first printed by Kazimierz Władysław Wójcicki (1807 to 1879) in *Klechdy, starożytne podania i powieści ludu polskiego i Rusi*, two volumes, Warsaw 1837. Wójcicki described gathering his material at the fireside, listening to spinners and household servants. The third edition of 1876, illustrated by Michał Elwiro Andriolli, carried the collection into wide circulation and into Czech, French, German and Russian translation.\n\nAntoni Józef Gliński (1817 to 1866) printed his own version in *Bajarz polski, czyli zbiór baśni, powieści i gawęd ludowych*, four volumes, Wilno 1853, reissued repeatedly through the century (a corrected third edition appeared at Wilno in 1881).\n\nJulian Krzyżanowski's Polish tale-type catalogue, *Polska bajka ludowa w układzie systematycznym*, carries this material as T 300B, *Smok i Waligóra*, inside the dragon-slayer group.\n\nIn Poland the tale has stayed in print as a children's and school text ever since.",
+      "disputed": "Twins abandoned in the wild, suckled by animals, who grow up to rule a kingdom, is the Romulus and Remus shape. Whether that is inheritance from a common source, borrowing, or two traditions independently reaching the same idea is not something the sources can settle.\n\nNote also that this is a *baśń*, a folk tale, not a *podanie*, a local legend tied to a place. That distinction matters and is discussed under the Milžinai entry."
+    },
+    "fate": "No death: they killed the dragon, married the king's daughters, and divided the kingdom between them."
+  },
+  {
+    "id": "milzinai",
+    "slug": "milzinai",
+    "name": "Milžinai",
+    "alsoKnownAs": [
+      "milžinas (singular)"
+    ],
+    "culture": "Lithuanian",
+    "region": "Lithuania",
+    "type": "race",
+    "freeEntry": false,
+    "height": "unmeasured",
+    "shortDescription": "Lithuanian giant race: ancestors in local legend, monsters in fairy tale, their graves on the map.",
+    "fullDescription": "In local legend they are the ancestors and they are respected. In fairy tales the same beings are monsters to be beaten. The difference is not the region. It is which kind of story is being told.",
+    "mysteryNote": "Ask what raised the hill and one village says giants, the next says the Swedes. The ground keeps its own counsel.",
+    "related": [],
+    "coordinates": [
+      55.17,
+      23.88
+    ],
+    "tags": [
+      "baltic",
+      "ancestors",
+      "graves",
+      "genre"
+    ],
+    "sources": [
+      "Milžinai lietuvių padavimuose ir pasakose, a text collection drawing on the manuscript archive of the Institute of Lithuanian Literature and Folklore",
+      "the Lithuanian scholarly tradition includes Norbertas Vėlius, Bronislava Kerbelytė, Jonas Balys and Marija Gimbutienė",
+      "Algirdas Julien Greimas, Of Gods and Men: Studies in Lithuanian Mythology"
+    ],
+    "image": "/images/giants/milzinai.jpg",
+    "imageAlt": "Milžinai, lithuanian tradition",
+    "motifs": [
+      "pre-people",
+      "real-site-attached"
+    ],
+    "sections": {
+      "story": "Lithuanian folklorists group the milžinai material by genre, and the split is stark. In *padavimai*, local legends tied to real places, the milžinai are the old people, the ancestors of the humans who came after, and they are treated with respect. In *pasakos*, fairy tales, they are adversaries, and the point of the story is to outwit or destroy them.\n\nThere is a second layer to this. In tales structurally identical to the giant stories, the giant is swapped out for a witch, for *bėda* which means trouble itself, for the devil, and even for a grass snake. The giant is not always a character. Sometimes he is a slot that any large obstacle can fill.\n\nTheir graves are on the map. Čižiūnų Milžinkapis, Girgždūtės kalnas, Džiugo kalnas, Medvėgalis, Raktuvė, Karaimų kalnas, Lylavėnų Milžinkapiai. The archive holds an account explaining Medvėgalis as a mound piled up by giants, and another explaining the same hill as the work of the Swedes.\n\nFolklore mapping shows where they cluster. The giants belong to the hills and to the odd shapes in the ground. Lake spirits belong to the lake country, devils to the most broken terrain. Geographically, a giant is an answer to strange ground.",
+      "origins": "There is no medieval text behind the milžinai. The material is oral, taken down from named villagers, and it reaches print through the collecting institutions of the nineteenth and twentieth centuries.\n\nThe Lithuanian Science Society, founded in Vilnius in 1907 under Jonas Basanavičius, had gathered some 72,000 folklore items by 1940. The Lithuanian Folklore Archive was established at Kaunas in 1935 under Jonas Balys, who published his catalogue of motifs in Lithuanian narrative folklore in 1936. Those holdings passed through the Academy of Sciences and now form the manuscript archive of the Institute of Lithuanian Literature and Folklore in Vilnius.\n\nBronislava Kerbelytė (1935 to 2024) worked that archive for fifty years. Her collection Milžinai lietuvių padavimuose ir pasakose (Vytautas Magnus University, Kaunas, 2019) prints sixty-two texts, each carrying a classification number, an informant name and a variant count. It follows her Žemės atmintis: lietuvių liaudies padavimai (1999) and the four-volume Lietuvių pasakojamosios tautosakos katalogas (1999 to 2009).",
+      "disputed": "What can be recovered from this material is contested. Algirdas Julien Greimas read Lithuanian folklore for a lost pre-Christian mythology in Apie dievus ir žmones (1979), translated as Of Gods and Men (Indiana University Press, 1992). Reviewing it in Metmenys 40 (1980), Eglė Viktorija Žygaitė preferred the positivism of Norbertas Vėlius and called his hypotheses poetic and his method, in Greimas's own description, like solving crosswords. Daiva Vaitkevičienė argued in 2017 that the Lithuanian Greimas is read in isolation from the French one. Loreta Mačianskaitė sets out that reception in Semiotika 17 (2022).\n\nThe graves raise a separate question. Milžinkapiai are real burial monuments, some of them Bronze Age barrows in western Lithuania. The legends attached to such sites are mobile: Manvydas Vitkūnas has documented mounds credited to Swedes, to the French, to Napoleon. Salvijus Kulevičius (2014) argues that padavimai preserve mythologised rather than historical memory. On that reading a giant at a site is not a memory of who built it."
+    },
+    "fate": "Buried in the mounds that carry their name, the milzinkapiai."
+  },
+  {
+    "id": "troll-iceland",
+    "slug": "troll-iceland",
+    "name": "Tröll",
+    "alsoKnownAs": [
+      "jötnar",
+      "risar",
+      "þursar",
+      "tröllkona",
+      "kerling"
+    ],
+    "culture": "Icelandic",
+    "region": "Iceland",
+    "type": "folklore",
+    "freeEntry": false,
+    "height": "unmeasured",
+    "shortDescription": "Icelandic category of giant beings: caught out at sunrise they become the rocks of the landscape.",
+    "fullDescription": "Half the strange rocks in Iceland are trolls who misjudged the sunrise.",
+    "mysteryNote": "Every one of them stopped exactly where the light found it. That is why the country is full of them.",
+    "related": [],
+    "coordinates": [
+      64.96,
+      -19.02
+    ],
+    "tags": [
+      "iceland",
+      "petrified",
+      "sunrise",
+      "landscape"
+    ],
+    "sources": [
+      "Jón Árnason, Íslenzkar þjóðsögur og æfintýri, 1862, compiled with Guðbrandur Vigfússon",
+      "Sagnagrunnur, the mapped database of Icelandic legends at Árnastofnun",
+      "Jacqueline Simpson, Icelandic Folktales and Legends, 1972",
+      "Ólína Þorvarðardóttir, Álfar og tröll, 1995",
+      "Terry Gunnell on legend and landscape"
+    ],
+    "image": "/images/giants/troll-iceland.jpg",
+    "imageAlt": "Tröll, icelandic tradition",
+    "motifs": [
+      "petrified",
+      "real-site-attached"
+    ],
+    "sections": {
+      "story": "In Icelandic, tröll is not a species. It is a superlative. The word covers every being larger than a human in some capacity and generally ill-disposed toward them, and it sits alongside jötnar, risar and þursar as overlapping names for the same broad class. The jötnar of the Eddas and the trolls of Icelandic farm legend are not quite the same tradition, and the second is younger.\n\nThe rule that governs them is the sun. A troll caught out at dawn turns to stone and stays there, which means the tradition is anchored to real places all across the country.\n\nAt Rauðhólar near Reykjavík there are two small mounds called Tröllabörn, the Troll Children, caught by the light. Drangey, the island rising out of Skagafjörður, is a troll cow that was petrified as her family crossed the fjord by night. In the Ölfusá at Selfoss there is a lone rock mid-river with a single pine on top, called Jóruklettur. It is named for Jóra, who threw a boulder into the river and used it as a stepping stone and became a giantess in the act, at the place still called Tröllkonuhlaup, the Giantess's Leap. She took a cave near Hengill and preyed on travellers until she was killed with a silver axe at sunrise, and that killing is said to have given the Öxará in Þingvellir its name.\n\nThe word kerling, a petrified troll-woman, names rock pillars and peaks the length of the country, including a sea stack off Drangey and the whole Kerlingarfjöll range in the highlands.\n\nThey are usually greedy and ferocious and fond of stray livestock and lone travellers, and the legends worked as warnings to keep children from wandering. But not always. Some stories give them kindness, or wisdom, or loyalty to a person who treated them decently.",
+      "origins": "Icelandic troll legends are a post-medieval oral tradition, written down systematically only in the nineteenth century.\n\nThe foundation text is Jón Árnason's Íslenzkar þjóðsögur og æfintýri, printed in Leipzig by J. C. Hinrichs in two volumes, 1862 and 1864. Jón had begun collecting with Magnús Grímsson in 1845, and their small Íslenzk æfintýri appeared in Reykjavík in 1852 to little notice. The German scholar Konrad Maurer, visiting Iceland in 1858, pressed them to continue and undertook to find a German publisher. Magnús died in 1860. Guðbrandur Vigfússon, then in Copenhagen, read and corrected the material as it passed through.\n\nJón did not travel to collect. He circulated a written appeal and drew on a network of clergy, schoolmates and friends across the country who wrote the legends down where they lived.\n\nThe legends are now mapped by place in Sagnagrunnur, begun by Terry Gunnell in 1999 and hosted at the Árni Magnússon Institute.",
+      "disputed": "What the word tröll denotes is the live argument. Lotte Motz, in \"The Families of Giants\" (Arkiv för nordisk filologi 102, 1987), tried to show that jötnar, risar, þursar and tröll were four distinct kinds. Ármann Jakobsson rejects that as unsupported, treating tröll as a term for the monstrous and the paranormal rather than a species (Saga-Book 32, 2008; The Troll Inside You, 2017). Katja Schulz's Riesen (2004) collapses the terms. Tom Grant, in Gripla 30 (2019), breaks with that consensus and argues that risar and jötnar are consistently distinguished in the sagas.\n\nPetrification at dawn is older than the farm legends. It is in the Eddic Alvíssmál, and in Helgakviða Hjörvarðssonar Hrímgerðr is held in flyting until daylight takes her. How much of the nineteenth-century material descends from that literature is not settled.\n\nNor are the printed texts neutral witnesses: the relation between the collectors' manuscripts and Jón Árnason's published versions is under active examination."
+    },
+    "fate": "Caught by sunrise and turned to stone, which is where most of them still stand."
+  },
+  {
+    "id": "kalev-kalevipoeg",
+    "slug": "kalev-kalevipoeg",
+    "name": "Kalev and Kalevipoeg",
+    "alsoKnownAs": [
+      "Kaleva",
+      "Kalevi",
+      "Kalev",
+      "Kalevipoeg",
+      "Kalevanpoika",
+      "Caleuanpoiat",
+      "Kalliweh"
+    ],
+    "culture": "Estonian, Finnish, Karelian",
+    "region": "Baltic and Finnic lands",
+    "type": "race",
+    "freeEntry": true,
+    "height": "unmeasured",
+    "shortDescription": "Finnic giant ancestor and his stone-throwing sons, across Estonia, Finland and Karelia.",
+    "fullDescription": "In Estonian, the word kalev simply means giant. His wife's tears became the lakes.",
+    "mysteryNote": "In Estonian the word for giant is simply his name. What she wept became water, and the water is still there.",
+    "related": [],
+    "coordinates": [
+      59.44,
+      24.75
+    ],
+    "tags": [
+      "finnic",
+      "ancestors",
+      "stone-throwing",
+      "epic"
+    ],
+    "sources": [
+      "Mikael Agricola, 16th century",
+      "Juha Ruohonen, \"Giant, Devil or Death? The Finnish Koljo in Mythology, Toponyms, Folklore and Archaeology\"",
+      "Kivikoski, 1955, on the Untamala stone",
+      "Friedrich Reinhold Kreutzwald, Kalevipoeg, 1857-1861, with the caveat above"
+    ],
+    "image": "/images/giants/kalev-kalevipoeg.jpg",
+    "imageAlt": "Kalev and Kalevipoeg, estonian, finnish, karelian tradition",
+    "motifs": [
+      "pre-people",
+      "shaped-the-land-while-living",
+      "real-site-attached"
+    ],
+    "sections": {
+      "story": "Kalev, Kaleva or Kalevi and his sons run through Estonian, Finnish and Karelian tradition as giants who lived in the land before people arrived. A stone-throwing giant is called Kalevanpoika in southwest Finland and Kalevipoeg in Estonia, the same figure across a language border.\n\nThe attestations are genuinely old. Mikael Agricola listed the Caleuanpojat, Kaleva's sons, among the giants of Finnic pagan belief in the sixteenth century. A seventeenth-century chronicle names an Estonian giant Kalliweh. The Old English poem *Widsith* mentions a Finnic ruler called Caelic, which some read as the same name again.\n\nLinda, Kalev's wife, wept for him, and her tears are the lakes of Estonia.\n\nThere is an object in the churchyard at Untamala in Laitila, over two and a half metres tall, known locally as the whetstone Kaleva's son used on his scythe. It is a medieval tombstone. That correction is not a debunking. It is the clearest small example of the process this catalogue keeps running into: a community finds something in the ground that does not fit the scale of the people around it, and gives it to a giant.",
+      "origins": "Mikael Agricola's list of Finnic pagan deities, printed in 1551 in the verse preface to his Finnish Psalter, is the earliest secure attestation: the Caleuanpoiat stand there among the gods of Häme. Heinrich Stahl's Leyen Spiegel, printed at Tallinn in 1641, carries the Estonian form Kalliweh.\n\nThe Finnish material survives mainly as place-names and as legends attached to boulders and hills, concentrated in the south-west around Kalanti. Mikko Heikkilä set out the onomastic evidence in SKY Journal of Linguistics 25 (2012).\n\nOn the Estonian side, Friedrich Robert Faehlmann proposed an epic built from Kalevipoeg legends to the Learned Estonian Society in 1839. Kreutzwald's second version, 19,087 verses with a German translation, was issued serially by that Society between 1857 and 1861, with a shorter popular edition printed at Kuopio in 1862.\n\nThe oral legends were gathered in the nineteenth century by Jakob Hurt and Matthias Johann Eisen, and are held in the Estonian Folklore Archives in Tartu.",
+      "disputed": "The Estonian national epic *Kalevipoeg* was compiled by Friedrich Reinhold Kreutzwald between 1857 and 1861, modelled on the Finnish *Kalevala*. It is built from genuine oral material, runic song gathered from singers, but the assembly, the shaping and much of the connective tissue are nineteenth century and were done with national awakening in mind. It is folk material. It is not folklore. The distinction is worth keeping."
+    },
+    "fate": "Kalev died, and Linda's tears for him became the lakes of Estonia."
+  },
+  {
+    "id": "suur-toll",
+    "slug": "suur-toll",
+    "name": "Suur Tõll",
+    "alsoKnownAs": [
+      "Toell the Great",
+      "Suur Tõll",
+      "Tõll",
+      "Suur-Töll",
+      "Saaremaa vägimees Suur-Tõll"
+    ],
+    "culture": "Estonian",
+    "region": "Saaremaa",
+    "type": "individual",
+    "freeEntry": false,
+    "height": "unmeasured",
+    "shortDescription": "Giant king of Saaremaa who farmed his own land and threw stones at the Devil.",
+    "fullDescription": "He was king of the island. He lived as a farmer.",
+    "mysteryNote": "A king who kept farming. The rocks he threw are still lying where they fell, and the island still knows which ones are his.",
+    "related": [],
+    "coordinates": [
+      58.31,
+      22.81
+    ],
+    "tags": [
+      "estonia",
+      "island",
+      "farmer",
+      "stone-throwing"
+    ],
+    "sources": [
+      "Estonian folk tradition of Saaremaa",
+      "related to the wider Kalev material"
+    ],
+    "image": "/images/giants/suur-toll.jpg",
+    "imageAlt": "Suur Tõll, estonian tradition",
+    "motifs": [
+      "real-site-attached"
+    ],
+    "sections": {
+      "story": "Suur Tõll is the giant of Saaremaa, and he lived at Tõlluste on the coast with his wife Piret. He threw enormous rocks, mostly at Vanatühi, the Devil, who was his standing enemy, and at anyone else who threatened the islanders.\n\nThe detail that carries the whole figure is that he was king of Saaremaa and lived like an ordinary farmer anyway. Not a giant who ruled from a hall on a hill. A giant who worked his land and happened to be in charge.",
+      "origins": "The first extended account of the Saaremaa giant in print is August Wilhelm Hupel's, in the third part of Topographische Nachrichten von Lief- und Ehstland, published at Riga by Johann Friedrich Hartknoch in 1782.\n\nMartin Georg Emil Körber (1817 to 1893), a Saaremaa pastor, gave a longer connected treatment in Oesel einst und jetzt, whose first volume appeared at Arensburg in 1887. Four years earlier the schoolmaster Peeter Süda (1830 to 1893) had published at Kuressaare Väikene vana varanduse vakk ehk Saaremaa vägimees Suur-Tõll (1883), assembled, its subtitle says, from the mouths of the Saaremaa people over twenty years.\n\nThe manuscript record sits in the Estonian Folklore Archives, founded at Tartu in 1927 around Jakob Hurt's collection and now part of the Estonian Literary Museum. Fieldwork through the 1950s, and a mapping of Tõll sites and plot distributions carried out on Eduard Laugaste's initiative, fed the standard edition: Muistendid Suurest Tõllust ja teistest, edited by Laugaste, Ellen Liiv and Erna Normann, Tallinn, 1963.",
+      "disputed": "Which stories are properly Tõll's is not fixed. Estonian scholarship publishes him inside a single corpus of hiiu- ja vägilasmuistendid, legends of giants and strongmen: the Kalevipoeg volume (1959), the Suur Tõll volume (1963) and the Vanapagan volume (1970) are three parts of one series. In his foreword to the first, Eduard Laugaste writes that the three cycles are closely interdependent, that motifs of the different giant-heroes became mixed, and that Kalevipoeg took over material earlier attached to Tõll or to Vanapagan. He allows that the distinction he takes from Matthias Johann Eisen, between the hiid and the vägilane, blurs in the legends themselves.\n\nPeeter Süda's 1883 book is a second problem. He arranged separate stories into a continuous whole, meant as Saaremaa's local answer to Kalevipoeg, and later retellings, including Rein Raamat's 1982 animated film, descend from it.\n\nThe further claim that Tõll preserves the memory of a real early ruler of Saaremaa rests on the name and is not demonstrated."
+    },
+    "fate": "No death recorded here: he stayed on Saaremaa, its king and its farmer at once."
+  },
+  {
+    "id": "fomorians",
+    "slug": "fomorians",
+    "name": "Fomorians",
+    "alsoKnownAs": [
+      "Fomoire",
+      "Fomhóraigh",
+      "Fomori"
+    ],
+    "culture": "Irish",
+    "region": "Ireland, Tory Island, the surrounding sea",
+    "type": "race",
+    "freeEntry": true,
+    "height": "unmeasured",
+    "shortDescription": "Irish adversary race out of the sea: their rule banned the teaching of poetry and law.",
+    "fullDescription": "They banned the teaching of poetry and law. That is what the sources remember about their rule, before anything about their size.",
+    "mysteryNote": "They ruled by tribute and by silence, forbidding the poets and the druids to teach. What was in the teaching that made it worth forbidding is not recorded.",
+    "related": [],
+    "coordinates": [
+      55.27,
+      -8.23
+    ],
+    "tags": [
+      "ireland",
+      "sea",
+      "occupation",
+      "race"
+    ],
+    "sources": [
+      "Lebor Gabála Érenn, 11th century",
+      "Cath Maige Tuired",
+      "Lebor na hUidre, 11th century",
+      "Annals of the Four Masters",
+      "Geoffrey Keating"
+    ],
+    "image": "/images/giants/fomorians.jpg",
+    "imageAlt": "Fomorians, irish tradition",
+    "motifs": [
+      "pre-people"
+    ],
+    "sections": {
+      "story": "The Fomorians are the adversary race of Irish tradition. In the oldest layer they come from under the sea or under the earth. Later they are recast as sea raiders and giants, and later still as pirates from somewhere else entirely.\n\nFor a period they ruled. They took tribute from the Tuatha Dé Danann and from the Nemedians before them, and they forbade the scholars, the bards and the druids to teach. A giant race that suppresses education is a more interesting occupier than one that simply smashes things.\n\nTheir fall is a family matter. Balor, their commander, gave his daughter Ethne to Cían of the Tuatha Dé Danann. The child of that marriage was Lugh, who led the overthrow of Fomorian rule and killed Balor himself. The great enemy is destroyed by his own grandson.",
+      "origins": "Cath Maige Tuired, the Second Battle of Mag Tuired, carries the fullest account: a Middle Irish narrative resting on earlier material, surviving in London, British Library, Harleian MS 5280, written by Giolla Riabhach Ó Cléirigh in the early sixteenth century. Whitley Stokes edited it in 1891, Elizabeth A. Gray for the Irish Texts Society in 1982.\n\nLebor Gabála Érenn supplies the other frame, setting the Fomorians against each people that reaches Ireland. It exists in several recensions rather than as one text, compiled from the eleventh century onward and edited by R. A. S. Macalister for the Irish Texts Society between 1932 and 1942.\n\nLebor na hUidre, written at Clonmacnoise around 1100, once held a copy of Lebor Gabála. Those leaves are now lost.\n\nMícheál Ó Cléirigh made his own recension in 1631 and led the Annals of the Four Masters at Bundrowes, County Donegal, from 1632 to 1636. Geoffrey Keating completed Foras Feasa ar Éirinn around 1634; it circulated in manuscript, unprinted until 1723.",
+      "disputed": "The *Lebor Gabála Érenn* is a pseudo-history. It was compiled by Christian scribes in the eleventh century to give Ireland an origin story comparable to the biblical one, folding surviving oral material into a scheme running from the Flood forward. It is a real and valuable source and it is not a neutral record of pagan tradition. Where it disagrees with itself about who the Fomorians were and when they arrived, that is the seam showing."
+    },
+    "fate": "Their rule ended at the second battle of Mag Tuired, when Lugh killed Balor, his own grandfather."
+  },
+  {
+    "id": "bendigeidfran",
+    "slug": "bendigeidfran",
+    "name": "Bendigeidfran",
+    "alsoKnownAs": [
+      "Brân the Blessed",
+      "Bendigeidfran fab Llŷr",
+      "Brân Fendigaidd"
+    ],
+    "culture": "Welsh",
+    "region": "Wales and Britain",
+    "type": "individual",
+    "freeEntry": false,
+    "height": "unmeasured",
+    "shortDescription": "Welsh giant king of Britain: his severed head was buried in London to guard against invasion.",
+    "fullDescription": "His head is buried under London, facing France, still on duty.",
+    "mysteryNote": "The head faced France for as long as the ground over it stayed shut. The tradition remembers who opened it, and why.",
+    "related": [],
+    "coordinates": [
+      51.51,
+      -0.08
+    ],
+    "tags": [
+      "wales",
+      "mabinogi",
+      "king",
+      "guardian"
+    ],
+    "sources": [
+      "Mabinogion, Second Branch"
+    ],
+    "image": "/images/giants/bendigeidfran.jpg",
+    "imageAlt": "Bendigeidfran, welsh tradition",
+    "motifs": [
+      "real-site-attached"
+    ],
+    "sections": {
+      "story": "Bendigeidfran, Brân the Blessed, is a giant king of Britain in the Second Branch of the Mabinogi. He waged a war against Ireland and it destroyed almost everyone involved, including him.\n\nWhat happened after is the part worth telling. His severed head was carried to London and buried at White Hill, the site that later became the Tower of London. It was set facing France, so that no invasion could come from that direction while it lay there.\n\nA giant who keeps working after death, from underneath the capital, defending a border he can no longer see.",
+      "origins": "The Second Branch of the Mabinogi, Branwen ferch Llŷr, is the source. It is a Middle Welsh prose tale, surviving complete in the White Book of Rhydderch (c. 1350) and the Red Book of Hergest (c. 1382 to 1410), with earlier fragments in Peniarth 6, dated by Daniel Huws to the second half of the thirteenth century. The composition is older than any surviving copy.\n\nThe collective title is modern. William Owen Pughe applied Mabinogion to the tales in 1795, and Lady Charlotte Guest's translation, published in parts between 1838 and 1845, fixed it in English. The form rests on a scribal plural of mabinogi that occurs once in the manuscripts.\n\nThe buried head travels outside the tale in the Welsh Triads, edited by Rachel Bromwich as Trioedd Ynys Prydein (Cardiff, 1961). They count the concealment of the head at the White Hill in London, facing France, among the Three Fortunate Concealments, and name Arthur as the one who disclosed it.",
+      "disputed": "The date is unsettled. Ifor Williams, in Pedeir Keinc y Mabinogi (1930), proposed about 1060. T. M. Charles-Edwards argued for roughly 1050 to 1120. Andrew Breeze places the Four Branches in the 1120s or early 1130s and attributes them to Gwenllian ferch Gruffudd, a proposal the surviving evidence neither confirms nor refutes. Simon Rodway has argued on linguistic grounds that a later twelfth-century date cannot be ruled out.\n\nWhether Bendigeidfran was once a god is not demonstrable. W. J. Gruffydd's reconstructions of a lost mythological cycle behind the Four Branches are now generally read as speculation.\n\nThe affinities of the tale are argued too. Proinsias Mac Cana, in Branwen Daughter of Llŷr (1958), made the case for Irish literary influence. Alaric Hall, in Cambrian Medieval Celtic Studies 42 (2001), set Icelandic analogues beside it, notably from Hrólfs saga kraka.\n\nThe ravens at the Tower of London are not evidence of him. Boria Sax and Geoffrey Parnell have found no reference to ravens kept there before the late nineteenth century."
+    },
+    "fate": "Killed in the war on Ireland. His severed head was buried at White Hill in London, facing France."
+  },
+  {
+    "id": "ysbaddaden",
+    "slug": "ysbaddaden",
+    "name": "Ysbaddaden Bencawr",
+    "alsoKnownAs": [
+      "Ysbaddaden Bencawr",
+      "Ysbaddaden Pencawr",
+      "Yspaddaden Penkawr"
+    ],
+    "culture": "Welsh",
+    "region": "Wales",
+    "type": "individual",
+    "freeEntry": false,
+    "height": "unmeasured",
+    "shortDescription": "Welsh chief giant of Culhwch and Olwen: his eyelids had to be propped up with forks.",
+    "fullDescription": "His eyelids were too heavy to lift on their own. Servants held them open with forks.",
+    "mysteryNote": "Servants with forks decided when he could see. Everything he learned about the world arrived at someone else's convenience.",
+    "related": [],
+    "coordinates": [
+      51.87,
+      -5.28
+    ],
+    "tags": [
+      "wales",
+      "arthurian",
+      "eyelids",
+      "father"
+    ],
+    "sources": [
+      "Culhwch and Olwen"
+    ],
+    "image": "/images/giants/ysbaddaden.jpg",
+    "imageAlt": "Ysbaddaden Bencawr, welsh tradition",
+    "motifs": [
+      "one-eye"
+    ],
+    "sections": {
+      "story": "Ysbaddaden Bencawr is the chief of giants in *Culhwch and Olwen*, one of the earliest Arthurian tales in Welsh. He is the father of Olwen, and the whole story turns on his refusal to let her go: he sets Culhwch a long list of impossible tasks, because he is fated to die when his daughter marries. He is killed at the end by his own nephew.\n\nThe detail that fixes him in place is the eyelids. They had to be propped up with forks before he could see anything at all.\n\nBalor, across the Irish Sea, needed a rope and a pulley to raise the lid of his single destroying eye. Two neighbouring Celtic traditions, and the same strange specific image of a giant whose weapon is his sight and whose problem is opening it.",
+      "origins": "Culhwch ac Olwen survives in two medieval Welsh manuscripts. The White Book of Rhydderch (Aberystwyth, National Library of Wales, Peniarth MSS 4 and 5), copied around the middle of the fourteenth century, lacks the final third of the tale. The complete text is in the Red Book of Hergest (Oxford, Jesus College MS 111), written between about 1382 and 1410.\n\nThe narrative is older than either copy. Idris Foster, and later Rachel Bromwich and D. Simon Evans in their edition Culhwch and Olwen: An Edition and Study of the Oldest Arthurian Tale (University of Wales Press, 1992), placed its composition around 1100, which would make it the earliest surviving Arthurian prose tale.\n\nIt reached a general readership through Lady Charlotte Guest, who translated it within The Mabinogion, issued in parts between 1838 and 1845 and collected in three volumes in 1846. It is not one of the Four Branches, but one of the other tales Guest gathered under that title.",
+      "disputed": "The date is contested. Composition is conventionally placed around 1100, following Idris Foster and the Bromwich and Evans edition. Simon Rodway, in \"The date and authorship of Culhwch ac Olwen: a reassessment\" (Cambrian Medieval Celtic Studies 49, 2005, 21 to 44), argued on orthographic grounds for the middle of the twelfth century instead.\n\nThe tale's unity is argued over too. Bromwich and Evans treated the long list of Arthur's court as an accretion rather than part of the original narrative. On that reading the giant's story is the older core, with other material gathered around it.\n\nWhether Ysbaddaden is an inherited figure at all is a further question. Kenneth Jackson, in The International Popular Tale and Early Welsh Tradition (University of Wales Press, 1961), read such material as local tellings of widely distributed folktale types. Ronald Hutton, in \"Medieval Welsh Literature and Pre-Christian Deities\" (Cambrian Medieval Celtic Studies 61, 2011, 57 to 85), warned against reading medieval Welsh characters as demoted pagan gods."
+    },
+    "fate": "Killed by his own nephew when his daughter married, exactly as he was fated to be."
+  },
+  {
+    "id": "tombe-dei-giganti",
+    "slug": "tombe-dei-giganti",
+    "name": "Tombe dei Giganti",
+    "alsoKnownAs": [
+      "Tomba dei giganti",
+      "Tumbas de gigantis",
+      "Tumba de zigantes",
+      "Sa domu e s'orku",
+      "Giants' graves"
+    ],
+    "culture": "Sardinian",
+    "region": "Sardinia",
+    "type": "folklore",
+    "freeEntry": true,
+    "height": "inferred from the tombs",
+    "shortDescription": "Around eight hundred Nuragic collective tombs in Sardinia, named for giants by popular tradition.",
+    "fullDescription": "Around eight hundred of them across the island. They are called giants' tombs because nothing else seemed large enough to need one.",
+    "mysteryNote": "The door cut in the central stele is too small to walk through. The living sat outside it, and slept, and waited to be answered.",
+    "related": [],
+    "coordinates": [
+      40.12,
+      9.05
+    ],
+    "tags": [
+      "sardinia",
+      "nuragic",
+      "burial",
+      "dreams"
+    ],
+    "sources": [
+      "Sardinian regional archaeological documentation",
+      "Nuragic-period site surveys"
+    ],
+    "image": "/images/giants/tombe-dei-giganti.jpg",
+    "imageAlt": "Tombe dei Giganti, sardinian tradition",
+    "motifs": [
+      "builder",
+      "real-site-attached",
+      "pre-people"
+    ],
+    "sections": {
+      "story": "These are the monumental collective tombs of the Nuragic culture. The facade curves out in a semicircle shaped like a pair of bull's horns, built from great slabs driven upright into the ground, with a single tall stele at the centre pierced by a door too small for anyone to walk through standing.\n\nSardinian folk speech calls them, and the nuraghi, sa domu e s'orku: the house of the ogre. The giants' name comes from the size of the stones and from reports of enormous bones found inside the chambers, at a time when there was no archaeology to say otherwise.\n\nThe detail that belongs to no one else is what people did there. Along the outside of the curved facade there are stone seats, and relatives of the dead slept on them in order to reach the dead through dreams. The practice has a name: incubation, from the Latin for sleeping upon.\n\nSites worth naming: Coddu Vecchiu, Li Lolghi and Capichera at Arzachena, Pascaredda at Calangianus, Mont'e s'Abe at Olbia, Imbertighe, Is Concias, Sa Domu e S'Orku at Siddi, and Su Cuaddu de Nixias at Lunamatrona, the oldest.",
+      "origins": "The monuments are Nuragic and Bronze Age. The name is not. Sardinian vernacular calls them tumbas de gigantis, and the Italian tomba dei giganti follows popular usage, a term archaeologists then took over as standard.\n\nNineteenth century Sardinian topography carried the local accounts into print. Vittorio Angius (1797 to 1862) supplied the Sardinian material for the geographical dictionary compiled by Goffredo Casalis and published in Turin from 1833, describing the monuments and the beliefs attached to them.\n\nAntonio Taramelli (1868 to 1939), superintendent of antiquities for Sardinia, carried out the first systematic survey and excavation of the sites in the early twentieth century.\n\nThe incubation reading has its own lineage. Aristotle, Physics IV.11, refers to those in Sardinia said to sleep beside the heroes, and Simplicius glossed the passage in his commentary. Raffaele Pettazzoni tied that testimony to the monuments in La religione primitiva in Sardegna (Piacenza, 1912), and Karoly Kerenyi returned to it in Miti e misteri (Turin, 1950).",
+      "disputed": "The regional authorities describe the giant-burial idea plainly as popular belief, and the tombs as an architectural evolution of earlier gallery graves. That is the archaeology and it is not in serious doubt. Separately, a belief in some unidentified form of Sardinian gigantism has spread over the last few decades, reportedly reaching some academic circles. That claim has not been substantiated here and is repeated only as a claim."
+    },
+    "fate": "Not a being but a site tradition: the tombs still stand, and the seats outside them were slept on to reach the dead."
+  },
+  {
+    "id": "nemri",
+    "slug": "nemri",
+    "name": "Nemri",
+    "alsoKnownAs": [
+      "stari narod (the old people)",
+      "Nemer (singular form)"
+    ],
+    "culture": "Croatian",
+    "region": "Velebit and Lika",
+    "type": "race",
+    "freeEntry": false,
+    "height": "unmeasured",
+    "shortDescription": "Croatian giant race of Lika and Velebit: the old people, who could not die a natural death.",
+    "fullDescription": "They are called the old people. They could not die a natural death.",
+    "mysteryNote": "Not dying is told as a condition, not a gift. The carved stones the tradition attaches them to were cut by other hands, centuries later.",
+    "related": [],
+    "coordinates": [
+      44.55,
+      15.37
+    ],
+    "tags": [
+      "croatia",
+      "dinaric",
+      "stecci",
+      "old-people"
+    ],
+    "sources": [
+      "Croatian ethnological literature",
+      "Ana Perinić Lewis, \"Junaci, divovi i patuljci Gorskoga kotara\", 2019",
+      "Maja Bošković-Stulli",
+      "for the wider South Slavic frame, Slobodan Zečević, Митска бића српских предања, 1981"
+    ],
+    "image": "/images/giants/nemri.jpg",
+    "imageAlt": "Nemri, croatian tradition",
+    "motifs": [
+      "pre-people",
+      "real-site-attached"
+    ],
+    "sections": {
+      "story": "Across the Velebit range and through Lika, the giants are the Nemri, and ethnologists treat them as a genuine local particularity rather than something borrowed. The term is still recognised among people of the Dinaric country.\n\nThey are described as a lost people who lived here before the Greeks, and who could not die naturally. That is not stated as a power. It is stated as a condition, and it implies that something went wrong for them.\n\nA large part of the Nemri tradition attaches to the places where stećci stand, the medieval tombstones of the Dinaric interior.\n\nThey belong with the Kāhui Tipua of New Zealand, the Fomorians of Ireland and the Quinametzin of Mexico. Four traditions with nothing in common, each explaining an inherited landscape by putting a larger, earlier people in it.",
+      "origins": "There is no medieval text. The Nemri are an oral tradition of Lika, the Velebit Podgorje and the wider Dinaric interior, recorded by collectors rather than composed by authors.\n\nNineteenth-century collectors working in Lika and in Bosanska Krajina published accounts of a giant old population in regional periodicals. Maja Bošković-Stulli gathered folklore from the immediate area in the 1950s, in \"Folklorna građa okolice Lovinca u Lici\" (1955) and \"Folklorna građa sa Zrmanje\" (1957).\n\nThe comparative frame is Vlajko Palavestra's work on traditions of an earlier population across the Dinaric lands: \"Narodna predanja o starom stanovništvu u dinarskim krajevima\" (1966), and later \"Historijska usmena predanja iz Bosne i Hercegovine\" (2004).\n\nThe modern survey is Matija Dronjić, \"Prilog istraživanju predaja o starom narodu na području Like i Podgorja\", in Senjski zbornik 39 (2012), which gathers the Lika attestations and sets the Nemri against the Grci traditions of the same region.\n\nTransmission is local and site-bound: hillforts, stećak necropolises, large bones turned up in fields.",
+      "disputed": "The relation between Nemri and Grci is argued. Dronjić (2012) reads them as two layers: an older Nemri stratum carrying the fantastic attributes, giant stature, superhuman strength, unnatural longevity, and a younger Grci stratum in which those attributes are absent. Whether that is genuine chronological layering or parallel naming within one region is not settled.\n\nWhere the Grci label comes from is the sharper disagreement. Palavestra's explanation is confessional, deriving it from the Orthodox \"Greek\" church. Dronjić argues instead for westward diffusion with populations moving ahead of Ottoman expansion, noting that the term is attested in Senj before settlement in Lika is documented.\n\nThe name Nemri itself has no agreed etymology. Dronjić's survey offers none, and the transparent Slavic reading has not been established philologically.\n\nThe stećci are the standing misreading. They are medieval tombstones. The folk attribution of them to a giant race is a tradition about the stones, not evidence about them."
+    },
+    "fate": "A lost people who could not die naturally, remembered where the stecci stand."
+  },
+  {
+    "id": "klek",
+    "slug": "klek",
+    "name": "Klek",
+    "alsoKnownAs": [
+      "Veliki Klek",
+      "uspavani div, the sleeping giant"
+    ],
+    "culture": "Croatian",
+    "region": "Klek, Orjen, Snježnik",
+    "type": "individual",
+    "freeEntry": true,
+    "height": "the mountain",
+    "shortDescription": "Croatian giant petrified above Ogulin: the river Dobra runs out of his wound.",
+    "fullDescription": "Seen from Ogulin, the mountain is a sleeping man. The peak is his head. The two crags below are his legs.",
+    "mysteryNote": "He was struck while running, and the wound has not stopped running either. From Ogulin you can still see where he came to rest.",
+    "related": [],
+    "coordinates": [
+      45.26,
+      15.14
+    ],
+    "tags": [
+      "croatia",
+      "petrified",
+      "perun",
+      "river"
+    ],
+    "sources": [
+      "Maja Bošković-Stulli",
+      "Nikola Sučić, Hrvatska narodna mitologija, with the caveat that its scholarly standing should be checked",
+      "Stjepan Banović, Vjerovanja (Zaostrog u Dalmaciji), 1918"
+    ],
+    "image": "/images/giants/klek.jpg",
+    "imageAlt": "Klek, croatian tradition",
+    "motifs": [
+      "petrified",
+      "river-from-a-giant",
+      "real-site-attached"
+    ],
+    "sections": {
+      "story": "Klek, Orjen and Snježnik are giants who were turned to stone. Klek is the one people can still read at a glance: from the Ogulin side the ridge lies down as a sleeping giant, the summit at 1181 metres is the head, and the Klečice crags coming up out of the treeline are the legs.\n\nHe was running when it happened. Perun struck him with an arrow in the right vein as he fled, and the people named that vein the river Dobra, also called Đula.\n\nThat is worth sitting with. The river is not named after the wound. The river is the wound. It is the same logic that turns Ymir's blood into the sea, worked at the scale of one valley.\n\nKlek carries a second tradition on top of the first. Witches gather there, and the lightning around the mountain is their assembly. The two stories share the mountain without much interfering with each other.",
+      "origins": "The tradition is local and topographic, fixed to one ridge in the Velika Kapela massif above Ogulin: Veliki Klek at 1181 metres, with Klečica at 1062.\n\nThe earliest written notice belongs to the witches rather than to the giant. Johann Weichard von Valvasor, author of Die Ehre dess Hertzogthums Crain (1689), is credited with recording the Klek assembly in the seventeenth century.\n\nThe petrifaction story reaches print through twentieth-century Croatian collecting. Stjepan Banović's Vjerovanja (Zaostrog u Dalmaciji) appeared in 1918. Nikola Sučić's Hrvatska narodna mitologija was published in Zagreb in 1943 and reprinted in 2013 with an afterword by Tomislav Pletenac that presents it as a monument to its own period rather than as method. Maja Bošković-Stulli (1922 to 2012), of the Institute of Ethnology and Folklore Research in Zagreb, supplies the critical baseline for Croatian oral legend.\n\nLater transmission ran through mountaineering writing, Klek being called the cradle of Croatian mountaineering, and through Ogulin's modern fairy-tale tourism.",
+      "disputed": "Perun is one of the few Slavic deities securely attested rather than reconstructed, which gives this tradition a firmer footing than most Croatian material claiming pre-Christian origin. Much of what circulates online as Croatian or Slavic mythology, including elaborate creation stories and full pantheon genealogies, is nineteenth or twentieth century reconstruction or modern invention. This is not that. But the surrounding material should be treated with care."
+    },
+    "fate": "Struck by Perun's arrow as he fled and turned to stone. The wound is the river Dobra."
+  },
+  {
+    "id": "uriasi",
+    "slug": "uriasi",
+    "name": "Uriași",
+    "alsoKnownAs": [
+      "Novaci",
+      "Jidovi",
+      "Căpcăuni",
+      "Coloși",
+      "Tătari"
+    ],
+    "culture": "Romanian",
+    "region": "Romania",
+    "type": "race",
+    "freeEntry": false,
+    "height": "the Danube reached their ankles",
+    "shortDescription": "Romanian race of giants from before mankind: the Danube reached their ankles, the Flood ended them.",
+    "fullDescription": "The Danube came up to their ankles. They could reach the handles of the sky. Their age ended with the Flood.",
+    "mysteryNote": "The Flood took them. Their names stayed behind on the map, including one gorge that was eventually called something else.",
+    "related": [],
+    "coordinates": [
+      45.9,
+      24.9
+    ],
+    "tags": [
+      "romania",
+      "flood",
+      "carpathians",
+      "race"
+    ],
+    "sources": [
+      "Ion Taloș, mythological dictionary",
+      "Romanian folk collections. Not Densușianu."
+    ],
+    "image": "/images/giants/uriasi.jpg",
+    "imageAlt": "Uriași, romanian tradition",
+    "motifs": [
+      "pre-people"
+    ],
+    "sections": {
+      "story": "Romanian tradition calls its giants uriași, and regionally novaci, jidovi, căpcăuni, coloși and tătari. They were here before people, they were enormous beyond measuring, and the Flood ended them.\n\nTwo of them have names and have stayed in the language: Sfarmă-Piatră, Crush-Stone, and Strâmbă-Lemne, Bend-Wood. Iovan Iorgovan belongs to the same company.\n\nTheir names are on the map. The town of Novaci in Gorj county. Jidova, Jidovița, and Jidvei in Alba. A gorge in the Eastern Carpathians called Valea Jidovului for a long time before the name was changed.",
+      "origins": "Romanian giant tradition is oral rather than literary. There is no founding text behind it: the material survives in folk narrative and in the ordinary vocabulary of the language, and it reached print only when collectors began gathering Romanian popular material in the nineteenth century.\n\nThe naming is regional, which is part of why the tradition was recorded piecemeal. Uriași is the general word, with novaci, jidovi, căpcăuni, coloși and tătari used in different areas. The named figures, Sfarmă-Piatră, Strâmbă-Lemne and Iovan Iorgovan, come down through the same folk collections.\n\nThe modern reference point is Ion Taloș, the Romanian ethnologist whose mythological dictionary gathers the scattered material into usable form.\n\nPlace-names carry the tradition independently of any text: Novaci in Gorj, Jidova, Jidovița and Jidvei in Alba, Valea Jidovului in the Eastern Carpathians.\n\nA separate and much later stream begins with Nicolae Densușianu's Dacia preistorică, published posthumously, which absorbed the giants into a nationalist prehistory. That stream is not folk transmission.",
+      "disputed": "This entry needs a warning that the others do not.\n\nThe folklore is real, and Ion Taloș is a real ethnologist whose mythological dictionary is the source to build on. But searches on Romanian giants return a large body of material presented as fact that is nothing of the sort: five-metre skeletons, eighty giants exhumed at one site, bones described as pink as though irradiated, a skeleton urgently removed to Moscow, the intelligence service sealing a mine shaft, and a deliberate historiographic cover-up. Around it sit Atlantis, hyperboreans, and the claim that the Greek gods and Titans were Dacians.\n\nThe founding text of that tradition is Nicolae Densușianu's *Dacia preistorică*, the origin point of Romanian protochronism, a nationalist pseudo-history that has been thoroughly discredited. It is cited constantly and should not be used here.\n\nNote also that jidov and its relatives carry real sensitivities in Romanian, and the same naming habit appears in Bulgarian tradition, where Iliev's 1890 collection describes the ispolini as called Greeks, Jews and Latins."
+    },
+    "fate": "Ended by the Flood, leaving their names across the map."
+  },
+  {
+    "id": "croatian-giants-lesser",
+    "slug": "croatian-giants-lesser",
+    "name": "Croatian Giants: The Lesser Traditions",
+    "alsoKnownAs": [
+      "Vedi",
+      "Hajdi",
+      "Sambo",
+      "divovi"
+    ],
+    "culture": "Croatian",
+    "region": "Croatia",
+    "type": "folklore",
+    "freeEntry": false,
+    "height": "varies",
+    "shortDescription": "Four small Croatian traditions: one-eyed giants, the Vedi, Sambo under Samobor, the Neretva mounds.",
+    "fullDescription": "Four smaller Croatian traditions, each too thin to stand alone and too specific to lose.",
+    "mysteryNote": "The mounds are still there, and still closed. Whatever the valley decided was lying under them, it decided without ever looking.",
+    "related": [],
+    "coordinates": [
+      45.1,
+      15.2
+    ],
+    "tags": [
+      "croatia",
+      "regional",
+      "one-eye",
+      "mounds"
+    ],
+    "sources": [
+      "Maja Bošković-Stulli",
+      "Stjepan Banović, Vjerovanja (Zaostrog u Dalmaciji), 1918",
+      "Ana Perinić Lewis, \"Junaci, divovi i patuljci Gorskoga kotara\", 2019",
+      "Nikola Sučić, Hrvatska narodna mitologija, with the caveat noted in the Klek entry"
+    ],
+    "image": "/images/giants/croatian-giants-lesser.jpg",
+    "imageAlt": "Croatian Giants: The Lesser Traditions, croatian tradition",
+    "motifs": [
+      "one-eye",
+      "petrified",
+      "pre-people",
+      "real-site-attached",
+      "builder"
+    ],
+    "sections": {
+      "story": "**The one-eyed giants of Brač and Paklenica.** On the island of Brač there are traditions of powerful men with a single eye in the middle of the forehead. In Paklenica there was a one-eyed giant who lived in a cave. This is a Croatian cyclops tradition on the Adriatic, in the same sea as Polyphemus but in a separate stream of storytelling. Whether that is independence, shared inheritance, or later borrowing from classical material is the same open question raised under the Katallani entry in Albania, and it is not settled here either.\n\n**The Vedi.** In the Bilogora country, giants who left their original settlements and withdrew into the forests. Not driven out, not killed. They simply went.\n\n**The Hajdi and Sambo.** Samobor and the Samoborsko gorje were theirs. The church of Sv. Križ at Otruševec is credited to them. The giant Sambo is said to lie petrified beneath Samobor, which puts him with Klek, Orjen and Snježnik among the giants who became landscape.\n\n**The giants of the Neretva valley.** Here the tradition is attached to Illyrian burial mounds, and the giants are remembered in a specific phrase: those who were here before us. Local estimate put the bones in the mounds at up to two and a half metres.\n\nThe mounds were never dug up. They were treated with respect and left alone, and that is the part of this tradition worth keeping. The interesting thing is not what was in the ground. It is that a community found something it could not explain, decided it belonged to an earlier and larger people, and then chose reverence over excavation.",
+      "origins": "Four separate local traditions, recorded in four different parts of Croatia: Brač, Paklenica, the Bilogora, Samobor and the Samoborsko gorje, and the Neretva valley.\n\nThe oldest named source is Stjepan Banović's Vjerovanja (Zaostrog u Dalmaciji), 1918, a monograph of folk belief from a single Dalmatian place. Work of that kind was produced inside a collecting apparatus built a generation earlier: the Academy's Zbornik za narodni život i običaje Južnih Slavena, founded 1896, and Antun Radić's Osnova za sabiranje i proučavanje građe o narodnom životu, 1897, a detailed fieldwork guide that had local intellectuals record peasant life in its own dialect.\n\nMaja Bošković-Stulli (1922 to 2012), of the Institute of Ethnology and Folklore Research in Zagreb, left 34 manuscript collections and 59 tape recordings from almost all of Croatia. Ana Perinić Lewis, \"Junaci, divovi i patuljci Gorskoga kotara\", 2019, is the recent scholarship.",
+      "disputed": "The word itself is contested. The Hrvatska enciklopedija of the Leksikografski zavod Miroslav Krleža derives div from Turkish dev and Persian dīv, and places the shift in sense from demon to giant inside Turkish. Against that stands the reconstruction of an inherited Proto-Slavic *divъ, connected either to Proto-Indo-European *deywós, god, or to *dyew-, to be bright, with the demon sense arising later, possibly by demonisation under Iranian contact, on the pattern by which Sanskrit deva became Avestan daēuua. Loanword or inheritance is not settled.\n\nThe one-eyed giants of Brač and Paklenica raise a second question that is also open: independent local invention, shared inheritance, or borrowing from classical material carried along the Adriatic.\n\nThe sourcing carries its own caveat. Nikola Sučić's Hrvatska narodna mitologija is cited for this material with its scholarly standing recorded as unverified, and nothing in the present checking settled it."
+    },
+    "fate": "Different endings: the Vedi withdrew into the forests, and Sambo lies petrified beneath Samobor."
+  },
+  {
+    "id": "british-giants-lesser",
+    "slug": "british-giants-lesser",
+    "name": "British Giants: The Lesser Traditions",
+    "alsoKnownAs": [
+      "Idris Gawr",
+      "Blunderboar",
+      "Thunderbore",
+      "Blunderbuss",
+      "Branwen ferch Llyr (Second Branch)"
+    ],
+    "culture": "British and Welsh",
+    "region": "Britain and Wales",
+    "type": "folklore",
+    "freeEntry": false,
+    "height": "varies",
+    "shortDescription": "Four minor British and Welsh giants: a mountain, a beacon, a chapbook villain and a cauldron.",
+    "fullDescription": "Britain kept more giants than it had room to remember properly. These are the ones who left a name and not much else.",
+    "mysteryNote": "Four names, and between them barely one whole story. A mountain still called a chair is most of what is left of the man said to have sat in it.",
+    "related": [],
+    "coordinates": [
+      52,
+      -4
+    ],
+    "tags": [
+      "britain",
+      "wales",
+      "cornwall",
+      "mabinogi"
+    ],
+    "sources": [
+      "Mabinogion, Second Branch",
+      "Robert Hunt, Popular Romances of the West of England",
+      "the Jack the Giant Killer chapbook tradition"
+    ],
+    "image": "/images/giants/british-giants-lesser.jpg",
+    "imageAlt": "British Giants: The Lesser Traditions, british and welsh tradition",
+    "motifs": [
+      "pre-people",
+      "outwitted",
+      "real-site-attached"
+    ],
+    "sections": {
+      "story": "**Idris Gawr.** Cader Idris in Wales is his chair, and the mountain carries his name to this day. A giant remembered entirely through furniture, like Gargantua across the channel.\n\n**Bolster.** The Cornish giant of St Agnes Beacon.\n\n**Blunderbore.** Another Cornish giant of the Jack the Giant Killer cycle. In the story Jack, having already killed Cormoran, is captured by Blunderbore and thrown into the dungeon of his castle to be eaten later. He escapes and kills both Blunderbore and his brother while they sleep, with rope.\n\n**Llassar Llaes Gyfnewid and Cymidei Cymeinfoll.** A giant husband and wife in the Second Branch of the Mabinogi, who bring the Cauldron of Rebirth out of Ireland to Wales. A cauldron that returns the dead to life, but returns them mute. They are the couriers of the single most dangerous object in the tale, and they are giants because nothing smaller could carry it.",
+      "origins": "The four figures reach the catalogue by three separate routes.\n\nLlassar Llaes Gyfnewid and Cymidei Cymeinfoll belong to Branwen ferch Llyr, the Second Branch of the Mabinogi. The tales survive in two Middle Welsh manuscripts: the White Book of Rhydderch, in the Peniarth collection at the National Library of Wales, written about 1350, and the Red Book of Hergest at Jesus College, Oxford. Lady Charlotte Guest's English translation, issued in parts between 1838 and 1849, gave the collection the name by which it is now known.\n\nBlunderbore comes from print rather than from field collection. He belongs to the Jack the Giant Killer chapbooks, the earliest recorded being The History of Jack and the Giants, published in two parts by J. White of Newcastle in 1711.\n\nBolster reaches us through Robert Hunt, who walked Cornwall for ten months from 1829 collecting drolls from the last of the droll tellers, and printed them a generation later in Popular Romances of the West of England.\n\nIdris is attached to Cadair Idris, the Chair of Idris, by topographic tradition. No medieval Welsh narrative about him survives.",
+      "disputed": "British searches turn up a large nineteenth-century antiquarian literature reporting giant skeletons: a thigh bone from a man eight feet nine inches tall, a skeleton of fourteen feet ten inches, remains above the common size of men. These are reports about reports, made before modern archaeology and often at second hand, and they circulate today mainly in contexts that have already decided what they want them to prove. They belong in Bones & Shadows, if anywhere, and not in this entry."
+    },
+    "fate": "Different endings: Blunderbore killed with rope in his sleep, Idris remembered only through his chair."
+  },
+  {
+    "id": "koljo",
+    "slug": "koljo",
+    "name": "Koljo",
+    "alsoKnownAs": [
+      "Koljatti",
+      "Kolio",
+      "Koljumi"
+    ],
+    "culture": "Finnish",
+    "region": "Finland",
+    "type": "individual",
+    "freeEntry": false,
+    "height": "unmeasured",
+    "shortDescription": "Finnish giant surviving in place-names: possibly a word for death before he was a giant.",
+    "fullDescription": "A giant who survives mostly as place-names, and a scholarly argument about whether he was ever a giant at all.",
+    "mysteryNote": "Follow a Koljo name to an island in the lake country and the dead are often already there, in ground no parish ever consecrated. The giant may be the last shape a word for death took.",
+    "related": [],
+    "coordinates": [
+      62.5,
+      27.3
+    ],
+    "tags": [
+      "finland",
+      "toponym",
+      "archaeology",
+      "giant"
+    ],
+    "sources": [
+      "Juha Ruohonen, \"Giant, Devil or Death? The Finnish Koljo in Mythology, Toponyms, Folklore and Archaeology\"",
+      "Finnish land register of Savo, 1560s"
+    ],
+    "image": "/images/giants/koljo.jpg",
+    "imageAlt": "Koljo, finnish tradition",
+    "motifs": [
+      "pre-people",
+      "real-site-attached"
+    ],
+    "sections": {
+      "story": "Koljo is a Finnish name for a giant, and the tradition around him has been studied more carefully than most, in a paper whose title asks the right question: giant, devil, or death?\n\nThe name is attached to the ground. The earliest recorded example, Kolionmäki, Koljo's Hill, appears in the first land register of Savo in the 1560s, which makes it older than most written folklore anywhere in this catalogue.\n\nThe Koljo names cluster in a defined area, while others, like Kalevanpoika in southwest Finland and Estonia, cluster elsewhere. Mapped together they show something the stories alone do not: giants are not evenly distributed. Each name belongs to a region, and where the names blur into one another over time, the tradition behind them has usually already begun to fade.",
+      "origins": "Koljo is documented first in administrative records rather than in literature. A Nicki Koljolainen appears in the Kangasala district court records in January 1486. The place-name Kolionmäki is entered in the first land register of Savo in the 1560s, together with kolian nemi and kolion nemi at Särkilahti in Sääminki.\n\nThe word reaches lexicography in Renvall's Finnish dictionary of the 1820s, glossed as a large or gigantic person and as a mythical giant. More than 150 place-names containing koljo and its variants can still be read off modern maps, concentrated in the old Häme region and in eastern Finland.\n\nThe modern study is Juha Ruohonen's, published in Finnish as \"Jättiläinen, paholainen, kuolema? Koljo kansanperinteessä, nimistössä ja maastossa\" in Sananjalka 52 (2010), pages 148 to 162, and in English as \"Giant, Devil or Death?\" in Culture Crossroads volume 5 (2011), pages 101 to 115, the Latvian Academy of Culture's proceedings of a 2009 conference on natural holy places held at the Turaida Museum Reserve.",
+      "disputed": "Ruohonen's title is a real question rather than a rhetorical one. He argues that koljo originally carried senses of death and of notable terrain, and that the giant is a later development, following the account of Christianisation reshaping older belief vocabulary set out by Koski in 1967. That is an argument in progress, not a settled result.\n\nThe etymology is unresolved. Setälä in 1912 connected koljo with Estonian koll, a word for the dead. Comparisons have also been proposed with Germanic halja and hel, and with Permic and Ob-Ugric words meaning serious disease, plague, devil and god of the underworld. Ruohonen calls the word ambiguous and in part blurred.\n\nHow far the biblical Goliath, Finnish koljatti, shaped the giant sense rather than merely darkening it is not established.\n\nRuohonen also rejects deriving related kuolio names from Saami guolli, fish, on archaeological grounds. That alternative etymology stands in the literature."
+    },
+    "fate": "No death: he survives as a name on the ground, first recorded in the Savo land register of the 1560s."
+  },
+  {
+    "id": "santa-elena-giants",
+    "slug": "santa-elena-giants",
+    "name": "The Giants of Santa Elena",
+    "alsoKnownAs": [],
+    "culture": "Manta, recorded by Spanish chroniclers",
+    "region": "Punta de Santa Elena, Ecuador",
+    "type": "modern-legend",
+    "freeEntry": false,
+    "height": "knee to ground equal to a grown man",
+    "shortDescription": "Giants said to have landed by raft on the Ecuadorian coast: the bones under the story are mastodon.",
+    "fullDescription": "In 1553 a Spanish chronicler wrote down what the Manta people told him about the giants who landed on their coast. Four centuries later, someone worked out what the bones were.",
+    "mysteryNote": "They dug their wells down into living rock, and the wells are still there. Bones came up out of that same peninsula for four hundred years before anyone could name the animal.",
+    "related": [],
+    "coordinates": [
+      -2.18,
+      -80.98
+    ],
+    "tags": [
+      "ecuador",
+      "chronicle",
+      "fossils",
+      "colonial",
+      "sea-arrival"
+    ],
+    "sources": [
+      "Pedro Cieza de León, Crónica del Perú, 1553",
+      "Garcilaso de la Vega, Comentarios Reales de los Incas, 1609",
+      "Agustín de Zárate",
+      "Pedro Gutiérrez de Santa Clara",
+      "Antonio de Herrera",
+      "José García de León y Pizarro, eighteenth-century report on the petrified bones of the Punta de Santa Elena",
+      "modern research on the interpretation of mastodon remains in Ecuador"
+    ],
+    "image": "/images/giants/santa-elena-giants.jpg",
+    "imageAlt": "The Giants of Santa Elena, manta, recorded by spanish chroniclers tradition",
+    "motifs": [
+      "bones-as-proof",
+      "arrived-by-sea",
+      "christian-ending-added",
+      "pre-people",
+      "real-site-attached"
+    ],
+    "sections": {
+      "story": "Pedro Cieza de León did not claim to have seen anything. He recorded what he was told, and he said so, which is more than most of his contemporaries managed.\n\nThe giants came by sea, on rafts made of bundled reeds, and landed at the Punta de Santa Elena near Puerto Viejo. They were built so that from the knee to the ground they matched a full-grown man, and the tallest Castilian would not have reached their waists. Their hair hung loose down their backs. They had no beards. Their eyes were described as the size of small plates. Some wore skins. Some wore nothing.\n\nThey brought no women with them.\n\nThey dug wells down into the living rock to reach water, and those wells are the part of the story you can still visit. They fished, and they hunted the local forest, and they raided the village, and by Cieza's account they ate what they took, the people included. One of them was said to eat as much as fifty of the local men.\n\nLater chroniclers repeated and extended the account. Herrera has them arriving from the coasts of the Río de la Plata. Some versions have the Inca Túpac Yupanqui attempting to bring them under control. Bones and skulls of extraordinary size were reported across the peninsula for centuries, and in the eighteenth century a colonial official compiled a formal report on the petrified bones and an enormous molar found there.\n\nThe bones were real. Research into how Ecuadorians historically made sense of mastodon remains connects the Andean and coastal giant traditions directly to fossil finds. Santa Elena sits on ground that produces the bones of animals nobody in the sixteenth century had a category for.",
+      "origins": "Pedro Cieza de León is the source. He travelled in Peru between 1548 and 1550, and published the first part of his Crónica del Perú at Seville in 1553, with an Antwerp printing in 1554. The giants occupy chapter LII, which pairs them with the wells at the point of Santa Elena. Cieza gives the account as something he was told.\n\nLater chroniclers carried it forward: Agustín de Zárate (Antwerp, 1555), Garcilaso de la Vega in the Comentarios Reales de los Incas (Lisbon, 1609), and Antonio de Herrera y Tordesillas, whose Décadas appeared between 1601 and 1615. Pedro Gutiérrez de Santa Clara wrote in the 1550s but stayed unpublished until Manuel Serrano y Sanz issued his chronicle in Madrid between 1904 and 1929.\n\nThe bones held the story to the ground. An eighteenth-century colonial report by García de León y Pizarro described petrified remains and a great molar from the peninsula, and modern work on how mastodon finds in Ecuador were read has since linked the tradition to them.",
+      "disputed": "The ending is not Manta tradition.\n\nCieza's account closes with the giants, having no women of their own, turning to each other, and a Christian archangel descending to destroy them with a sword of fire as punishment. Scholarship on this material notes plainly that whatever the local story was, this ending belongs to the chronicler.\n\nThat is worth pausing on, because it is rare. Usually the Christian layer over an indigenous story has to be inferred. Here it can be watched being applied, in a datable document, by a named man, in 1553."
+    },
+    "fate": "Destroyed, in the ending Cieza de Leon added, by an angel with a sword of fire."
+  },
+  {
+    "id": "mapinguari",
+    "slug": "mapinguari",
+    "name": "Mapinguari",
+    "alsoKnownAs": [
+      "Kida harara",
+      "Kida so'emo",
+      "Owojo"
+    ],
+    "culture": "Amazonian, Brazilian",
+    "region": "Amazon basin",
+    "type": "individual",
+    "freeEntry": false,
+    "height": "unmeasured",
+    "shortDescription": "One-eyed Amazonian forest giant with a vertical mouth and a hide arrows will not enter.",
+    "fullDescription": "One eye. And a mouth that opens vertically, from the nose down to the stomach.",
+    "mysteryNote": "Around sixty people told the ornithologist they had seen it. Twenty years of looking produced no animal, and no end to the accounts.",
+    "related": [],
+    "coordinates": [
+      -5.5,
+      -62.5
+    ],
+    "tags": [
+      "brazil",
+      "amazon",
+      "one-eye",
+      "cryptid",
+      "megafauna"
+    ],
+    "sources": [
+      "Luís da Câmara Cascudo, Dicionário do Folclore Brasileiro and Geografia dos Mitos Brasileiros, 1976",
+      "David Oren, Museu Paraense Emílio Goeldi",
+      "Florentino Ameghino",
+      "Ramón Lista"
+    ],
+    "image": "/images/giants/mapinguari.jpg",
+    "imageAlt": "Mapinguari, amazonian, brazilian tradition",
+    "motifs": [
+      "one-eye",
+      "invulnerable-hide",
+      "bones-as-proof",
+      "real-site-attached"
+    ],
+    "sections": {
+      "story": "A great simian humanoid with long arms and heavy claws. Its hide is described as thick as a turtle's shell or an alligator's back, which is the usual explanation for why arrows and bullets are said not to enter it. Black fur in some accounts, red in most. In some regions its feet point backwards, a trait borrowed from the Curupira.\n\nThe mouth runs vertically from the nose to the stomach and is set with thousands of teeth. The single eye sits in the centre of the face.\n\nIt is also, unusually for a creature of folklore, awake in the daytime. It moves through the forest by day and rests at night in caves and hollow trunks. It is said to be able to make a person dizzy enough that the day appears to turn to night.\n\nDomingos Parintintin, a chief of an Amazonian people, gave the practical advice: the only way to kill one is a blow to the head, and the better plan is to climb a tree and stay quiet.\n\nSome accounts hold that a Mapinguari is what an indigenous elder eventually becomes, which it shares with the Capelobo tradition. It has also absorbed traits from other Brazilian figures it displaced in various regions, among them the Gorjala and the Pé de Garrafa.",
+      "origins": "The Mapinguari is Amazonian oral tradition rather than a text. It is attested in the forests of Pará, Amazonas and Acre into the twentieth century, and is known to the Karitiana people of Brazil under other names, among them Kida harara.\n\nLuís da Câmara Cascudo (1898 to 1986) is the collector who fixed it in print. It has an entry in his Dicionário do Folclore Brasileiro, first published in 1954, and in Geografia dos Mitos Brasileiros, first published in 1947 and reissued in 1976. Cascudo derived the name from Tupi-Guarani, roughly the thing with a crooked or backward-turned foot, and treated the figure as a composite of older Brazilian creatures.\n\nThe twentieth-century record is largely interview material. David Oren of the Museu Paraense Emílio Goeldi collected accounts in the Tapajós basin between the 1970s and the 1990s and published his case in 1993 and again in 2001. Transmission remains oral: hunters, rubber tappers and river communities.",
+      "disputed": "This is one of the few entries in the catalogue where somebody went looking.\n\nDavid Oren, an American ornithologist and former research director at the Museu Paraense Emílio Goeldi in Belém, spent over twenty years on it. Around a hundred people told him they had encountered the animal or heard its cry. Around sixty said they had seen it. No expedition produced one.\n\nOren's hypothesis, anticipated in the nineteenth century by the Argentine palaeontologist Florentino Ameghino, is that the Mapinguari preserves a memory of the ground sloths. Megatherium and Eremotherium reached six metres and were still in South America ten to twelve thousand years ago, which overlaps with the first human population of the continent.\n\nAmeghino built the idea partly on a report from the explorer Ramón Lista, who said that while hunting in Patagonia in the 1890s he met a large unknown animal and that his bullets had no effect on it. Ameghino tied that to indigenous Patagonian descriptions of an animal whose hide arrows could barely pierce.\n\nWhether any of this is the origin of the Mapinguari or a later scientific story laid over an older one is unresolved, and the entry does not resolve it."
+    },
+    "fate": "Not killed: said to be stopped only by a blow to the head, and better avoided from up a tree."
   }
 ]

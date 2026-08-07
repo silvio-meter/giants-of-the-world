@@ -2467,5 +2467,1053 @@
     ],
     "heightMeters": null,
     "hasScholarlyNotes": false
+  },
+  {
+    "id": "gargantua",
+    "slug": "gargantua",
+    "name": "Gargantua",
+    "alsoKnownAs": [
+      "Grand-Tua",
+      "Grand-Tuard",
+      "Guergintua",
+      "Jergantua",
+      "Gargountoun",
+      "Gargantoua"
+    ],
+    "culture": "French",
+    "region": "France",
+    "type": "individual",
+    "freeEntry": true,
+    "height": "unmeasured",
+    "shortDescription": "Folk giant older than Rabelais: over four hundred French megaliths and rocks are named for him.",
+    "related": [],
+    "coordinates": [
+      47,
+      2.5
+    ],
+    "tags": [
+      "megalith",
+      "folk",
+      "france",
+      "celtic"
+    ],
+    "sources": [
+      "Paul Sébillot, Gargantua dans les traditions populaires, Maisonneuve, Paris, 1883",
+      "Félix Bourquelot, 1844",
+      "Henri Gaidoz",
+      "Henri Dontenville",
+      "Guy-Édouard Pillard, Le Vrai Gargantua: mythologie d'un géant, 1987",
+      "Les grandes et inestimables chroniques du grand et énorme géant Gargantua, anonymous, 1532"
+    ],
+    "image": "/images/giants/gargantua.jpg",
+    "imageAlt": "Gargantua, french tradition",
+    "motifs": [
+      "builder",
+      "ended-by-christianity",
+      "real-site-attached"
+    ],
+    "heightMeters": null,
+    "hasScholarlyNotes": false
+  },
+  {
+    "id": "mouros",
+    "slug": "mouros",
+    "name": "Mouros",
+    "alsoKnownAs": [
+      "mouros encantados",
+      "moura encantada",
+      "mouras",
+      "mourinhos",
+      "xentís"
+    ],
+    "culture": "Galician, Asturian, Portuguese",
+    "region": "Northwest Iberia",
+    "type": "race",
+    "freeEntry": true,
+    "height": "varies; sometimes giants, sometimes not",
+    "shortDescription": "Builders of the megaliths of north-west Iberia: unbaptised people of the earth whose name may mean the dead.",
+    "related": [],
+    "coordinates": [
+      42.3,
+      -7.9
+    ],
+    "tags": [
+      "megalith",
+      "underground",
+      "iberia",
+      "race"
+    ],
+    "sources": [
+      "Isidoro Millán on the etymology",
+      "Galician and Asturian folk collections",
+      "the mouros are also documented under Portuguese tradition as the moura encantada"
+    ],
+    "image": "/images/giants/mouros.jpg",
+    "imageAlt": "Mouros, galician, asturian, portuguese tradition",
+    "motifs": [
+      "builder",
+      "pre-people",
+      "ended-by-christianity"
+    ],
+    "heightMeters": 4.5,
+    "hasScholarlyNotes": false
+  },
+  {
+    "id": "dragonja",
+    "slug": "dragonja",
+    "name": "Dragonja",
+    "alsoKnownAs": [
+      "Dragonja the Ploughman",
+      "Div Orač"
+    ],
+    "culture": "Croatian",
+    "region": "Istria",
+    "type": "individual",
+    "freeEntry": true,
+    "height": "unmeasured",
+    "shortDescription": "Istrian giant who ploughed the Mirna into being; his kind built the hill towns.",
+    "related": [],
+    "coordinates": [
+      45.33,
+      13.83
+    ],
+    "tags": [
+      "croatia",
+      "landscape",
+      "builder",
+      "istria"
+    ],
+    "sources": [
+      "Maja Bošković-Stulli, Istarske narodne priče",
+      "Carlo De Franceschi, who recorded giant traditions around Motovun"
+    ],
+    "image": "/images/giants/dragonja.jpg",
+    "imageAlt": "Dragonja, croatian tradition",
+    "motifs": [
+      "shaped-the-land-while-living",
+      "builder",
+      "river-from-a-giant",
+      "real-site-attached"
+    ],
+    "heightMeters": null,
+    "hasScholarlyNotes": false
+  },
+  {
+    "id": "daidarabotchi",
+    "slug": "daidarabotchi",
+    "name": "Daidarabotchi",
+    "alsoKnownAs": [
+      "Deidarabotchi",
+      "Derabotchi",
+      "Daidarabō",
+      "Daidarabocchi",
+      "Daidara-hōshi (大太法師)"
+    ],
+    "culture": "Japanese",
+    "region": "Kantō and Chūbu",
+    "type": "individual",
+    "freeEntry": false,
+    "height": "unmeasured",
+    "shortDescription": "Japanese landscape giant: Fuji is his spoil heap, Lake Biwa the hole it came from.",
+    "related": [],
+    "coordinates": [
+      36.33,
+      140.55
+    ],
+    "tags": [
+      "japan",
+      "landscape",
+      "yokai",
+      "benevolent"
+    ],
+    "sources": [
+      "Hitachi no Kuni Fudoki, 8th century",
+      "Kunio Yanagita, \"The Footprints of Daidarabou\", Chūō Kōron, 1927, the first systematic collection of the scattered footprint legends"
+    ],
+    "image": "/images/giants/daidarabotchi.jpg",
+    "imageAlt": "Daidarabotchi, japanese tradition",
+    "motifs": [
+      "shaped-the-land-while-living",
+      "real-site-attached"
+    ],
+    "heightMeters": null,
+    "hasScholarlyNotes": false
+  },
+  {
+    "id": "baqbaq-devi",
+    "slug": "baqbaq-devi",
+    "name": "Baqbaq-Devi",
+    "alsoKnownAs": [
+      "Baqbaq-Devi",
+      "devi",
+      "dev"
+    ],
+    "culture": "Georgian",
+    "region": "Caucasus",
+    "type": "race",
+    "freeEntry": false,
+    "height": "unmeasured",
+    "shortDescription": "Many-headed giants of the Georgian mountains: their strongest was outriddled, not outfought.",
+    "related": [],
+    "coordinates": [
+      42.5,
+      43.5
+    ],
+    "tags": [
+      "caucasus",
+      "many-headed",
+      "riddle",
+      "devi"
+    ],
+    "sources": [
+      "Kartlis Tskhovreba",
+      "Dodona Kiziria, \"Amirani: A Georgian Folk Hero\", Folklore Forum 7, no. 7, 1974, p. 133",
+      "living oral tradition of the Georgian highlands, Christianised roughly ten centuries later than the lowlands"
+    ],
+    "image": "/images/giants/baqbaq-devi.jpg",
+    "imageAlt": "Baqbaq-Devi, georgian tradition",
+    "motifs": [
+      "outwitted",
+      "real-site-attached"
+    ],
+    "heightMeters": null,
+    "hasScholarlyNotes": false
+  },
+  {
+    "id": "gigantes",
+    "slug": "gigantes",
+    "name": "The Gigantes",
+    "alsoKnownAs": [
+      "Gigantes",
+      "the Giants",
+      "Gigantes (Γίγαντες)"
+    ],
+    "culture": "Greek",
+    "region": "Greece",
+    "type": "race",
+    "freeEntry": false,
+    "height": "disputed; possibly human-sized",
+    "shortDescription": "Earth-born Greek race defeated by the Olympians: man-sized in the earliest art, snake-legged only later.",
+    "related": [],
+    "coordinates": [
+      37.98,
+      23.73
+    ],
+    "tags": [
+      "greek",
+      "gigantomachy",
+      "volcano",
+      "chthonic"
+    ],
+    "sources": [
+      "Hesiod, Theogony 185",
+      "Homer, Odyssey vii.59, 206, x.120",
+      "Apollodorus, Bibliotheca 1.6.1-2",
+      "Hyginus, Fabulae, Preface",
+      "the Gigantomachy frieze of the Pergamon Altar, 2nd century BCE"
+    ],
+    "image": "/images/giants/gigantes.jpg",
+    "imageAlt": "The Gigantes, greek tradition",
+    "motifs": [
+      "buried-under-volcanoes",
+      "outwitted",
+      "pre-people"
+    ],
+    "heightMeters": null,
+    "hasScholarlyNotes": false
+  },
+  {
+    "id": "patagonian-giants",
+    "slug": "patagonian-giants",
+    "name": "The Patagonian Giants",
+    "alsoKnownAs": [
+      "Patagones",
+      "Patagons",
+      "the giants of Patagonia"
+    ],
+    "culture": "European accounts of the Tehuelche and Selk'nam",
+    "region": "Patagonia",
+    "type": "modern-legend",
+    "freeEntry": true,
+    "height": "claimed 12 to 15 feet; measured 5 ft 9 in",
+    "shortDescription": "European voyage reports of a giant race in Patagonia, ended by measurement in the 1760s.",
+    "related": [],
+    "coordinates": [
+      -49.32,
+      -67.73
+    ],
+    "tags": [
+      "unverified",
+      "south-america",
+      "exploration",
+      "collapse"
+    ],
+    "sources": [
+      "Antonio Pigafetta, 1520s",
+      "The World Encompassed, 1628",
+      "Louis de Bougainville, 1767",
+      "the official account of the Byron voyage, 1773"
+    ],
+    "image": "/images/giants/patagonian-giants.jpg",
+    "imageAlt": "The Patagonian Giants, european accounts of the tehuelche and selk'nam tradition",
+    "motifs": [
+      "pre-people"
+    ],
+    "heightMeters": 4,
+    "hasScholarlyNotes": false
+  },
+  {
+    "id": "katallani",
+    "slug": "katallani",
+    "name": "Katallani",
+    "alsoKnownAs": [
+      "Katallan",
+      "Katalla",
+      "Syqenhenjeri",
+      "Symadh",
+      "Syqorr",
+      "Syqen",
+      "Syklysh",
+      "Vigan",
+      "Gjigant",
+      "Div",
+      "Dif",
+      "Lutran",
+      "Gavell",
+      "Garravell",
+      "Dragumn",
+      "Reks"
+    ],
+    "culture": "Albanian",
+    "region": "Albania",
+    "type": "individual",
+    "freeEntry": false,
+    "height": "unmeasured",
+    "shortDescription": "One-eyed Albanian man-eater with no knees: he cannot bend his legs to chase you.",
+    "related": [],
+    "coordinates": [
+      41.15,
+      20.1
+    ],
+    "tags": [
+      "one-eye",
+      "balkans",
+      "man-eater",
+      "albania"
+    ],
+    "sources": [
+      "Gjon Buzuku, Meshari, 1555",
+      "Gustav Meyer, who records Katalla in a pagan sense",
+      "Eqrem Çabej, Diana dhe Zana, 1942, and Disa figura të besimeve popullore shqiptare, 1972",
+      "Shtjefën Gjeçovi"
+    ],
+    "image": "/images/giants/katallani.jpg",
+    "imageAlt": "Katallani, albanian tradition",
+    "motifs": [
+      "one-eye",
+      "pre-people"
+    ],
+    "heightMeters": null,
+    "hasScholarlyNotes": false
+  },
+  {
+    "id": "waligora-wyrwidab",
+    "slug": "waligora-wyrwidab",
+    "name": "Waligóra and Wyrwidąb",
+    "alsoKnownAs": [
+      "Wyrwidąb i Waligóra",
+      "Wali-góra and Wyrwi-dąb",
+      "O Waligórze i Wyrwidębie"
+    ],
+    "culture": "Polish",
+    "region": "Poland",
+    "type": "individual",
+    "freeEntry": true,
+    "height": "unmeasured",
+    "shortDescription": "Twin strongmen raised by a wolf and a bear: Polish dragon-slayers who ruled the kingdom they saved.",
+    "related": [],
+    "coordinates": [
+      50.06,
+      19.95
+    ],
+    "tags": [
+      "heroes",
+      "twins",
+      "dragon",
+      "poland"
+    ],
+    "sources": [
+      "Kazimierz Władysław Wójcicki, among the first to record it",
+      "Antoni Józef Gliński",
+      "classified as tale type ATU 300, The Dragon-Slayer"
+    ],
+    "image": "/images/giants/waligora-wyrwidab.jpg",
+    "imageAlt": "Waligóra and Wyrwidąb, polish tradition",
+    "motifs": [
+      "giants-as-heroes",
+      "outwitted"
+    ],
+    "heightMeters": null,
+    "hasScholarlyNotes": false
+  },
+  {
+    "id": "milzinai",
+    "slug": "milzinai",
+    "name": "Milžinai",
+    "alsoKnownAs": [
+      "milžinas (singular)"
+    ],
+    "culture": "Lithuanian",
+    "region": "Lithuania",
+    "type": "race",
+    "freeEntry": false,
+    "height": "unmeasured",
+    "shortDescription": "Lithuanian giant race: ancestors in local legend, monsters in fairy tale, their graves on the map.",
+    "related": [],
+    "coordinates": [
+      55.17,
+      23.88
+    ],
+    "tags": [
+      "baltic",
+      "ancestors",
+      "graves",
+      "genre"
+    ],
+    "sources": [
+      "Milžinai lietuvių padavimuose ir pasakose, a text collection drawing on the manuscript archive of the Institute of Lithuanian Literature and Folklore",
+      "the Lithuanian scholarly tradition includes Norbertas Vėlius, Bronislava Kerbelytė, Jonas Balys and Marija Gimbutienė",
+      "Algirdas Julien Greimas, Of Gods and Men: Studies in Lithuanian Mythology"
+    ],
+    "image": "/images/giants/milzinai.jpg",
+    "imageAlt": "Milžinai, lithuanian tradition",
+    "motifs": [
+      "pre-people",
+      "real-site-attached"
+    ],
+    "heightMeters": null,
+    "hasScholarlyNotes": false
+  },
+  {
+    "id": "troll-iceland",
+    "slug": "troll-iceland",
+    "name": "Tröll",
+    "alsoKnownAs": [
+      "jötnar",
+      "risar",
+      "þursar",
+      "tröllkona",
+      "kerling"
+    ],
+    "culture": "Icelandic",
+    "region": "Iceland",
+    "type": "folklore",
+    "freeEntry": false,
+    "height": "unmeasured",
+    "shortDescription": "Icelandic category of giant beings: caught out at sunrise they become the rocks of the landscape.",
+    "related": [],
+    "coordinates": [
+      64.96,
+      -19.02
+    ],
+    "tags": [
+      "iceland",
+      "petrified",
+      "sunrise",
+      "landscape"
+    ],
+    "sources": [
+      "Jón Árnason, Íslenzkar þjóðsögur og æfintýri, 1862, compiled with Guðbrandur Vigfússon",
+      "Sagnagrunnur, the mapped database of Icelandic legends at Árnastofnun",
+      "Jacqueline Simpson, Icelandic Folktales and Legends, 1972",
+      "Ólína Þorvarðardóttir, Álfar og tröll, 1995",
+      "Terry Gunnell on legend and landscape"
+    ],
+    "image": "/images/giants/troll-iceland.jpg",
+    "imageAlt": "Tröll, icelandic tradition",
+    "motifs": [
+      "petrified",
+      "real-site-attached"
+    ],
+    "heightMeters": null,
+    "hasScholarlyNotes": false
+  },
+  {
+    "id": "kalev-kalevipoeg",
+    "slug": "kalev-kalevipoeg",
+    "name": "Kalev and Kalevipoeg",
+    "alsoKnownAs": [
+      "Kaleva",
+      "Kalevi",
+      "Kalev",
+      "Kalevipoeg",
+      "Kalevanpoika",
+      "Caleuanpoiat",
+      "Kalliweh"
+    ],
+    "culture": "Estonian, Finnish, Karelian",
+    "region": "Baltic and Finnic lands",
+    "type": "race",
+    "freeEntry": true,
+    "height": "unmeasured",
+    "shortDescription": "Finnic giant ancestor and his stone-throwing sons, across Estonia, Finland and Karelia.",
+    "related": [],
+    "coordinates": [
+      59.44,
+      24.75
+    ],
+    "tags": [
+      "finnic",
+      "ancestors",
+      "stone-throwing",
+      "epic"
+    ],
+    "sources": [
+      "Mikael Agricola, 16th century",
+      "Juha Ruohonen, \"Giant, Devil or Death? The Finnish Koljo in Mythology, Toponyms, Folklore and Archaeology\"",
+      "Kivikoski, 1955, on the Untamala stone",
+      "Friedrich Reinhold Kreutzwald, Kalevipoeg, 1857-1861, with the caveat above"
+    ],
+    "image": "/images/giants/kalev-kalevipoeg.jpg",
+    "imageAlt": "Kalev and Kalevipoeg, estonian, finnish, karelian tradition",
+    "motifs": [
+      "pre-people",
+      "shaped-the-land-while-living",
+      "real-site-attached"
+    ],
+    "heightMeters": null,
+    "hasScholarlyNotes": false
+  },
+  {
+    "id": "suur-toll",
+    "slug": "suur-toll",
+    "name": "Suur Tõll",
+    "alsoKnownAs": [
+      "Toell the Great",
+      "Suur Tõll",
+      "Tõll",
+      "Suur-Töll",
+      "Saaremaa vägimees Suur-Tõll"
+    ],
+    "culture": "Estonian",
+    "region": "Saaremaa",
+    "type": "individual",
+    "freeEntry": false,
+    "height": "unmeasured",
+    "shortDescription": "Giant king of Saaremaa who farmed his own land and threw stones at the Devil.",
+    "related": [],
+    "coordinates": [
+      58.31,
+      22.81
+    ],
+    "tags": [
+      "estonia",
+      "island",
+      "farmer",
+      "stone-throwing"
+    ],
+    "sources": [
+      "Estonian folk tradition of Saaremaa",
+      "related to the wider Kalev material"
+    ],
+    "image": "/images/giants/suur-toll.jpg",
+    "imageAlt": "Suur Tõll, estonian tradition",
+    "motifs": [
+      "real-site-attached"
+    ],
+    "heightMeters": null,
+    "hasScholarlyNotes": false
+  },
+  {
+    "id": "fomorians",
+    "slug": "fomorians",
+    "name": "Fomorians",
+    "alsoKnownAs": [
+      "Fomoire",
+      "Fomhóraigh",
+      "Fomori"
+    ],
+    "culture": "Irish",
+    "region": "Ireland, Tory Island, the surrounding sea",
+    "type": "race",
+    "freeEntry": true,
+    "height": "unmeasured",
+    "shortDescription": "Irish adversary race out of the sea: their rule banned the teaching of poetry and law.",
+    "related": [],
+    "coordinates": [
+      55.27,
+      -8.23
+    ],
+    "tags": [
+      "ireland",
+      "sea",
+      "occupation",
+      "race"
+    ],
+    "sources": [
+      "Lebor Gabála Érenn, 11th century",
+      "Cath Maige Tuired",
+      "Lebor na hUidre, 11th century",
+      "Annals of the Four Masters",
+      "Geoffrey Keating"
+    ],
+    "image": "/images/giants/fomorians.jpg",
+    "imageAlt": "Fomorians, irish tradition",
+    "motifs": [
+      "pre-people"
+    ],
+    "heightMeters": null,
+    "hasScholarlyNotes": false
+  },
+  {
+    "id": "bendigeidfran",
+    "slug": "bendigeidfran",
+    "name": "Bendigeidfran",
+    "alsoKnownAs": [
+      "Brân the Blessed",
+      "Bendigeidfran fab Llŷr",
+      "Brân Fendigaidd"
+    ],
+    "culture": "Welsh",
+    "region": "Wales and Britain",
+    "type": "individual",
+    "freeEntry": false,
+    "height": "unmeasured",
+    "shortDescription": "Welsh giant king of Britain: his severed head was buried in London to guard against invasion.",
+    "related": [],
+    "coordinates": [
+      51.51,
+      -0.08
+    ],
+    "tags": [
+      "wales",
+      "mabinogi",
+      "king",
+      "guardian"
+    ],
+    "sources": [
+      "Mabinogion, Second Branch"
+    ],
+    "image": "/images/giants/bendigeidfran.jpg",
+    "imageAlt": "Bendigeidfran, welsh tradition",
+    "motifs": [
+      "real-site-attached"
+    ],
+    "heightMeters": null,
+    "hasScholarlyNotes": false
+  },
+  {
+    "id": "ysbaddaden",
+    "slug": "ysbaddaden",
+    "name": "Ysbaddaden Bencawr",
+    "alsoKnownAs": [
+      "Ysbaddaden Bencawr",
+      "Ysbaddaden Pencawr",
+      "Yspaddaden Penkawr"
+    ],
+    "culture": "Welsh",
+    "region": "Wales",
+    "type": "individual",
+    "freeEntry": false,
+    "height": "unmeasured",
+    "shortDescription": "Welsh chief giant of Culhwch and Olwen: his eyelids had to be propped up with forks.",
+    "related": [],
+    "coordinates": [
+      51.87,
+      -5.28
+    ],
+    "tags": [
+      "wales",
+      "arthurian",
+      "eyelids",
+      "father"
+    ],
+    "sources": [
+      "Culhwch and Olwen"
+    ],
+    "image": "/images/giants/ysbaddaden.jpg",
+    "imageAlt": "Ysbaddaden Bencawr, welsh tradition",
+    "motifs": [
+      "one-eye"
+    ],
+    "heightMeters": null,
+    "hasScholarlyNotes": false
+  },
+  {
+    "id": "tombe-dei-giganti",
+    "slug": "tombe-dei-giganti",
+    "name": "Tombe dei Giganti",
+    "alsoKnownAs": [
+      "Tomba dei giganti",
+      "Tumbas de gigantis",
+      "Tumba de zigantes",
+      "Sa domu e s'orku",
+      "Giants' graves"
+    ],
+    "culture": "Sardinian",
+    "region": "Sardinia",
+    "type": "folklore",
+    "freeEntry": true,
+    "height": "inferred from the tombs",
+    "shortDescription": "Around eight hundred Nuragic collective tombs in Sardinia, named for giants by popular tradition.",
+    "related": [],
+    "coordinates": [
+      40.12,
+      9.05
+    ],
+    "tags": [
+      "sardinia",
+      "nuragic",
+      "burial",
+      "dreams"
+    ],
+    "sources": [
+      "Sardinian regional archaeological documentation",
+      "Nuragic-period site surveys"
+    ],
+    "image": "/images/giants/tombe-dei-giganti.jpg",
+    "imageAlt": "Tombe dei Giganti, sardinian tradition",
+    "motifs": [
+      "builder",
+      "real-site-attached",
+      "pre-people"
+    ],
+    "heightMeters": null,
+    "hasScholarlyNotes": false
+  },
+  {
+    "id": "nemri",
+    "slug": "nemri",
+    "name": "Nemri",
+    "alsoKnownAs": [
+      "stari narod (the old people)",
+      "Nemer (singular form)"
+    ],
+    "culture": "Croatian",
+    "region": "Velebit and Lika",
+    "type": "race",
+    "freeEntry": false,
+    "height": "unmeasured",
+    "shortDescription": "Croatian giant race of Lika and Velebit: the old people, who could not die a natural death.",
+    "related": [],
+    "coordinates": [
+      44.55,
+      15.37
+    ],
+    "tags": [
+      "croatia",
+      "dinaric",
+      "stecci",
+      "old-people"
+    ],
+    "sources": [
+      "Croatian ethnological literature",
+      "Ana Perinić Lewis, \"Junaci, divovi i patuljci Gorskoga kotara\", 2019",
+      "Maja Bošković-Stulli",
+      "for the wider South Slavic frame, Slobodan Zečević, Митска бића српских предања, 1981"
+    ],
+    "image": "/images/giants/nemri.jpg",
+    "imageAlt": "Nemri, croatian tradition",
+    "motifs": [
+      "pre-people",
+      "real-site-attached"
+    ],
+    "heightMeters": null,
+    "hasScholarlyNotes": false
+  },
+  {
+    "id": "klek",
+    "slug": "klek",
+    "name": "Klek",
+    "alsoKnownAs": [
+      "Veliki Klek",
+      "uspavani div, the sleeping giant"
+    ],
+    "culture": "Croatian",
+    "region": "Klek, Orjen, Snježnik",
+    "type": "individual",
+    "freeEntry": true,
+    "height": "the mountain",
+    "shortDescription": "Croatian giant petrified above Ogulin: the river Dobra runs out of his wound.",
+    "related": [],
+    "coordinates": [
+      45.26,
+      15.14
+    ],
+    "tags": [
+      "croatia",
+      "petrified",
+      "perun",
+      "river"
+    ],
+    "sources": [
+      "Maja Bošković-Stulli",
+      "Nikola Sučić, Hrvatska narodna mitologija, with the caveat that its scholarly standing should be checked",
+      "Stjepan Banović, Vjerovanja (Zaostrog u Dalmaciji), 1918"
+    ],
+    "image": "/images/giants/klek.jpg",
+    "imageAlt": "Klek, croatian tradition",
+    "motifs": [
+      "petrified",
+      "river-from-a-giant",
+      "real-site-attached"
+    ],
+    "heightMeters": 25,
+    "hasScholarlyNotes": false
+  },
+  {
+    "id": "uriasi",
+    "slug": "uriasi",
+    "name": "Uriași",
+    "alsoKnownAs": [
+      "Novaci",
+      "Jidovi",
+      "Căpcăuni",
+      "Coloși",
+      "Tătari"
+    ],
+    "culture": "Romanian",
+    "region": "Romania",
+    "type": "race",
+    "freeEntry": false,
+    "height": "the Danube reached their ankles",
+    "shortDescription": "Romanian race of giants from before mankind: the Danube reached their ankles, the Flood ended them.",
+    "related": [],
+    "coordinates": [
+      45.9,
+      24.9
+    ],
+    "tags": [
+      "romania",
+      "flood",
+      "carpathians",
+      "race"
+    ],
+    "sources": [
+      "Ion Taloș, mythological dictionary",
+      "Romanian folk collections. Not Densușianu."
+    ],
+    "image": "/images/giants/uriasi.jpg",
+    "imageAlt": "Uriași, romanian tradition",
+    "motifs": [
+      "pre-people"
+    ],
+    "heightMeters": null,
+    "hasScholarlyNotes": false
+  },
+  {
+    "id": "croatian-giants-lesser",
+    "slug": "croatian-giants-lesser",
+    "name": "Croatian Giants: The Lesser Traditions",
+    "alsoKnownAs": [
+      "Vedi",
+      "Hajdi",
+      "Sambo",
+      "divovi"
+    ],
+    "culture": "Croatian",
+    "region": "Croatia",
+    "type": "folklore",
+    "freeEntry": false,
+    "height": "varies",
+    "shortDescription": "Four small Croatian traditions: one-eyed giants, the Vedi, Sambo under Samobor, the Neretva mounds.",
+    "related": [],
+    "coordinates": [
+      45.1,
+      15.2
+    ],
+    "tags": [
+      "croatia",
+      "regional",
+      "one-eye",
+      "mounds"
+    ],
+    "sources": [
+      "Maja Bošković-Stulli",
+      "Stjepan Banović, Vjerovanja (Zaostrog u Dalmaciji), 1918",
+      "Ana Perinić Lewis, \"Junaci, divovi i patuljci Gorskoga kotara\", 2019",
+      "Nikola Sučić, Hrvatska narodna mitologija, with the caveat noted in the Klek entry"
+    ],
+    "image": "/images/giants/croatian-giants-lesser.jpg",
+    "imageAlt": "Croatian Giants: The Lesser Traditions, croatian tradition",
+    "motifs": [
+      "one-eye",
+      "petrified",
+      "pre-people",
+      "real-site-attached",
+      "builder"
+    ],
+    "heightMeters": null,
+    "hasScholarlyNotes": false
+  },
+  {
+    "id": "british-giants-lesser",
+    "slug": "british-giants-lesser",
+    "name": "British Giants: The Lesser Traditions",
+    "alsoKnownAs": [
+      "Idris Gawr",
+      "Blunderboar",
+      "Thunderbore",
+      "Blunderbuss",
+      "Branwen ferch Llyr (Second Branch)"
+    ],
+    "culture": "British and Welsh",
+    "region": "Britain and Wales",
+    "type": "folklore",
+    "freeEntry": false,
+    "height": "varies",
+    "shortDescription": "Four minor British and Welsh giants: a mountain, a beacon, a chapbook villain and a cauldron.",
+    "related": [],
+    "coordinates": [
+      52,
+      -4
+    ],
+    "tags": [
+      "britain",
+      "wales",
+      "cornwall",
+      "mabinogi"
+    ],
+    "sources": [
+      "Mabinogion, Second Branch",
+      "Robert Hunt, Popular Romances of the West of England",
+      "the Jack the Giant Killer chapbook tradition"
+    ],
+    "image": "/images/giants/british-giants-lesser.jpg",
+    "imageAlt": "British Giants: The Lesser Traditions, british and welsh tradition",
+    "motifs": [
+      "pre-people",
+      "outwitted",
+      "real-site-attached"
+    ],
+    "heightMeters": null,
+    "hasScholarlyNotes": false
+  },
+  {
+    "id": "koljo",
+    "slug": "koljo",
+    "name": "Koljo",
+    "alsoKnownAs": [
+      "Koljatti",
+      "Kolio",
+      "Koljumi"
+    ],
+    "culture": "Finnish",
+    "region": "Finland",
+    "type": "individual",
+    "freeEntry": false,
+    "height": "unmeasured",
+    "shortDescription": "Finnish giant surviving in place-names: possibly a word for death before he was a giant.",
+    "related": [],
+    "coordinates": [
+      62.5,
+      27.3
+    ],
+    "tags": [
+      "finland",
+      "toponym",
+      "archaeology",
+      "giant"
+    ],
+    "sources": [
+      "Juha Ruohonen, \"Giant, Devil or Death? The Finnish Koljo in Mythology, Toponyms, Folklore and Archaeology\"",
+      "Finnish land register of Savo, 1560s"
+    ],
+    "image": "/images/giants/koljo.jpg",
+    "imageAlt": "Koljo, finnish tradition",
+    "motifs": [
+      "pre-people",
+      "real-site-attached"
+    ],
+    "heightMeters": null,
+    "hasScholarlyNotes": false
+  },
+  {
+    "id": "santa-elena-giants",
+    "slug": "santa-elena-giants",
+    "name": "The Giants of Santa Elena",
+    "alsoKnownAs": [],
+    "culture": "Manta, recorded by Spanish chroniclers",
+    "region": "Punta de Santa Elena, Ecuador",
+    "type": "modern-legend",
+    "freeEntry": false,
+    "height": "knee to ground equal to a grown man",
+    "shortDescription": "Giants said to have landed by raft on the Ecuadorian coast: the bones under the story are mastodon.",
+    "related": [],
+    "coordinates": [
+      -2.18,
+      -80.98
+    ],
+    "tags": [
+      "ecuador",
+      "chronicle",
+      "fossils",
+      "colonial",
+      "sea-arrival"
+    ],
+    "sources": [
+      "Pedro Cieza de León, Crónica del Perú, 1553",
+      "Garcilaso de la Vega, Comentarios Reales de los Incas, 1609",
+      "Agustín de Zárate",
+      "Pedro Gutiérrez de Santa Clara",
+      "Antonio de Herrera",
+      "José García de León y Pizarro, eighteenth-century report on the petrified bones of the Punta de Santa Elena",
+      "modern research on the interpretation of mastodon remains in Ecuador"
+    ],
+    "image": "/images/giants/santa-elena-giants.jpg",
+    "imageAlt": "The Giants of Santa Elena, manta, recorded by spanish chroniclers tradition",
+    "motifs": [
+      "bones-as-proof",
+      "arrived-by-sea",
+      "christian-ending-added",
+      "pre-people",
+      "real-site-attached"
+    ],
+    "heightMeters": null,
+    "hasScholarlyNotes": false
+  },
+  {
+    "id": "mapinguari",
+    "slug": "mapinguari",
+    "name": "Mapinguari",
+    "alsoKnownAs": [
+      "Kida harara",
+      "Kida so'emo",
+      "Owojo"
+    ],
+    "culture": "Amazonian, Brazilian",
+    "region": "Amazon basin",
+    "type": "individual",
+    "freeEntry": false,
+    "height": "unmeasured",
+    "shortDescription": "One-eyed Amazonian forest giant with a vertical mouth and a hide arrows will not enter.",
+    "related": [],
+    "coordinates": [
+      -5.5,
+      -62.5
+    ],
+    "tags": [
+      "brazil",
+      "amazon",
+      "one-eye",
+      "cryptid",
+      "megafauna"
+    ],
+    "sources": [
+      "Luís da Câmara Cascudo, Dicionário do Folclore Brasileiro and Geografia dos Mitos Brasileiros, 1976",
+      "David Oren, Museu Paraense Emílio Goeldi",
+      "Florentino Ameghino",
+      "Ramón Lista"
+    ],
+    "image": "/images/giants/mapinguari.jpg",
+    "imageAlt": "Mapinguari, amazonian, brazilian tradition",
+    "motifs": [
+      "one-eye",
+      "invulnerable-hide",
+      "bones-as-proof",
+      "real-site-attached"
+    ],
+    "heightMeters": null,
+    "hasScholarlyNotes": false
   }
 ]
