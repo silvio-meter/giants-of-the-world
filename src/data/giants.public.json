@@ -2431,5 +2431,41 @@
     ],
     "heightMeters": 30,
     "hasScholarlyNotes": true
+  },
+  {
+    "id": "ispolini",
+    "slug": "ispolini",
+    "name": "Ispolini",
+    "alsoKnownAs": [],
+    "culture": "Bulgarian",
+    "region": "Bulgaria",
+    "type": "race",
+    "freeEntry": false,
+    "height": "up to 3 metres",
+    "shortDescription": "Bulgaria's giants were God's second attempt at people. We are the third.",
+    "related": [],
+    "coordinates": [
+      42.7,
+      25.3
+    ],
+    "tags": [
+      "balkans",
+      "second-race",
+      "dragons",
+      "blackberry"
+    ],
+    "sources": [
+      "Стойнев, Попов, Василева and Попов, \"Исполини\", Българска митология: Енциклопедичен речник, 2006",
+      "Атанас Илиев, Български предания за исполини, наречени елини, жидови и латини, Сборник за народни умотворения 3, 1890",
+      "Макс Фасмер, \"исполин\", Этимологический словарь русского языка, 1964 to 1973, for the Spali derivation and for Meillet's objection",
+      "Jordanes and Pliny the Elder as cited there"
+    ],
+    "image": "",
+    "imageAlt": "Ispolini, the Bulgarian giants of the second creation",
+    "motifs": [
+      "pre-people"
+    ],
+    "heightMeters": null,
+    "hasScholarlyNotes": false
   }
 ]

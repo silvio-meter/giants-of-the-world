@@ -1,0 +1,29 @@
+entries read: 32  (held back and excluded: cherufe)
+distinct incoming motif slugs: 17
+
+MERGE into an existing motif, nothing created
+  bones-read-as-giants           2 shipping  -> bones-as-proof
+  built-the-megaliths            7 shipping  -> builder
+  killed-by-cunning              7 shipping  -> outwitted
+  one-eye                        5 shipping  -> one-eye
+  petrified-into-landscape       3 shipping  -> petrified
+  those-who-came-before         18 shipping  -> pre-people
+
+MINT once
+  ended-by-christianity          3 shipping  
+  real-site-attached            22 shipping  
+  shaped-the-land-while-living   3 shipping  
+
+STAGE as a literal string, nothing created
+  arrived-by-sea                 1 shipping  
+  buried-under-volcanoes         1 shipping  
+  christian-ending-added         1 shipping  
+  giants-as-heroes               1 shipping  
+  invulnerable-hide              1 shipping  
+  named-for-the-dead             1 shipping  
+  raised-by-animals              1 shipping  
+  river-from-a-giant             2 shipping  
+
+1. no motif appears twice        pass  (31 keys after import)
+2. merged names unchanged        pass  (6 targets, byte for byte)
+3. no slug unrecognised          pass  (17 slugs, all classified)
