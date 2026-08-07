@@ -41,13 +41,27 @@ export const viewport: Viewport = {
   colorScheme: "dark",
 };
 
+/**
+ * Site verification tokens. Public by nature, since they ship in the HTML, but
+ * kept in env vars so either can be set or rotated without a code change.
+ *
+ * Built as two independent spreads rather than a branch, so adding Pinterest
+ * cannot change what happens when only the Search Console token is set.
+ */
+const verificationTags = {
+  ...(process.env.GOOGLE_SITE_VERIFICATION
+    ? { google: process.env.GOOGLE_SITE_VERIFICATION }
+    : {}),
+  ...(process.env.PINTEREST_DOMAIN_VERIFY
+    ? { other: { "p:domain_verify": process.env.PINTEREST_DOMAIN_VERIFY } }
+    : {}),
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   alternates: { canonical: "/" },
-  // Search Console token. Public by nature (it ships in the HTML), but kept in
-  // an env var so it can be set or rotated without a code change.
-  verification: process.env.GOOGLE_SITE_VERIFICATION
-    ? { google: process.env.GOOGLE_SITE_VERIFICATION }
+  verification: Object.keys(verificationTags).length
+    ? verificationTags
     : undefined,
   title: {
     default: "Giants of the World",
