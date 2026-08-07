@@ -1,0 +1,40 @@
+slug                    PREMIUM  DISPUTED  TOTAL  clears 350?
+suur-toll                    85         0     85  NO
+bendigeidfran                97         0     97  NO
+cormoran                     76        49    125  NO
+koljo                       130         0    130  NO
+ysbaddaden                  135         0    135  NO
+nemri                       135         0    135  NO
+gogmagog                    124        37    161  NO
+cherufe                      79       103    182  NO
+milzinai                    202         0    202  NO
+fomorians                   136        76    212  NO
+daidarabotchi               216         0    216  NO
+klek                        157        67    224  NO
+british-giants-lesser       150        81    231  NO
+dragonja                    187        45    232  NO
+te-kahui-tipua              144        95    239  NO
+stallu                      246         0    246  NO
+gigantes                    168        83    251  NO
+kalev-kalevipoeg            186        67    253  NO
+uriasi                       89       168    257  NO
+tombe-dei-giganti           189        69    258  NO
+rubezahl                    207        57    264  NO
+patagonian-giants           210        60    270  NO
+croatian-giants-lesser      270         0    270  NO
+mouros                      214        57    271  NO
+jentilak                    274         0    274  NO
+ispolini                    204        84    288  NO
+troll-iceland               302         0    302  NO
+gargantua                   244        73    317  NO
+waligora-wyrwidab           242        75    317  NO
+katallani                   245        87    332  NO
+santa-elena-giants          288        93    381  yes
+baqbaq-devi                 325        87    412  yes
+mapinguari                  216       198    414  yes
+
+entries measured                          33
+short of the 350 word paywall floor       30
+with no WHAT IS DISPUTED at all           11
+with one under 80 words                   12
+with an origins section                   0, the format has no such heading
