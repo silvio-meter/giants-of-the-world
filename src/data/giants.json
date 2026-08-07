@@ -117,7 +117,8 @@
     "motifs": [
       "war-on-heaven",
       "flood-survivor",
-      "bones-as-proof"
+      "bones-as-proof",
+      "pre-people"
     ],
     "fate": "No fate is recorded: the text moves to the flood without one."
   },
@@ -358,7 +359,8 @@
     },
     "motifs": [
       "war-on-heaven",
-      "buried-sleeper"
+      "buried-sleeper",
+      "buried-under-volcanoes"
     ],
     "fate": "Buried alive under Sicily by Athena; Etna is his breath."
   },
@@ -780,7 +782,9 @@
     },
     "motifs": [
       "made-not-born",
-      "guardian"
+      "guardian",
+      "invulnerable-hide",
+      "outwitted"
     ],
     "fate": "Undone by Medea, who drew the nail sealing his one vein."
   },
@@ -3336,7 +3340,8 @@
     "imageAlt": "Milžinai, lithuanian tradition",
     "motifs": [
       "pre-people",
-      "real-site-attached"
+      "real-site-attached",
+      "giants-as-heroes"
     ],
     "sections": {
       "story": "Lithuanian folklorists group the milžinai material by genre, and the split is stark. In *padavimai*, local legends tied to real places, the milžinai are the old people, the ancestors of the humans who came after, and they are treated with respect. In *pasakos*, fairy tales, they are adversaries, and the point of the story is to outwit or destroy them.\n\nThere is a second layer to this. In tales structurally identical to the giant stories, the giant is swapped out for a witch, for *bėda* which means trouble itself, for the devil, and even for a grass snake. The giant is not always a character. Sometimes he is a slot that any large obstacle can fill.\n\nTheir graves are on the map. Čižiūnų Milžinkapis, Girgždūtės kalnas, Džiugo kalnas, Medvėgalis, Raktuvė, Karaimų kalnas, Lylavėnų Milžinkapiai. The archive holds an account explaining Medvėgalis as a mound piled up by giants, and another explaining the same hill as the work of the Swedes.\n\nFolklore mapping shows where they cluster. The giants belong to the hills and to the odd shapes in the ground. Lake spirits belong to the lake country, devils to the most broken terrain. Geographically, a giant is an answer to strange ground.",
@@ -3484,7 +3489,8 @@
     "image": "/images/giants/suur-toll.jpg",
     "imageAlt": "Suur Tõll, estonian tradition",
     "motifs": [
-      "real-site-attached"
+      "real-site-attached",
+      "giants-as-heroes"
     ],
     "sections": {
       "story": "Suur Tõll is the giant of Saaremaa, and he lived at Tõlluste on the coast with his wife Piret. He threw enormous rocks, mostly at Vanatühi, the Devil, who was his standing enemy, and at anyone else who threatened the islanders.\n\nThe detail that carries the whole figure is that he was king of Saaremaa and lived like an ordinary farmer anyway. Not a giant who ruled from a hall on a hill. A giant who worked his land and happened to be in charge.",
@@ -3531,7 +3537,8 @@
     "image": "/images/giants/fomorians.jpg",
     "imageAlt": "Fomorians, irish tradition",
     "motifs": [
-      "pre-people"
+      "pre-people",
+      "arrived-by-sea"
     ],
     "sections": {
       "story": "The Fomorians are the adversary race of Irish tradition. In the oldest layer they come from under the sea or under the earth. Later they are recast as sea raiders and giants, and later still as pirates from somewhere else entirely.\n\nFor a period they ruled. They took tribute from the Tuatha Dé Danann and from the Nemedians before them, and they forbade the scholars, the bards and the druids to teach. A giant race that suppresses education is a more interesting occupier than one that simply smashes things.\n\nTheir fall is a family matter. Balor, their commander, gave his daughter Ethne to Cían of the Tuatha Dé Danann. The child of that marriage was Lugh, who led the overthrow of Fomorian rule and killed Balor himself. The great enemy is destroyed by his own grandson.",
@@ -3574,7 +3581,8 @@
     "image": "/images/giants/bendigeidfran.jpg",
     "imageAlt": "Bendigeidfran, welsh tradition",
     "motifs": [
-      "real-site-attached"
+      "real-site-attached",
+      "giants-as-heroes"
     ],
     "sections": {
       "story": "Bendigeidfran, Brân the Blessed, is a giant king of Britain in the Second Branch of the Mabinogi. He waged a war against Ireland and it destroyed almost everyone involved, including him.\n\nWhat happened after is the part worth telling. His severed head was carried to London and buried at White Hill, the site that later became the Tower of London. It was set facing France, so that no invasion could come from that direction while it lay there.\n\nA giant who keeps working after death, from underneath the capital, defending a border he can no longer see.",
@@ -3996,7 +4004,6 @@
     "motifs": [
       "bones-as-proof",
       "arrived-by-sea",
-      "christian-ending-added",
       "pre-people",
       "real-site-attached"
     ],
