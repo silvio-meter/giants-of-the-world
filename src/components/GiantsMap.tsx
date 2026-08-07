@@ -17,6 +17,7 @@ import { track } from "@/lib/track";
 import type { GiantCardData } from "@/lib/format";
 import { densityCells, motifChains } from "@/lib/map-connections";
 import { motifColor } from "@/lib/motif-color";
+import { FreeBadge } from "./FreeBadge";
 
 function makeIcon(focused: boolean) {
   if (focused) {
@@ -257,11 +258,14 @@ export function GiantsMap({
                 <Popup>
                   <div className="min-w-[140px]">
                     <p
-                      className="text-sm font-semibold"
+                      className="flex items-center gap-2 text-sm font-semibold"
                       style={{ color: focused ? "#c9a227" : "#e6edf3" }}
                     >
-                      {g.name}
-                      {focused ? " · focused" : ""}
+                      <span>
+                        {g.name}
+                        {focused ? " · focused" : ""}
+                      </span>
+                      <FreeBadge freeEntry={g.freeEntry} />
                     </p>
                     <p className="text-xs" style={{ color: "#8b949e" }}>
                       {g.culture} · {g.region}

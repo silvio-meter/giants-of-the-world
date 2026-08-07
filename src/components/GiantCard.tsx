@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { formatType, type GiantCardData } from "@/lib/format";
 import { FavouriteButton } from "./FavouriteButton";
+import { FreeBadge } from "./FreeBadge";
 import { ImagePlaceholder } from "./ImagePlaceholder";
 
 interface Props {
@@ -30,11 +31,7 @@ export function GiantCard({ giant, index = 0 }: Props) {
             <span className="text-accent-gold/80">{giant.culture}</span>
             <span aria-hidden>·</span>
             <span>{formatType(giant.type)}</span>
-            {giant.freeEntry && (
-              <span className="rounded-full border border-accent-gold/40 px-1.5 py-px text-[9px] text-accent-gold">
-                Free
-              </span>
-            )}
+            <FreeBadge freeEntry={giant.freeEntry} />
           </div>
           <h2 className="mt-2 font-[family-name:var(--font-cinzel)] text-lg tracking-wide text-text-primary transition group-hover:text-accent-gold">
             {giant.name}

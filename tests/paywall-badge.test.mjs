@@ -75,6 +75,36 @@ test("the survey saw both states, so a clean result means something", { skip }, 
   );
 });
 
+/**
+ * /findings links to entries too, and now badges them. The map popup does as
+ * well, but Leaflet builds popups on click, so no fetch of the served HTML can
+ * see one. That surface is checked by hand in a browser.
+ */
+test("the badges on /findings agree with the entry pages", { skip }, async () => {
+  const html = await get("/findings");
+  const locked = new Map(rows.map((r) => [r.slug, r.locked]));
+
+  const wrong = [];
+  for (const m of html.matchAll(/href="\/giants\/([a-z0-9-]+)"([\s\S]{0,400})/g)) {
+    const [, slug, after] = m;
+    if (slug === "random" || !locked.has(slug)) continue;
+    // The badge sits in the same row as the link, right after it. Bound the
+    // window at the next row rather than at a closing tag: splitting on
+    // </span></span> ate the badge's own closing tag, and FREE_BADGE needs the
+    // < after the word, so a rendered badge read as absent.
+    const badged = FREE_BADGE.test(after.split(/<\/li>|<li\b/)[0] ?? "");
+    if (badged === locked.get(slug)) {
+      wrong.push(
+        badged
+          ? `${slug}: badged Free on /findings but the entry is behind the paywall`
+          : `${slug}: open to everyone but /findings does not say so`
+      );
+    }
+  }
+
+  assert.deepEqual(wrong, [], `/findings disagrees with the entry pages:\n  ${wrong.join("\n  ")}`);
+});
+
 test("every Free badge leads to an open page, and every locked page has no badge", { skip }, () => {
   const wrong = rows
     .filter((r) => r.badge === r.locked)
