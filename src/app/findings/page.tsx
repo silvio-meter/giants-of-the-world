@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getAllFindings } from "@/lib/giants";
+import { getAllFindings, getGiantBySlug } from "@/lib/giants";
 import type { FindingCategory } from "@/lib/types";
+import { FreeBadge } from "@/components/FreeBadge";
 
 export const metadata: Metadata = {
   title: "Bones & Shadows",
@@ -114,12 +115,24 @@ export default function FindingsPage() {
                 </p>
               )}
               {f.relatedGiantSlug && (
-                <Link
-                  href={`/giants/${f.relatedGiantSlug}`}
-                  className="mt-4 inline-block text-sm text-accent-gold hover:underline"
-                >
-                  Related giant entry →
-                </Link>
+                <span className="mt-4 flex items-center gap-2">
+                  <Link
+                    href={`/giants/${f.relatedGiantSlug}`}
+                    className="inline-block text-sm text-accent-gold hover:underline"
+                  >
+                    Related giant entry →
+                  </Link>
+                  {/*
+                    Two of the five entries linked from this page are free and
+                    said so nowhere, which is the cheapest thing a cold reader
+                    can be offered.
+                  */}
+                  <FreeBadge
+                    freeEntry={
+                      getGiantBySlug(f.relatedGiantSlug)?.freeEntry ?? false
+                    }
+                  />
+                </span>
               )}
             </li>
           );
