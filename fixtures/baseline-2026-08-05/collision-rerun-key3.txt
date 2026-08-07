@@ -1,0 +1,20 @@
+incoming        live         key                         reason
+--------------  -----------  --------------------------  ---------------------------------------------------------------------
+cormoran        cormoran     exact slug                  identical slug, the same page would be written twice
+fomorians       balor        declared                    collective entry over a live individual member
+gigantes        alcyoneus    declared                    handoff calls this a parent entry over live individual Gigantes
+gigantes        enceladus    declared                    handoff calls this a parent entry over live individual Gigantes
+gigantes        polybotes    declared                    handoff calls this a parent entry over live individual Gigantes
+gigantes        porphyrion   declared                    handoff calls this a parent entry over live individual Gigantes
+gogmagog        gogmagog     exact slug                  identical slug, the same page would be written twice
+jentilak        jentilak     exact slug                  identical slug, the same page would be written twice
+jentilak        jentilak     declared                    two separate live pages that may both be in scope
+jentilak        olentzero    declared                    two separate live pages that may both be in scope
+rubezahl        rubezahl     exact slug                  identical slug, the same page would be written twice
+stallu          stallo       culture + name              same culture and display name equals live alias "Stállu"
+te-kahui-tipua  kahui-tipua  culture + name (weak)       one of the display names contains the other, and the cultures overlap
+te-kahui-tipua  kahui-tipua  culture + slug word (weak)  same culture and both slugs contain "kahui"
+te-kahui-tipua  maero        declared                    its own copy names maero
+troll-iceland   hrungnir     declared                    collective Norse entry overlapping live individual jotnar
+troll-iceland   skrymir      declared                    collective Norse entry overlapping live individual jotnar
+troll-iceland   thrym        declared                    collective Norse entry overlapping live individual jotnar

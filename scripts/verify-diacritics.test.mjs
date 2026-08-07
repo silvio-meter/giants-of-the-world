@@ -28,7 +28,9 @@ const read = (p) => JSON.parse(readFileSync(join(root, p), "utf8"));
 const EXPECTED = {
   jentilak: ["Barandiarán", "José Miguel", "Resurrección María"],
   olentzero: ["Barandiarán"],
-  rubezahl: ["Rübezahl", "Musäus", "Volksmärchen", "Krakonoš", "Krkonošské", "pohádky"],
+  // Volksmährchen keeps the h: that is the spelling of the 1783 title, and the
+  // entry now cites the volume and year rather than the run of the series.
+  rubezahl: ["Rübezahl", "Musäus", "Volksmährchen", "Krakonoš", "Krkonošské", "pohádky"],
 };
 
 /** If any of these come back, the fold has returned. */
@@ -38,6 +40,7 @@ const FOLDED = [
   "Resurreccion Maria",
   "Musaus",
   "Volksmarchen",
+  "Volksmahrchen",
   "Krakonos",
   "Krkonos",
   "Krkonosske",
@@ -60,6 +63,7 @@ const FOLDED_ANYWHERE = [
   "Barandiaran",
   "Musaus",
   "Volksmarchen",
+  "Volksmahrchen",
   "Krakonos",
   "Krkonos",
   "pohadky",

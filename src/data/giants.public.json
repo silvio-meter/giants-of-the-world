@@ -743,8 +743,7 @@
     "image": "/images/giants/hrungnir.jpg",
     "imageAlt": "Hrungnir the stone giant",
     "motifs": [
-      "war-on-heaven",
-      "petrified"
+      "war-on-heaven"
     ],
     "heightMeters": 4.5,
     "hasScholarlyNotes": false
@@ -952,7 +951,6 @@
     "imageAlt": "Gogmagog the British giant",
     "motifs": [
       "pre-people",
-      "petrified",
       "outwitted"
     ],
     "heightMeters": 5.5,
@@ -989,14 +987,16 @@
     "sources": [
       "José Miguel de Barandiarán, Basque mythology fieldwork and collections (20th c.)",
       "Resurrección María de Azkue, Euskalerriaren Yakintza (1935-47)",
-      "Basque and Navarrese megalithic place-names (jentiletxe, jentilarri)"
+      "Basque and Navarrese megalithic place-names (jentiletxe, jentilarri)",
+      "Anton Erkoreka, Los gentiles: el mito de los gigantes en el País Vasco, Cuadernos de Etnología y Etnografía de Navarra 23 (1976)",
+      "Anuntxi Arana, Euskal mitologiaz: jentilak eta kristauak (2008)",
+      "Emilio Xabier Dueñas, 'El carbonero Olentzero y el obispo (San) Nicolás', Eusko Ikaskuntza, Lankidetzan 41"
     ],
     "image": "/images/giants/jentilak.jpg",
     "imageAlt": "Jentilak, Basque mountain giants",
     "motifs": [
       "builder",
-      "pre-people",
-      "petrified"
+      "pre-people"
     ],
     "heightMeters": 4.5,
     "hasScholarlyNotes": false
@@ -1553,7 +1553,7 @@
     "region": "North America",
     "type": "modern-legend",
     "freeEntry": true,
-    "height": "Tall (oral tradition)",
+    "height": "Not stated in the source",
     "shortDescription": "A Northern Paiute tradition about a people-eating tribe, and how it became a story about giants.",
     "related": [
       "dzunukwa",
@@ -1576,7 +1576,7 @@
       "Adrienne Mayor, Fossil Legends of the First Americans (2005)"
     ],
     "image": "/images/giants/si-te-cah.jpg",
-    "imageAlt": "Si-Te-Cah of Paiute tradition",
+    "imageAlt": "A tall figure at the mouth of Lovelock Cave, firelight behind him",
     "motifs": [
       "cannibal",
       "pre-people",
@@ -1985,8 +1985,8 @@
       "nawao"
     ],
     "coordinates": [
-      -38.5,
-      175.5
+      -45,
+      169
     ],
     "tags": [
       "maori",
@@ -1995,17 +1995,17 @@
       "race"
     ],
     "sources": [
-      "Southern Maori oral tradition (Ngai Tahu; earlier Waitaha and Kati Mamoe)",
-      "Herries Beattie, southern Maori traditions (20th c.)",
-      "Ngai Tahu published sources and Claims Settlement documentation",
-      "Te Ara: The Encyclopedia of New Zealand"
+      "Southern Māori oral tradition (Ngāi Tahu; earlier Waitaha and Kati Mamoe)",
+      "Herries Beattie, \"Nature-lore of the Southern Maori\", Transactions and Proceedings of the New Zealand Institute 52 (1920)",
+      "Ngāi Tahu published sources and Claims Settlement documentation",
+      "Te Ara: The Encyclopedia of New Zealand",
+      "James W. Stack, \"Sketch of the Traditional History of the South Island Maoris\", Transactions and Proceedings of the New Zealand Institute 10 (1877)"
     ],
     "image": "/images/giants/kahui-tipua.jpg",
     "imageAlt": "Kāhui Tipua",
     "motifs": [
       "landscape-body",
-      "pre-people",
-      "petrified"
+      "pre-people"
     ],
     "heightMeters": 4.5,
     "hasScholarlyNotes": false
@@ -2165,10 +2165,14 @@
       "reindeer"
     ],
     "sources": [
-      "Sami oral tradition, N. Norway, Sweden, Finland and Kola",
-      "Johannes Schefferus, Lapponia (1673)",
+      "Sámi oral tradition, N. Norway, Sweden, Finland and Kola",
+      "Johan Turi, Muitalus sámiid birra (1910)",
       "J.K. Qvigstad, Lappiske eventyr og sagn (1927-29)",
-      "Archaeological literature on stalotomter, 20th-21st c."
+      "Eldar Heide, 'The Wild Host and the Etymology of Sámi Stállu', Arv (2019)",
+      "J.A. Friis, Lappisk Mythologi (1871); Rolf Kjellström, Fataburen (1976)",
+      "Anders Wepsäläinen on the stállotomter (2011); Olof Holm, Fornvännen 111 (2016)",
+      "Liedgren and Bergman (2009); Bergman et al. (2008); Storli (1993-94)",
+      "Johannes Schefferus, Lapponia (1673): external account of Sámi religion, cited for collection history"
     ],
     "image": "/images/giants/stallo.jpg",
     "imageAlt": "Stallo of Sámi folklore",
@@ -2230,7 +2234,7 @@
     "alsoKnownAs": [
       "Liczyrzepa",
       "Duch Gór",
-      "Lord of the Mountains"
+      "Krakonoš"
     ],
     "culture": "German / Silesian / Czech",
     "region": "Central Europe",
@@ -2256,7 +2260,7 @@
     "sources": [
       "Martin Helwig, map of Silesia (1561): early depiction",
       "Johannes Praetorius, Rübezahl collections (17th c.)",
-      "J.K.A. Musäus, Volksmärchen der Deutschen (1782-86)",
+      "J.K.A. Musäus, Volksmährchen der Deutschen, vol. 2 (1783)",
       "Czech Krakonoš tradition, incl. Krkonošské pohádky"
     ],
     "image": "/images/giants/rubezahl.jpg",
@@ -2427,5 +2431,41 @@
     ],
     "heightMeters": 30,
     "hasScholarlyNotes": true
+  },
+  {
+    "id": "ispolini",
+    "slug": "ispolini",
+    "name": "Ispolini",
+    "alsoKnownAs": [],
+    "culture": "Bulgarian",
+    "region": "Bulgaria",
+    "type": "race",
+    "freeEntry": false,
+    "height": "up to 3 metres",
+    "shortDescription": "Bulgaria's giants were God's second attempt at people. We are the third.",
+    "related": [],
+    "coordinates": [
+      42.7,
+      25.3
+    ],
+    "tags": [
+      "balkans",
+      "second-race",
+      "dragons",
+      "blackberry"
+    ],
+    "sources": [
+      "Стойнев, Попов, Василева and Попов, \"Исполини\", Българска митология: Енциклопедичен речник, 2006",
+      "Атанас Илиев, Български предания за исполини, наречени елини, жидови и латини, Сборник за народни умотворения 3, 1890",
+      "Макс Фасмер, \"исполин\", Этимологический словарь русского языка, 1964 to 1973, for the Spali derivation and for Meillet's objection",
+      "Jordanes and Pliny the Elder as cited there"
+    ],
+    "image": "",
+    "imageAlt": "Ispolini, the Bulgarian giants of the second creation",
+    "motifs": [
+      "pre-people"
+    ],
+    "heightMeters": null,
+    "hasScholarlyNotes": false
   }
 ]

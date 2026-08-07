@@ -1,0 +1,30 @@
+paid entries measured: 42  (free entries never use the preview path)
+
+  preview is the whole first paragraph, nothing withheld   40
+  preview is cut short                                     2
+  of the intact ones, previews only one sentence long      4
+
+ONE SENTENCE LONG, BUT NOTHING IS LOST: the whole paragraph is that sentence
+
+  kee-wakw
+    The Kee-wakw is a cannibal giant of Abenaki and wider Wabanaki tradition: a being of winter, hunger and the frozen forest, whose appetite grows the more it eats.
+
+  maero
+    Maero are wild forest beings of Maori tradition: hairy, with long bony fingers ending in claws, living apart in the bush and hostile to people who enter it.
+
+  kahui-tipua
+    The Kahui Tipua are a band of supernatural giants in southern Maori tradition, credited with shaping parts of the South Island landscape: including, in some accounts, the excavation of the great lakes.
+
+  amazimu
+    Amazimu are cannibal ogres of Zulu and wider Nguni tradition: large, dangerous, and consistently defeated by children who pay attention.
+
+CUT SHORT: the last sentence a reader sees, then the first they do not
+
+balor  (3 sentences, 1 withheld)
+   sees : His single eye is kept shut and needs four men to lift the lid, and whatever it looks at dies.
+   loses: He is killed by his own grandson, exactly as prophesied.
+
+talos  (3 sentences, 1 withheld)
+   sees : He was not born.
+   loses: He was made, and he has one vein, closed by a single bronze nail at his ankle.
+
