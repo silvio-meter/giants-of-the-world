@@ -127,10 +127,6 @@
     "name": "Ended by Christianity",
     "blurb": "The giants do not lose a battle: they leave, die or turn to stone at the moment the new religion arrives. The tradition dates its own displacement."
   },
-  "christian-ending-added": {
-    "name": "A Christian ending, added later",
-    "blurb": "The story is recorded from a living tradition and then closed with a Christian conclusion by a named hand. The seam is visible, and scholarship can usually say who sewed it."
-  },
   "giants-as-heroes": {
     "name": "The giant as hero",
     "blurb": "The giant is on the side of the people: a protector, a champion, a founder. Where this occurs, the monstrous reading is usually the later layer, not the earlier one."
@@ -144,7 +140,7 @@
     "blurb": "The giants come from the water, on rafts, in reed boats, or simply out of it. The sea supplies an origin that needs no genealogy."
   },
   "invulnerable-hide": {
-    "name": "The hide nothing pierces",
+    "name": "The body nothing pierces",
     "blurb": "Skin, scale or bark that no weapon can cut, and usually a single place where it can. The invulnerability exists to make the exception matter."
   }
 }

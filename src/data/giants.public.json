@@ -85,7 +85,8 @@
     "motifs": [
       "war-on-heaven",
       "flood-survivor",
-      "bones-as-proof"
+      "bones-as-proof",
+      "pre-people"
     ],
     "heightMeters": null,
     "hasScholarlyNotes": false
@@ -296,7 +297,8 @@
     "imageAlt": "Enceladus buried beneath Etna",
     "motifs": [
       "war-on-heaven",
-      "buried-sleeper"
+      "buried-sleeper",
+      "buried-under-volcanoes"
     ],
     "heightMeters": 12,
     "hasScholarlyNotes": false
@@ -664,7 +666,9 @@
     "imageAlt": "Talos, bronze guardian of Crete",
     "motifs": [
       "made-not-born",
-      "guardian"
+      "guardian",
+      "invulnerable-hide",
+      "outwitted"
     ],
     "heightMeters": 4.5,
     "hasScholarlyNotes": false
@@ -2889,7 +2893,8 @@
     "imageAlt": "Milžinai, lithuanian tradition",
     "motifs": [
       "pre-people",
-      "real-site-attached"
+      "real-site-attached",
+      "giants-as-heroes"
     ],
     "heightMeters": null,
     "hasScholarlyNotes": false
@@ -3019,7 +3024,8 @@
     "image": "/images/giants/suur-toll.jpg",
     "imageAlt": "Suur Tõll, estonian tradition",
     "motifs": [
-      "real-site-attached"
+      "real-site-attached",
+      "giants-as-heroes"
     ],
     "heightMeters": null,
     "hasScholarlyNotes": false
@@ -3060,7 +3066,8 @@
     "image": "/images/giants/fomorians.jpg",
     "imageAlt": "Fomorians, irish tradition",
     "motifs": [
-      "pre-people"
+      "pre-people",
+      "arrived-by-sea"
     ],
     "heightMeters": null,
     "hasScholarlyNotes": false
@@ -3097,7 +3104,8 @@
     "image": "/images/giants/bendigeidfran.jpg",
     "imageAlt": "Bendigeidfran, welsh tradition",
     "motifs": [
-      "real-site-attached"
+      "real-site-attached",
+      "giants-as-heroes"
     ],
     "heightMeters": null,
     "hasScholarlyNotes": false
@@ -3465,7 +3473,6 @@
     "motifs": [
       "bones-as-proof",
       "arrived-by-sea",
-      "christian-ending-added",
       "pre-people",
       "real-site-attached"
     ],
