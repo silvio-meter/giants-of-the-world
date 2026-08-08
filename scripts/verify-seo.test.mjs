@@ -87,3 +87,59 @@ test("the sitemap lists no page that robots.txt blocks", { skip }, async () => {
   );
   assert.deepEqual(conflicts, [], "sitemap advertises pages robots.txt blocks");
 });
+
+test("each giant page ships a large Twitter card for that entry, not the site default", { skip }, async () => {
+  // Root layout still advertises featured.jpg. If a giant page fails to set its
+  // own twitter block (or only sets openGraph), X falls back to that default.
+  // File-based twitter-image / opengraph-image under [slug] is the fix; this
+  // guard fails if we regress to the catalogue JPG path or the site feature.
+  const samples = ["ymir", "ravana", "nephilim", "surtr"];
+  for (const slug of samples) {
+    const html = await (await fetch(`${BASE}/giants/${slug}`)).text();
+
+    assert.match(
+      html,
+      /name="twitter:card" content="summary_large_image"/,
+      `${slug} missing summary_large_image`
+    );
+
+    const twitterImages = [
+      ...html.matchAll(/name="twitter:image(?::src)?" content="([^"]+)"/g),
+    ].map((m) => m[1]);
+    assert.ok(twitterImages.length > 0, `${slug} has no twitter:image`);
+
+    for (const src of twitterImages) {
+      assert.ok(
+        !src.includes("/images/featured.jpg"),
+        `${slug} twitter:image still points at the site-wide featured art: ${src}`
+      );
+      assert.ok(
+        src.includes(slug) ||
+          src.includes("twitter-image") ||
+          src.includes("opengraph-image"),
+        `${slug} twitter:image is not entry-specific: ${src}`
+      );
+    }
+
+    const ogImages = [
+      ...html.matchAll(/property="og:image" content="([^"]+)"/g),
+    ].map((m) => m[1]);
+    assert.ok(ogImages.length > 0, `${slug} has no og:image`);
+    for (const src of ogImages) {
+      assert.ok(
+        !src.includes("/images/featured.jpg"),
+        `${slug} og:image still points at featured art: ${src}`
+      );
+    }
+
+    // The generated card must actually serve.
+    const cardPath = `/giants/${slug}/twitter-image/card`;
+    const card = await fetch(`${BASE}${cardPath}`);
+    assert.equal(card.status, 200, `${cardPath} returned ${card.status}`);
+    const type = card.headers.get("content-type") ?? "";
+    assert.ok(
+      type.includes("image/"),
+      `${cardPath} content-type is ${type}, not an image`
+    );
+  }
+});
