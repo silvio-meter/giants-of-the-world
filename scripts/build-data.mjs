@@ -49,7 +49,9 @@ export function estimateMeters(height) {
   if (l.includes("four cubits")) return 1.8;
   const feet = l.match(/(\d+(?:\.\d+)?)\s*(?:feet|ft)/);
   if (feet) return Number((parseFloat(feet[1]) * 0.3048).toFixed(2));
-  const metres = l.match(/(\d+(?:\.\d+)?)\s*m(?:eter)?s?\b/);
+  // Both spellings: the catalogue writes "metres", this once matched only
+  // "meters" and silently left those entries off the size chart.
+  const metres = l.match(/(\d+(?:\.\d+)?)\s*m(?:et(?:er|re))?s?\b/);
   if (metres) return parseFloat(metres[1]);
   if (/giant|j\u00f6tunn|jotunn/.test(l)) return 4.5;
   return null;
