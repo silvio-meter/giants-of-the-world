@@ -65,6 +65,16 @@ export interface Giant {
    * lore content itself ever reaching the client bundle.
    */
   hasScholarlyNotes?: boolean;
+  /**
+   * The ladder of surviving witnesses behind one claim, oldest last. Lore, so
+   * it is stripped from the public bundle; only chainSummary crosses over.
+   */
+  chain?: Chain;
+  /**
+   * The free half: the claim and the one sentence of verdict, plus how many
+   * rungs are waiting. Public by design, since it is what opens the question.
+   */
+  chainSummary?: { claim: string; verdict: string; rungCount: number };
   /** Keys into motifs.json — the cross-cultural layer. Not lore; safe for the client. */
   motifs?: string[];
   /**
@@ -96,6 +106,30 @@ export interface Giant {
 
 export type FindingCategory = "claim" | "hoax" | "modern-legend" | "archaeological";
 
+/** One surviving witness. `evidence` is our audit trail and never leaves the server. */
+export interface ChainRung {
+  witness: string;
+  date: string;
+  sortYear: number;
+  reads: string;
+  kind:
+    | "manuscript"
+    | "printed"
+    | "fieldwork"
+    | "excavation"
+    | "scholarship"
+    | "press";
+  note?: string;
+  evidence?: string;
+}
+
+export interface Chain {
+  claim: string;
+  verdict: string;
+  rungs: ChainRung[];
+  floor: string;
+}
+
 export interface Finding {
   id: string;
   title: string;
@@ -107,4 +141,10 @@ export interface Finding {
   sources: string[];
   year?: string;
   location?: string;
+  /**
+   * Two findings carry a chain of custody: cardiff-giant and anasazi-giants.
+   * findings.json is read only on the server, and the rungs are served through
+   * /api/chain/[id] behind the same plan check the entries use.
+   */
+  chain?: Chain;
 }

@@ -14,6 +14,7 @@ import { FullDescription } from "@/components/FullDescription";
 import { LockedLore } from "@/components/LockedLore";
 import { FavouriteButton } from "@/components/FavouriteButton";
 import { SizeComparison } from "@/components/SizeComparison";
+import { ChainOfCustody } from "@/components/ChainOfCustody";
 import { EmailCapture } from "@/components/EmailCapture";
 import { DiscoveryTracker } from "@/components/DiscoveryTracker";
 import { ScholarlyNotesSection } from "@/components/ScholarlyNotesSection";
@@ -331,6 +332,10 @@ export default async function GiantDetailPage({ params }: Props) {
       </div>
 
       {giant.hasScholarlyNotes && <ScholarlyNotesSection slug={giant.slug} />}
+
+      {giant.chainSummary && (
+        <ChainOfCustody slug={giant.slug} summary={giant.chainSummary} />
+      )}
 
       {related.length > 0 && (
         <section className="mt-14 border-t border-border pt-10">

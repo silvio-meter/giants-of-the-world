@@ -28,6 +28,10 @@ const LORE_FIELDS = [
   "fate",
   "scholarlyNotes",
   "scholarlySources",
+  // The chain of custody. Its claim and verdict are free and travel as a
+  // derived summary below; the rungs, the floor and every evidence URL are
+  // paid and must never reach giants.public.json.
+  "chain",
 ];
 
 /**
@@ -69,6 +73,19 @@ export function splitMaster(master) {
     entry.freeEntry = giant.freeEntry === true;
     entry.heightMeters = estimateMeters(giant.height);
     entry.hasScholarlyNotes = Boolean(giant.scholarlyNotes?.length);
+    /**
+     * The free half of the chain: the claim, and the one sentence of verdict.
+     * A completed thought that opens a question, with the answer behind the
+     * wall. Deliberately not the whole `chain` object, so no rung, no floor
+     * and no evidence URL can ride along.
+     */
+    if (giant.chain) {
+      entry.chainSummary = {
+        claim: giant.chain.claim,
+        verdict: giant.chain.verdict,
+        rungCount: giant.chain.rungs?.length ?? 0,
+      };
+    }
     publicEntries.push(entry);
 
     lore[giant.slug] = {
@@ -76,6 +93,7 @@ export function splitMaster(master) {
       mysteryNote: giant.mysteryNote,
       fate: giant.fate,
       ...(giant.sections ? { sections: giant.sections } : {}),
+      ...(giant.chain ? { chain: giant.chain } : {}),
       ...(giant.scholarlyNotes
         ? {
             scholarlyNotes: giant.scholarlyNotes,

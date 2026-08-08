@@ -3,6 +3,7 @@ import Link from "next/link";
 import { getAllFindings, getGiantBySlug } from "@/lib/giants";
 import type { FindingCategory } from "@/lib/types";
 import { FreeBadge } from "@/components/FreeBadge";
+import { ChainOfCustody } from "@/components/ChainOfCustody";
 
 export const metadata: Metadata = {
   title: "Bones & Shadows",
@@ -113,6 +114,22 @@ export default function FindingsPage() {
                 <p className="mt-4 font-mono text-[11px] text-text-muted/80">
                   Sources: {f.sources.join("; ")}
                 </p>
+              )}
+              {/*
+                Two findings carry a chain. Claim and verdict are free, the
+                rungs come from /api/chain/[id] behind the plan check, and the
+                whole chain object never reaches this markup.
+              */}
+              {f.chain && (
+                <ChainOfCustody
+                  slug={f.id}
+                  endpoint="/api/chain"
+                  summary={{
+                    claim: f.chain.claim,
+                    verdict: f.chain.verdict,
+                    rungCount: f.chain.rungs.length,
+                  }}
+                />
               )}
               {f.relatedGiantSlug && (
                 <span className="mt-4 flex items-center gap-2">
