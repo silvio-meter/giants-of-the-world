@@ -39,6 +39,17 @@ export function canUseMapFilters(plan: UserPlan | null | undefined): boolean {
   return isPaidPlan(plan);
 }
 
+/**
+ * The ordered list on /near, with distances, real-site marks and export.
+ *
+ * The count and the nearest one stay free: the count is what earns the click.
+ * Resolved on the server so the list cannot be reached by hand-writing a URL,
+ * the same way canUseMapFilters guards /map.
+ */
+export function canUseProximityList(plan: UserPlan | null | undefined): boolean {
+  return isPaidPlan(plan);
+}
+
 export function formatPlanLabel(plan: UserPlan): string {
   switch (plan) {
     case "monthly":
