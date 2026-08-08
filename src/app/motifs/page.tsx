@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { crossCulturalMotifs, getAllMotifs } from "@/lib/motifs";
 import { giants } from "@/lib/giants";
@@ -59,7 +60,9 @@ export default function MotifsPage() {
         </h2>
         <ul className="mt-5 space-y-5">
           {cross.map(({ motif, cultures }) => {
-            const carriers = giants.filter((g) => g.motifs?.includes(motif.key));
+            const carriers = giants.filter((g) =>
+              g.motifs?.includes(motif.key)
+            );
             return (
               <li
                 key={motif.key}
@@ -76,10 +79,41 @@ export default function MotifsPage() {
                 <p className="mt-2 text-sm leading-relaxed text-text-muted">
                   {motif.blurb}
                 </p>
+                {carriers.some((g) => g.image) && (
+                  <ul className="mt-4 flex gap-2 overflow-x-auto pb-1">
+                    {carriers
+                      .filter((g) => g.image)
+                      .slice(0, 8)
+                      .map((g) => (
+                        <li key={g.slug} className="shrink-0">
+                          <Link
+                            href={`/giants/${g.slug}`}
+                            className="group block w-16 overflow-hidden rounded border border-border transition hover:border-accent-gold/50"
+                            title={g.name}
+                          >
+                            <span className="relative block aspect-square bg-[#0a0e14]">
+                              <Image
+                                src={g.image}
+                                alt=""
+                                fill
+                                sizes="64px"
+                                className="object-cover opacity-90 transition group-hover:opacity-100"
+                              />
+                            </span>
+                            <span className="block truncate px-1 py-0.5 text-center font-mono text-[9px] text-text-muted group-hover:text-accent-gold">
+                              {g.name}
+                            </span>
+                          </Link>
+                        </li>
+                      ))}
+                  </ul>
+                )}
                 <p className="mt-3 text-sm">
                   {carriers.map((g, i) => (
                     <span key={g.slug}>
-                      {i > 0 && <span className="text-text-muted/40"> · </span>}
+                      {i > 0 && (
+                        <span className="text-text-muted/40"> · </span>
+                      )}
                       <Link
                         href={`/giants/${g.slug}`}
                         className="text-accent-gold hover:underline"

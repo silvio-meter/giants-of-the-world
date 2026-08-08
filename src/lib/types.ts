@@ -142,6 +142,15 @@ export interface Finding {
   year?: string;
   location?: string;
   /**
+   * Optional documentary image (historical photo, site, artefact). Prefer
+   * public-domain / licensed files under public/images/findings/. When absent,
+   * the UI may fall back to the related giant's catalogue art, labelled as such.
+   */
+  image?: string;
+  imageAlt?: string;
+  /** Required whenever image is set: who made it / where it comes from. */
+  imageCredit?: string;
+  /**
    * Optional chain of custody (today: cardiff-giant and anasazi-giants).
    * findings.json is read only on the server, and the rungs are served through
    * /api/chain/[id] behind the same plan check the entries use.
