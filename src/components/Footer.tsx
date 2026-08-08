@@ -4,7 +4,6 @@ import {
   XIcon,
   InstagramIcon,
   YouTubeIcon,
-  TikTokIcon,
   PinterestIcon,
 } from "./SocialIcons";
 import { refundDays, socialLinks, supportEmail } from "@/lib/site";
@@ -13,7 +12,6 @@ const SOCIAL_ICONS: Record<string, React.ComponentType<React.SVGProps<SVGSVGElem
   X: XIcon,
   Instagram: InstagramIcon,
   YouTube: YouTubeIcon,
-  TikTok: TikTokIcon,
   Pinterest: PinterestIcon,
 };
 

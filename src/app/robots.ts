@@ -31,7 +31,6 @@ export default function robots(): MetadataRoute.Robots {
           "/instagram",
           "/youtube",
           "/pinterest",
-          "/tiktok",
           // The confirmation link is noindex in its own metadata, but it is
           // also pointless to crawl and carries a token.
           "/subscribe/confirm",
