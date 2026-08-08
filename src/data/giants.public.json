@@ -1054,7 +1054,8 @@
     "height": "Large (folklore)",
     "shortDescription": "The Basque charcoal-burner of Christmas: last echo of the jentilak.",
     "related": [
-      "jentilak"
+      "jentilak",
+      "oni"
     ],
     "coordinates": [
       43.3,
@@ -1312,7 +1313,8 @@
     "height": "Giant (mythic race)",
     "shortDescription": "Giant race of a previous sun who built great structures and fell to divine order.",
     "related": [
-      "xelhua"
+      "xelhua",
+      "nephilim"
     ],
     "coordinates": [
       19.4,
@@ -1352,7 +1354,8 @@
     "height": "Giant",
     "shortDescription": "Giant survivor of the flood who raised the great pyramid of Cholula.",
     "related": [
-      "quinametzin"
+      "quinametzin",
+      "nephilim"
     ],
     "coordinates": [
       19.06,
@@ -1393,7 +1396,8 @@
     "height": "Giant",
     "shortDescription": "The giant who chased the sun and died of thirst: staff becoming a forest.",
     "related": [
-      "fangfeng"
+      "fangfeng",
+      "budj-bim"
     ],
     "coordinates": [
       35,
@@ -1433,7 +1437,8 @@
     "height": "Giant (one of the tallest in lore)",
     "shortDescription": "Giant executed by Yu the Great for arriving late to the flood assembly.",
     "related": [
-      "kua-fu"
+      "kua-fu",
+      "og-of-bashan"
     ],
     "coordinates": [
       30.5,
@@ -1473,7 +1478,8 @@
     "height": "Larger than human (variable)",
     "shortDescription": "Horned ogres of Japanese folklore: punishers, marauders, festival demons.",
     "related": [
-      "shuten-doji"
+      "shuten-doji",
+      "daidarabotchi"
     ],
     "coordinates": [
       35,
@@ -1515,7 +1521,8 @@
     "height": "Oni-giant",
     "shortDescription": "Demon king of Mount Ōe: drunkard oni slain by Raikō's band.",
     "related": [
-      "oni"
+      "oni",
+      "daidarabotchi"
     ],
     "coordinates": [
       35,
@@ -1826,7 +1833,7 @@
     "culture": "Australian Aboriginal (Tiwi)",
     "region": "Australia",
     "type": "folklore",
-    "freeEntry": true,
+    "freeEntry": false,
     "height": "Giant",
     "shortDescription": "One-eyed giant spirits of Tiwi tradition who hunt with clubs and bags.",
     "related": [
@@ -2126,7 +2133,8 @@
     "height": "Ogre-giant",
     "shortDescription": "Cannibal ogres of Zulu and related folklore: shape-shifting eaters of the unwary.",
     "related": [
-      "giant-of-the-forest"
+      "giant-of-the-forest",
+      "baqbaq-devi"
     ],
     "coordinates": [
       -28.5,
@@ -2167,7 +2175,8 @@
     "height": "Giant",
     "shortDescription": "West African forest giant of tale cycles: a being of the deep bush.",
     "related": [
-      "amazimu"
+      "amazimu",
+      "dzunukwa"
     ],
     "coordinates": [
       12,
@@ -2399,7 +2408,8 @@
     "height": "Reports claim extreme stature (unverified)",
     "shortDescription": "Unverified legend of a giant observed in Kunar Province.",
     "related": [
-      "giant-of-kandahar"
+      "giant-of-kandahar",
+      "orion"
     ],
     "coordinates": [
       35,
@@ -2438,7 +2448,7 @@
     "culture": "American tall-tale",
     "region": "North America",
     "type": "tall-tale",
-    "freeEntry": true,
+    "freeEntry": false,
     "height": "As tall as the tale requires",
     "shortDescription": "Lumberjack giant of American tall tales: Babe the Blue Ox at his side.",
     "related": [
@@ -2522,7 +2532,10 @@
     "freeEntry": false,
     "height": "up to 3 metres",
     "shortDescription": "Bulgaria's giants were God's second attempt at people. We are the third.",
-    "related": [],
+    "related": [
+      "nephilim",
+      "jentilak"
+    ],
     "coordinates": [
       42.7,
       25.3
@@ -2562,10 +2575,13 @@
     "culture": "French",
     "region": "France",
     "type": "individual",
-    "freeEntry": true,
+    "freeEntry": false,
     "height": "unmeasured",
     "shortDescription": "Folk giant older than Rabelais: over four hundred French megaliths and rocks are named for him.",
-    "related": [],
+    "related": [
+      "mouros",
+      "tombe-dei-giganti"
+    ],
     "coordinates": [
       47,
       2.5
@@ -2613,10 +2629,13 @@
     "culture": "Galician, Asturian, Portuguese",
     "region": "Northwest Iberia",
     "type": "race",
-    "freeEntry": true,
+    "freeEntry": false,
     "height": "varies; sometimes giants, sometimes not",
     "shortDescription": "Builders of the megaliths of north-west Iberia: unbaptised people of the earth whose name may mean the dead.",
-    "related": [],
+    "related": [
+      "jentilak",
+      "gargantua"
+    ],
     "coordinates": [
       42.3,
       -7.9
@@ -2653,10 +2672,13 @@
     "culture": "Croatian",
     "region": "Istria",
     "type": "individual",
-    "freeEntry": true,
+    "freeEntry": false,
     "height": "unmeasured",
     "shortDescription": "Istrian giant who ploughed the Mirna into being; his kind built the hill towns.",
-    "related": [],
+    "related": [
+      "klek",
+      "nemri"
+    ],
     "coordinates": [
       45.33,
       13.83
@@ -2699,7 +2721,10 @@
     "freeEntry": false,
     "height": "unmeasured",
     "shortDescription": "Japanese landscape giant: Fuji is his spoil heap, Lake Biwa the hole it came from.",
-    "related": [],
+    "related": [
+      "oni",
+      "shuten-doji"
+    ],
     "coordinates": [
       36.33,
       140.55
@@ -2738,7 +2763,10 @@
     "freeEntry": false,
     "height": "unmeasured",
     "shortDescription": "Many-headed giants of the Georgian mountains: their strongest was outriddled, not outfought.",
-    "related": [],
+    "related": [
+      "amazimu",
+      "gigantes"
+    ],
     "coordinates": [
       42.5,
       43.5
@@ -2778,7 +2806,10 @@
     "freeEntry": false,
     "height": "disputed; possibly human-sized",
     "shortDescription": "Earth-born Greek race defeated by the Olympians: man-sized in the earliest art, snake-legged only later.",
-    "related": [],
+    "related": [
+      "polyphemus",
+      "enceladus"
+    ],
     "coordinates": [
       37.98,
       23.73
@@ -2818,10 +2849,13 @@
     "culture": "European accounts of the Tehuelche and Selk'nam",
     "region": "Patagonia",
     "type": "modern-legend",
-    "freeEntry": true,
+    "freeEntry": false,
     "height": "claimed 12 to 15 feet; measured 5 ft 9 in",
     "shortDescription": "European voyage reports of a giant race in Patagonia, ended by measurement in the 1760s.",
-    "related": [],
+    "related": [
+      "si-te-cah",
+      "santa-elena-giants"
+    ],
     "coordinates": [
       -49.32,
       -67.73
@@ -2879,7 +2913,10 @@
     "freeEntry": false,
     "height": "unmeasured",
     "shortDescription": "One-eyed Albanian man-eater with no knees: he cannot bend his legs to chase you.",
-    "related": [],
+    "related": [
+      "polyphemus",
+      "balor"
+    ],
     "coordinates": [
       41.15,
       20.1
@@ -2917,10 +2954,13 @@
     "culture": "Polish",
     "region": "Poland",
     "type": "individual",
-    "freeEntry": true,
+    "freeEntry": false,
     "height": "unmeasured",
     "shortDescription": "Twin strongmen raised by a wolf and a bear: Polish dragon-slayers who ruled the kingdom they saved.",
-    "related": [],
+    "related": [
+      "goliath",
+      "suur-toll"
+    ],
     "coordinates": [
       50.06,
       19.95
@@ -2958,7 +2998,10 @@
     "freeEntry": false,
     "height": "unmeasured",
     "shortDescription": "Lithuanian giant race: ancestors in local legend, monsters in fairy tale, their graves on the map.",
-    "related": [],
+    "related": [
+      "kalev-kalevipoeg",
+      "suur-toll"
+    ],
     "coordinates": [
       55.17,
       23.88
@@ -3001,7 +3044,10 @@
     "freeEntry": false,
     "height": "unmeasured",
     "shortDescription": "Icelandic category of giant beings: caught out at sunrise they become the rocks of the landscape.",
-    "related": [],
+    "related": [
+      "klek",
+      "cormoran"
+    ],
     "coordinates": [
       64.96,
       -19.02
@@ -3044,10 +3090,13 @@
     "culture": "Estonian, Finnish, Karelian",
     "region": "Baltic and Finnic lands",
     "type": "race",
-    "freeEntry": true,
+    "freeEntry": false,
     "height": "unmeasured",
     "shortDescription": "Finnic giant ancestor and his stone-throwing sons, across Estonia, Finland and Karelia.",
-    "related": [],
+    "related": [
+      "milzinai",
+      "suur-toll"
+    ],
     "coordinates": [
       59.44,
       24.75
@@ -3091,7 +3140,10 @@
     "freeEntry": false,
     "height": "unmeasured",
     "shortDescription": "Giant king of Saaremaa who farmed his own land and threw stones at the Devil.",
-    "related": [],
+    "related": [
+      "kalev-kalevipoeg",
+      "bendigeidfran"
+    ],
     "coordinates": [
       58.31,
       22.81
@@ -3130,7 +3182,10 @@
     "freeEntry": true,
     "height": "unmeasured",
     "shortDescription": "Irish adversary race out of the sea: their rule banned the teaching of poetry and law.",
-    "related": [],
+    "related": [
+      "balor",
+      "nephilim"
+    ],
     "coordinates": [
       55.27,
       -8.23
@@ -3172,7 +3227,10 @@
     "freeEntry": false,
     "height": "unmeasured",
     "shortDescription": "Welsh giant king of Britain: his severed head was buried in London to guard against invasion.",
-    "related": [],
+    "related": [
+      "ysbaddaden",
+      "gogmagog"
+    ],
     "coordinates": [
       51.51,
       -0.08
@@ -3210,7 +3268,10 @@
     "freeEntry": false,
     "height": "unmeasured",
     "shortDescription": "Welsh chief giant of Culhwch and Olwen: his eyelids had to be propped up with forks.",
-    "related": [],
+    "related": [
+      "bendigeidfran",
+      "balor"
+    ],
     "coordinates": [
       51.87,
       -5.28
@@ -3246,10 +3307,13 @@
     "culture": "Sardinian",
     "region": "Sardinia",
     "type": "folklore",
-    "freeEntry": true,
+    "freeEntry": false,
     "height": "inferred from the tombs",
     "shortDescription": "Around eight hundred Nuragic collective tombs in Sardinia, named for giants by popular tradition.",
-    "related": [],
+    "related": [
+      "gargantua",
+      "mouros"
+    ],
     "coordinates": [
       40.12,
       9.05
@@ -3288,7 +3352,10 @@
     "freeEntry": false,
     "height": "unmeasured",
     "shortDescription": "Croatian giant race of Lika and Velebit: the old people, who could not die a natural death.",
-    "related": [],
+    "related": [
+      "dragonja",
+      "klek"
+    ],
     "coordinates": [
       44.55,
       15.37
@@ -3325,10 +3392,13 @@
     "culture": "Croatian",
     "region": "Klek, Orjen, Snježnik",
     "type": "individual",
-    "freeEntry": true,
+    "freeEntry": false,
     "height": "the mountain",
     "shortDescription": "Croatian giant petrified above Ogulin: the river Dobra runs out of his wound.",
-    "related": [],
+    "related": [
+      "dragonja",
+      "nemri"
+    ],
     "coordinates": [
       45.26,
       15.14
@@ -3371,7 +3441,10 @@
     "freeEntry": false,
     "height": "the Danube reached their ankles",
     "shortDescription": "Romanian race of giants from before mankind: the Danube reached their ankles, the Flood ended them.",
-    "related": [],
+    "related": [
+      "ispolini",
+      "nephilim"
+    ],
     "coordinates": [
       45.9,
       24.9
@@ -3410,7 +3483,10 @@
     "freeEntry": false,
     "height": "varies",
     "shortDescription": "Four small Croatian traditions: one-eyed giants, the Vedi, Sambo under Samobor, the Neretva mounds.",
-    "related": [],
+    "related": [
+      "dragonja",
+      "klek"
+    ],
     "coordinates": [
       45.1,
       15.2
@@ -3456,7 +3532,10 @@
     "freeEntry": false,
     "height": "varies",
     "shortDescription": "Four minor British and Welsh giants: a mountain, a beacon, a chapbook villain and a cauldron.",
-    "related": [],
+    "related": [
+      "gogmagog",
+      "cormoran"
+    ],
     "coordinates": [
       52,
       -4
@@ -3497,7 +3576,10 @@
     "freeEntry": false,
     "height": "unmeasured",
     "shortDescription": "Finnish giant surviving in place-names: possibly a word for death before he was a giant.",
-    "related": [],
+    "related": [
+      "kalev-kalevipoeg",
+      "milzinai"
+    ],
     "coordinates": [
       62.5,
       27.3
@@ -3532,7 +3614,10 @@
     "freeEntry": false,
     "height": "knee to ground equal to a grown man",
     "shortDescription": "Giants said to have landed by raft on the Ecuadorian coast: the bones under the story are mastodon.",
-    "related": [],
+    "related": [
+      "si-te-cah",
+      "patagonian-giants"
+    ],
     "coordinates": [
       -2.18,
       -80.98
@@ -3584,7 +3669,10 @@
     "freeEntry": false,
     "height": "unmeasured",
     "shortDescription": "One-eyed Amazonian forest giant with a vertical mouth and a hide arrows will not enter.",
-    "related": [],
+    "related": [
+      "si-te-cah",
+      "quinametzin"
+    ],
     "coordinates": [
       -5.5,
       -62.5
