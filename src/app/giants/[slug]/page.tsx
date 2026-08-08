@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
@@ -19,6 +20,7 @@ import { EmailCapture } from "@/components/EmailCapture";
 import { DiscoveryTracker } from "@/components/DiscoveryTracker";
 import { ScholarlyNotesSection } from "@/components/ScholarlyNotesSection";
 import { GlossaryText } from "@/components/GlossaryText";
+import { EntryLocationMapLoader } from "@/components/EntryLocationMapLoader";
 import { siteUrl } from "@/lib/site";
 import { resolveMotifs } from "@/lib/motifs";
 
@@ -290,21 +292,39 @@ export default async function GiantDetailPage({ params }: Props) {
             )}
             {giant.coordinates && (
               <div className="border-b border-border py-3">
-                <dt className="text-xs text-text-muted">Coordinates</dt>
-                <dd className="mt-1 font-mono text-xs text-text-primary">
+                <dt className="text-xs text-text-muted">Location</dt>
+                <dd className="mt-2">
+                  <EntryLocationMapLoader
+                    coordinates={giant.coordinates}
+                    name={giant.name}
+                  />
+                </dd>
+                <dd className="mt-2 font-mono text-xs text-text-primary">
                   {giant.coordinates[0].toFixed(2)},{" "}
                   {giant.coordinates[1].toFixed(2)}
                 </dd>
-                <Link
-                  href={`/map?focus=${encodeURIComponent(giant.slug)}`}
-                  className="mt-3 inline-flex w-full items-center justify-center gap-2 rounded border border-accent-gold/50 bg-accent-gold/10 px-3 py-2 text-xs font-medium tracking-wide text-accent-gold transition hover:border-accent-gold hover:bg-accent-gold/20"
-                >
-                  <span
-                    aria-hidden
-                    className="inline-block h-2 w-2 rounded-full bg-accent-gold shadow-[0_0_6px_rgba(201,162,39,0.9)]"
-                  />
-                  View on map
-                </Link>
+                <p className="mt-1 text-[10px] leading-snug text-text-muted/80">
+                  Map pin from catalogue coordinates, not a photograph of the
+                  site.
+                </p>
+                <div className="mt-3 flex flex-col gap-2">
+                  <Link
+                    href={`/map?focus=${encodeURIComponent(giant.slug)}`}
+                    className="inline-flex w-full items-center justify-center gap-2 rounded border border-accent-gold/50 bg-accent-gold/10 px-3 py-2 text-xs font-medium tracking-wide text-accent-gold transition hover:border-accent-gold hover:bg-accent-gold/20"
+                  >
+                    <span
+                      aria-hidden
+                      className="inline-block h-2 w-2 rounded-full bg-accent-gold shadow-[0_0_6px_rgba(201,162,39,0.9)]"
+                    />
+                    Open full map
+                  </Link>
+                  <Link
+                    href="/near"
+                    className="text-center text-[11px] text-text-muted hover:text-accent-gold"
+                  >
+                    Giants near a place you choose
+                  </Link>
+                </div>
               </div>
             )}
             {giant.tags.length > 0 && (
@@ -351,14 +371,27 @@ export default async function GiantDetailPage({ params }: Props) {
               <li key={r.id}>
                 <Link
                   href={`/giants/${r.slug}`}
-                  className="block rounded-lg border border-border bg-surface px-4 py-3 transition hover:border-accent-gold/40"
+                  className="flex gap-3 overflow-hidden rounded-lg border border-border bg-surface transition hover:border-accent-gold/40"
                 >
-                  <span className="font-[family-name:var(--font-cinzel)] text-accent-gold">
-                    {r.name}
-                  </span>
-                  <span className="mt-1 block text-xs text-text-muted">
-                    {r.culture} · {r.shortDescription.slice(0, 80)}
-                    {r.shortDescription.length > 80 ? "…" : ""}
+                  {r.image ? (
+                    <span className="relative h-20 w-20 shrink-0 bg-[#0a0e14]">
+                      <Image
+                        src={r.image}
+                        alt=""
+                        fill
+                        sizes="80px"
+                        className="object-cover"
+                      />
+                    </span>
+                  ) : null}
+                  <span className="min-w-0 flex-1 px-3 py-3">
+                    <span className="font-[family-name:var(--font-cinzel)] text-accent-gold">
+                      {r.name}
+                    </span>
+                    <span className="mt-1 block text-xs text-text-muted">
+                      {r.culture} · {r.shortDescription.slice(0, 80)}
+                      {r.shortDescription.length > 80 ? "..." : ""}
+                    </span>
                   </span>
                 </Link>
               </li>

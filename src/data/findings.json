@@ -105,7 +105,10 @@
         }
       ],
       "floor": "The digging stands: a large stone figure was taken out of the ground on William Newell's farm at Cardiff on 16 October 1869, and this is reported in print within days. What the 1869 printing will not carry is the word petrified. The scientific opinions gathered in the promoters' own pamphlet describe the object as gypsum shaped by tools, and a letter written five weeks after the discovery calls it recent work in gypsum. So the ground yielded a carved statue, not a fossil man."
-    }
+    },
+    "image": "/images/findings/cardiff-giant.jpg",
+    "imageAlt": "The Cardiff Giant figure photographed in the nineteenth century",
+    "imageCredit": "Library of Congress (LCCN 2014693762), public domain via Wikimedia Commons"
   },
   {
     "id": "kandahar-giant",
@@ -264,7 +267,10 @@
       "Secondary histories of the Cardiff Giant network (Hull and successors)"
     ],
     "year": "1877",
-    "location": "Beulah, Colorado, USA"
+    "location": "Beulah, Colorado, USA",
+    "image": "/images/findings/solid-muldoon.jpg",
+    "imageAlt": "Stereoview of the Solid Muldoon petrified man exhibit, Colorado",
+    "imageCredit": "Period stereoview, public domain via Wikimedia Commons (Solid Muldoon Stereoview)"
   },
   {
     "id": "barnum-cardiff-replica",
