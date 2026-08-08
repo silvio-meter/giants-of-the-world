@@ -120,6 +120,68 @@ export default async function MapPage({ searchParams }: Props) {
         )}
       </header>
 
+      {/*
+        Curated connection stories. lines= draws motif edges; motif= also
+        filters pins to that motif when map filters are unlocked (paid). Free
+        visitors still get focus + full pin set with tour copy pointing at pricing.
+      */}
+      <section className="mb-6 rounded-lg border border-border bg-surface/60 p-4">
+        <p className="font-[family-name:var(--font-cinzel)] text-[10px] tracking-[0.25em] text-accent-gold/80 uppercase">
+          Tours
+        </p>
+        <ul className="mt-3 flex flex-wrap gap-2">
+          {[
+            {
+              key: "one-eye",
+              label: "One eye",
+              blurb: "Polyphemus, Balor, and the single gaze",
+            },
+            {
+              key: "body-cosmogony",
+              label: "World from a body",
+              blurb: "Primordial flesh made into land and sky",
+            },
+            {
+              key: "flood-survivor",
+              label: "Flood survivors",
+              blurb: "Who walked out of the deluge",
+            },
+            {
+              key: "pre-people",
+              label: "People before people",
+              blurb: "Earlier races of the large",
+            },
+          ].map((tour) => (
+            <li key={tour.key}>
+              <Link
+                href={
+                  filtersUnlocked
+                    ? `/map?motif=${encodeURIComponent(tour.key)}&lines=${encodeURIComponent(tour.key)}`
+                    : `/map?lines=${encodeURIComponent(tour.key)}`
+                }
+                className="group flex max-w-[14rem] flex-col rounded border border-border px-3 py-2 transition hover:border-accent-gold/50"
+                title={tour.blurb}
+              >
+                <span className="text-xs text-accent-gold group-hover:underline">
+                  {tour.label}
+                </span>
+                <span className="mt-0.5 text-[10px] leading-snug text-text-muted">
+                  {tour.blurb}
+                </span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+        {!filtersUnlocked && (
+          <p className="mt-3 text-[11px] text-text-muted">
+            Connection lines and pin filters unlock with membership.{" "}
+            <Link href="/pricing" className="text-accent-gold hover:underline">
+              View pricing
+            </Link>
+          </p>
+        )}
+      </section>
+
       <Suspense
         fallback={
           <div className="mb-6 h-24 animate-pulse rounded-lg border border-border bg-surface" />

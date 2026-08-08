@@ -7,6 +7,7 @@ import {
   getCultures,
   getRegions,
   getTypes,
+  type GiantSort,
 } from "@/lib/giants";
 
 export const metadata: Metadata = {
@@ -15,22 +16,40 @@ export const metadata: Metadata = {
   alternates: { canonical: "/giants" },
 };
 
+const SORTS = new Set<GiantSort>([
+  "name",
+  "culture",
+  "free-first",
+  "scholarly-first",
+]);
+
 interface Props {
   searchParams: Promise<{
     culture?: string;
     type?: string;
     region?: string;
     q?: string;
+    free?: string;
+    scholarly?: string;
+    chain?: string;
+    sort?: string;
   }>;
 }
 
 export default async function GiantsPage({ searchParams }: Props) {
   const sp = await searchParams;
+  const sort = SORTS.has(sp.sort as GiantSort)
+    ? (sp.sort as GiantSort)
+    : "name";
   const results = filterGiants({
     culture: sp.culture,
     type: sp.type,
     region: sp.region,
     search: sp.q,
+    free: sp.free === "1",
+    scholarly: sp.scholarly === "1",
+    chain: sp.chain === "1",
+    sort,
   });
 
   return (
@@ -43,7 +62,8 @@ export default async function GiantsPage({ searchParams }: Props) {
           Catalogue of Giants
         </h1>
         <p className="mt-3 max-w-2xl text-sm text-text-muted sm:text-base">
-          Filter by culture, type, or region. Search by name or tag.
+          Filter by culture, type, region, free access, scholarly notes, or
+          chain of custody. Search by name or tag.
         </p>
       </header>
 

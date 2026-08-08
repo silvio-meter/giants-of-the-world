@@ -55,6 +55,12 @@ export function getTags(): string[] {
   return [...new Set(giants.flatMap((g) => g.tags))].sort();
 }
 
+export type GiantSort =
+  | "name"
+  | "culture"
+  | "free-first"
+  | "scholarly-first";
+
 export function filterGiants(opts: {
   culture?: string;
   type?: string;
@@ -62,8 +68,13 @@ export function filterGiants(opts: {
   search?: string;
   tag?: string;
   motif?: string;
+  /** "1" style: only free / only scholarly / only chain. */
+  free?: boolean;
+  scholarly?: boolean;
+  chain?: boolean;
   slugs?: string[] | null;
   requireCoordinates?: boolean;
+  sort?: GiantSort;
 }): GiantCardData[] {
   const q = opts.search?.toLowerCase().trim() ?? "";
   const slugSet =
@@ -71,7 +82,7 @@ export function filterGiants(opts: {
       ? null
       : new Set(opts.slugs);
 
-  return giants.filter((g) => {
+  const out = giants.filter((g) => {
     if (slugSet && !slugSet.has(g.slug)) return false;
     if (opts.requireCoordinates && !g.coordinates) return false;
     if (opts.culture && g.culture !== opts.culture) return false;
@@ -79,6 +90,9 @@ export function filterGiants(opts: {
     if (opts.region && g.region !== opts.region) return false;
     if (opts.tag && !g.tags.includes(opts.tag)) return false;
     if (opts.motif && !g.motifs?.includes(opts.motif)) return false;
+    if (opts.free && !g.freeEntry) return false;
+    if (opts.scholarly && !g.hasScholarlyNotes) return false;
+    if (opts.chain && !g.chainSummary) return false;
     if (q) {
       const hay = [
         g.name,
@@ -93,6 +107,26 @@ export function filterGiants(opts: {
       if (!hay.includes(q)) return false;
     }
     return true;
+  });
+
+  const sort = opts.sort ?? "name";
+  return out.slice().sort((a, b) => {
+    if (sort === "culture") {
+      return (
+        a.culture.localeCompare(b.culture) || a.name.localeCompare(b.name)
+      );
+    }
+    if (sort === "free-first") {
+      if (a.freeEntry !== b.freeEntry) return a.freeEntry ? -1 : 1;
+      return a.name.localeCompare(b.name);
+    }
+    if (sort === "scholarly-first") {
+      const as = Boolean(a.hasScholarlyNotes);
+      const bs = Boolean(b.hasScholarlyNotes);
+      if (as !== bs) return as ? -1 : 1;
+      return a.name.localeCompare(b.name);
+    }
+    return a.name.localeCompare(b.name);
   });
 }
 

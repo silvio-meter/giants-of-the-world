@@ -36,6 +36,20 @@ export function GiantCard({ giant, index = 0 }: Props) {
           <h2 className="mt-2 font-[family-name:var(--font-cinzel)] text-lg tracking-wide text-text-primary transition group-hover:text-accent-gold">
             {giant.name}
           </h2>
+          {(giant.hasScholarlyNotes || giant.chainSummary) && (
+            <div className="mt-2 flex flex-wrap gap-1.5">
+              {giant.hasScholarlyNotes && (
+                <span className="rounded border border-accent-gold/30 px-1.5 py-0.5 text-[9px] tracking-wider text-accent-gold/90 uppercase">
+                  Scholarly
+                </span>
+              )}
+              {giant.chainSummary && (
+                <span className="rounded border border-border px-1.5 py-0.5 text-[9px] tracking-wider text-text-muted uppercase">
+                  Chain
+                </span>
+              )}
+            </div>
+          )}
           <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-text-muted">
             {giant.shortDescription}
           </p>

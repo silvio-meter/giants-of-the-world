@@ -241,17 +241,76 @@ export function NearClient({
               </button>
             </>
           ) : (
-            <div className="mt-5 rounded border border-border p-4">
-              <p className="text-sm text-text-primary">
-                The rest of the list, with distances, which of them are real
-                places you can stand on, and an export.
-              </p>
-              <Link
-                href="/pricing"
-                className="mt-3 inline-block text-sm text-accent-gold hover:underline"
-              >
-                View pricing →
-              </Link>
+            <div className="mt-5">
+              {/* Free tease: first row clear, the rest present but sealed. */}
+              <ul className="divide-y divide-border">
+                <li className="flex flex-wrap items-center gap-x-3 gap-y-1 py-2">
+                  <span className="w-20 font-mono text-xs text-text-muted">
+                    {formatKm(within[0].km)}
+                  </span>
+                  <Link
+                    href={`/giants/${within[0].slug}`}
+                    className="text-sm text-accent-gold hover:underline"
+                  >
+                    {within[0].name}
+                  </Link>
+                  <span className="text-xs text-text-muted">
+                    {within[0].culture}
+                  </span>
+                  <span className="ml-auto rounded-full border border-accent-gold/40 px-1.5 py-px text-[9px] tracking-wider text-accent-gold uppercase">
+                    Free preview
+                  </span>
+                </li>
+              </ul>
+              {within.length > 1 && (
+                <div className="relative mt-1">
+                  <ul
+                    className="divide-y divide-border opacity-40 blur-[2px] select-none"
+                    aria-hidden
+                  >
+                    {within.slice(1, 5).map((r) => (
+                      <li
+                        key={r.slug}
+                        className="flex flex-wrap items-center gap-x-3 gap-y-1 py-2"
+                      >
+                        <span className="w-20 font-mono text-xs text-text-muted">
+                          {formatKm(r.km)}
+                        </span>
+                        <span className="text-sm text-text-primary">
+                          {r.name}
+                        </span>
+                        <span className="text-xs text-text-muted">
+                          {r.culture}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="absolute inset-0 flex flex-col items-center justify-center bg-gradient-to-t from-surface via-surface/90 to-transparent px-4 text-center">
+                    <p className="text-sm text-text-primary">
+                      {within.length - 1} more within {radius} km, with
+                      distances, real-site marks, and export.
+                    </p>
+                    <Link
+                      href="/pricing"
+                      className="mt-3 inline-block text-sm text-accent-gold hover:underline"
+                    >
+                      Unlock the full list →
+                    </Link>
+                  </div>
+                </div>
+              )}
+              {within.length === 1 && (
+                <p className="mt-3 text-sm text-text-muted">
+                  Only one in this radius. Widen the range or{" "}
+                  <Link
+                    href="/pricing"
+                    className="text-accent-gold hover:underline"
+                  >
+                    unlock the tool
+                  </Link>{" "}
+                  for export and site marks everywhere.
+                </p>
+              )}
             </div>
           )}
         </div>
