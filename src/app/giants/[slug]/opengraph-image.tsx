@@ -72,6 +72,10 @@ export default async function Image({
 
   const nameSize =
     giant.name.length > 32 ? 44 : giant.name.length > 22 ? 54 : giant.name.length > 14 ? 64 : 72;
+  // Wide letter-spacing on a long culture string wraps into a wall of caps;
+  // tighten tracking when the line is long (e.g. "German / Silesian / Czech").
+  const cultureSize = giant.culture.length > 28 ? 14 : 18;
+  const cultureTracking = giant.culture.length > 28 ? 3 : 6;
 
   // Data URL keeps the photo in the card without a network fetch during
   // ImageResponse render (build-time and request-time both work offline).
@@ -149,8 +153,8 @@ export default async function Image({
           <div style={{ display: "flex", flexDirection: "column" }}>
             <div
               style={{
-                fontSize: 18,
-                letterSpacing: 8,
+                fontSize: cultureSize,
+                letterSpacing: cultureTracking,
                 textTransform: "uppercase",
                 color: GOLD,
                 opacity: 0.85,
@@ -189,18 +193,24 @@ export default async function Image({
             </div>
           </div>
 
+          {/*
+            Stacked, not side-by-side: the right column is only ~42% of 1200px
+            with padding, and uppercase + letter-spacing made "Giants of the
+            World" and "giantscodex.com" collide (see Rübezahl card).
+          */}
           <div
             style={{
               display: "flex",
-              justifyContent: "space-between",
-              fontSize: 18,
-              letterSpacing: 4,
+              flexDirection: "column",
+              gap: 8,
+              fontSize: 16,
+              letterSpacing: 2,
               textTransform: "uppercase",
               color: MUTED,
             }}
           >
             <span>Giants of the World</span>
-            <span style={{ color: GOLD, opacity: 0.75 }}>giantscodex.com</span>
+            <span style={{ color: GOLD, opacity: 0.8 }}>giantscodex.com</span>
           </div>
         </div>
       </div>
