@@ -12,6 +12,13 @@ interface Props {
   regions: string[];
 }
 
+const SORT_OPTIONS = [
+  { value: "name", label: "Name A–Z" },
+  { value: "culture", label: "Culture" },
+  { value: "free-first", label: "Free first" },
+  { value: "scholarly-first", label: "Scholarly first" },
+] as const;
+
 export function CatalogueFilters({ cultures, types, regions }: Props) {
   const router = useRouter();
   const params = useSearchParams();
@@ -21,6 +28,10 @@ export function CatalogueFilters({ cultures, types, regions }: Props) {
   const type = params.get("type") ?? "";
   const region = params.get("region") ?? "";
   const search = params.get("q") ?? "";
+  const free = params.get("free") === "1";
+  const scholarly = params.get("scholarly") === "1";
+  const chain = params.get("chain") === "1";
+  const sort = params.get("sort") ?? "name";
   const [typed, setTyped] = useState(search);
   const debounce = useRef<number | undefined>(undefined);
 
@@ -30,15 +41,19 @@ export function CatalogueFilters({ cultures, types, regions }: Props) {
       if (value) next.set(key, value);
       else next.delete(key);
       startTransition(() => {
-        // replace, not push: typing a query should not fill the back button
-        // with one history entry per keystroke group.
         router.replace(`/giants?${next.toString()}`);
       });
     },
     [params, router],
   );
 
-  // Debounced search, scoped to the component rather than hung off window.
+  const toggle = useCallback(
+    (key: string, on: boolean) => {
+      update(key, on ? "1" : "");
+    },
+    [update],
+  );
+
   useEffect(() => {
     if (typed === search) return;
     debounce.current = window.setTimeout(() => update("q", typed), 250);
@@ -50,7 +65,8 @@ export function CatalogueFilters({ cultures, types, regions }: Props) {
     startTransition(() => router.replace("/giants"));
   };
 
-  const hasFilters = culture || type || region || search;
+  const hasFilters =
+    culture || type || region || search || free || scholarly || chain || sort !== "name";
 
   return (
     <div
@@ -69,7 +85,7 @@ export function CatalogueFilters({ cultures, types, regions }: Props) {
         />
       </label>
 
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
         <FilterSelect
           label="Culture"
           value={culture}
@@ -89,6 +105,36 @@ export function CatalogueFilters({ cultures, types, regions }: Props) {
           options={regions}
           onChange={(v) => update("region", v)}
         />
+        <FilterSelect
+          label="Sort"
+          value={sort}
+          options={SORT_OPTIONS.map((o) => o.value)}
+          onChange={(v) => update("sort", v === "name" ? "" : v)}
+          format={(v) =>
+            SORT_OPTIONS.find((o) => o.value === v)?.label ?? v
+          }
+        />
+      </div>
+
+      <div className="flex flex-wrap items-center gap-2">
+        <span className="text-[10px] tracking-wider text-text-muted uppercase">
+          Layers
+        </span>
+        <ToggleChip
+          label="Free"
+          on={free}
+          onChange={(v) => toggle("free", v)}
+        />
+        <ToggleChip
+          label="Scholarly notes"
+          on={scholarly}
+          onChange={(v) => toggle("scholarly", v)}
+        />
+        <ToggleChip
+          label="Chain of custody"
+          on={chain}
+          onChange={(v) => toggle("chain", v)}
+        />
       </div>
 
       <div className="flex justify-end">
@@ -98,10 +144,35 @@ export function CatalogueFilters({ cultures, types, regions }: Props) {
             onClick={clear}
             className="rounded border border-border px-3 py-2 text-sm text-text-muted hover:border-accent-gold/40 hover:text-accent-gold"
           >
-            Clear
+            Clear filters
           </button>
         )}
       </div>
     </div>
+  );
+}
+
+function ToggleChip({
+  label,
+  on,
+  onChange,
+}: {
+  label: string;
+  on: boolean;
+  onChange: (on: boolean) => void;
+}) {
+  return (
+    <button
+      type="button"
+      aria-pressed={on}
+      onClick={() => onChange(!on)}
+      className={`rounded-full border px-3 py-1 text-xs tracking-wide transition ${
+        on
+          ? "border-accent-gold/60 bg-accent-gold/10 text-accent-gold"
+          : "border-border text-text-muted hover:border-accent-gold/30 hover:text-text-primary"
+      }`}
+    >
+      {label}
+    </button>
   );
 }

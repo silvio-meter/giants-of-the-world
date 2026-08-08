@@ -79,6 +79,15 @@ exist. Do not re-add them as marketing promises.
   the share cards; do not set `openGraph.images` back to catalogue JPGs on
   entry pages (X will regress).
 
+## P2 status (UX polish)
+
+- Catalogue: free / scholarly / chain toggles, sort, Scholarly+Chain badges on cards.
+- Entry: Compare chips vs related (`/compare?a=&b=`).
+- Map: curated Tours (one-eye, body-cosmogony, flood-survivor, pre-people).
+- Near: free tease shows nearest clear + blurred remainder + unlock CTA.
+- Account: codex progress bar, comparisons, favourites count, deep links.
+- Era/timeline filter still deferred (needs methodology).
+
 ## P1 status (2026-08-08)
 
 **Shipped in product:**

@@ -346,12 +346,31 @@ export default async function GiantDetailPage({ params }: Props) {
 
           <SizeComparison giant={giant} />
 
-          <Link
-            href={`/compare?a=${encodeURIComponent(giant.slug)}`}
-            className="flex items-center justify-center gap-2 rounded-lg border border-border bg-surface px-3 py-2.5 text-xs font-medium tracking-wide text-text-muted transition hover:border-accent-gold/50 hover:text-accent-gold"
-          >
-            Compare with another giant
-          </Link>
+          <div className="rounded-lg border border-border bg-surface p-3">
+            <p className="text-[10px] tracking-[0.2em] text-text-muted uppercase">
+              Compare
+            </p>
+            {related.length > 0 ? (
+              <ul className="mt-2 space-y-1.5">
+                {related.slice(0, 4).map((r) => (
+                  <li key={r.slug}>
+                    <Link
+                      href={`/compare?a=${encodeURIComponent(giant.slug)}&b=${encodeURIComponent(r.slug)}`}
+                      className="block text-xs text-accent-gold hover:underline"
+                    >
+                      vs {r.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            ) : null}
+            <Link
+              href={`/compare?a=${encodeURIComponent(giant.slug)}`}
+              className="mt-2 flex items-center justify-center gap-2 rounded border border-border px-3 py-2 text-xs font-medium tracking-wide text-text-muted transition hover:border-accent-gold/50 hover:text-accent-gold"
+            >
+              {related.length > 0 ? "Pick any other…" : "Compare with another giant"}
+            </Link>
+          </div>
         </aside>
       </div>
 
