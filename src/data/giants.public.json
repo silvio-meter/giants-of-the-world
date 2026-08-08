@@ -83,7 +83,7 @@
       "Genesis 6:1-4; Numbers 13:33 (Hebrew Bible)",
       "1 Enoch, the Book of the Watchers, chapters 6-16 (3rd-1st c. BCE)",
       "Book of Jubilees 5; Dead Sea Scrolls Enoch fragments",
-      "Josephus, Antiquities of the Jews I.3.1"
+      "Josephus, Antiquities of the Jews I.3.1 (tradition); V.2.3 / 5.125 (bones at Hebron)"
     ],
     "image": "/images/giants/nephilim.jpg",
     "imageAlt": "The Nephilim, mighty ones of old",
@@ -112,7 +112,7 @@
     "region": "Near East",
     "type": "individual",
     "freeEntry": true,
-    "height": "Six cubits and a span (Masoretic); four cubits (Dead Sea Scrolls)",
+    "height": "Six cubits and a span (Masoretic); four cubits and a span (Dead Sea Scrolls)",
     "shortDescription": "The Philistine champion of Gath who fell to a shepherd's stone.",
     "related": [
       "nephilim",
@@ -178,7 +178,7 @@
     "sources": [
       "Deuteronomy 3:1-13 (the iron bedstead at Rabbah); Numbers 21:33-35",
       "Joshua 12:4-5, 13:12; Psalms 135:11, 136:20",
-      "Babylonian Talmud, Berakhot 54b and Niddah 24b (rabbinic expansion)",
+      "Babylonian Talmud, Berakhot 54b, Niddah 24b, and Niddah 61a (rabbinic expansion)",
       "Ugaritic rpum texts (comparative evidence for the term)"
     ],
     "image": "/images/giants/og-of-bashan.jpg",
@@ -685,7 +685,7 @@
       "Apollonius of Rhodes, Argonautica IV.1638-1688",
       "Apollodorus, Bibliotheca I.9.26",
       "Attic red-figure krater, 4th c. BCE (the death of Talos)",
-      "Plato, Minos 320c (the rationalised, law-carrying Talos)"
+      "Minos 320c (transmitted under Plato's name; authorship disputed): the rationalised, law-carrying Talos"
     ],
     "image": "/images/giants/talos.jpg",
     "imageAlt": "Talos, bronze guardian of Crete",
@@ -1528,7 +1528,7 @@
       "kyoto"
     ],
     "sources": [
-      "Oeyama ekotoba (illustrated handscroll, Muromachi period)",
+      "Oeyama ekotoba (illustrated handscroll, Nanbokuchō / Muromachi period (14th c.))",
       "Otogizoshi versions of the Shuten-doji tale",
       "Noh and kabuki adaptations; ukiyo-e treatments incl. Tsukioka Yoshitoshi"
     ],
@@ -2227,7 +2227,7 @@
       "Sámi oral tradition, N. Norway, Sweden, Finland and Kola",
       "Johan Turi, Muitalus sámiid birra (1910)",
       "J.K. Qvigstad, Lappiske eventyr og sagn (1927-29)",
-      "Eldar Heide, 'The Wild Host and the Etymology of Sámi Stállu', Arv (2019)",
+      "Eldar Heide, 'The Wild Host and the Etymology of Sami Stállu and Norwegian Ståle(sferda): Reflecting Ancient Contact', Arv 75 (2019), 73-93",
       "J.A. Friis, Lappisk Mythologi (1871); Rolf Kjellström, Fataburen (1976)",
       "Anders Wepsäläinen on the stállotomter (2011); Olof Holm, Fornvännen 111 (2016)",
       "Liedgren and Bergman (2009); Bergman et al. (2008); Storli (1993-94)",
@@ -2368,9 +2368,9 @@
       "afghanistan"
     ],
     "sources": [
-      "Paranormal radio and internet forum circulation, mid-2000s onward",
-      "Cable television treatments, 2010s (amplification, not evidence)",
-      "Absence of corroborating US military records; reported FOIA results",
+      "Paranormal radio, forum, YouTube and podcast circulation (datable cluster from 2016)",
+      "Snopes inquiry to the US Department of Defense, 2016 (denial; not a FOIA docket)",
+      "Absence of corroborating US military records",
       "Comparative: 19th-c. American giant lore and Nephilim literature"
     ],
     "image": "/images/giants/giant-of-kandahar.jpg",
@@ -2835,7 +2835,7 @@
     "sources": [
       "Antonio Pigafetta, 1520s",
       "The World Encompassed, 1628",
-      "Louis de Bougainville, 1767",
+      "Louis de Bougainville, 1771",
       "the official account of the Byron voyage, 1773"
     ],
     "image": "/images/giants/patagonian-giants.jpg",
