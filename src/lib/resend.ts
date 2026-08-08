@@ -73,3 +73,67 @@ function confirmationEmailHtml(url: string): string {
     </div>
   `;
 }
+
+/**
+ * Sent only after double opt-in succeeds. Plain on purpose (same filter
+ * reasoning as the confirmation mail). Three links, no campaign chrome:
+ * a free entry, how sources are treated, and membership when they want it.
+ */
+export async function sendWelcomeEmail(email: string): Promise<void> {
+  const key = process.env.RESEND_API_KEY;
+  if (!key) {
+    console.error("RESEND_API_KEY is not set, welcome email not sent");
+    return;
+  }
+
+  const ymir = `${siteUrl}/giants/ymir?utm_source=email&utm_medium=welcome&utm_campaign=lifecycle`;
+  const evidence = `${siteUrl}/evidence?utm_source=email&utm_medium=welcome&utm_campaign=lifecycle`;
+  const pricing = `${siteUrl}/pricing?utm_source=email&utm_medium=welcome&utm_campaign=lifecycle`;
+
+  const res = await fetch("https://api.resend.com/emails", {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${key}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      from: "Giants of the World <hello@giantscodex.com>",
+      to: email,
+      subject: "You are on the list",
+      text: [
+        "You are confirmed on Giants of the World.",
+        "",
+        "Three places to start:",
+        `A free full entry (Ymir): ${ymir}`,
+        `How we treat sources: ${evidence}`,
+        `Membership when you want the sealed layers: ${pricing}`,
+        "",
+        "You can unsubscribe from any message we send.",
+      ].join("\n"),
+      html: welcomeEmailHtml(ymir, evidence, pricing),
+    }),
+  });
+
+  if (!res.ok) {
+    console.error("Resend welcome failed", res.status, await res.text());
+  }
+}
+
+function welcomeEmailHtml(
+  ymir: string,
+  evidence: string,
+  pricing: string
+): string {
+  return `
+    <div style="font-family:Helvetica,Arial,sans-serif;font-size:15px;line-height:1.6;color:#222;">
+      <p>You are confirmed on Giants of the World.</p>
+      <p>Three places to start:</p>
+      <ul>
+        <li><a href="${ymir}">A free full entry (Ymir)</a></li>
+        <li><a href="${evidence}">How we treat sources</a></li>
+        <li><a href="${pricing}">Membership when you want the sealed layers</a></li>
+      </ul>
+      <p style="color:#666;">You can unsubscribe from any message we send.</p>
+    </div>
+  `;
+}

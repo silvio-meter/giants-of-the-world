@@ -60,6 +60,7 @@ Open [http://localhost:3000](http://localhost:3000).
 | `/forgot-password` | Request a recovery link                              |
 | `/reset-password`  | Set a new password from that link                    |
 | `/account`         | Plan, billing portal, delete account                 |
+| `/welcome`         | Post-signup / post-checkout three-step onboarding    |
 
 ## Data
 

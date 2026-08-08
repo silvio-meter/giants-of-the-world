@@ -251,5 +251,149 @@
       "Deuteronomy 3:11"
     ],
     "location": "Bashan / Rabbah (tradition)"
+  },
+  {
+    "id": "solid-muldoon",
+    "title": "The Solid Muldoon",
+    "category": "hoax",
+    "verified": true,
+    "summary": "A second Hull-linked petrified man, 'found' in Colorado in 1877 and later admitted as a fraud.",
+    "detail": "In 1877 a stone figure marketed as a petrified giant was exhibited after its discovery near Beulah, Colorado. Contemporary reporting connected it to the same circle of makers and promoters as the Cardiff Giant. The figure was broken up after the fraud became public. It is a known nineteenth-century American archaeological deception, not an open osteological puzzle.",
+    "sources": [
+      "Contemporary Colorado and national newspaper coverage, 1877",
+      "Secondary histories of the Cardiff Giant network (Hull and successors)"
+    ],
+    "year": "1877",
+    "location": "Beulah, Colorado, USA"
+  },
+  {
+    "id": "barnum-cardiff-replica",
+    "title": "Barnum's Cardiff Giant replica",
+    "category": "hoax",
+    "verified": true,
+    "summary": "P. T. Barnum exhibited a copy of the Cardiff Giant when he could not buy the original, and sued when rivals called his figure fake.",
+    "detail": "After the original Cardiff figure drew crowds, Barnum commissioned a plaster or similar replica and showed it as the petrified giant. Court and press coverage of the quarrel between the original exhibitors and Barnum is part of the public record of the hoax. The replica is evidence of how quickly the fraud became a commercial product, not of a second discovery.",
+    "sources": [
+      "Contemporary New York press on the Cardiff exhibitions",
+      "Standard histories of the Cardiff Giant (e.g. Tribble)"
+    ],
+    "year": "1869-1870",
+    "location": "New York, USA"
+  },
+  {
+    "id": "castelnau-bones",
+    "title": "Castelnau 'giant' bones",
+    "category": "claim",
+    "verified": false,
+    "summary": "Late nineteenth-century French reports of unusually large human bones from Castelnau-le-Lez, never established as a giant population.",
+    "detail": "In the 1890s Georges Vacher de Lapouge and others discussed large bone fragments from Castelnau-le-Lez in southern France and speculated about stature far above modern averages. The finds entered giant-lore literature as proof of a race of giants. They have not been accepted in mainstream osteology as evidence of a giant human population; the measurements, context and identification remain disputed or poorly documented by modern standards. Filed here as a historical claim, not as verified paleoanthropology.",
+    "sources": [
+      "Georges Vacher de Lapouge, period notes on Castelnau finds (1890s)",
+      "Later secondary summaries in giant-lore literature"
+    ],
+    "year": "1890s",
+    "location": "Castelnau-le-Lez, France"
+  },
+  {
+    "id": "lovelock-duck-decoys",
+    "title": "Lovelock Cave duck decoys",
+    "category": "archaeological",
+    "verified": true,
+    "summary": "Real woven duck decoys and other artifacts from Lovelock Cave, often misused as props for giant narratives.",
+    "detail": "Among the objects recovered from Lovelock Cave are sophisticated tule duck decoys and a large assemblage of basketry and perishable goods. These are genuine archaeological finds and are among the best-known perishable artifacts of the Great Basin. Popular giant retellings sometimes stack them next to red-hair and stature claims as if they proved a giant culture. They do not. The decoys document skilled indigenous technology; they do not measure the Si-Te-Cah.",
+    "relatedGiantSlug": "si-te-cah",
+    "sources": [
+      "Lovelock Cave excavation reports (Loud and Harrington)",
+      "Great Basin perishable-artifact literature"
+    ],
+    "year": "1912-1924",
+    "location": "Nevada, USA"
+  },
+  {
+    "id": "patagonian-magellan-pigafetta",
+    "title": "Pigafetta on the Patagonians",
+    "category": "claim",
+    "verified": false,
+    "summary": "Antonio Pigafetta's account of tall people met on Magellan's voyage, the seed of three centuries of European giant talk.",
+    "detail": "Pigafetta described a meeting near what is now southern Argentina with people much taller than the crew. Later European writers inflated the height to twelve feet and beyond. Eighteenth-century measurements of Tehuelche and related peoples found them tall relative to contemporary Europeans but not mythical. The primary voyage report is a real text; the giant tradition that grew from it is a European literary and press phenomenon layered on a real stature difference.",
+    "relatedGiantSlug": "patagonian-giants",
+    "sources": [
+      "Antonio Pigafetta, voyage account of the Magellan expedition",
+      "Later voyage measurements (Bougainville, Byron account)"
+    ],
+    "year": "1520s",
+    "location": "Patagonia"
+  },
+  {
+    "id": "goliath-height-variants",
+    "title": "Goliath's height in the manuscripts",
+    "category": "archaeological",
+    "verified": true,
+    "summary": "Hebrew and Greek witnesses disagree on Goliath's height: six cubits and a span versus four cubits and a span.",
+    "detail": "The Masoretic text of 1 Samuel 17 gives Goliath six cubits and a span. The Septuagint, the Dead Sea Scrolls fragment 4QSam-a and Josephus give four cubits and a span. Both figures are textually real; which is earlier is argued among specialists. The point for this archive is that 'nine feet nine' is one manuscript tradition, not a measured skeleton, and that a second tradition places him nearer two metres. See the Goliath entry for the fuller text-critical note.",
+    "relatedGiantSlug": "goliath",
+    "sources": [
+      "1 Samuel 17 Masoretic text",
+      "Septuagint 1 Samuel 17; 4QSam-a; Josephus"
+    ],
+    "year": "textual",
+    "location": "Hebrew Bible manuscript tradition"
+  },
+  {
+    "id": "og-bed-dimensions",
+    "title": "Og's iron bed as a measure",
+    "category": "claim",
+    "verified": false,
+    "summary": "Deuteronomy 3:11 gives nine by four cubits for an iron object at Rabbah, not a height for Og's body.",
+    "detail": "The verse that made Og famous measures a bed or similar object, not the king. Ancient versions read a bed (Greek kline, Latin lectus). Some modern notes prefer a basalt sarcophagus. Either way, the Hebrew text does not state Og's stature. Later rabbinic stories enlarge him far beyond the bed. The finding exists so readers who meet 'Og was thirteen feet tall' online can see what the verse actually supplies.",
+    "relatedGiantSlug": "og-of-bashan",
+    "sources": [
+      "Deuteronomy 3:11",
+      "Greek, Latin and Aramaic versions of the verse"
+    ],
+    "year": "biblical text",
+    "location": "Rabbah of the Ammonites (textual)"
+  },
+  {
+    "id": "american-newspaper-giants",
+    "title": "American newspaper giant skeletons",
+    "category": "claim",
+    "verified": false,
+    "summary": "Recurring nineteenth-century US press stories of giant skeletons from mounds and caves, usually without museum numbers or remeasured bones.",
+    "detail": "Between the mid-nineteenth century and the early twentieth, American newspapers regularly printed brief items about giant human skeletons unearthed in mounds, mines or caves. Many lack excavator names, museum accession numbers or follow-up. Some are known fabrications; others are garbled reports of ordinary burials. Modern archaeology of the same regions does not support a giant population. This finding covers the genre rather than one named dig, so readers recognise the pattern when they meet a recycled clipping.",
+    "sources": [
+      "Nineteenth-century US newspaper digitizations (Library of Congress and others)",
+      "Modern archaeological summaries of mound and cliff-dwelling sites"
+    ],
+    "year": "c. 1850-1920",
+    "location": "United States (various)"
+  },
+  {
+    "id": "fiji-mermaid-type",
+    "title": "Composite 'mermaid' and giant sideshow types",
+    "category": "hoax",
+    "verified": true,
+    "summary": "Nineteenth-century sideshow composites (including so-called mermaids) show the same exhibition economy that sold petrified giants.",
+    "detail": "The famous Feejee Mermaid and related composites were sewn or assembled animals sold as wonders. They sit beside petrified-man exhibits in the same Gilded Age circuit of paid curiosity. They are not giant osteology, but they document how display culture rewarded striking bodies, real or manufactured. Useful context when a 'petrified giant' story turns out to be a touring attraction.",
+    "sources": [
+      "Histories of American sideshow and Barnum exhibitions",
+      "Museum documentation of surviving composite specimens"
+    ],
+    "year": "nineteenth century",
+    "location": "Touring exhibitions (US and Britain)"
+  },
+  {
+    "id": "teotihuacan-giant-claims",
+    "title": "Teotihuacan and Mexican 'giant' burial rumors",
+    "category": "claim",
+    "verified": false,
+    "summary": "Recurring online claims of giant skeletons under Mexican pyramids, without published osteological series to match the viral heights.",
+    "detail": "Social media and older press occasionally claim giant human skeletons from Teotihuacan or other central Mexican sites. Published archaeology of Teotihuacan documents a major urban culture and ordinary human remains; it does not publish a verified population of multi-metre giants. Until a claim carries a site report, catalogue number and measured series, it belongs here as rumor adjacent to real sites, not as a finding of giant osteology.",
+    "relatedGiantSlug": "quinametzin",
+    "sources": [
+      "Published Teotihuacan excavation literature (general)",
+      "Absence of peer-reviewed series matching viral stature claims"
+    ],
+    "location": "Central Mexico"
   }
 ]

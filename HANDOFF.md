@@ -79,16 +79,29 @@ exist. Do not re-add them as marketing promises.
   the share cards; do not set `openGraph.images` back to catalogue JPGs on
   entry pages (X will regress).
 
-## Open items (not P0)
+## P1 status (2026-08-08)
 
-- Scholarly Notes toward full catalogue coverage (rule of thumb: list on
-  pricing as universal only above ~90%).
-- More chains of custody (especially free + modern-legend).
-- Geographic balance (Africa, SE Asia, Andes still thin).
-- Findings expansion beyond a handful of claims.
+**Shipped in product:**
+
+- `/welcome` onboarding (three steps); signup defaults here; Stripe success
+  lands on `/welcome?paid=1`.
+- Newsletter **welcome email** after double opt-in confirm (Ymir, Evidence,
+  Pricing with UTM).
+- Findings expanded to ~18 labelled items (hoax / claim / archaeological).
+
+**Blocked on research packets (do not invent):**
+
+- Scholarly Notes toward 90%+ of the catalogue.
+- New chains of custody for free entries still missing them (atlas, oni,
+  fomorians, jentilak, budj-bim, restrained shorts).
+- Geographic import wave (Africa, Levant, SE Asia, Andes, Siberia) including
+  art and sourced prose.
+
+## Open items (later)
+
+- Research packets for scholarly / chains / geography above.
 - Era/timeline filter on the map — deferred until methodology exists.
 - i18n UI shell (HR) without translating all lore.
-- Post-signup onboarding + email lifecycle.
 - PWA / Discord — only when real, never as “coming” on the price card.
 - `sharp` dependency bump (low priority).
 - Clean up old local worktrees after merges.

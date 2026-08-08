@@ -113,7 +113,7 @@ export async function POST(request: Request) {
       customer: customerId,
       mode,
       line_items: [{ price: priceId, quantity: 1 }],
-      success_url: `${site}/pricing?success=1`,
+      success_url: `${site}/welcome?paid=1`,
       cancel_url: `${site}/pricing?canceled=1`,
       client_reference_id: user.id,
       metadata: {

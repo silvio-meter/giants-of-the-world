@@ -49,8 +49,11 @@ function CheckoutStatus({ onSuccess }: { onSuccess: () => Promise<void> }) {
   if (success) {
     return (
       <p className="mt-4 text-sm text-accent-gold" role="status">
-        Payment received. Your access unlocks within a few seconds; refresh if
-        needed.
+        Payment received. Your access unlocks within a few seconds.{" "}
+        <Link href="/welcome?paid=1" className="underline underline-offset-2">
+          Continue to your first three steps
+        </Link>
+        .
       </p>
     );
   }

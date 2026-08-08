@@ -9,7 +9,7 @@ interface Props {
 }
 
 export function GoogleSignInButton({
-  next = "/pricing",
+  next = "/welcome",
   label = "Continue with Google",
 }: Props) {
   const [loading, setLoading] = useState(false);

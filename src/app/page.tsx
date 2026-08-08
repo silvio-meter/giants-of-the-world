@@ -221,6 +221,10 @@ export default function HomePage() {
             ))}
           </div>
           <p className="mt-8 text-center text-sm text-text-muted">
+            <Link href="/welcome" className="text-accent-gold hover:underline">
+              New here? Three steps in
+            </Link>
+            {" · "}
             <Link href="/evidence" className="text-accent-gold hover:underline">
               How we treat sources
             </Link>
