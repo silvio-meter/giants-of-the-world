@@ -26,7 +26,86 @@
       "Farmers' Museum, Cooperstown"
     ],
     "year": "1869",
-    "location": "Cardiff, New York"
+    "location": "Cardiff, New York",
+    "chain": {
+      "claim": "In October 1869 men digging a well on a farm at Cardiff, New York, unearthed the petrified body of a giant man over ten feet tall.",
+      "verdict": "Printed matter dating from within weeks of the digging records an excavation on a farm at Cardiff in October 1869, and the men of science quoted in it describe the object taken out of the ground as worked gypsum rather than a petrified body.",
+      "rungs": [
+        {
+          "witness": "Scott Tribble, A Colossal Hoax: The Giant from Cardiff That Fooled America (Lanham, MD: Rowman and Littlefield, 2009)",
+          "date": "2009",
+          "sortYear": 2009,
+          "reads": "A book-length modern account of the manufacture, burial and exhibition of the figure, treating the 1869 discovery as arranged.",
+          "kind": "scholarship",
+          "evidence": "Internet Archive item https://archive.org/details/colossalhoaxgian0000trib , giving author Scott Tribble, Rowman and Littlefield, Lanham MD, 2009, ISBN 9780742560505, about 311 pages with bibliography and index.",
+          "note": ""
+        },
+        {
+          "witness": "Michael Pettit, \"The Joy in Believing\": The Cardiff Giant, Commercial Deceptions, and Styles of Observation in Gilded Age America, Isis 97, no. 4 (2006), pp. 659-677",
+          "date": "2006",
+          "sortYear": 2006,
+          "reads": "A history-of-science study of the affair, taking the object as a commercial deception and asking why crowds and some experts read it as a petrifaction.",
+          "kind": "scholarship",
+          "evidence": "Crossref record retrieved at https://api.crossref.org/works?query.bibliographic=Joy+in+Believing+Cardiff+Giant+Commercial+Deceptions+Isis&rows=3 , returning the title, author Michael Pettit, Isis 97(4), 659-677, 2006, DOI 10.1086/509948.",
+          "note": ""
+        },
+        {
+          "witness": "Barbara Franco, The Cardiff Giant: A Hundred Year Old Hoax (New York State Historical Association, 1969), 34 pp.",
+          "date": "1969",
+          "sortYear": 1969,
+          "reads": "A centenary study by the association that owns the figure, treating the 1869 excavation as a staged discovery of a carved object.",
+          "kind": "scholarship",
+          "evidence": "Internet Archive item https://archive.org/details/cardiffgianthund0000barb , giving author Barbara Franco, publisher New York State Historical Association, 1969, 34 pages. The same study is listed as an article in New York History 50, no. 4 (October 1969), pp. 420-440 in the source list of https://daily.jstor.org/cardiff-giant-biggest-hoax-19th-century/ .",
+          "note": "I verified the 1969 monograph directly; the journal pagination is taken from a secondary listing and should be checked against New York History itself."
+        },
+        {
+          "witness": "The figure itself, bought in 1947 and displayed at Fenimore Farm and Country Village, formerly The Farmers' Museum, Cooperstown, New York",
+          "date": "object dug up 1869; in this museum's hands since 1947",
+          "sortYear": 1947,
+          "reads": "The thing dug up at Cardiff survives and can be inspected. The museum presents it as a hoax figure made in 1868 for George Hull, not as a human remain.",
+          "kind": "excavation",
+          "evidence": "https://www.fenimorefarm.org/explore , which states that the Cardiff Giant is known as 'America's Greatest Hoax', that this 'petrified man' was 'invented in 1868 by George Hull, a cigar maker with a get-rich-quick idea', and that 'Fenimore Farm bought The Cardiff Giant in 1947. It is now on display inside the main barn of the museum.'",
+          "note": "Listed here as the excavated object rather than as a document; the museum's date of 1868 for the carving comes from the museum, not from an 1869 source."
+        },
+        {
+          "witness": "Andrew Dickson White, Autobiography of Andrew Dickson White, vol. 2, chapter LVI, 'The Cardiff Giant: A Chapter in the History of Human Folly, 1869-1870'",
+          "date": "1905, recollecting 1869-1870",
+          "sortYear": 1905,
+          "reads": "White, who was president of Cornell and went to look at the figure, records his visit, his scepticism, the growth of learned theories around the object including Alexander McWhorter's Phoenician-idol reading, and the eventual acknowledgement of the whole affair as a swindle.",
+          "kind": "printed",
+          "evidence": "Project Gutenberg ebook 1370, https://www.gutenberg.org/cache/epub/1370/pg1370-images.html and https://www.gutenberg.org/cache/epub/1370/pg1370.txt : chapter heading 'CHAPTER LVI. THE CARDIFF GIANT: A CHAPTER IN THE HISTORY OF HUMAN FOLLY--1869-1870', with the chapter summary line 'Discovery of the petrified giant. My visit to it; my skepticism; its causes' and the naming of McWhorter and of Schlottmann.",
+          "note": "A memoir written some thirty-five years after the events, so it is testimony of recollection, not a document of 1869."
+        },
+        {
+          "witness": "Syracuse Daily Standard and Syracuse Courier, 18 October 1869; Syracuse Journal, 23 and 25 October 1869 (text as reprinted in the 1869 pamphlet The American Goliah)",
+          "date": "18-25 October 1869 (reports); seen only in an 1869 reprint, not in the original issues",
+          "sortYear": 1869,
+          "reads": "Local press notices printed two days to nine days after the event report that a colossal stone figure was taken from the ground while a well was being dug on William C. Newell's farm at Cardiff, Onondaga County, on 16 October 1869. They report the excavation as fact and report the argument over its nature as unsettled.",
+          "kind": "press",
+          "evidence": "Project Gutenberg transcription of The American Goliah (ebook 6869), https://www.gutenberg.org/ebooks/6869.txt.utf-8 : contains the running heads 'From the Syracuse Daily Standard Oct. 18th, 1869.', 'From the Syracuse Courier, Oct 18th, 1869.', 'From the Standard, October 23d.' and 'From the Syracuse Journal Oct. 25, 1869.'",
+          "note": "I could not open the original newspaper issues this session, so this rung rests on an 1869 reprint of them rather than on the papers themselves."
+        },
+        {
+          "witness": "The American Goliah: A Wonderful Geological Discovery. A Petrified Giant, Ten and One-Half Feet High, Discovered in Onondaga County, N.Y. (Syracuse, printed at the Journal office, 1869)",
+          "date": "1869, printed within weeks of the discovery",
+          "sortYear": 1869,
+          "reads": "A promotional pamphlet issued while the figure was on show. It dates the unearthing to 16 October 1869 on Newell's farm, gives the figure as ten feet three inches from head to instep, and then prints the opinions of the men of science who had examined it. Those opinions run against the claim: James Hall, State Geologist, calls it 'a statue of crystalline gypsum (not a cast)'; Henry A. Ward writes that 'The Onondaga Giant is the work of the sculptor, and out of a single large block of the gypseous limestone'; another examiner records 'On a careful examination, I am convinced that it is not a fossil, but was cut from a piece of stratified sulphate of lime.'",
+          "kind": "printed",
+          "evidence": "HathiTrust catalogue record 011604803, https://catalog.hathitrust.org/Record/011604803 , giving imprint 'Syracuse, N.Y.: Printed at the Journal office, 1869', 15 pages, full view from Harvard copy hvd.32044024262198. Full text read at https://www.gutenberg.org/cache/epub/6869/pg6869.txt and https://www.gutenberg.org/ebooks/6869.txt.utf-8 , which carries the 1869 copyright entry by Redington & Howe and the quoted passages above.",
+          "note": "This is the promoters' own publication, and it still could not produce a scientific witness for petrifaction."
+        },
+        {
+          "witness": "Letter of O. C. Marsh, palaeontologist at Yale, dated Rochester, 24 November 1869, read at the December meeting of the Massachusetts Historical Society on 9 December 1869 and printed in its Proceedings, vol. 11, pp. 159-164",
+          "date": "letter 24 November 1869; read and printed December 1869",
+          "sortYear": 1869,
+          "reads": "Marsh reports that he examined the figure at close quarters and concluded that 'it is of very recent origin, and a most decided humbug', adding that 'The figure is cut from a block of gypsum, similar to that found in Onondaga county, and at other localities of the Salina formation in the State further west.' He rests the recency argument on the survival of sharp tool marks on a soluble stone.",
+          "kind": "printed",
+          "evidence": "Internet Archive item jstor-25079407 (Proceedings of the Massachusetts Historical Society, December meeting, 1869), metadata read at https://archive.org/details/jstor-25079407 and full OCR text read at https://dn760004.eu.archive.org/0/items/jstor-25079407/25079407_djvu.txt , which contains the meeting heading 'A stated monthly meeting was held this day, Thursday, 9th December', the letter heading 'Rochester, Nov. 24, 1869', and the quoted sentences verbatim.",
+          "note": "A learned society's minutes, so the printing is close in time to the letter."
+        }
+      ],
+      "floor": "The digging stands: a large stone figure was taken out of the ground on William Newell's farm at Cardiff on 16 October 1869, and this is reported in print within days. What the 1869 printing will not carry is the word petrified. The scientific opinions gathered in the promoters' own pamphlet describe the object as gypsum shaped by tools, and a letter written five weeks after the discovery calls it recent work in gypsum. So the ground yielded a carved statue, not a fossil man."
+    }
   },
   {
     "id": "kandahar-giant",
@@ -97,7 +176,68 @@
       "Period newspapers",
       "Southwestern archaeology"
     ],
-    "location": "American Southwest"
+    "location": "American Southwest",
+    "chain": {
+      "claim": "Giant human skeletons, seven feet and taller, were dug out of cliff dwellings, caves and burial sites across the American Southwest, and the Smithsonian Institution and other authorities carried them off and buried the evidence to protect the accepted account of human history.",
+      "verdict": "Where the documents could be reached this session, the digging was reported in public and the remains described in them are of ordinary size.",
+      "rungs": [
+        {
+          "witness": "Nogales International, Nogales, Arizona, page 1",
+          "date": "9 December 1930",
+          "sortYear": 1930,
+          "kind": "press",
+          "reads": "Reports a party of scientists arriving from Tucson on their way to Sonora. The indexed page text reads: \"On a mission that may prove a race of supposedly mythical giants actually existed a party of scientists arrived here last night from Tucson enroute to Sonora\". The hunt for giants was announced in an Arizona newspaper as it happened.",
+          "evidence": "Library of Congress Chronicling America search for the phrase, run this session, returned this item with title, place, date and the quoted page text. Item page: https://www.loc.gov/resource/sn96060774/1930-12-09/ed-1/?sp=1",
+          "note": "The wording above is the newspaper page text as returned by the Library of Congress search index, so it carries OCR error. The destination is Sonora in Mexico, reached from Arizona, not a Southwestern United States site."
+        },
+        {
+          "witness": "The Washington Daily News, Washington, D.C.",
+          "date": "13 December 1930",
+          "sortYear": 1930,
+          "kind": "press",
+          "reads": "Carries the find behind the giant story on the national wire: the skeleton of an ancient boy a little over six feet tall, found in Mexico, which scientists were said to believe might be evidence of a race of giants. The measurement reported is just over six feet, not the seven feet and more of the claim.",
+          "evidence": "Library of Congress Chronicling America search for giant skeletons in Arizona, run this session, returned this item with newspaper title, place, date and headline text describing a skeleton of an ancient boy over six feet tall found in Mexico and offered as possible evidence of a race of giants. I did not capture a direct item URL for this page.",
+          "note": "Weaker than the other two press rungs: I saw the headline in the search index listing rather than on the page image, so I have paraphrased it rather than quoted it."
+        },
+        {
+          "witness": "The Indianapolis Times, Indianapolis, Indiana, page 2",
+          "date": "19 December 1930",
+          "sortYear": 1930,
+          "kind": "press",
+          "reads": "Carries a first-person report whose indexed page text begins: \"The sudden ending of our expedition to Sonora in search of remnants of a supposed race of giants has left me without direct\". The collapse of the search was reported in public within ten days of its announcement.",
+          "evidence": "Library of Congress Chronicling America search for the phrase about a race of giants, run this session, returned this item with title, place, date and the quoted page text. Item page: https://www.loc.gov/resource/sn82015313/1930-12-19/ed-1/?sp=2. A direct fetch of the page text view returned HTTP 403, so I have only the index snippet.",
+          "note": "An expedition ending suddenly is the kind of detail a suppression story feeds on. The snippet is truncated and I could not read what follows, so I cannot say why it ended."
+        },
+        {
+          "witness": "Earnest A. Hooton, The Indians of Pecos Pueblo: A Study of Their Skeletal Remains, New Haven, published for the Department of Archaeology, Phillips Academy, Andover, by the Yale University Press",
+          "date": "1930",
+          "sortYear": 1930,
+          "kind": "scholarship",
+          "reads": "A large excavated Southwestern skeletal series from New Mexico, measured and published in full, with a chapter on stature and a comparative table of average statures. The series was studied and printed openly rather than withheld.",
+          "evidence": "https://archive.org/metadata/indiansofpecospu00hoot gave the full title, creator Hooton, Earnest Albert 1887-1954, year 1930 and the Yale University Press imprint. A query against the OCR text at https://dn720708.ca.archive.org/0/items/indiansofpecospu00hoot/indiansofpecospu00hoot_djvu.txt confirmed the stature chapter and the comparative table of average statures but returned no numeric means and no mention of giant or unusually tall individuals.",
+          "note": "The OCR pass was truncated, so I did not recover Hooton's stature figures. This rung stands only for the fact that a large Southwestern skeletal series was measured and published, not for any particular number."
+        },
+        {
+          "witness": "Llewellyn L. Loud and M. R. Harrington, Lovelock Cave, University of California Publications in American Archaeology and Ethnology, volume 25, number 1",
+          "date": "issued 15 February 1929",
+          "sortYear": 1929,
+          "kind": "excavation",
+          "reads": "The excavation report for the cave most often named when the giant story is told. It describes mummies, skeletons and calcined bones, and gives cranial and cephalic measurements comparing ancient and modern populations. A full-text pass surfaced no giants, no unusually large human remains, and no red hair on the human remains: the only hair mentioned is a headband of small bunches of black hair.",
+          "evidence": "https://archive.org/metadata/LovelockCaveLoudAndHarrington1929 gave creators Llewellyn L. Loud and M. R. Harrington, year 1929, publisher University of California Press. I read the OCR text at https://ia801905.us.archive.org/11/items/LovelockCaveLoudAndHarrington1929/Lovelock%20Cave%20-%20Loud%20and%20Harrington%20(1929)_djvu.txt, which confirms the series as University of California Publications in American Archaeology and Ethnology 25(1), issued 15 February 1929, and returns no giant or red-haired remains. The Wikipedia article on Lovelock Cave, read this session, cites this same report as the excavation source and records that a claimed mummy of a man 6 feet 6 inches tall rests on accounts of guano miners with no proof found.",
+          "note": "Lovelock is in Nevada, in the Great Basin rather than the Southwest proper, but it is routinely folded into the Southwest giant story, so the report is a witness the claim depends on."
+        },
+        {
+          "witness": "Walter Hough, Antiquities of the Upper Gila and Salt River Valleys in Arizona and New Mexico, Bureau of American Ethnology Bulletin 35, Washington, Government Printing Office",
+          "date": "1907",
+          "sortYear": 1907,
+          "kind": "excavation",
+          "reads": "A Smithsonian bureau's own field report for the Southwest. It describes human burials and skeletons dug at sites in Arizona and New Mexico in plain terms, including flexed burials without grave goods and cremation with the ashes placed in jars. A full-text pass over the scanned text surfaced no giant, oversized or abnormally large human remains. The report was printed and sold as a government document.",
+          "evidence": "https://archive.org/metadata/antiquitiesuppe00houggoog gave title, creator Walter Hough, year 1907, publisher Govt. print. off. I then read the OCR text at https://ia801601.us.archive.org/32/items/antiquitiesuppe00houggoog/antiquitiesuppe00houggoog_djvu.txt, which confirms this is Bulletin 35 of the Bureau of American Ethnology, Smithsonian Institution, returns burial and skeleton descriptions from the Arizona and New Mexico sites, and returns nothing describing an oversized skeleton.",
+          "note": "This is the Smithsonian publishing Southwestern burial excavation in detail, which is the opposite behaviour to the one the claim alleges. Absence in a scanned text is weaker evidence than a positive statement, and the OCR pass was automated."
+        }
+      ],
+      "floor": "The 1907 Bureau of American Ethnology bulletin is a public government document in which a Smithsonian bureau describes digging and recording human burials in Arizona and New Mexico. It leaves standing that Southwestern burials were excavated and their contents printed. It does not leave standing a giant, and the full-text pass I ran over it surfaced nothing withheld."
+    }
   },
   {
     "id": "og-bed",

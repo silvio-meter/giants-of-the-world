@@ -50,6 +50,18 @@ export function canUseProximityList(plan: UserPlan | null | undefined): boolean 
   return isPaidPlan(plan);
 }
 
+/**
+ * The rungs and the floor of a chain of custody.
+ *
+ * Gated independently of freeEntry, like canViewScholarlyNotes: the claim and
+ * the verdict are free on every entry, and the ladder of witnesses is not. The
+ * free half is a completed thought that opens the question; the paid half is
+ * the answer.
+ */
+export function canViewChain(plan: UserPlan | null | undefined): boolean {
+  return isPaidPlan(plan);
+}
+
 export function formatPlanLabel(plan: UserPlan): string {
   switch (plan) {
     case "monthly":

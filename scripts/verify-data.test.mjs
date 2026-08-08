@@ -47,6 +47,57 @@ test("public catalog carries no lore (paywall guard)", () => {
       !("mysteryNote" in giant),
       `${giant.slug} leaks mysteryNote into the client catalog`
     );
+    /**
+     * The chain of custody. Only chainSummary, the claim and verdict, is
+     * public; the rungs, the floor and every evidence URL are paid, and the
+     * evidence addresses are our audit trail rather than anything a reader
+     * should be handed.
+     */
+    assert.ok(
+      !("chain" in giant),
+      `${giant.slug} leaks the whole chain into the client catalog`
+    );
+  }
+
+  /**
+   * Belt and braces: no rung field may appear anywhere in the public file,
+   * whatever shape a future change gives it.
+   *
+   * Matched as JSON keys, with the colon. An earlier version looked for the
+   * bare words and failed on a verdict that says "The witnesses checked for
+   * this ladder", which is prose a reader is meant to see.
+   */
+  const blob = JSON.stringify(publicEntries);
+  for (const key of ['"sortYear":', '"witness":', '"reads":', '"evidence":', '"rungs":']) {
+    assert.ok(
+      !blob.includes(key),
+      `the public catalog contains the key ${key}, which belongs to a chain rung`
+    );
+  }
+});
+
+test("every chain is ordered, closed-vocabulary, and keeps its evidence", () => {
+  const KINDS = new Set([
+    "manuscript", "printed", "fieldwork", "excavation", "scholarship", "press",
+  ]);
+  const chains = [
+    ...master.filter((g) => g.chain).map((g) => [g.slug, g.chain]),
+    ...findings.filter((f) => f.chain).map((f) => [f.id, f.chain]),
+  ];
+  assert.ok(chains.length > 0, "no chains found, so this test proves nothing");
+
+  for (const [id, chain] of chains) {
+    assert.ok(chain.claim?.trim(), `${id}: chain has no claim`);
+    assert.ok(chain.verdict?.trim(), `${id}: chain has no verdict`);
+    assert.ok(chain.floor?.trim(), `${id}: chain has no floor`);
+    assert.ok(chain.rungs.length >= 2, `${id}: a chain of one is not a chain`);
+    for (const r of chain.rungs) {
+      assert.ok(KINDS.has(r.kind), `${id}: unknown rung kind "${r.kind}"`);
+      assert.equal(typeof r.sortYear, "number", `${id}: rung has no sortYear`);
+      assert.ok(r.witness?.trim() && r.reads?.trim(), `${id}: rung is incomplete`);
+      // Kept in the master on purpose: it is how a rung was checked.
+      assert.ok(r.evidence?.trim(), `${id}: rung "${r.witness}" has no evidence`);
+    }
   }
 });
 

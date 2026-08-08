@@ -57,9 +57,22 @@ const slugs = new Set(
  */
 const LINK = /(?<!\/images)\/giants\/([a-z0-9-]+)/g;
 
+/**
+ * An absolute URL is somebody else's path, not ours.
+ *
+ * Chain-of-custody evidence cites addresses on norse-mythology.org and on
+ * sydhav.no whose paths contain /giants/ followed by a word. Neither is an
+ * internal link, so scanning the raw text reported a dead slug that does not
+ * exist and one entry linking to itself. External URLs come out first.
+ *
+ * Examples are described rather than written out here, because a literal one in
+ * this comment is itself something the scanner would read.
+ */
+const stripAbsolute = (text) => text.replace(/\bhttps?:\/\/[^\s"'<>)\\]+/g, " ");
+
 const links = [];
 for (const file of files) {
-  const text = readFileSync(file, "utf8");
+  const text = stripAbsolute(readFileSync(file, "utf8"));
   for (const m of text.matchAll(LINK)) {
     links.push({ file: relative(root, file), slug: m[1] });
   }
@@ -89,7 +102,11 @@ test("no entry links to itself as though it were another entry", () => {
   // takes the reader nowhere.
   const master = JSON.parse(readFileSync(join(root, "src/data/giants.json"), "utf8"));
   const selfLinks = master
-    .filter((g) => new RegExp(`(?<!/images)/giants/${g.slug}\\b`).test(JSON.stringify(g)))
+    .filter((g) =>
+      new RegExp(`(?<!/images)/giants/${g.slug}\\b`).test(
+        stripAbsolute(JSON.stringify(g))
+      )
+    )
     .map((g) => g.slug);
   assert.deepEqual(selfLinks, [], `these entries link to themselves: ${selfLinks.join(", ")}`);
 });
