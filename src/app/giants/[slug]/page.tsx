@@ -40,26 +40,30 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const giant = getGiantBySlug(slug);
   if (!giant) return { title: "Not found" };
+
+  // Images: opengraph-image.tsx + twitter-image.tsx under this segment emit
+  // fixed 1200×630 PNGs. Do not also set openGraph.images / twitter.images to
+  // the catalogue JPG — a second tag (or a shallow merge with the root
+  // featured.jpg) is how X cards end up showing the site-wide art instead of
+  // the giant. Title/description still must be set here: file-based images do
+  // not carry those fields, and Next only merges twitter/openGraph one level.
   return {
     title: giant.name,
     description: giant.shortDescription,
     alternates: { canonical: `/giants/${giant.slug}` },
     openGraph: {
       type: "article",
+      locale: "en_US",
+      siteName: "Giants of the World",
       url: `/giants/${giant.slug}`,
       title: `${giant.name} · Giants of the World`,
       description: giant.shortDescription,
-      images: giant.image ? [{ url: giant.image }] : undefined,
     },
-    // Without this, Twitter/X and Discord fall back to the root layout's
-    // twitter block (site-wide title + featured.jpg) — Next only merges
-    // metadata one level deep, so a page that sets openGraph but not
-    // twitter does not inherit per-page data into the sibling key.
     twitter: {
       card: "summary_large_image",
+      site: "@TheGiantsCodex",
       title: `${giant.name} · Giants of the World`,
       description: giant.shortDescription,
-      images: giant.image ? [giant.image] : undefined,
     },
   };
 }
