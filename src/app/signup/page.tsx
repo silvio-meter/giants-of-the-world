@@ -9,7 +9,9 @@ import { createClient, isBrowserSupabaseReady } from "@/lib/supabase/client";
 function SignupForm() {
   const router = useRouter();
   const params = useSearchParams();
-  const next = params.get("next") || "/pricing";
+  // Default into onboarding, not the price card. Checkout still deep-links
+  // with ?next=/pricing when membership is the intent.
+  const next = params.get("next") || "/welcome";
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");

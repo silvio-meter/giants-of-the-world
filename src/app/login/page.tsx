@@ -9,7 +9,7 @@ import { createClient, isBrowserSupabaseReady } from "@/lib/supabase/client";
 function LoginForm() {
   const router = useRouter();
   const params = useSearchParams();
-  const next = params.get("next") || "/pricing";
+  const next = params.get("next") || "/welcome";
   const errParam = params.get("error");
 
   const [email, setEmail] = useState("");

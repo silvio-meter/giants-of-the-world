@@ -142,7 +142,7 @@ export interface Finding {
   year?: string;
   location?: string;
   /**
-   * Two findings carry a chain of custody: cardiff-giant and anasazi-giants.
+   * Optional chain of custody (today: cardiff-giant and anasazi-giants).
    * findings.json is read only on the server, and the rungs are served through
    * /api/chain/[id] behind the same plan check the entries use.
    */

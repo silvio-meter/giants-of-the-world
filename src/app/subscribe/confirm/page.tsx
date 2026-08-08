@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { after } from "next/server";
+import { sendWelcomeEmail } from "@/lib/resend";
 import { createServiceRoleClient } from "@/lib/supabase/server";
 import { ConfirmedEvent } from "./ConfirmedEvent";
 
@@ -27,7 +29,7 @@ async function redeem(token: string | undefined): Promise<Outcome> {
 
   const { data: row } = await admin
     .from("subscribers")
-    .select("id, confirmed_at")
+    .select("id, email, confirmed_at")
     .eq("confirm_token", token)
     .maybeSingle();
 
@@ -48,6 +50,18 @@ async function redeem(token: string | undefined): Promise<Outcome> {
     console.error("confirm subscription", error);
     return "invalid";
   }
+
+  // Welcome mail only on first successful confirm. after() keeps the
+  // serverless invocation alive until Resend is done, without delaying the
+  // page (same pattern as the confirmation send).
+  if (row.email) {
+    after(() =>
+      sendWelcomeEmail(row.email).catch((err) =>
+        console.error("welcome email", err)
+      )
+    );
+  }
+
   return "confirmed";
 }
 
@@ -85,12 +99,20 @@ export default async function ConfirmPage({
         {heading}
       </h1>
       <p className="mt-4 text-sm leading-relaxed text-text-muted">{body}</p>
-      <Link
-        href="/giants"
-        className="mt-8 inline-flex items-center justify-center rounded border border-accent-gold bg-accent-gold/10 px-6 py-3 font-[family-name:var(--font-cinzel)] text-sm tracking-[0.15em] text-accent-gold transition hover:bg-accent-gold/20"
-      >
-        Return to the catalogue
-      </Link>
+      <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
+        <Link
+          href="/giants/ymir"
+          className="inline-flex items-center justify-center rounded border border-accent-gold bg-accent-gold/10 px-6 py-3 font-[family-name:var(--font-cinzel)] text-sm tracking-[0.15em] text-accent-gold transition hover:bg-accent-gold/20"
+        >
+          Start with Ymir
+        </Link>
+        <Link
+          href="/giants"
+          className="inline-flex items-center justify-center px-4 py-3 text-sm text-text-muted hover:text-accent-gold"
+        >
+          Catalogue
+        </Link>
+      </div>
     </div>
   );
 }
