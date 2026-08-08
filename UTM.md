@@ -15,7 +15,7 @@ consistent when a link is added or changed by hand.
 ```
 
 - `utm_source` is where the click came from: `x`, `instagram`, `youtube`,
-  `pinterest`, `tiktok`.
+  `pinterest`.
 - `utm_medium` is the kind of placement, not the platform again:
   - `bio` for a profile link
   - `post` for a link inside an individual post, pin or video description
@@ -39,7 +39,6 @@ redirects to the tagged homepage, so attribution is identical.
 | Instagram | `https://www.giantscodex.com/instagram` | `/?utm_source=instagram&utm_medium=bio` |
 | YouTube   | `https://www.giantscodex.com/youtube`   | `/?utm_source=youtube&utm_medium=bio`   |
 | Pinterest | `https://www.giantscodex.com/pinterest` | `/?utm_source=pinterest&utm_medium=bio` |
-| TikTok    | `https://www.giantscodex.com/tiktok`    | `/?utm_source=tiktok&utm_medium=bio`    |
 
 The redirects are defined in `next.config.ts`. Adding a platform means adding
 it to that list and to the disallow list in `src/app/robots.ts`.

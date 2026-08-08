@@ -26,11 +26,6 @@ export const socialLinks: { platform: string; handle: string; url: string }[] = 
     url: "https://www.youtube.com/@GiantsCodex",
   },
   {
-    platform: "TikTok",
-    handle: "@giantscodex",
-    url: "https://www.tiktok.com/@giantscodex",
-  },
-  {
     platform: "Pinterest",
     handle: "giantsoftheworld",
     url: "https://www.pinterest.com/giantsoftheworld/",

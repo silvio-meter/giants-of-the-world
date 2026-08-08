@@ -67,7 +67,7 @@ const securityHeaders = [
  * is marketing metadata that may well be retuned later. A temporary redirect
  * keeps that editable.
  */
-const socialShortLinks = ["x", "instagram", "youtube", "pinterest", "tiktok"];
+const socialShortLinks = ["x", "instagram", "youtube", "pinterest"];
 
 const nextConfig: NextConfig = {
   images: {
