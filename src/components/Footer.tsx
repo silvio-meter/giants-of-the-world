@@ -64,18 +64,27 @@ export function Footer() {
             })}
           </div>
         </div>
-        <div className="flex flex-wrap gap-4 text-sm text-text-muted">
+        <div className="flex max-w-md flex-wrap gap-x-4 gap-y-2 text-sm text-text-muted sm:max-w-lg sm:justify-end">
           <Link href="/giants" className="hover:text-accent-gold">
             Catalogue
           </Link>
           <Link href="/compare" className="hover:text-accent-gold">
             Compare
           </Link>
-          <Link href="/favourites" className="hover:text-accent-gold">
-            Favourites
+          <Link href="/near" className="hover:text-accent-gold">
+            Near
           </Link>
           <Link href="/map" className="hover:text-accent-gold">
             Map
+          </Link>
+          <Link href="/motifs" className="hover:text-accent-gold">
+            Motifs
+          </Link>
+          <Link href="/my-codex" className="hover:text-accent-gold">
+            My Codex
+          </Link>
+          <Link href="/favourites" className="hover:text-accent-gold">
+            Favourites
           </Link>
           <Link href="/findings" className="hover:text-accent-gold">
             Findings

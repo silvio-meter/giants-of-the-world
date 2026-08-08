@@ -80,7 +80,7 @@ If the site shows a **"Safe demo, no real charges"** banner:
 **Don't**
 
 - Present modern military giants as fact.
-- Promise PWA, Discord or PDF. They are listed as coming, not built.
+- Promise PWA, Discord or PDF. They are not built, and pricing no longer lists them as coming.
 - Use a real card on live Stripe if you only meant to demo.
 
 ---

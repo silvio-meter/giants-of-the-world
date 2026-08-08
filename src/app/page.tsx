@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { GiantCard } from "@/components/GiantCard";
 import { RandomGiantButton } from "@/components/RandomGiantButton";
 import { getAllGiants, getFreeGiants } from "@/lib/giants";
 import { siteUrl } from "@/lib/site";
@@ -32,9 +33,57 @@ const cards = [
   },
 ];
 
+const tools = [
+  {
+    title: "Compare",
+    body: "Two giants side by side: scale, fate, and the motifs they share.",
+    href: "/compare",
+  },
+  {
+    title: "Near you",
+    body: "How many traditions sit within a few hundred kilometres of where you stand.",
+    href: "/near",
+  },
+  {
+    title: "Evidence",
+    body: "How sources are treated here, and what modern legends are not.",
+    href: "/evidence",
+  },
+  {
+    title: "My Codex",
+    body: "Completion across the catalogue, and the seals of the motifs you collect.",
+    href: "/my-codex",
+  },
+];
+
+/** Curated doorway order for the free strip — recognition first, then range. */
+const FREE_STRIP_ORDER = [
+  "ymir",
+  "nephilim",
+  "goliath",
+  "atlas",
+  "polyphemus",
+  "ravana",
+  "oni",
+  "tsul-kalu",
+  "si-te-cah",
+  "jentilak",
+  "fomorians",
+  "budj-bim",
+];
+
 export default function HomePage() {
   const count = getAllGiants().length;
-  const freeCount = getFreeGiants().length;
+  const free = getFreeGiants();
+  const freeCount = free.length;
+  const freeBySlug = new Map(free.map((g) => [g.slug, g]));
+  const freeStrip = FREE_STRIP_ORDER.map((s) => freeBySlug.get(s)).filter(
+    (g): g is NonNullable<typeof g> => Boolean(g)
+  );
+  // Any free entry not in the fixed order still appears at the end.
+  for (const g of free) {
+    if (!FREE_STRIP_ORDER.includes(g.slug)) freeStrip.push(g);
+  }
 
   return (
     <div className="relative">
@@ -45,7 +94,6 @@ export default function HomePage() {
       <section className="hero-atmosphere relative flex min-h-[calc(100vh-3.5rem)] flex-col items-center justify-center overflow-hidden px-4 py-20">
         <div className="fog-layer absolute inset-0" aria-hidden />
 
-        {/* Soft gold glow above image, below content */}
         <div
           className="pointer-events-none absolute left-1/2 top-1/3 z-[2] h-[480px] w-[480px] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-40"
           style={{
@@ -108,6 +156,79 @@ export default function HomePage() {
               </p>
             </Link>
           ))}
+        </div>
+      </section>
+
+      {freeStrip.length > 0 && (
+        <section className="relative border-t border-border px-4 py-16 sm:px-6 sm:py-20">
+          <div className="mx-auto max-w-6xl">
+            <header className="mb-8 max-w-2xl">
+              <p className="font-[family-name:var(--font-cinzel)] text-[10px] tracking-[0.35em] text-accent-gold/80 uppercase">
+                Start here
+              </p>
+              <h2 className="mt-2 font-[family-name:var(--font-cinzel)] text-2xl tracking-wide text-accent-gold sm:text-3xl">
+                Open entries
+              </h2>
+              <p className="mt-3 text-sm text-text-muted sm:text-base">
+                These pages ship the full account free. The rest of the codex
+                opens with a real first paragraph; the deeper layers unlock with
+                a membership.
+              </p>
+            </header>
+            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {freeStrip.slice(0, 6).map((giant, i) => (
+                <GiantCard key={giant.slug} giant={giant} index={i} />
+              ))}
+            </div>
+            {freeStrip.length > 6 && (
+              <p className="mt-8 text-center text-sm text-text-muted">
+                <Link href="/giants" className="text-accent-gold hover:underline">
+                  Browse the full catalogue
+                </Link>
+                {" · "}
+                {freeCount} open in full
+              </p>
+            )}
+          </div>
+        </section>
+      )}
+
+      <section className="relative border-t border-border bg-surface/20 px-4 py-16 sm:px-6 sm:py-20">
+        <div className="mx-auto max-w-6xl">
+          <header className="mb-8 max-w-2xl">
+            <p className="font-[family-name:var(--font-cinzel)] text-[10px] tracking-[0.35em] text-accent-gold/80 uppercase">
+              Tools
+            </p>
+            <h2 className="mt-2 font-[family-name:var(--font-cinzel)] text-2xl tracking-wide text-accent-gold sm:text-3xl">
+              Built into the codex
+            </h2>
+          </header>
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {tools.map((tool, i) => (
+              <Link
+                key={tool.href}
+                href={tool.href}
+                className="rise-in group block h-full rounded-lg border border-border bg-surface p-5 transition hover:border-accent-gold/40"
+                style={{ animationDelay: `${i * 0.08}s` }}
+              >
+                <h3 className="font-[family-name:var(--font-cinzel)] text-base tracking-wide text-accent-gold">
+                  {tool.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-text-muted group-hover:text-text-primary/90">
+                  {tool.body}
+                </p>
+              </Link>
+            ))}
+          </div>
+          <p className="mt-8 text-center text-sm text-text-muted">
+            <Link href="/evidence" className="text-accent-gold hover:underline">
+              How we treat sources
+            </Link>
+            {" · "}
+            <Link href="/pricing" className="text-accent-gold hover:underline">
+              What membership unlocks
+            </Link>
+          </p>
         </div>
       </section>
     </div>

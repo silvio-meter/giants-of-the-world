@@ -349,9 +349,11 @@ function PricingInner() {
           <li>Size comparison tool</li>
           <li>My Journey (your map, exported)</li>
           <li>Favourites (saved giants, synced)</li>
-          <li>Scholarly Notes (etymology, sources)</li>
-          <li>Discord community (coming)</li>
-          <li>Offline / PWA access (coming)</li>
+          <li>
+            Scholarly Notes on selected entries (etymology, sources): present on
+            part of the catalogue and expanding, not every page yet
+          </li>
+          <li>Chain of custody on selected entries (the witness ladder)</li>
         </ul>
         <p className="mt-4 text-xs text-text-muted/80">
           Cancel a recurring plan any time from the billing portal. By

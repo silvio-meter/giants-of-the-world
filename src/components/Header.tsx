@@ -8,20 +8,39 @@ import { UserMenu } from "./UserMenu";
 import { formatPlanLabel } from "@/lib/access";
 import { usePlan } from "./PlanProvider";
 
-const nav = [
+/**
+ * Primary nav: the product surface, not every route.
+ * Favourites / My Codex only when signed in (dead ends for anonymous).
+ * About and Evidence live in the footer and on the home tools row.
+ */
+const publicNav = [
   { href: "/giants", label: "Catalogue" },
-  { href: "/favourites", label: "Favourites" },
-  { href: "/motifs", label: "Motifs" },
+  { href: "/compare", label: "Compare" },
+  { href: "/near", label: "Near" },
   { href: "/map", label: "Map" },
-  { href: "/findings", label: "Bones & Shadows" },
+  { href: "/motifs", label: "Motifs" },
+  { href: "/findings", label: "Findings" },
   { href: "/pricing", label: "Pricing" },
-  { href: "/about", label: "About" },
-];
+] as const;
+
+const signedInNav = [
+  { href: "/favourites", label: "Favourites" },
+  { href: "/my-codex", label: "My Codex" },
+] as const;
 
 export function Header() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const { userId, plan, isPaid, signOut, ready } = usePlan();
+
+  const nav = [
+    ...publicNav,
+    ...(ready && userId ? signedInNav : []),
+  ];
+
+  function isActive(href: string) {
+    return pathname === href || pathname.startsWith(href + "/");
+  }
 
   return (
     <header className="sticky top-0 z-40 w-full max-w-[100vw] border-b border-border/80 bg-background/85 backdrop-blur-md">
@@ -34,24 +53,20 @@ export function Header() {
           <span className="hidden sm:inline">GIANTS OF THE WORLD</span>
         </Link>
 
-        <nav className="hidden items-center gap-5 md:flex">
-          {nav.map((item) => {
-            const active =
-              pathname === item.href || pathname.startsWith(item.href + "/");
-            return (
-              <Link
-                key={item.href}
-                href={item.href}
-                className={`text-sm transition-colors ${
-                  active
-                    ? "text-accent-gold"
-                    : "text-text-muted hover:text-text-primary"
-                }`}
-              >
-                {item.label}
-              </Link>
-            );
-          })}
+        <nav className="hidden items-center gap-3 lg:gap-4 xl:gap-5 md:flex">
+          {nav.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className={`text-sm transition-colors ${
+                isActive(item.href)
+                  ? "text-accent-gold"
+                  : "text-text-muted hover:text-text-primary"
+              }`}
+            >
+              {item.label}
+            </Link>
+          ))}
           <RandomGiantButton compact />
           {ready && userId ? (
             <UserMenu />
@@ -104,6 +119,24 @@ export function Header() {
                 </Link>
               </li>
             ))}
+            <li>
+              <Link
+                href="/evidence"
+                className="block py-1 text-text-primary"
+                onClick={() => setOpen(false)}
+              >
+                Evidence
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/about"
+                className="block py-1 text-text-primary"
+                onClick={() => setOpen(false)}
+              >
+                About
+              </Link>
+            </li>
             <li className="pt-2" onClick={() => setOpen(false)}>
               <RandomGiantButton />
             </li>

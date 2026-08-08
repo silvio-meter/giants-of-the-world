@@ -1,15 +1,16 @@
 # Giants of the World
 
 A dark, atmospheric web codex of giants from mythology, folklore, and modern legend.
+Live at [giantscodex.com](https://www.giantscodex.com).
 
 ## Stack
 
 - **Next.js** (App Router) + **TypeScript**
 - **Tailwind CSS** + CSS design tokens
-- **Framer Motion** (entrance animations)
 - **Leaflet** + CartoDB Dark Matter tiles
-- Local JSON data (`src/data/giants.json`, `src/data/findings.json`)
+- Local JSON data (`src/data/giants.json`, motifs, findings, glossary)
 - **Supabase** (auth + profiles) + **Stripe** (subscriptions + lifetime)
+- **Umami** + **Vercel Analytics** (light event tracking)
 
 ## Develop
 
@@ -21,39 +22,48 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
-**Payments setup:** see [SETUP.md](./SETUP.md).
+**Payments setup:** see [SETUP.md](./SETUP.md). Demo notes: [DEMO.md](./DEMO.md). Session continuity: [HANDOFF.md](./HANDOFF.md).
 
 ## Scripts
 
-| Command             | Description                                  |
-| ------------------- | -------------------------------------------- |
-| `npm run dev`       | Development server                           |
-| `npm run build`     | Production build                             |
-| `npm start`         | Serve production build                       |
-| `npm run build:data`| Regenerate the two data files from the master |
-| `npm test`          | Data guard + entitlement unit tests          |
-| `npm run typecheck` | `tsc --noEmit`                               |
-| `npm run verify`    | lint + typecheck + tests (what CI runs)      |
+| Command              | Description                                       |
+| -------------------- | ------------------------------------------------- |
+| `npm run dev`        | Development server                                |
+| `npm run build`      | Production build                                  |
+| `npm start`          | Serve production build                            |
+| `npm run build:data` | Regenerate public + lore files from the master    |
+| `npm test`           | Data, copy, entitlement, and unit guards          |
+| `npm run typecheck`  | `tsc --noEmit`                                    |
+| `npm run verify`     | lint + typecheck + tests (what CI runs first)     |
+| `npm run test:bundle`| Bundle-size guards (needs a prior `npm run build`)|
+| `npm run test:seo`   | SEO + Twitter-card guards (needs a running server)|
 
 ## Pages
 
-| Route              | Purpose                                      |
-| ------------------ | -------------------------------------------- |
-| `/`                | Hero home + Random Giant                     |
-| `/giants`          | Filterable catalogue                         |
-| `/giants/[slug]`   | Detail (mystery note, related, sources)      |
-| `/map`             | Dark world map with pins                     |
-| `/findings`        | Bones & Shadows (claims / hoaxes / legends)  |
-| `/about`           | About + modern-legend disclaimer             |
-| `/pricing`         | Monthly / Yearly / Lifetime                  |
-| `/login` `/signup` | Auth                                         |
-| `/forgot-password` | Request a recovery link                      |
-| `/reset-password`  | Set a new password from that link            |
-| `/giants/random`   | Server-side redirect to a random entry       |
+| Route              | Purpose                                              |
+| ------------------ | ---------------------------------------------------- |
+| `/`                | Hero, free doorway strip, product tools              |
+| `/giants`          | Filterable catalogue (culture, type, region, search) |
+| `/giants/[slug]`   | Entry: free preview or full lore, chain, scholarly   |
+| `/giants/random`   | Server redirect to a random entry                    |
+| `/compare`         | Two giants: scale, fate, shared motifs               |
+| `/near`            | Giants by distance from a point you choose           |
+| `/map`             | Dark map, motif connection lines, density            |
+| `/motifs`          | Controlled motif vocabulary and carriers             |
+| `/findings`        | Bones & Shadows (claims / hoaxes / legends)          |
+| `/evidence`        | How sources are treated                              |
+| `/my-codex`        | Completion tracking and motif seals (signed-in)      |
+| `/favourites`      | Saved giants, synced (paid)                          |
+| `/pricing`         | Monthly / Yearly / Lifetime                          |
+| `/about`           | About + modern-legend disclaimer                     |
+| `/login` `/signup` | Auth                                                 |
+| `/forgot-password` | Request a recovery link                              |
+| `/reset-password`  | Set a new password from that link                    |
+| `/account`         | Plan, billing portal, delete account                 |
 
 ## Data
 
-`src/data/giants.json` is the **only** file you edit. Two files are generated from it:
+`src/data/giants.json` is the **only** file you edit for entries. Two files are generated from it:
 
 ```
 src/data/giants.json            master — edit this
@@ -64,49 +74,56 @@ src/data/giants.json            master — edit this
 After any edit run `npm run build:data` and commit all three. `npm test` fails
 if they drift apart, if a slug has no lore, if a `related` id does not resolve,
 if an image is missing — and if lore ever leaks into the public file. CI runs
-the same check, so a broken entry cannot reach production as a 404.
+the same check.
 
 Image paths follow `/images/giants/{slug}.jpg`. An entry may set `"image": ""`,
-in which case `ImagePlaceholder` renders its silhouette and mist — the right
-state for an entry whose art is not ready. `npm test` rejects two entries
-sharing the same file, because that means one of them is showing another
-giant's picture.
-
+in which case `ImagePlaceholder` renders silhouette and mist. `npm test`
+rejects two entries sharing the same file.
 
 ### Tags and motifs
 
-Two vocabularies, doing different jobs:
-
-- **`tags`** — free-form keywords (`edda`, `sicily`, `frost`). They feed
-  catalogue search and the JSON-LD `keywords`, and show as chips on the entry.
-  Fine-grained on purpose; 140 of the 172 match a single giant.
-- **`motifs`** — a controlled vocabulary in `src/data/motifs.json`, drawn from
-  a fixed list and validated by `npm test`. These drive `/motifs` and the map
-  filter, and every one groups at least two entries.
-
-The map used to filter by tag, which meant a 172-option dropdown where most
-choices returned one pin. It filters by motif now.
+- **`tags`** — free-form keywords for catalogue search and JSON-LD `keywords`.
+- **`motifs`** — controlled vocabulary in `src/data/motifs.json`. Drives
+  `/motifs`, map connection lines, Compare Shared Threads, and Motif Seals.
+  Every motif groups at least two entries.
 
 ### Free entries
 
-An entry with `"freeEntry": true` is fully open: its lore renders inside the
-static page, it is marked `isAccessibleForFree` in the JSON-LD, and it carries a
-"Free" badge in the catalogue. These are the pages search engines can actually
-rank, so they are the funnel — keep them to a curated handful of
-high-recognition giants. Everything else ships only its opening paragraph and
-loads the rest through `/api/lore/[slug]` after a server-side plan check.
+An entry with `"freeEntry": true` is fully open: lore in the static HTML,
+`isAccessibleForFree` in JSON-LD, Free badge in the catalogue. These are the
+SEO funnel — keep them a **curated minority** of high-recognition entries.
+Everything else ships the opening paragraph and loads the rest through
+`/api/lore/[slug]` after a server-side plan check.
+
+If you change free previews for paid entries, regenerate the freeze:
+
+```bash
+node scripts/update-free-preview-snapshot.mjs
+```
+
+### Premium layers (independent gates)
+
+| Layer | Gate | Notes |
+| ----- | ---- | ----- |
+| Full account + mystery note | `canViewFullDescription` | Bypassed when `freeEntry` |
+| Scholarly Notes | `canViewScholarlyNotes` | Stays locked even on free entries |
+| Chain of custody | `canViewChain` | Claim/verdict free; ladder paid |
+| Map filters, Near list, Favourites | plan checks | Server-enforced, not only UI |
 
 ## Paywall
 
-The giant pages are statically prerendered and CDN-cached, so they can never
-contain per-user content:
+Giant pages are statically prerendered and CDN-cached — no per-user content
+in the HTML:
 
-- **Open entry** — lore is in the static HTML, indexable.
-- **Paywalled entry** — HTML holds the opening paragraph plus the CTA.
-  `LockedLore` fetches the rest from `/api/lore/[slug]`, which re-checks the
-  plan server-side. `giants.lore.json` is `server-only` and never reaches a
-  client bundle.
+- **Open entry** — full lore in the static page, indexable.
+- **Paywalled entry** — opening paragraph + CTA; `LockedLore` /
+  `ScholarlyNotesSection` / `ChainOfCustody` fetch through server-checked APIs.
+- Share cards: per-slug `opengraph-image` + `twitter-image` (1200×630 PNG).
 
 ## Deploy
 
-Vercel-ready: connect the repo and deploy. No environment variables required for the base build.
+Vercel-ready. Connect the repo and deploy. Base build needs no env vars;
+auth, Stripe, and analytics need the keys in [SETUP.md](./SETUP.md).
+
+Work style for this repo: every change goes through a **git worktree**, PR,
+green CI, then squash merge. See [HANDOFF.md](./HANDOFF.md).
