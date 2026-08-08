@@ -94,7 +94,7 @@
       "pre-people"
     ],
     "heightMeters": null,
-    "hasScholarlyNotes": false,
+    "hasScholarlyNotes": true,
     "chainSummary": {
       "claim": "The nephilim of Genesis 6 were giants: enormous hybrid offspring born when the sons of God took human wives, whose kind the Israelite spies later saw and felt like grasshoppers beside.",
       "verdict": "The giant reading is genuinely ancient and continuously attested, but it travels on translation and on expansion literature rather than on the wording of the Hebrew verse.",
@@ -141,7 +141,7 @@
       "war-on-heaven"
     ],
     "heightMeters": 2.9,
-    "hasScholarlyNotes": false,
+    "hasScholarlyNotes": true,
     "chainSummary": {
       "claim": "Goliath of Gath stood six cubits and a span, about nine feet nine inches, or close to three metres.",
       "verdict": "The height is a textual variant rather than a fixed number: the surviving copies of 1 Samuel 17:4 do not agree with each other, and the disagreement is ancient.",
@@ -189,7 +189,7 @@
       "war-on-heaven"
     ],
     "heightMeters": null,
-    "hasScholarlyNotes": false,
+    "hasScholarlyNotes": true,
     "chainSummary": {
       "claim": "Deuteronomy records that Og of Bashan's iron bed was nine cubits long and four wide, and that measurement proves Og himself stood about four metres, roughly thirteen and a half feet.",
       "verdict": "The four metre figure is the length of an object, not a stated height: the verse measures the bed and leaves the man unmeasured, and the readers who converted bed into body disagreed with each other about how to do it.",
@@ -236,7 +236,7 @@
       "war-on-heaven"
     ],
     "heightMeters": 30,
-    "hasScholarlyNotes": false
+    "hasScholarlyNotes": true
   },
   {
     "id": "polyphemus",
@@ -278,7 +278,7 @@
       "outwitted"
     ],
     "heightMeters": 12,
-    "hasScholarlyNotes": false,
+    "hasScholarlyNotes": true,
     "chainSummary": {
       "claim": "The trick in Odyssey 9, where Odysseus gives his name as Nobody and then blinds the Cyclops and escapes under the sheep, was invented by Homer for the poem, and the folk versions collected later across Europe and Asia are descendants of it.",
       "verdict": "The surviving documents split the claim rather than settling it: the blinding and the escape under the flock are attested in traditions that scholars have long declined to derive from the poem, while the false name is argued about on separate grounds, and recent work warns against reconstructing what stood behind Homer at all.",
@@ -367,7 +367,7 @@
       "outwitted"
     ],
     "heightMeters": 4.5,
-    "hasScholarlyNotes": false
+    "hasScholarlyNotes": true
   },
   {
     "id": "alcyoneus",
@@ -652,7 +652,7 @@
       "war-on-heaven"
     ],
     "heightMeters": null,
-    "hasScholarlyNotes": false
+    "hasScholarlyNotes": true
   },
   {
     "id": "talos",
@@ -696,7 +696,7 @@
       "outwitted"
     ],
     "heightMeters": 4.5,
-    "hasScholarlyNotes": false
+    "hasScholarlyNotes": true
   },
   {
     "id": "thrym",
@@ -855,7 +855,7 @@
       "body-cosmogony"
     ],
     "heightMeters": 4.5,
-    "hasScholarlyNotes": false
+    "hasScholarlyNotes": true
   },
   {
     "id": "balor",
@@ -898,7 +898,7 @@
       "boon-abused"
     ],
     "heightMeters": 4.5,
-    "hasScholarlyNotes": false,
+    "hasScholarlyNotes": true,
     "chainSummary": {
       "claim": "Balor and the second battle of Mag Tuired come down to us from pre-Christian Irish tradition: the story is native Irish pagan myth, carried orally through the conversion and only later written down by monks.",
       "verdict": "The witnesses checked for this ladder are Christian-era Irish manuscripts and post-medieval collections, and the case for older material inside them rests on linguistic dating and comparison rather than on a document from pagan Ireland.",
@@ -945,7 +945,7 @@
       "petrified"
     ],
     "heightMeters": 5.5,
-    "hasScholarlyNotes": false
+    "hasScholarlyNotes": true
   },
   {
     "id": "gogmagog",
@@ -988,7 +988,7 @@
       "outwitted"
     ],
     "heightMeters": 5.5,
-    "hasScholarlyNotes": false,
+    "hasScholarlyNotes": true,
     "chainSummary": {
       "claim": "Gogmagog was the last giant of Albion, thrown from the cliffs at Plymouth by Corineus after losing a wrestling match.",
       "verdict": "The wrestling match and the fall from a cliff are attested in a twelfth-century Latin history, but that text puts the fight at the shore where Brutus landed rather than at Plymouth, and the Plymouth address is supplied by later documents.",
@@ -1078,7 +1078,7 @@
       "wild-highland"
     ],
     "heightMeters": null,
-    "hasScholarlyNotes": false
+    "hasScholarlyNotes": true
   },
   {
     "id": "ravana",
@@ -1123,7 +1123,7 @@
       "many-limbed"
     ],
     "heightMeters": 30,
-    "hasScholarlyNotes": false,
+    "hasScholarlyNotes": true,
     "chainSummary": {
       "claim": "Every year at Dussehra, right across India, towering effigies of Ravana are packed with fireworks and set alight to mark the victory of good over evil.",
       "verdict": "The burning is thoroughly documented as a present-day practice, but the written trail for it thins fast as you go back, and the 'across India' half of the claim is contradicted by places that document their refusal to do it.",
@@ -1254,7 +1254,7 @@
       "boon-abused"
     ],
     "heightMeters": 30,
-    "hasScholarlyNotes": false
+    "hasScholarlyNotes": true
   },
   {
     "id": "svyatogor",
@@ -1296,7 +1296,7 @@
       "wild-highland"
     ],
     "heightMeters": 4.5,
-    "hasScholarlyNotes": false
+    "hasScholarlyNotes": true
   },
   {
     "id": "quinametzin",
@@ -1499,7 +1499,7 @@
       "seasonal-visitor"
     ],
     "heightMeters": null,
-    "hasScholarlyNotes": false
+    "hasScholarlyNotes": true
   },
   {
     "id": "shuten-doji",
@@ -1540,7 +1540,7 @@
       "wild-highland"
     ],
     "heightMeters": 4.5,
-    "hasScholarlyNotes": false,
+    "hasScholarlyNotes": true,
     "chainSummary": {
       "claim": "Shuten-doji is an ancient Japanese demon of the Heian period: the oni chief of Mount Oe who preyed on Kyoto until Minamoto no Yorimitsu killed him around the turn of the eleventh century.",
       "verdict": "The Heian dating belongs to the story's setting rather than to the documents that carry it, and the distance between the two is where this claim lives.",
@@ -1589,7 +1589,7 @@
       "guardian"
     ],
     "heightMeters": 4.5,
-    "hasScholarlyNotes": false
+    "hasScholarlyNotes": true
   },
   {
     "id": "si-te-cah",
@@ -1633,7 +1633,7 @@
     ],
     "statusLine": "Modern claim, unverified",
     "heightMeters": null,
-    "hasScholarlyNotes": false,
+    "hasScholarlyNotes": true,
     "chainSummary": {
       "claim": "Excavations at Lovelock Cave in Nevada recovered the skeletons and mummies of a race of red-haired giants, the Si-Te-Cah of Paiute tradition, some of them eight to ten feet tall.",
       "verdict": "Red hair is attested in the record from the beginning, in Paiute tradition and in one eyewitness statement about a mummy; the giant heights enter later, through measurements taken outside the cave and through remains that were dispersed before anyone studied them.",
@@ -1681,7 +1681,7 @@
       "guardian"
     ],
     "heightMeters": 4.5,
-    "hasScholarlyNotes": false,
+    "hasScholarlyNotes": true,
     "chainSummary": {
       "claim": "Tsul'kalu, the slant-eyed giant who owns the game animals, is a genuine figure of old Cherokee tradition, remembered in the mountains of western North Carolina and marked on the stone now called Judaculla Rock.",
       "verdict": "The tradition is documented in nineteenth-century print and rests mainly on a turn-of-the-century ethnographic report whose Cherokee narrators are named, while the carved rock associated with him is much older than that writing and is linked to him by tradition rather than by anything in the stone.",
@@ -1770,7 +1770,7 @@
       "guardian"
     ],
     "heightMeters": 4.5,
-    "hasScholarlyNotes": false
+    "hasScholarlyNotes": true
   },
   {
     "id": "budj-bim",
@@ -2241,7 +2241,7 @@
       "wild-highland"
     ],
     "heightMeters": 4.5,
-    "hasScholarlyNotes": false,
+    "hasScholarlyNotes": true,
     "chainSummary": {
       "claim": "The Stállu of Sámi tradition preserves a memory of real outsiders who raided the Sámi: Norse or Christian vikings, robbers and tax collectors, whose iron-clad, plundering violence the tales record and whose abandoned mountain houses are still called Stallo sites.",
       "verdict": "The raider reading is an interpretation laid over the folk material by scholars, traceable in print from the 1870s, and it is still repeated in reference works while being argued against in specialist literature.",
@@ -2380,7 +2380,7 @@
       "bones-as-proof"
     ],
     "heightMeters": 4,
-    "hasScholarlyNotes": false,
+    "hasScholarlyNotes": true,
     "chainSummary": {
       "claim": "In 2002 a US special forces patrol in the mountains of Kandahar province, Afghanistan, was attacked by a giant twelve to thirteen feet tall, red-haired, with six fingers on each hand and two rows of teeth. It killed one American with a spear before the team shot it. The body was recovered, flown out of the country, and the incident was classified.",
       "verdict": "The story is carried by datable broadcasts, articles and podcasts rather than by any record of an event, and the tellings on this ladder contradict one another about where the body went, when the sighting happened and who was present, while the published casualty accounting and the replies given to journalists hold nothing matching the account.",
@@ -2423,7 +2423,7 @@
       "wild-highland"
     ],
     "heightMeters": null,
-    "hasScholarlyNotes": false,
+    "hasScholarlyNotes": true,
     "chainSummary": {
       "claim": "US forces operating in the Kunar valley in Afghanistan killed a giant, took casualties doing it, recovered the body, and the evidence was classified and suppressed.",
       "verdict": "The documents that place a giant in Kunar describe something watched at a distance through a thermal sight, with no body and no classification, while the killing and the suppressed evidence attach to the Kandahar telling of the story.",
@@ -2469,7 +2469,7 @@
       "builder"
     ],
     "heightMeters": null,
-    "hasScholarlyNotes": false
+    "hasScholarlyNotes": true
   },
   {
     "id": "surtr",
@@ -2592,7 +2592,7 @@
       "real-site-attached"
     ],
     "heightMeters": null,
-    "hasScholarlyNotes": false,
+    "hasScholarlyNotes": true,
     "chainSummary": {
       "claim": "Gargantua is Rabelais's invention: the giant was made up by a sixteenth-century novelist, and everything else, including the standing stones that carry his name, is downstream of the book.",
       "verdict": "The paper trail is thinner and more contested than either side of this argument usually admits, and the nineteenth-century scholars who built the case against Rabelais conceded its weakest point in their own pages.",
@@ -2804,7 +2804,7 @@
       "pre-people"
     ],
     "heightMeters": null,
-    "hasScholarlyNotes": false
+    "hasScholarlyNotes": true
   },
   {
     "id": "patagonian-giants",
@@ -3155,7 +3155,7 @@
       "arrived-by-sea"
     ],
     "heightMeters": null,
-    "hasScholarlyNotes": false
+    "hasScholarlyNotes": true
   },
   {
     "id": "bendigeidfran",
@@ -3272,7 +3272,7 @@
       "pre-people"
     ],
     "heightMeters": null,
-    "hasScholarlyNotes": false
+    "hasScholarlyNotes": true
   },
   {
     "id": "nemri",
