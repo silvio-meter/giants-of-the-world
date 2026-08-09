@@ -10,6 +10,23 @@ export const metadata: Metadata = {
   description:
     "The same giant-motifs appearing in unconnected traditions: one eye, a world built from a body, survivors of the flood, the people who came before.",
   alternates: { canonical: "/motifs" },
+  // File-based opengraph-image / twitter-image supply the 1200×630 card.
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    siteName: "Giants of the World",
+    url: "/motifs",
+    title: "Motifs · Giants of the World",
+    description:
+      "The same giant-motifs appearing in unconnected traditions: one eye, a world built from a body, survivors of the flood, the people who came before.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@TheGiantsCodex",
+    title: "Motifs · Giants of the World",
+    description:
+      "The same giant-motifs appearing in unconnected traditions: one eye, a world built from a body, survivors of the flood, the people who came before.",
+  },
 };
 
 /**

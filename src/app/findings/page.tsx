@@ -11,6 +11,23 @@ export const metadata: Metadata = {
   description:
     "Archaeological claims, hoaxes, and modern legends, clearly labelled.",
   alternates: { canonical: "/findings" },
+  // File-based opengraph-image / twitter-image supply the 1200×630 card.
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    siteName: "Giants of the World",
+    url: "/findings",
+    title: "Bones & Shadows · Giants of the World",
+    description:
+      "Archaeological claims, hoaxes, and modern legends, clearly labelled.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@TheGiantsCodex",
+    title: "Bones & Shadows · Giants of the World",
+    description:
+      "Archaeological claims, hoaxes, and modern legends, clearly labelled.",
+  },
 };
 
 const categoryStyle: Record<

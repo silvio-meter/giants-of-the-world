@@ -20,6 +20,23 @@ export async function generateMetadata({
     description:
       "Set two giants side by side: scale, culture, fate, and the motifs they share.",
     alternates: { canonical: "/compare" },
+    // File-based opengraph-image / twitter-image supply the 1200×630 card.
+    openGraph: {
+      type: "website",
+      locale: "en_US",
+      siteName: "Giants of the World",
+      url: "/compare",
+      title: "Compare Giants · Giants of the World",
+      description:
+        "Set two giants side by side: scale, culture, fate, and the motifs they share.",
+    },
+    twitter: {
+      card: "summary_large_image",
+      site: "@TheGiantsCodex",
+      title: "Compare Giants · Giants of the World",
+      description:
+        "Set two giants side by side: scale, culture, fate, and the motifs they share.",
+    },
   };
   // A specific pair is thin, near-duplicate content across ~1,600 possible
   // combinations — index the tool itself, not every result.

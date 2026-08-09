@@ -12,6 +12,23 @@ export const metadata: Metadata = {
   description:
     "Sort the catalogue by distance from a point you choose. Your position stays on your device.",
   alternates: { canonical: "/near" },
+  // File-based opengraph-image / twitter-image supply the 1200×630 card.
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    siteName: "Giants of the World",
+    url: "/near",
+    title: "Giants Near You · Giants of the World",
+    description:
+      "Sort the catalogue by distance from a point you choose. Your position stays on your device.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@TheGiantsCodex",
+    title: "Giants Near You · Giants of the World",
+    description:
+      "Sort the catalogue by distance from a point you choose. Your position stays on your device.",
+  },
 };
 
 export default async function NearPage() {
