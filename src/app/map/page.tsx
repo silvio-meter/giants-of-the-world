@@ -21,6 +21,25 @@ export const metadata: Metadata = {
   title: "World Map",
   description: "Dark interactive map of giants across the world.",
   alternates: { canonical: "/map" },
+  // File-based opengraph-image / twitter-image supply the 1200×630 card.
+  // Title and description still need to be set here: without them X inherits
+  // the root layout ("Giants of the World" + featured.jpg pairing).
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    siteName: "Giants of the World",
+    url: "/map",
+    title: "World Map · Giants of the World",
+    description:
+      "Pins mark traditional, literary, or reported associations of giants across the earth.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@TheGiantsCodex",
+    title: "World Map · Giants of the World",
+    description:
+      "Pins mark traditional, literary, or reported associations of giants across the earth.",
+  },
 };
 
 interface Props {
