@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { EmailCapture } from "./EmailCapture";
+import { FooterEmailBand } from "./FooterEmailBand";
 import {
   XIcon,
   InstagramIcon,
@@ -18,9 +18,7 @@ const SOCIAL_ICONS: Record<string, React.ComponentType<React.SVGProps<SVGSVGElem
 export function Footer() {
   return (
     <footer className="mt-auto border-t border-border bg-surface/50">
-      <div className="mx-auto max-w-6xl border-b border-border/60 px-4 py-6 sm:px-6">
-        <EmailCapture variant="footer" sourcePage="footer" />
-      </div>
+      <FooterEmailBand />
       <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-10 sm:flex-row sm:items-center sm:justify-between sm:px-6">
         <div>
           <p className="font-[family-name:var(--font-cinzel)] text-xs tracking-[0.25em] text-accent-gold">
