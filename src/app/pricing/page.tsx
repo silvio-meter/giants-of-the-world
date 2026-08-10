@@ -183,8 +183,8 @@ function PricingInner() {
           Pricing
         </h1>
         <p className="mx-auto mt-3 max-w-xl text-sm text-text-muted sm:text-base">
-          Free readers get every giant&apos;s opening account. Members unlock
-          the full history, mystery notes, and future premium tools.
+          The first account is free. The seams, the sources, and your marks open
+          with membership.
         </p>
 
         {paymentsMode === "demo" && (
@@ -339,26 +339,38 @@ function PricingInner() {
         </p>
       )}
 
-      <section className="mt-12 rounded-lg border border-border bg-surface p-6">
-        <h3 className="font-[family-name:var(--font-cinzel)] text-xs tracking-[0.25em] text-accent-gold uppercase">
-          What paid unlocks
-        </h3>
-        <ul className="mt-4 grid list-disc gap-2 pl-4 text-sm text-text-muted marker:text-accent-gold/60 sm:grid-cols-2">
-          <li>Full remaining account for every giant</li>
-          <li>Mystery notes (whispered asides)</li>
-          <li>First access to new giants</li>
-          <li>Full Compare data (fate, shared traditions)</li>
-          <li>Motif connections on the map</li>
-          <li>Size comparison tool</li>
-          <li>My Journey (your map, exported)</li>
-          <li>Favourites (saved giants, synced)</li>
-          <li>
-            Scholarly Notes on selected entries (etymology, sources): present on
-            part of the catalogue and expanding, not every page yet
-          </li>
-          <li>Chain of custody on selected entries (the witness ladder)</li>
-        </ul>
-        <p className="mt-4 text-xs text-text-muted/80">
+      <section className="mt-12 grid gap-6 sm:grid-cols-2">
+        <div className="rounded-lg border border-border bg-surface p-6">
+          <h3 className="font-[family-name:var(--font-cinzel)] text-xs tracking-[0.25em] text-accent-gold uppercase">
+            Free
+          </h3>
+          <ul className="mt-4 list-disc space-y-2 pl-4 text-sm text-text-muted marker:text-accent-gold/60">
+            <li>Opening account for every giant</li>
+            <li>Motif names (connections locked)</li>
+            <li>One-line disputed teaser</li>
+            <li>Browse the map (pins; motif graph locked)</li>
+            <li>Session marks for My Journey (not synced)</li>
+            <li>Up to 16 showcase entries fully open</li>
+          </ul>
+        </div>
+        <div className="rounded-lg border border-border bg-surface p-6">
+          <h3 className="font-[family-name:var(--font-cinzel)] text-xs tracking-[0.25em] text-accent-gold uppercase">
+            Paid
+          </h3>
+          <ul className="mt-4 list-disc space-y-2 pl-4 text-sm text-text-muted marker:text-accent-gold/60">
+            <li>Full accounts and stories</li>
+            <li>Disputed, sources, chain of custody</li>
+            <li>Scholarly notes and mystery notes</li>
+            <li>Motif connections and Compare depth</li>
+            <li>Size comparison</li>
+            <li>My Journey (synced marks and export)</li>
+            <li>Favourites synced</li>
+            <li>First access to new giants</li>
+          </ul>
+        </div>
+      </section>
+      <section className="mt-6 rounded-lg border border-border bg-surface p-6">
+        <p className="text-xs text-text-muted/80">
           Cancel a recurring plan any time from the billing portal. By
           purchasing you agree to our{" "}
           <Link href="/terms" className="text-accent-gold hover:underline">

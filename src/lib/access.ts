@@ -1,8 +1,13 @@
 /**
  * Access control for freemium content.
  *
- * Free: shortDescription + opening paragraph always visible.
- * Paid (monthly | yearly | lifetime): full description + mystery notes + premium tools.
+ * Free (logged out or free account), on non-showcase entries:
+ *   name, subtitle, hero, opening account (first short block), motif names only,
+ *   one-line disputed teaser, first source title, CTA.
+ * Showcase freeEntry entries: full account text stays open (marketed exception).
+ *
+ * Paid (monthly | yearly | lifetime): full layers + synced My Journey marks,
+ * favourites, compare depth, motif graph, size tool, chain rungs, scholarly.
  */
 
 export type UserPlan = "free" | "monthly" | "yearly" | "lifetime";
@@ -59,6 +64,19 @@ export function canUseProximityList(plan: UserPlan | null | undefined): boolean 
  * the answer.
  */
 export function canViewChain(plan: UserPlan | null | undefined): boolean {
+  return isPaidPlan(plan);
+}
+
+/** Full sources list, deep sections, motif graph links, mystery notes. */
+export function canViewFullEntry(plan: UserPlan | null | undefined): boolean {
+  return isPaidPlan(plan);
+}
+
+/**
+ * My Journey mark sync + export. Free users may still toggle marks in the
+ * browser session; they do not leave the device until a paid plan is active.
+ */
+export function canSyncJourneyMarks(plan: UserPlan | null | undefined): boolean {
   return isPaidPlan(plan);
 }
 

@@ -1,15 +1,11 @@
 import Link from "next/link";
-import { PLAN_PRICES } from "@/lib/plans";
+import { PAYWALL_COPY } from "@/lib/paywall-copy";
 
 /**
  * A locked section, for content gated behind any paid plan.
  *
- * Visually matches the CTA box on giant pages (LockedLore), but that
- * component is a single-purpose client component tied to fetching one
- * giant's lore — not worth entangling with a second, unrelated caller for
- * the sake of sharing markup. This is the presentational half, reusable
- * wherever a section needs to say "unlock this" without needing its own
- * fetch logic.
+ * Visually matches the CTA box on giant pages (LockedLore). Shared copy lives
+ * in paywall-copy so entry fades, scholarly locks, and tool locks stay aligned.
  */
 export function PremiumLock({
   label,
@@ -25,20 +21,20 @@ export function PremiumLock({
       <p className="font-[family-name:var(--font-cinzel)] text-sm tracking-wide text-accent-gold">
         {label}
       </p>
+      {PAYWALL_COPY.shortLines.map((line) => (
+        <p key={line} className="mt-1.5 text-sm text-text-muted first:mt-1.5">
+          {line}
+        </p>
+      ))}
       <Link
         href="/pricing"
         className="mt-4 inline-flex w-full items-center justify-center rounded border border-accent-gold bg-accent-gold px-4 py-2.5 font-[family-name:var(--font-cinzel)] text-sm tracking-[0.1em] text-background transition hover:bg-accent-gold/90 sm:w-auto sm:min-w-[280px]"
       >
-        Unlock forever with Lifetime: {PLAN_PRICES.lifetime.price}
+        {PAYWALL_COPY.buttonLifetime}
       </Link>
       <p className="mt-2.5 text-xs text-text-muted">
-        Or{" "}
         <Link href="/pricing" className="text-accent-gold hover:underline">
-          Monthly ({PLAN_PRICES.monthly.price})
-        </Link>
-        {" · "}
-        <Link href="/pricing" className="text-accent-gold hover:underline">
-          Yearly ({PLAN_PRICES.yearly.price})
+          {PAYWALL_COPY.secondary}
         </Link>
       </p>
     </div>

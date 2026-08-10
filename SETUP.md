@@ -19,7 +19,8 @@ Follow these steps once. After that, deploy env vars on Vercel.
 
 Optional: disable “Confirm email” under Auth → Providers → Email while testing.
 
-Also run `supabase/favourites.sql` and `supabase/subscribers.sql`.
+Also run `supabase/favourites.sql`, `supabase/subscribers.sql`, and
+`supabase/journey_marks.sql` (My Journey marks for paid sync).
 
 ### Google Sign-In
 

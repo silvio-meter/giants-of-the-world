@@ -81,6 +81,14 @@ export function UserMenu() {
             Account
           </Link>
           <Link
+            href="/journey"
+            role="menuitem"
+            onClick={() => setOpen(false)}
+            className="block px-4 py-2 text-sm text-text-primary hover:bg-background/60 hover:text-accent-gold"
+          >
+            My Journey
+          </Link>
+          <Link
             href="/my-codex"
             role="menuitem"
             onClick={() => setOpen(false)}
