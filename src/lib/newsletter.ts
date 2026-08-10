@@ -6,8 +6,11 @@
 export const ONE_SEAM = {
   listName: "One Seam",
   fromName: "Giants Codex",
-  /** Prefer seam@ when DNS is ready; override with NEWSLETTER_FROM. */
-  fromDefault: "Giants Codex <hello@giantscodex.com>",
+  /**
+   * Prefer seam@ when DNS is authenticated in Resend.
+   * Override with NEWSLETTER_FROM=Giants Codex <hello@giantscodex.com> if needed.
+   */
+  fromDefault: "Giants Codex <seam@giantscodex.com>",
   promise: "One crack in a giant story, once a week. No digests. No feature spam.",
 } as const;
 

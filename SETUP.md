@@ -27,11 +27,15 @@ Also run `supabase/favourites.sql`, `supabase/subscribers.sql`,
 ### One Seam (newsletter)
 
 - List: **One Seam** - one seam per week, no digests, no product spam.
-- From: set `NEWSLETTER_FROM=Giants Codex <seam@giantscodex.com>` when DNS
-  for `seam@` is ready; otherwise defaults to `hello@giantscodex.com`.
+- From: defaults to `Giants Codex <seam@giantscodex.com>`. If that address is
+  not verified in Resend yet, set
+  `NEWSLETTER_FROM=Giants Codex <hello@giantscodex.com>`.
 - Requires `RESEND_API_KEY`. Double opt-in: confirm link, then welcome mail.
-- Admin count/export: `/admin/subscribers` for emails in `LIFETIME_GRANT_EMAILS`.
-- Weekly issues: send manually from the Resend dashboard for v1.
+- Admin: `/admin/subscribers` for emails in `LIFETIME_GRANT_EMAILS`.
+  - Subscriber count + CSV export
+  - **Issue 1 (Atlas)** draft: preview to yourself, full send only after typing
+    `SEND ISSUE 1 TO ALL` (never auto-sends on deploy)
+- Issue content lives in `src/lib/one-seam/issues.ts` (source of truth).
 
 ### Google Sign-In
 
