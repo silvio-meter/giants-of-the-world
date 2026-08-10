@@ -40,13 +40,5 @@ export const socialLinks: { platform: string; handle: string; url: string }[] = 
  */
 export const UMAMI_SCRIPT_SRC = "https://cloud.umami.is/script.js";
 
-/**
- * The exact wording a person agrees to when they submit the newsletter form.
- *
- * Stored verbatim on the subscriber row at submission time. If this copy ever
- * changes, older rows keep the wording that was actually on screen for them,
- * which is the whole point: demonstrable consent means being able to show what
- * a specific person agreed to, not what the form says today.
- */
-export const NEWSLETTER_CONSENT_TEXT =
-  "Get told when an entry goes up, and when a new motif connects giants who never met. You can unsubscribe at any time.";
+/** @deprecated Import from `@/lib/newsletter` - re-exported for older call sites. */
+export { NEWSLETTER_CONSENT_TEXT } from "./newsletter";

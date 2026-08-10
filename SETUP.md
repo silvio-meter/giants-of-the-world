@@ -19,8 +19,19 @@ Follow these steps once. After that, deploy env vars on Vercel.
 
 Optional: disable “Confirm email” under Auth → Providers → Email while testing.
 
-Also run `supabase/favourites.sql`, `supabase/subscribers.sql`, and
-`supabase/journey_marks.sql` (My Journey marks for paid sync).
+Also run `supabase/favourites.sql`, `supabase/subscribers.sql`,
+`supabase/subscribers_double_optin.sql`, `supabase/subscribers_one_seam.sql`
+(unsubscribe tokens for One Seam), and `supabase/journey_marks.sql`
+(My Journey marks for paid sync).
+
+### One Seam (newsletter)
+
+- List: **One Seam** - one seam per week, no digests, no product spam.
+- From: set `NEWSLETTER_FROM=Giants Codex <seam@giantscodex.com>` when DNS
+  for `seam@` is ready; otherwise defaults to `hello@giantscodex.com`.
+- Requires `RESEND_API_KEY`. Double opt-in: confirm link, then welcome mail.
+- Admin count/export: `/admin/subscribers` for emails in `LIFETIME_GRANT_EMAILS`.
+- Weekly issues: send manually from the Resend dashboard for v1.
 
 ### Google Sign-In
 

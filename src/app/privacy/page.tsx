@@ -49,10 +49,13 @@ export default function PrivacyPage() {
               numbers.
             </li>
             <li>
-              <strong className="text-text-primary/90">Newsletter:</strong> if
-              you subscribe, your email address, the page you subscribed from,
-              the wording you agreed to, and the times you submitted and
-              confirmed. You are not subscribed until you confirm by email.
+              <strong className="text-text-primary/90">One Seam newsletter:</strong>{" "}
+              if you subscribe, your email address, the surface you subscribed
+              from (footer, entry, or journey), the wording you agreed to, and
+              the times you submitted and confirmed. You are not subscribed
+              until you confirm by email. We use that address only for One Seam
+              (one email per week about a crack in a giant story). We do not
+              sell the list or send product feature spam from it.
             </li>
             <li>
               <strong className="text-text-primary/90">Usage:</strong> basic
@@ -91,7 +94,7 @@ export default function PrivacyPage() {
             <strong className="text-text-primary/90">Vercel</strong>{" "}
             (hosting, and cookieless site analytics),{" "}
             <strong className="text-text-primary/90">Resend</strong>{" "}
-            (sending the newsletter confirmation email), and{" "}
+            (One Seam confirmation and welcome email), and{" "}
             <strong className="text-text-primary/90">Umami</strong>{" "}
             (cookieless analytics, hosted in the EU region). Each processes
             data under their own policies as needed to deliver the Service.

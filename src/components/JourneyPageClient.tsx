@@ -12,6 +12,7 @@ import {
 } from "@/lib/journey-marks";
 import { usePlan } from "./PlanProvider";
 import { PremiumLock } from "./PremiumLock";
+import { EmailCapture } from "./EmailCapture";
 
 export interface JourneyGiantMeta {
   slug: string;
@@ -256,21 +257,24 @@ export function JourneyPageClient({
       )}
 
       {empty ? (
-        <div className="rounded-lg border border-border bg-surface px-6 py-10 text-center">
-          <p className="font-[family-name:var(--font-cinzel)] text-lg text-accent-gold">
-            {EMPTY_COPY.title}
-          </p>
-          <div className="mx-auto mt-4 max-w-md space-y-1 text-sm text-text-muted">
-            {EMPTY_COPY.lines.map((line) => (
-              <p key={line}>{line}</p>
-            ))}
+        <div className="space-y-8">
+          <div className="rounded-lg border border-border bg-surface px-6 py-10 text-center">
+            <p className="font-[family-name:var(--font-cinzel)] text-lg text-accent-gold">
+              {EMPTY_COPY.title}
+            </p>
+            <div className="mx-auto mt-4 max-w-md space-y-1 text-sm text-text-muted">
+              {EMPTY_COPY.lines.map((line) => (
+                <p key={line}>{line}</p>
+              ))}
+            </div>
+            <Link
+              href="/giants"
+              className="mt-6 inline-block text-sm text-accent-gold hover:underline"
+            >
+              Browse the catalogue
+            </Link>
           </div>
-          <Link
-            href="/giants"
-            className="mt-6 inline-block text-sm text-accent-gold hover:underline"
-          >
-            Browse the catalogue
-          </Link>
+          <EmailCapture variant="journey" sourcePage="journey" />
         </div>
       ) : (
         <>

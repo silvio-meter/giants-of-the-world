@@ -1,22 +1,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { after } from "next/server";
+import { randomUUID } from "node:crypto";
 import { sendWelcomeEmail } from "@/lib/resend";
 import { createServiceRoleClient } from "@/lib/supabase/server";
 import { ConfirmedEvent } from "./ConfirmedEvent";
 
 /**
- * The second half of double opt-in: the link in the confirmation email lands
- * here, and only reaching this page turns a pending row into a subscriber.
- *
- * Dynamic because it both reads a token and writes to the database. Noindex
- * because a tokenised URL has nothing to offer a search engine, and indexing
- * one would be a small privacy leak besides.
+ * Second half of double opt-in for One Seam.
  */
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Confirm your subscription",
+  title: "Confirm One Seam",
   robots: { index: false, follow: false },
 };
 
@@ -29,21 +25,24 @@ async function redeem(token: string | undefined): Promise<Outcome> {
 
   const { data: row } = await admin
     .from("subscribers")
-    .select("id, email, confirmed_at")
+    .select("id, email, confirmed_at, unsubscribed_at")
     .eq("confirm_token", token)
     .maybeSingle();
 
-  if (!row) {
-    // Either the token never existed, or it was already redeemed and cleared.
-    // Both look the same from here, and both should say the same thing.
-    return "invalid";
-  }
+  if (!row) return "invalid";
+  if (row.unsubscribed_at) return "invalid";
   if (row.confirmed_at) return "already";
 
-  // Clearing the token in the same write is what makes the link single use.
+  const unsubscribeToken = randomUUID();
+
   const { error } = await admin
     .from("subscribers")
-    .update({ confirmed_at: new Date().toISOString(), confirm_token: null })
+    .update({
+      confirmed_at: new Date().toISOString(),
+      confirm_token: null,
+      unsubscribe_token: unsubscribeToken,
+      unsubscribed_at: null,
+    })
     .eq("id", row.id);
 
   if (error) {
@@ -51,12 +50,9 @@ async function redeem(token: string | undefined): Promise<Outcome> {
     return "invalid";
   }
 
-  // Welcome mail only on first successful confirm. after() keeps the
-  // serverless invocation alive until Resend is done, without delaying the
-  // page (same pattern as the confirmation send).
   if (row.email) {
     after(() =>
-      sendWelcomeEmail(row.email).catch((err) =>
+      sendWelcomeEmail(row.email, unsubscribeToken).catch((err) =>
         console.error("welcome email", err)
       )
     );
@@ -67,12 +63,12 @@ async function redeem(token: string | undefined): Promise<Outcome> {
 
 const COPY: Record<Outcome, { heading: string; body: string }> = {
   confirmed: {
-    heading: "You are now marked in the codex.",
-    body: "New giants surface without warning. When they do, you will hear about it first.",
+    heading: "You are on the list.",
+    body: "The first seam arrives next week. One crack in a giant story, once a week.",
   },
   already: {
-    heading: "Already confirmed.",
-    body: "This subscription was confirmed earlier. There is nothing else to do.",
+    heading: "Already on One Seam.",
+    body: "This address was confirmed earlier. There is nothing else to do.",
   },
   invalid: {
     heading: "That link did not work.",
@@ -93,7 +89,7 @@ export default async function ConfirmPage({
     <div className="mx-auto max-w-xl px-4 py-16 text-center sm:px-6 sm:py-24">
       {outcome === "confirmed" && <ConfirmedEvent />}
       <p className="font-[family-name:var(--font-cinzel)] text-[10px] tracking-[0.35em] text-accent-gold/80 uppercase">
-        The ledger
+        One Seam
       </p>
       <h1 className="mt-3 font-[family-name:var(--font-cinzel)] text-2xl tracking-wide text-accent-gold sm:text-3xl">
         {heading}
@@ -101,16 +97,16 @@ export default async function ConfirmPage({
       <p className="mt-4 text-sm leading-relaxed text-text-muted">{body}</p>
       <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
         <Link
-          href="/giants/ymir"
+          href="/giants"
           className="inline-flex items-center justify-center rounded border border-accent-gold bg-accent-gold/10 px-6 py-3 font-[family-name:var(--font-cinzel)] text-sm tracking-[0.15em] text-accent-gold transition hover:bg-accent-gold/20"
         >
-          Start with Ymir
+          Catalogue
         </Link>
         <Link
-          href="/giants"
+          href="/"
           className="inline-flex items-center justify-center px-4 py-3 text-sm text-text-muted hover:text-accent-gold"
         >
-          Catalogue
+          Home
         </Link>
       </div>
     </div>
