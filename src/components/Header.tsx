@@ -24,6 +24,7 @@ const publicNav = [
 ] as const;
 
 const signedInNav = [
+  { href: "/journey", label: "My Journey" },
   { href: "/favourites", label: "Favourites" },
   { href: "/my-codex", label: "My Codex" },
 ] as const;

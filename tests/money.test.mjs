@@ -13,21 +13,41 @@ import {
   isPaidPlan,
   canViewFullDescription,
   canUseFavourites,
+  canSyncJourneyMarks,
   isLifetimeGrantEmail,
   parsePlan,
 } from "../src/lib/access.ts";
-import { getFreePreview, splitParagraphs, hasMoreContent } from "../src/lib/content.ts";
+import {
+  getFreePreview,
+  splitParagraphs,
+  hasMoreContent,
+  getFirstSentence,
+} from "../src/lib/content.ts";
 
 test("paid plans unlock, free does not", () => {
   for (const plan of ["monthly", "yearly", "lifetime"]) {
     assert.ok(isPaidPlan(plan), `${plan} should be paid`);
     assert.ok(canViewFullDescription(plan));
     assert.ok(canUseFavourites(plan));
+    assert.ok(canSyncJourneyMarks(plan));
   }
   assert.ok(!isPaidPlan("free"));
   assert.ok(!canViewFullDescription("free"));
+  assert.ok(!canSyncJourneyMarks("free"));
   assert.ok(!isPaidPlan(null));
   assert.ok(!isPaidPlan(undefined));
+});
+
+test("disputed teaser is first sentence only", () => {
+  assert.equal(
+    getFirstSentence("First claim ends here. Second claim stays sealed."),
+    "First claim ends here."
+  );
+  assert.equal(getFirstSentence(""), "");
+  assert.equal(getFirstSentence(null), "");
+  const long = "a".repeat(200);
+  assert.ok(getFirstSentence(long).endsWith("…"));
+  assert.ok(getFirstSentence(long).length <= 160);
 });
 
 test("unknown plan values fall back to free, never to paid", () => {

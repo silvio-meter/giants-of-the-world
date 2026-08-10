@@ -9,7 +9,7 @@ import {
   getRelatedGiants,
 } from "@/lib/giants";
 import { getGiantLore } from "@/lib/giants-lore";
-import { getFreePreview, hasMoreContent } from "@/lib/content";
+import { getFirstSentence, getFreePreview, hasMoreContent } from "@/lib/content";
 import { ImagePlaceholder } from "@/components/ImagePlaceholder";
 import { FullDescription } from "@/components/FullDescription";
 import { LockedLore } from "@/components/LockedLore";
@@ -21,6 +21,8 @@ import { DiscoveryTracker } from "@/components/DiscoveryTracker";
 import { ScholarlyNotesSection } from "@/components/ScholarlyNotesSection";
 import { GlossaryText } from "@/components/GlossaryText";
 import { EntryLocationMapLoader } from "@/components/EntryLocationMapLoader";
+import { SourcesSection } from "@/components/SourcesSection";
+import { JourneyMarks } from "@/components/JourneyMarks";
 import { siteUrl } from "@/lib/site";
 import { resolveMotifs } from "@/lib/motifs";
 
@@ -80,8 +82,11 @@ export default async function GiantDetailPage({ params }: Props) {
 
   const freePreview = getFreePreview(lore.fullDescription);
   const hasMore = hasMoreContent(lore.fullDescription, lore.mysteryNote);
+  // First sentence only — free HTML never carries the rest of disputed.
+  const disputedTeaser = getFirstSentence(lore.sections?.disputed);
 
   const motifs = resolveMotifs(giant.motifs, giant.slug);
+  const motifNames = motifs.map((m) => m.name);
   const related = getRelatedGiants(giant);
   const isModern = giant.type === "modern-legend";
 
@@ -247,23 +252,14 @@ export default async function GiantDetailPage({ params }: Props) {
             <LockedLore
               slug={giant.slug}
               motifs={motifs}
+              motifNames={motifNames}
+              disputedTeaser={disputedTeaser}
               freePreview={freePreview}
               hasMore={hasMore}
             />
           )}
 
-          {giant.sources.length > 0 && (
-            <section className="mt-8">
-              <h2 className="font-[family-name:var(--font-cinzel)] text-xs tracking-[0.25em] text-accent-gold uppercase">
-                Sources
-              </h2>
-              <ul className="mt-3 list-disc space-y-1 pl-4 font-mono text-xs text-text-muted marker:text-accent-gold/60">
-                {giant.sources.map((s) => (
-                  <li key={s}>{s}</li>
-                ))}
-              </ul>
-            </section>
-          )}
+          <SourcesSection sources={giant.sources} freeEntry={giant.freeEntry} />
 
           {/*
             Below the sources block and outside the paywalled account on
@@ -379,6 +375,8 @@ export default async function GiantDetailPage({ params }: Props) {
       {giant.chainSummary && (
         <ChainOfCustody slug={giant.slug} summary={giant.chainSummary} />
       )}
+
+      <JourneyMarks slug={giant.slug} />
 
       {related.length > 0 && (
         <section className="mt-14 border-t border-border pt-10">

@@ -28,3 +28,16 @@ export function hasMoreContent(
   const paras = splitParagraphs(fullDescription);
   return paras.length > 1 || Boolean(mysteryNote?.trim());
 }
+
+/**
+ * One-line teaser for free readers on a locked entry.
+ * First sentence only — never the full disputed section.
+ */
+export function getFirstSentence(text: string | null | undefined): string {
+  if (!text?.trim()) return "";
+  const trimmed = text.trim().replace(/\s+/g, " ");
+  const match = trimmed.match(/^[^.!?]+[.!?]+/);
+  if (match) return match[0].trim();
+  // No terminator: cap so a run-on paragraph cannot become a free full section.
+  return trimmed.length > 160 ? `${trimmed.slice(0, 157).trimEnd()}…` : trimmed;
+}
