@@ -425,7 +425,7 @@ export default async function GiantDetailPage({ params }: Props) {
         is why it is not restricted to free entries.
       */}
       <div className="mt-14 border-t border-border pt-10">
-        <EmailCapture variant="detail" sourcePage={`/giants/${giant.slug}`} />
+        <EmailCapture variant="detail" sourcePage="entry" />
       </div>
     </article>
   );

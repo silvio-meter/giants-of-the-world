@@ -4,9 +4,9 @@ import { usePathname } from "next/navigation";
 import { EmailCapture } from "./EmailCapture";
 
 /**
- * Sitewide ledger form in the footer. Hidden on giant entry pages, which
- * already render the detail variant at the bottom of the article — stacking
- * both on mobile looked like a duplicate block.
+ * One Seam signup in the footer. Hidden on giant entry pages, which already
+ * render the detail variant at the bottom of the article - stacking both on
+ * mobile looked like a duplicate block.
  */
 export function FooterEmailBand() {
   const pathname = usePathname() ?? "";

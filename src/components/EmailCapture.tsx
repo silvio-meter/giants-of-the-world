@@ -4,30 +4,41 @@ import Link from "next/link";
 import { useState, type FormEvent } from "react";
 
 interface Props {
-  /** "footer" is a compact single row; "detail" has room for the fuller line. */
-  variant: "footer" | "detail";
-  /** Recorded with the subscription — which surface it came from. */
+  /** "footer" is a compact single row; "detail" / "journey" have more room. */
+  variant: "footer" | "detail" | "journey";
+  /** Recorded with the subscription - which surface it came from. */
   sourcePage: string;
 }
 
 const COPY = {
   footer: {
-    heading: null,
-    prompt: "Enter your name in the ledger. New giants surface without warning.",
-    button: "Enter the ledger",
+    heading: "One Seam - once a week.",
+    prompt: "One place where a giant story splits.",
   },
   detail: {
-    heading: "New giants surface without warning.",
-    prompt:
-      "Get told when an entry goes up, and when a new motif connects giants who never met.",
-    button: "Enter the ledger",
+    heading: "One Seam - once a week.",
+    prompt: "One place where a giant story splits.",
   },
-};
+  journey: {
+    heading: "One Seam - once a week.",
+    prompt: "One place where a giant story splits.",
+  },
+} as const;
+
+const BUTTON = "Enter the ledger";
+const PLACEHOLDER = "you@domain.com";
+const MICRO =
+  "No sequences. Unsubscribe anytime.";
+/** After confirm they get the exact "on the list" line; pre-confirm stays honest. */
+const SUCCESS =
+  "You are on the list. The first seam arrives next week.";
+const SUCCESS_PENDING =
+  "Check your email and open the link to confirm. Then you are on the list - the first seam arrives next week.";
 
 /**
- * Renders identically apart from layout — the footer needs a single row that
- * survives being squeezed next to nav links, the detail placement has a full
- * card's width to itself.
+ * One Seam signup. Footer is compact; detail/journey use a card layout.
+ * Double opt-in: success after submit means "confirm pending", welcome mail
+ * fires only after /subscribe/confirm.
  */
 export function EmailCapture({ variant, sourcePage }: Props) {
   const [email, setEmail] = useState("");
@@ -36,7 +47,7 @@ export function EmailCapture({ variant, sourcePage }: Props) {
     "idle"
   );
   const [error, setError] = useState("");
-  const { heading, prompt, button } = COPY[variant];
+  const { heading, prompt } = COPY[variant];
 
   async function onSubmit(e: FormEvent) {
     e.preventDefault();
@@ -48,18 +59,21 @@ export function EmailCapture({ variant, sourcePage }: Props) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, sourcePage, company }),
       });
-      const data = (await res.json()) as { error?: string };
+      const data = (await res.json()) as { error?: string; code?: string };
       if (!res.ok) {
-        setError(data.error || "The ledger did not take that. Try again.");
+        if (data.code === "invalid_email") {
+          setError("That does not look like a valid email.");
+        } else if (data.code === "already_subscribed") {
+          setError("That address is already on One Seam.");
+        } else {
+          setError(data.error || "Could not subscribe. Try again.");
+        }
         setStatus("error");
         return;
       }
-      // No event here on purpose. email_signup fires on the confirm page,
-      // once the link in the confirmation email is actually opened, so a
-      // submission that never confirms does not count as a subscriber.
       setStatus("done");
     } catch {
-      setError("The ledger did not take that. Try again.");
+      setError("Could not subscribe. Try again.");
       setStatus("error");
     }
   }
@@ -75,12 +89,10 @@ export function EmailCapture({ variant, sourcePage }: Props) {
         }
       >
         {/*
-          Under double opt-in this cannot say "you are now marked in the
-          codex", because at this point they are not. The row exists but is
-          unconfirmed, and stays that way until the emailed link is opened.
+          Double opt-in: not on the list until the email link is opened.
+          SUCCESS is the post-confirm promise; SUCCESS_PENDING is honest now.
         */}
-        Check your email and open the link to confirm. Nothing is recorded
-        until you do.
+        {SUCCESS_PENDING}
       </p>
     );
   }
@@ -96,37 +108,42 @@ export function EmailCapture({ variant, sourcePage }: Props) {
           : "rounded-lg border border-border bg-surface p-4 sm:p-5"
       }
     >
-      {heading && (
-        <p className="mb-1.5 font-[family-name:var(--font-cinzel)] text-sm tracking-wide text-accent-gold">
+      <div className={isFooter ? "shrink-0 sm:max-w-[240px]" : "mb-3"}>
+        <p
+          className={
+            isFooter
+              ? "font-[family-name:var(--font-cinzel)] text-sm tracking-wide text-accent-gold"
+              : "mb-1.5 font-[family-name:var(--font-cinzel)] text-sm tracking-wide text-accent-gold"
+          }
+        >
           {heading}
         </p>
-      )}
-      <p
-        className={
-          isFooter
-            ? "shrink-0 text-sm text-text-muted sm:max-w-[220px]"
-            : "mb-3 text-sm leading-relaxed text-text-muted"
-        }
-      >
-        {prompt}
-      </p>
+        <p
+          className={
+            isFooter
+              ? "text-sm text-text-muted"
+              : "text-sm leading-relaxed text-text-muted"
+          }
+        >
+          {prompt}
+        </p>
+      </div>
       <div className={isFooter ? "flex min-w-0 flex-1 gap-2" : "flex gap-2"}>
-        <label className="sr-only" htmlFor={`email-${variant}`}>
+        <label className="sr-only" htmlFor={`email-${variant}-${sourcePage}`}>
           Email address
         </label>
         <input
-          id={`email-${variant}`}
+          id={`email-${variant}-${sourcePage}`}
           type="email"
           required
           autoComplete="email"
-          placeholder="you@example.com"
+          placeholder={PLACEHOLDER}
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           className={`min-w-0 flex-1 rounded border border-border bg-background px-3 py-2 text-sm text-text-primary placeholder:text-text-muted focus:border-accent-gold focus:outline-none ${
             isFooter ? "sm:w-48" : ""
           }`}
         />
-        {/* Hidden from sighted and screen-reader users; a filled value means a bot. */}
         <input
           type="text"
           tabIndex={-1}
@@ -141,7 +158,7 @@ export function EmailCapture({ variant, sourcePage }: Props) {
           disabled={status === "loading"}
           className="shrink-0 rounded border border-accent-gold bg-accent-gold px-4 py-2 font-[family-name:var(--font-cinzel)] text-xs tracking-[0.1em] text-background transition hover:bg-accent-gold/90 disabled:opacity-60"
         >
-          {status === "loading" ? "…" : button}
+          {status === "loading" ? "…" : BUTTON}
         </button>
       </div>
       {error && (
@@ -149,18 +166,15 @@ export function EmailCapture({ variant, sourcePage }: Props) {
           {error}
         </p>
       )}
-      {/*
-        Submitting is the consent action, so there is no pre-ticked box and no
-        box at all: an unticked checkbox nobody ticks would just block signups
-        without adding consent that pressing the button does not already give.
-      */}
       <p className={`text-xs text-text-muted/80 ${isFooter ? "mt-2" : "mt-3"}`}>
-        Confirmation required. Unsubscribe any time. See our{" "}
+        {MICRO} See our{" "}
         <Link href="/privacy" className="text-accent-gold hover:underline">
           Privacy Policy
         </Link>
         .
       </p>
+      {/* Screen readers / operators: post-confirm copy for reference. */}
+      <span className="sr-only">{SUCCESS}</span>
     </form>
   );
 }

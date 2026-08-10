@@ -1,40 +1,24 @@
 import "server-only";
 import { siteUrl } from "./site";
+import { newsletterFromAddress, ONE_SEAM } from "./newsletter";
 
 /**
  * Plain fetch against Resend's REST API rather than their SDK. The app only
- * needs one call shape (send a transactional email); pulling in a dependency
- * for that is not worth it yet. Reconsider if Audiences/broadcast sending
- * gets built later.
+ * needs a few transactional shapes; a dependency is not worth it yet.
  */
 
-/**
- * The confirmation email is the single point of failure in double opt-in: if
- * it does not arrive, the person never becomes a subscriber.
- *
- * The domain is now fully authenticated: SPF on the sending subdomain, DKIM
- * via resend._domainkey, and DMARC at p=none, which is monitoring rather than
- * enforcement. That covers the mechanics, but authentication only proves the
- * mail is genuinely from us. It does not stop a filter deciding a message
- * looks promotional.
- *
- * So it is deliberately plain. No dark background, no gold headings, no
- * imagery, nothing that reads as a campaign. One sentence, one link, and a
- * line saying what to do if it was not you. It also ships a text/plain
- * alternative alongside the HTML, because HTML-only mail scores worse with
- * spam filters than a proper multipart message.
- */
-export async function sendConfirmationEmail(
-  email: string,
-  token: string
-): Promise<void> {
+async function sendResendEmail(payload: {
+  to: string;
+  subject: string;
+  text: string;
+  html: string;
+  headers?: Record<string, string>;
+}): Promise<void> {
   const key = process.env.RESEND_API_KEY;
   if (!key) {
-    console.error("RESEND_API_KEY is not set, confirmation email not sent");
+    console.error("RESEND_API_KEY is not set, email not sent:", payload.subject);
     return;
   }
-
-  const url = `${siteUrl}/subscribe/confirm?token=${encodeURIComponent(token)}`;
 
   const res = await fetch("https://api.resend.com/emails", {
     method: "POST",
@@ -43,18 +27,12 @@ export async function sendConfirmationEmail(
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      from: "Giants of the World <hello@giantscodex.com>",
-      to: email,
-      subject: "Confirm your subscription",
-      text: [
-        "Please confirm you want emails from Giants of the World.",
-        "",
-        `Confirm: ${url}`,
-        "",
-        "You will not be subscribed until you open that link.",
-        "If you did not request this, ignore this email and nothing happens.",
-      ].join("\n"),
-      html: confirmationEmailHtml(url),
+      from: newsletterFromAddress(),
+      to: payload.to,
+      subject: payload.subject,
+      text: payload.text,
+      html: payload.html,
+      headers: payload.headers,
     }),
   });
 
@@ -63,77 +41,93 @@ export async function sendConfirmationEmail(
   }
 }
 
-function confirmationEmailHtml(url: string): string {
-  return `
+/**
+ * Double opt-in confirmation. Plain on purpose so filters do not treat it
+ * as a campaign. Without this click the person is not on One Seam.
+ */
+export async function sendConfirmationEmail(
+  email: string,
+  token: string
+): Promise<void> {
+  const url = `${siteUrl}/subscribe/confirm?token=${encodeURIComponent(token)}`;
+
+  await sendResendEmail({
+    to: email,
+    subject: `Confirm ${ONE_SEAM.listName}`,
+    text: [
+      `Confirm you want ${ONE_SEAM.listName} from ${ONE_SEAM.fromName}.`,
+      "",
+      ONE_SEAM.promise,
+      "",
+      `Confirm: ${url}`,
+      "",
+      "You will not be on the list until you open that link.",
+      "If you did not request this, ignore this email and nothing happens.",
+    ].join("\n"),
+    html: `
     <div style="font-family:Helvetica,Arial,sans-serif;font-size:15px;line-height:1.6;color:#222;">
-      <p>Please confirm you want emails from Giants of the World.</p>
+      <p>Confirm you want <strong>${ONE_SEAM.listName}</strong> from ${ONE_SEAM.fromName}.</p>
+      <p>${ONE_SEAM.promise}</p>
       <p><a href="${url}">Confirm your subscription</a></p>
-      <p>You will not be subscribed until you open that link.</p>
+      <p>You will not be on the list until you open that link.</p>
       <p style="color:#666;">If you did not request this, ignore this email and nothing happens.</p>
     </div>
-  `;
+  `,
+  });
 }
 
 /**
- * Sent only after double opt-in succeeds. Plain on purpose (same filter
- * reasoning as the confirmation mail). Three links, no campaign chrome:
- * a free entry, how sources are treated, and membership when they want it.
+ * Sent only after double opt-in succeeds. One Seam welcome - no product
+ * funnel, no feature spam. Unsubscribe link is required.
  */
-export async function sendWelcomeEmail(email: string): Promise<void> {
-  const key = process.env.RESEND_API_KEY;
-  if (!key) {
-    console.error("RESEND_API_KEY is not set, welcome email not sent");
-    return;
-  }
+export async function sendWelcomeEmail(
+  email: string,
+  unsubscribeToken: string
+): Promise<void> {
+  const unsubUrl = `${siteUrl}/subscribe/unsubscribe?token=${encodeURIComponent(unsubscribeToken)}`;
+  const home = siteUrl;
 
-  const ymir = `${siteUrl}/giants/ymir?utm_source=email&utm_medium=welcome&utm_campaign=lifecycle`;
-  const evidence = `${siteUrl}/evidence?utm_source=email&utm_medium=welcome&utm_campaign=lifecycle`;
-  const pricing = `${siteUrl}/pricing?utm_source=email&utm_medium=welcome&utm_campaign=lifecycle`;
+  const text = [
+    "You are on the list.",
+    "",
+    "Once a week you will get one seam:",
+    "a place where a giant story splits between the older version and the one that travelled farther.",
+    "",
+    "No digests.",
+    "No product spam.",
+    "If an entry on Giants Codex is relevant, the link will be at the bottom.",
+    "",
+    "The first seam arrives next week.",
+    "",
+    `- ${ONE_SEAM.fromName}`,
+    home,
+    "",
+    `Unsubscribe: ${unsubUrl}`,
+  ].join("\n");
 
-  const res = await fetch("https://api.resend.com/emails", {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${key}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      from: "Giants of the World <hello@giantscodex.com>",
-      to: email,
-      subject: "You are on the list",
-      text: [
-        "You are confirmed on Giants of the World.",
-        "",
-        "Three places to start:",
-        `A free full entry (Ymir): ${ymir}`,
-        `How we treat sources: ${evidence}`,
-        `Membership when you want the sealed layers: ${pricing}`,
-        "",
-        "You can unsubscribe from any message we send.",
-      ].join("\n"),
-      html: welcomeEmailHtml(ymir, evidence, pricing),
-    }),
-  });
-
-  if (!res.ok) {
-    console.error("Resend welcome failed", res.status, await res.text());
-  }
-}
-
-function welcomeEmailHtml(
-  ymir: string,
-  evidence: string,
-  pricing: string
-): string {
-  return `
+  const html = `
     <div style="font-family:Helvetica,Arial,sans-serif;font-size:15px;line-height:1.6;color:#222;">
-      <p>You are confirmed on Giants of the World.</p>
-      <p>Three places to start:</p>
-      <ul>
-        <li><a href="${ymir}">A free full entry (Ymir)</a></li>
-        <li><a href="${evidence}">How we treat sources</a></li>
-        <li><a href="${pricing}">Membership when you want the sealed layers</a></li>
-      </ul>
-      <p style="color:#666;">You can unsubscribe from any message we send.</p>
+      <p>You are on the list.</p>
+      <p>Once a week you will get one seam:<br/>
+      a place where a giant story splits between the older version and the one that travelled farther.</p>
+      <p>No digests.<br/>No product spam.<br/>
+      If an entry on Giants Codex is relevant, the link will be at the bottom.</p>
+      <p>The first seam arrives next week.</p>
+      <p>- ${ONE_SEAM.fromName}<br/>
+      <a href="${home}">${home.replace(/^https?:\/\//, "")}</a></p>
+      <p style="color:#666;font-size:13px;"><a href="${unsubUrl}">Unsubscribe</a></p>
     </div>
   `;
+
+  await sendResendEmail({
+    to: email,
+    subject: ONE_SEAM.listName,
+    text,
+    html,
+    headers: {
+      // Human unsubscribe URL (welcome + future weekly issues). One-click POST
+      // is omitted until a dedicated endpoint exists.
+      "List-Unsubscribe": `<${unsubUrl}>`,
+    },
+  });
 }
