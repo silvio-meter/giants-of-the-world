@@ -7,17 +7,22 @@ import { newsletterFromAddress, ONE_SEAM } from "./newsletter";
  * needs a few transactional shapes; a dependency is not worth it yet.
  */
 
+export type ResendSendResult =
+  | { ok: true; id?: string }
+  | { ok: false; error: string };
+
 async function sendResendEmail(payload: {
   to: string;
   subject: string;
   text: string;
   html: string;
   headers?: Record<string, string>;
-}): Promise<void> {
+}): Promise<ResendSendResult> {
   const key = process.env.RESEND_API_KEY;
   if (!key) {
-    console.error("RESEND_API_KEY is not set, email not sent:", payload.subject);
-    return;
+    const msg = "RESEND_API_KEY is not set";
+    console.error(msg, payload.subject);
+    return { ok: false, error: msg };
   }
 
   const res = await fetch("https://api.resend.com/emails", {
@@ -37,7 +42,16 @@ async function sendResendEmail(payload: {
   });
 
   if (!res.ok) {
-    console.error("Resend send failed", res.status, await res.text());
+    const body = await res.text();
+    console.error("Resend send failed", res.status, body);
+    return { ok: false, error: `Resend ${res.status}: ${body.slice(0, 200)}` };
+  }
+
+  try {
+    const data = (await res.json()) as { id?: string };
+    return { ok: true, id: data.id };
+  } catch {
+    return { ok: true };
   }
 }
 
@@ -73,6 +87,27 @@ export async function sendConfirmationEmail(
       <p style="color:#666;">If you did not request this, ignore this email and nothing happens.</p>
     </div>
   `,
+  });
+}
+
+/**
+ * One Seam content issue (not the welcome mail). Personalised unsubscribe.
+ */
+export async function sendOneSeamIssueEmail(opts: {
+  to: string;
+  subject: string;
+  text: string;
+  html: string;
+  unsubscribeUrl: string;
+}): Promise<ResendSendResult> {
+  return sendResendEmail({
+    to: opts.to,
+    subject: opts.subject,
+    text: opts.text,
+    html: opts.html,
+    headers: {
+      "List-Unsubscribe": `<${opts.unsubscribeUrl}>`,
+    },
   });
 }
 
@@ -131,3 +166,4 @@ export async function sendWelcomeEmail(
     },
   });
 }
+
