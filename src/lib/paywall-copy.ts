@@ -11,7 +11,8 @@ export const PAYWALL_COPY = {
     "The seams, the sources, and your marks open with membership.",
   ] as const,
   /** Primary button label (Lifetime is the hero ask). */
-  buttonLifetime: `Unlock with Lifetime — ${PLAN_PRICES.lifetime.price}`,
+  // Hyphen, not em dash: verify-copy bans U+2014 in user-facing strings.
+  buttonLifetime: `Unlock with Lifetime - ${PLAN_PRICES.lifetime.price}`,
   /** Secondary link to the full pricing table. */
   secondary: "See monthly & yearly",
   /** Label on the faded story block. */
