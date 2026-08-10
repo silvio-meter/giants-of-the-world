@@ -4,26 +4,27 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { usePlan } from "@/components/PlanProvider";
 
+type LoadState =
+  | { status: "idle" }
+  | { status: "loading" }
+  | { status: "ok"; count: number }
+  | { status: "error"; message: string };
+
 /**
  * Minimal One Seam admin: count + CSV export.
  * API enforces LIFETIME_GRANT_EMAILS; this page only hides the UI from others.
  */
 export default function AdminSubscribersPage() {
   const { email, ready, userId } = usePlan();
-  const [count, setCount] = useState<number | null>(null);
-  const [error, setError] = useState("");
-  const [loading, setLoading] = useState(true);
+  const [load, setLoad] = useState<LoadState>({ status: "idle" });
 
   useEffect(() => {
-    if (!ready) return;
-    if (!userId) {
-      setLoading(false);
-      setError("Sign in required.");
-      return;
-    }
+    if (!ready || !userId) return;
 
     let cancelled = false;
-    fetch("/api/admin/subscribers", { cache: "no-store" })
+
+    // setState only in async callbacks (eslint react-hooks/set-state-in-effect).
+    void fetch("/api/admin/subscribers", { cache: "no-store" })
       .then(async (res) => {
         if (res.status === 403) {
           throw new Error("This page is only for admin grant accounts.");
@@ -32,22 +33,20 @@ export default function AdminSubscribersPage() {
         return res.json() as Promise<{ count: number }>;
       })
       .then((data) => {
-        if (!cancelled) {
-          setCount(data.count);
-          setError("");
-        }
+        if (!cancelled) setLoad({ status: "ok", count: data.count });
       })
       .catch((err: Error) => {
-        if (!cancelled) setError(err.message);
-      })
-      .finally(() => {
-        if (!cancelled) setLoading(false);
+        if (!cancelled) setLoad({ status: "error", message: err.message });
       });
 
     return () => {
       cancelled = true;
     };
   }, [ready, userId]);
+
+  const needsSignIn = ready && !userId;
+  const showLoading =
+    ready && userId && load.status === "idle";
 
   return (
     <div className="mx-auto max-w-lg px-4 py-10 sm:px-6 sm:py-14">
@@ -65,20 +64,36 @@ export default function AdminSubscribersPage() {
         <p className="mt-2 text-xs text-text-muted/80">Signed in as {email}</p>
       )}
 
-      {loading && (
+      {!ready && (
         <p className="mt-8 text-sm text-text-muted" role="status">
           Loading…
         </p>
       )}
-      {error && (
-        <p className="mt-8 text-sm text-rose-300" role="alert">
-          {error}
+      {needsSignIn && (
+        <p className="mt-8 text-sm text-text-muted" role="status">
+          <Link
+            href="/login?next=/admin/subscribers"
+            className="text-accent-gold hover:underline"
+          >
+            Sign in
+          </Link>{" "}
+          required.
         </p>
       )}
-      {!loading && !error && count !== null && (
+      {showLoading && (
+        <p className="mt-8 text-sm text-text-muted" role="status">
+          Loading…
+        </p>
+      )}
+      {load.status === "error" && (
+        <p className="mt-8 text-sm text-rose-300" role="alert">
+          {load.message}
+        </p>
+      )}
+      {load.status === "ok" && (
         <div className="mt-8 space-y-4">
           <p className="font-[family-name:var(--font-cinzel)] text-4xl text-accent-gold">
-            {count}
+            {load.count}
           </p>
           <p className="text-sm text-text-muted">active subscribers</p>
           <a
