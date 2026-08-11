@@ -6,13 +6,8 @@ import { formatPlanLabel } from "@/lib/access";
 import { usePlan } from "./PlanProvider";
 
 /**
- * Collapses "Account" + the plan badge + "Sign out" into one control.
- *
- * The desktop nav previously laid all three out as separate items alongside
- * seven page links and Random, which was eleven things across the bar and
- * wrapped ("Bones &" / "Shadows" on two lines) on ordinary desktop widths.
- * One trigger, one dropdown, in the site's own dark/gold palette rather than
- * a native menu.
+ * Account control for the desktop bar: plan badge + links that used to
+ * crowd the primary nav (Journey, Favourites, My Codex).
  */
 export function UserMenu() {
   const { plan, isPaid, signOut } = usePlan();
@@ -37,6 +32,9 @@ export function UserMenu() {
     };
   }, [open]);
 
+  const itemClass =
+    "block px-4 py-2 text-sm text-text-primary hover:bg-background/60 hover:text-accent-gold";
+
   return (
     <div ref={ref} className="relative">
       <button
@@ -44,7 +42,7 @@ export function UserMenu() {
         onClick={() => setOpen((v) => !v)}
         aria-expanded={open}
         aria-haspopup="menu"
-        className="flex items-center gap-1.5 rounded border border-border px-2.5 py-1 text-sm text-text-muted transition hover:border-accent-gold/40 hover:text-accent-gold"
+        className="flex items-center gap-1.5 whitespace-nowrap rounded border border-border px-2.5 py-1 text-sm text-text-muted transition hover:border-accent-gold/40 hover:text-accent-gold"
       >
         {isPaid ? (
           <span className="text-[10px] tracking-wide text-accent-gold uppercase">
@@ -70,13 +68,13 @@ export function UserMenu() {
       {open && (
         <div
           role="menu"
-          className="absolute right-0 top-full mt-2 w-44 rounded-lg border border-border bg-surface py-1.5 shadow-[0_12px_32px_rgba(0,0,0,0.45)]"
+          className="absolute right-0 top-full z-50 mt-2 w-48 rounded-lg border border-border bg-surface py-1.5 shadow-[0_12px_32px_rgba(0,0,0,0.45)]"
         >
           <Link
             href="/account"
             role="menuitem"
             onClick={() => setOpen(false)}
-            className="block px-4 py-2 text-sm text-text-primary hover:bg-background/60 hover:text-accent-gold"
+            className={itemClass}
           >
             Account
           </Link>
@@ -84,15 +82,23 @@ export function UserMenu() {
             href="/journey"
             role="menuitem"
             onClick={() => setOpen(false)}
-            className="block px-4 py-2 text-sm text-text-primary hover:bg-background/60 hover:text-accent-gold"
+            className={itemClass}
           >
             My Journey
+          </Link>
+          <Link
+            href="/favourites"
+            role="menuitem"
+            onClick={() => setOpen(false)}
+            className={itemClass}
+          >
+            Favourites
           </Link>
           <Link
             href="/my-codex"
             role="menuitem"
             onClick={() => setOpen(false)}
-            className="block px-4 py-2 text-sm text-text-primary hover:bg-background/60 hover:text-accent-gold"
+            className={itemClass}
           >
             My Codex
           </Link>
