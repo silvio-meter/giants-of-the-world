@@ -212,8 +212,10 @@ Era/timeline filter still deferred (needs methodology).
 
 ## Open items (priority order)
 
-1. **Distribution** — X + Reddit + IG with UTM (`utm_source` + `utm_medium=post`);
-   use live OG cards (atlas, map, motifs). No new code required.
+1. **Distribution** - X, Instagram, YouTube, Pinterest with UTM
+   (`utm_source` + `utm_medium=post` or `bio`). Pinterest is the heaviest
+   published channel; do not omit it. Discord shares use only
+   `utm_source=discord&utm_medium=post` (see `UTM.md`). No new code required.
 2. **One Seam Issue 2** — new draft in `issues.ts`, admin preview, owner
    approve, then list send. Weekly when there is a seam; no filler.
 3. **Research packets (do not invent):**
@@ -241,7 +243,7 @@ Era/timeline filter still deferred (needs methodology).
 | From address | `NEWSLETTER_FROM` or default seam@ |
 | Grant admin emails | `LIFETIME_GRANT_EMAILS` |
 | Subscriber admin UI | `/admin/subscribers` |
-| UTM scheme | `UTM.md` (`x` / `instagram` / `reddit` + `post` or `bio`) |
+| UTM scheme | `UTM.md` (`x` / `instagram` / `youtube` / `pinterest` + `post` or `bio`; `discord` only with `post`) |
 
 ## Gotchas (still true)
 
