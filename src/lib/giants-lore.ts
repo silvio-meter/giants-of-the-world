@@ -1,7 +1,12 @@
 import "server-only";
 import loreData from "@/data/giants.lore.json";
 
-import type { Chain, GiantSections, ScholarlyNote } from "./types";
+import type {
+  Chain,
+  GiantHandling,
+  GiantSections,
+  ScholarlyNote,
+} from "./types";
 
 type LoreEntry = {
   fullDescription: string;
@@ -12,6 +17,8 @@ type LoreEntry = {
   scholarlySources?: string[];
   /** The chain of custody, evidence URLs and all. Stripped before it is served. */
   chain?: Chain;
+  /** Editorial / legal handling — not served to the client catalogue. */
+  handling?: GiantHandling;
 };
 
 const lore = loreData as Record<string, LoreEntry>;

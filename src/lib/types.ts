@@ -75,6 +75,12 @@ export interface Giant {
    * rungs are waiting. Public by design, since it is what opens the question.
    */
   chainSummary?: { claim: string; verdict: string; rungCount: number };
+  /**
+   * Editorial / legal handling for this entry (can we retell freely, living
+   * culture constraints, known distortions). Lore-class: stripped from the
+   * public client catalogue; lives only in giants.lore.json.
+   */
+  handling?: GiantHandling;
   /** Keys into motifs.json — the cross-cultural layer. Not lore; safe for the client. */
   motifs?: string[];
   /**
@@ -102,6 +108,15 @@ export interface Giant {
   sources: string[];
   image: string;
   imageAlt: string;
+}
+
+/** Editorial handling notes, one object per giant (server/lore only). */
+export interface GiantHandling {
+  publishable: boolean;
+  living: string;
+  distortions: string;
+  take: string;
+  cite: string;
 }
 
 export type FindingCategory = "claim" | "hoax" | "modern-legend" | "archaeological";

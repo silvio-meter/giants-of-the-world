@@ -32,6 +32,9 @@ const LORE_FIELDS = [
   // derived summary below; the rungs, the floor and every evidence URL are
   // paid and must never reach giants.public.json.
   "chain",
+  // Editorial / legal handling notes (publishable, living culture, etc.).
+  // Internal only — never the client catalogue bundle.
+  "handling",
 ];
 
 /**
@@ -100,6 +103,7 @@ export function splitMaster(master) {
             scholarlySources: giant.scholarlySources ?? [],
           }
         : {}),
+      ...(giant.handling ? { handling: giant.handling } : {}),
     };
   }
 
