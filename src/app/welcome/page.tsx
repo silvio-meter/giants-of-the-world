@@ -8,6 +8,7 @@ import { getFreeGiants } from "@/lib/giants";
  */
 export const metadata: Metadata = {
   title: "Welcome",
+  alternates: { canonical: "/welcome" },
   robots: { index: false, follow: false },
 };
 

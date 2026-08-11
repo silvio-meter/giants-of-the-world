@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 /** Auth pages are client components and must never be indexed. */
 export const metadata: Metadata = {
   title: "Sign in",
+  alternates: { canonical: "/login" },
   robots: { index: false, follow: false },
 };
 
