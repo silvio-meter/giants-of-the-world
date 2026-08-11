@@ -56,7 +56,13 @@ const tools = [
   },
 ];
 
-/** Curated doorway order for the free strip — recognition first, then range. */
+/**
+ * Homepage strip only: curated showcase, not "every free entry".
+ * freeEntry is a separate access question. Living-community and
+ * no-attributable-community free entries stay free to read but are not
+ * listed here (see HANDOFF "Free set").
+ * Recognition first, then range. Exactly these ten, no fallback.
+ */
 const FREE_STRIP_ORDER = [
   "ymir",
   "nephilim",
@@ -65,8 +71,6 @@ const FREE_STRIP_ORDER = [
   "polyphemus",
   "ravana",
   "oni",
-  "tsul-kalu",
-  "si-te-cah",
   "jentilak",
   "fomorians",
   "budj-bim",
@@ -80,10 +84,6 @@ export default function HomePage() {
   const freeStrip = FREE_STRIP_ORDER.map((s) => freeBySlug.get(s)).filter(
     (g): g is NonNullable<typeof g> => Boolean(g)
   );
-  // Any free entry not in the fixed order still appears at the end.
-  for (const g of free) {
-    if (!FREE_STRIP_ORDER.includes(g.slug)) freeStrip.push(g);
-  }
 
   return (
     <div className="relative">
