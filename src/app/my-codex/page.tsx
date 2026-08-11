@@ -16,6 +16,7 @@ export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "My Codex",
+  alternates: { canonical: "/my-codex" },
   robots: { index: false, follow: false },
 };
 

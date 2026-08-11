@@ -11,6 +11,7 @@ export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Favourites",
+  alternates: { canonical: "/favourites" },
   robots: { index: false, follow: false },
 };
 
