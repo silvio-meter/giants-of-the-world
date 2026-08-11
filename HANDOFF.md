@@ -61,11 +61,27 @@ do not invent fiction from her name/masks as generic monster material).
 
 ### Free set
 
-**Curated doorways:** `ymir`, `nephilim`, `goliath`, `atlas`, `polyphemus`,
-`ravana`, `oni`, `tsul-kalu`, `si-te-cah`, `jentilak`, `fomorians`, `budj-bim`.
+Access (`freeEntry`) and homepage promotion are separate. There are still
+**16** free entries total; only **10** appear on the homepage strip.
 
-**Restrained (must stay free):** `murkupang`, `thardid-jimbo`, `chinny-kinik`,
-`giant-of-the-forest` — short by admission; never put behind the paywall.
+**Homepage strip (free and promotable):** `ymir`, `nephilim`, `goliath`,
+`atlas`, `polyphemus`, `ravana`, `oni`, `jentilak`, `fomorians`, `budj-bim`.
+Public-domain or, for `budj-bim`, an explicit decision that the point is
+landscape and aquaculture. Source of truth: `FREE_STRIP_ORDER` in
+`src/app/page.tsx` (explicit list only; no "append all free" fallback).
+
+**Free to read, never promoted:** `tsul-kalu`, `si-te-cah`, `murkupang`,
+`thardid-jimbo`, `chinny-kinik`, `giant-of-the-forest`. Living-community
+entries and entries where the owning community cannot be established. They
+stay free to read and free for SEO (sitemap priority 0.9 unchanged).
+
+- Short / restrained entries (`murkupang`, `thardid-jimbo`, `chinny-kinik`,
+  `giant-of-the-forest`): never put behind the paywall (do not charge for
+  an admission that the record is thin).
+- `tsul-kalu` and `si-te-cah`: charging for living-community material is
+  worse than giving it free; for `si-te-cah` the page is a correction of a
+  pseudoarchaeological claim, so a paywall would leave the fiction free and
+  the correction paid.
 
 Keep free a minority. SEO funnel, not half the codex.
 
@@ -226,7 +242,12 @@ Era/timeline filter still deferred (needs methodology).
      art and sourced prose.
 4. Optional: surface `handling` for paid writers/admin (not public catalogue).
 5. Respect `publishable: false` / living-culture notes when writing new prose
-   or marketing (especially `dzunukwa`).
+   or marketing (especially `dzunukwa`). **Free to read, never promoted**
+   entries (`tsul-kalu`, `si-te-cah`, restrained shorts) do not go into
+   Pinterest pins, One Seam issues, social posts, or the homepage strip.
+   On 2026-08-11 the matching Pinterest move was done: `tsul-kalu`,
+   `chinny-kinik`, `murkupang`, `thardid-jimbo`, plus `dzunukwa` and `gaoh`,
+   moved from public boards to the private **Working file** board.
 6. Era/timeline filter on the map — deferred until methodology exists.
 7. i18n UI shell (HR) without translating all lore.
 8. PWA / Discord — only when real, never as “coming” on the price card.
