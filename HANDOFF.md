@@ -2,14 +2,24 @@
 
 Session-continuity notes. `README.md` / `SETUP.md` / `DEMO.md` describe the
 product and setup; this file is *where things stand* and *how work happens*.
-Snapshot as of **2026-08-11** — verify against the code before relying on
-counts or paths.
+Snapshot as of **2026-08-11** (post-#73 handling, #74 nav) — verify against
+the code before relying on counts or paths.
 
 ## Current state
 
 Live on **giantscodex.com**, `main` continuous-deployed via Vercel.
-Recent main tips: freemium + My Journey marks (#69), One Seam list (#70),
-Issue 1 Atlas send tooling (#71), section X cards (#66–#68).
+
+**Recent main tips:**
+
+| PR | What |
+| -- | ---- |
+| #74 | Desktop nav: account links moved into UserMenu |
+| #73 | Editorial `handling` on all 84 giants (lore-only) |
+| #72 | Prior HANDOFF refresh |
+| #71 | One Seam Issue 1 (Atlas) admin send |
+| #70 | One Seam list, welcome, unsubscribe |
+| #69 | Freemium tighten + My Journey marks |
+| #66–#68 | Section + map X/OG cards; footer email hide on entry |
 
 ### Shipped product surface
 
@@ -23,11 +33,13 @@ Issue 1 Atlas send tooling (#71), section X cards (#66–#68).
 | **My Journey marks** (3 private toggles / entry) | Live — `/journey` |
 | Chain of custody (subset of entries) | Live |
 | Scholarly Notes (subset; gated independently of freeEntry) | Live |
+| **Editorial handling** (`publishable`, living, distortions, take, cite) | Live — **lore only**, all 84 |
 | Evidence page, privacy/terms, refund copy | Live |
 | Per-giant OG / Twitter 1200×630 cards | Live |
-| Section cards: `/map`, `/motifs`, `/findings`, `/compare`, `/near` | Live (need `twitter-image` + page meta) |
+| Section cards: `/map`, `/motifs`, `/findings`, `/compare`, `/near` | Live (`twitter-image` + page meta) |
 | **One Seam** newsletter (double opt-in, Resend) | Live |
 | One Seam Issue 1 (Atlas) content + admin send | Live — first blast sent |
+| Header: product bar + account dropdown | Live (#74) |
 | Umami + light `track()` events | Live |
 | TikTok | Removed from social + short redirects |
 
@@ -36,13 +48,16 @@ Issue 1 Atlas send tooling (#71), section X cards (#66–#68).
 Compute, do not quote stale numbers from prose:
 
 ```bash
-node -e 'const g=require("./src/data/giants.json");console.log(g.length,"entries,",g.filter(x=>x.freeEntry).length,"free,",g.filter(x=>x.scholarlyNotes).length,"scholarly,",g.filter(x=>x.chain).length,"chains")'
+node -e 'const g=require("./src/data/giants.json");console.log(g.length,"entries,",g.filter(x=>x.freeEntry).length,"free,",g.filter(x=>x.scholarlyNotes).length,"scholarly,",g.filter(x=>x.chain).length,"chains,",g.filter(x=>x.handling).length,"handling")'
 ```
 
 As of this handoff: **84** entries, **16** free (12 curated doorways plus
 restrained short entries that must stay free), **32** with scholarly notes,
-**18** with chains. Every entry has **≥2** `related` links and a dedicated
-share card.
+**18** with chains, **84** with `handling`. Every entry has **≥2** `related`
+links and a dedicated share card.
+
+One handling entry is `publishable: false`: **`dzunukwa`** (Kwakwaka'wakw —
+do not invent fiction from her name/masks as generic monster material).
 
 ### Free set
 
@@ -79,10 +94,20 @@ chain rungs remain paid even on free entries.
 **Pricing** (`/pricing`): Free vs Paid bullets match the gates above.
 Lifetime stays **$129**. No Discord/PWA “coming soon”.
 
+### Editorial handling (lore-only)
+
+- Shape on master: `handling: { publishable, living, distortions, take, cite }`.
+- In **`LORE_FIELDS`** (`scripts/build-data.mjs`) — present in
+  `giants.lore.json`, **never** in `giants.public.json` / client catalogue.
+- Types: `GiantHandling` in `types.ts`; available on `getGiantLore(slug)`.
+- No public UI yet — data is for writers/ops and future gated tooling.
+- Source packets lived in local `handling_out/` (not tracked in git).
+- Em dashes in handling prose were normalized to commas for verify-copy.
+
 ### My Journey marks
 
-- Three toggles per entry (not freeform primary): *This unsettled me*,
-  *I was taught another version*, *I still keep a rule from this*.
+- Three toggles per entry: *This unsettled me*, *I was taught another version*,
+  *I still keep a rule from this*.
 - Placement: bottom of entry, before Related (`JourneyMarks`).
 - Free: **sessionStorage** only + “Sign in to keep your marks.”
 - Paid: sync via `/api/marks` → table `journey_marks`; optional note ≤280;
@@ -108,7 +133,21 @@ Lifetime stays **$129**. No Discord/PWA “coming soon”.
 - Issue content source of truth: `src/lib/one-seam/issues.ts`.
 - **Issue 1 (Atlas)** already sent once to the live list (3 confirmed at
   first blast). Next issue = new draft in code, then preview, then confirm
-  phrase send (or `scripts/send-one-seam-issue-01.mjs`-style one-shot).
+  phrase send.
+
+### Navigation
+
+**Desktop primary bar (product only):**
+
+`Catalogue · Compare · Near · Map · Motifs · Findings · Pricing · Random · [Sign in | plan badge]`
+
+**Account routes** (signed-in) live under **UserMenu** (`LIFETIME` / Account
+dropdown): Account, My Journey, Favourites, My Codex, Sign out.
+
+**Mobile drawer:** same product links + *Your codex* group when signed in.
+
+Do **not** put Journey / Favourites / My Codex back in the desktop row —
+they wrap (“My Journey” on two lines) on ordinary widths.
 
 ### Share cards (X / OG)
 
@@ -135,12 +174,15 @@ partial catalogue. Do not invent “coming” features on the price card.
   If free previews of paid entries change, run
   `node scripts/update-free-preview-snapshot.mjs`.
 - `docs/expansion/` is **gitignored** research material — never track it.
-- User-facing strings: **no em dash** (U+2014); verify-copy enforces this.
+- Local `handling_out/` is a source packet, not committed.
+- User-facing strings: **no em dash** (U+2014); verify-copy enforces this
+  (including data files / lore JSON).
 
 ## Architecture patterns worth knowing
 
-- **LORE_FIELDS** in `scripts/build-data.mjs` — anything paywalled must be
-  listed there and excluded from `GiantCardData` in `format.ts`.
+- **LORE_FIELDS** in `scripts/build-data.mjs` — paywalled **and** internal
+  editorial fields (`handling`, chain body, scholarly, fullDescription, …)
+  must be listed there so they never enter `giants.public.json`.
 - Bundle guards grep built chunks for lore strings — import catalog types
   from `@/lib/format` in client components, never `@/lib/giants`.
 - Scholarly Notes and chains use **standalone** client sections + API checks,
@@ -163,6 +205,8 @@ All shipped to main:
 - **P1:** `/welcome`, welcome mail path (later rebranded into One Seam),
   findings expansion.
 - **P2:** catalogue layers, map tours, near tease, account hub.
+- **Post-P2:** freemium tighten, My Journey marks, One Seam, handling data,
+  desktop nav cleanup (#74).
 
 Era/timeline filter still deferred (needs methodology).
 
@@ -178,13 +222,16 @@ Era/timeline filter still deferred (needs methodology).
      budj-bim, restrained shorts).
    - Geographic import wave (Africa, Levant, SE Asia, Andes, Siberia) with
      art and sourced prose.
-4. Era/timeline filter on the map — deferred until methodology exists.
-5. i18n UI shell (HR) without translating all lore.
-6. PWA / Discord — only when real, never as “coming” on the price card.
-7. Clean up old local worktrees after merges.
-8. Confirm Supabase migrations applied in production:
-   - `journey_marks.sql`
-   - `subscribers_one_seam.sql` (unsubscribe columns)
+4. Optional: surface `handling` for paid writers/admin (not public catalogue).
+5. Respect `publishable: false` / living-culture notes when writing new prose
+   or marketing (especially `dzunukwa`).
+6. Era/timeline filter on the map — deferred until methodology exists.
+7. i18n UI shell (HR) without translating all lore.
+8. PWA / Discord — only when real, never as “coming” on the price card.
+9. Clean up old local worktrees after merges.
+10. Confirm Supabase migrations applied in production:
+    - `journey_marks.sql`
+    - `subscribers_one_seam.sql` (unsubscribe columns)
 
 ## Ops checklist (newsletter / marks)
 
@@ -206,12 +253,15 @@ Era/timeline filter still deferred (needs methodology).
 - Footer newsletter is **hidden** on `/giants/[slug]` (`FooterEmailBand`) so
   it does not stack under the entry form on mobile.
 - Full One Seam list send is gated; do not auto-send on deploy.
+- Desktop nav must stay short; account links belong in `UserMenu`.
 
 ## Verify before claiming done
 
 1. `npm run verify`
 2. After content: `npm run build:data` + free-preview snapshot if previews moved
-3. After UI that touches bundles: production build + `test:bundle` / `test:seo`
-4. Spot production: free showcase full text; non-showcase opening + locks;
+3. After handling or lore fields: confirm `handling` absent from
+   `giants.public.json` and present in `giants.lore.json`
+4. After UI that touches bundles: production build + `test:bundle` / `test:seo`
+5. Spot production: free showcase full text; non-showcase opening + locks;
    paid unlock; Twitter card URL returns 1200×630 PNG; One Seam confirm +
-   welcome; journey marks session vs paid sync
+   welcome; journey marks session vs paid sync; signed-in desktop nav one row
