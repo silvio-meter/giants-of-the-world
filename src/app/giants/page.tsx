@@ -14,6 +14,21 @@ export const metadata: Metadata = {
   title: "Catalogue",
   description: "Browse giants by culture, type, region, or search.",
   alternates: { canonical: "/giants" },
+  // File-based opengraph-image / twitter-image supply the 1200x630 card.
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    siteName: "Giants of the World",
+    url: "/giants",
+    title: "Catalogue · Giants of the World",
+    description: "Browse giants by culture, type, region, or search.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@TheGiantsCodex",
+    title: "Catalogue · Giants of the World",
+    description: "Browse giants by culture, type, region, or search.",
+  },
 };
 
 const SORTS = new Set<GiantSort>([

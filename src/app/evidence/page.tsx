@@ -10,20 +10,22 @@ export const metadata: Metadata = {
   description:
     "Every entry names its sources: the book, the chapter, the collector and the year. How Giants of the World separates documented tradition from unverified claim.",
   alternates: { canonical: "/evidence" },
+  // File-based opengraph-image / twitter-image supply the 1200x630 card.
   openGraph: {
     type: "article",
+    locale: "en_US",
+    siteName: "Giants of the World",
     url: "/evidence",
     title: "How this archive treats evidence · Giants of the World",
     description:
       "Every entry names its sources: the book, the chapter, the collector and the year. How Giants of the World separates documented tradition from unverified claim.",
-    images: [{ url: "/images/featured.jpg", width: 1280, height: 720 }],
   },
   twitter: {
     card: "summary_large_image",
+    site: "@TheGiantsCodex",
     title: "How this archive treats evidence · Giants of the World",
     description:
       "Every entry names its sources: the book, the chapter, the collector and the year. How Giants of the World separates documented tradition from unverified claim.",
-    images: ["/images/featured.jpg"],
   },
 };
 

@@ -4,7 +4,7 @@ import { getAllGiants, getCultures } from "@/lib/giants";
 
 export const size = OG_SIZE;
 export const contentType = OG_CONTENT_TYPE;
-export const alt = "Giants of the World · Giants of the World";
+export const alt = "Catalogue · Giants of the World";
 
 export default function Image() {
   const giants = getAllGiants();
@@ -14,7 +14,7 @@ export default function Image() {
   return new ImageResponse(
     ogCard({
       eyebrow: "The catalogue",
-      title: "Giants of the World",
+      title: "Catalogue",
       context,
     }),
     size
