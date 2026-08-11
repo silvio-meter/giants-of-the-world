@@ -9,8 +9,9 @@ import { formatPlanLabel } from "@/lib/access";
 import { usePlan } from "./PlanProvider";
 
 /**
- * Primary nav: the product surface, not every route.
- * Favourites / My Codex only when signed in (dead ends for anonymous).
+ * Primary nav: product surface only.
+ * Account routes (Journey, Favourites, My Codex) live in UserMenu on desktop
+ * so the bar does not wrap when signed in. Mobile drawer still lists them.
  * About and Evidence live in the footer and on the home tools row.
  */
 const publicNav = [
@@ -23,10 +24,11 @@ const publicNav = [
   { href: "/pricing", label: "Pricing" },
 ] as const;
 
-const signedInNav = [
+const accountNav = [
   { href: "/journey", label: "My Journey" },
   { href: "/favourites", label: "Favourites" },
   { href: "/my-codex", label: "My Codex" },
+  { href: "/account", label: "Account" },
 ] as const;
 
 export function Header() {
@@ -34,14 +36,16 @@ export function Header() {
   const [open, setOpen] = useState(false);
   const { userId, plan, isPaid, signOut, ready } = usePlan();
 
-  const nav = [
-    ...publicNav,
-    ...(ready && userId ? signedInNav : []),
-  ];
-
   function isActive(href: string) {
     return pathname === href || pathname.startsWith(href + "/");
   }
+
+  const linkClass = (href: string) =>
+    `whitespace-nowrap text-sm transition-colors ${
+      isActive(href)
+        ? "text-accent-gold"
+        : "text-text-muted hover:text-text-primary"
+    }`;
 
   return (
     <header className="sticky top-0 z-40 w-full max-w-[100vw] border-b border-border/80 bg-background/85 backdrop-blur-md">
@@ -55,15 +59,11 @@ export function Header() {
         </Link>
 
         <nav className="hidden items-center gap-3 lg:gap-4 xl:gap-5 md:flex">
-          {nav.map((item) => (
+          {publicNav.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className={`text-sm transition-colors ${
-                isActive(item.href)
-                  ? "text-accent-gold"
-                  : "text-text-muted hover:text-text-primary"
-              }`}
+              className={linkClass(item.href)}
             >
               {item.label}
             </Link>
@@ -74,7 +74,7 @@ export function Header() {
           ) : (
             <Link
               href="/login"
-              className="text-sm text-text-muted hover:text-accent-gold"
+              className="whitespace-nowrap text-sm text-text-muted hover:text-accent-gold"
             >
               Sign in
             </Link>
@@ -109,7 +109,7 @@ export function Header() {
       {open && (
         <nav className="border-t border-border bg-surface px-4 py-4 md:hidden">
           <ul className="flex flex-col gap-3">
-            {nav.map((item) => (
+            {publicNav.map((item) => (
               <li key={item.href}>
                 <Link
                   href={item.href}
@@ -142,15 +142,24 @@ export function Header() {
               <RandomGiantButton />
             </li>
             {userId && (
-              <li>
-                <Link
-                  href="/account"
-                  className="block py-1 text-text-primary"
-                  onClick={() => setOpen(false)}
-                >
-                  Account
-                </Link>
-              </li>
+              <>
+                <li className="border-t border-border pt-3">
+                  <p className="pb-1 text-[10px] tracking-[0.2em] text-text-muted uppercase">
+                    Your codex
+                  </p>
+                </li>
+                {accountNav.map((item) => (
+                  <li key={item.href}>
+                    <Link
+                      href={item.href}
+                      className="block py-1 text-text-primary"
+                      onClick={() => setOpen(false)}
+                    >
+                      {item.label}
+                    </Link>
+                  </li>
+                ))}
+              </>
             )}
             <li>
               {userId ? (
