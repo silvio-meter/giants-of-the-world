@@ -25,6 +25,7 @@ import { SourcesSection } from "@/components/SourcesSection";
 import { JourneyMarks } from "@/components/JourneyMarks";
 import { siteUrl } from "@/lib/site";
 import { resolveMotifs } from "@/lib/motifs";
+import { getEntrySeo } from "@/lib/seo-entries";
 
 /**
  * Statically prerendered. The page contains no per-user content: open entries
@@ -51,23 +52,31 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // featured.jpg) is how X cards end up showing the site-wide art instead of
   // the giant. Title/description still must be set here: file-based images do
   // not carry those fields, and Next only merges twitter/openGraph one level.
+  //
+  // A few high-demand slugs override title/description for search and share
+  // text only. The visible H1 and basic account stay on the catalogue fields.
+  const seo = getEntrySeo(giant.slug);
+  const title = seo?.title ?? giant.name;
+  const description = seo?.description ?? giant.shortDescription;
+  const shareTitle = `${title} · Giants of the World`;
+
   return {
-    title: giant.name,
-    description: giant.shortDescription,
+    title,
+    description,
     alternates: { canonical: `/giants/${giant.slug}` },
     openGraph: {
       type: "article",
       locale: "en_US",
       siteName: "Giants of the World",
       url: `/giants/${giant.slug}`,
-      title: `${giant.name} · Giants of the World`,
-      description: giant.shortDescription,
+      title: shareTitle,
+      description,
     },
     twitter: {
       card: "summary_large_image",
       site: "@TheGiantsCodex",
-      title: `${giant.name} · Giants of the World`,
-      description: giant.shortDescription,
+      title: shareTitle,
+      description,
     },
   };
 }
