@@ -5,37 +5,46 @@ import { getGiantLore } from "@/lib/giants-lore";
 import { formatType, type GiantCardData } from "@/lib/format";
 import { getProfile } from "@/lib/profile";
 import { sharedMotifs } from "@/lib/motifs";
-import { barHeightPx, formatMeters } from "@/lib/scale";
+import { barHeightPx, chartScaleToM, formatMeters } from "@/lib/scale";
 import { CompareExportButton } from "./CompareExportButton";
 import { CompareViewTracker } from "./CompareViewTracker";
 import { PremiumLock } from "./PremiumLock";
 
-function ScaleBar({ giant }: { giant: GiantCardData }) {
-  const chartH = 140;
+function ScaleBar({
+  giant,
+  scaleToM,
+}: {
+  giant: GiantCardData;
+  scaleToM: number;
+}) {
+  const chartH = 160;
   return (
-    <div className="flex w-[45%] max-w-[9rem] flex-col items-center gap-2">
-      {giant.heightMeters ? (
-        <>
+    <div className="flex w-[45%] max-w-[9rem] flex-col items-center">
+      <div
+        className="flex w-full items-end justify-center border-b border-border"
+        style={{ height: chartH }}
+      >
+        {giant.heightMeters ? (
           <div
-            className="w-14 rounded-t border border-accent-gold/40 bg-gradient-to-t from-accent-gold/50 to-accent-gold/15 sm:w-16"
-            style={{ height: barHeightPx(giant.heightMeters, chartH, 40) }}
+            className="w-12 rounded-t border border-accent-gold/40 bg-gradient-to-t from-accent-gold/50 to-accent-gold/15 sm:w-14"
+            style={{
+              height: barHeightPx(giant.heightMeters, chartH, 16, scaleToM),
+            }}
           />
-          <span className="text-[10px] text-text-muted">
-            {formatMeters(giant.heightMeters)}
+        ) : (
+          <span className="px-1 pb-2 text-center text-[10px] leading-tight text-text-muted">
+            Scale beyond measurement
           </span>
-        </>
-      ) : (
-        <>
-          <div className="flex h-[140px] w-14 items-end justify-center sm:w-16">
-            <span className="pb-2 text-center text-[10px] leading-tight text-text-muted">
-              Scale beyond measurement
-            </span>
-          </div>
-        </>
-      )}
+        )}
+      </div>
+      {giant.heightMeters ? (
+        <span className="mt-2 text-[10px] tabular-nums text-text-muted">
+          {formatMeters(giant.heightMeters)}
+        </span>
+      ) : null}
       <Link
         href={`/giants/${giant.slug}`}
-        className="text-center text-sm font-medium leading-tight text-text-primary hover:text-accent-gold"
+        className="mt-1 text-center text-sm font-medium leading-tight text-text-primary hover:text-accent-gold"
       >
         {giant.name}
       </Link>
@@ -66,6 +75,7 @@ export async function CompareResults({
   const loreA = unlocked ? getGiantLore(giantA.slug) : null;
   const loreB = unlocked ? getGiantLore(giantB.slug) : null;
   const shared = unlocked ? sharedMotifs(giantA.slug, giantB.slug) : [];
+  const scaleToM = chartScaleToM(giantA.heightMeters, giantB.heightMeters);
 
   if (profile) {
     // Fire-and-forget: a comparison view shouldn't block on the counter write.
@@ -77,12 +87,14 @@ export async function CompareResults({
       <CompareViewTracker a={giantA.slug} b={giantB.slug} unlocked={unlocked} />
 
       <section className="rounded-lg border border-border bg-surface p-5 sm:p-6">
-        <div className="flex items-end justify-center gap-6" style={{ height: 200 }}>
-          <ScaleBar giant={giantA} />
-          <span className="pb-8 font-[family-name:var(--font-cinzel)] text-xs text-text-muted">
-            vs
-          </span>
-          <ScaleBar giant={giantB} />
+        <div className="flex items-start justify-center gap-4 sm:gap-6">
+          <ScaleBar giant={giantA} scaleToM={scaleToM} />
+          <div className="flex items-end pb-1" style={{ height: 160 }}>
+            <span className="font-[family-name:var(--font-cinzel)] text-xs text-text-muted">
+              vs
+            </span>
+          </div>
+          <ScaleBar giant={giantB} scaleToM={scaleToM} />
         </div>
         <p className="mt-4 text-center text-xs text-text-muted">
           Approximate visual only. Mythic heights are not measurements.

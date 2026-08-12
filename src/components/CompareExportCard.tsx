@@ -1,4 +1,4 @@
-import { barHeightPx, formatMeters } from "@/lib/scale";
+import { barHeightPx, chartScaleToM, formatMeters } from "@/lib/scale";
 
 export interface ExportGiant {
   name: string;
@@ -24,6 +24,7 @@ export function CompareExportCard({
   b: ExportGiant;
 }) {
   const chartPx = 90;
+  const scaleToM = chartScaleToM(a.heightMeters, b.heightMeters);
 
   return (
     <div
@@ -125,7 +126,7 @@ export function CompareExportCard({
                 <div
                   style={{
                     width: 26,
-                    height: barHeightPx(g.heightMeters, chartPx, 18),
+                    height: barHeightPx(g.heightMeters, chartPx, 10, scaleToM),
                     background:
                       "linear-gradient(0deg, rgba(201,162,39,0.15), rgba(201,162,39,0.55))",
                     border: "1px solid rgba(201,162,39,0.4)",
