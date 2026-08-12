@@ -30,7 +30,7 @@ export function PremiumLock({
         href="/pricing"
         className="mt-4 inline-flex w-full items-center justify-center rounded border border-accent-gold bg-accent-gold px-4 py-2.5 font-[family-name:var(--font-cinzel)] text-sm tracking-[0.1em] text-background transition hover:bg-accent-gold/90 sm:w-auto sm:min-w-[280px]"
       >
-        {PAYWALL_COPY.buttonLifetime}
+        {PAYWALL_COPY.buttonYearly}
       </Link>
       <p className="mt-2.5 text-xs text-text-muted">
         <Link href="/pricing" className="text-accent-gold hover:underline">
