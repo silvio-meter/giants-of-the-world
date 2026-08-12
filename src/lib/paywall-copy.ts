@@ -3,6 +3,9 @@ import { PLAN_PRICES } from "./plans";
 /**
  * Paywall strings used on entry pages, PremiumLock, and related CTAs.
  * Keep every gated surface on this copy so pricing claims stay honest.
+ *
+ * Yearly is the lead ask (same as the pricing table "Best Value").
+ * Lifetime stays available, never the first button.
  */
 export const PAYWALL_COPY = {
   /** Two short lines under the lock heading. */
@@ -10,11 +13,10 @@ export const PAYWALL_COPY = {
     "The first account is free.",
     "The seams, the sources, and your marks open with membership.",
   ] as const,
-  /** Primary button label (Lifetime is the hero ask). */
-  // Hyphen, not em dash: verify-copy bans U+2014 in user-facing strings.
-  buttonLifetime: `Unlock with Lifetime - ${PLAN_PRICES.lifetime.price}`,
-  /** Secondary link to the full pricing table. */
-  secondary: "See monthly & yearly",
+  /** Primary button: recurring best value. */
+  buttonYearly: `Unlock with Yearly - ${PLAN_PRICES.yearly.price}`,
+  /** Secondary line under the button. */
+  secondary: `Or Lifetime - ${PLAN_PRICES.lifetime.price} · Monthly - ${PLAN_PRICES.monthly.price}`,
   /** Label on the faded story block. */
   continueEntry: "Continue the entry",
 } as const;

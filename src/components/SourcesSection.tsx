@@ -50,7 +50,7 @@ export function SourcesSection({
             href="/pricing"
             className="mt-3 inline-block text-sm text-accent-gold hover:underline"
           >
-            {PAYWALL_COPY.buttonLifetime}
+            {PAYWALL_COPY.buttonYearly}
           </Link>
           <p className="mt-1.5 text-xs text-text-muted">
             <Link href="/pricing" className="hover:text-accent-gold">

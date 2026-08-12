@@ -103,8 +103,9 @@ chain rungs remain paid even on free entries.
 
 - “The first account is free. / The seams, the sources, and your marks open
   with membership.”
-- Button: `Unlock with Lifetime - $129` (plain hyphen; verify-copy bans em dash)
-- Secondary: “See monthly & yearly”
+- Button: `Unlock with Yearly - $49` (lead ask, matches pricing Best Value)
+- Secondary: `Or Lifetime - $129 · Monthly - $4.99`
+- Lifetime stays $129; it is not the first button.
 - Fade label: “Continue the entry”
 
 **Pricing** (`/pricing`): Free vs Paid bullets match the gates above.
