@@ -1,37 +1,51 @@
 import Link from "next/link";
-import { PAYWALL_COPY } from "@/lib/paywall-copy";
+import { IN_CONTENT_CHECKOUT_PLAN, PAYWALL_COPY } from "@/lib/paywall-copy";
+import { CheckoutButton } from "./CheckoutButton";
 
 /**
- * A locked section, for content gated behind any paid plan.
+ * Gated-section UI.
  *
- * Visually matches the CTA box on giant pages (LockedLore). Shared copy lives
- * in paywall-copy so entry fades, scholarly locks, and tool locks stay aligned.
+ * variant "entry" | "compare": the one gold wall on that page, monthly checkout.
+ * variant "later": no button, no prices. Sources/scholarly and extra compare
+ * locks use this so a page never stacks multiple buy asks.
  */
 export function PremiumLock({
-  label,
+  variant,
+  next,
+  laterText,
   className = "",
 }: {
-  label: string;
+  variant: "entry" | "compare" | "later";
+  /** Login return path for the monthly checkout button. */
+  next?: string;
+  laterText?: string;
   className?: string;
 }) {
+  if (variant === "later") {
+    return (
+      <div
+        className={`rounded-lg border border-accent-gold/25 bg-background/50 px-4 py-3 text-center ${className}`}
+      >
+        <p className="text-sm text-text-muted">
+          {laterText ?? PAYWALL_COPY.later}
+        </p>
+      </div>
+    );
+  }
+
+  const copy = variant === "compare" ? PAYWALL_COPY.compare : PAYWALL_COPY.entry;
+
   return (
     <div
-      className={`rounded-lg border border-accent-gold/35 bg-background/60 px-4 py-4 text-center sm:px-5 sm:py-5 ${className}`}
+      className={`rounded-lg border border-accent-gold/35 bg-background/80 px-4 py-4 text-center sm:px-5 sm:py-5 ${className}`}
     >
       <p className="font-[family-name:var(--font-cinzel)] text-sm tracking-wide text-accent-gold">
-        {label}
+        {copy.headline}
       </p>
-      {PAYWALL_COPY.shortLines.map((line) => (
-        <p key={line} className="mt-1.5 text-sm text-text-muted first:mt-1.5">
-          {line}
-        </p>
-      ))}
-      <Link
-        href="/pricing"
-        className="mt-4 inline-flex w-full items-center justify-center rounded border border-accent-gold bg-accent-gold px-4 py-2.5 font-[family-name:var(--font-cinzel)] text-sm tracking-[0.1em] text-background transition hover:bg-accent-gold/90 sm:w-auto sm:min-w-[280px]"
-      >
-        {PAYWALL_COPY.buttonYearly}
-      </Link>
+      <p className="mt-1.5 text-sm text-text-muted">{copy.body}</p>
+      <CheckoutButton plan={IN_CONTENT_CHECKOUT_PLAN} next={next} className="mt-4">
+        {copy.button}
+      </CheckoutButton>
       <p className="mt-2.5 text-xs text-text-muted">
         <Link href="/pricing" className="text-accent-gold hover:underline">
           {PAYWALL_COPY.secondary}

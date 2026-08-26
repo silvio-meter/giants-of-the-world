@@ -25,8 +25,11 @@ import assert from "node:assert/strict";
 const BASE = process.env.BASE;
 const skip = BASE ? false : "BASE not set";
 
-/** The opening line of LockedLore's call to action. */
-const LOCKED_MARKER = "Free readers get the opening";
+/** Markers that the entry is not fully open to a logged-out reader. */
+const LOCKED_MARKERS = [
+  "Continue this account.",
+  "unverified folklore, not a membership gate",
+];
 
 const get = (path) =>
   fetch(BASE + path, { credentials: "omit", cache: "no-store" }).then((r) => r.text());
@@ -51,10 +54,13 @@ async function survey() {
   const rows = [];
   for (let i = 0; i < unique.length; i += 6) {
     const batch = await Promise.all(
-      unique.slice(i, i + 6).map(async (c) => ({
-        ...c,
-        locked: (await get(`/giants/${c.slug}`)).includes(LOCKED_MARKER),
-      }))
+      unique.slice(i, i + 6).map(async (c) => {
+        const html = await get(`/giants/${c.slug}`);
+        return {
+          ...c,
+          locked: LOCKED_MARKERS.some((m) => html.includes(m)),
+        };
+      })
     );
     rows.push(...batch);
   }

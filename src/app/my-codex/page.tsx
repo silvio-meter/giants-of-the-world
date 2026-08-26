@@ -125,7 +125,7 @@ export default async function MyCodexPage() {
           </dl>
         ) : (
           <div className="mt-4">
-            <PremiumLock label="Unlock the per-culture breakdown" />
+            <PremiumLock variant="later" laterText="The per-culture breakdown comes with the same membership." />
           </div>
         )}
       </section>
@@ -164,7 +164,7 @@ export default async function MyCodexPage() {
           </>
         ) : (
           <div className="mt-4">
-            <PremiumLock label="Unlock your personal collection and motif seals" />
+            <PremiumLock variant="later" laterText="Your collection and motif seals come with the same membership." />
           </div>
         )}
       </section>

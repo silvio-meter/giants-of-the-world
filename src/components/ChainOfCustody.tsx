@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
 import { usePlan } from "./PlanProvider";
 
 export interface ChainRung {
@@ -144,12 +143,9 @@ export function ChainOfCustody({
               {summary.rungCount} surviving witnesses stand behind that verdict,
               oldest at the bottom, each with what it actually says.
             </p>
-            <Link
-              href="/pricing"
-              className="mt-3 inline-block text-sm text-accent-gold hover:underline"
-            >
-              View pricing →
-            </Link>
+            <p className="mt-3 text-sm text-text-muted">
+              The rungs come with the same membership.
+            </p>
           </div>
         )
       )}

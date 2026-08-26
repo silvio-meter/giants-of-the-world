@@ -101,15 +101,25 @@ chain rungs remain paid even on free entries.
 
 **Paywall copy** (shared via `src/lib/paywall-copy.ts`):
 
-- “The first account is free. / The seams, the sources, and your marks open
-  with membership.”
-- Button: `Unlock with Yearly - $49` (lead ask, matches pricing Best Value)
-- Secondary: `Or Lifetime - $129 · Monthly - $4.99`
-- Lifetime stays $129; it is not the first button.
-- Fade label: “Continue the entry”
+- In-content locks lead with Monthly. Checkout posts `{ plan: "monthly" }`,
+  which maps to `STRIPE_PRICE_MONTHLY` (live `price_1TwPRNLVS7bQbGBigBO0l4WT`).
+  Do not create Stripe products. Do not change $4.99 / $49 / $129.
+- One gold wall per page. Primary button only:
+  - Locked giant: `Unlock this entry · $4.99/month`. Headline: Continue this
+    account.
+  - Compare first lock: `Unlock this comparison · $4.99/month`. Headline:
+    Unlock what they share.
+- Secondary text: `Yearly $49 · Lifetime $129 · 14-day refund, no questions`
+- Later locks (sources, scholarly): "Sources and scholarly notes come with
+  the same membership." No button, no prices.
+- Free 16: no checkout CTA, including Scale. Scholarly notes stay gated as
+  a later lock without a button.
+- Kandahar / Kunar (`giant-of-kandahar`, `giant-of-kunar`): zero checkout. If
+  the story is cut: "This is unverified folklore, not a membership gate."
+  Links to `/evidence` and `/findings`.
 
-**Pricing** (`/pricing`): Free vs Paid bullets match the gates above.
-Lifetime stays **$129**. No Discord/PWA “coming soon”.
+**Pricing** (`/pricing`): Yearly stays Best Value. Free vs Paid bullets match
+the gates above. Lifetime stays **$129**. No Discord/PWA "coming soon".
 
 ### Editorial handling (lore-only)
 

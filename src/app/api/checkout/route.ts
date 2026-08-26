@@ -7,6 +7,18 @@ import { createClient, createServiceRoleClient } from "@/lib/supabase/server";
 
 const PAID: PaidPlan[] = ["monthly", "yearly", "lifetime"];
 
+/** In-content checkout may send the page to return to after login. */
+function safeRelativeNext(value: unknown): string {
+  if (typeof value !== "string" || !value.startsWith("/") || value.startsWith("//")) {
+    return "/pricing";
+  }
+  if (value.includes("://") || value.includes("\\")) {
+    return "/pricing";
+  }
+  return value;
+}
+
+
 export async function POST(request: Request) {
   try {
     if (getPaymentsMode() === "demo") {
@@ -31,11 +43,12 @@ export async function POST(request: Request) {
       );
     }
 
-    const body = (await request.json()) as { plan?: string };
+    const body = (await request.json()) as { plan?: string; next?: string };
     const plan = body.plan as PaidPlan;
     if (!PAID.includes(plan)) {
       return NextResponse.json({ error: "Invalid plan." }, { status: 400 });
     }
+    const nextPath = safeRelativeNext(body.next);
 
     const priceId = priceIdForPlan(plan);
     if (!priceId) {
@@ -52,7 +65,7 @@ export async function POST(request: Request) {
 
     if (!user) {
       return NextResponse.json(
-        { error: "Sign in required.", redirect: "/login?next=/pricing" },
+        { error: "Sign in required.", redirect: `/login?next=${encodeURIComponent(nextPath)}` },
         { status: 401 }
       );
     }

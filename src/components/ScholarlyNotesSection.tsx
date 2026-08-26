@@ -88,7 +88,7 @@ export function ScholarlyNotesSection({ slug }: { slug: string }) {
         </p>
       ) : (
         <div className="mt-4">
-          <PremiumLock label="Unlock scholarly notes and citations" />
+          <PremiumLock variant="later" />
         </div>
       )}
     </section>

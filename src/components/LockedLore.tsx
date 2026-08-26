@@ -3,8 +3,8 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { splitParagraphs } from "@/lib/content";
-import { refundDays } from "@/lib/site";
-import { PAYWALL_COPY } from "@/lib/paywall-copy";
+import { PAYWALL_COPY, isFolkloreNoCheckout } from "@/lib/paywall-copy";
+import { PremiumLock } from "./PremiumLock";
 import { MysteryNote } from "./MysteryNote";
 import { DeepSections } from "./DeepSections";
 import { GlossaryText } from "./GlossaryText";
@@ -166,33 +166,29 @@ export function LockedLore({
                 Unsealing the rest of the account…
               </p>
             ) : (
-              <div className="rounded-lg border border-accent-gold/35 bg-background/80 px-4 py-4 text-center sm:px-5 sm:py-5">
-                <p className="font-[family-name:var(--font-cinzel)] text-sm tracking-wide text-accent-gold">
-                  {PAYWALL_COPY.continueEntry}
-                </p>
-                {PAYWALL_COPY.shortLines.map((line) => (
-                  <p key={line} className="mt-1.5 text-sm text-text-muted">
-                    {line}
+              isFolkloreNoCheckout(slug) ? (
+                <div className="rounded-lg border border-border bg-background/80 px-4 py-4 text-center sm:px-5 sm:py-5">
+                  <p className="font-[family-name:var(--font-cinzel)] text-sm tracking-wide text-text-primary">
+                    {PAYWALL_COPY.folkloreHeadline}
                   </p>
-                ))}
-                <Link
-                  href="/pricing"
-                  className="mt-4 inline-flex w-full items-center justify-center rounded border border-accent-gold bg-accent-gold px-4 py-2.5 font-[family-name:var(--font-cinzel)] text-sm tracking-[0.1em] text-background transition hover:bg-accent-gold/90 sm:w-auto sm:min-w-[280px]"
-                >
-                  {PAYWALL_COPY.buttonYearly}
-                </Link>
-                <p className="mt-2 text-xs text-accent-gold/80">
-                  {refundDays}-day refund, no questions asked
-                </p>
-                <p className="mt-2.5 text-xs text-text-muted">
-                  <Link
-                    href="/pricing"
-                    className="text-accent-gold hover:underline"
-                  >
-                    {PAYWALL_COPY.secondary}
-                  </Link>
-                </p>
-              </div>
+                  <p className="mt-1.5 text-sm text-text-muted">
+                    <Link
+                      href="/evidence"
+                      className="text-accent-gold hover:underline"
+                    >
+                      {PAYWALL_COPY.folkloreBody}
+                    </Link>{" "}
+                    <Link
+                      href="/findings"
+                      className="text-accent-gold hover:underline"
+                    >
+                      Findings
+                    </Link>
+                  </p>
+                </div>
+              ) : (
+                <PremiumLock variant="entry" next={`/giants/${slug}`} />
+              )
             )}
           </div>
         </div>

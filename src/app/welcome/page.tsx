@@ -16,7 +16,7 @@ const steps = [
   {
     n: "01",
     title: "Open a free entry",
-    body: "Start with a full account that ships unlocked. Ymir, Goliath, Ravana and the rest of the free set are complete pages, not teasers.",
+    body: "Start with a full account that ships unlocked. Ymir, Goliath, Ravana and the rest of the free set open the story in full. Scholarly notes and extra sources come with membership.",
     href: "/giants/ymir",
     cta: "Read Ymir",
   },

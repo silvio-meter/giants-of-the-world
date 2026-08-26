@@ -351,7 +351,7 @@ export function JourneyPageClient({
               </div>
             ) : (
               <div className="mt-4">
-                <PremiumLock label="Export your marks with membership" />
+                <PremiumLock variant="later" laterText="Export comes with the same membership." />
               </div>
             )}
           </section>

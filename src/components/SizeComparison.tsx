@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import type { GiantCardData } from "@/lib/format";
 import {
   HUMAN_HEIGHT_M,
@@ -8,36 +7,33 @@ import {
   chartScaleToM,
   formatMeters,
 } from "@/lib/scale";
+import { PAYWALL_COPY } from "@/lib/paywall-copy";
 import { usePlan } from "./PlanProvider";
 
 interface Props {
   giant: Pick<GiantCardData, "name" | "heightMeters">;
+  /** Showcase free entries show scale with no checkout CTA. */
+  freeEntry?: boolean;
 }
 
 const CHART_H = 168;
 
-export function SizeComparison({ giant }: Props) {
+export function SizeComparison({ giant, freeEntry = false }: Props) {
   const { isPaid, ready } = usePlan();
   // Precomputed in the data. Entries whose tradition gives no usable figure
   // carry null and simply do not render a chart.
   const meters = giant.heightMeters;
   if (!meters) return null;
 
-  if (ready && !isPaid) {
+  // Free 16: show the chart, never a checkout ask. Paid entries: later lock,
+  // no button, so the page keeps a single gold wall on the account fade.
+  if (!freeEntry && ready && !isPaid) {
     return (
       <section className="rounded-lg border border-border bg-surface p-5">
         <h3 className="font-[family-name:var(--font-cinzel)] text-xs tracking-[0.25em] text-accent-gold uppercase">
           Scale
         </h3>
-        <p className="mt-2 text-xs text-text-muted">
-          Size comparison unlocks with any paid plan.
-        </p>
-        <Link
-          href="/pricing"
-          className="mt-3 inline-block text-xs text-accent-gold hover:underline"
-        >
-          View pricing →
-        </Link>
+        <p className="mt-2 text-xs text-text-muted">{PAYWALL_COPY.scaleLater}</p>
       </section>
     );
   }
