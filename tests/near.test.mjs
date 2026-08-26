@@ -8,6 +8,9 @@
 
 import test from "node:test";
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
 
 import { haversineKm, rankByDistance, formatKm, countWord } from "../src/lib/near.ts";
 
@@ -60,4 +63,22 @@ test("small counts are words, large ones are numerals", () => {
   assert.equal(countWord(0), "No");
   assert.equal(countWord(11), "Eleven");
   assert.equal(countWord(40), "40");
+});
+
+test("next.config allows geolocation only on /near", () => {
+  const root = join(dirname(fileURLToPath(import.meta.url)), "..");
+  const config = readFileSync(join(root, "next.config.ts"), "utf8");
+  assert.ok(config.includes('source: "/near"'), "/near header source missing");
+  assert.ok(
+    config.includes("geolocation=(self)"),
+    "/near must allow geolocation=(self)"
+  );
+  assert.ok(
+    config.includes("camera=(), microphone=(), geolocation=(self), payment=()"),
+    "camera/microphone/payment must stay disabled on /near"
+  );
+  assert.ok(
+    config.includes("camera=(), microphone=(), geolocation=(), payment=()"),
+    "everywhere else geolocation stays off"
+  );
 });

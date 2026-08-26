@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { usePlan } from "./PlanProvider";
 import { PAYWALL_COPY } from "@/lib/paywall-copy";
 
@@ -40,22 +39,8 @@ export function SourcesSection({
       {lockedCount > 0 && (
         <div className="mt-4 rounded-lg border border-accent-gold/25 bg-background/50 px-4 py-3 text-center">
           <p className="text-sm text-text-muted">
-            {lockedCount} more source{lockedCount === 1 ? "" : "s"} open with
-            membership.
-          </p>
-          <p className="mt-1 text-xs text-text-muted/80">
-            {PAYWALL_COPY.shortLines[1]}
-          </p>
-          <Link
-            href="/pricing"
-            className="mt-3 inline-block text-sm text-accent-gold hover:underline"
-          >
-            {PAYWALL_COPY.buttonYearly}
-          </Link>
-          <p className="mt-1.5 text-xs text-text-muted">
-            <Link href="/pricing" className="hover:text-accent-gold">
-              {PAYWALL_COPY.secondary}
-            </Link>
+            {lockedCount} more source{lockedCount === 1 ? "" : "s"}.{" "}
+            {PAYWALL_COPY.later}
           </p>
         </div>
       )}

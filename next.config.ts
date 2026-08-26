@@ -43,17 +43,19 @@ const csp = [
   "upgrade-insecure-requests",
 ].join("; ");
 
-const securityHeaders = [
+const baseSecurityHeaders = [
   { key: "Content-Security-Policy", value: csp },
   { key: "X-Content-Type-Options", value: "nosniff" },
   { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
   // Redundant next to frame-ancestors, kept for browsers that predate it.
   { key: "X-Frame-Options", value: "DENY" },
-  {
-    key: "Permissions-Policy",
-    value: "camera=(), microphone=(), geolocation=(), payment=()",
-  },
 ];
+
+/** Default: geolocation off. /near is the only page that may prompt. */
+const permissionsOff =
+  "camera=(), microphone=(), geolocation=(), payment=()";
+const permissionsNear =
+  "camera=(), microphone=(), geolocation=(self), payment=()";
 
 /**
  * Short links for social profiles.
@@ -82,7 +84,33 @@ const nextConfig: NextConfig = {
     }));
   },
   async headers() {
-    return [{ source: "/:path*", headers: securityHeaders }];
+    // /near is the only source with geolocation=(self). The other sources
+    // exclude that path so they cannot AND-disable the prompt. Camera,
+    // microphone and payment stay disabled everywhere. Coords stay out of
+    // the URL in NearClient; this header only lets the browser prompt.
+    return [
+      {
+        source: "/near",
+        headers: [
+          ...baseSecurityHeaders,
+          { key: "Permissions-Policy", value: permissionsNear },
+        ],
+      },
+      {
+        source: "/",
+        headers: [
+          ...baseSecurityHeaders,
+          { key: "Permissions-Policy", value: permissionsOff },
+        ],
+      },
+      {
+        source: "/((?!near$).*)",
+        headers: [
+          ...baseSecurityHeaders,
+          { key: "Permissions-Policy", value: permissionsOff },
+        ],
+      },
+    ];
   },
 };
 

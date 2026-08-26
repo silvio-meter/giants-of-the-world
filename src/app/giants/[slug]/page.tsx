@@ -349,7 +349,7 @@ export default async function GiantDetailPage({ params }: Props) {
             )}
           </dl>
 
-          <SizeComparison giant={giant} />
+          <SizeComparison giant={giant} freeEntry={giant.freeEntry} />
 
           <div className="rounded-lg border border-border bg-surface p-3">
             <p className="text-[10px] tracking-[0.2em] text-text-muted uppercase">

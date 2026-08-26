@@ -9,6 +9,7 @@ import { barHeightPx, chartScaleToM, formatMeters } from "@/lib/scale";
 import { CompareExportButton } from "./CompareExportButton";
 import { CompareViewTracker } from "./CompareViewTracker";
 import { PremiumLock } from "./PremiumLock";
+import { PAYWALL_COPY } from "@/lib/paywall-copy";
 
 function ScaleBar({
   giant,
@@ -124,7 +125,10 @@ export async function CompareResults({
               <Row label="Fate" a={loreA.fate} b={loreB.fate} />
             </dl>
           ) : (
-            <PremiumLock label="Unlock the fate of both giants" />
+            <PremiumLock
+              variant="compare"
+              next={`/compare?a=${encodeURIComponent(giantA.slug)}&b=${encodeURIComponent(giantB.slug)}`}
+            />
           )}
         </div>
       </section>
@@ -135,7 +139,7 @@ export async function CompareResults({
         </h2>
         {!unlocked ? (
           <div className="mt-4">
-            <PremiumLock label="Unlock the traditions this pair shares" />
+            <PremiumLock variant="later" laterText={PAYWALL_COPY.compareLater} />
           </div>
         ) : shared.length > 0 ? (
           <ul className="mt-4 space-y-3">
@@ -172,7 +176,7 @@ export async function CompareResults({
           </div>
         ) : (
           <div className="mt-4">
-            <PremiumLock label="Unlock both mystery notes" />
+            <PremiumLock variant="later" laterText={PAYWALL_COPY.compareLater} />
           </div>
         )}
       </section>
