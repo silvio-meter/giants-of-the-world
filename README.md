@@ -7,7 +7,7 @@ Live at [giantscodex.com](https://www.giantscodex.com).
 
 - **Next.js** (App Router) + **TypeScript**
 - **Tailwind CSS** + CSS design tokens
-- **Leaflet** + CartoDB Dark Matter tiles
+- **Leaflet** + OpenFreeMap Dark (MapLibre vector tiles)
 - Local JSON data (`src/data/giants.json`, motifs, findings, glossary)
 - **Supabase** (auth + profiles) + **Stripe** (subscriptions + lifetime)
 - **Umami** + **Vercel Analytics** (light event tracking)
