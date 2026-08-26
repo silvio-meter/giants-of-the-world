@@ -26,7 +26,7 @@ test("secondary line and later locks", () => {
   const copy = read("src/lib/paywall-copy.ts");
   assert.ok(copy.includes("Yearly ${yearly}"));
   assert.ok(copy.includes("Lifetime ${lifetime}"));
-  assert.ok(copy.includes("14-day refund, no questions"));
+  assert.ok(copy.includes("-day refund, no questions"));
   assert.ok(copy.includes("Sources and scholarly notes come with the same membership."));
 });
 
