@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 /**
  * Origins the browser legitimately talks to:
- *  - CartoDB   dark map tiles on /map
+ *  - OpenFreeMap Dark vector tiles on /map, /near, and entry maps
  *  - Supabase  browser auth client on /login and /signup
  *  - Vercel    analytics; same-origin in production, va.* on previews
  *  - Umami     cookieless analytics, and it needs TWO different origins:
@@ -17,7 +17,7 @@ const supabaseOrigin = process.env.NEXT_PUBLIC_SUPABASE_URL
   : "https://*.supabase.co";
 
 const VERCEL_ANALYTICS = "https://va.vercel-scripts.com";
-const CARTO_TILES = "https://*.basemaps.cartocdn.com";
+const OPENFREEMAP_TILES = "https://tiles.openfreemap.org";
 const UMAMI_SCRIPT = "https://cloud.umami.is";
 const UMAMI_COLLECT = "https://gateway.umami.is";
 
@@ -33,9 +33,10 @@ const csp = [
   "default-src 'self'",
   `script-src 'self' 'unsafe-inline' ${VERCEL_ANALYTICS} ${UMAMI_SCRIPT}`,
   "style-src 'self' 'unsafe-inline'",
-  `img-src 'self' data: blob: ${CARTO_TILES}`,
+  `img-src 'self' data: blob: ${OPENFREEMAP_TILES}`,
   "font-src 'self' data:",
-  `connect-src 'self' ${supabaseOrigin} ${VERCEL_ANALYTICS} ${UMAMI_SCRIPT} ${UMAMI_COLLECT}`,
+  `connect-src 'self' ${supabaseOrigin} ${VERCEL_ANALYTICS} ${UMAMI_SCRIPT} ${UMAMI_COLLECT} ${OPENFREEMAP_TILES}`,
+  "worker-src 'self' blob:",
   "frame-ancestors 'none'",
   "base-uri 'self'",
   "form-action 'self'",

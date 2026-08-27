@@ -4,7 +4,6 @@ import { useEffect, useMemo, useState } from "react";
 import {
   Circle,
   MapContainer,
-  TileLayer,
   Marker,
   Polyline,
   Popup,
@@ -18,6 +17,7 @@ import type { GiantCardData } from "@/lib/format";
 import { densityCells, motifChains } from "@/lib/map-connections";
 import { motifColor } from "@/lib/motif-color";
 import { FreeBadge } from "./FreeBadge";
+import { OpenFreeMapLayer } from "./OpenFreeMapLayer";
 
 function makeIcon(focused: boolean) {
   if (focused) {
@@ -49,7 +49,7 @@ function makeIcon(focused: boolean) {
   });
 }
 
-/** Drops Leaflet's own "Leaflet" branding link from the attribution control, keeping the OSM/CARTO copyright their tile terms require. */
+/** Drops Leaflet's own "Leaflet" branding link from the attribution control, keeping the OSM/OpenFreeMap copyright their tile terms require. */
 function TrimAttribution() {
   const map = useMap();
   useEffect(() => {
@@ -196,10 +196,7 @@ export function GiantsMap({
           className="h-full w-full"
           worldCopyJump
         >
-          <TileLayer
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>'
-            url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
-          />
+          <OpenFreeMapLayer />
           <FitOrFocus points={points} focus={focusPoint} />
           <TrimAttribution />
 

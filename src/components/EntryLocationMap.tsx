@@ -1,8 +1,9 @@
 "use client";
 
-import { MapContainer, Marker, TileLayer } from "react-leaflet";
+import { MapContainer, Marker } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
+import { OpenFreeMapLayer } from "./OpenFreeMapLayer";
 
 /**
  * Small dark pin map for a single entry. Coordinates only — not a photograph
@@ -37,10 +38,7 @@ export function EntryLocationMap({
       style={{ background: "#0d1117" }}
       aria-label={`Map location for ${name}`}
     >
-      <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
-        url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
-      />
+      <OpenFreeMapLayer />
       <Marker position={[lat, lng]} icon={pin} />
     </MapContainer>
   );
