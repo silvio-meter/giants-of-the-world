@@ -89,22 +89,18 @@ export function CheckoutReturn() {
     if (resumeStarted.current) return;
     resumeStarted.current = true;
 
-    const controller = new AbortController();
-
     void (async () => {
       try {
         const res = await fetch("/api/checkout", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ plan: CHECKOUT_MONTHLY, next: content }),
-          signal: controller.signal,
         });
         const data = (await res.json()) as {
           url?: string;
           error?: string;
           redirect?: string;
         };
-        if (controller.signal.aborted) return;
         if (res.status === 401 && data.redirect) {
           window.location.assign(data.redirect);
           return;
@@ -120,19 +116,15 @@ export function CheckoutReturn() {
           source: "in-content-resume",
         });
         window.location.assign(data.url);
-      } catch (err) {
-        if (controller.signal.aborted) return;
-        if (err instanceof DOMException && err.name === "AbortError") return;
+      } catch {
         setError("Checkout failed. Please try again.");
         resumeStarted.current = false;
         if (here !== content) router.replace(content, { scroll: false });
       }
     })();
 
-    return () => {
-      controller.abort();
-      resumeStarted.current = false;
-    };
+    // Do not abort or clear the ref on cleanup. Strict Mode runs this
+    // effect twice; resetting the flag would POST /api/checkout again.
   }, [
     ready,
     checkoutPlan,

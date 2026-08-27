@@ -95,7 +95,7 @@ export default function PrivacyPage() {
             <strong className="text-text-primary/90">Vercel</strong>{" "}
             (hosting, and cookieless site analytics),{" "}
             <strong className="text-text-primary/90">Resend</strong>{" "}
-            (One Seam confirmation and welcome mail), and{" "}
+            (One Seam confirmation, welcome, and three follow-ups for new confirms only), and{" "}
             <strong className="text-text-primary/90">Umami</strong>{" "}
             (cookieless analytics, hosted in the EU region). Each processes
             data under their own policies as needed to deliver the Service.

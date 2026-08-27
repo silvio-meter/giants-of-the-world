@@ -57,6 +57,8 @@ export async function POST(request: Request) {
           source_page: source,
           consent_text: NEWSLETTER_CONSENT_TEXT,
           subscribed_at: new Date().toISOString(),
+          drip_opt_in_at: null,
+          drip_step: 0,
         })
         .eq("id", existing.id);
 

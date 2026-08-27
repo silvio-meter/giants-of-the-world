@@ -149,11 +149,14 @@ the gates above. Lifetime stays **$129**. No Discord/PWA "coming soon".
 - Promise: one crack in a giant story, once a week. No digests / product spam.
 - Signup UI: footer (hidden on `/giants/[slug]` to avoid double form),
   entry bottom, journey empty state.
-- Double opt-in Resend → confirm → welcome (not Issue 1).
+- Double opt-in Resend → confirm → Email 1 of a 4-mail drip (not Issue 1).
+  Existing list is not enrolled (`drip_opt_in_at` set on new confirms only).
+  Paid members skip remaining drip mails. Cron `/api/cron/drip` daily sends
+  Emails 2-4 (T+3 / T+7 / T+12, Europe/Zagreb) behind `CRON_SECRET`.
 - Sources stored as `footer` | `entry` | `journey`.
-- Unsubscribe: token + `/subscribe/unsubscribe`.
+- Unsubscribe: token + `/subscribe/unsubscribe` + List-Unsubscribe header.
 - SQL: `supabase/subscribers.sql`, `subscribers_double_optin.sql`,
-  `subscribers_one_seam.sql`.
+  `subscribers_one_seam.sql`, `subscribers_drip.sql`.
 - Admin (emails in `LIFETIME_GRANT_EMAILS` only): `/admin/subscribers`
   — count, CSV, Issue 1 preview, full send only with phrase
   `SEND ISSUE 1 TO ALL`.

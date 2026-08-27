@@ -35,13 +35,17 @@ async function redeem(token: string | undefined): Promise<Outcome> {
 
   const unsubscribeToken = randomUUID();
 
+  const now = new Date().toISOString();
   const { error } = await admin
     .from("subscribers")
     .update({
-      confirmed_at: new Date().toISOString(),
+      confirmed_at: now,
       confirm_token: null,
       unsubscribe_token: unsubscribeToken,
       unsubscribed_at: null,
+      // New confirms only. Existing list is never backfilled.
+      drip_opt_in_at: now,
+      drip_step: 1,
     })
     .eq("id", row.id);
 

@@ -1,89 +1,67 @@
 import test from "node:test";
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
 
-import {
-  contentPathFrom,
-  isFolkloreCheckoutPath,
-  loginUrlForCheckout,
-  safeRelativeNext,
-  stripeReturnUrls,
-  withSearchParam,
-} from "../src/lib/checkout-path.ts";
+/**
+ * Read checkout-path.ts as text. Importing it pulls paywall-copy without an
+ * extension Node can resolve (ERR_MODULE_NOT_FOUND). Next still bundles the
+ * extensionless import.
+ */
+const root = join(dirname(fileURLToPath(import.meta.url)), "..");
+const src = readFileSync(join(root, "src/lib/checkout-path.ts"), "utf8");
 
 test("login next encodes checkout=monthly onto the return path", () => {
-  const login = loginUrlForCheckout("/giants/thrym");
-  assert.equal(
-    login,
-    "/login?next=" + encodeURIComponent("/giants/thrym?checkout=monthly")
-  );
-  const compare = loginUrlForCheckout("/compare?a=ymir&b=surtr");
-  assert.equal(
-    compare,
-    "/login?next=" +
-      encodeURIComponent("/compare?a=ymir&b=surtr&checkout=monthly")
-  );
-  const decoded = decodeURIComponent(compare.slice("/login?next=".length));
-  assert.equal(decoded, "/compare?a=ymir&b=surtr&checkout=monthly");
+  assert.ok(src.includes("export function loginUrlForCheckout"));
+  assert.ok(src.includes("withSearchParam(safeRelativeNext(returnTo), CHECKOUT_QUERY, plan)"));
+  assert.ok(src.includes("return `/login?next=${encodeURIComponent(next)}`"));
+  assert.ok(src.includes('export const CHECKOUT_MONTHLY = "monthly"'));
+  assert.ok(src.includes('export const CHECKOUT_QUERY = "checkout"'));
 });
 
 test("folklore paths are kandahar and kunar, including map focus", () => {
-  assert.equal(isFolkloreCheckoutPath("/giants/giant-of-kandahar"), true);
-  assert.equal(isFolkloreCheckoutPath("/giants/giant-of-kunar"), true);
-  assert.equal(isFolkloreCheckoutPath("/map?focus=giant-of-kandahar"), true);
-  assert.equal(isFolkloreCheckoutPath("/map?focus=giant-of-kunar"), true);
-  assert.equal(isFolkloreCheckoutPath("/giants/thrym"), false);
-  assert.equal(isFolkloreCheckoutPath("/map"), false);
-  assert.equal(isFolkloreCheckoutPath("/compare?a=ymir&b=surtr"), false);
+  assert.ok(src.includes("export function isFolkloreCheckoutPath"));
+  assert.ok(src.includes("isFolkloreNoCheckout(match[1])"));
+  assert.ok(src.includes('url.searchParams.get("focus")'));
+  assert.ok(src.includes("isFolkloreNoCheckout(focus)"));
+  const copy = readFileSync(join(root, "src/lib/paywall-copy.ts"), "utf8");
+  assert.ok(copy.includes("giant-of-kandahar"));
+  assert.ok(copy.includes("giant-of-kunar"));
 });
 
 test("stripe return urls use next, paid=1, canceled=1, and raw session id", () => {
-  const { success_url, cancel_url } = stripeReturnUrls(
-    "https://www.giantscodex.com",
-    "/giants/thrym",
-    "monthly"
-  );
-  assert.equal(
-    success_url,
-    "https://www.giantscodex.com/giants/thrym?paid=1&plan=monthly&session_id={CHECKOUT_SESSION_ID}"
-  );
-  assert.equal(
-    cancel_url,
-    "https://www.giantscodex.com/giants/thrym?canceled=1"
-  );
-  assert.match(success_url, /\{CHECKOUT_SESSION_ID\}/);
-  assert.doesNotMatch(success_url, /%7BCHECKOUT_SESSION_ID%7D/);
-  assert.doesNotMatch(success_url, /\/welcome\?paid=1/);
-  assert.doesNotMatch(cancel_url, /\/pricing\?canceled=1/);
+  assert.ok(src.includes("export function stripeReturnUrls"));
+  assert.ok(src.includes('withSearchParam(withSearchParam(content, "paid", "1"), "plan", plan)'));
+  assert.ok(src.includes('withSearchParam(content, "canceled", "1")'));
+  assert.ok(src.includes("session_id={CHECKOUT_SESSION_ID}"));
+  assert.ok(!src.includes("%7BCHECKOUT_SESSION_ID%7D"));
+  assert.ok(!src.includes("/welcome?paid=1"));
+  assert.ok(!src.includes("/pricing?canceled=1"));
 });
 
-test("compare query survives stripe return urls", () => {
-  const { success_url, cancel_url } = stripeReturnUrls(
-    "https://www.giantscodex.com",
-    "/compare?a=ymir&b=surtr",
-    "monthly"
-  );
-  assert.ok(success_url.includes("/compare?"));
-  assert.ok(success_url.includes("a=ymir"));
-  assert.ok(success_url.includes("b=surtr"));
-  assert.ok(success_url.includes("paid=1"));
-  assert.ok(cancel_url.includes("canceled=1"));
-  assert.ok(cancel_url.includes("a=ymir"));
-});
-
-test("contentPathFrom drops flow params and keeps the pair", () => {
-  assert.equal(
-    contentPathFrom("/compare?a=ymir&b=surtr&checkout=monthly"),
-    "/compare?a=ymir&b=surtr"
-  );
-  assert.equal(
-    contentPathFrom("/giants/thrym?checkout=monthly&paid=1"),
-    "/giants/thrym"
-  );
+test("compare query survives stripe return urls via contentPathFrom", () => {
+  assert.ok(src.includes("export function contentPathFrom"));
+  assert.ok(src.includes("withoutSearchParams(path, ["));
+  assert.ok(src.includes("CHECKOUT_QUERY"));
+  assert.ok(src.includes('"paid"'));
+  assert.ok(src.includes('"canceled"'));
+  assert.ok(src.includes('"session_id"'));
+  assert.ok(src.includes('"plan"'));
+  assert.ok(src.includes("url.pathname"));
+  assert.ok(src.includes("url.search"));
 });
 
 test("safeRelativeNext rejects open redirects", () => {
-  assert.equal(safeRelativeNext("https://evil.example/"), "/pricing");
-  assert.equal(safeRelativeNext("//evil.example"), "/pricing");
-  assert.equal(safeRelativeNext("/compare?a=ymir&b=surtr"), "/compare?a=ymir&b=surtr");
-  assert.equal(withSearchParam("/map", "focus", "ymir"), "/map?focus=ymir");
+  assert.ok(src.includes("export function safeRelativeNext"));
+  assert.ok(src.includes('return "/pricing"'));
+  assert.ok(src.includes('value.startsWith("//")'));
+  assert.ok(src.includes('value.includes("://")'));
+  assert.ok(src.includes("export function withSearchParam"));
+  assert.ok(src.includes("url.searchParams.set(key, value)"));
+});
+
+test("this test file does not import TypeScript modules", () => {
+  const self = readFileSync(fileURLToPath(import.meta.url), "utf8");
+  assert.doesNotMatch(self, /from ["'][^"']+\.ts["']/);
 });

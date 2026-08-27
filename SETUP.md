@@ -21,7 +21,8 @@ Optional: disable “Confirm email” under Auth → Providers → Email while t
 
 Also run `supabase/favourites.sql`, `supabase/subscribers.sql`,
 `supabase/subscribers_double_optin.sql`, `supabase/subscribers_one_seam.sql`
-(unsubscribe tokens for One Seam), and `supabase/journey_marks.sql`
+(unsubscribe tokens for One Seam), `supabase/subscribers_drip.sql`
+(confirm drip columns; do not backfill), and `supabase/journey_marks.sql`
 (My Journey marks for paid sync).
 
 ### One Seam (newsletter)
@@ -30,7 +31,9 @@ Also run `supabase/favourites.sql`, `supabase/subscribers.sql`,
 - From: defaults to `Giants Codex <seam@giantscodex.com>`. If that address is
   not verified in Resend yet, set
   `NEWSLETTER_FROM=Giants Codex <hello@giantscodex.com>`.
-- Requires `RESEND_API_KEY`. Double opt-in: confirm link, then welcome mail.
+- Requires `RESEND_API_KEY`. Double opt-in: confirm link, then Email 1 of
+  the 4-mail drip (new confirms only). Emails 2-4 go out via Vercel cron
+  `GET /api/cron/drip` (set `CRON_SECRET`). Reply-To is hello@giantscodex.com.
 - Admin: `/admin/subscribers` for emails in `LIFETIME_GRANT_EMAILS`.
   - Subscriber count + CSV export
   - **Issue 1 (Atlas)** draft: preview to yourself, full send only after typing
