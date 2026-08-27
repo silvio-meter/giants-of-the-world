@@ -64,7 +64,7 @@ async function redeem(token: string | undefined): Promise<Outcome> {
 const COPY: Record<Outcome, { heading: string; body: string }> = {
   confirmed: {
     heading: "You are on the list.",
-    body: "The first seam arrives next week. One crack in a giant story, once a week.",
+    body: "A short welcome, then one seam a week. One crack in a giant story.",
   },
   already: {
     heading: "Already on One Seam.",

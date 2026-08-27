@@ -105,30 +105,8 @@ export function MapFilters({
   }
 
   if (!userId || !allowed) {
-    return (
-      <div className="mb-6 rounded-lg border border-border bg-surface p-4 sm:p-5">
-        <p className="font-[family-name:var(--font-cinzel)] text-xs tracking-[0.2em] text-accent-gold uppercase">
-          Advanced map filters
-        </p>
-        <p className="mt-2 text-sm text-text-muted">
-          Filter pins by culture, type, region, motif, or favourites: a paid
-          codex tool.
-        </p>
-        <div className="mt-3 flex flex-wrap gap-3 text-sm">
-          {!userId ? (
-            <Link
-              href={`/login?next=${encodeURIComponent("/map")}`}
-              className="text-accent-gold hover:underline"
-            >
-              Sign in
-            </Link>
-          ) : null}
-          <Link href="/pricing" className="text-accent-gold hover:underline">
-            View pricing →
-          </Link>
-        </div>
-      </div>
-    );
+    // One gold wall lives on the map page. Do not stack a second buy ask here.
+    return null;
   }
 
   return (

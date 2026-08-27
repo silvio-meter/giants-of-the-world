@@ -20,7 +20,14 @@ import { usePlan } from "./PlanProvider";
  * Three private marks at the bottom of a giant entry.
  * Free: session only. Paid: synced to the account.
  */
-export function JourneyMarks({ slug }: { slug: string }) {
+export function JourneyMarks({
+  slug,
+  allowCheckout = false,
+}: {
+  slug: string;
+  /** Paid sealed entries may point at monthly checkout. Free-16 and folklore must not. */
+  allowCheckout?: boolean;
+}) {
   const { isPaid, ready, userId } = usePlan();
   const [marks, setMarks] = useState<JourneyMarkType[]>([]);
   const [note, setNote] = useState("");
@@ -189,10 +196,21 @@ export function JourneyMarks({ slug }: { slug: string }) {
           >
             Sign in to keep your marks
           </Link>
-          {" · "}
-          <Link href="/pricing" className="text-accent-gold hover:underline">
-            Membership syncs them
-          </Link>
+          {allowCheckout ? (
+            <>
+              {" · "}
+              <Link
+                href={
+                  userId
+                    ? `/giants/${slug}?checkout=monthly`
+                    : `/login?next=${encodeURIComponent(`/giants/${slug}?checkout=monthly`)}`
+                }
+                className="text-accent-gold hover:underline"
+              >
+                Membership syncs them
+              </Link>
+            </>
+          ) : null}
           .
         </p>
       )}

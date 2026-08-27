@@ -3,12 +3,21 @@
 import { useState, type ReactNode } from "react";
 import { usePathname } from "next/navigation";
 import type { PaidPlan } from "@/lib/access";
+import {
+  isFolkloreCheckoutPath,
+  loginUrlForCheckout,
+  safeRelativeNext,
+} from "@/lib/checkout-path";
 import { IN_CONTENT_CHECKOUT_PLAN } from "@/lib/paywall-copy";
 import { umamiEvent } from "@/lib/umami";
 import { usePlan } from "./PlanProvider";
 
-const paymentsMode =
-  (process.env.NEXT_PUBLIC_PAYMENTS_MODE as "demo" | "test" | "live") || "demo";
+/**
+ * Only treat demo as demo when the public env is explicitly set.
+ * An unset NEXT_PUBLIC_PAYMENTS_MODE must not freeze the gold wall; the
+ * server still enforces getPaymentsMode() including secret-key inference.
+ */
+const publicPaymentsMode = process.env.NEXT_PUBLIC_PAYMENTS_MODE;
 
 const GOLD_BUTTON =
   "inline-flex w-full items-center justify-center rounded border border-accent-gold bg-accent-gold px-4 py-2.5 font-[family-name:var(--font-cinzel)] text-sm tracking-[0.1em] text-background transition hover:bg-accent-gold/90 disabled:opacity-60 sm:w-auto sm:min-w-[280px]";
@@ -34,11 +43,11 @@ export function CheckoutButton({
   const { userId, configured } = usePlan();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
-  const returnTo = next ?? pathname ?? "/pricing";
+  const returnTo = safeRelativeNext(next ?? pathname ?? "/pricing");
 
   async function start() {
     setError("");
-    if (paymentsMode === "demo") {
+    if (publicPaymentsMode === "demo") {
       setError("Safe demo mode is on. Use Demo unlock on the pricing page.");
       return;
     }
@@ -47,9 +56,13 @@ export function CheckoutButton({
       return;
     }
     if (!userId) {
-      window.location.assign(
-        `/login?next=${encodeURIComponent(returnTo)}`
-      );
+      if (isFolkloreCheckoutPath(returnTo)) {
+        window.location.assign(
+          `/login?next=${encodeURIComponent(returnTo)}`
+        );
+        return;
+      }
+      window.location.assign(loginUrlForCheckout(returnTo, plan));
       return;
     }
     setLoading(true);

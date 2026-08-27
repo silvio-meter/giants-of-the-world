@@ -25,7 +25,7 @@ export default function robots(): MetadataRoute.Robots {
           "/account",
           "/giants/random",
           // Social bio short links. Same situation: they only ever redirect,
-          // and the thing they redirect to is the homepage carrying campaign
+          // and the thing they redirect to is /welcome carrying campaign
           // parameters, which is not a page anyone should land on from search.
           "/x",
           "/instagram",

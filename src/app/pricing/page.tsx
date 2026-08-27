@@ -32,7 +32,7 @@ const paymentsMode =
  */
 function CheckoutStatus({ onSuccess }: { onSuccess: () => Promise<void> }) {
   const params = useSearchParams();
-  const success = params.get("success") === "1";
+  const success = params.get("success") === "1" || params.get("paid") === "1";
   const canceled = params.get("canceled") === "1";
 
   useEffect(() => {

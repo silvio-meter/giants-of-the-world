@@ -26,6 +26,7 @@ import { JourneyMarks } from "@/components/JourneyMarks";
 import { siteUrl } from "@/lib/site";
 import { resolveMotifs } from "@/lib/motifs";
 import { getEntrySeo } from "@/lib/seo-entries";
+import { isFolkloreNoCheckout } from "@/lib/paywall-copy";
 
 /**
  * Statically prerendered. The page contains no per-user content: open entries
@@ -385,7 +386,10 @@ export default async function GiantDetailPage({ params }: Props) {
         <ChainOfCustody slug={giant.slug} summary={giant.chainSummary} />
       )}
 
-      <JourneyMarks slug={giant.slug} />
+      <JourneyMarks
+        slug={giant.slug}
+        allowCheckout={!giant.freeEntry && !isFolkloreNoCheckout(giant.slug)}
+      />
 
       {related.length > 0 && (
         <section className="mt-14 border-t border-border pt-10">

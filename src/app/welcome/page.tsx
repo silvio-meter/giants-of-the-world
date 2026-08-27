@@ -12,7 +12,9 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
-const steps = [
+const COMPARE_HREF = "/compare?a=ymir&b=surtr";
+
+const unpaidSteps = [
   {
     n: "01",
     title: "Open a free entry",
@@ -24,15 +26,39 @@ const steps = [
     n: "02",
     title: "Compare two giants",
     body: "Pick a pair and see shared motifs, scale and fate side by side. The free opening still works; paid data fills in when you unlock.",
-    href: "/compare",
+    href: COMPARE_HREF,
     cta: "Open Compare",
   },
   {
     n: "03",
-    title: "Save one for later",
-    body: "Favourites sync when you are on a paid plan. Until then, use the catalogue and My Codex once you have opened a few pages.",
-    href: "/giants",
-    cta: "Browse the catalogue",
+    title: "Open a sealed page",
+    body: "Thrym's first paragraph is free. The rest of that story is the $4.99 month.",
+    href: "/giants/thrym",
+    cta: "Read Thrym",
+  },
+] as const;
+
+const paidSteps = [
+  {
+    n: "01",
+    title: "Open a sealed page",
+    body: "The rest of the story is open now. Thrym is a good first sealed account to walk through in full.",
+    href: "/giants/thrym",
+    cta: "Read Thrym",
+  },
+  {
+    n: "02",
+    title: "Compare two giants",
+    body: "Ymir and Surtr side by side: scale stays free, and membership now shows the fate of both and which traditions they share.",
+    href: COMPARE_HREF,
+    cta: "Open Compare",
+  },
+  {
+    n: "03",
+    title: "Draw the map",
+    body: "Pins were always free. Membership draws the motif lines and the pin filters.",
+    href: "/map",
+    cta: "Open the map",
   },
 ] as const;
 
@@ -44,6 +70,7 @@ export default async function WelcomePage({
   const { paid } = await searchParams;
   const justPaid = paid === "1";
   const freeCount = getFreeGiants().length;
+  const steps = justPaid ? paidSteps : unpaidSteps;
 
   return (
     <div className="mx-auto max-w-2xl px-4 py-14 sm:px-6 sm:py-20">
