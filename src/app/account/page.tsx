@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { redirect } from "next/navigation";
+import { CheckoutButton } from "@/components/CheckoutButton";
 import { DeleteAccount } from "@/components/DeleteAccount";
 import {
   canUseFavourites,
@@ -79,12 +80,9 @@ export default async function AccountPage() {
                 Your favourites →
               </Link>
             ) : (
-              <Link
-                href="/pricing"
-                className="text-accent-gold hover:underline"
-              >
-                Unlock the full codex →
-              </Link>
+              <CheckoutButton plan="monthly" next="/account">
+                Unlock the full codex
+              </CheckoutButton>
             )}
             {profile.stripe_customer_id && (
               <Link

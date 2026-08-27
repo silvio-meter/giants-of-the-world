@@ -48,14 +48,14 @@ Value in live use since 2026-08-11: exactly `discord`, lowercase.
 
 Profile and bio links. Use the short form: a profile prints the URL it links
 to, and a raw UTM string reads as clutter next to a handle. Each of these
-redirects to the tagged homepage, so attribution is identical.
+redirects to the tagged welcome page, so attribution is identical.
 
 | Platform  | Put this in the bio                  | It redirects to                                                    |
 |-----------|--------------------------------------|--------------------------------------------------------------------|
-| X         | `https://www.giantscodex.com/x`         | `/?utm_source=x&utm_medium=bio`         |
-| Instagram | `https://www.giantscodex.com/instagram` | `/?utm_source=instagram&utm_medium=bio` |
-| YouTube   | `https://www.giantscodex.com/youtube`   | `/?utm_source=youtube&utm_medium=bio`   |
-| Pinterest | `https://www.giantscodex.com/pinterest` | `/?utm_source=pinterest&utm_medium=bio` |
+| X         | `https://www.giantscodex.com/x`         | `/welcome?utm_source=x&utm_medium=bio`         |
+| Instagram | `https://www.giantscodex.com/instagram` | `/welcome?utm_source=instagram&utm_medium=bio` |
+| YouTube   | `https://www.giantscodex.com/youtube`   | `/welcome?utm_source=youtube&utm_medium=bio`   |
+| Pinterest | `https://www.giantscodex.com/pinterest` | `/welcome?utm_source=pinterest&utm_medium=bio` |
 
 The redirects are defined in `next.config.ts`. Adding a **profile** platform
 means adding it to that list and to the disallow list in `src/app/robots.ts`.

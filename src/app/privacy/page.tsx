@@ -18,7 +18,7 @@ export default function PrivacyPage() {
         <h1 className="mt-2 font-[family-name:var(--font-cinzel)] text-3xl tracking-wide text-accent-gold">
           Privacy Policy
         </h1>
-        <p className="mt-2 text-sm text-text-muted">Last updated: 24 July 2026</p>
+        <p className="mt-2 text-sm text-text-muted">Last updated: 27 August 2026</p>
       </header>
 
       <div className="space-y-6 text-sm leading-relaxed text-text-muted">
@@ -54,8 +54,9 @@ export default function PrivacyPage() {
               from (footer, entry, or journey), the wording you agreed to, and
               the times you submitted and confirmed. You are not subscribed
               until you confirm by email. We use that address only for One Seam
-              (one email per week about a crack in a giant story). We do not
-              sell the list or send product feature spam from it.
+              (a short welcome, then one seam a week about a crack in a giant
+              story). We do not sell the list or send product feature spam from
+              it.
             </li>
             <li>
               <strong className="text-text-primary/90">Usage:</strong> basic
@@ -65,7 +66,7 @@ export default function PrivacyPage() {
             <li>
               <strong className="text-text-primary/90">Analytics:</strong>{" "}
               aggregate page views and a small number of events (newsletter
-              confirmation, reaching checkout). Both analytics tools we use are
+              confirmation, reaching checkout, and purchase). Both analytics tools we use are
               cookieless and neither builds a profile of you across sites.
             </li>
           </ul>
@@ -94,7 +95,7 @@ export default function PrivacyPage() {
             <strong className="text-text-primary/90">Vercel</strong>{" "}
             (hosting, and cookieless site analytics),{" "}
             <strong className="text-text-primary/90">Resend</strong>{" "}
-            (One Seam confirmation and welcome email), and{" "}
+            (One Seam confirmation, welcome, and three follow-ups for new confirms only), and{" "}
             <strong className="text-text-primary/90">Umami</strong>{" "}
             (cookieless analytics, hosted in the EU region). Each processes
             data under their own policies as needed to deliver the Service.

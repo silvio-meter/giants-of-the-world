@@ -1,23 +1,17 @@
 import { NextResponse } from "next/server";
 import type { PaidPlan } from "@/lib/access";
+import {
+  isFolkloreCheckoutPath,
+  loginUrlForCheckout,
+  safeRelativeNext,
+  stripeReturnUrls,
+} from "@/lib/checkout-path";
 import { getPaymentsMode } from "@/lib/payments-mode";
 import { priceIdForPlan, isStripeConfigured, isSupabaseConfigured } from "@/lib/plans";
 import { getStripe, getSiteUrl } from "@/lib/stripe";
 import { createClient, createServiceRoleClient } from "@/lib/supabase/server";
 
 const PAID: PaidPlan[] = ["monthly", "yearly", "lifetime"];
-
-/** In-content checkout may send the page to return to after login. */
-function safeRelativeNext(value: unknown): string {
-  if (typeof value !== "string" || !value.startsWith("/") || value.startsWith("//")) {
-    return "/pricing";
-  }
-  if (value.includes("://") || value.includes("\\")) {
-    return "/pricing";
-  }
-  return value;
-}
-
 
 export async function POST(request: Request) {
   try {
@@ -64,8 +58,12 @@ export async function POST(request: Request) {
     } = await supabase.auth.getUser();
 
     if (!user) {
+      const redirect =
+        plan === "monthly" && !isFolkloreCheckoutPath(nextPath)
+          ? loginUrlForCheckout(nextPath, "monthly")
+          : `/login?next=${encodeURIComponent(nextPath)}`;
       return NextResponse.json(
-        { error: "Sign in required.", redirect: `/login?next=${encodeURIComponent(nextPath)}` },
+        { error: "Sign in required.", redirect },
         { status: 401 }
       );
     }
@@ -126,8 +124,8 @@ export async function POST(request: Request) {
       customer: customerId,
       mode,
       line_items: [{ price: priceId, quantity: 1 }],
-      success_url: `${site}/welcome?paid=1`,
-      cancel_url: `${site}/pricing?canceled=1`,
+      success_url: stripeReturnUrls(site, nextPath, plan).success_url,
+      cancel_url: stripeReturnUrls(site, nextPath, plan).cancel_url,
       client_reference_id: user.id,
       metadata: {
         supabase_user_id: user.id,

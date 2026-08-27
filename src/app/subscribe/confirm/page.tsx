@@ -35,13 +35,17 @@ async function redeem(token: string | undefined): Promise<Outcome> {
 
   const unsubscribeToken = randomUUID();
 
+  const now = new Date().toISOString();
   const { error } = await admin
     .from("subscribers")
     .update({
-      confirmed_at: new Date().toISOString(),
+      confirmed_at: now,
       confirm_token: null,
       unsubscribe_token: unsubscribeToken,
       unsubscribed_at: null,
+      // New confirms only. Existing list is never backfilled.
+      drip_opt_in_at: now,
+      drip_step: 1,
     })
     .eq("id", row.id);
 
@@ -64,7 +68,7 @@ async function redeem(token: string | undefined): Promise<Outcome> {
 const COPY: Record<Outcome, { heading: string; body: string }> = {
   confirmed: {
     heading: "You are on the list.",
-    body: "The first seam arrives next week. One crack in a giant story, once a week.",
+    body: "A short welcome, then one seam a week. One crack in a giant story.",
   },
   already: {
     heading: "Already on One Seam.",

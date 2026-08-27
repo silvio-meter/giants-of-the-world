@@ -16,6 +16,8 @@ import { motifChains } from "@/lib/map-connections";
 import { getAllMotifs, motifFilterOptions } from "@/lib/motifs";
 import { getUserPlan } from "@/lib/profile";
 import { MyJourneyButton } from "@/components/MyJourneyButton";
+import { PremiumLock } from "@/components/PremiumLock";
+import { PAYWALL_COPY, isFolkloreNoCheckout } from "@/lib/paywall-copy";
 
 export const metadata: Metadata = {
   title: "World Map",
@@ -142,7 +144,7 @@ export default async function MapPage({ searchParams }: Props) {
       {/*
         Curated connection stories. lines= draws motif edges; motif= also
         filters pins to that motif when map filters are unlocked (paid). Free
-        visitors still get focus + full pin set with tour copy pointing at pricing.
+        visitors still get focus + the full pin set. Motif lines stay off until paid.
       */}
       <section className="mb-6 rounded-lg border border-border bg-surface/60 p-4">
         <p className="font-[family-name:var(--font-cinzel)] text-[10px] tracking-[0.25em] text-accent-gold/80 uppercase">
@@ -191,15 +193,37 @@ export default async function MapPage({ searchParams }: Props) {
             </li>
           ))}
         </ul>
-        {!filtersUnlocked && (
-          <p className="mt-3 text-[11px] text-text-muted">
-            Connection lines and pin filters unlock with membership.{" "}
-            <Link href="/pricing" className="text-accent-gold hover:underline">
-              View pricing
-            </Link>
-          </p>
-        )}
       </section>
+
+
+      {!filtersUnlocked && (
+        <div className="mb-6">
+          {focusSlug && isFolkloreNoCheckout(focusSlug) ? (
+            <div className="rounded-lg border border-border bg-background/80 px-4 py-4 text-center sm:px-5 sm:py-5">
+              <p className="font-[family-name:var(--font-cinzel)] text-sm tracking-wide text-text-primary">
+                {PAYWALL_COPY.folkloreHeadline}
+              </p>
+              <p className="mt-1.5 text-sm text-text-muted">
+                <Link
+                  href="/evidence"
+                  className="text-accent-gold hover:underline"
+                >
+                  {PAYWALL_COPY.folkloreBody}
+                </Link>
+              </p>
+            </div>
+          ) : (
+            <PremiumLock
+              variant="map"
+              next={
+                focusSlug
+                  ? `/map?focus=${encodeURIComponent(focusSlug)}`
+                  : "/map"
+              }
+            />
+          )}
+        </div>
+      )}
 
       <Suspense
         fallback={

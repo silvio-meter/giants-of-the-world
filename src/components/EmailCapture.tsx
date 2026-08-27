@@ -28,12 +28,12 @@ const COPY = {
 const BUTTON = "Enter the ledger";
 const PLACEHOLDER = "you@domain.com";
 const MICRO =
-  "No sequences. Unsubscribe anytime.";
+  "A short welcome, then one seam a week. Unsubscribe anytime.";
 /** After confirm they get the exact "on the list" line; pre-confirm stays honest. */
 const SUCCESS =
-  "You are on the list. The first seam arrives next week.";
+  "You are on the list. A short welcome, then one seam a week.";
 const SUCCESS_PENDING =
-  "Check your email and open the link to confirm. Then you are on the list - the first seam arrives next week.";
+  "Check your email and open the link to confirm. Then you are on the list - a short welcome, then one seam a week.";
 
 /**
  * One Seam signup. Footer is compact; detail/journey use a card layout.

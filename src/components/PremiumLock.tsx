@@ -5,7 +5,7 @@ import { CheckoutButton } from "./CheckoutButton";
 /**
  * Gated-section UI.
  *
- * variant "entry" | "compare": the one gold wall on that page, monthly checkout.
+ * variant "entry" | "compare" | "map": the one gold wall on that page, monthly checkout.
  * variant "later": no button, no prices. Sources/scholarly and extra compare
  * locks use this so a page never stacks multiple buy asks.
  */
@@ -15,7 +15,7 @@ export function PremiumLock({
   laterText,
   className = "",
 }: {
-  variant: "entry" | "compare" | "later";
+  variant: "entry" | "compare" | "map" | "later";
   /** Login return path for the monthly checkout button. */
   next?: string;
   laterText?: string;
@@ -33,7 +33,12 @@ export function PremiumLock({
     );
   }
 
-  const copy = variant === "compare" ? PAYWALL_COPY.compare : PAYWALL_COPY.entry;
+  const copy =
+    variant === "compare"
+      ? PAYWALL_COPY.compare
+      : variant === "map"
+        ? PAYWALL_COPY.map
+        : PAYWALL_COPY.entry;
 
   return (
     <div

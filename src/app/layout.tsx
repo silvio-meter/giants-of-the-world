@@ -2,8 +2,10 @@ import type { Metadata, Viewport } from "next";
 import { Cinzel, Inter, JetBrains_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import Script from "next/script";
+import { Suspense } from "react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { CheckoutReturn } from "@/components/CheckoutReturn";
 import { PlanProvider } from "@/components/PlanProvider";
 import { FavouritesProvider } from "@/components/FavouritesProvider";
 import { siteUrl, UMAMI_SCRIPT_SRC } from "@/lib/site";
@@ -122,7 +124,12 @@ export default function RootLayout({
         <PlanProvider>
           <FavouritesProvider>
             <Header />
-            <main id="main" className="relative flex-1">{children}</main>
+            <main id="main" className="relative flex-1">
+              <Suspense fallback={null}>
+                <CheckoutReturn />
+              </Suspense>
+              {children}
+            </main>
             <Footer />
           </FavouritesProvider>
         </PlanProvider>

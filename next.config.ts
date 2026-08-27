@@ -80,7 +80,7 @@ const nextConfig: NextConfig = {
   async redirects() {
     return socialShortLinks.map((source) => ({
       source: `/${source}`,
-      destination: `/?utm_source=${source}&utm_medium=bio`,
+      destination: `/welcome?utm_source=${source}&utm_medium=bio`,
       permanent: false,
     }));
   },

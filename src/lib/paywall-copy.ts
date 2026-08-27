@@ -37,6 +37,11 @@ export const PAYWALL_COPY = {
     body: `Scale, culture and region stay free. Membership shows the fate of both, and which traditions this pair actually shares. ${monthly} a month. ${refund}.`,
     button: `Unlock this comparison · ${monthly}/month`,
   },
+  map: {
+    headline: "Unlock the connections",
+    body: `Pins stay free. Membership draws the motif lines and the pin filters. ${monthly} a month. ${refund}.`,
+    button: `Unlock the map · ${monthly}/month`,
+  },
   /** Secondary text under the one gold-wall button. Not a second CTA. */
   secondary: `Yearly ${yearly} · Lifetime ${lifetime} · ${refund}`,
   /** Later locks (sources, scholarly): no button, no prices. */

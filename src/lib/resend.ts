@@ -1,6 +1,12 @@
 import "server-only";
-import { siteUrl } from "./site";
+import { siteUrl, supportEmail } from "./site";
 import { newsletterFromAddress, ONE_SEAM } from "./newsletter";
+import {
+  getDripStep,
+  renderDripHtml,
+  renderDripText,
+  type DripStepId,
+} from "./one-seam/drip";
 
 /**
  * Plain fetch against Resend's REST API rather than their SDK. The app only
@@ -34,6 +40,7 @@ async function sendResendEmail(payload: {
     body: JSON.stringify({
       from: newsletterFromAddress(),
       to: payload.to,
+      reply_to: supportEmail,
       subject: payload.subject,
       text: payload.text,
       html: payload.html,
@@ -53,6 +60,10 @@ async function sendResendEmail(payload: {
   } catch {
     return { ok: true };
   }
+}
+
+function unsubscribeUrl(token: string): string {
+  return `${siteUrl}/subscribe/unsubscribe?token=${encodeURIComponent(token)}`;
 }
 
 /**
@@ -91,7 +102,7 @@ export async function sendConfirmationEmail(
 }
 
 /**
- * One Seam content issue (not the welcome mail). Personalised unsubscribe.
+ * One Seam content issue (not the confirm drip). Personalised unsubscribe.
  */
 export async function sendOneSeamIssueEmail(opts: {
   to: string;
@@ -111,59 +122,31 @@ export async function sendOneSeamIssueEmail(opts: {
   });
 }
 
-/**
- * Sent only after double opt-in succeeds. One Seam welcome - no product
- * funnel, no feature spam. Unsubscribe link is required.
- */
-export async function sendWelcomeEmail(
+/** Confirm drip emails 1-4. List-Unsubscribe + Reply-To hello@. */
+export async function sendDripEmail(
   email: string,
-  unsubscribeToken: string
-): Promise<void> {
-  const unsubUrl = `${siteUrl}/subscribe/unsubscribe?token=${encodeURIComponent(unsubscribeToken)}`;
-  const home = siteUrl;
-
-  const text = [
-    "You are on the list.",
-    "",
-    "Once a week you will get one seam:",
-    "a place where a giant story splits between the older version and the one that travelled farther.",
-    "",
-    "No digests.",
-    "No product spam.",
-    "If an entry on Giants Codex is relevant, the link will be at the bottom.",
-    "",
-    "The first seam arrives next week.",
-    "",
-    `- ${ONE_SEAM.fromName}`,
-    home,
-    "",
-    `Unsubscribe: ${unsubUrl}`,
-  ].join("\n");
-
-  const html = `
-    <div style="font-family:Helvetica,Arial,sans-serif;font-size:15px;line-height:1.6;color:#222;">
-      <p>You are on the list.</p>
-      <p>Once a week you will get one seam:<br/>
-      a place where a giant story splits between the older version and the one that travelled farther.</p>
-      <p>No digests.<br/>No product spam.<br/>
-      If an entry on Giants Codex is relevant, the link will be at the bottom.</p>
-      <p>The first seam arrives next week.</p>
-      <p>- ${ONE_SEAM.fromName}<br/>
-      <a href="${home}">${home.replace(/^https?:\/\//, "")}</a></p>
-      <p style="color:#666;font-size:13px;"><a href="${unsubUrl}">Unsubscribe</a></p>
-    </div>
-  `;
-
-  await sendResendEmail({
+  unsubscribeToken: string,
+  step: DripStepId
+): Promise<ResendSendResult> {
+  const spec = getDripStep(step);
+  const unsubUrl = unsubscribeUrl(unsubscribeToken);
+  return sendResendEmail({
     to: email,
-    subject: ONE_SEAM.listName,
-    text,
-    html,
+    subject: spec.subject,
+    text: renderDripText(spec, unsubUrl),
+    html: renderDripHtml(spec, unsubUrl),
     headers: {
-      // Human unsubscribe URL (welcome + future weekly issues). One-click POST
-      // is omitted until a dedicated endpoint exists.
       "List-Unsubscribe": `<${unsubUrl}>`,
     },
   });
 }
 
+/**
+ * Email 1 of the confirm drip. Fired only after double opt-in succeeds.
+ */
+export async function sendWelcomeEmail(
+  email: string,
+  unsubscribeToken: string
+): Promise<void> {
+  await sendDripEmail(email, unsubscribeToken, 1);
+}

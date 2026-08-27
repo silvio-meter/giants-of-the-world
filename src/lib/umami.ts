@@ -12,9 +12,10 @@ declare global {
  * Umami is cookieless, which is the whole reason it replaced GA4 here: no
  * consent banner is required, so none exists.
  *
- * Deliberately only two events, acquisition and conversion:
+ * Deliberately three events, acquisition and conversion:
  *   email_signup    a newsletter subscription succeeded
- *   checkout_start  a visitor reached Stripe checkout
+ *   checkout_start  a visitor reached Stripe checkout (not conversion)
+ *   purchase        paid=1 return from Stripe (conversion; de-duped)
  *
  * Product usage events (Compare, Map, My Journey) stay on Vercel Analytics
  * and are not duplicated here. At current traffic a wider Umami dashboard

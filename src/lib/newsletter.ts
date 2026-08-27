@@ -1,6 +1,6 @@
 /**
  * One Seam newsletter - list identity, consent, and source tags.
- * One promise: one seam per week. No digests. No product spam.
+ * Promise: a short welcome, then one seam a week. No digests. No product spam.
  */
 
 export const ONE_SEAM = {
@@ -11,7 +11,7 @@ export const ONE_SEAM = {
    * Override with NEWSLETTER_FROM=Giants Codex <hello@giantscodex.com> if needed.
    */
   fromDefault: "Giants Codex <seam@giantscodex.com>",
-  promise: "One crack in a giant story, once a week. No digests. No feature spam.",
+  promise: "A short welcome, then one seam a week. No digests. No feature spam.",
 } as const;
 
 /**
@@ -19,7 +19,7 @@ export const ONE_SEAM = {
  * Change carefully: older rows keep the text they actually agreed to.
  */
 export const NEWSLETTER_CONSENT_TEXT =
-  "One Seam: once a week, one place where a giant story splits. No digests. No product spam. You can unsubscribe at any time.";
+  "One Seam: a short welcome, then one seam a week. One place where a giant story splits. No digests. No product spam. You can unsubscribe at any time.";
 
 export type NewsletterSource = "footer" | "entry" | "journey";
 
