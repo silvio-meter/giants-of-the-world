@@ -409,6 +409,32 @@ export default async function GiantDetailPage({ params }: Props) {
         allowCheckout={!giant.freeEntry && !isFolkloreNoCheckout(giant.slug)}
       />
 
+      {entrySeo?.faqs && entrySeo.faqs.length > 0 ? (
+        <section
+          className="mt-14 border-t border-border pt-10"
+          aria-labelledby="entry-faq-heading"
+        >
+          <h2
+            id="entry-faq-heading"
+            className="font-[family-name:var(--font-cinzel)] text-xs tracking-[0.25em] text-accent-gold uppercase"
+          >
+            Frequently asked
+          </h2>
+          <dl className="mt-4 space-y-5">
+            {entrySeo.faqs.map((faq) => (
+              <div key={faq.question}>
+                <dt className="font-[family-name:var(--font-cinzel)] text-base text-text-primary">
+                  {faq.question}
+                </dt>
+                <dd className="mt-2 text-sm leading-relaxed text-text-muted">
+                  {faq.answer}
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </section>
+      ) : null}
+
       {related.length > 0 && (
         <section className="mt-14 border-t border-border pt-10">
           <h2 className="font-[family-name:var(--font-cinzel)] text-xs tracking-[0.25em] text-accent-gold uppercase">
