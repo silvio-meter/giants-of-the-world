@@ -36,8 +36,8 @@ Also run `supabase/favourites.sql`, `supabase/subscribers.sql`,
   `GET /api/cron/drip` (set `CRON_SECRET`). Reply-To is hello@giantscodex.com.
 - Admin: `/admin/subscribers` for emails in `LIFETIME_GRANT_EMAILS`.
   - Subscriber count + CSV export
-  - **Issue 1 (Atlas)** draft: preview to yourself, full send only after typing
-    `SEND ISSUE 1 TO ALL` (never auto-sends on deploy)
+  - Current issue draft: preview to yourself, full send only after typing
+    `SEND ISSUE <id> TO ALL` (never auto-sends on deploy)
 - Issue content lives in `src/lib/one-seam/issues.ts` (source of truth).
 
 ### Google Sign-In

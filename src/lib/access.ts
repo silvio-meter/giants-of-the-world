@@ -111,7 +111,13 @@ export function isLifetimeGrantEmail(email: string | null | undefined): boolean 
   const raw = process.env.LIFETIME_GRANT_EMAILS ?? "";
   const list = raw
     .split(",")
-    .map((s) => s.trim().toLowerCase())
+    .map((s) =>
+      s
+        .trim()
+        .replace(/^["']+|["']+$/g, "")
+        .trim()
+        .toLowerCase()
+    )
     .filter(Boolean);
   return list.includes(email.trim().toLowerCase());
 }
