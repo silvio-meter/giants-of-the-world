@@ -45,7 +45,14 @@ test("SEO titles omit the site suffix; copy has no em dash", () => {
   assert.ok(src.includes("ten-headed king of the Ramayana"));
   assert.ok(src.includes("Irish adversaries of the Tuatha"));
   assert.ok(src.includes("Lovelock Cave, what Winnemucca wrote"));
-  assert.ok(!src.includes(suffix));
+  // Comment documents the template suffix; titles themselves must omit it.
+  for (const slug of EIGHT) {
+    const block = entryBlock(slug);
+    const title = /title: "([^"]+)"/.exec(block)?.[1] ?? "";
+    assert.ok(title.length > 0, slug);
+    assert.ok(!title.includes(suffix), `${slug} title has site suffix`);
+    assert.ok(!block.includes(em), `${slug} has em dash`);
+  }
   assert.ok(!src.includes(em));
   assert.equal((src.match(/Free sourced entry\./g) || []).length, 8);
 });
