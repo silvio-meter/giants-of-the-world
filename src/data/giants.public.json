@@ -15,6 +15,7 @@
     "height": "Cosmic",
     "shortDescription": "The first being. From his corpse the world was made.",
     "related": [
+      "surtr",
       "thrym",
       "hrungnir",
       "skrymir",
@@ -67,8 +68,8 @@
     "height": "Varied (tradition: great stature)",
     "shortDescription": "The mighty ones of old: offspring of the sons of God and daughters of men.",
     "related": [
-      "goliath",
       "og-of-bashan",
+      "goliath",
       "ad-thamud"
     ],
     "coordinates": [
@@ -117,8 +118,8 @@
     "height": "Six cubits and a span (Masoretic); four cubits and a span (Dead Sea Scrolls)",
     "shortDescription": "The Philistine champion of Gath who fell to a shepherd's stone.",
     "related": [
-      "nephilim",
       "og-of-bashan",
+      "nephilim",
       "uj-ibn-anaq"
     ],
     "coordinates": [
@@ -212,6 +213,7 @@
     "height": "Titanic",
     "shortDescription": "Titan condemned to hold the sky upon his shoulders.",
     "related": [
+      "gigantes",
       "enceladus",
       "porphyrion",
       "alcyoneus",
@@ -247,7 +249,9 @@
     "id": "polyphemus",
     "slug": "polyphemus",
     "name": "Polyphemus",
-    "alsoKnownAs": [],
+    "alsoKnownAs": [
+      "Polyphemos"
+    ],
     "culture": "Greek",
     "region": "Mediterranean",
     "type": "individual",
@@ -255,6 +259,7 @@
     "height": "Cyclopean",
     "shortDescription": "The one-eyed Cyclops who trapped Odysseus in his cave.",
     "related": [
+      "balor",
       "orion",
       "antaeus",
       "geryon",
@@ -879,9 +884,9 @@
     "height": "Fomorian giant",
     "shortDescription": "Fomorian king whose eye destroyed armies: slain by his grandson Lugh.",
     "related": [
-      "cormoran",
-      "gogmagog",
-      "tepegoz"
+      "fomorians",
+      "tepegoz",
+      "polyphemus"
     ],
     "coordinates": [
       54.3,
@@ -1625,8 +1630,7 @@
     "related": [
       "dzunukwa",
       "tsul-kalu",
-      "gaoh",
-      "guanche-giants"
+      "gaoh"
     ],
     "coordinates": [
       40.18,
@@ -2821,8 +2825,8 @@
     "height": "disputed; possibly human-sized",
     "shortDescription": "Earth-born Greek race defeated by the Olympians: man-sized in the earliest art, snake-legged only later.",
     "related": [
-      "polyphemus",
-      "enceladus"
+      "enceladus",
+      "polyphemus"
     ],
     "coordinates": [
       37.98,

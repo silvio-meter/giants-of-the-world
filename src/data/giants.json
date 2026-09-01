@@ -17,6 +17,7 @@
     "fullDescription": "In the yawning void called Ginnungagap, where the heat of Muspellheim met the killing ice of Niflheim, the first life stirred. From melting rime rose Ymir (also named Aurgelmir; the name's two members remain open between clay, gravel, barley or sheaf and roarer or similar, not a settled \"clay-roarer\") neither fully god nor fully giant, but the wet, roaring beginning of both.",
     "mysteryNote": "Some say the surviving giants still taste his blood in every sea. When the tide runs red at sunset, listen: that is not only the sun.",
     "related": [
+      "surtr",
       "thrym",
       "hrungnir",
       "skrymir",
@@ -175,8 +176,8 @@
     "fullDescription": "The Nephilim appear in Genesis in three verses and are never explained. They are on the earth before the flood, born after the sons of God go in to the daughters of men, and the text calls them the mighty men of old, men of renown.",
     "mysteryNote": "The text never measures them. That silence has filled libraries, and more than one forged photograph.",
     "related": [
-      "goliath",
       "og-of-bashan",
+      "goliath",
       "ad-thamud"
     ],
     "coordinates": [
@@ -364,8 +365,8 @@
     "fullDescription": "Goliath of Gath stands in the valley of Elah for forty days and challenges Israel to send one man against him. The armour is described piece by piece before the fight, which is how the story tells you what is about to be irrelevant.",
     "mysteryNote": "The brook in the Valley of Elah still runs. The stones there are ordinary. That is the whole point.",
     "related": [
-      "nephilim",
       "og-of-bashan",
+      "nephilim",
       "uj-ibn-anaq"
     ],
     "coordinates": [
@@ -770,6 +771,7 @@
     "fullDescription": "Atlas, a Titan of the generation before the Olympians, stands at the western edge of the world holding the sky away from the earth. The punishment is the portrait: he is remembered almost entirely as a posture.",
     "mysteryNote": "If he ever shrugs, the stars will fall. The mountains have not yet moved. Neither, it seems, has he.",
     "related": [
+      "gigantes",
       "enceladus",
       "porphyrion",
       "alcyoneus",
@@ -842,7 +844,9 @@
     "id": "polyphemus",
     "slug": "polyphemus",
     "name": "Polyphemus",
-    "alsoKnownAs": [],
+    "alsoKnownAs": [
+      "Polyphemos"
+    ],
     "culture": "Greek",
     "region": "Mediterranean",
     "type": "individual",
@@ -852,6 +856,7 @@
     "fullDescription": "Polyphemus, son of Poseidon and the nymph Thoosa, keeps flocks on a wild island and knows no assembly, no law and no planted field: only the cave, the cheese-racks, the sheep, and his own hunger.",
     "mysteryNote": "The stone still fits some cave mouths along that coast. No one has tried the old seal. Wisdom, or fear: the island does not say.",
     "related": [
+      "balor",
       "orion",
       "antaeus",
       "geryon",
@@ -1874,9 +1879,9 @@
     "fullDescription": "Balor of the Evil Eye leads the Fomorians. His single eye is kept shut and needs four men to lift the lid, and whatever it looks at dies. He is killed by his own grandson, exactly as prophesied.",
     "mysteryNote": "He feared a grandson more than any army. He should have feared the open eye, and the hand that knew where to aim.",
     "related": [
-      "cormoran",
-      "gogmagog",
-      "tepegoz"
+      "fomorians",
+      "tepegoz",
+      "polyphemus"
     ],
     "coordinates": [
       54.3,
@@ -3339,8 +3344,7 @@
     "related": [
       "dzunukwa",
       "tsul-kalu",
-      "gaoh",
-      "guanche-giants"
+      "gaoh"
     ],
     "coordinates": [
       40.18,
@@ -5519,8 +5523,8 @@
     "fullDescription": "The Greek giants may not have been giants. In the earliest art they are painted as ordinary armed men.",
     "mysteryNote": "The oldest painters gave them helmets, shields and spears, and nothing stranger than that. The snakes grew later, once losing to gods seemed to require a different sort of body.",
     "related": [
-      "polyphemus",
-      "enceladus"
+      "enceladus",
+      "polyphemus"
     ],
     "coordinates": [
       37.98,
