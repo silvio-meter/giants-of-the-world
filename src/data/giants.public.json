@@ -18,7 +18,8 @@
       "thrym",
       "hrungnir",
       "skrymir",
-      "bestla"
+      "bestla",
+      "pangu"
     ],
     "coordinates": [
       64,
@@ -67,7 +68,8 @@
     "shortDescription": "The mighty ones of old: offspring of the sons of God and daughters of men.",
     "related": [
       "goliath",
-      "og-of-bashan"
+      "og-of-bashan",
+      "ad-thamud"
     ],
     "coordinates": [
       31.5,
@@ -116,7 +118,8 @@
     "shortDescription": "The Philistine champion of Gath who fell to a shepherd's stone.",
     "related": [
       "nephilim",
-      "og-of-bashan"
+      "og-of-bashan",
+      "uj-ibn-anaq"
     ],
     "coordinates": [
       31.69,
@@ -163,7 +166,8 @@
     "shortDescription": "Last of the Rephaim; king of Bashan whose iron bed was a wonder.",
     "related": [
       "nephilim",
-      "goliath"
+      "goliath",
+      "uj-ibn-anaq"
     ],
     "coordinates": [
       32.8,
@@ -210,7 +214,8 @@
     "related": [
       "enceladus",
       "porphyrion",
-      "alcyoneus"
+      "alcyoneus",
+      "pangu"
     ],
     "coordinates": [
       31,
@@ -252,7 +257,8 @@
     "related": [
       "orion",
       "antaeus",
-      "geryon"
+      "geryon",
+      "tepegoz"
     ],
     "coordinates": [
       37.5,
@@ -669,7 +675,8 @@
     "shortDescription": "The bronze guardian of Crete: automaton giant with a single vein of ichor.",
     "related": [
       "orion",
-      "geryon"
+      "geryon",
+      "humbaba"
     ],
     "coordinates": [
       35.2,
@@ -873,7 +880,8 @@
     "shortDescription": "Fomorian king whose eye destroyed armies: slain by his grandson Lugh.",
     "related": [
       "cormoran",
-      "gogmagog"
+      "gogmagog",
+      "tepegoz"
     ],
     "coordinates": [
       54.3,
@@ -1011,7 +1019,8 @@
     "shortDescription": "Basque giants of the mountains who built megaliths and fled the new faith.",
     "related": [
       "olentzero",
-      "ojancanu"
+      "ojancanu",
+      "cailleach"
     ],
     "coordinates": [
       43,
@@ -1355,7 +1364,8 @@
     "shortDescription": "Giant survivor of the flood who raised the great pyramid of Cholula.",
     "related": [
       "quinametzin",
-      "nephilim"
+      "nephilim",
+      "surid"
     ],
     "coordinates": [
       19.06,
@@ -1397,7 +1407,8 @@
     "shortDescription": "The giant who chased the sun and died of thirst: staff becoming a forest.",
     "related": [
       "fangfeng",
-      "budj-bim"
+      "budj-bim",
+      "pangu"
     ],
     "coordinates": [
       35,
@@ -1614,7 +1625,8 @@
     "related": [
       "dzunukwa",
       "tsul-kalu",
-      "gaoh"
+      "gaoh",
+      "guanche-giants"
     ],
     "coordinates": [
       40.18,
@@ -2634,7 +2646,8 @@
     "shortDescription": "Builders of the megaliths of north-west Iberia: unbaptised people of the earth whose name may mean the dead.",
     "related": [
       "jentilak",
-      "gargantua"
+      "gargantua",
+      "surid"
     ],
     "coordinates": [
       42.3,
@@ -2723,7 +2736,8 @@
     "shortDescription": "Japanese landscape giant: Fuji is his spoil heap, Lake Biwa the hole it came from.",
     "related": [
       "oni",
-      "shuten-doji"
+      "shuten-doji",
+      "cailleach"
     ],
     "coordinates": [
       36.33,
@@ -2854,7 +2868,8 @@
     "shortDescription": "European voyage reports of a giant race in Patagonia, ended by measurement in the 1760s.",
     "related": [
       "si-te-cah",
-      "santa-elena-giants"
+      "santa-elena-giants",
+      "guanche-giants"
     ],
     "coordinates": [
       -49.32,
@@ -2915,7 +2930,8 @@
     "shortDescription": "One-eyed Albanian man-eater with no knees: he cannot bend his legs to chase you.",
     "related": [
       "polyphemus",
-      "balor"
+      "balor",
+      "tepegoz"
     ],
     "coordinates": [
       41.15,
@@ -3184,7 +3200,8 @@
     "shortDescription": "Irish adversary race out of the sea: their rule banned the teaching of poetry and law.",
     "related": [
       "balor",
-      "nephilim"
+      "nephilim",
+      "cailleach"
     ],
     "coordinates": [
       55.27,
@@ -3312,7 +3329,8 @@
     "shortDescription": "Around eight hundred Nuragic collective tombs in Sardinia, named for giants by popular tradition.",
     "related": [
       "gargantua",
-      "mouros"
+      "mouros",
+      "ad-thamud"
     ],
     "coordinates": [
       40.12,
@@ -3397,7 +3415,8 @@
     "shortDescription": "Croatian giant petrified above Ogulin: the river Dobra runs out of his wound.",
     "related": [
       "dragonja",
-      "nemri"
+      "nemri",
+      "cailleach"
     ],
     "coordinates": [
       45.26,
@@ -3698,6 +3717,396 @@
       "bones-as-proof",
       "real-site-attached"
     ],
+    "heightMeters": null,
+    "hasScholarlyNotes": false
+  },
+  {
+    "id": "humbaba",
+    "slug": "humbaba",
+    "name": "Humbaba",
+    "alsoKnownAs": [
+      "Huwawa",
+      "Ḫumbaba",
+      "Ḫuwawa"
+    ],
+    "culture": "Sumerian, Akkadian, later Hurrian and Hittite",
+    "region": "Mesopotamia, the Cedar Forest",
+    "type": "individual",
+    "freeEntry": false,
+    "height": null,
+    "shortDescription": "The oldest giant in this catalogue by two thousand years. He was not attacking anyone. He was guarding a forest, and two men came to cut it down.",
+    "related": [
+      "polyphemus",
+      "talos",
+      "tepegoz"
+    ],
+    "coordinates": [
+      33.9,
+      35.8
+    ],
+    "tags": [
+      "mesopotamia",
+      "gilgamesh",
+      "guardian",
+      "oldest"
+    ],
+    "sources": [
+      "The Epic of Gilgamesh in its Old Babylonian and Standard Babylonian versions",
+      "the earlier Sumerian Bilgames compositions",
+      "Hurrian and Hittite adaptations",
+      "Andrew George's edition of the epic",
+      "surviving combat scenes and apotropaic clay heads"
+    ],
+    "image": "/images/giants/humbaba.jpg",
+    "imageAlt": "Humbaba, guardian of the Cedar Forest",
+    "motifs": [
+      "guardian",
+      "outwitted",
+      "real-site-attached"
+    ],
+    "heightMeters": null,
+    "hasScholarlyNotes": false
+  },
+  {
+    "id": "tepegoz",
+    "slug": "tepegoz",
+    "name": "Tepegöz",
+    "alsoKnownAs": [
+      "Tepe Göz"
+    ],
+    "culture": "Oghuz Turkic",
+    "region": "Central Asia and Anatolia",
+    "type": "individual",
+    "freeEntry": false,
+    "height": null,
+    "shortDescription": "A one-eyed man-eater, blinded in his cave by a young man who tricked him. When a German scholar read the manuscript in 1815, he concluded that Homer had got the story from the East.",
+    "related": [
+      "polyphemus",
+      "balor",
+      "katallani"
+    ],
+    "coordinates": [
+      39.5,
+      41
+    ],
+    "tags": [
+      "turkic",
+      "oghuz",
+      "one-eye",
+      "dede-korkut",
+      "atu-1137"
+    ],
+    "sources": [
+      "Book of Dede Korkut, Dresden manuscript",
+      "H. F. von Diez, Denkwürdigkeiten von Asien, 1815",
+      "O. Hackman, 1904",
+      "D. Page, 1955",
+      "C. S. Mundy, 1956",
+      "J. A. Conrad, Fabula 40, 1999",
+      "J. d'Huy, 2013",
+      "the Sümer, Uysal and Walker translation"
+    ],
+    "image": "/images/giants/tepegoz.jpg",
+    "imageAlt": "Tepegöz, one-eyed giant of the Book of Dede Korkut",
+    "motifs": [
+      "one-eye",
+      "outwitted",
+      "cannibal"
+    ],
+    "heightMeters": null,
+    "hasScholarlyNotes": false
+  },
+  {
+    "id": "pangu",
+    "slug": "pangu",
+    "name": "Pangu",
+    "alsoKnownAs": [
+      "P'an-ku"
+    ],
+    "culture": "Chinese",
+    "region": "China",
+    "type": "primordial",
+    "freeEntry": false,
+    "height": "Grew for 18,000 years",
+    "shortDescription": "He was not killed. He held the sky up for eighteen thousand years until it stayed there on its own, and then he died of it.",
+    "related": [
+      "ymir",
+      "kua-fu",
+      "atlas"
+    ],
+    "coordinates": [
+      31,
+      114
+    ],
+    "tags": [
+      "china",
+      "creation",
+      "cosmic-egg",
+      "daoist"
+    ],
+    "sources": [
+      "Xu Zheng, Sanwu liji and Wu yun li nianji, 3rd century CE",
+      "Shuyi ji",
+      "Miao, Yao and Buyei ancestral traditions"
+    ],
+    "image": "/images/giants/pangu.jpg",
+    "imageAlt": "Pangu, holding sky from earth",
+    "motifs": [
+      "body-cosmogony",
+      "sky-bearer",
+      "shaped-the-land-while-living"
+    ],
+    "heightMeters": null,
+    "hasScholarlyNotes": false
+  },
+  {
+    "id": "ad-thamud",
+    "slug": "ad-thamud",
+    "name": "ʿĀd, Iram and Thamud",
+    "alsoKnownAs": [
+      "Ad",
+      "Thamud",
+      "Iram of the Pillars",
+      "ʿĀd"
+    ],
+    "culture": "Arabian and Islamic",
+    "region": "the Arabian peninsula and southern Jordan",
+    "type": "folklore",
+    "freeEntry": false,
+    "height": null,
+    "shortDescription": "The peoples the Qur'an says were destroyed for arrogance. It does not say they were giants. That part was added later, and recently.",
+    "related": [
+      "nephilim",
+      "tombe-dei-giganti",
+      "surid",
+      "uj-ibn-anaq"
+    ],
+    "coordinates": [
+      26.79,
+      37.95
+    ],
+    "tags": [
+      "arabia",
+      "quran",
+      "misreading",
+      "archaeology"
+    ],
+    "sources": [
+      "Qur'an 89:6-14 and the Ad and Thamud passages generally",
+      "Ahmad Al-Jallad, 2025, on the Ad in Wadi Rum",
+      "Nabataean archaeology at Hegra"
+    ],
+    "image": "/images/giants/ad-thamud.jpg",
+    "imageAlt": "Rock-cut tombs at Hegra, later read as giant work",
+    "motifs": [
+      "pre-people",
+      "bones-as-proof",
+      "grown-in-the-telling"
+    ],
+    "statusLine": "The giant claim is a later reading, not in the source text.",
+    "heightMeters": null,
+    "hasScholarlyNotes": false
+  },
+  {
+    "id": "guanche-giants",
+    "slug": "guanche-giants",
+    "name": "The Giants of the Canaries",
+    "alsoKnownAs": [
+      "Guanches",
+      "the giants of Tenerife"
+    ],
+    "culture": "European accounts of the Guanches",
+    "region": "Canary Islands",
+    "type": "folklore",
+    "freeEntry": false,
+    "height": "claimed up to fourteen feet; measured 1.75 to 1.82 metres",
+    "shortDescription": "Four chroniclers described the same people in the same century. One called them short. One called them tall. One called them of medium height. Two said they were fourteen feet.",
+    "related": [
+      "patagonian-giants",
+      "si-te-cah",
+      "ad-thamud"
+    ],
+    "coordinates": [
+      28.27,
+      -16.64
+    ],
+    "tags": [
+      "canaries",
+      "guanche",
+      "chronicles",
+      "conquest",
+      "amazigh"
+    ],
+    "sources": [
+      "Le Canarien, 15th century",
+      "Alonso de Palencia",
+      "Leonardo Torriani",
+      "Alonso de Espinosa",
+      "Juan de Abreu Galindo",
+      "José Viera y Clavijo",
+      "skeletal series held in Canarian museums",
+      "recent ancient-DNA work on 46 Guanche genomes"
+    ],
+    "image": "/images/giants/guanche-giants.jpg",
+    "imageAlt": "Cave dwellings in Canary Island tuff, empty of giants",
+    "motifs": [
+      "bones-as-proof",
+      "pre-people",
+      "grown-in-the-telling",
+      "colonial-distortion"
+    ],
+    "statusLine": "Claimed in chronicles, contradicted by measurement.",
+    "heightMeters": 1.82,
+    "hasScholarlyNotes": false
+  },
+  {
+    "id": "uj-ibn-anaq",
+    "slug": "uj-ibn-anaq",
+    "name": "ʿUj ibn ʿAnāq",
+    "alsoKnownAs": [
+      "Uj ibn Anaq",
+      "Ogias"
+    ],
+    "culture": "Islamic tradition, Arabic and Persian",
+    "region": "the Near East",
+    "type": "individual",
+    "freeEntry": false,
+    "height": "Knee-deep in the ocean in later tellings",
+    "shortDescription": "He is the biblical Og, after five centuries of retelling. By the end he was standing knee-deep in the open ocean, catching whales and holding them up to the sun to cook.",
+    "related": [
+      "og-of-bashan",
+      "goliath",
+      "nephilim",
+      "ad-thamud"
+    ],
+    "coordinates": [
+      32.8,
+      35.8
+    ],
+    "tags": [
+      "islamic",
+      "moses",
+      "folklore",
+      "iconography"
+    ],
+    "sources": [
+      "Numbers 21 and Deuteronomy 3",
+      "Arabic and Persian folkloric and exegetical literature",
+      "the Book of Giants, c. 2nd century BCE, Dead Sea Scrolls",
+      "Islamic manuscript painting"
+    ],
+    "image": "/images/giants/uj-ibn-anaq.jpg",
+    "imageAlt": "Uj ibn Anaq, holding a whale toward the sun",
+    "motifs": [
+      "grown-in-the-telling",
+      "pre-people"
+    ],
+    "heightMeters": null,
+    "hasScholarlyNotes": false
+  },
+  {
+    "id": "cailleach",
+    "slug": "cailleach",
+    "name": "The Cailleach",
+    "alsoKnownAs": [
+      "Cailleach Bhéara",
+      "Cailleach Bheur",
+      "Caillagh",
+      "Digdi",
+      "Garavogue"
+    ],
+    "culture": "Gaelic: Irish, Scottish, Manx",
+    "region": "Ireland, Scotland, Isle of Man",
+    "type": "folklore",
+    "freeEntry": false,
+    "height": "leapt between mountains",
+    "shortDescription": "The Neolithic passage tombs at Loughcrew are said to be stones that fell out of her apron while she was jumping between the hills.",
+    "related": [
+      "jentilak",
+      "fomorians",
+      "daidarabotchi",
+      "klek"
+    ],
+    "coordinates": [
+      53.74,
+      -7.11
+    ],
+    "tags": [
+      "gaelic",
+      "winter",
+      "landscape",
+      "megalith",
+      "one-eye",
+      "female"
+    ],
+    "sources": [
+      "The Lament of the Old Woman of Beare, Old Irish",
+      "Eleanor Hull, Legends and Traditions of the Cailleach Bheara",
+      "Donald Alexander Mackenzie, with the caveat that Beira is his coinage",
+      "the Irish folklore collections, in which she is among the most heavily attested figures of all",
+      "Seán Ó Duinn on the Beara Peninsula as a ritual landscape"
+    ],
+    "image": "/images/giants/cailleach.jpg",
+    "imageAlt": "The Cailleach leaping between hills, stones falling from her creel",
+    "motifs": [
+      "builder",
+      "shaped-the-land-while-living",
+      "petrified",
+      "one-eye",
+      "real-site-attached"
+    ],
+    "heightMeters": 25,
+    "hasScholarlyNotes": false
+  },
+  {
+    "id": "surid",
+    "slug": "surid",
+    "name": "Surid ibn Salhouk",
+    "alsoKnownAs": [
+      "Surid",
+      "Souphis"
+    ],
+    "culture": "Coptic and Islamic Egypt, medieval",
+    "region": "Egypt",
+    "type": "folklore",
+    "freeEntry": false,
+    "height": null,
+    "shortDescription": "A king who dreamed the Flood was coming, and built the pyramids to keep knowledge safe from the water. His name is a corruption of the name of the pharaoh who actually built them.",
+    "related": [
+      "xelhua",
+      "ad-thamud",
+      "mouros",
+      "tombe-dei-giganti"
+    ],
+    "coordinates": [
+      29.98,
+      31.13
+    ],
+    "tags": [
+      "egypt",
+      "pyramids",
+      "flood",
+      "knowledge",
+      "antediluvian"
+    ],
+    "sources": [
+      "al-Masudi, d. 967",
+      "Ibn Abd al-Hakam",
+      "Abu Ma'shar al-Balkhi, Book of Thousands",
+      "Ibrahim ibn Wasif Shah",
+      "Murtada ibn al-Afif, History of Egypt, before 1237",
+      "al-Maqrizi, al-Khitat, 14th century",
+      "Sa'id al-Andalusi",
+      "Ammianus Marcellinus, 4th century"
+    ],
+    "image": "/images/giants/surid.jpg",
+    "imageAlt": "The Giza pyramids in flood, no giant king",
+    "motifs": [
+      "builder",
+      "pre-people",
+      "grown-in-the-telling"
+    ],
+    "statusLine": "Medieval legend laid over a named builder.",
     "heightMeters": null,
     "hasScholarlyNotes": false
   }
