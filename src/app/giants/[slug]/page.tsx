@@ -411,6 +411,7 @@ export default async function GiantDetailPage({ params }: Props) {
 
       {entrySeo?.faqs && entrySeo.faqs.length > 0 ? (
         <section
+          id="faq"
           className="mt-14 border-t border-border pt-10"
           aria-labelledby="entry-faq-heading"
         >
