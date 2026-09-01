@@ -2,9 +2,9 @@ import { NextResponse } from "next/server";
 import { isLifetimeGrantEmail } from "@/lib/access";
 import { getSessionUser } from "@/lib/profile";
 import {
-  FULL_SEND_CONFIRM,
-  ISSUE_01_ATLAS,
+  CURRENT_ISSUE,
   ONE_SEAM_ISSUES,
+  fullSendConfirmPhrase,
   issueEntryUrl,
 } from "@/lib/one-seam/issues";
 import { sendIssuePreview, sendIssueToAll } from "@/lib/one-seam/send";
@@ -37,18 +37,16 @@ export async function GET() {
   return NextResponse.json(
     {
       from: newsletterFromAddress(),
+      currentId: CURRENT_ISSUE.id,
       issues: ONE_SEAM_ISSUES.map((i) => ({
         id: i.id,
         slug: i.slug,
         subject: i.subject,
         preheader: i.preheader,
         entryUrl: issueEntryUrl(i, siteUrl),
+        current: i.id === CURRENT_ISSUE.id,
       })),
-      fullSendConfirm: FULL_SEND_CONFIRM,
-      issue01: {
-        id: ISSUE_01_ATLAS.id,
-        subject: ISSUE_01_ATLAS.subject,
-      },
+      fullSendConfirm: fullSendConfirmPhrase(CURRENT_ISSUE.id),
     },
     { headers: { "Cache-Control": "private, no-store" } }
   );
@@ -66,7 +64,7 @@ export async function POST(request: Request) {
     confirm?: string;
   } | null;
 
-  const issueId = body?.issueId?.trim() || "01";
+  const issueId = body?.issueId?.trim() || CURRENT_ISSUE.id;
   const action = body?.action?.trim();
 
   if (action === "preview") {
@@ -84,10 +82,11 @@ export async function POST(request: Request) {
   }
 
   if (action === "send") {
-    if (body?.confirm !== FULL_SEND_CONFIRM) {
+    const required = fullSendConfirmPhrase(issueId);
+    if (body?.confirm !== required) {
       return NextResponse.json(
         {
-          error: `Full send requires confirm: "${FULL_SEND_CONFIRM}"`,
+          error: `Full send requires confirm: "${required}"`,
         },
         { status: 400 }
       );

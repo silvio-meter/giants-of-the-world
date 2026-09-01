@@ -99,6 +99,17 @@ test("lifetime grant list is case- and whitespace-insensitive", () => {
   }
 });
 
+test("lifetime grant list strips wrapping quotes", () => {
+  const previous = process.env.LIFETIME_GRANT_EMAILS;
+  process.env.LIFETIME_GRANT_EMAILS = '"Quoted@Example.com"';
+  try {
+    assert.ok(isLifetimeGrantEmail("quoted@example.com"));
+  } finally {
+    if (previous === undefined) delete process.env.LIFETIME_GRANT_EMAILS;
+    else process.env.LIFETIME_GRANT_EMAILS = previous;
+  }
+});
+
 test("an empty grant list grants nothing", () => {
   const previous = process.env.LIFETIME_GRANT_EMAILS;
   process.env.LIFETIME_GRANT_EMAILS = "";

@@ -14,10 +14,11 @@ type IssueMeta = {
   subject: string;
   preheader: string;
   entryUrl: string;
+  current?: boolean;
 };
 
 /**
- * Minimal One Seam admin: count, CSV, Issue 1 preview + gated full send.
+ * Minimal One Seam admin: count, CSV, current-issue preview + gated full send.
  * API enforces LIFETIME_GRANT_EMAILS.
  */
 export default function AdminSubscribersPage() {
@@ -58,7 +59,11 @@ export default function AdminSubscribersPage() {
         setLoad({ status: "ok", count: subs.count });
         setFrom(issues.from);
         setFullSendConfirm(issues.fullSendConfirm);
-        setIssue(issues.issues[0] ?? null);
+        const current =
+          issues.issues.find((i) => i.current) ??
+          issues.issues[issues.issues.length - 1] ??
+          null;
+        setIssue(current);
       })
       .catch((err: Error) => {
         if (!cancelled) setLoad({ status: "error", message: err.message });
@@ -70,13 +75,17 @@ export default function AdminSubscribersPage() {
   }, [ready, userId]);
 
   async function runAction(action: "preview" | "send") {
+    if (!issue?.id) {
+      setActionErr("No current issue loaded.");
+      return;
+    }
     setBusy(action);
     setActionMsg("");
     setActionErr("");
     try {
       const body: { action: string; issueId: string; confirm?: string } = {
         action,
-        issueId: "01",
+        issueId: issue.id,
       };
       if (action === "send") body.confirm = confirmPhrase;
 
@@ -121,8 +130,8 @@ export default function AdminSubscribersPage() {
         One Seam
       </h1>
       <p className="mt-3 text-sm text-text-muted">
-        Confirmed subscribers, Issue 1 draft, and send controls. Weekly issues
-        are not auto-generated.
+        Confirmed subscribers, current issue draft, and send controls. Weekly
+        issues are not auto-generated.
       </p>
       {email && (
         <p className="mt-2 text-xs text-text-muted/80">Signed in as {email}</p>
@@ -176,7 +185,7 @@ export default function AdminSubscribersPage() {
           {issue && (
             <section className="rounded-lg border border-border bg-surface p-5">
               <h2 className="font-[family-name:var(--font-cinzel)] text-xs tracking-[0.25em] text-accent-gold uppercase">
-                Issue 1 draft
+                Issue {issue.id} draft
               </h2>
               <p className="mt-3 text-sm text-text-primary">{issue.subject}</p>
               <p className="mt-1 text-xs text-text-muted">
@@ -200,7 +209,7 @@ export default function AdminSubscribersPage() {
 
               <button
                 type="button"
-                disabled={busy !== null}
+                disabled={busy !== null || !issue.id}
                 onClick={() => void runAction("preview")}
                 className="mt-5 w-full rounded border border-accent-gold bg-accent-gold px-4 py-2.5 font-[family-name:var(--font-cinzel)] text-sm tracking-[0.1em] text-background transition hover:bg-accent-gold/90 disabled:opacity-60"
               >
@@ -235,7 +244,9 @@ export default function AdminSubscribersPage() {
                   onClick={() => void runAction("send")}
                   className="mt-3 w-full rounded border border-rose-800/60 px-4 py-2.5 text-sm text-rose-200 transition hover:border-rose-500 disabled:opacity-40"
                 >
-                  {busy === "send" ? "Sending to list…" : "Send Issue 1 to all"}
+                  {busy === "send"
+                    ? "Sending to list…"
+                    : `Send Issue ${issue.id} to all`}
                 </button>
               </div>
 

@@ -39,6 +39,7 @@ Live on **giantscodex.com**, `main` continuous-deployed via Vercel.
 | Section cards: `/map`, `/motifs`, `/findings`, `/compare`, `/near` | Live (`twitter-image` + page meta) |
 | **One Seam** newsletter (double opt-in, Resend) | Live |
 | One Seam Issue 1 (Atlas) content + admin send | Live — first blast sent |
+| One Seam Issue 2 (Humbaba) | Draft in code; admin sends current issue |
 | Header: product bar + account dropdown | Live (#74) |
 | Umami + light `track()` events | Live |
 | TikTok | Removed from social + short redirects |
@@ -158,12 +159,11 @@ the gates above. Lifetime stays **$129**. No Discord/PWA "coming soon".
 - SQL: `supabase/subscribers.sql`, `subscribers_double_optin.sql`,
   `subscribers_one_seam.sql`, `subscribers_drip.sql`.
 - Admin (emails in `LIFETIME_GRANT_EMAILS` only): `/admin/subscribers`
-  — count, CSV, Issue 1 preview, full send only with phrase
-  `SEND ISSUE 1 TO ALL`.
+  — count, CSV, current-issue preview, full send only with phrase
+  `SEND ISSUE <id> TO ALL`.
 - Issue content source of truth: `src/lib/one-seam/issues.ts`.
-- **Issue 1 (Atlas)** already sent once to the live list (3 confirmed at
-  first blast). Next issue = new draft in code, then preview, then confirm
-  phrase send.
+- **Issue 1 (Atlas)** already sent. **Issue 2 (Humbaba)** is the current
+  draft. Preview, then confirm phrase send. Never auto-send on deploy.
 
 ### Navigation
 
@@ -246,8 +246,8 @@ Era/timeline filter still deferred (needs methodology).
    (`utm_source` + `utm_medium=post` or `bio`). Pinterest is the heaviest
    published channel; do not omit it. Discord shares use only
    `utm_source=discord&utm_medium=post` (see `UTM.md`). No new code required.
-2. **One Seam Issue 2** — new draft in `issues.ts`, admin preview, owner
-   approve, then list send. Weekly when there is a seam; no filler.
+2. **One Seam** — weekly when there is a seam, no filler. Issue 2 (Humbaba)
+   is the current draft. Preview, then confirm phrase; do not auto-send.
 3. **Research packets (do not invent):**
    - Scholarly Notes toward 90%+ of the catalogue.
    - Chains for free entries still thin (atlas, oni, fomorians, jentilak,
