@@ -100,59 +100,77 @@ export default async function GiantDetailPage({ params }: Props) {
   const related = getRelatedGiants(giant);
   const isModern = giant.type === "modern-legend";
 
+  const entrySeo = getEntrySeo(giant.slug);
+  const graph: Record<string, unknown>[] = [
+    {
+      "@type": "Article",
+      "@id": `${siteUrl}/giants/${giant.slug}#article`,
+      headline: giant.name,
+      description: giant.shortDescription,
+      about: {
+        "@type": "Thing",
+        name: giant.name,
+        alternateName: giant.alsoKnownAs,
+      },
+      image: giant.image ? `${siteUrl}${giant.image}` : undefined,
+      inLanguage: "en",
+      isPartOf: {
+        "@type": "WebSite",
+        name: "Giants of the World",
+        url: siteUrl,
+      },
+      keywords: [giant.culture, giant.region, ...giant.tags].join(", "),
+      citation: giant.sources,
+      // Paywall markup: tells Google the page is intentionally partial
+      // rather than cloaked. Open entries declare themselves fully free.
+      isAccessibleForFree: giant.freeEntry,
+      ...(giant.freeEntry
+        ? {}
+        : {
+            hasPart: {
+              "@type": "WebPageElement",
+              isAccessibleForFree: false,
+              cssSelector: ".paywalled-account",
+            },
+          }),
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Catalogue",
+          item: `${siteUrl}/giants`,
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: giant.name,
+          item: `${siteUrl}/giants/${giant.slug}`,
+        },
+      ],
+    },
+  ];
+
+  if (entrySeo?.faqs?.length) {
+    graph.push({
+      "@type": "FAQPage",
+      "@id": `${siteUrl}/giants/${giant.slug}#faq`,
+      mainEntity: entrySeo.faqs.map((faq) => ({
+        "@type": "Question",
+        name: faq.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: faq.answer,
+        },
+      })),
+    });
+  }
+
   const jsonLd = {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Article",
-        "@id": `${siteUrl}/giants/${giant.slug}#article`,
-        headline: giant.name,
-        description: giant.shortDescription,
-        about: {
-          "@type": "Thing",
-          name: giant.name,
-          alternateName: giant.alsoKnownAs,
-        },
-        image: giant.image ? `${siteUrl}${giant.image}` : undefined,
-        inLanguage: "en",
-        isPartOf: {
-          "@type": "WebSite",
-          name: "Giants of the World",
-          url: siteUrl,
-        },
-        keywords: [giant.culture, giant.region, ...giant.tags].join(", "),
-        citation: giant.sources,
-        // Paywall markup: tells Google the page is intentionally partial
-        // rather than cloaked. Open entries declare themselves fully free.
-        isAccessibleForFree: giant.freeEntry,
-        ...(giant.freeEntry
-          ? {}
-          : {
-              hasPart: {
-                "@type": "WebPageElement",
-                isAccessibleForFree: false,
-                cssSelector: ".paywalled-account",
-              },
-            }),
-      },
-      {
-        "@type": "BreadcrumbList",
-        itemListElement: [
-          {
-            "@type": "ListItem",
-            position: 1,
-            name: "Catalogue",
-            item: `${siteUrl}/giants`,
-          },
-          {
-            "@type": "ListItem",
-            position: 2,
-            name: giant.name,
-            item: `${siteUrl}/giants/${giant.slug}`,
-          },
-        ],
-      },
-    ],
+    "@graph": graph,
   };
 
   return (
