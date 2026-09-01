@@ -103,12 +103,22 @@ export default async function WelcomePage({
             <p className="mt-2 text-sm leading-relaxed text-text-muted">
               {step.body}
             </p>
-            <Link
-              href={step.href}
-              className="mt-4 inline-flex text-sm text-accent-gold hover:underline"
-            >
-              {step.cta} →
-            </Link>
+            <div className="mt-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-4">
+              <Link
+                href={step.href}
+                className="inline-flex text-sm text-accent-gold hover:underline"
+              >
+                {step.cta} →
+              </Link>
+              {!justPaid && step.n === "03" && (
+                <Link
+                  href="/signup?next=%2Fgiants%2Fthrym%3Fcheckout%3Dmonthly"
+                  className="inline-flex text-sm text-text-muted hover:text-accent-gold hover:underline"
+                >
+                  Unlock · $4.99/month
+                </Link>
+              )}
+            </div>
           </li>
         ))}
       </ol>
