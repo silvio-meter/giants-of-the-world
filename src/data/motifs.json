@@ -142,5 +142,9 @@
   "invulnerable-hide": {
     "name": "The body nothing pierces",
     "blurb": "Skin, scale or bark that no weapon can cut, and usually a single place where it can. The invulnerability exists to make the exception matter."
+  },
+  "grown-in-the-telling": {
+    "name": "Grown in the telling",
+    "blurb": "A figure or people who start at human scale in the early record and become giants later, in retelling, painting or popular reading. The growth is the evidence."
   }
 }
