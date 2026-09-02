@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { getAllGiants } from "@/lib/giants";
+import { getAllGiants, getShippedFindingSlugs } from "@/lib/giants";
 import { siteUrl } from "@/lib/site";
 
 /** Auth and per-user pages are deliberately absent — they are noindex. */
@@ -38,6 +38,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       // Open entries are the ones that can actually rank — rate them higher.
       priority: g.freeEntry ? 0.9 : 0.7,
+    })),
+    ...getShippedFindingSlugs().map((slug) => ({
+      url: `${siteUrl}/findings/${slug}`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.65,
     })),
   ];
 }

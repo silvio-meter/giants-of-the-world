@@ -12,7 +12,8 @@
       "Lovelock Cave excavations"
     ],
     "year": "1912–1924",
-    "location": "Nevada, USA"
+    "location": "Nevada, USA",
+    "slug": "lovelock-si-te-cah-remains"
   },
   {
     "id": "cardiff-giant",
@@ -108,7 +109,8 @@
     },
     "image": "/images/findings/cardiff-giant.jpg",
     "imageAlt": "The Cardiff Giant figure photographed in the nineteenth century",
-    "imageCredit": "Library of Congress (LCCN 2014693762), public domain via Wikimedia Commons"
+    "imageCredit": "Library of Congress (LCCN 2014693762), public domain via Wikimedia Commons",
+    "slug": "cardiff-giant"
   },
   {
     "id": "kandahar-giant",
@@ -270,7 +272,8 @@
     "location": "Beulah, Colorado, USA",
     "image": "/images/findings/solid-muldoon.jpg",
     "imageAlt": "Stereoview of the Solid Muldoon petrified man exhibit, Colorado",
-    "imageCredit": "Period stereoview, public domain via Wikimedia Commons (Solid Muldoon Stereoview)"
+    "imageCredit": "Period stereoview, public domain via Wikimedia Commons (Solid Muldoon Stereoview)",
+    "slug": "solid-muldoon"
   },
   {
     "id": "barnum-cardiff-replica",
@@ -343,7 +346,8 @@
       "Septuagint 1 Samuel 17; 4QSam-a; Josephus"
     ],
     "year": "textual",
-    "location": "Hebrew Bible manuscript tradition"
+    "location": "Hebrew Bible manuscript tradition",
+    "slug": "goliath-height-manuscripts"
   },
   {
     "id": "og-bed-dimensions",
@@ -358,7 +362,8 @@
       "Greek, Latin and Aramaic versions of the verse"
     ],
     "year": "biblical text",
-    "location": "Rabbah of the Ammonites (textual)"
+    "location": "Rabbah of the Ammonites (textual)",
+    "slug": "og-iron-bed"
   },
   {
     "id": "american-newspaper-giants",
