@@ -26,11 +26,16 @@ const COPY = {
   },
   spotlight: {
     heading: "One Seam - once a week.",
-    prompt: "One place where a giant story splits. Free. No membership required.",
+    prompt: "One place where a giant story splits.",
   },
 } as const;
 
-const BUTTON = "Enter the ledger";
+const BUTTON = {
+  footer: "Enter the ledger",
+  detail: "Enter the ledger",
+  journey: "Enter the ledger",
+  spotlight: "Get One Seam · free",
+} as const;
 const PLACEHOLDER = "you@domain.com";
 const MICRO =
   "A short welcome, then one seam a week. Unsubscribe anytime.";
@@ -178,7 +183,7 @@ export function EmailCapture({ variant, sourcePage }: Props) {
           disabled={status === "loading"}
           className="shrink-0 rounded border border-accent-gold bg-accent-gold px-4 py-2 font-[family-name:var(--font-cinzel)] text-xs tracking-[0.1em] text-background transition hover:bg-accent-gold/90 disabled:opacity-60"
         >
-          {status === "loading" ? "…" : BUTTON}
+          {status === "loading" ? "…" : BUTTON[variant]}
         </button>
       </div>
       {error && (
