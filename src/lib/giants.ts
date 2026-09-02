@@ -158,3 +158,49 @@ export function getComparePickerOptions(): ComparePickerOption[] {
 export function getAllFindings(): Finding[] {
   return findings;
 }
+
+/** PR1 Finding permalinks under /findings/{slug}. Only these generateStaticParams + sitemap. */
+export const FIRST_FINDING_PERMALINKS = [
+  "cardiff-giant",
+  "goliath-height-manuscripts",
+  "og-iron-bed",
+  "lovelock-si-te-cah-remains",
+  "solid-muldoon",
+] as const;
+
+export type FindingPermalinkSlug = (typeof FIRST_FINDING_PERMALINKS)[number];
+
+const shippedFindingSlugSet = new Set<string>(FIRST_FINDING_PERMALINKS);
+
+/** Free-door Finding cross-links for PR1 (giant slug -> finding permalink slug). */
+export const RELATED_FINDING_BY_GIANT: Partial<
+  Record<string, FindingPermalinkSlug>
+> = {
+  goliath: "goliath-height-manuscripts",
+  "og-of-bashan": "og-iron-bed",
+  "si-te-cah": "lovelock-si-te-cah-remains",
+};
+
+/** Resolve the URL slug for a finding (explicit slug, else id). */
+export function findingUrlSlug(f: Finding): string {
+  return f.slug ?? f.id;
+}
+
+export function getFindingBySlug(slug: string): Finding | undefined {
+  return findings.find((f) => findingUrlSlug(f) === slug);
+}
+
+export function getShippedFindingSlugs(): readonly FindingPermalinkSlug[] {
+  return FIRST_FINDING_PERMALINKS;
+}
+
+export function isShippedFindingSlug(slug: string): boolean {
+  return shippedFindingSlugSet.has(slug);
+}
+
+export function getRelatedFindingSlug(
+  giantSlug: string
+): FindingPermalinkSlug | undefined {
+  return RELATED_FINDING_BY_GIANT[giantSlug];
+}
+

@@ -147,6 +147,11 @@ export interface Chain {
 
 export interface Finding {
   id: string;
+  /**
+   * URL slug under /findings/{slug}. Defaults to `id` when absent.
+   * Chain API and hub keys stay on `id` so existing references keep working.
+   */
+  slug?: string;
   title: string;
   category: FindingCategory;
   verified: boolean;

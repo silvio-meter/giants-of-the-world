@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getAllFindings, getGiantBySlug } from "@/lib/giants";
+import {
+  findingUrlSlug,
+  getAllFindings,
+  getGiantBySlug,
+  isShippedFindingSlug,
+} from "@/lib/giants";
 import type { Finding, FindingCategory } from "@/lib/types";
 import { FreeBadge } from "@/components/FreeBadge";
 import { ChainOfCustody } from "@/components/ChainOfCustody";
@@ -132,6 +137,8 @@ export default function FindingsPage() {
         {findings.map((f) => {
           const cat = categoryStyle[f.category];
           const visual = resolveFindingVisual(f);
+          const permalink = findingUrlSlug(f);
+          const shipped = isShippedFindingSlug(permalink);
           return (
             <li
               key={f.id}
@@ -171,7 +178,16 @@ export default function FindingsPage() {
                     </span>
                   </div>
                   <h2 className="mt-3 font-[family-name:var(--font-cinzel)] text-xl tracking-wide text-text-primary">
-                    {f.title}
+                    {shipped ? (
+                      <Link
+                        href={`/findings/${permalink}`}
+                        className="hover:text-accent-gold hover:underline"
+                      >
+                        {f.title}
+                      </Link>
+                    ) : (
+                      f.title
+                    )}
                   </h2>
                   {(f.year || f.location) && (
                     <p className="mt-1 font-mono text-xs text-text-muted">

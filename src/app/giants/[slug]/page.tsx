@@ -22,6 +22,7 @@ import { ScholarlyNotesSection } from "@/components/ScholarlyNotesSection";
 import { GlossaryText } from "@/components/GlossaryText";
 import { EntryLocationMapLoader } from "@/components/EntryLocationMapLoader";
 import { SourcesSection } from "@/components/SourcesSection";
+import { RelatedFindingLink } from "@/components/RelatedFindingLink";
 import { JourneyMarks } from "@/components/JourneyMarks";
 import { siteUrl } from "@/lib/site";
 import { resolveMotifs } from "@/lib/motifs";
@@ -288,6 +289,8 @@ export default async function GiantDetailPage({ params }: Props) {
           )}
 
           <SourcesSection sources={giant.sources} freeEntry={giant.freeEntry} />
+
+          <RelatedFindingLink giantSlug={giant.slug} />
 
           {/*
             Below the sources block and outside the paywalled account on
