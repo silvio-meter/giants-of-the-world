@@ -45,7 +45,7 @@ export const ISSUE_03_OG: OneSeamIssue = {
   id: "03",
   slug: "og-bed-measure",
   subject: "One Seam - Og, the bed is a measure",
-  preheader: "Deuteronomy measures the bed. The height is someone else's sum.",
+  preheader: "Deuteronomy measures the bed, not the man.",
   entryPath: "/giants/og-of-bashan",
   entryLabel: "Full entry",
 };

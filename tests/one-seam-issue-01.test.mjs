@@ -103,7 +103,7 @@ test("Issue 3 subject and preheader match the brief", () => {
   assert.equal(ISSUE_03_OG.subject, "One Seam - Og, the bed is a measure");
   assert.equal(
     ISSUE_03_OG.preheader,
-    "Deuteronomy measures the bed. The height is someone else's sum."
+    "Deuteronomy measures the bed, not the man."
   );
   assert.equal(ISSUE_03_OG.entryPath, "/giants/og-of-bashan");
 });
