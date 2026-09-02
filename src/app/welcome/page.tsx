@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { EmailCapture } from "@/components/EmailCapture";
 import { getFreeGiants } from "@/lib/giants";
 
 /**
@@ -122,6 +123,17 @@ export default async function WelcomePage({
           </li>
         ))}
       </ol>
+
+      {/*
+        Mid-page One Seam with Unlock visual weight. Site footer band still
+        shows on /welcome (not a giant entry path).
+      */}
+      <div className="mt-10">
+        <EmailCapture
+          variant="spotlight"
+          sourcePage={justPaid ? "welcome-paid" : "welcome"}
+        />
+      </div>
 
       <div className="mt-12 flex flex-col items-center gap-3 text-sm text-text-muted sm:flex-row sm:justify-center sm:gap-6">
         <Link href="/evidence" className="text-accent-gold hover:underline">
