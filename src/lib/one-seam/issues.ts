@@ -43,8 +43,8 @@ export const ISSUE_02_HUMBABA: OneSeamIssue = {
 
 export const ISSUE_03_OG: OneSeamIssue = {
   id: "03",
-  slug: "og-bed-as-measure",
-  subject: "One Seam - Og, bed as measure",
+  slug: "og-bed-measure",
+  subject: "One Seam - Og, the bed is a measure",
   preheader: "Deuteronomy measures the bed. The height is someone else's sum.",
   entryPath: "/giants/og-of-bashan",
   entryLabel: "Full entry",

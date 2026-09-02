@@ -100,7 +100,7 @@ test("Issue 2 HTML is archive-style with preheader and no upsell", () => {
 });
 
 test("Issue 3 subject and preheader match the brief", () => {
-  assert.equal(ISSUE_03_OG.subject, "One Seam - Og, bed as measure");
+  assert.equal(ISSUE_03_OG.subject, "One Seam - Og, the bed is a measure");
   assert.equal(
     ISSUE_03_OG.preheader,
     "Deuteronomy measures the bed. The height is someone else's sum."
