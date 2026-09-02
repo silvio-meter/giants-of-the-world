@@ -398,6 +398,17 @@ export default async function GiantDetailPage({ params }: Props) {
         </aside>
       </div>
 
+      {/*
+        Mid-page One Seam on free entries only. Unlock-weight card so the
+        newsletter ask matches the sealed-page membership wall visual weight.
+        Bottom EmailCapture and site footer band stay as they are.
+      */}
+      {giant.freeEntry ? (
+        <div className="mt-10">
+          <EmailCapture variant="spotlight" sourcePage={`entry-mid:${giant.slug}`} />
+        </div>
+      ) : null}
+
       {giant.hasScholarlyNotes && <ScholarlyNotesSection slug={giant.slug} />}
 
       {giant.chainSummary && (

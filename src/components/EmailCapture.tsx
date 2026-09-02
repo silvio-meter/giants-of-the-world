@@ -4,8 +4,9 @@ import Link from "next/link";
 import { useState, type FormEvent } from "react";
 
 interface Props {
-  /** "footer" is a compact single row; "detail" / "journey" have more room. */
-  variant: "footer" | "detail" | "journey";
+  /** "footer" is a compact single row; "detail" / "journey" have more room;
+   * "spotlight" matches Unlock visual weight for mid-page free-entry asks. */
+  variant: "footer" | "detail" | "journey" | "spotlight";
   /** Recorded with the subscription - which surface it came from. */
   sourcePage: string;
 }
@@ -23,9 +24,18 @@ const COPY = {
     heading: "One Seam - once a week.",
     prompt: "One place where a giant story splits.",
   },
+  spotlight: {
+    heading: "One Seam - once a week.",
+    prompt: "One place where a giant story splits.",
+  },
 } as const;
 
-const BUTTON = "Enter the ledger";
+const BUTTON = {
+  footer: "Enter the ledger",
+  detail: "Enter the ledger",
+  journey: "Enter the ledger",
+  spotlight: "Get One Seam · free",
+} as const;
 const PLACEHOLDER = "you@domain.com";
 const MICRO =
   "A short welcome, then one seam a week. Unsubscribe anytime.";
@@ -85,7 +95,9 @@ export function EmailCapture({ variant, sourcePage }: Props) {
         className={
           variant === "footer"
             ? "text-sm text-accent-gold"
-            : "rounded-lg border border-accent-gold/35 bg-background/60 px-4 py-4 text-center text-sm text-accent-gold"
+            : variant === "spotlight"
+              ? "rounded-lg border border-accent-gold/35 bg-background/80 px-4 py-5 text-center text-sm text-accent-gold sm:px-5"
+              : "rounded-lg border border-accent-gold/35 bg-background/60 px-4 py-4 text-center text-sm text-accent-gold"
         }
       >
         {/*
@@ -98,6 +110,7 @@ export function EmailCapture({ variant, sourcePage }: Props) {
   }
 
   const isFooter = variant === "footer";
+  const isSpotlight = variant === "spotlight";
 
   return (
     <form
@@ -105,7 +118,9 @@ export function EmailCapture({ variant, sourcePage }: Props) {
       className={
         isFooter
           ? "flex min-w-0 flex-col gap-2 sm:flex-row sm:items-center sm:gap-3"
-          : "rounded-lg border border-border bg-surface p-4 sm:p-5"
+          : isSpotlight
+            ? "rounded-lg border border-accent-gold/35 bg-background/80 px-4 py-5 text-center sm:px-5 sm:py-5"
+            : "rounded-lg border border-border bg-surface p-4 sm:p-5"
       }
     >
       <div className={isFooter ? "shrink-0 sm:max-w-[240px]" : "mb-3"}>
@@ -122,13 +137,23 @@ export function EmailCapture({ variant, sourcePage }: Props) {
           className={
             isFooter
               ? "text-sm text-text-muted"
-              : "text-sm leading-relaxed text-text-muted"
+              : isSpotlight
+                ? "text-sm leading-relaxed text-text-muted"
+                : "text-sm leading-relaxed text-text-muted"
           }
         >
           {prompt}
         </p>
       </div>
-      <div className={isFooter ? "flex min-w-0 flex-1 gap-2" : "flex gap-2"}>
+      <div
+        className={
+          isFooter
+            ? "flex min-w-0 flex-1 gap-2"
+            : isSpotlight
+              ? "mx-auto flex w-full max-w-md gap-2"
+              : "flex gap-2"
+        }
+      >
         <label className="sr-only" htmlFor={`email-${variant}-${sourcePage}`}>
           Email address
         </label>
@@ -158,7 +183,7 @@ export function EmailCapture({ variant, sourcePage }: Props) {
           disabled={status === "loading"}
           className="shrink-0 rounded border border-accent-gold bg-accent-gold px-4 py-2 font-[family-name:var(--font-cinzel)] text-xs tracking-[0.1em] text-background transition hover:bg-accent-gold/90 disabled:opacity-60"
         >
-          {status === "loading" ? "…" : BUTTON}
+          {status === "loading" ? "…" : BUTTON[variant]}
         </button>
       </div>
       {error && (
@@ -166,7 +191,11 @@ export function EmailCapture({ variant, sourcePage }: Props) {
           {error}
         </p>
       )}
-      <p className={`text-xs text-text-muted/80 ${isFooter ? "mt-2" : "mt-3"}`}>
+      <p
+        className={`text-xs text-text-muted/80 ${
+          isFooter ? "mt-2" : isSpotlight ? "mt-3 text-center" : "mt-3"
+        }`}
+      >
         {MICRO} See our{" "}
         <Link href="/privacy" className="text-accent-gold hover:underline">
           Privacy Policy
