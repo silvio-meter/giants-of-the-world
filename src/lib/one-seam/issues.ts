@@ -41,13 +41,23 @@ export const ISSUE_02_HUMBABA: OneSeamIssue = {
   entryLabel: "Full entry",
 };
 
+export const ISSUE_03_OG: OneSeamIssue = {
+  id: "03",
+  slug: "og-bed-as-measure",
+  subject: "One Seam - Og, bed as measure",
+  preheader: "Deuteronomy measures the bed. The height is someone else's sum.",
+  entryPath: "/giants/og-of-bashan",
+  entryLabel: "Full entry",
+};
+
 export const ONE_SEAM_ISSUES: OneSeamIssue[] = [
   ISSUE_01_ATLAS,
   ISSUE_02_HUMBABA,
+  ISSUE_03_OG,
 ];
 
 /** The issue admin preview/send operates on. Older issues stay in the list. */
-export const CURRENT_ISSUE: OneSeamIssue = ISSUE_02_HUMBABA;
+export const CURRENT_ISSUE: OneSeamIssue = ISSUE_03_OG;
 
 export function getIssue(id: string): OneSeamIssue | undefined {
   return ONE_SEAM_ISSUES.find((i) => i.id === id);
@@ -137,6 +147,24 @@ export function renderIssueText(
       "",
       "The oldest giant in this catalogue is not a monster that had to be killed.",
       "He is a park ranger.",
+      "",
+      ...closing,
+    ].join("\n");
+  }
+
+  if (issue.id === "03") {
+    return [
+      "Nine cubits long. Four wide.",
+      "Still to be seen in Rabbah, the text says.",
+      "",
+      "That is the length of an iron bed.",
+      "The verse nowhere states his height.",
+      "",
+      "Readers who needed a body turned the bed into one.",
+      "They did not agree on the conversion.",
+      "",
+      "The catalogue keeps the object.",
+      "It leaves the man unmeasured.",
       "",
       ...closing,
     ].join("\n");
@@ -245,6 +273,19 @@ export function renderIssueHtml(
 
     <p style="margin:0 0 28px;">The oldest giant in this catalogue is not a monster that had to be killed.<br/>
     He is a park ranger.</p>`;
+  } else if (issue.id === "03") {
+    inner = `
+    <p style="margin:0 0 16px;">Nine cubits long. Four wide.<br/>
+    Still to be seen in Rabbah, the text says.</p>
+
+    <p style="margin:0 0 16px;">That is the length of an iron bed.<br/>
+    The verse nowhere states his height.</p>
+
+    <p style="margin:0 0 16px;">Readers who needed a body turned the bed into one.<br/>
+    They did not agree on the conversion.</p>
+
+    <p style="margin:0 0 28px;">The catalogue keeps the object.<br/>
+    It leaves the man unmeasured.</p>`;
   } else {
     throw new Error(`No body template for issue ${issue.id}`);
   }

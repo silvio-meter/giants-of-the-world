@@ -9,9 +9,11 @@ import assert from "node:assert/strict";
 import {
   ISSUE_01_ATLAS,
   ISSUE_02_HUMBABA,
+  ISSUE_03_OG,
   CURRENT_ISSUE,
   FULL_SEND_CONFIRM,
   fullSendConfirmPhrase,
+  issueMembershipUrl,
   renderIssueText,
   renderIssueHtml,
 } from "../src/lib/one-seam/issues.ts";
@@ -56,10 +58,12 @@ test("Issue 1 HTML is plain archive-style with preheader and no upsell", () => {
 });
 
 test("full send confirm phrase is the current issue", () => {
-  assert.equal(CURRENT_ISSUE.id, "02");
-  assert.equal(FULL_SEND_CONFIRM, "SEND ISSUE 02 TO ALL");
+  assert.equal(CURRENT_ISSUE.id, "03");
+  assert.equal(CURRENT_ISSUE, ISSUE_03_OG);
+  assert.equal(FULL_SEND_CONFIRM, "SEND ISSUE 03 TO ALL");
   assert.equal(fullSendConfirmPhrase("01"), "SEND ISSUE 01 TO ALL");
   assert.equal(fullSendConfirmPhrase("02"), "SEND ISSUE 02 TO ALL");
+  assert.equal(fullSendConfirmPhrase("03"), "SEND ISSUE 03 TO ALL");
 });
 
 test("Issue 2 subject and preheader match the brief", () => {
@@ -93,4 +97,52 @@ test("Issue 2 HTML is archive-style with preheader and no upsell", () => {
   assert.doesNotMatch(html, /Lifetime/i);
   assert.doesNotMatch(html, /pricing/i);
   assert.doesNotMatch(html, /Upgrade/i);
+});
+
+test("Issue 3 subject and preheader match the brief", () => {
+  assert.equal(ISSUE_03_OG.subject, "One Seam - Og, bed as measure");
+  assert.equal(
+    ISSUE_03_OG.preheader,
+    "Deuteronomy measures the bed. The height is someone else's sum."
+  );
+  assert.equal(ISSUE_03_OG.entryPath, "/giants/og-of-bashan");
+});
+
+test("Issue 3 plain text has the seam and monthly membership URL", () => {
+  const text = renderIssueText(ISSUE_03_OG, UNUB);
+  assert.match(text, /Nine cubits long/);
+  assert.match(text, /iron bed/);
+  assert.match(text, /nowhere states his height/);
+  assert.match(text, /leaves the man unmeasured/);
+  assert.match(text, /giants\/og-of-bashan/);
+  assert.match(text, /\$4\.99 a month/);
+  assert.match(text, /signup\?next=/);
+  assert.match(text, /checkout%3Dmonthly|checkout=monthly/);
+  assert.match(text, /Unsubscribe:/);
+  assert.doesNotMatch(text, /Lifetime/i);
+  assert.doesNotMatch(text, /upgrade/i);
+  assert.doesNotMatch(text, /pricing/i);
+  assert.doesNotMatch(text, /\u2014/);
+});
+
+test("Issue 3 HTML is archive-style with membership URL and no Lifetime", () => {
+  const html = renderIssueHtml(ISSUE_03_OG, UNUB);
+  assert.match(html, /Deuteronomy measures the bed/);
+  assert.match(html, /leaves the man unmeasured/);
+  assert.match(html, /giants\/og-of-bashan/);
+  assert.match(html, /signup\?next=/);
+  assert.match(html, /Unsubscribe/);
+  assert.doesNotMatch(html, /Lifetime/i);
+  assert.doesNotMatch(html, /pricing/i);
+  assert.doesNotMatch(html, /Upgrade/i);
+  assert.doesNotMatch(html, /\u2014/);
+});
+
+test("issueMembershipUrl follows PR 88 signup next checkout=monthly", () => {
+  const url = issueMembershipUrl(ISSUE_03_OG, "https://www.giantscodex.com");
+  assert.equal(
+    url,
+    "https://www.giantscodex.com/signup?next=" +
+      encodeURIComponent("/giants/og-of-bashan?checkout=monthly")
+  );
 });
