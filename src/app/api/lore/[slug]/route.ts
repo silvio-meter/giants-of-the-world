@@ -58,6 +58,7 @@ export async function GET(
             fullDescription: lore.fullDescription,
             mysteryNote: lore.mysteryNote,
             ...(lore.sections ? { sections: lore.sections } : {}),
+            ...(lore.sessionPrep ? { sessionPrep: lore.sessionPrep } : {}),
           }
         : {}),
       /**

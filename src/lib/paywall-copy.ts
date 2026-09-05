@@ -28,9 +28,9 @@ const refund = `${refundDays}-day refund, no questions`;
 
 export const PAYWALL_COPY = {
   entry: {
-    headline: "Continue this account.",
-    body: `You have the opening. Membership opens the rest of this story, the sources behind it, and the other giants that share its motifs. ${monthly} a month. ${refund}.`,
-    button: `Unlock this entry · ${monthly}/month`,
+    headline: "Unlock session prep for the table.",
+    body: `You have the opening. Membership opens the full account, sources, and a Session Prep card you can drop into a game night: seeds, a source shelf, and a Compare pair. ${monthly} a month. ${refund}.`,
+    button: `Unlock session prep · ${monthly}/month`,
   },
   compare: {
     headline: "Unlock what they share.",

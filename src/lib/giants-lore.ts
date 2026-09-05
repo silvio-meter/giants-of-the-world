@@ -6,6 +6,7 @@ import type {
   GiantHandling,
   GiantSections,
   ScholarlyNote,
+  SessionPrep,
 } from "./types";
 
 type LoreEntry = {
@@ -19,6 +20,7 @@ type LoreEntry = {
   chain?: Chain;
   /** Editorial / legal handling — not served to the client catalogue. */
   handling?: GiantHandling;
+  sessionPrep?: SessionPrep;
 };
 
 const lore = loreData as Record<string, LoreEntry>;

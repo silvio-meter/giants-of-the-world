@@ -6924,6 +6924,14 @@
       "distortions": "The common flattening is treating him as a generic monster Gilgamesh needed to kill, erasing that he was set over the forest by Enlil, that he asked for mercy, and that Enlil was angry when the head arrived. A second flattening gives him a generic ogre face instead of the coiled-entrails mask attested on clay heads.",
       "take": "The forest, the coiled face, the logging behind his back, the refused mercy, and Enlil dispersing the terrors into fields, rivers and reed beds are all in the epic and free to use. Do not present the expedition as a simple monster hunt. Keep the later sympathetic tablet visible as a real disagreement in the sources, not as a modern preference.",
       "cite": "Credit the Epic of Gilgamesh in Old Babylonian and Standard Babylonian, the Sumerian Bilgames compositions, Hurrian and Hittite adaptations, and Andrew George's edition, with the surviving clay heads for the face."
+    },
+    "sessionPrep": {
+      "encounterSeeds": [
+        "Enlil set him over the Cedar Forest. Nothing moves in the trees without his knowing, and the heroes have already crossed the threshold.",
+        "His face is one coiling line, like entrails used for omen. The party must read the clay head before they cut a single trunk.",
+        "Mercy was offered once. Ask whether the sack of cedar is heavier than the guardian they just refused to spare."
+      ],
+      "compareSlug": "polyphemus"
     }
   },
   {
@@ -6948,7 +6956,7 @@
     ],
     "coordinates": [
       39.5,
-      41.0
+      41
     ],
     "tags": [
       "turkic",
@@ -6986,6 +6994,14 @@
       "distortions": "The common flattening is treating Tepegöz as a copy of Polyphemus, or Polyphemus as a copy of Tepegöz, when the sources do not settle direction. A second flattening strips the Oghuz shamanic frame (earth and water spirits) and leaves only a generic cyclops.",
       "take": "The cave, the single eye, the blinding, and Basat as the killer are in the Dede Korkut tale and free to use. Present the Homer question as open. Do not assert that Homer borrowed from the Oghuz, or the reverse, as settled fact.",
       "cite": "Credit the Book of Dede Korkut (Dresden manuscript), von Diez 1815, and the Sümer, Uysal and Walker translation, with Hackman, Page, Mundy, Conrad and d'Huy for the ATU 1137 debate."
+    },
+    "sessionPrep": {
+      "encounterSeeds": [
+        "Basat offers guest-right at the cave mouth, then asks Tepegöz to look closer at the brand.",
+        "The Oghuz hear one footfall where two should fall: the one-eyed plague is already inside the herd-fold.",
+        "A German scholar in 1815 swears this blinding came eastward before Homer. Let the table argue over who stole whose eye."
+      ],
+      "compareSlug": "polyphemus"
     }
   },
   {
@@ -7009,8 +7025,8 @@
       "atlas"
     ],
     "coordinates": [
-      31.0,
-      114.0
+      31,
+      114
     ],
     "tags": [
       "china",
@@ -7293,6 +7309,14 @@
       "distortions": "The common flattening is treating Beira, Queen of Winter, as the traditional name, and treating the lament, the sovereignty hag and the landscape giantess as one settled being. The sources do not reconcile those three.",
       "take": "The apron, the named sites, the one eye, the hammer, and the turning to stone are in the folklore collections and usable. Keep the three figures under one name unreconciled. Do not present Mackenzie as tradition.",
       "cite": "The Lament of the Old Woman of Beare, Eleanor Hull, the Irish folklore collections, Seán Ó Duinn on Beara, and Mackenzie only with the Beira caveat."
+    },
+    "sessionPrep": {
+      "encounterSeeds": [
+        "She leaps ridge to ridge with a creel of stones. Where one falls, a cairn or island waits for the party by morning.",
+        "Veiled, one-eyed, hammer in hand: she is shaping a valley while the locals still call the hills unfinished.",
+        "At Loughcrew the passage tombs are said to be stones that slipped her apron. Treat the tombs as her inventory, not a ruin."
+      ],
+      "compareSlug": "jentilak"
     }
   },
   {

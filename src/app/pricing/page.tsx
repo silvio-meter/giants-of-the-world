@@ -359,6 +359,7 @@ function PricingInner() {
           </h3>
           <ul className="mt-4 list-disc space-y-2 pl-4 text-sm text-text-muted marker:text-accent-gold/60">
             <li>Full accounts and stories</li>
+            <li>Session Prep on paid giants</li>
             <li>Disputed, sources, chain of custody</li>
             <li>Scholarly notes and mystery notes</li>
             <li>Motif connections and Compare depth</li>
