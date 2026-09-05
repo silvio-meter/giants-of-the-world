@@ -14,9 +14,9 @@ test("in-content primary is monthly, not yearly", () => {
   assert.ok(plans.includes('price: "$4.99"'));
   assert.ok(plans.includes('price: "$49"'));
   assert.ok(plans.includes('price: "$129"'));
-  assert.ok(copy.includes("Unlock this entry"));
+  assert.ok(copy.includes("Unlock session prep"));
   assert.ok(copy.includes("Unlock this comparison"));
-  assert.ok(copy.includes("Continue this account."));
+  assert.ok(copy.includes("Unlock session prep for the table."));
   assert.ok(copy.includes("Unlock what they share."));
   assert.ok(!copy.includes("buttonYearly"));
   assert.ok(!copy.includes("Unlock with Yearly"));

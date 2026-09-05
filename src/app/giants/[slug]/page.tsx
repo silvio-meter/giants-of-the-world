@@ -9,6 +9,7 @@ import {
   getRelatedGiants,
 } from "@/lib/giants";
 import { getGiantLore } from "@/lib/giants-lore";
+import { getSessionPrepCard } from "@/lib/session-prep";
 import { getFirstSentence, getFreePreview, hasMoreContent } from "@/lib/content";
 import { ImagePlaceholder } from "@/components/ImagePlaceholder";
 import { FullDescription } from "@/components/FullDescription";
@@ -22,6 +23,7 @@ import { ScholarlyNotesSection } from "@/components/ScholarlyNotesSection";
 import { GlossaryText } from "@/components/GlossaryText";
 import { EntryLocationMapLoader } from "@/components/EntryLocationMapLoader";
 import { SourcesSection } from "@/components/SourcesSection";
+import { SessionPrepCard } from "@/components/SessionPrepCard";
 import { RelatedFindingLink } from "@/components/RelatedFindingLink";
 import { JourneyMarks } from "@/components/JourneyMarks";
 import { siteUrl } from "@/lib/site";
@@ -100,6 +102,9 @@ export default async function GiantDetailPage({ params }: Props) {
   const motifNames = motifs.map((m) => m.name);
   const related = getRelatedGiants(giant);
   const isModern = giant.type === "modern-legend";
+  const sessionPrepCard = !giant.freeEntry
+    ? getSessionPrepCard(giant, lore.sessionPrep)
+    : null;
 
   const entrySeo = getEntrySeo(giant.slug);
   const graph: Record<string, unknown>[] = [
@@ -289,6 +294,8 @@ export default async function GiantDetailPage({ params }: Props) {
           )}
 
           <SourcesSection sources={giant.sources} freeEntry={giant.freeEntry} />
+
+          {sessionPrepCard ? <SessionPrepCard card={sessionPrepCard} /> : null}
 
           <RelatedFindingLink giantSlug={giant.slug} />
 

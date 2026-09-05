@@ -35,6 +35,8 @@ const LORE_FIELDS = [
   // Editorial / legal handling notes (publishable, living culture, etc.).
   // Internal only — never the client catalogue bundle.
   "handling",
+  // Curated Session Prep seeds (pilots). Same strip path as fullDescription.
+  "sessionPrep",
 ];
 
 /**
@@ -104,6 +106,7 @@ export function splitMaster(master) {
           }
         : {}),
       ...(giant.handling ? { handling: giant.handling } : {}),
+      ...(giant.sessionPrep ? { sessionPrep: giant.sessionPrep } : {}),
     };
   }
 

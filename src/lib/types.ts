@@ -22,6 +22,22 @@ export interface ScholarlyNote {
   body: string;
 }
 
+/** One-page GM prep for a paid giant. Lore-class: lives in giants.lore.json only. */
+export interface SessionPrep {
+  /** Exactly three GM seeds when curated. */
+  encounterSeeds: string[];
+  compareSlug?: string;
+}
+
+/** Resolved Session Prep card props (safe to pass into a client component). */
+export interface SessionPrepCardData {
+  seeds?: string[];
+  sourceShelf: string[];
+  comparePair: { a: string; b: string; aName: string; bName: string } | null;
+  packTeaser: string;
+}
+
+
 export interface Giant {
   id: string;
   slug: string;
@@ -57,6 +73,8 @@ export interface Giant {
    * data; stripped from the public bundle like fullDescription.
    */
   scholarlyNotes?: ScholarlyNote[];
+  /** Curated Session Prep (pilots). Stripped from the public catalogue like fullDescription. */
+  sessionPrep?: SessionPrep;
   /** Shared citation list for scholarlyNotes, distinct from the entry's own `sources`. */
   scholarlySources?: string[];
   /**
