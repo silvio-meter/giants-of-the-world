@@ -7,8 +7,8 @@ import type { SessionPrepCardData } from "@/lib/types";
 /**
  * Session Prep block on paid giant pages only (caller skips freeEntry).
  *
- * Members see seeds (when curated), source shelf, and Compare link.
- * Free visitors see locked chrome and the pack teaser. No second CheckoutButton:
+ * Members see seeds (when curated), source shelf, and Compare link. No pack teaser
+ * once unlocked (that line is locked-only). No second CheckoutButton:
  * PremiumLock / LockedLore already own the gold wall on this page.
  */
 export function SessionPrepCard({ card }: { card: SessionPrepCardData }) {
@@ -68,10 +68,6 @@ export function SessionPrepCard({ card }: { card: SessionPrepCardData }) {
               </p>
             </div>
           ) : null}
-
-          <p className="border-t border-border pt-3 text-xs text-text-muted/80">
-            {card.packTeaser}
-          </p>
         </div>
       ) : (
         <div className="mt-4 space-y-3">
