@@ -41,3 +41,16 @@ test("CSP does not mention CARTO raster tiles", () => {
   assert.doesNotMatch(config, /CARTO_TILES/);
   assert.doesNotMatch(config, /CartoDB/);
 });
+
+test("vector maps strip the Leaflet prefix, like /map", () => {
+  const layer = readFileSync(
+    join(root, "src/components/OpenFreeMapLayer.tsx"),
+    "utf8"
+  );
+  assert.match(layer, /setPrefix\(""\)/);
+  const entry = readFileSync(
+    join(root, "src/components/EntryLocationMap.tsx"),
+    "utf8"
+  );
+  assert.match(entry, /zoomControl=\{false\}/);
+});

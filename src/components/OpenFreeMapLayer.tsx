@@ -18,6 +18,9 @@ export function OpenFreeMapLayer() {
   const map = useMap();
 
   useEffect(() => {
+    // Same chrome as /map: OSM + OpenFreeMap only, no Leaflet prefix.
+    map.attributionControl?.setPrefix("");
+
     const layer = L.maplibreGL({
       style: OPENFREEMAP_DARK,
       // Plugin reads customAttribution for Leaflet's control; the GL map's
