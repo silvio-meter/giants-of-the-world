@@ -30,6 +30,7 @@ export function EntryLocationMap({
     <MapContainer
       center={[lat, lng]}
       zoom={5}
+      zoomControl={false}
       scrollWheelZoom={false}
       dragging
       doubleClickZoom={false}

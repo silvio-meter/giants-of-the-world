@@ -49,15 +49,6 @@ function makeIcon(focused: boolean) {
   });
 }
 
-/** Drops Leaflet's own "Leaflet" branding link from the attribution control, keeping the OSM/OpenFreeMap copyright their tile terms require. */
-function TrimAttribution() {
-  const map = useMap();
-  useEffect(() => {
-    map.attributionControl.setPrefix("");
-  }, [map]);
-  return null;
-}
-
 function FitOrFocus({
   points,
   focus,
@@ -198,7 +189,6 @@ export function GiantsMap({
         >
           <OpenFreeMapLayer />
           <FitOrFocus points={points} focus={focusPoint} />
-          <TrimAttribution />
 
           {cells.map((cell, i) => (
             <Circle
