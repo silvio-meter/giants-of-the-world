@@ -60,7 +60,10 @@ export function Footer() {
             })}
           </div>
         </div>
-        <div className="flex max-w-md flex-wrap gap-x-4 gap-y-2 text-sm text-text-muted sm:max-w-lg sm:justify-end">
+        <nav
+          aria-label="Footer"
+          className="grid max-w-md grid-cols-2 gap-x-6 gap-y-2.5 text-sm text-text-muted sm:flex sm:max-w-lg sm:flex-wrap sm:justify-end sm:gap-x-4 sm:gap-y-2"
+        >
           <Link href="/giants" className="hover:text-accent-gold">
             Catalogue
           </Link>
@@ -103,8 +106,9 @@ export function Footer() {
           <Link href="/privacy" className="hover:text-accent-gold">
             Privacy
           </Link>
-        </div>
+        </nav>
       </div>
     </footer>
   );
 }
+
