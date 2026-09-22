@@ -805,6 +805,14 @@
       "distortions": "Retellings flatten him into a strength mechanic with no place attached, a habit as old as the vase painters, who only ever showed the hoist. The other common error is treating the earth-contact rule as the ancient core of the story, when Pindar knew Antaeus without it and the rule may be a later refinement.",
       "take": "The earth-contact rule, the lift, the skull-roofed temple, the Libyan setting and Dante's use of him as a ladder into the pit are all free to take; the sources are classical and long out of copyright, and the game-designer's reading of the fight as a rules problem is faithful to the myth, not a modernism. Two cautions, neither a restriction: writing him as a savage at the edge of the world repeats a Greek framing of North Africa, not African testimony, and the Moroccan tradition offers a ready corrective in which he is a local ancestor rather than a monster. If you use the tomb at Tingis or the Msoura stones, you are handling a real and excavated Moroccan site with a living local claim on the giant, so treat it as heritage with a story attached rather than as proof a monster existed.",
       "cite": "The Theoi Project's Antaios page assembles the classical passages in translation, and Plutarch's Life of Sertorius 9 is the source to credit for the tomb at Tingis."
+    },
+    "sessionPrep": {
+      "encounterSeeds": [
+        "Every time he touches the ground his strength returns. The wrestling floor is his mother.",
+        "Lift him or lose. The party must learn the rule without naming Heracles at the table.",
+        "At Tingis they later show a skeleton and call it his. Let the bone be the rumour after the fight, not the proof of it."
+      ],
+      "compareSlug": "atlas"
     }
   },
   "alcyoneus": {
@@ -1017,6 +1025,14 @@
       "distortions": "Modern retellings frequently play Þrymskviða straight as heroic adventure or trim the comedy for a more \"dignified\" Thor, when the poem's entire structure is built on farce, the disguised bride eating an ox and drinking three casks of mead, Loki's escalating cover stories, is the point rather than an embarrassing detail to smooth over. A second distortion is stating as settled fact that the poem preserves an authentic pre-Christian wedding-hallowing custom (a hammer laid in the bride's lap), when the poem is essentially the only witness for that supposed custom, making the reasoning circular.",
       "take": "The whole plot is freely usable exactly as it stands: Mjollnir's theft, Thrym's ransom demand, Thor's cross-dressed wedding, the escalating comic cover stories, and the hammer-fuelled massacre at the end. Play up rather than downplay the comedy, since that tone may be original to the poem rather than a later softening. Be careful with any claim about the poem's date or original religious sincerity, since scholars are sharply split on whether it is genuine heathen material or Christian-era parody of the old gods, and present that as an open question rather than picking a side.",
       "cite": "Cite Þrymskviða in the Poetic Edda, preserved in the thirteenth-century Codex Regius manuscript, in any of the standard public-domain or open translations (e.g. Bellows, or Pettit's more recent open-access edition)."
+    },
+    "sessionPrep": {
+      "encounterSeeds": [
+        "Mjölnir is under eight miles of earth in a jötunn hall. The bride's appetite is the first tell.",
+        "Loki as bridesmaid. Thor in a veil. Keep the joke from becoming a massacre until the gift is opened.",
+        "Thrym wants Freyja. What he gets is a hammer to the skull. Stage the gift-opening as the combat start."
+      ],
+      "compareSlug": "ymir"
     }
   },
   "hrungnir": {
@@ -1051,6 +1067,14 @@
       "distortions": "Retellings routinely drop the punchline structure that makes the episode work, presenting Thor as simply strong or simply foolish rather than showing that his three hammer-blows genuinely did land with world-shaking force, just on a mountain rather than a giant's skull, which is the joke and the point. Adaptations also frequently forget or smooth over that Skrymir and Útgarða-Loki are stated in the text to be the same being playing two roles, treating them as separate characters, and rarely note that this is Snorri's sole surviving account with no older poem behind it.",
       "take": "The whole episode is freely usable: the glove-as-house misdirection, the unopenable knot, the three failed hammer-blows and the valleys they leave in a mountain, and the final unmasking with its explained illusions (wildfire, thought, the tide, the Midgard Serpent, old age). Because Snorri Sturluson is the only substantial source, writing two centuries after Christian conversion, be honest in any 'authoritative' framing that this is one skilled author's construction rather than settled inherited myth, and the fusion of Skrymir with Útgarða-Loki is worth keeping rather than 'fixing' as an inconsistency.",
       "cite": "Cite Snorri Sturluson's Prose Edda, Gylfaginning chapters 44-47, as the essential and near-sole source, with Saxo Grammaticus's Gesta Danorum VIII (the Utgarthilocus episode) noted as a related but divergent Latin-language account."
+    },
+    "sessionPrep": {
+      "encounterSeeds": [
+        "The glove is a hall. The party has already slept in a thumb and called it shelter.",
+        "Three blows land on a hillside that was his head. He wakes polite and asks who flicked a leaf.",
+        "Utgard's contests are all tricks. Food, drink, and wrestling against the wrong nouns."
+      ],
+      "compareSlug": "ymir"
     }
   },
   "bestla": {
@@ -1228,6 +1252,14 @@
       "distortions": "The familiar mangling turns Balor into a cyclops and the Fomorians into a uniform race of deformed monsters, a flattening spread through fantasy fiction and games; the sources keep one eye closed under a lid and leave the Fomorians unresolved. Popular writing also still recycles the nineteenth-century solar-deity reading, which scholarship abandoned long ago.",
       "take": "Everything in the story is free to take: the eye and its lifted lid, the tower on Tory Island, the prophecy, Lugh, the sling-stone that turns the gaze on its owners. The cautions are about quality, not permission: keeping the Fomorians ambiguous rather than demonic preserves the material's actual charge, and the Donegal and Tory Island place-lore names real places in a living Gaeltacht community, worth getting geographically right if used. Nothing here needs consent; it needs accuracy.",
       "cite": "Elizabeth A. Gray's edition and translation of Cath Maige Tuired (Irish Texts Society, vol. 52, 1982) for the text, and the National Folklore Collection at University College Dublin, digitised at duchas.ie, for the modern Donegal and Tory Island lore."
+    },
+    "sessionPrep": {
+      "encounterSeeds": [
+        "Four men lift the lid. Whoever stands in the eye-line dies before the second breath.",
+        "He leads the Fomorians into Mag Tuired. The party has one night to steal the prophecy of his death before the battle opens.",
+        "Tory Island still names him. Treat the local warning as current, not antiquarian."
+      ],
+      "compareSlug": "polyphemus"
     }
   },
   "cormoran": {
@@ -1362,6 +1394,14 @@
       "distortions": "Retellings routinely present Geoffrey of Monmouth's Historia as recovered ancient history rather than the twelfth-century literary construction it is, and just as routinely present Gog and Magog as always having been two giants, when the split from one figure (Gogmagog) into a civic pair is a later development whose cause is unexplained. A second common error is confidently siting the cliff fight at a specific real place (Plymouth Hoe, a named Cornish headland) when the location was never securely fixed even in the earliest sources.",
       "take": "The whole narrative is freely usable: the Trojan-descent foundation frame, the giant-clearing, the Corineus wrestling match and cliff-throw, the civic afterlife as Gog and Magog in Guildhall pageantry. Flag rather than resolve the genuine uncertainties, whether Geoffrey drew on real Welsh/Cornish tradition or invented the episode, why one giant became two, where the cliff actually was, since none of these has a settled answer and treating any of them as fact would overstate the evidence. Note if you use the colonisation-narrative reading (aboriginal giants cleared to legitimize a new line) that this is a real and intentional structural feature of the text, not a modern imposition.",
       "cite": "Cite Geoffrey of Monmouth's Historia Regum Britanniae I.16 (c. 1136) as the origin text, with Wace's Roman de Brut and Layamon's Brut for its vernacular spread, and London Guildhall/Lord Mayor's Show civic records for the Gog and Magog pageant tradition."
+    },
+    "sessionPrep": {
+      "encounterSeeds": [
+        "Corineus wrestles him at the cliff. The party arrives as the second witness, not the hero.",
+        "Geoffrey names him. Guildhall later parades him. Decide whether tonight's fight is chronicle or civic mascot.",
+        "Biblical Gog and Magog share the name and not the story. Keep the two shelves apart at the table."
+      ],
+      "compareSlug": "fomorians"
     }
   },
   "jentilak": {
@@ -1561,6 +1601,14 @@
       "distortions": "The most common flattening reduces Kumbhakarna to a comic-relief \"big sleepy monster\" (the waking-up-for-a-feast gag), which is a real element of Ramlila performance but sits awkwardly against the Sanskrit epic's more dignified portrayal of a figure who tells his brother plainly that the war is unjust and fights anyway out of loyalty. A second distortion is treating Valmiki's Yuddha Kanda, Tulsidas's Ramcharitmanas, and the various Southeast Asian recensions (Ramakien, Reamker) as interchangeable, when they differ in emphasis, language and regional meaning. A third is flattening his moral position into either pure villain or pure victim, when the text itself supports reading his choice to fight as either conscience-tempered-by-loyalty or fatalism, and doesn't resolve which.",
       "take": "The core Valmiki narrative (the boon mishap via Saraswati, the six-month sleep cycle, the elaborate waking, the moment of telling Ravana the war is wrong, and the battlefield death) is usable and central to the epic, but treat it as retelling scripture for a living religion, not neutral folklore: avoid mockery-only framing that reduces him to a fat-joke monster, and preserve the loyalty-despite-disagreement beat that is the actual reason he's remembered with affection. Distinguish clearly between the Sanskrit epic's register and the comic Ramlila performance convention if you use the latter, and be aware that recensions vary (sleep length, moral framing) rather than picking one detail and presenting it as universal.",
       "cite": "Cite Valmiki's Ramayana (Yuddha Kanda for the battle and waking, Uttara Kanda for the boon) as the primary Sanskrit source, and Tulsidas's Ramcharitmanas (16th c. Awadhi) as the most widely known North Indian devotional retelling; note the Ramakien and Reamker for Southeast Asian regional versions."
+    },
+    "sessionPrep": {
+      "encounterSeeds": [
+        "He has slept for months. Waking him takes drums, shouts, and elephants. The siege clock starts when his eyes open.",
+        "His boon was sleep. His brother's war needs an eater of armies. Ask the table which debt they collect first.",
+        "Between bites he remembers dharma. One speech from him can turn allies against the wrong banner."
+      ],
+      "compareSlug": "ravana"
     }
   },
   "hiranyakashipu": {
@@ -2846,6 +2894,14 @@
       "distortions": "Pop culture, especially game and comic adaptations, tends to promote Surtr into a fully personified fire-demon antagonist with a backstory and motive, when the Eddas give him almost no interiority, only function and position. A second common flattening is treating him as Ymir's opposite in an orderly binary (ice giant versus fire giant, beginning versus end) when the actual textual relationship is looser and Muspell's own nature, place, being, or people, is itself unresolved in the sources.",
       "take": "Take the material freely: the guarding of Muspellheim's border, the flaming sword brighter than the sun, the killing of Freyr, the burning of the world at Ragnarök. Feel free to build character and motive where the sources are silent, since Snorri himself is already synthesising fragments two centuries after conversion, but do not present invented backstory as attested. Avoid asserting a firm chronological placement of Surtr \"before\" creation as textual fact; Gylfaginning's dialogue structure means his introduction alongside Muspell reflects conversational order, not a stated cosmological timeline.",
       "cite": "Cite the Poetic Edda's Völuspá (stanzas 51-53) for the oldest Ragnarök account and Snorri Sturluson's Prose Edda (Gylfaginning, c. 1220) for the fuller narrative context; both are long out of copyright and available in multiple public-domain translations."
+    },
+    "sessionPrep": {
+      "encounterSeeds": [
+        "He is already at the border of Muspellheim. Nothing crosses without burning, and the party has not yet been invited.",
+        "Völuspá says he comes from the south with fire. The sky ahead is already the wrong colour.",
+        "One begins the world, one ends it. Put the table between first and last and make them choose a direction."
+      ],
+      "compareSlug": "ymir"
     }
   },
   "ispolini": {
