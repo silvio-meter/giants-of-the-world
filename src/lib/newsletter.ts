@@ -21,15 +21,22 @@ export const ONE_SEAM = {
 export const NEWSLETTER_CONSENT_TEXT =
   "One Seam: a short welcome, then one seam a week. One place where a giant story splits. No digests. No product spam. You can unsubscribe at any time.";
 
-export type NewsletterSource = "footer" | "entry" | "journey";
+export type NewsletterSource =
+  | "footer"
+  | "entry"
+  | "entry-mid"
+  | "welcome"
+  | "journey";
 
-/** Map UI sourcePage into the three allowed source tags. */
+/** Map UI sourcePage into allowed source tags (scoreboard attribution). */
 export function normalizeNewsletterSource(
   sourcePage: string | null | undefined
 ): NewsletterSource {
   const raw = (sourcePage ?? "").trim().toLowerCase();
   if (raw === "journey") return "journey";
   if (raw === "footer" || raw === "") return "footer";
+  if (raw === "welcome" || raw === "welcome-paid") return "welcome";
+  if (raw === "entry-mid" || raw.startsWith("entry-mid:")) return "entry-mid";
   if (raw === "entry" || raw.startsWith("/giants/") || raw.startsWith("giants/")) {
     return "entry";
   }
