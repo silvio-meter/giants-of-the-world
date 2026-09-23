@@ -19,6 +19,7 @@ export async function POST(request: Request) {
   } | null;
 
   if (body?.company) {
+    console.warn("[subscribe] honeypot_tripped");
     return NextResponse.json({ ok: true });
   }
 

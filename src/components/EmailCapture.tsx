@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState, type FormEvent } from "react";
+import { umamiEvent } from "@/lib/umami";
 
 interface Props {
   /** "footer" is a compact single row; "detail" / "journey" have more room;
@@ -26,14 +27,15 @@ const COPY = {
   },
   spotlight: {
     heading: "One Seam - once a week.",
-    prompt: "One place where a giant story splits.",
+    prompt:
+      "One place where a giant story splits. Confirm once by email. Free. No membership required.",
   },
 } as const;
 
 const BUTTON = {
-  footer: "Enter the ledger",
-  detail: "Enter the ledger",
-  journey: "Enter the ledger",
+  footer: "Get One Seam · free",
+  detail: "Get One Seam · free",
+  journey: "Get One Seam · free",
   spotlight: "Get One Seam · free",
 } as const;
 const PLACEHOLDER = "you@domain.com";
@@ -81,6 +83,7 @@ export function EmailCapture({ variant, sourcePage }: Props) {
         setStatus("error");
         return;
       }
+      umamiEvent("email_submit_pending");
       setStatus("done");
     } catch {
       setError("Could not subscribe. Try again.");
@@ -175,7 +178,7 @@ export function EmailCapture({ variant, sourcePage }: Props) {
           autoComplete="off"
           value={company}
           onChange={(e) => setCompany(e.target.value)}
-          className="hidden"
+          className="absolute -left-[9999px] top-auto h-px w-px overflow-hidden"
           aria-hidden="true"
         />
         <button
