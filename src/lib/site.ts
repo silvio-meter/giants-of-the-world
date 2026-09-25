@@ -17,6 +17,20 @@ export const supportEmail = "hello@giantscodex.com";
 export const operatorIdentity =
   "LOGOSOM, obrt za informatičke usluge, vl. Silvio Meter, Sunčana 28, 31221 Josipovac, Croatia. MB 99368145, OIB 06729873793.";
 
+/**
+ * Official contact for the seller and data controller. Used in Terms and
+ * Privacy only (refunds, legal and data requests). Deliberately separate from
+ * operatorIdentity so the footer, which renders the identity on every page,
+ * does not show it. General support stays on supportEmail.
+ */
+export const operatorContactEmail = "meter257@gmail.com";
+
+/**
+ * VAT status of the seller, stated in Terms next to the identity.
+ */
+export const operatorVatNote =
+  "LOGOSOM is not registered in the VAT system. VAT is not charged under Article 90(1) of the Croatian VAT Act.";
+
 /** Days a customer has to ask for a full refund, no questions asked. */
 export const refundDays = 14;
 

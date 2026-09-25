@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { operatorIdentity, supportEmail } from "@/lib/site";
+import { operatorContactEmail, operatorIdentity } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
@@ -36,10 +36,10 @@ export default function PrivacyPage() {
             <span className="text-text-primary/90">{operatorIdentity}</span>{" "}
             Contact:{" "}
             <a
-              href={`mailto:${supportEmail}`}
+              href={`mailto:${operatorContactEmail}`}
               className="text-accent-gold hover:underline"
             >
-              {supportEmail}
+              {operatorContactEmail}
             </a>
             .
           </p>
@@ -143,10 +143,10 @@ export default function PrivacyPage() {
             and cancels any running subscription first. To get a copy of your
             data instead, or if you would rather we did it for you, email{" "}
             <a
-              href={`mailto:${supportEmail}?subject=Data%20request`}
+              href={`mailto:${operatorContactEmail}?subject=Data%20request`}
               className="text-accent-gold hover:underline"
             >
-              {supportEmail}
+              {operatorContactEmail}
             </a>
             . Deletion removes your profile, your favourites, and your login,
             and we action it within 30 days. Records we must keep for
@@ -195,10 +195,10 @@ export default function PrivacyPage() {
           <p className="mt-2">
             Questions about this policy, or about the data we hold on you:{" "}
             <a
-              href={`mailto:${supportEmail}`}
+              href={`mailto:${operatorContactEmail}`}
               className="text-accent-gold hover:underline"
             >
-              {supportEmail}
+              {operatorContactEmail}
             </a>
           </p>
         </section>

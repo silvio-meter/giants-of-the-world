@@ -36,6 +36,44 @@ test("Terms, Privacy and the footer render the operator identity", () => {
   assert.ok(read("src/components/Footer.tsx").includes("Operated by {operatorIdentity}"));
 });
 
+const VAT =
+  "LOGOSOM is not registered in the VAT system. VAT is not charged under Article 90(1) of the Croatian VAT Act.";
+const CONTACT = "meter257@gmail.com";
+
+test("site.ts keeps the seller contact and VAT note separate from the identity", () => {
+  const site = read("src/lib/site.ts");
+  assert.ok(site.includes(`export const operatorContactEmail = "${CONTACT}";`));
+  assert.ok(site.includes(`"${VAT}"`));
+  assert.ok(!IDENTITY.includes(CONTACT));
+  assert.ok(site.includes('export const supportEmail = "hello@giantscodex.com";'));
+  assert.ok(!/[\u2013\u2014]/.test(VAT));
+});
+
+test("/terms states the VAT line next to the identity and uses the seller contact", () => {
+  const terms = read("src/app/terms/page.tsx");
+  assert.ok(
+    /\{operatorIdentity\}<\/span>\{" "\}\s*\{operatorVatNote\}/.test(terms),
+    "VAT note should follow the identity in section 1"
+  );
+  assert.ok(terms.includes("mailto:${operatorContactEmail}?subject=Refund%20request"));
+  assert.ok(terms.includes("mailto:${operatorContactEmail}`"));
+  assert.ok(!terms.includes("supportEmail"), "terms should not use the general support address");
+});
+
+test("/privacy names the seller contact as the controller contact", () => {
+  const privacy = read("src/app/privacy/page.tsx");
+  const controller = privacy.split("The data controller is")[1]?.split("</p>")[0] ?? "";
+  assert.ok(controller.includes("mailto:${operatorContactEmail}"));
+  assert.ok(privacy.includes("mailto:${operatorContactEmail}?subject=Data%20request"));
+  assert.ok(!privacy.includes("supportEmail"), "privacy should not use the general support address");
+});
+
+test("the footer does not show the seller contact email", () => {
+  const footer = read("src/components/Footer.tsx");
+  assert.ok(!footer.includes("operatorContactEmail"));
+  assert.ok(!footer.includes(CONTACT));
+});
+
 function walk(dir) {
   return readdirSync(dir).flatMap((n) => {
     const f = join(dir, n);
