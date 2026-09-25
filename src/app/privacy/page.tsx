@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { supportEmail } from "@/lib/site";
+import { operatorIdentity, supportEmail } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
@@ -18,7 +18,7 @@ export default function PrivacyPage() {
         <h1 className="mt-2 font-[family-name:var(--font-cinzel)] text-3xl tracking-wide text-accent-gold">
           Privacy Policy
         </h1>
-        <p className="mt-2 text-sm text-text-muted">Last updated: 27 August 2026</p>
+        <p className="mt-2 text-sm text-text-muted">Last updated: 25 September 2026</p>
       </header>
 
       <div className="space-y-6 text-sm leading-relaxed text-text-muted">
@@ -30,6 +30,18 @@ export default function PrivacyPage() {
             This policy describes how Giants of the World (&quot;we&quot;, &quot;the
             Service&quot;) handles personal data when you visit the site, create an
             account, or purchase access.
+          </p>
+          <p className="mt-2">
+            The data controller is{" "}
+            <span className="text-text-primary/90">{operatorIdentity}</span>{" "}
+            Contact:{" "}
+            <a
+              href={`mailto:${supportEmail}`}
+              className="text-accent-gold hover:underline"
+            >
+              {supportEmail}
+            </a>
+            .
           </p>
         </section>
 
