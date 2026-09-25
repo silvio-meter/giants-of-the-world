@@ -675,7 +675,7 @@
     "culture": "Greek",
     "region": "Mediterranean",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Giant (bronze)",
     "shortDescription": "The bronze guardian of Crete: automaton giant with a single vein of ichor.",
     "related": [
@@ -2464,7 +2464,7 @@
     "culture": "American tall-tale",
     "region": "North America",
     "type": "tall-tale",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "As tall as the tale requires",
     "shortDescription": "Lumberjack giant of American tall tales: Babe the Blue Ox at his side.",
     "related": [
@@ -2591,7 +2591,7 @@
     "culture": "French",
     "region": "France",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "unmeasured",
     "shortDescription": "Folk giant older than Rabelais: over four hundred French megaliths and rocks are named for him.",
     "related": [
