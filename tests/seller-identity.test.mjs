@@ -74,6 +74,25 @@ test("the footer does not show the seller contact email", () => {
   assert.ok(!footer.includes(CONTACT));
 });
 
+test("/pricing refund link uses the seller contact", () => {
+  const pricing = read("src/app/pricing/page.tsx");
+  assert.ok(pricing.includes("mailto:${operatorContactEmail}?subject=Refund%20request"));
+  assert.ok(pricing.includes("{operatorContactEmail}"));
+  assert.ok(!pricing.includes("supportEmail"));
+});
+
+test("drip email 4 refund line uses the seller contact", () => {
+  const drip = read("src/lib/one-seam/drip.ts");
+  assert.ok(drip.includes(`export const REFUND_CONTACT_EMAIL = "${CONTACT}";`));
+  const e4 = drip.split("const E4_BODY = `")[1]?.split("`;")[0] ?? "";
+  assert.ok(
+    e4.includes(
+      "14-day refund on every plan, Lifetime included, via ${REFUND_CONTACT_EMAIL}."
+    )
+  );
+  assert.ok(!e4.includes("hello@giantscodex.com"));
+});
+
 function walk(dir) {
   return readdirSync(dir).flatMap((n) => {
     const f = join(dir, n);
@@ -87,4 +106,15 @@ test("no bank details anywhere in src", () => {
     .filter((f) => /\bIBAN\b|\bHR35\d*/.test(readFileSync(f, "utf8")))
     .map((f) => f.replace(root + "/", ""));
   assert.deepEqual(hits, []);
+});
+
+test("rendered drip email 4 names the seller contact for refunds (no send)", async () => {
+  const { getDripStep, renderDripText, renderDripHtml } = await import(
+    "../src/lib/one-seam/drip.ts"
+  );
+  const step = getDripStep(4);
+  const line =
+    "14-day refund on every plan, Lifetime included, via meter257@gmail.com.";
+  assert.ok(renderDripText(step, "https://example.invalid/u").includes(line));
+  assert.ok(renderDripHtml(step, "https://example.invalid/u").includes(line));
 });

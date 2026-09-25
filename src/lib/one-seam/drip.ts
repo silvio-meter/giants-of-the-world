@@ -14,6 +14,13 @@ export const MONTHLY_CHECKOUT_CTA =
 
 export const MOTIFS_URL = "https://www.giantscodex.com/motifs";
 
+/**
+ * Seller contact for refund requests. Mirrors operatorContactEmail in
+ * src/lib/site.ts (not imported, to keep this file free of app imports);
+ * tests/seller-identity.test.mjs fails if the two drift apart.
+ */
+export const REFUND_CONTACT_EMAIL = "meter257@gmail.com";
+
 export type DripStepId = 1 | 2 | 3 | 4;
 
 export type DripStep = {
@@ -61,7 +68,7 @@ Unsubscribe: {unsubscribeUrl}`;
 
 const E4_BODY = `Three splits: Bergelmir's vessel, Ymir beside Surtr, the people-who-came-before thread.
 
-If those were the reason you confirmed, membership is $4.99 a month. Cancel anytime. 14-day refund on every plan, Lifetime included, via hello@giantscodex.com.
+If those were the reason you confirmed, membership is $4.99 a month. Cancel anytime. 14-day refund on every plan, Lifetime included, via ${REFUND_CONTACT_EMAIL}.
 ${MONTHLY_CHECKOUT_CTA}
 
 Yearly is $49, Lifetime $129, same refund. Secondary only: https://www.giantscodex.com/pricing
