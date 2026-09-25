@@ -8,7 +8,7 @@ import { umamiEvent } from "@/lib/umami";
 import type { PaidPlan, UserPlan } from "@/lib/access";
 import { formatPlanLabel } from "@/lib/access";
 import { PLAN_PRICES } from "@/lib/plans";
-import { refundDays, supportEmail } from "@/lib/site";
+import { operatorContactEmail, refundDays } from "@/lib/site";
 
 const plans: {
   id: PaidPlan;
@@ -301,10 +301,10 @@ function PricingInner() {
         </span>{" "}
         Every plan, Lifetime included. Email{" "}
         <a
-          href={`mailto:${supportEmail}?subject=Refund%20request`}
+          href={`mailto:${operatorContactEmail}?subject=Refund%20request`}
           className="text-accent-gold hover:underline"
         >
-          {supportEmail}
+          {operatorContactEmail}
         </a>{" "}
         and we refund it in full.
       </p>
