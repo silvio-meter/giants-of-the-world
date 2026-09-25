@@ -295,7 +295,7 @@ export default async function GiantDetailPage({ params }: Props) {
 
           <SourcesSection sources={giant.sources} freeEntry={giant.freeEntry} />
 
-          {sessionPrepCard ? <SessionPrepCard card={sessionPrepCard} /> : null}
+          {sessionPrepCard ? <SessionPrepCard slug={giant.slug} card={sessionPrepCard} /> : null}
 
           <RelatedFindingLink giantSlug={giant.slug} />
 
