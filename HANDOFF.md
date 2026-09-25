@@ -52,9 +52,9 @@ Compute, do not quote stale numbers from prose:
 node -e 'const g=require("./src/data/giants.json");console.log(g.length,"entries,",g.filter(x=>x.freeEntry).length,"free,",g.filter(x=>x.scholarlyNotes).length,"scholarly,",g.filter(x=>x.chain).length,"chains,",g.filter(x=>x.handling).length,"handling")'
 ```
 
-As of this handoff: **84** entries, **16** free (12 curated doorways plus
+As of this handoff: **92** entries, **19** free (15 curated doorways plus
 restrained short entries that must stay free), **32** with scholarly notes,
-**18** with chains, **84** with `handling`. Every entry has **≥2** `related`
+**18** with chains, **92** with `handling`. Every entry has **≥2** `related`
 links and a dedicated share card.
 
 One handling entry is `publishable: false`: **`dzunukwa`** (Kwakwaka'wakw —
@@ -63,10 +63,11 @@ do not invent fiction from her name/masks as generic monster material).
 ### Free set
 
 Access (`freeEntry`) and homepage promotion are separate. There are still
-**16** free entries total; only **10** appear on the homepage strip.
+**19** free entries total; only **13** appear on the homepage strip.
 
 **Homepage strip (free and promotable):** `ymir`, `nephilim`, `goliath`,
-`atlas`, `polyphemus`, `ravana`, `oni`, `jentilak`, `fomorians`, `budj-bim`.
+`atlas`, `polyphemus`, `ravana`, `oni`, `jentilak`, `fomorians`, `budj-bim`,
+`talos`, `gargantua`, `paul-bunyan`.
 Public-domain or, for `budj-bim`, an explicit decision that the point is
 landscape and aquaculture. Source of truth: `FREE_STRIP_ORDER` in
 `src/app/page.tsx` (explicit list only; no "append all free" fallback).

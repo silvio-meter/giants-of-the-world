@@ -25,7 +25,7 @@ export function SizeComparison({ giant, freeEntry = false }: Props) {
   const meters = giant.heightMeters;
   if (!meters) return null;
 
-  // Free 16: show the chart, never a checkout ask. Paid entries: later lock,
+  // Free 19: show the chart, never a checkout ask. Paid entries: later lock,
   // no button, so the page keeps a single gold wall on the account fade.
   if (!freeEntry && ready && !isPaid) {
     return (

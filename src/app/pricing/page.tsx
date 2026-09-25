@@ -350,7 +350,7 @@ function PricingInner() {
             <li>One-line disputed teaser</li>
             <li>Browse the map (pins; motif graph locked)</li>
             <li>Session marks for My Journey (not synced)</li>
-            <li>Up to 16 showcase entries fully open</li>
+            <li>Up to 19 showcase entries fully open</li>
           </ul>
         </div>
         <div className="rounded-lg border border-border bg-surface p-6">

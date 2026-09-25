@@ -7,6 +7,7 @@ import { fileURLToPath } from "node:url";
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const src = readFileSync(join(root, "src/lib/seo-entries.ts"), "utf8");
 
+/** The eight original doors, each with a five-question FAQ set. */
 const EIGHT = [
   "atlas",
   "fomorians",
@@ -18,6 +19,10 @@ const EIGHT = [
   "ymir",
 ];
 
+/** Free doors added later: title and description only, no FAQ set yet. */
+const TITLE_ONLY = ["gargantua", "paul-bunyan", "talos"];
+const ALL = [...EIGHT, ...TITLE_ONLY];
+
 function entryBlock(slug) {
   const key = slug.includes("-") ? `"${slug}"` : slug;
   const re = new RegExp(`${key}: \\{([\\s\\S]*?)\\n  \\},`);
@@ -26,12 +31,16 @@ function entryBlock(slug) {
   return m[1];
 }
 
-test("SEO overrides exist for the eight free doors", () => {
-  for (const slug of EIGHT) {
+test("SEO overrides exist for all eleven free doors", () => {
+  for (const slug of ALL) {
     assert.ok(entryBlock(slug).includes("title:"));
   }
+  assert.equal((src.match(/^  ("[a-z-]+"|[a-z]+): \{$/gm) || []).length, 11);
   assert.ok(!src.includes("tsul-kalu"));
   assert.equal((src.match(/faqs:/g) || []).length, 8);
+  for (const slug of TITLE_ONLY) {
+    assert.ok(!entryBlock(slug).includes("faqs:"), `${slug} should not have faqs yet`);
+  }
 });
 
 test("SEO titles omit the site suffix; copy has no em dash", () => {
@@ -45,8 +54,11 @@ test("SEO titles omit the site suffix; copy has no em dash", () => {
   assert.ok(src.includes("ten-headed king of the Ramayana"));
   assert.ok(src.includes("Irish adversaries of the Tuatha"));
   assert.ok(src.includes("Lovelock Cave, what Winnemucca wrote"));
+  assert.ok(src.includes('title: "Talos: the bronze giant who guarded Crete"'));
+  assert.ok(src.includes('title: "Gargantua: the French folk giant before Rabelais"'));
+  assert.ok(src.includes('title: "Paul Bunyan: the lumberjack giant of American tall tales"'));
   // Comment documents the template suffix; titles themselves must omit it.
-  for (const slug of EIGHT) {
+  for (const slug of ALL) {
     const block = entryBlock(slug);
     const title = /title: "([^"]+)"/.exec(block)?.[1] ?? "";
     assert.ok(title.length > 0, slug);
@@ -54,7 +66,7 @@ test("SEO titles omit the site suffix; copy has no em dash", () => {
     assert.ok(!block.includes(em), `${slug} has em dash`);
   }
   assert.ok(!src.includes(em));
-  assert.equal((src.match(/Free sourced entry\./g) || []).length, 8);
+  assert.equal((src.match(/Free sourced entry\./g) || []).length, 11);
 });
 
 test("each of the eight doors ships five FAQ Q&As", () => {

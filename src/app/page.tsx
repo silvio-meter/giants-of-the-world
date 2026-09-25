@@ -61,7 +61,7 @@ const tools = [
  * freeEntry is a separate access question. Living-community and
  * no-attributable-community free entries stay free to read but are not
  * listed here (see HANDOFF "Free set").
- * Recognition first, then range. Exactly these ten, no fallback.
+ * Recognition first, then range. Exactly these thirteen, no fallback.
  */
 const FREE_STRIP_ORDER = [
   "ymir",
@@ -74,6 +74,9 @@ const FREE_STRIP_ORDER = [
   "jentilak",
   "fomorians",
   "budj-bim",
+  "talos",
+  "gargantua",
+  "paul-bunyan",
 ];
 
 export default function HomePage() {

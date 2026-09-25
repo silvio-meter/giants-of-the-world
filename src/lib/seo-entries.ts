@@ -80,6 +80,11 @@ export const ENTRY_SEO: Record<string, EntrySeo> = {
       },
     ],
   },
+  gargantua: {
+    title: "Gargantua: the French folk giant before Rabelais",
+    description:
+      "Gargantua was a French folk giant before Rabelais made him famous. More than four hundred megaliths, rocks, and hills are named for him. Free sourced entry.",
+  },
   goliath: {
     title: "How tall was Goliath? The manuscripts disagree",
     description:
@@ -143,6 +148,11 @@ export const ENTRY_SEO: Record<string, EntrySeo> = {
           "“And also afterward” in Genesis 6:4 is a genuine problem, since it appears to place them after a flood that killed everything. Explanations range from a second incursion to an editorial insertion harmonising with Numbers 13. The page does not choose among them.",
       },
     ],
+  },
+  "paul-bunyan": {
+    title: "Paul Bunyan: the lumberjack giant of American tall tales",
+    description:
+      "Paul Bunyan and Babe the Blue Ox: the lumberjack giant of American tall tales, from logging-camp yarns to print and roadside statues. Free sourced entry.",
   },
   polyphemus: {
     title: "Polyphemus: the Cyclops of the Odyssey",
@@ -239,6 +249,11 @@ export const ENTRY_SEO: Record<string, EntrySeo> = {
           "The red hair is in Winnemucca, not imported later. She writes that her people say the tribe they exterminated had reddish hair, and that she has some of that hair. Adrienne Mayor notes that hair pigment can also turn a rusty red after death under the right conditions, which is a separate path for the same detail in excavated remains.",
       },
     ],
+  },
+  talos: {
+    title: "Talos: the bronze giant who guarded Crete",
+    description:
+      "Talos in Greek myth: the bronze guardian of Crete who circled the island, hurled stones at ships, and died when his single vein of ichor was opened. Free sourced entry.",
   },
   ymir: {
     title: "Ymir: the world made from a body",
