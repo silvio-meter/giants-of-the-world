@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { operatorIdentity, refundDays, supportEmail } from "@/lib/site";
+import {
+  operatorContactEmail,
+  operatorIdentity,
+  operatorVatNote,
+  refundDays,
+} from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Terms of Use",
@@ -38,7 +43,8 @@ export default function TermsPage() {
           </p>
           <p className="mt-2">
             The Service is operated and sold by{" "}
-            <span className="text-text-primary/90">{operatorIdentity}</span>
+            <span className="text-text-primary/90">{operatorIdentity}</span>{" "}
+            {operatorVatNote}
           </p>
         </section>
 
@@ -78,10 +84,10 @@ export default function TermsPage() {
             </strong>{" "}
             If the codex is not what you hoped for, email{" "}
             <a
-              href={`mailto:${supportEmail}?subject=Refund%20request`}
+              href={`mailto:${operatorContactEmail}?subject=Refund%20request`}
               className="text-accent-gold hover:underline"
             >
-              {supportEmail}
+              {operatorContactEmail}
             </a>{" "}
             within {refundDays} days of your purchase and we will refund it in
             full. This applies to every plan, Lifetime included. You do not have
@@ -162,10 +168,10 @@ export default function TermsPage() {
           <p className="mt-2">
             Questions about these terms, refunds, or your account:{" "}
             <a
-              href={`mailto:${supportEmail}`}
+              href={`mailto:${operatorContactEmail}`}
               className="text-accent-gold hover:underline"
             >
-              {supportEmail}
+              {operatorContactEmail}
             </a>
             . We aim to reply within a few days.
           </p>
