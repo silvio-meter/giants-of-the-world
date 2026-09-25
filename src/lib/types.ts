@@ -29,9 +29,14 @@ export interface SessionPrep {
   compareSlug?: string;
 }
 
-/** Resolved Session Prep card props (safe to pass into a client component). */
+/**
+ * Resolved Session Prep card props (safe to pass into a client component).
+ * Never carries the seed text itself: that is paid lore, fetched by the card
+ * from /api/lore/[slug] once the reader is entitled.
+ */
 export interface SessionPrepCardData {
-  seeds?: string[];
+  /** True when curated seeds exist for this entry. The text is not included. */
+  hasSeeds: boolean;
   sourceShelf: string[];
   comparePair: { a: string; b: string; aName: string; bName: string } | null;
   packTeaser: string;

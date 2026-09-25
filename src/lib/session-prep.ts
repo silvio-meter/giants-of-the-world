@@ -9,7 +9,12 @@ const PACK_TEASER =
 
 /**
  * Build the Session Prep card for a paid giant page.
- * Seeds come only from curated lore sessionPrep (pilots).
+ *
+ * The result is passed to a client component, so everything in it ends up in
+ * the static page payload that anonymous visitors download. Encounter seeds
+ * are paid lore and are therefore NOT included here: only a `hasSeeds` flag
+ * crosses over, and SessionPrepCard fetches the seeds from the entitled
+ * /api/lore/[slug] route after the membership check.
  * Source shelf and compare pair are derived from public catalogue fields.
  */
 export function getSessionPrepCard(
@@ -46,7 +51,7 @@ export function getSessionPrepCard(
     seeds.every((s) => typeof s === "string" && s.trim().length > 0);
 
   return {
-    ...(hasSeeds ? { seeds } : {}),
+    hasSeeds,
     sourceShelf,
     comparePair,
     packTeaser: PACK_TEASER,

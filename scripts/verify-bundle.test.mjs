@@ -103,3 +103,113 @@ test(
     }
   }
 );
+
+/**
+ * Session Prep encounter seeds are paid lore. They once reached anonymous
+ * visitors because SessionPrepCard received them as props, which Next embeds
+ * in the static page payload. Every seed of every pilot is checked, taken from
+ * the data rather than hardcoded, so a new pilot is covered automatically.
+ *
+ * A seed may be HTML-escaped in the markup (' becomes &#x27;), so each seed is
+ * matched by its longest run free of characters that escaping could change.
+ */
+const loreForSeeds = JSON.parse(
+  readFileSync(join(root, "src/data/giants.lore.json"), "utf8")
+);
+const seedPilots = Object.entries(loreForSeeds)
+  .filter(([, v]) => Array.isArray(v.sessionPrep?.encounterSeeds))
+  .map(([slug, v]) => ({ slug, seeds: v.sessionPrep.encounterSeeds }));
+
+function seedNeedles(seeds) {
+  return seeds.map((seed) =>
+    seed
+      .split(/['"&<>\\]/)
+      .map((s) => s.trim())
+      .sort((a, b) => b.length - a.length)[0]
+  );
+}
+
+const allSeedNeedles = seedPilots.flatMap((p) => seedNeedles(p.seeds));
+
+test("seed needles are long enough to mean something", () => {
+  assert.ok(seedPilots.some((p) => p.slug === "thrym"), "thrym should be a pilot");
+  for (const n of allSeedNeedles) {
+    assert.ok(n.length >= 20, `seed needle too short to be a reliable match: "${n}"`);
+  }
+});
+
+const giantsAppDir = join(root, ".next/server/app/giants");
+
+/** Prerendered output for one page: thrym.html, thrym.rsc, thrym.segments/... */
+function prerenderFiles(slug) {
+  if (!existsSync(giantsAppDir)) return [];
+  const out = [];
+  for (const name of readdirSync(giantsAppDir)) {
+    if (name !== slug && !name.startsWith(`${slug}.`)) continue;
+    const full = join(giantsAppDir, name);
+    if (statSync(full).isDirectory()) {
+      const walk = (d) =>
+        readdirSync(d).flatMap((n) => {
+          const f = join(d, n);
+          return statSync(f).isDirectory() ? walk(f) : [f];
+        });
+      out.push(...walk(full));
+    } else {
+      out.push(full);
+    }
+  }
+  return out;
+}
+
+test(
+  "no Session Prep seed text is in the prerendered pilot pages",
+  { skip: built ? false : "no production build present" },
+  () => {
+    const thrymFiles = prerenderFiles("thrym");
+    assert.ok(
+      thrymFiles.some((f) => f.endsWith(".html")),
+      "expected a prerendered thrym.html under .next/server/app/giants"
+    );
+    const leaks = [];
+    for (const { slug } of seedPilots) {
+      for (const f of prerenderFiles(slug)) {
+        const text = readFileSync(f, "utf8");
+        for (const needle of allSeedNeedles) {
+          if (text.includes(needle)) leaks.push(`${f.replace(root + "/", "")}: "${needle}"`);
+        }
+      }
+    }
+    assert.deepEqual(leaks, [], `paid Session Prep seeds are in the static page output:\n  ${leaks.join("\n  ")}`);
+  }
+);
+
+test(
+  "no Session Prep seed text is in any client chunk",
+  { skip: built ? false : "no production build present" },
+  () => {
+    const guilty = allChunks(chunkDir).filter((f) => {
+      const text = readFileSync(f, "utf8");
+      return allSeedNeedles.some((n) => text.includes(n));
+    });
+    assert.deepEqual(guilty.map((f) => f.replace(root + "/", "")), []);
+  }
+);
+
+test(
+  "the served /giants/thrym page carries no seed text for a logged-out reader",
+  { skip: BASE ? false : "BASE not set, needs a running production server" },
+  async () => {
+    const html = await (
+      await fetch(`${BASE}/giants/thrym`, { credentials: "omit", cache: "no-store" })
+    ).text();
+    assert.ok(html.includes("Session Prep"), "the Session Prep block should still render");
+    assert.ok(
+      html.includes("Full prep pack unlocks with membership") || html.includes("Checking membership"),
+      "the Session Prep teaser should still render"
+    );
+    const thrym = seedPilots.find((p) => p.slug === "thrym");
+    for (const needle of seedNeedles(thrym.seeds)) {
+      assert.ok(!html.includes(needle), `thrym seed is in the served HTML: "${needle}"`);
+    }
+  }
+);
