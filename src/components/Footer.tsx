@@ -6,7 +6,12 @@ import {
   YouTubeIcon,
   PinterestIcon,
 } from "./SocialIcons";
-import { refundDays, socialLinks, supportEmail } from "@/lib/site";
+import {
+  operatorIdentity,
+  refundDays,
+  socialLinks,
+  supportEmail,
+} from "@/lib/site";
 
 const SOCIAL_ICONS: Record<string, React.ComponentType<React.SVGProps<SVGSVGElement>>> = {
   X: XIcon,
@@ -41,6 +46,9 @@ export function Footer() {
             <Link href="/terms" className="hover:text-accent-gold">
               {refundDays}-day refund
             </Link>
+          </p>
+          <p className="mt-3 max-w-md text-xs text-text-muted/80">
+            Operated by {operatorIdentity}
           </p>
           <div className="mt-4 flex gap-4">
             {socialLinks.map(({ platform, url }) => {

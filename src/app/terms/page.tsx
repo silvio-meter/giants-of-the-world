@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { refundDays, supportEmail } from "@/lib/site";
+import { operatorIdentity, refundDays, supportEmail } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Terms of Use",
@@ -18,7 +18,7 @@ export default function TermsPage() {
         <h1 className="mt-2 font-[family-name:var(--font-cinzel)] text-3xl tracking-wide text-accent-gold">
           Terms of Use
         </h1>
-        <p className="mt-2 text-sm text-text-muted">Last updated: 24 July 2026</p>
+        <p className="mt-2 text-sm text-text-muted">Last updated: 25 September 2026</p>
       </header>
 
       <div className="space-y-6 text-sm leading-relaxed text-text-muted">
@@ -35,6 +35,10 @@ export default function TermsPage() {
               Pricing
             </Link>{" "}
             page.
+          </p>
+          <p className="mt-2">
+            The Service is operated and sold by{" "}
+            <span className="text-text-primary/90">{operatorIdentity}</span>
           </p>
         </section>
 

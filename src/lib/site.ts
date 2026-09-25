@@ -9,6 +9,14 @@ export const siteUrl =
  */
 export const supportEmail = "hello@giantscodex.com";
 
+/**
+ * The legal seller and data controller behind the Service. Named in Terms,
+ * Privacy and the footer. Brand names stay Giants of the World / Giants Codex;
+ * this is the business that sells and operates them. Never add bank details.
+ */
+export const operatorIdentity =
+  "LOGOSOM, obrt za informatičke usluge, vl. Silvio Meter, Sunčana 28, 31221 Josipovac, Croatia. MB 99368145, OIB 06729873793.";
+
 /** Days a customer has to ask for a full refund, no questions asked. */
 export const refundDays = 14;
 
