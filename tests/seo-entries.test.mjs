@@ -35,7 +35,11 @@ test("SEO overrides exist for all eleven free doors", () => {
   for (const slug of ALL) {
     assert.ok(entryBlock(slug).includes("title:"));
   }
-  assert.equal((src.match(/^  ("[a-z-]+"|[a-z]+): \{$/gm) || []).length, 11);
+  // 11 free doors + 64 locked entries (SEO hubs PR). Held and living-community slugs stay out.
+  assert.equal((src.match(/^  ("[a-z-]+"|[a-z]+): \{$/gm) || []).length, 75);
+  for (const held of ["papinijuwari", "chinny-kinik", "murkupang", "thardid-jimbo", "dzunukwa", "kee-wakw", "gaoh", "maero", "kahui-tipua", "nawao", "amazimu", "stallo"]) {
+    assert.ok(!src.includes(`"${held}": {`) && !src.includes(`  ${held}: {`), `${held} must stay out of ENTRY_SEO`);
+  }
   assert.ok(!src.includes("tsul-kalu"));
   assert.equal((src.match(/faqs:/g) || []).length, 8);
   for (const slug of TITLE_ONLY) {

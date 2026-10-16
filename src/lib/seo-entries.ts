@@ -287,6 +287,327 @@ export const ENTRY_SEO: Record<string, EntrySeo> = {
       },
     ],
   },
+  // Locked entries (SEO PR, Oct 2026). Living-community and held slugs stay out.
+  "og-of-bashan": {
+    title: "Og of Bashan: the iron bed and the last of the Rephaim",
+    description:
+      "Og of Bashan in the Hebrew Bible: king called the last of the Rephaim, remembered especially by the iron bed measured in Deuteronomy. Sourced teaser.",
+  },
+  enceladus: {
+    title: "Enceladus under the mountain",
+    description:
+      "Enceladus in Greek Gigantomachy tradition: a giant pinned beneath Sicily (or Etna); quakes and fire read as his movement. Sourced Unlock teaser.",
+  },
+  antaeus: {
+    title: "Antaeus: the giant who drew strength from the earth",
+    description:
+      "Antaeus in Greek myth: the Libyan giant renewed by touching the ground, until Heracles lifted him. Pindar, Apollodorus, Lucan. Sourced entry.",
+  },
+  alcyoneus: {
+    title: "Alcyoneus: immortal on his native soil",
+    description:
+      "Alcyoneus of the Gigantomachy: deathless while he stood on his own ground, killed only once dragged beyond it. Apollodorus and Pindar. Sourced entry.",
+  },
+  porphyrion: {
+    title: "Porphyrion: king of the Gigantes",
+    description:
+      "Porphyrion, king of the Gigantes: he assailed Hera and fell to Zeus and Heracles. Apollodorus, Pindar and the Pergamon frieze. Sourced entry.",
+  },
+  polybotes: {
+    title: "Polybotes and the island of Nisyros",
+    description:
+      "Polybotes of the Gigantomachy: chased by Poseidon across the sea and crushed under the island of Nisyros. Apollodorus and Strabo. Sourced entry.",
+  },
+  briareus: {
+    title: "Briareus: the hundred-handed",
+    description:
+      "Briareus, one of the Hundred-Handed of Hesiod's Theogony, who fought for Zeus against the Titans; Homer has him called up to Olympus. Sourced entry.",
+  },
+  orion: {
+    title: "Orion: the giant hunter set among the stars",
+    description:
+      "Orion in Greek myth: a hunter so great he was set among the stars. Homer, Hesiod and later mythographers, with their variant deaths. Sourced entry.",
+  },
+  geryon: {
+    title: "Geryon: the three-bodied giant of the far west",
+    description:
+      "Geryon in Greek myth: three-bodied giant of the far west whose cattle Heracles took. Hesiod, Stesichorus' Geryoneis, Apollodorus. Sourced entry.",
+  },
+  tityus: {
+    title: "Tityus: the giant punished in the underworld",
+    description:
+      "Tityus in Greek myth: a giant stretched out in the underworld while vultures tear at his liver. Homer, Pindar, Apollodorus, Lucretius. Sourced entry.",
+  },
+  thrym: {
+    title: "Thrym: the giant who stole Thor's hammer",
+    description:
+      "Thrym in the Poetic Edda: the giant who stole Mjölnir and demanded Freyja as his bride, and got Thor in a veil instead. Þrymskviða. Sourced entry.",
+  },
+  hrungnir: {
+    title: "Hrungnir: the stone-hearted giant who dueled Thor",
+    description:
+      "Hrungnir in Snorri's Edda: the giant with a heart of stone who dueled Thor and left a whetstone shard in his head. Skáldskaparmál. Sourced entry.",
+  },
+  skrymir: {
+    title: "Skrymir: the giant whose glove was a hall",
+    description:
+      "Skrymir in Snorri's Gylfaginning: a vast wanderer whose glove Thor mistook for a hall, and a master of illusion. Saxo's echo included. Sourced entry.",
+  },
+  bestla: {
+    title: "Bestla: the giantess mother of Odin",
+    description:
+      "Bestla in Snorri's Edda and Hávamál: the giantess who bore Odin, so the gods carry giant blood from the start. Sourced entry.",
+  },
+  balor: {
+    title: "Balor of the Evil Eye",
+    description:
+      "Balor in Irish tradition: Fomorian king whose eye blighted armies, slain by his grandson Lugh in the battle tales of Mag Tuired. Sourced Unlock teaser.",
+  },
+  cormoran: {
+    title: "Cormoran: the giant of St Michael's Mount",
+    description:
+      "Cormoran, Cornish giant of St Michael's Mount, felled by Jack the Giant Killer in chapbooks from c. 1711 and in Robert Hunt's collection. Sourced entry.",
+  },
+  gogmagog: {
+    title: "Gogmagog: the giant who wrestled Corineus",
+    description:
+      "Gogmagog in Geoffrey of Monmouth: the British giant thrown from a cliff by Corineus, whose name passed to London's guardians. Sourced entry.",
+  },
+  olentzero: {
+    title: "Olentzero: the Basque Christmas giant",
+    description:
+      "Olentzero, the Basque charcoal-burner of Christmas, read in folklore as a last echo of the jentilak. Barandiarán and Azkue collections. Sourced entry.",
+  },
+  kumbhakarna: {
+    title: "Kumbhakarna: the sleeper who woke to war",
+    description:
+      "Kumbhakarna in the Ramayana: Ravana’s enormous brother, bound to long sleep by a twisted boon, woken to fight Rama’s army. Sourced Unlock teaser.",
+  },
+  hiranyakashipu: {
+    title: "Hiranyakashipu and the boon that failed",
+    description:
+      "Hiranyakashipu in the Bhagavata Purana: the asura king no man or beast could kill, undone by Narasimha. Prahlada's story, sourced.",
+  },
+  mahabali: {
+    title: "Mahabali and Vamana's three steps",
+    description:
+      "Mahabali in the Bhagavata Purana: the generous asura king sent below by Vamana's three steps, still welcomed home at Onam. Sourced entry.",
+  },
+  svyatogor: {
+    title: "Svyatogor: the bogatyr the earth could not bear",
+    description:
+      "Svyatogor of the Russian byliny: a bogatyr so heavy the earth itself could not carry him. Rybnikov's Onega collections. Sourced entry.",
+  },
+  quinametzin: {
+    title: "Quinametzin: giants of a previous sun",
+    description:
+      "Quinametzin: the giant race of an earlier world age in colonial era Mexican chronicles such as Alva Ixtlilxochitl. Tradition, not archaeology.",
+  },
+  xelhua: {
+    title: "Xelhua and the pyramid of Cholula",
+    description:
+      "Xelhua: a giant said to survive the flood and raise the great pyramid at Cholula, as told by Diego Durán and later Humboldt. Sourced entry.",
+  },
+  "kua-fu": {
+    title: "Kua Fu: the giant who chased the sun",
+    description:
+      "Kua Fu in the Shanhaijing: the giant who chased the sun, died of thirst, and whose staff became a forest. Liezi version included. Sourced entry.",
+  },
+  fangfeng: {
+    title: "Fangfeng: the giant who came late to Yu",
+    description:
+      "Fangfeng: the giant executed by Yu the Great for arriving late, and the bones Confucius was asked about in the Guoyu. Sourced entry.",
+  },
+  "shuten-doji": {
+    title: "Shuten Dōji: the oni king of Mount Ōe",
+    description:
+      "Shuten Dōji, the drunkard oni king of Mount Ōe, slain by Raikō's band in the Ōeyama scrolls and otogizōshi tales. Sourced entry.",
+  },
+  ojancanu: {
+    title: "Ojáncanu: the one-eyed giant of Cantabria",
+    description:
+      "Ojáncanu: the one-eyed forest giant of Cantabrian folklore, enemy of the good anjana, recorded by Manuel Llano. Sourced entry.",
+  },
+  rubezahl: {
+    title: "Rübezahl: lord of the Giant Mountains",
+    description:
+      "Rübezahl, the trickster giant and weather spirit of the Riesengebirge, drawn on a Silesian map as early as 1561. Sourced entry.",
+  },
+  "giant-of-kandahar": {
+    title: "Giant of Kandahar: an unverified modern legend",
+    description:
+      "The Giant of Kandahar is unverified modern folklore: a story spread by radio, forums and video, not a documented event. How the legend grew.",
+  },
+  "giant-of-kunar": {
+    title: "Giant of Kunar: an unverified modern legend",
+    description:
+      "The Giant of Kunar is unverified modern folklore circulating on paranormal radio and forums since the mid 2000s. No evidence; how the story spread.",
+  },
+  surtr: {
+    title: "Surtr: fire at the edge of the world",
+    description:
+      "Surtr in the Eddas: the fire giant of Muspelheim who stands at the world’s edge and, in the last battle, brings flame. Sourced teaser; full essay Unlock.",
+  },
+  ispolini: {
+    title: "Ispolini: the giants of Bulgarian folklore",
+    description:
+      "Ispolini in Bulgarian folklore: giants told as God's second attempt at people, before us. From Bulgarian mythology reference works. Sourced entry.",
+  },
+  mouros: {
+    title: "Mouros: the megalith builders of north-west Iberia",
+    description:
+      "Mouros in Galician, Asturian and Portuguese tradition: unbaptised people of the earth credited with the megaliths. Sourced entry.",
+  },
+  dragonja: {
+    title: "Dragonja: the Istrian giant who ploughed a river",
+    description:
+      "Dragonja in Istrian tradition: the giant whose plough cut the river Mirna, his kind building the hill towns. Bošković-Stulli. Sourced entry.",
+  },
+  daidarabotchi: {
+    title: "Daidarabotchi: the giant who shaped Fuji",
+    description:
+      "Daidarabotchi in Japanese tradition: a landscape giant whose digging left Lake Biwa and Fuji. Earliest echo in the Hitachi Fudoki. Sourced entry.",
+  },
+  "baqbaq-devi": {
+    title: "Baqbaq-Devi: the many-headed giants of Georgia",
+    description:
+      "Baqbaq-Devi in Georgian tradition: many-headed mountain giants whose strongest was beaten by a riddle, not a sword. Sourced entry.",
+  },
+  gigantes: {
+    title: "The Gigantes: earth-born enemies of the Olympians",
+    description:
+      "The Gigantes of Greek myth: Gaia’s warrior children defeated in the Gigantomachy. Early art often shows them human-formed; snake-legs come later. Teaser.",
+  },
+  "patagonian-giants": {
+    title: "The Patagonian Giants: a voyage report ended by measurement",
+    description:
+      "The Patagonian giants of European voyage reports from Pigafetta on, and how measurement in the 1760s ended the claim. Sourced entry.",
+  },
+  katallani: {
+    title: "Katallani: the one-eyed giant of Albania",
+    description:
+      "Katallani in Albanian folklore: a one-eyed man-eater with no knees, too stiff-legged to chase you. Earliest name trace in Buzuku, 1555.",
+  },
+  "waligora-wyrwidab": {
+    title: "Waligóra and Wyrwidąb: the Polish giant twins",
+    description:
+      "Waligóra and Wyrwidąb: twin strongmen raised by a wolf and a bear who slew a dragon and ruled the kingdom. Recorded by Wójcicki. Sourced entry.",
+  },
+  milzinai: {
+    title: "Milžinai: the giants of Lithuanian legend",
+    description:
+      "Milžinai in Lithuanian folklore: ancestors in local legend, monsters in fairy tale, their graves still named on the map. Sourced entry.",
+  },
+  "troll-iceland": {
+    title: "Tröll: the Icelandic giants turned to stone",
+    description:
+      "Tröll in Icelandic folklore: giant beings caught by sunrise and turned into the rocks of the landscape. Jón Árnason's 1862 collection.",
+  },
+  "kalev-kalevipoeg": {
+    title: "Kalev and Kalevipoeg: the Finnic giant and his sons",
+    description:
+      "Kalev and Kalevipoeg: the Finnic giant ancestor and his stone-throwing sons across Estonia, Finland and Karelia. Sourced entry.",
+  },
+  "suur-toll": {
+    title: "Suur Tõll: the giant king of Saaremaa",
+    description:
+      "Suur Tõll in Estonian folklore: the giant of Saaremaa who farmed his own land and threw stones at the Devil. Sourced entry.",
+  },
+  bendigeidfran: {
+    title: "Bendigeidfran: the giant king and the buried head",
+    description:
+      "Bendigeidfran in the Mabinogion's Second Branch: the Welsh giant king whose head was buried in London to guard against invasion.",
+  },
+  ysbaddaden: {
+    title: "Ysbaddaden Bencawr: the chief giant of Culhwch and Olwen",
+    description:
+      "Ysbaddaden in Culhwch and Olwen: the Welsh chief giant whose eyelids had to be propped open with forks, father of Olwen. Sourced entry.",
+  },
+  "tombe-dei-giganti": {
+    title: "Tombe dei Giganti: Sardinia's giants' tombs",
+    description:
+      "Tombe dei Giganti: around eight hundred Nuragic collective tombs in Sardinia, named for giants by popular tradition, not by their builders.",
+  },
+  nemri: {
+    title: "Nemri: the giant race of Lika and Velebit",
+    description:
+      "Nemri in Croatian folklore: the old giant people of Lika and Velebit, who could not die a natural death. From Croatian ethnology. Sourced entry.",
+  },
+  klek: {
+    title: "Klek: the petrified giant above Ogulin",
+    description:
+      "Klek in Croatian folklore: a giant turned to stone above Ogulin, the river Dobra running from his wound. Bošković-Stulli. Sourced entry.",
+  },
+  uriasi: {
+    title: "Uriași: the giants before mankind in Romanian lore",
+    description:
+      "Uriași in Romanian folklore: a giant race before humans, the Danube at their ankles, ended by the Flood. Ion Taloș and folk collections.",
+  },
+  "croatian-giants-lesser": {
+    title: "Croatian giants: the lesser traditions",
+    description:
+      "Four small Croatian giant traditions: one-eyed giants, the Vedi, Sambo under Samobor, and the Neretva mounds. Sourced entry.",
+  },
+  "british-giants-lesser": {
+    title: "British giants: the lesser traditions",
+    description:
+      "Four minor British and Welsh giants: a mountain, a beacon, a chapbook villain and a cauldron, from the Mabinogion to Robert Hunt.",
+  },
+  koljo: {
+    title: "Koljo: the Finnish giant in the place-names",
+    description:
+      "Koljo: a Finnish giant surviving in place-names, possibly a word for death before he was a giant. After Juha Ruohonen's study. Sourced entry.",
+  },
+  "santa-elena-giants": {
+    title: "The Giants of Santa Elena: a raft story and mastodon bones",
+    description:
+      "Giants said to land by raft on the Ecuadorian coast, from Cieza de León (1553) on. The bones under the story are mastodon. Sourced entry.",
+  },
+  mapinguari: {
+    title: "Mapinguari: the one-eyed giant of the Amazon",
+    description:
+      "Mapinguari in Amazonian folklore: a one-eyed forest giant with a vertical mouth and a hide arrows will not enter. Câmara Cascudo. Sourced.",
+  },
+  humbaba: {
+    title: "Humbaba: guardian of the Cedar Forest",
+    description:
+      "Humbaba in the Epic of Gilgamesh: guardian of the Cedar Forest, killed by Gilgamesh and Enkidu. The oldest giant in the catalogue. Sourced entry.",
+  },
+  tepegoz: {
+    title: "Tepegöz: the one-eyed giant of Dede Korkut",
+    description:
+      "Tepegöz in the Book of Dede Korkut: a one-eyed man-eater blinded in his cave. Read beside Polyphemus since Diez in 1815. Sourced entry.",
+  },
+  pangu: {
+    title: "Pangu: the giant who held up the sky",
+    description:
+      "Pangu in Chinese myth: he held earth and sky apart for eighteen thousand years, then died and became the world. Xu Zheng, 3rd c. CE. Sourced.",
+  },
+  "ad-thamud": {
+    title: "ʿĀd, Iram and Thamud: were they giants?",
+    description:
+      "The Qur'an's ʿĀd and Thamud were destroyed for arrogance. It never calls them giants; that idea came later. Sourced entry.",
+  },
+  "guanche-giants": {
+    title: "The Giants of the Canaries: four chroniclers, four heights",
+    description:
+      "European chroniclers described the Guanches as short, tall, medium, and fourteen feet. How a colonial record grew giants. Sourced entry.",
+  },
+  "uj-ibn-anaq": {
+    title: "ʿUj ibn ʿAnāq: Og after five centuries of retelling",
+    description:
+      "ʿUj ibn ʿAnāq: the biblical Og grown in Arabic and Persian retelling, until he caught whales and held them up to the sun. Sourced entry.",
+  },
+  cailleach: {
+    title: "The Cailleach: the hag who built the hills",
+    description:
+      "The Cailleach in Irish, Scottish and Manx lore: the old woman whose dropped apron stones are said to be the Loughcrew cairns. Sourced entry.",
+  },
+  surid: {
+    title: "Surid ibn Salhouk: the king who built the pyramids before the Flood",
+    description:
+      "Surid in medieval Egyptian Arabic lore: a king who dreamed of the Flood and built the pyramids to save knowledge. al-Masudi. Sourced entry.",
+  },
 };
 
 export function getEntrySeo(slug: string): EntrySeo | null {

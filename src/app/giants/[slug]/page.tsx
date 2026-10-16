@@ -29,6 +29,7 @@ import { JourneyMarks } from "@/components/JourneyMarks";
 import { siteUrl } from "@/lib/site";
 import { resolveMotifs } from "@/lib/motifs";
 import { getEntrySeo } from "@/lib/seo-entries";
+import { hubPath, hubsForGiant } from "@/lib/hubs";
 import { isFolkloreNoCheckout } from "@/lib/paywall-copy";
 
 /**
@@ -298,6 +299,23 @@ export default async function GiantDetailPage({ params }: Props) {
           {sessionPrepCard ? <SessionPrepCard slug={giant.slug} card={sessionPrepCard} /> : null}
 
           <RelatedFindingLink giantSlug={giant.slug} />
+
+          {hubsForGiant(giant.slug).length > 0 ? (
+            <section className="mt-8">
+              <p className="text-[10px] tracking-[0.25em] text-text-muted uppercase">
+                Part of
+              </p>
+              <ul className="mt-2 flex flex-wrap gap-x-4 gap-y-1.5 text-sm">
+                {hubsForGiant(giant.slug).map((h) => (
+                  <li key={hubPath(h)}>
+                    <Link href={hubPath(h)} className="text-accent-gold hover:underline">
+                      {h.h1}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ) : null}
 
           {/*
             Below the sources block and outside the paywalled account on
