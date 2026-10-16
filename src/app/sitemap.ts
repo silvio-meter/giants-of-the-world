@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getAllGiants, getShippedFindingSlugs } from "@/lib/giants";
 import { siteUrl } from "@/lib/site";
+import { HUBS, hubPath } from "@/lib/hubs";
 
 /** Auth and per-user pages are deliberately absent — they are noindex. */
 const staticRoutes: {
@@ -31,6 +32,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: freq,
       priority,
+    })),
+    ...HUBS.map((h) => ({
+      url: `${siteUrl}${hubPath(h)}`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
     })),
     ...getAllGiants().map((g) => ({
       url: `${siteUrl}/giants/${g.slug}`,
