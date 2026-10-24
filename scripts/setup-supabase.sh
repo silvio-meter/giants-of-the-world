@@ -116,6 +116,9 @@ if [[ -z "$ANON_KEY" || -z "$SERVICE_KEY" || "$ANON_KEY" == "null" ]]; then
   exit 1
 fi
 
+if [[ "$PROJECT_REF" == "rsalwrpwdwyiupeausbp" && "${I_REALLY_MEAN_PROD:-}" != "rsalwrpwdwyiupeausbp" ]]; then
+  echo "GUARD: $PROJECT_REF je zajednicka PRODUKCIJA. Postavi I_REALLY_MEAN_PROD=<ref> ako je to namjera."; exit 1
+fi
 echo "==> Running schema.sql..."
 # Prefer db execute with linked password; use Management SQL if available
 if command -v psql >/dev/null && [[ -n "${DATABASE_URL:-}" ]]; then
