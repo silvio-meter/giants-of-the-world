@@ -296,6 +296,20 @@ export default async function GiantDetailPage({ params }: Props) {
 
           <SourcesSection sources={giant.sources} freeEntry={giant.freeEntry} />
 
+          {giant.companionReading && (
+            <p className="mt-4 text-sm leading-relaxed text-text-muted">
+              Companion reading: {giant.companionReading.text}{" "}
+              <a
+                href={giant.companionReading.href}
+                className="text-accent-gold underline underline-offset-2"
+                rel="noopener"
+              >
+                {giant.companionReading.label}
+              </a>
+              .
+            </p>
+          )}
+
           {sessionPrepCard ? <SessionPrepCard slug={giant.slug} card={sessionPrepCard} /> : null}
 
           <RelatedFindingLink giantSlug={giant.slug} />
