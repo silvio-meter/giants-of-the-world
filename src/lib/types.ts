@@ -115,6 +115,11 @@ export interface Giant {
    */
   communityNote?: string;
   /**
+   * A single outside reading we are glad to point to, rendered as a quiet
+   * line under Sources. Public, not lore.
+   */
+  companionReading?: { text: string; label: string; href: string };
+  /**
    * Overrides the default text of the unverified warning box. Set where the
    * standard "Unverified modern legend" wording is not the right claim.
    */

@@ -878,6 +878,11 @@
       "Theocritus, Idylls VI and XI",
       "Ovid, Metamorphoses XIII.750-897 (Polyphemus, Galatea and Acis)"
     ],
+    "companionReading": {
+      "text": "with thanks to Prof. Debbie Felton of the Department of Classics, University of Massachusetts Amherst, for",
+      "label": "The Ancient Monsters Blog",
+      "href": "https://websites.umass.edu/felton/"
+    },
     "image": "/images/giants/polyphemus.jpg",
     "imageAlt": "Polyphemus the Cyclops",
     "sections": {
