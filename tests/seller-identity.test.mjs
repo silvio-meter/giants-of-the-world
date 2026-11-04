@@ -74,11 +74,11 @@ test("the footer does not show the seller contact email", () => {
   assert.ok(!footer.includes(CONTACT));
 });
 
-test("/pricing refund link uses the seller contact", () => {
+test("/pricing refund link uses the support address", () => {
   const pricing = read("src/app/pricing/page.tsx");
-  assert.ok(pricing.includes("mailto:${operatorContactEmail}?subject=Refund%20request"));
-  assert.ok(pricing.includes("{operatorContactEmail}"));
-  assert.ok(!pricing.includes("supportEmail"));
+  assert.ok(pricing.includes("mailto:${supportEmail}?subject=Refund%20request"));
+  assert.ok(pricing.includes("{supportEmail}"));
+  assert.ok(!pricing.includes("operatorContactEmail"));
 });
 
 test("drip email 4 refund line uses the seller contact", () => {
