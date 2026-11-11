@@ -101,6 +101,25 @@ test("sitemap leaves out held entries and /pricing, and lists /bestiary", () => 
   assert.ok(src.includes('"/bestiary/free-sample"'));
 });
 
+test("sitemap lastModified is a committed per-entry date, never the build time", () => {
+  const src = read("src/app/sitemap.ts");
+  assert.ok(!/new Date\(\s*\)/.test(src), "sitemap builds a Date from the clock");
+  assert.ok(!/Date\.now\(/.test(src), "sitemap reads the clock");
+  assert.ok(!/\bnow\b/.test(src.replace(/\/\*[\s\S]*?\*\//g, "")), "sitemap still uses `now`");
+  assert.match(src, /lastModified: new Date\(`\$\{g\.updatedAt \?\? STATIC_LAST_MODIFIED\}T00:00:00Z`\)/);
+  const iso = /^\d{4}-\d{2}-\d{2}$/;
+  for (const g of master) {
+    assert.match(g.updatedAt ?? "", iso, `${g.slug} has no updatedAt`);
+    assert.ok(g.updatedAt <= "2026-11-11" && g.updatedAt >= "2026-07-01", `${g.slug} updatedAt out of range`);
+  }
+  // Entries this PR touched carry its date; untouched ones keep their git date.
+  const masterBySlug = new Map(master.map((g) => [g.slug, g]));
+  for (const slug of [...IMAGES_REMOVED, "humbaba", "thrym", "balor", "giant-of-kandahar"]) {
+    assert.equal(masterBySlug.get(slug).updatedAt, "2026-11-11", slug);
+  }
+  assert.ok(new Set(master.map((g) => g.updatedAt)).size > 1, "every entry has the same date");
+});
+
 test("held entries keep the paywall schema; opened entries drop it", () => {
   const page = read("src/app/giants/[slug]/page.tsx");
   // Schema follows freeEntry: open -> isAccessibleForFree true and no hasPart;
@@ -295,6 +314,25 @@ test("served: sitemap has no held entry and no /pricing", { skip }, async () => 
   assert.ok(!xml.includes("/pricing<"));
   assert.ok(xml.includes("/giants/humbaba<"));
   assert.ok(xml.includes("/bestiary/free-sample<"));
+});
+
+test("served: sitemap entry lastmod is the entry's updatedAt, not the build time", { skip }, async () => {
+  const xml = await (await get("/sitemap.xml")).text();
+  const urls = [...xml.matchAll(/<url>([\s\S]*?)<\/url>/g)].map((m) => m[1]);
+  let seen = 0;
+  for (const g of master) {
+    if (CATALOGUE_HOLD_SLUGS.includes(g.slug)) continue;
+    const u = urls.find((x) => x.includes(`/giants/${g.slug}<`));
+    assert.ok(u, `${g.slug} missing from sitemap`);
+    const lastmod = u.match(/<lastmod>([^<]+)<\/lastmod>/)?.[1];
+    assert.equal(lastmod, `${g.updatedAt}T00:00:00.000Z`, g.slug);
+    seen++;
+  }
+  assert.ok(seen > 60);
+  for (const u of urls) {
+    const lastmod = u.match(/<lastmod>([^<]+)<\/lastmod>/)?.[1] ?? "";
+    assert.match(lastmod, /T00:00:00\.000Z$/, `build-time lastmod: ${u.trim().slice(0, 80)}`);
+  }
 });
 
 test("served: opened entry is fully open, held entry keeps its paywall schema", { skip }, async () => {

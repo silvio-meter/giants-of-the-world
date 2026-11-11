@@ -9,7 +9,12 @@ import { isCatalogueHeld } from "@/lib/catalogue-hold";
  * /pricing is absent while membership sales are closed (it redirects).
  * Entries on the Catalogue hold list (src/lib/catalogue-hold.ts) are absent
  * until Catalogue confirms them, slug by slug.
+ *
+ * lastModified is never the build time. Entries use their committed
+ * `updatedAt` (see scripts/stamp-updated-at.mjs); static pages, hubs and
+ * findings use STATIC_LAST_MODIFIED, bumped by hand when they change.
  */
+export const STATIC_LAST_MODIFIED = "2026-11-11";
 const staticRoutes: {
   path: string;
   priority: number;
@@ -31,18 +36,18 @@ const staticRoutes: {
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
+  const fixed = new Date(`${STATIC_LAST_MODIFIED}T00:00:00Z`);
 
   return [
     ...staticRoutes.map(({ path, priority, freq }) => ({
       url: `${siteUrl}${path || "/"}`,
-      lastModified: now,
+      lastModified: fixed,
       changeFrequency: freq,
       priority,
     })),
     ...HUBS.map((h) => ({
       url: `${siteUrl}${hubPath(h)}`,
-      lastModified: now,
+      lastModified: fixed,
       changeFrequency: "monthly" as const,
       priority: 0.8,
     })),
@@ -50,14 +55,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       .filter((g) => !isCatalogueHeld(g.slug))
       .map((g) => ({
         url: `${siteUrl}/giants/${g.slug}`,
-        lastModified: now,
+        lastModified: new Date(`${g.updatedAt ?? STATIC_LAST_MODIFIED}T00:00:00Z`),
         changeFrequency: "monthly" as const,
         // Open entries are the ones that can actually rank — rate them higher.
         priority: g.freeEntry ? 0.9 : 0.7,
       })),
     ...getShippedFindingSlugs().map((slug) => ({
       url: `${siteUrl}/findings/${slug}`,
-      lastModified: now,
+      lastModified: fixed,
       changeFrequency: "monthly" as const,
       priority: 0.65,
     })),
