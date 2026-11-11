@@ -78,11 +78,27 @@ const nextConfig: NextConfig = {
     formats: ["image/avif", "image/webp"],
   },
   async redirects() {
-    return socialShortLinks.map((source) => ({
-      source: `/${source}`,
-      destination: `/welcome?utm_source=${source}&utm_medium=bio`,
-      permanent: false,
-    }));
+    return [
+      ...socialShortLinks.map((source) => ({
+        source: `/${source}`,
+        destination: `/welcome?utm_source=${source}&utm_medium=bio`,
+        permanent: false,
+      })),
+      /**
+       * Membership sales are closed (owner decision, 11 Nov 2026; see
+       * src/lib/membership.ts). /pricing goes to the catalogue. Temporary on
+       * purpose: the page code stays in the repo, browsers do not cache a
+       * 307 the way they cache a 308, and the route can come back by
+       * deleting this entry. Query strings are kept, so a late Stripe return
+       * to /pricing?paid=1 lands on /giants?paid=1, where CheckoutReturn
+       * still handles it.
+       */
+      {
+        source: "/pricing",
+        destination: "/giants",
+        permanent: false,
+      },
+    ];
   },
   async headers() {
     // /near is the only source with geolocation=(self). The other sources

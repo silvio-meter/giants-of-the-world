@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { EmailCapture } from "@/components/EmailCapture";
 import { getFreeGiants } from "@/lib/giants";
+import { MEMBERSHIP_SALES_OPEN } from "@/lib/membership";
 
 /**
  * Post-signup / post-checkout onboarding.
@@ -19,21 +20,21 @@ const unpaidSteps = [
   {
     n: "01",
     title: "Open a free entry",
-    body: "Start with a full account that ships unlocked. Ymir, Goliath, Ravana and the rest of the free set open the story in full. Scholarly notes and extra sources come with membership.",
+    body: "Start with a full account. Ymir, Goliath, Ravana and the rest of the open catalogue tell the story in full, with their sources.",
     href: "/giants/ymir",
     cta: "Read Ymir",
   },
   {
     n: "02",
     title: "Compare two giants",
-    body: "Pick a pair and see shared motifs, scale and fate side by side. The free opening still works; paid data fills in when you unlock.",
+    body: "Pick a pair and see culture, region and scale side by side.",
     href: COMPARE_HREF,
     cta: "Open Compare",
   },
   {
     n: "03",
-    title: "Open a sealed page",
-    body: "Thrym's first paragraph is free. The rest of that story is the $4.99 month.",
+    title: "Open a page that used to be sealed",
+    body: "Thrym's account was behind the membership until November 2026. It is open now, like the rest of the catalogue.",
     href: "/giants/thrym",
     cta: "Read Thrym",
   },
@@ -85,7 +86,7 @@ export default async function WelcomePage({
         <p className="mx-auto mt-4 max-w-lg text-sm leading-relaxed text-text-muted sm:text-base">
           {justPaid
             ? "Payment is through. Use the three steps below so the codex is a place you know, not a tab you lose."
-            : `Free to browse. ${freeCount} entries open in full. Membership unlocks the sealed layers when you are ready.`}
+            : `Free to read. ${freeCount} entries open in full.`}
         </p>
       </header>
 
@@ -111,7 +112,7 @@ export default async function WelcomePage({
               >
                 {step.cta} →
               </Link>
-              {!justPaid && step.n === "03" && (
+              {MEMBERSHIP_SALES_OPEN && !justPaid && step.n === "03" && (
                 <Link
                   href="/signup?next=%2Fgiants%2Fthrym%3Fcheckout%3Dmonthly"
                   className="inline-flex text-sm text-text-muted hover:text-accent-gold hover:underline"
@@ -143,8 +144,8 @@ export default async function WelcomePage({
           Giants near you
         </Link>
         {!justPaid && (
-          <Link href="/pricing" className="text-accent-gold hover:underline">
-            See membership
+          <Link href="/giants" className="text-accent-gold hover:underline">
+            Open the catalogue
           </Link>
         )}
         {justPaid && (

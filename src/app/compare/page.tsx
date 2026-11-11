@@ -66,7 +66,7 @@ export default async function ComparePage({ searchParams }: Props) {
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-text-muted sm:text-base">
           Choose two giants. Scale, culture and region are always free; the
           fuller picture, including which traditions the pair actually
-          shares, unlocks with any paid plan.
+          shares, stays with existing memberships.
         </p>
       </header>
 

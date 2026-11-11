@@ -94,8 +94,12 @@ test("welcome step 3 is Thrym; compare is ymir vs surtr", () => {
   assert.ok(welcome.includes("/giants/ymir"));
   assert.ok(welcome.includes("/compare?a=ymir&b=surtr"));
   assert.ok(welcome.includes("/giants/thrym"));
-  assert.ok(welcome.includes("Open a sealed page"));
-  assert.ok(welcome.includes("Thrym's first paragraph is free"));
+  // Catalogue opened 11 Nov 2026: Thrym is no longer sealed, and the
+  // welcome page no longer sells membership.
+  assert.ok(welcome.includes("Open a page that used to be sealed"));
+  assert.ok(!welcome.includes("Thrym's first paragraph is free"));
+  assert.ok(!welcome.includes('href="/pricing"'));
+  assert.ok(welcome.includes("MEMBERSHIP_SALES_OPEN && !justPaid"));
   assert.ok(!welcome.includes("Browse the catalogue"));
   assert.ok(!welcome.includes("Save one for later"));
   assert.ok(welcome.includes("justPaid ? paidSteps : unpaidSteps"));

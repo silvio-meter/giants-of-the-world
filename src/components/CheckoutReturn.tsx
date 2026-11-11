@@ -8,6 +8,7 @@ import {
   contentPathFrom,
   isFolkloreCheckoutPath,
 } from "@/lib/checkout-path";
+import { MEMBERSHIP_SALES_OPEN } from "@/lib/membership";
 import { umamiEvent } from "@/lib/umami";
 import { usePlan } from "./PlanProvider";
 
@@ -80,6 +81,14 @@ export function CheckoutReturn() {
     const content = contentPathFrom(here);
 
     if (folklore || isPaid) {
+      if (here !== content) router.replace(content, { scroll: false });
+      return;
+    }
+
+    // Membership sales are closed (src/lib/membership.ts). Old links that
+    // still carry ?checkout=monthly (drip emails 3 and 4, bookmarks) land on
+    // the open page and never start a Stripe session.
+    if (!MEMBERSHIP_SALES_OPEN) {
       if (here !== content) router.replace(content, { scroll: false });
       return;
     }

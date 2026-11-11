@@ -29,6 +29,9 @@ const skip = BASE ? false : "BASE not set";
 const LOCKED_MARKERS = [
   "Continue this account.",
   "unverified folklore, not a membership gate",
+  // PAYWALL_COPY.closed.entry: the wall on a held, still-locked entry while
+  // membership sales are closed (11 Nov 2026).
+  "held for review before its full account opens",
 ];
 
 const get = (path) =>

@@ -173,9 +173,8 @@ export default function HomePage() {
                 Open entries
               </h2>
               <p className="mt-3 text-sm text-text-muted sm:text-base">
-                These pages ship the full account free. The rest of the codex
-                opens with a real first paragraph; the deeper layers unlock with
-                a membership.
+                These pages ship the full account free, and so does almost every
+                other entry in the codex.
               </p>
             </header>
             <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -232,8 +231,8 @@ export default function HomePage() {
               How we treat sources
             </Link>
             {" · "}
-            <Link href="/pricing" className="text-accent-gold hover:underline">
-              What membership unlocks
+            <Link href="/bestiary/free-sample" className="text-accent-gold hover:underline">
+              Free bestiary sample
             </Link>
           </p>
         </div>

@@ -290,25 +290,15 @@ export function NearClient({
                       {within.length - 1} more within {radius} km, with
                       distances, real-site marks, and export.
                     </p>
-                    <Link
-                      href="/pricing"
-                      className="mt-3 inline-block text-sm text-accent-gold hover:underline"
-                    >
-                      Unlock the full list →
-                    </Link>
+                    <p className="mt-3 text-xs text-text-muted">
+                      The full list stays with existing memberships.
+                    </p>
                   </div>
                 </div>
               )}
               {within.length === 1 && (
                 <p className="mt-3 text-sm text-text-muted">
-                  Only one in this radius. Widen the range or{" "}
-                  <Link
-                    href="/pricing"
-                    className="text-accent-gold hover:underline"
-                  >
-                    unlock the tool
-                  </Link>{" "}
-                  for export and site marks everywhere.
+                  Only one in this radius. Widen the range to find more.
                 </p>
               )}
             </div>

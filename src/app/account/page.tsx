@@ -3,6 +3,8 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import { CheckoutButton } from "@/components/CheckoutButton";
 import { DeleteAccount } from "@/components/DeleteAccount";
+import { ManageBillingButton } from "@/components/ManageBillingButton";
+import { MEMBERSHIP_SALES_OPEN } from "@/lib/membership";
 import {
   canUseFavourites,
   formatPlanLabel,
@@ -79,19 +81,19 @@ export default async function AccountPage() {
               >
                 Your favourites →
               </Link>
-            ) : (
+            ) : MEMBERSHIP_SALES_OPEN ? (
               <CheckoutButton plan="monthly" next="/account">
                 Unlock the full codex
               </CheckoutButton>
-            )}
-            {profile.stripe_customer_id && (
-              <Link
-                href="/pricing"
-                className="text-accent-gold hover:underline"
-              >
-                Manage billing →
+            ) : (
+              <Link href="/giants" className="text-accent-gold hover:underline">
+                Read the catalogue →
               </Link>
             )}
+            {/* Portal opens directly: /pricing redirects while membership
+                sales are closed, and existing subscribers must still be able
+                to manage or cancel. */}
+            {profile.stripe_customer_id && <ManageBillingButton />}
           </div>
 
           {comped && (

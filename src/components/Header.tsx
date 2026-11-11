@@ -21,7 +21,8 @@ const publicNav = [
   { href: "/map", label: "Map" },
   { href: "/motifs", label: "Motifs" },
   { href: "/findings", label: "Findings" },
-  { href: "/pricing", label: "Pricing" },
+  // No Pricing item: membership sales are closed (src/lib/membership.ts) and
+  // /pricing redirects to /giants.
 ] as const;
 
 const accountNav = [

@@ -44,9 +44,6 @@ export default async function MyCodexPage() {
           <Link href="/login?next=/my-codex" className="text-accent-gold hover:underline">
             Sign in
           </Link>
-          <Link href="/pricing" className="text-accent-gold hover:underline">
-            View pricing
-          </Link>
         </div>
       </Shell>
     );

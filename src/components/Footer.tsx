@@ -102,8 +102,8 @@ export function Footer() {
           <Link href="/evidence" className="hover:text-accent-gold">
             Evidence
           </Link>
-          <Link href="/pricing" className="hover:text-accent-gold">
-            Pricing
+          <Link href="/bestiary" className="hover:text-accent-gold">
+            Bestiary
           </Link>
           <Link href="/about" className="hover:text-accent-gold">
             About

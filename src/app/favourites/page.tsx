@@ -42,9 +42,6 @@ export default async function FavouritesPage() {
           >
             Sign in
           </Link>
-          <Link href="/pricing" className="text-accent-gold hover:underline">
-            View pricing
-          </Link>
         </div>
       </Shell>
     );
@@ -54,13 +51,13 @@ export default async function FavouritesPage() {
     return (
       <Shell>
         <p className="mt-4 text-sm text-text-muted">
-          Favourites are included with Monthly, Yearly, or Lifetime access.
+          Favourites stay with existing memberships. New memberships are closed.
         </p>
         <Link
-          href="/pricing"
+          href="/giants"
           className="mt-6 inline-block text-sm text-accent-gold hover:underline"
         >
-          Unlock favourites →
+          Read the catalogue →
         </Link>
       </Shell>
     );

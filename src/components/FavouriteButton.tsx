@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { canUseFavourites } from "@/lib/access";
@@ -41,10 +40,10 @@ export function FavouriteButton({
       window.location.href = `/login?next=${encodeURIComponent(pathname || `/giants/${slug}`)}`;
       return;
     }
-    if (!allowed) {
-      window.location.href = "/pricing";
-      return;
-    }
+    // Favourites stay a member feature; with membership sales closed there
+    // is nowhere to send a non-member, so the click does nothing and the
+    // label explains why.
+    if (!allowed) return;
 
     setBusy(true);
     const res = await toggle(slug);
@@ -57,7 +56,7 @@ export function FavouriteButton({
   const label = !userId
     ? "Sign in to save favourites"
     : !allowed
-      ? "Favourites unlock with any paid plan"
+      ? "Favourites stay with existing memberships"
       : active
         ? `Remove ${name ?? "giant"} from favourites`
         : `Save ${name ?? "giant"} to favourites`;
@@ -100,9 +99,9 @@ export function FavouriteButton({
         {active ? "Favourited" : "Add to favourites"}
       </button>
       {!allowed && userId && (
-        <Link href="/pricing" className="text-[10px] text-text-muted hover:text-accent-gold">
-          Paid feature: view pricing
-        </Link>
+        <span className="text-[10px] text-text-muted">
+          Member feature
+        </span>
       )}
       {!userId && planReady && (
         <span className="text-[10px] text-text-muted">Sign in required</span>
