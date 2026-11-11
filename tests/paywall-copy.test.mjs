@@ -27,7 +27,7 @@ test("secondary line and later locks", () => {
   assert.ok(copy.includes("Yearly ${yearly}"));
   assert.ok(copy.includes("Lifetime ${lifetime}"));
   assert.ok(copy.includes("-day refund, no questions"));
-  assert.ok(copy.includes("Sources and scholarly notes stay with existing memberships."));
+  assert.ok(copy.includes("Scholarly notes stay with existing memberships."));
 });
 
 test("folklore slugs are kandahar and kunar", () => {
