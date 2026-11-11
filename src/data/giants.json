@@ -3379,8 +3379,6 @@
       "Franz Boas with George Hunt, Kwakiutl ethnographic corpus (late 19th-early 20th c.)",
       "Contemporary Kwakwaka'wakw carvers and community sources"
     ],
-    "image": "/images/giants/dzunukwa.jpg",
-    "imageAlt": "Dzunukwa, Wild Woman of the Woods",
     "sections": {
       "story": "Dzunukwa (anglicised various ways, including Dzunukwa and Tsonoqua) belongs to the Kwakwaka'wakw of the Pacific Northwest Coast, and she is not a simple monster.\n\nShe is described as very large, hairy, dark-skinned, with sunken eyes and lips pushed forward as though calling out: her cry is rendered as \"hu, hu\". She is slow and often sleepy, and her eyesight is poor. She lives in the deep forest, away from the villages. She carries a basket on her back, and she takes children who wander, intending to eat them.\n\nChildren in the stories usually escape, because she is dull and they are not.\n\nBut she is also the keeper of great wealth, and this is inseparable from her. She possesses coppers, treasure and supernatural gifts, and a person who encounters her and survives, or who takes something from her, can return with the means to hold a potlatch. Dzunukwa masks are property of specific chiefly families and are displayed in that context. She appears in the potlatch as a figure whose wealth is being distributed.\n\nSo she is a danger to children, a bringer of status to lineages, and a figure of considerable artistic power: the masks, with their hollowed cheeks and forward lips, are among the most striking objects in Northwest Coast art, and were made by named carvers within specific traditions.\n\nThis is a living culture, not a closed record. Kwakwaka'wakw artists continue to carve Dzunukwa, and the figure carries meaning and ownership rights in the present, not only the past.",
       "origins": "Kwakwaka'wakw oral tradition, and material culture (masks, house posts, feast dishes) held by families with hereditary rights to them.\n\nFranz Boas recorded extensive Kwakwaka'wakw material in the late nineteenth and early twentieth centuries, largely in collaboration with George Hunt, whose contribution was substantial and long under-credited. Their published corpus remains the largest external documentation.\n\nEmily Carr's paintings brought the figure to a settler Canadian audience in the early twentieth century, on her own terms rather than Kwakwaka'wakw ones.\n\nContemporary Kwakwaka'wakw carvers and writers are the authoritative living source, and museum holdings in Canada and abroad are subject to ongoing repatriation discussion.",
@@ -4136,7 +4134,7 @@
     "culture": "Māori / Polynesian",
     "region": "Aotearoa / Polynesia",
     "type": "race",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Large wild humanoids",
     "shortDescription": "Wild folk of the forest in Māori tradition: long fingers, fierce, untamed.",
     "fullDescription": "Maero are wild forest beings of Maori tradition: hairy, with long bony fingers ending in claws, living apart in the bush and hostile to people who enter it.",

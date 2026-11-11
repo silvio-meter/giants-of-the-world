@@ -39,27 +39,29 @@ const bySlug = new Map(publicEntries.map((g) => [g.slug, g]));
 const EXPECTED_HOLD = [
   "amazimu", "budj-bim", "chinny-kinik", "dzunukwa", "gaoh", "giant-of-kandahar",
   "giant-of-kunar", "giant-of-the-forest", "guanche-giants", "kahui-tipua",
-  "kee-wakw", "maero", "mapinguari", "murkupang", "nawao", "pangu",
-  "papinijuwari", "patagonian-giants", "si-te-cah", "stallo", "thardid-jimbo",
+  "kee-wakw", "mapinguari", "murkupang", "nawao", "pangu",
+  "papinijuwari", "patagonian-giants", "stallo", "thardid-jimbo",
   "tsul-kalu",
 ];
 /** Held entries that were already free before the opening; they stay free. */
 const HELD_ALREADY_FREE = [
-  "budj-bim", "chinny-kinik", "giant-of-the-forest", "murkupang", "si-te-cah",
+  "budj-bim", "chinny-kinik", "giant-of-the-forest", "murkupang",
   "thardid-jimbo", "tsul-kalu",
 ];
 /** ENTRY_SEO records that held slugs already had before the opening. */
 const HELD_WITH_PREEXISTING_SEO = [
   "giant-of-kandahar", "giant-of-kunar", "guanche-giants", "mapinguari",
-  "pangu", "patagonian-giants", "si-te-cah",
+  "pangu", "patagonian-giants",
 ];
 const IMAGES_REMOVED = [
   "budj-bim", "murkupang", "papinijuwari", "patagonian-giants", "thardid-jimbo",
   "tsul-kalu",
 ];
+/** Never-open entries whose image was withdrawn too (Silvio, 11 Nov 20:47). */
+const NEVER_OPEN_IMAGES_REMOVED = ["dzunukwa"];
 
-test("hold list is the 20 living traditions plus Kandahar and Kunar", () => {
-  assert.equal(HOLD_LIVING_TRADITIONS.length, 20);
+test("hold list is the 18 living traditions plus Kandahar and Kunar", () => {
+  assert.equal(HOLD_LIVING_TRADITIONS.length, 18);
   assert.deepEqual([...HOLD_MODERN_MILITARY], ["giant-of-kandahar", "giant-of-kunar"]);
   assert.deepEqual([...CATALOGUE_HOLD_SLUGS].sort(), EXPECTED_HOLD);
   for (const slug of CATALOGUE_HOLD_SLUGS) {
@@ -149,7 +151,7 @@ test("held entries keep the paywall schema; opened entries drop it", () => {
   assert.match(page, /\.\.\.\(giant\.freeEntry\s*\?\s*\{\}\s*:\s*\{\s*hasPart:/);
   assert.ok(page.includes('cssSelector: ".paywalled-account"'));
   const lockedHeld = publicEntries.filter((g) => !g.freeEntry).map((g) => g.slug);
-  assert.equal(lockedHeld.length, 15);
+  assert.equal(lockedHeld.length, 14);
   for (const slug of lockedHeld) assert.ok(isCatalogueHeld(slug), `${slug} locked but not held`);
 });
 
@@ -181,7 +183,7 @@ test("Kandahar and Kunar carry the soldiers' tale status line", () => {
 });
 
 test("six withdrawn images: no image field and no file", () => {
-  for (const slug of IMAGES_REMOVED) {
+  for (const slug of [...IMAGES_REMOVED, ...NEVER_OPEN_IMAGES_REMOVED]) {
     for (const data of [master, publicEntries]) {
       const g = data.find((e) => e.slug === slug);
       assert.ok(g, slug);
@@ -196,7 +198,7 @@ test("six withdrawn images: no image field and no file", () => {
   }
   // Nobody else lost an image by accident.
   const withImage = publicEntries.filter((g) => g.image).length;
-  assert.equal(withImage, publicEntries.length - IMAGES_REMOVED.length);
+  assert.equal(withImage, publicEntries.length - IMAGES_REMOVED.length - NEVER_OPEN_IMAGES_REMOVED.length);
 });
 
 test("no-image surfaces: text-only share card, schema fallback, empty frames", () => {

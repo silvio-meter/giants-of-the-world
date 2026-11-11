@@ -1,6 +1,7 @@
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { ImageResponse } from "next/og";
+import { isNeverOpen } from "@/lib/catalogue-hold";
 import { getAllGiants, getGiantBySlug } from "@/lib/giants";
 import { OG_CONTENT_TYPE, OG_SIZE } from "@/lib/og";
 
@@ -24,7 +25,8 @@ export async function generateImageMetadata({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const giant = getGiantBySlug(slug);
+  // A never-open entry shares only the generic site card.
+  const giant = isNeverOpen(slug) ? undefined : getGiantBySlug(slug);
   return [
     {
       id: "card",
@@ -47,7 +49,7 @@ export default async function Image({
   id: string;
 }) {
   const { slug } = await params;
-  const giant = getGiantBySlug(slug);
+  const giant = isNeverOpen(slug) ? undefined : getGiantBySlug(slug);
   if (!giant) {
     return new ImageResponse(
       (

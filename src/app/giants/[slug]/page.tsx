@@ -33,7 +33,7 @@ import { resolveMotifs } from "@/lib/motifs";
 import { getEntrySeo } from "@/lib/seo-entries";
 import { hubPath, hubsForGiant } from "@/lib/hubs";
 import { isFolkloreNoCheckout } from "@/lib/paywall-copy";
-import { isCatalogueHeld } from "@/lib/catalogue-hold";
+import { isCatalogueHeld, isNeverOpen, isSuggestableCompareTarget } from "@/lib/catalogue-hold";
 import { MEMBERSHIP_SALES_OPEN } from "@/lib/membership";
 
 /**
@@ -78,6 +78,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title,
     description,
     alternates: { canonical: `/giants/${giant.slug}` },
+    // A never-open entry (dzunukwa) stays reachable by URL but out of search.
+    ...(isNeverOpen(giant.slug) ? { robots: { index: false, follow: false } } : {}),
     openGraph: {
       type: "article",
       locale: "en_US",
@@ -111,6 +113,8 @@ export default async function GiantDetailPage({ params }: Props) {
   const motifs = resolveMotifs(giant.motifs, giant.slug);
   const motifNames = motifs.map((m) => m.name);
   const related = getRelatedGiants(giant);
+  // Compare suggestions never point at a held or never-open entry.
+  const compareTargets = related.filter((r) => isSuggestableCompareTarget(r.slug));
   const isModern = giant.type === "modern-legend";
   // Session Prep is decoupled from freeEntry. Before the opening it mounted
   // only on locked entries; flipping freeEntry for the opened entries would
@@ -452,9 +456,9 @@ export default async function GiantDetailPage({ params }: Props) {
             <p className="text-[10px] tracking-[0.2em] text-text-muted uppercase">
               Compare
             </p>
-            {related.length > 0 ? (
+            {compareTargets.length > 0 ? (
               <ul className="mt-2 space-y-1.5">
-                {related.slice(0, 4).map((r) => (
+                {compareTargets.slice(0, 4).map((r) => (
                   <li key={r.slug}>
                     <Link
                       href={`/compare?a=${encodeURIComponent(giant.slug)}&b=${encodeURIComponent(r.slug)}`}
@@ -470,7 +474,7 @@ export default async function GiantDetailPage({ params }: Props) {
               href={`/compare?a=${encodeURIComponent(giant.slug)}`}
               className="mt-2 flex items-center justify-center gap-2 rounded border border-border px-3 py-2 text-xs font-medium tracking-wide text-text-muted transition hover:border-accent-gold/50 hover:text-accent-gold"
             >
-              {related.length > 0 ? "Pick any other…" : "Compare with another giant"}
+              {compareTargets.length > 0 ? "Pick any other…" : "Compare with another giant"}
             </Link>
           </div>
         </aside>

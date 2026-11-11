@@ -1,5 +1,6 @@
 import "server-only";
 
+import { isSuggestableCompareTarget } from "@/lib/catalogue-hold";
 import { getGiantBySlug, getRelatedGiants } from "@/lib/giants";
 import type { GiantCardData } from "@/lib/format";
 import type { SessionPrep, SessionPrepCardData } from "@/lib/types";
@@ -28,9 +29,9 @@ export function getSessionPrepCard(
   const related = getRelatedGiants(giant);
 
   const pickSlug =
-    preferred && getGiantBySlug(preferred)
+    preferred && isSuggestableCompareTarget(preferred) && getGiantBySlug(preferred)
       ? preferred
-      : related.find((r) => getGiantBySlug(r.slug))?.slug;
+      : related.find((r) => isSuggestableCompareTarget(r.slug) && getGiantBySlug(r.slug))?.slug;
 
   if (pickSlug) {
     const other = getGiantBySlug(pickSlug);
