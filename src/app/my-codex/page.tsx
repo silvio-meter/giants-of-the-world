@@ -122,7 +122,7 @@ export default async function MyCodexPage() {
           </dl>
         ) : (
           <div className="mt-4">
-            <PremiumLock variant="later" laterText="The per-culture breakdown comes with the same membership." />
+            <PremiumLock variant="later" laterText="The per-culture breakdown stays with existing memberships." />
           </div>
         )}
       </section>
@@ -161,7 +161,7 @@ export default async function MyCodexPage() {
           </>
         ) : (
           <div className="mt-4">
-            <PremiumLock variant="later" laterText="Your collection and motif seals come with the same membership." />
+            <PremiumLock variant="later" laterText="Your collection and motif seals stay with existing memberships." />
           </div>
         )}
       </section>

@@ -24,7 +24,7 @@ export function MyJourneyButton() {
     return (
       <PremiumLock
         variant="later"
-        laterText="My Journey export comes with the same membership."
+        laterText="My Journey export stays with existing memberships."
         className="max-w-sm"
       />
     );
