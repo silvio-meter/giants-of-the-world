@@ -57,3 +57,57 @@ test("Catalogue's replacement lines are used where the review gives one", () => 
     )
   );
 });
+
+const HEIGHT_WORDING = {
+  "tsul-kalu": "Not stated as a measurement in the sources.",
+  "kee-wakw": "Not stated as a measurement in the sources.",
+  gaoh: "A powerful being with a cosmological office. No numeric height in the sources.",
+  "budj-bim": "Ancestral scale. Not a measured height.",
+  papinijuwari: "Not stated as a measurement in the sources.",
+  murkupang: "Not stated as a measurement in the sources.",
+  "thardid-jimbo": "Not stated as a measurement in the sources.",
+  "chinny-kinik": "Not stated as a measurement in the sources.",
+  "kahui-tipua": "Supernatural scale in the sources. Not a measured height.",
+  amazimu: "Large in the tales. Not a measured height.",
+  stallo: "Large in the tales. Not a measured height.",
+  "patagonian-giants":
+    "Later reports claimed twelve to fifteen feet. Bougainville, published 1771, gave the tallest as five feet nine French feet, about six English feet.",
+};
+
+test("Catalogue's height wording is applied and still gives no chart", () => {
+  const pub = new Map(
+    JSON.parse(readFileSync(join(root, "src/data/giants.public.json"), "utf8")).map((g) => [g.slug, g])
+  );
+  for (const [slug, text] of Object.entries(HEIGHT_WORDING)) {
+    assert.equal(bySlug.get(slug).height, text, slug);
+    assert.equal(pub.get(slug).heightMeters, null, `${slug} has a chart`);
+  }
+});
+
+test("Thardid Jimbo no longer retells the plot or gives a height", () => {
+  const t = readerText("thardid-jimbo");
+  assert.doesNotMatch(t, /over two metres/i);
+  assert.doesNotMatch(t, /taking a woman|takes a woman/i);
+  const g = bySlug.get("thardid-jimbo");
+  assert.ok(g.fullDescription.endsWith("so this entry does not retell the plot or give a height."));
+  assert.ok(g.sections.story.startsWith("As with Murkupang,"));
+  assert.ok(g.sections.story.includes("This entry therefore does not retell narrative details."));
+  assert.equal(g.fate, "Not confirmed, and not retold here.");
+});
+
+test("Kandahar origins, Patagonian fate and the two short descriptions use Catalogue's text", () => {
+  assert.ok(
+    bySlug.get("giant-of-kandahar").sections.origins.startsWith(
+      "The story has no primary source. Traceable broadcasts include Coast to Coast AM programme pages from 2005 and 2008"
+    )
+  );
+  assert.equal(
+    bySlug.get("patagonian-giants").fate,
+    "Ended by measurement. Bougainville's 1771 voyage account gives the tallest as five feet nine French feet, about six English feet."
+  );
+  assert.equal(
+    bySlug.get("papinijuwari").shortDescription,
+    "One-eyed giant spirits of Tiwi tradition, associated with sickness, death and falling stars."
+  );
+  assert.ok(bySlug.get("murkupang").shortDescription.startsWith("A cannibal giant recorded under this name"));
+});

@@ -1729,7 +1729,7 @@
     "region": "North America",
     "type": "individual",
     "freeEntry": true,
-    "height": "Giant",
+    "height": "Not stated as a measurement in the sources.",
     "shortDescription": "Cherokee lord of the hunt: slant-eyed giant of the mountains.",
     "related": [
       "dzunukwa",
@@ -1776,7 +1776,7 @@
     "region": "North America",
     "type": "folklore",
     "freeEntry": false,
-    "height": "Giant",
+    "height": "Not stated as a measurement in the sources.",
     "shortDescription": "Ice-hearted cannibal giant of northern forests: a winter horror.",
     "related": [
       "dzunukwa",
@@ -1804,7 +1804,7 @@
       "cannibal",
       "wild-highland"
     ],
-    "updatedAt": "2026-08-11",
+    "updatedAt": "2026-11-11",
     "heightMeters": null,
     "hasScholarlyNotes": false
   },
@@ -1819,7 +1819,7 @@
     "region": "North America",
     "type": "individual",
     "freeEntry": false,
-    "height": "Spirit-giant",
+    "height": "A powerful being with a cosmological office. No numeric height in the sources.",
     "shortDescription": "Master of the winds: a giant spirit who pens the gales.",
     "related": [
       "tsul-kalu",
@@ -1846,7 +1846,7 @@
       "sky-bearer",
       "guardian"
     ],
-    "updatedAt": "2026-08-11",
+    "updatedAt": "2026-11-11",
     "heightMeters": null,
     "hasScholarlyNotes": true
   },
@@ -1861,7 +1861,7 @@
     "region": "Australia",
     "type": "folklore",
     "freeEntry": true,
-    "height": "Ancestral / giant scale",
+    "height": "Ancestral scale. Not a measured height.",
     "shortDescription": "Ancestral beings of giant scale in the volcanic landscape of Budj Bim.",
     "related": [
       "papinijuwari",
@@ -1904,8 +1904,8 @@
     "region": "Australia",
     "type": "folklore",
     "freeEntry": false,
-    "height": "Giant",
-    "shortDescription": "One-eyed giant spirits of Tiwi tradition who hunt with clubs and bags.",
+    "height": "Not stated as a measurement in the sources.",
+    "shortDescription": "One-eyed giant spirits of Tiwi tradition, associated with sickness, death and falling stars.",
     "related": [
       "budj-bim",
       "murkupang",
@@ -1946,8 +1946,8 @@
     "region": "Australia",
     "type": "folklore",
     "freeEntry": true,
-    "height": "Giant",
-    "shortDescription": "Giant figure in northern Australian story cycles of pursuit and country.",
+    "height": "Not stated as a measurement in the sources.",
+    "shortDescription": "A cannibal giant recorded under this name in twentieth century compilations of Australian Aboriginal legend, with no community reliably identified in the sources used here.",
     "related": [
       "budj-bim",
       "papinijuwari",
@@ -1986,7 +1986,7 @@
     "region": "Australia",
     "type": "folklore",
     "freeEntry": true,
-    "height": "Giant",
+    "height": "Not stated as a measurement in the sources.",
     "shortDescription": "Cannibal giant of southeastern Aboriginal tales: a terror of the camp edge.",
     "related": [
       "papinijuwari",
@@ -2026,7 +2026,7 @@
     "region": "Australia",
     "type": "folklore",
     "freeEntry": true,
-    "height": "Giant",
+    "height": "Not stated as a measurement in the sources.",
     "shortDescription": "Giant being in Aboriginal narrative: sparse in print, strong in place.",
     "related": [
       "thardid-jimbo",
@@ -2054,7 +2054,7 @@
     ],
     "restrained": true,
     "communityNote": "Whether this material should appear in a general catalogue at all is a fair question. We have kept a short entry rather than deleting it silently, because the gap and the reason for it are worth showing, but we would remove or correct it on request from the relevant community. Requests can be sent to hello@giantscodex.com.",
-    "updatedAt": "2026-08-11",
+    "updatedAt": "2026-11-11",
     "heightMeters": null,
     "hasScholarlyNotes": false
   },
@@ -2113,7 +2113,7 @@
     "region": "Aotearoa / Polynesia",
     "type": "race",
     "freeEntry": false,
-    "height": "Giant / supernatural",
+    "height": "Supernatural scale in the sources. Not a measured height.",
     "shortDescription": "Bands of supernatural giants in Māori tradition: tipua of collective power.",
     "related": [
       "maero",
@@ -2142,7 +2142,7 @@
       "landscape-body",
       "pre-people"
     ],
-    "updatedAt": "2026-08-11",
+    "updatedAt": "2026-11-11",
     "heightMeters": null,
     "hasScholarlyNotes": false
   },
@@ -2201,7 +2201,7 @@
     "region": "Southern Africa",
     "type": "race",
     "freeEntry": false,
-    "height": "Ogre-giant",
+    "height": "Large in the tales. Not a measured height.",
     "shortDescription": "Cannibal ogres of Zulu and related folklore: shape-shifting eaters of the unwary.",
     "related": [
       "giant-of-the-forest",
@@ -2228,7 +2228,7 @@
       "cannibal",
       "outwitted"
     ],
-    "updatedAt": "2026-08-11",
+    "updatedAt": "2026-11-11",
     "heightMeters": null,
     "hasScholarlyNotes": false
   },
@@ -2288,7 +2288,7 @@
     "region": "Northern Europe",
     "type": "folklore",
     "freeEntry": false,
-    "height": "Large / troll-giant",
+    "height": "Large in the tales. Not a measured height.",
     "shortDescription": "Sámi giant-troll of the north: strong, dull-witted, dangerous to herders.",
     "related": [
       "svyatogor",
@@ -2322,7 +2322,7 @@
       "outwitted",
       "wild-highland"
     ],
-    "updatedAt": "2026-08-11",
+    "updatedAt": "2026-11-11",
     "heightMeters": null,
     "hasScholarlyNotes": true,
     "chainSummary": {
@@ -2941,7 +2941,7 @@
     "region": "Patagonia",
     "type": "modern-legend",
     "freeEntry": false,
-    "height": "claimed 12 to 15 feet; measured 5 ft 9 in",
+    "height": "Later reports claimed twelve to fifteen feet. Bougainville, published 1771, gave the tallest as five feet nine French feet, about six English feet.",
     "shortDescription": "European voyage reports of a giant race in Patagonia, ended by measurement in the 1760s.",
     "related": [
       "si-te-cah",

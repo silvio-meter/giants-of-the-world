@@ -3586,7 +3586,7 @@
     "region": "North America",
     "type": "individual",
     "freeEntry": true,
-    "height": "Giant",
+    "height": "Not stated as a measurement in the sources.",
     "shortDescription": "Cherokee lord of the hunt: slant-eyed giant of the mountains.",
     "fullDescription": "Tsul'kalu is the slant-eyed giant of Cherokee tradition, lord of the game animals and master of the hunt. A mountain in North Carolina carries a version of his name, and so does the rock face he is said to have marked.",
     "mysteryNote": "The rock still holds marks. The mountain still holds the name. Visitors should hold their tongues carefully.",
@@ -3730,7 +3730,7 @@
     "region": "North America",
     "type": "folklore",
     "freeEntry": false,
-    "height": "Giant",
+    "height": "Not stated as a measurement in the sources.",
     "shortDescription": "Ice-hearted cannibal giant of northern forests: a winter horror.",
     "fullDescription": "The Kee-wakw is a cannibal giant of Abenaki and wider Wabanaki tradition: a being of winter, hunger and the frozen forest, whose appetite grows the more it eats.",
     "mysteryNote": "Winter has teeth. Some stories give those teeth a name and a height, and a warning about what hunger makes of us.",
@@ -3773,7 +3773,7 @@
       "take": "Stick to the well-documented general pattern (a huge, never-satisfied, winter-associated cannibal being that a person can become through greed or extremity, typically defeated by cleverness or a person of power) and attribute it honestly as Wabanaki/Algonquian tradition with real variation between communities, not a single fixed monster. Do not import wendigo-horror-genre tropes (curses, possession-by-antlers, video-game monster design) into this figure, and do not present kee-wakw as interchangeable with the commercialized wendigo; the entry itself flags this as a live concern among Indigenous writers. Prefer citing or pointing readers to contemporary Wabanaki authors like Joseph Bruchac over nineteenth-century settler compilations, and use Leland (1884) only with the caveat that he reworked material for a literary audience.",
       "cite": "Cite contemporary Wabanaki authors, especially Joseph Bruchac, as the living and authoritative source; use Charles G. Leland's Algonquin Legends of New England (1884) and Frank Speck's early-twentieth-century Penobscot ethnography only with explicit period-and-method caveats, not as neutral transcription."
     },
-    "updatedAt": "2026-08-11"
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "gaoh",
@@ -3786,7 +3786,7 @@
     "region": "North America",
     "type": "individual",
     "freeEntry": false,
-    "height": "Spirit-giant",
+    "height": "A powerful being with a cosmological office. No numeric height in the sources.",
     "shortDescription": "Master of the winds: a giant spirit who pens the gales.",
     "fullDescription": "Gaoh is the master of the winds in Haudenosaunee tradition, keeping the four directional winds in his charge. Each wind has its animal, and what the weather does depends on which one he releases.",
     "mysteryNote": "If the wind ever stops answering, ask who opened the cave. Then ask whether you should have.",
@@ -3850,7 +3850,7 @@
       "take": "Treat the widely-published four-animal wind scheme and Gaoh's role as guardian/container of the winds as describable in a reference context like this one, sourced transparently to Converse and Parker, but be explicit that Converse's version passed through significant outsider and posthumous editorial shaping (despite her unusual adoption into the Seneca Snipe Clan and status as an Onondaga-raised sachem) and should not be presented as the Haudenosaunee account. Do not invent new plot, dialogue, or expanded mythology for Gaoh, and do not extract him from the wider cosmology to build an unrelated fictional world, since Haudenosaunee sources treat this material as an interconnected living system rather than separable IP; for anything beyond the bare published record, defer to Confederacy and community publications.",
       "cite": "Cite Harriet Maxwell Converse's Myths and Legends of the New York State Iroquois (1908, ed. Arthur C. Parker) and Parker's own Seneca ethnographic writings as the documented published sources, and note that contemporary Haudenosaunee Confederacy and community publications are the authoritative living reference for anything beyond them."
     },
-    "updatedAt": "2026-08-11"
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "budj-bim",
@@ -3863,7 +3863,7 @@
     "region": "Australia",
     "type": "folklore",
     "freeEntry": true,
-    "height": "Ancestral / giant scale",
+    "height": "Ancestral scale. Not a measured height.",
     "shortDescription": "Ancestral beings of giant scale in the volcanic landscape of Budj Bim.",
     "fullDescription": "Budj Bim is a volcano in south-west Victoria, and in Gunditjmara tradition it is an ancestral being who revealed himself in the landscape. The lava he produced carries one of the oldest aquaculture systems known anywhere.",
     "mysteryNote": "The lava is old. The stories are older than the word giant, and the Country is not a museum.",
@@ -3919,8 +3919,8 @@
     "region": "Australia",
     "type": "folklore",
     "freeEntry": false,
-    "height": "Giant",
-    "shortDescription": "One-eyed giant spirits of Tiwi tradition who hunt with clubs and bags.",
+    "height": "Not stated as a measurement in the sources.",
+    "shortDescription": "One-eyed giant spirits of Tiwi tradition, associated with sickness, death and falling stars.",
     "fullDescription": "The Papinijuwari are one-eyed giants of Tiwi tradition who hunt the sick and drink blood. They belong to a living island cosmology, and what is publicly known about them is a fraction of what exists.",
     "mysteryNote": "One eye is enough when the night is on their side. The islands know the rest of the story.",
     "related": [
@@ -3974,8 +3974,8 @@
     "region": "Australia",
     "type": "folklore",
     "freeEntry": true,
-    "height": "Giant",
-    "shortDescription": "Giant figure in northern Australian story cycles of pursuit and country.",
+    "height": "Not stated as a measurement in the sources.",
+    "shortDescription": "A cannibal giant recorded under this name in twentieth century compilations of Australian Aboriginal legend, with no community reliably identified in the sources used here.",
     "fullDescription": "Murkupang is a cannibal giant recorded in Australian Aboriginal tradition, hunting people and taking children. The external record is thin, and this entry is correspondingly short.",
     "mysteryNote": "Follow the story only as far as Country allows. The map is not entitled to everything.",
     "related": [
@@ -4027,9 +4027,9 @@
     "region": "Australia",
     "type": "folklore",
     "freeEntry": true,
-    "height": "Giant",
+    "height": "Not stated as a measurement in the sources.",
     "shortDescription": "Cannibal giant of southeastern Aboriginal tales: a terror of the camp edge.",
-    "fullDescription": "Thardid Jimbo is recorded as a giant of Australian Aboriginal tradition, over two metres tall, who hunted people and was killed after taking a woman as a wife. The record has the same attribution problems as its neighbours.",
+    "fullDescription": "Thardid Jimbo is a name that reaches general reference through mid twentieth century compilations of Australian Aboriginal legend. The sources available to us do not reliably identify the community whose tradition this is, so this entry does not retell the plot or give a height.",
     "mysteryNote": "Stay near the fire. The dark has a name in more than one language, and more than one warning.",
     "related": [
       "papinijuwari",
@@ -4051,7 +4051,7 @@
       "AIATSIS protocols for Indigenous knowledge"
     ],
     "sections": {
-      "story": "The narrative recorded under this name describes a large man-eating being who takes a woman, in some tellings a woman already married, and is eventually killed, in several versions after his intended prey or her kin outwit him.\n\nAs with Murkupang, the material reaches general reference through twentieth-century compilations that did not adequately identify the community it came from, and we are not able to attribute it with confidence.\n\nThere is a general point worth making here rather than repeating it entry by entry.\n\nAustralian Aboriginal cultures are the oldest continuous cultures on earth, with traditions that in documented cases, Budj Bim in this same codex, preserve accurate memory of events tens of thousands of years old. They are not a source of generic monster stories. Treating them as raw material for a curiosity catalogue, which is exactly what much of the twentieth-century publishing did, is both inaccurate and disrespectful.\n\nThe cannibal-giant figures are real traditions with real functions: marking dangerous country, instructing children, encoding law. Detached from the people, the place and the language, almost all of that is lost, and what remains is a monster with a name.\n\nWe are keeping short entries for these rather than removing them, so that the shape of the problem stays visible instead of being tidied away. Fuller and better-sourced treatment would require working with the relevant communities, which is a real undertaking and not one we can shortcut.",
+      "story": "As with Murkupang, the material reaches general reference through twentieth century compilations that did not adequately identify the community it came from, and we are not able to attribute it with confidence. This entry therefore does not retell narrative details.\n\nThere is a general point worth making here rather than repeating it entry by entry.\n\nAustralian Aboriginal cultures are the oldest continuous cultures on earth, with traditions that in documented cases, Budj Bim in this same codex, preserve accurate memory of events tens of thousands of years old. They are not a source of generic monster stories. Treating them as raw material for a curiosity catalogue, which is exactly what much of the twentieth-century publishing did, is both inaccurate and disrespectful.\n\nThe cannibal-giant figures are real traditions with real functions: marking dangerous country, instructing children, encoding law. Detached from the people, the place and the language, almost all of that is lost, and what remains is a monster with a name.\n\nWe are keeping short entries for these rather than removing them, so that the shape of the problem stays visible instead of being tidied away. Fuller and better-sourced treatment would require working with the relevant communities, which is a real undertaking and not one we can shortcut.",
       "origins": "Australian Aboriginal oral tradition; specific community not reliably identified in available sources.\n\nThe name appears in mid-twentieth-century compilations of Australian Aboriginal legend, with the attribution and consent problems described above.\n\nCommunity-controlled sources and language centres are the appropriate authority.\n\nAIATSIS holds relevant collections and maintains protocols governing use of Indigenous knowledge.",
       "disputed": "The same attribution failure applies as to Murkupang, and it is not a minor caveat: it means we cannot say whose story this is.\n\nThe published versions vary in detail, and the variation cannot be assessed without knowing the source traditions.\n\nSome Australian Aboriginal knowledge is restricted by law and custom, including by gender and initiation status. General publication of such material has caused real harm, and reference works have participated in it.\n\nThis entry exists to hold the place and state the problem. It should not be read as an account of the tradition."
     },
@@ -4060,7 +4060,7 @@
       "wild-highland"
     ],
     "restrained": true,
-    "fate": "Accounts describe him being killed, but no single version is confirmed.",
+    "fate": "Not confirmed, and not retold here.",
     "communityNote": "Whether this material should appear in a general catalogue at all is a fair question. We have kept a short entry rather than deleting it silently, because the gap and the reason for it are worth showing, but we would remove or correct it on request from the relevant community. Requests can be sent to hello@giantscodex.com.",
     "handling": {
       "publishable": true,
@@ -4080,7 +4080,7 @@
     "region": "Australia",
     "type": "folklore",
     "freeEntry": true,
-    "height": "Giant",
+    "height": "Not stated as a measurement in the sources.",
     "shortDescription": "Giant being in Aboriginal narrative: sparse in print, strong in place.",
     "fullDescription": "Chinny-Kinik is recorded as a giant of Australian Aboriginal tradition. As with the other entries in this group, the external record is thin and the attribution unreliable.",
     "mysteryNote": "Some names are doors. This catalogue only knocks, and does not pretend to hold the key.",
@@ -4123,7 +4123,7 @@
       "take": "The bare motif of a man-eating giant tracked to a cave and sealed in by fire and cunning is a worldwide folktale pattern and free to use as such, unattributed. The name Chinny-kinik, the Murray River siting, and any framing of your version as an Aboriginal story should be left alone, because the community that owns them is unidentified and cannot consent, and whether specific restrictions apply is unknowable until they are found and asked. Not knowing is the finding here, and it cuts against use, not for it.",
       "cite": "Go through AIATSIS (aiatsis.gov.au) and its 2020 Code of Ethics for Aboriginal and Torres Strait Islander Research, and prefer community-controlled publications from the Murray River region over any legend compilation."
     },
-    "updatedAt": "2026-08-11"
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "maero",
@@ -4193,7 +4193,7 @@
     "region": "Aotearoa / Polynesia",
     "type": "race",
     "freeEntry": false,
-    "height": "Giant / supernatural",
+    "height": "Supernatural scale in the sources. Not a measured height.",
     "shortDescription": "Bands of supernatural giants in Māori tradition: tipua of collective power.",
     "fullDescription": "The Kāhui Tipua are a band of supernatural giants in southern Māori tradition, credited with shaping parts of the South Island landscape: including, in some accounts, the excavation of the great lakes.",
     "mysteryNote": "Before the maps, the bands walked. Some say they never stopped: only stepped sideways out of ordinary sight.",
@@ -4237,7 +4237,7 @@
       "take": "The broad pattern (South Island landscape explained through beings of appropriate scale, the recorded Kōpūwai/water-swallower material, the general shape of Stack's 1877 and Beattie's twentieth-century records) is publishable as documented tradition, clearly sourced and clearly marked as Ngāi Tahu and Te Tau Ihu material rather than generic \"Maori myth.\" Do not invent new episodes, do not present the geology-memory reading as settled fact, and do not smooth over the real disagreement between accounts about composition and scope. For anything beyond the published record, treat Ngāi Tahu and the relevant Te Tau Ihu iwi as the people who get to decide what more is said, the same caution used for other living-iwi material in this project.",
       "cite": "Cite James W. Stack (1877), Herries Beattie's \"Nature-lore of the Southern Maori\" (1920), and Ngāi Tahu's own published sources and Claims Settlement documentation as primary; Te Ara: The Encyclopedia of New Zealand is a reasonable general-reader starting point."
     },
-    "updatedAt": "2026-08-11"
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "nawao",
@@ -4307,7 +4307,7 @@
     "region": "Southern Africa",
     "type": "race",
     "freeEntry": false,
-    "height": "Ogre-giant",
+    "height": "Large in the tales. Not a measured height.",
     "shortDescription": "Cannibal ogres of Zulu and related folklore: shape-shifting eaters of the unwary.",
     "fullDescription": "Amazimu are cannibal ogres of Zulu and wider Nguni tradition: large, dangerous, and consistently defeated by children who pay attention.",
     "mysteryNote": "The clever child lives. The greedy giant does not always, and the tale prefers it that way.",
@@ -4349,7 +4349,7 @@
       "take": "The tale machinery is free to use: capture and escape by trickery, the swallowed recovered alive when the ogre is cut open, the being that seems human until a small mark betrays it, destruction by its own greed. This is public children's entertainment, not restricted knowledge, and no community protocol limiting its use is known to this catalogue. Leave two things: do not present amazimu as Zulu belief in real cannibals or as memory of a hostile people, and do not collapse the Zulu, Xhosa, Swazi and Ndebele variants into one canonical monster whose horror, rather than the child's cleverness, is the point.",
       "cite": "Credit Zulu and wider Nguni oral tradition; for depth use Harold Scheub's The Xhosa Ntsomi and his South African Voices recordings held by the University of Wisconsin-Madison libraries, and contemporary tellers such as Gcina Mhlophe, rather than Callaway's 1868 collection alone."
     },
-    "updatedAt": "2026-08-11"
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "giant-of-the-forest",
@@ -4420,7 +4420,7 @@
     "region": "Northern Europe",
     "type": "folklore",
     "freeEntry": false,
-    "height": "Large / troll-giant",
+    "height": "Large in the tales. Not a measured height.",
     "shortDescription": "Sámi giant-troll of the north: strong, dull-witted, dangerous to herders.",
     "fullDescription": "Stallo is the large, slow, dangerous being of Sámi tradition who hunts people across the winter landscape and is beaten by wit rather than strength. Circular stone foundations across northern Scandinavia are still called Stallo sites.",
     "mysteryNote": "Strong arms. Slow thoughts. The snow remembers who ran faster, and who bragged too soon.",
@@ -4581,7 +4581,7 @@
       "take": "The trickster-outwits-the-giant story pattern (the sieve, the swapped sleeping places, the stone-filled bag, the reindeer-track deception) is well-documented folklore and reasonably usable, but a writer should credit it as Sámi rather than generic 'Nordic' material, keep Stallo distinct from both trolls and the separate Sámi giants per Turi's own distinction, and avoid presenting contested scholarly questions (the stállotomter's origin, the name's etymology, whether the tales encode real historical outsiders) as settled. Given that much of the written record was produced by missionaries actively working to suppress Sámi religion, prefer Turi's own book and modern Sámi-sourced retellings over older missionary or colonial-era compilations where possible, and do not import the debunked Fjellner sun-descent material as if it were traditional belief.",
       "cite": "Cite Johan Turi, Muitalus sámiid birra (1910), as the essential inside source, J.K. Qvigstad's Lappiske eventyr og sagn (1927-29) as the major external compilation, and Eldar Heide's 2019 Arv article on the Wild Host and Stállu etymology alongside Olof Holm's 2016 Fornvännen piece for the live archaeological and etymological debates."
     },
-    "updatedAt": "2026-08-11"
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "ojancanu",
@@ -4788,7 +4788,7 @@
     "imageAlt": "Giant of Kandahar (unverified modern legend)",
     "sections": {
       "story": "The claim, as it circulates, is specific enough to sound like a report. A US special operations patrol goes missing in Kandahar province. A second team is sent, finds a cave, and encounters a giant: variously twelve to fifteen feet tall, red-haired, with six fingers on each hand and two rows of teeth. It kills one soldier with a spear before being shot. The body is flown out and everything is classified.\n\nNone of this is supported by anything.\n\nWhat can be traced is where the story came from. It circulates through paranormal talk radio, internet forums, YouTube and podcasts. The datable flash of coverage clusters from 2016 onward (including a Snopes check that put the question to the Department of Defense); earlier forum lore is harder to pin. No named cable series has been verified as the mass-circulation route often claimed. The named witnesses are anonymous or unverifiable. No unit, no date, no casualty record, and no serviceman has ever been identified. US military casualties in Afghanistan are documented in detail, and no death matches the account.\n\nThe physical details are worth noticing because they are not random. Red hair, six fingers and double rows of teeth are the standard inventory of nineteenth-century American giant lore and of the Nephilim literature: the same features attached to the Lovelock Cave claims elsewhere in this codex. The Kandahar story is assembled from an existing kit.\n\nIts persistence is the genuinely interesting part: a war zone that is closed to verification, a claim of classification that makes absence of evidence into evidence, and an audience for whom the giants of Genesis are a live proposition.\n\nWe include it because the codex covers modern legend, and this is a clean specimen of one forming in traceable conditions. It is not a report of an event.",
-      "origins": "The story has no primary source. Its documented history runs through paranormal radio, internet forums, YouTube and secondary news blogs. The earliest items that can be firmly dated belong to 2016 and after; claims of mid-2000s circulation are common but not shown from a citable artifact here.\n\nNo military record, casualty report, unit history or named participant supports it. Journalists have asked the Department of Defense (Snopes, 2016) and received a denial; a trail of Freedom of Information requests producing empty files has not been found in the reporting checked for this entry.\n\nIts component details derive from a long tradition of American giant lore and from Nephilim literature, both of which are documented and considerably older.",
+      "origins": "The story has no primary source. Traceable broadcasts include Coast to Coast AM programme pages from 2005 and 2008, with a later cluster from 2016 onward, including a Snopes check that put the question to the Department of Defense. The 2005 telling does not yet contain Kandahar, a special forces patrol, a cave, a spear, a dead American or red hair.\n\nNo military record, casualty report, unit history or named participant supports it. Journalists have asked the Department of Defense (Snopes, 2016) and received a denial; a trail of Freedom of Information requests producing empty files has not been found in the reporting checked for this entry.\n\nIts component details derive from a long tradition of American giant lore and from Nephilim literature, both of which are documented and considerably older.",
       "disputed": "There is nothing to dispute in the ordinary sense. No evidence has been produced in more than two decades.\n\nThe classification claim is unfalsifiable by design, and that is a recognised feature of this kind of story rather than an argument in its favour.\n\nWhat is genuinely worth studying is the transmission: how a claim with no source acquires circumstantial detail, named-sounding witnesses and television airtime. The Kandahar story is unusually well documented as a case of that process because it happened recently and online.\n\nTreating this entry as evidence of anything other than how modern legends form would be a misreading of it."
     },
     "motifs": [
@@ -5728,7 +5728,7 @@
     "region": "Patagonia",
     "type": "modern-legend",
     "freeEntry": false,
-    "height": "claimed 12 to 15 feet; measured 5 ft 9 in",
+    "height": "Later reports claimed twelve to fifteen feet. Bougainville, published 1771, gave the tallest as five feet nine French feet, about six English feet.",
     "shortDescription": "European voyage reports of a giant race in Patagonia, ended by measurement in the 1760s.",
     "fullDescription": "Pigafetta, in the 1520s, described a man taller than the Europeans looking at him, without giving a height in feet. By 1773 the official Byron account found them roughly four inches taller than the tallest men in the crew. Nothing in Patagonia had changed. Only who was doing the measuring.",
     "mysteryNote": "Magellan's men sailed home with a story that held Europe for three centuries. Two of the people in it were taken aboard, and neither reached Spain.",
@@ -5761,7 +5761,7 @@
       "origins": "This is a European textual tradition rather than an indigenous one, and it is carried in voyage narratives and their reprintings.\n\nAntonio Pigafetta wrote his account of the Magellan expedition in the mid 1520s. It survives in four manuscripts, three in French and one in Italian, the Italian copy in the Biblioteca Ambrosiana in Milan. Giovanni Battista Ramusio printed a version in his Navigationi et Viaggi from 1550, and Carlo Amoretti published the Ambrosiana manuscript in 1800.\n\nThe World Encompassed by Sir Francis Drake, London 1628, was compiled by Drake's nephew from the notes of the expedition's chaplain Francis Fletcher and other papers.\n\nThe eighteenth-century revival ran through the periodical press: a report in the Gentleman's Magazine in 1766, then Charles Clerke's letter to the Royal Society on the very tall men seen near the Strait of Magellan, printed in the Philosophical Transactions in 1767. Bougainville's Voyage autour du monde followed in 1771, and John Hawkesworth's official Account of the Voyages in 1773.",
       "disputed": "Even the name is uncertain. Patagonia is often read as the land of the big foot, which fed the European legend of oversized people at the southern tip of the Americas. But Magellan may simply have taken the name from Patagón, a character in the sixteenth-century Spanish romance Primaleón, which he had probably read. Explorers of that period named places after their reading habits: California came out of another Spanish romance in the same way.\n\nIf the toponym is literary, the \"big foot\" folk etymology is a later gloss that made the legend feel inevitable. The voyage accounts still describe tall people; the Tehuelche and related groups were genuinely taller than many European sailors of the age. The dispute is not whether anyone large was met, but how a romance name, a real stature difference and three centuries of exaggeration braided into a single European giant myth."
     },
-    "fate": "Ended by measurement: Bougainville found the tallest at five feet nine in 1767.",
+    "fate": "Ended by measurement. Bougainville's 1771 voyage account gives the tallest as five feet nine French feet, about six English feet.",
     "chain": {
       "claim": "The Patagonians were a race of giants twelve to fifteen feet tall, first met by Magellan's crew at Port San Julian in 1520 and reported by European voyagers for the next two and a half centuries.",
       "verdict": "The voyage narratives that carry this story describe unusually tall people, but where they give numbers at all the numbers are much smaller than twelve to fifteen feet, and the figures shrink further once anyone measures.",
