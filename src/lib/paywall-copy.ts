@@ -45,7 +45,7 @@ export const PAYWALL_COPY = {
   /** Secondary text under the one gold-wall button. Not a second CTA. */
   secondary: `Yearly ${yearly} · Lifetime ${lifetime} · ${refund}`,
   /** Later locks (sources, scholarly): no button, no prices. */
-  later: "Sources and scholarly notes stay with existing memberships.",
+  later: "Scholarly notes stay with existing memberships.",
   compareLater: "The rest of this comparison stays with existing memberships.",
   scaleLater: "Scale stays with existing memberships.",
   /**
