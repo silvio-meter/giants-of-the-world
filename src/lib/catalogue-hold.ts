@@ -33,7 +33,6 @@ export const HOLD_LIVING_TRADITIONS = [
   "murkupang",
   "thardid-jimbo",
   "chinny-kinik",
-  "maero",
   "kahui-tipua",
   "nawao",
   "amazimu",
