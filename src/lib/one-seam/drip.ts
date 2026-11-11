@@ -15,11 +15,13 @@ export const MONTHLY_CHECKOUT_CTA =
 export const MOTIFS_URL = "https://www.giantscodex.com/motifs";
 
 /**
- * Seller contact for refund requests. Mirrors operatorContactEmail in
- * src/lib/site.ts (not imported, to keep this file free of app imports);
- * tests/seller-identity.test.mjs fails if the two drift apart.
+ * Contact for refund requests. Mirrors supportEmail in src/lib/site.ts (not
+ * imported, to keep this file free of app imports), the same address /pricing
+ * and the bestiary FAQ give (owner decision, 11 Nov 2026). /terms and
+ * /privacy keep operatorContactEmail as the legal operator contact.
+ * tests/seller-identity.test.mjs fails if this drifts from supportEmail.
  */
-export const REFUND_CONTACT_EMAIL = "meter257@gmail.com";
+export const REFUND_CONTACT_EMAIL = "hello@giantscodex.com";
 
 export type DripStepId = 1 | 2 | 3 | 4;
 
