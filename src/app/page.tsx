@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { isCatalogueHeld } from "@/lib/catalogue-hold";
 import { GiantCard } from "@/components/GiantCard";
 import { RandomGiantButton } from "@/components/RandomGiantButton";
 import { getAllGiants, getFreeGiants } from "@/lib/giants";
@@ -60,8 +61,10 @@ const tools = [
  * Homepage strip only: curated showcase, not "every free entry".
  * freeEntry is a separate access question. Living-community and
  * no-attributable-community free entries stay free to read but are not
- * listed here (see HANDOFF "Free set").
- * Recognition first, then range. Exactly these thirteen, no fallback.
+ * listed here (see HANDOFF "Free set"). Nothing on the Catalogue hold list
+ * and nothing without an image appears here (budj-bim left on 11 Nov 2026);
+ * the filter below enforces both even if a slug is added back by mistake.
+ * Recognition first, then range. Exactly these twelve, no fallback.
  */
 const FREE_STRIP_ORDER = [
   "ymir",
@@ -73,7 +76,6 @@ const FREE_STRIP_ORDER = [
   "oni",
   "jentilak",
   "fomorians",
-  "budj-bim",
   "talos",
   "gargantua",
   "paul-bunyan",
@@ -85,7 +87,8 @@ export default function HomePage() {
   const freeCount = free.length;
   const freeBySlug = new Map(free.map((g) => [g.slug, g]));
   const freeStrip = FREE_STRIP_ORDER.map((s) => freeBySlug.get(s)).filter(
-    (g): g is NonNullable<typeof g> => Boolean(g)
+    (g): g is NonNullable<typeof g> =>
+      g !== undefined && !isCatalogueHeld(g.slug) && Boolean(g.image)
   );
 
   return (

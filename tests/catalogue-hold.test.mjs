@@ -120,6 +120,20 @@ test("sitemap lastModified is a committed per-entry date, never the build time",
   assert.ok(new Set(master.map((g) => g.updatedAt)).size > 1, "every entry has the same date");
 });
 
+test("homepage strip has no hold-list slug and no image-less entry", () => {
+  const page = read("src/app/page.tsx");
+  const block = page.split("const FREE_STRIP_ORDER = [")[1]?.split("];")[0] ?? "";
+  const strip = [...block.matchAll(/"([a-z0-9-]+)"/g)].map((m) => m[1]);
+  assert.ok(strip.length >= 10, "FREE_STRIP_ORDER not found");
+  const masterBySlug = new Map(master.map((g) => [g.slug, g]));
+  for (const slug of strip) {
+    assert.ok(!CATALOGUE_HOLD_SLUGS.includes(slug), `${slug} is held but on the homepage strip`);
+    assert.ok(masterBySlug.get(slug)?.image, `${slug} has no image but is on the homepage strip`);
+  }
+  // The render filter enforces it too, if a slug is ever added back.
+  assert.match(page, /!isCatalogueHeld\(g\.slug\) && Boolean\(g\.image\)/);
+});
+
 test("held entries keep the paywall schema; opened entries drop it", () => {
   const page = read("src/app/giants/[slug]/page.tsx");
   // Schema follows freeEntry: open -> isAccessibleForFree true and no hasPart;
@@ -332,6 +346,13 @@ test("served: sitemap entry lastmod is the entry's updatedAt, not the build time
   for (const u of urls) {
     const lastmod = u.match(/<lastmod>([^<]+)<\/lastmod>/)?.[1] ?? "";
     assert.match(lastmod, /T00:00:00\.000Z$/, `build-time lastmod: ${u.trim().slice(0, 80)}`);
+  }
+});
+
+test("served: homepage strip", { skip }, async () => {
+  const html = await (await get("/")).text();
+  for (const slug of CATALOGUE_HOLD_SLUGS) {
+    assert.ok(!html.includes(`href="/giants/${slug}"`), `${slug} linked from the homepage`);
   }
 });
 
