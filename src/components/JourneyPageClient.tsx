@@ -346,7 +346,7 @@ export function JourneyPageClient({
               </div>
             ) : (
               <div className="mt-4">
-                <PremiumLock variant="later" laterText="Export comes with the same membership." />
+                <PremiumLock variant="later" laterText="Export stays with existing memberships." />
               </div>
             )}
           </section>

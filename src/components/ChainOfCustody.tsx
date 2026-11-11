@@ -144,7 +144,7 @@ export function ChainOfCustody({
               oldest at the bottom, each with what it actually says.
             </p>
             <p className="mt-3 text-sm text-text-muted">
-              The rungs come with the same membership.
+              The rungs stay with existing memberships.
             </p>
           </div>
         )
