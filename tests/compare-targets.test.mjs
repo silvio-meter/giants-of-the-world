@@ -36,3 +36,19 @@ test("Session Prep pair, giant-page vs list, picker and /compare all filter", ()
   assert.ok(cmp.includes("sp.a && !isNeverOpen(sp.a)"));
   assert.ok(cmp.includes("sp.b && !isNeverOpen(sp.b)"));
 });
+
+test("dzunukwa: noindex, no image, not in the sitemap", () => {
+  const page = read("src/app/giants/[slug]/page.tsx");
+  assert.ok(page.includes("...(isNeverOpen(giant.slug) ? { robots: { index: false, follow: false } } : {}),"));
+  for (const p of ["src/data/giants.json", "src/data/giants.public.json"]) {
+    const dz = JSON.parse(read(p)).find((g) => g.slug === "dzunukwa");
+    assert.ok(dz, p);
+    assert.ok(!("image" in dz) && !("imageAlt" in dz), `${p}: dzunukwa still has an image`);
+  }
+  assert.ok(read("src/app/sitemap.ts").includes(".filter((g) => !isCatalogueHeld(g.slug))"));
+});
+
+test("dzunukwa share card is the generic site card", () => {
+  const og = read("src/app/giants/[slug]/opengraph-image.tsx");
+  assert.equal((og.match(/isNeverOpen\(slug\) \? undefined : getGiantBySlug\(slug\)/g) ?? []).length, 2);
+});

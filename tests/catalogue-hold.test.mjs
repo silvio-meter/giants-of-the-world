@@ -57,6 +57,8 @@ const IMAGES_REMOVED = [
   "budj-bim", "murkupang", "papinijuwari", "patagonian-giants", "thardid-jimbo",
   "tsul-kalu",
 ];
+/** Never-open entries whose image was withdrawn too (Silvio, 11 Nov 20:47). */
+const NEVER_OPEN_IMAGES_REMOVED = ["dzunukwa"];
 
 test("hold list is the 19 living traditions plus Kandahar and Kunar", () => {
   assert.equal(HOLD_LIVING_TRADITIONS.length, 19);
@@ -181,7 +183,7 @@ test("Kandahar and Kunar carry the soldiers' tale status line", () => {
 });
 
 test("six withdrawn images: no image field and no file", () => {
-  for (const slug of IMAGES_REMOVED) {
+  for (const slug of [...IMAGES_REMOVED, ...NEVER_OPEN_IMAGES_REMOVED]) {
     for (const data of [master, publicEntries]) {
       const g = data.find((e) => e.slug === slug);
       assert.ok(g, slug);
@@ -196,7 +198,7 @@ test("six withdrawn images: no image field and no file", () => {
   }
   // Nobody else lost an image by accident.
   const withImage = publicEntries.filter((g) => g.image).length;
-  assert.equal(withImage, publicEntries.length - IMAGES_REMOVED.length);
+  assert.equal(withImage, publicEntries.length - IMAGES_REMOVED.length - NEVER_OPEN_IMAGES_REMOVED.length);
 });
 
 test("no-image surfaces: text-only share card, schema fallback, empty frames", () => {
