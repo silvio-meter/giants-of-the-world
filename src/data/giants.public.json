@@ -46,7 +46,7 @@
       "first-and-last"
     ],
     "updatedAt": "2026-09-01",
-    "heightMeters": 30,
+    "heightMeters": null,
     "hasScholarlyNotes": true,
     "chainSummary": {
       "claim": "Ymir's name means \"Scream\": the primordial scream in the void, so that the giant out of whose body the Norse world was built is named for the sound of the beginning.",
@@ -118,6 +118,13 @@
     "type": "individual",
     "freeEntry": true,
     "height": "Six cubits and a span (Masoretic); four cubits and a span (Dead Sea Scrolls)",
+    "heightSource": "the Masoretic text",
+    "heightAlt": {
+      "height": "Four cubits and a span",
+      "source": "the LXX and 4QSam(a)",
+      "note": "Two traditions: the Masoretic text gives six cubits and a span (≈2.9 m); the LXX and 4QSam(a) give four cubits and a span (≈2.0 m).",
+      "meters": 2
+    },
     "shortDescription": "The Philistine champion of Gath who fell to a shepherd's stone.",
     "related": [
       "og-of-bashan",
@@ -146,8 +153,9 @@
       "outwitted",
       "war-on-heaven"
     ],
-    "updatedAt": "2026-09-01",
+    "updatedAt": "2026-11-11",
     "heightMeters": 2.9,
+    "heightCubitBased": true,
     "hasScholarlyNotes": true,
     "chainSummary": {
       "claim": "Goliath of Gath stood six cubits and a span, about nine feet nine inches, or close to three metres.",
@@ -247,7 +255,7 @@
       "war-on-heaven"
     ],
     "updatedAt": "2026-09-01",
-    "heightMeters": 30,
+    "heightMeters": null,
     "hasScholarlyNotes": true
   },
   {
@@ -299,7 +307,7 @@
       "outwitted"
     ],
     "updatedAt": "2026-10-27",
-    "heightMeters": 12,
+    "heightMeters": null,
     "hasScholarlyNotes": true,
     "chainSummary": {
       "claim": "The trick in Odyssey 9, where Odysseus gives his name as Nobody and then blinds the Cyclops and escapes under the sheep, was invented by Homer for the poem, and the folk versions collected later across Europe and Asia are descendants of it.",
@@ -348,7 +356,7 @@
       "buried-under-volcanoes"
     ],
     "updatedAt": "2026-11-11",
-    "heightMeters": 12,
+    "heightMeters": null,
     "hasScholarlyNotes": false
   },
   {
@@ -390,7 +398,7 @@
       "outwitted"
     ],
     "updatedAt": "2026-11-11",
-    "heightMeters": 4.5,
+    "heightMeters": null,
     "hasScholarlyNotes": true
   },
   {
@@ -431,7 +439,7 @@
       "strength-from-earth"
     ],
     "updatedAt": "2026-11-11",
-    "heightMeters": 12,
+    "heightMeters": null,
     "hasScholarlyNotes": false
   },
   {
@@ -472,7 +480,7 @@
       "war-on-heaven"
     ],
     "updatedAt": "2026-11-11",
-    "heightMeters": 12,
+    "heightMeters": null,
     "hasScholarlyNotes": false
   },
   {
@@ -512,7 +520,7 @@
       "buried-sleeper"
     ],
     "updatedAt": "2026-11-11",
-    "heightMeters": 12,
+    "heightMeters": null,
     "hasScholarlyNotes": false
   },
   {
@@ -556,7 +564,7 @@
       "guardian"
     ],
     "updatedAt": "2026-11-11",
-    "heightMeters": 30,
+    "heightMeters": null,
     "hasScholarlyNotes": false
   },
   {
@@ -597,7 +605,7 @@
       "wild-highland"
     ],
     "updatedAt": "2026-11-11",
-    "heightMeters": 4.5,
+    "heightMeters": null,
     "hasScholarlyNotes": false
   },
   {
@@ -641,7 +649,7 @@
       "guardian"
     ],
     "updatedAt": "2026-11-11",
-    "heightMeters": 4.5,
+    "heightMeters": null,
     "hasScholarlyNotes": false
   },
   {
@@ -728,7 +736,7 @@
       "outwitted"
     ],
     "updatedAt": "2026-09-25",
-    "heightMeters": 4.5,
+    "heightMeters": null,
     "hasScholarlyNotes": true
   },
   {
@@ -770,7 +778,7 @@
       "war-on-heaven"
     ],
     "updatedAt": "2026-11-11",
-    "heightMeters": 4.5,
+    "heightMeters": null,
     "hasScholarlyNotes": false
   },
   {
@@ -809,7 +817,7 @@
       "war-on-heaven"
     ],
     "updatedAt": "2026-11-11",
-    "heightMeters": 4.5,
+    "heightMeters": null,
     "hasScholarlyNotes": false
   },
   {
@@ -852,7 +860,7 @@
       "wild-highland"
     ],
     "updatedAt": "2026-11-11",
-    "heightMeters": 30,
+    "heightMeters": null,
     "hasScholarlyNotes": false
   },
   {
@@ -891,7 +899,7 @@
       "body-cosmogony"
     ],
     "updatedAt": "2026-11-11",
-    "heightMeters": 4.5,
+    "heightMeters": null,
     "hasScholarlyNotes": true
   },
   {
@@ -936,7 +944,7 @@
       "boon-abused"
     ],
     "updatedAt": "2026-11-11",
-    "heightMeters": 4.5,
+    "heightMeters": null,
     "hasScholarlyNotes": true,
     "chainSummary": {
       "claim": "Balor and the second battle of Mag Tuired come down to us from pre-Christian Irish tradition: the story is native Irish pagan myth, carried orally through the conversion and only later written down by monks.",
@@ -954,6 +962,7 @@
     "type": "folklore",
     "freeEntry": true,
     "height": "About 18 feet (folklore)",
+    "heightSource": "Joseph Jacobs, English Fairy Tales (1890)",
     "shortDescription": "Cornish giant of St Michael's Mount, felled by Jack the Giant Killer.",
     "related": [
       "balor",
@@ -1000,6 +1009,7 @@
     "type": "folklore",
     "freeEntry": true,
     "height": "12 cubits (Geoffrey of Monmouth)",
+    "heightSource": "Geoffrey of Monmouth, Historia Regum Britanniae I.16 (c. 1136)",
     "shortDescription": "British giant who wrestled Corineus and gave his name to London's guardians.",
     "related": [
       "cormoran",
@@ -1028,7 +1038,8 @@
       "outwitted"
     ],
     "updatedAt": "2026-11-11",
-    "heightMeters": 5.5,
+    "heightMeters": 5.4,
+    "heightCubitBased": true,
     "hasScholarlyNotes": true,
     "chainSummary": {
       "claim": "Gogmagog was the last giant of Albion, thrown from the cliffs at Plymouth by Corineus after losing a wrestling match.",
@@ -1080,7 +1091,7 @@
       "pre-people"
     ],
     "updatedAt": "2026-09-01",
-    "heightMeters": 4.5,
+    "heightMeters": null,
     "hasScholarlyNotes": false
   },
   {
@@ -1168,7 +1179,7 @@
       "many-limbed"
     ],
     "updatedAt": "2026-08-11",
-    "heightMeters": 30,
+    "heightMeters": null,
     "hasScholarlyNotes": true,
     "chainSummary": {
       "claim": "Every year at Dussehra, right across India, towering effigies of Ravana are packed with fireworks and set alight to mark the victory of good over evil.",
@@ -1215,7 +1226,7 @@
       "pious-adversary"
     ],
     "updatedAt": "2026-11-11",
-    "heightMeters": 12,
+    "heightMeters": null,
     "hasScholarlyNotes": false
   },
   {
@@ -1256,7 +1267,7 @@
       "pious-adversary"
     ],
     "updatedAt": "2026-11-11",
-    "heightMeters": 4.5,
+    "heightMeters": null,
     "hasScholarlyNotes": false
   },
   {
@@ -1302,7 +1313,7 @@
       "boon-abused"
     ],
     "updatedAt": "2026-11-11",
-    "heightMeters": 30,
+    "heightMeters": null,
     "hasScholarlyNotes": true
   },
   {
@@ -1345,7 +1356,7 @@
       "wild-highland"
     ],
     "updatedAt": "2026-11-11",
-    "heightMeters": 4.5,
+    "heightMeters": null,
     "hasScholarlyNotes": true
   },
   {
@@ -1389,7 +1400,7 @@
       "bones-as-proof"
     ],
     "updatedAt": "2026-11-11",
-    "heightMeters": 4.5,
+    "heightMeters": null,
     "hasScholarlyNotes": false
   },
   {
@@ -1431,7 +1442,7 @@
       "war-on-heaven"
     ],
     "updatedAt": "2026-11-11",
-    "heightMeters": 4.5,
+    "heightMeters": null,
     "hasScholarlyNotes": false
   },
   {
@@ -1474,7 +1485,7 @@
       "landscape-body"
     ],
     "updatedAt": "2026-11-11",
-    "heightMeters": 4.5,
+    "heightMeters": null,
     "hasScholarlyNotes": false
   },
   {
@@ -1516,7 +1527,7 @@
       "pre-people"
     ],
     "updatedAt": "2026-11-11",
-    "heightMeters": 4.5,
+    "heightMeters": null,
     "hasScholarlyNotes": false
   },
   {
@@ -1603,7 +1614,7 @@
       "wild-highland"
     ],
     "updatedAt": "2026-11-11",
-    "heightMeters": 4.5,
+    "heightMeters": null,
     "hasScholarlyNotes": true,
     "chainSummary": {
       "claim": "Shuten-doji is an ancient Japanese demon of the Heian period: the oni chief of Mount Oe who preyed on Kyoto until Minamoto no Yorimitsu killed him around the turn of the eleventh century.",
@@ -1653,7 +1664,7 @@
       "guardian"
     ],
     "updatedAt": "2026-08-11",
-    "heightMeters": 4.5,
+    "heightMeters": null,
     "hasScholarlyNotes": true
   },
   {
@@ -1718,7 +1729,7 @@
     "region": "North America",
     "type": "individual",
     "freeEntry": true,
-    "height": "Giant",
+    "height": "Not stated as a measurement in the sources.",
     "shortDescription": "Cherokee lord of the hunt: slant-eyed giant of the mountains.",
     "related": [
       "dzunukwa",
@@ -1745,7 +1756,7 @@
       "guardian"
     ],
     "updatedAt": "2026-11-11",
-    "heightMeters": 4.5,
+    "heightMeters": null,
     "hasScholarlyNotes": true,
     "chainSummary": {
       "claim": "Tsul'kalu, the slant-eyed giant who owns the game animals, is a genuine figure of old Cherokee tradition, remembered in the mountains of western North Carolina and marked on the stone now called Judaculla Rock.",
@@ -1765,7 +1776,7 @@
     "region": "North America",
     "type": "folklore",
     "freeEntry": false,
-    "height": "Giant",
+    "height": "Not stated as a measurement in the sources.",
     "shortDescription": "Ice-hearted cannibal giant of northern forests: a winter horror.",
     "related": [
       "dzunukwa",
@@ -1793,8 +1804,8 @@
       "cannibal",
       "wild-highland"
     ],
-    "updatedAt": "2026-08-11",
-    "heightMeters": 4.5,
+    "updatedAt": "2026-11-11",
+    "heightMeters": null,
     "hasScholarlyNotes": false
   },
   {
@@ -1808,7 +1819,7 @@
     "region": "North America",
     "type": "individual",
     "freeEntry": false,
-    "height": "Spirit-giant",
+    "height": "A powerful being with a cosmological office. No numeric height in the sources.",
     "shortDescription": "Master of the winds: a giant spirit who pens the gales.",
     "related": [
       "tsul-kalu",
@@ -1835,8 +1846,8 @@
       "sky-bearer",
       "guardian"
     ],
-    "updatedAt": "2026-08-11",
-    "heightMeters": 4.5,
+    "updatedAt": "2026-11-11",
+    "heightMeters": null,
     "hasScholarlyNotes": true
   },
   {
@@ -1850,7 +1861,7 @@
     "region": "Australia",
     "type": "folklore",
     "freeEntry": true,
-    "height": "Ancestral / giant scale",
+    "height": "Ancestral scale. Not a measured height.",
     "shortDescription": "Ancestral beings of giant scale in the volcanic landscape of Budj Bim.",
     "related": [
       "papinijuwari",
@@ -1881,7 +1892,7 @@
     ],
     "communityNote": "Whether this material should appear in a general catalogue at all is a fair question. We have kept a short entry rather than deleting it silently, because the gap and the reason for it are worth showing, but we would remove or correct it on request from the relevant community. Requests can be sent to hello@giantscodex.com.",
     "updatedAt": "2026-11-11",
-    "heightMeters": 4.5,
+    "heightMeters": null,
     "hasScholarlyNotes": false
   },
   {
@@ -1893,8 +1904,8 @@
     "region": "Australia",
     "type": "folklore",
     "freeEntry": false,
-    "height": "Giant",
-    "shortDescription": "One-eyed giant spirits of Tiwi tradition who hunt with clubs and bags.",
+    "height": "Not stated as a measurement in the sources.",
+    "shortDescription": "One-eyed giant spirits of Tiwi tradition, associated with sickness, death and falling stars.",
     "related": [
       "budj-bim",
       "murkupang",
@@ -1923,7 +1934,7 @@
     ],
     "communityNote": "Whether this material should appear in a general catalogue at all is a fair question. We have kept a short entry rather than deleting it silently, because the gap and the reason for it are worth showing, but we would remove or correct it on request from the relevant community. Requests can be sent to hello@giantscodex.com.",
     "updatedAt": "2026-11-11",
-    "heightMeters": 4.5,
+    "heightMeters": null,
     "hasScholarlyNotes": false
   },
   {
@@ -1935,8 +1946,8 @@
     "region": "Australia",
     "type": "folklore",
     "freeEntry": true,
-    "height": "Giant",
-    "shortDescription": "Giant figure in northern Australian story cycles of pursuit and country.",
+    "height": "Not stated as a measurement in the sources.",
+    "shortDescription": "A cannibal giant recorded under this name in twentieth century compilations of Australian Aboriginal legend, with no community reliably identified in the sources used here.",
     "related": [
       "budj-bim",
       "papinijuwari",
@@ -1963,7 +1974,7 @@
     ],
     "restrained": true,
     "updatedAt": "2026-11-11",
-    "heightMeters": 4.5,
+    "heightMeters": null,
     "hasScholarlyNotes": false
   },
   {
@@ -1975,7 +1986,7 @@
     "region": "Australia",
     "type": "folklore",
     "freeEntry": true,
-    "height": "Giant",
+    "height": "Not stated as a measurement in the sources.",
     "shortDescription": "Cannibal giant of southeastern Aboriginal tales: a terror of the camp edge.",
     "related": [
       "papinijuwari",
@@ -2003,7 +2014,7 @@
     "restrained": true,
     "communityNote": "Whether this material should appear in a general catalogue at all is a fair question. We have kept a short entry rather than deleting it silently, because the gap and the reason for it are worth showing, but we would remove or correct it on request from the relevant community. Requests can be sent to hello@giantscodex.com.",
     "updatedAt": "2026-11-11",
-    "heightMeters": 4.5,
+    "heightMeters": null,
     "hasScholarlyNotes": false
   },
   {
@@ -2015,7 +2026,7 @@
     "region": "Australia",
     "type": "folklore",
     "freeEntry": true,
-    "height": "Giant",
+    "height": "Not stated as a measurement in the sources.",
     "shortDescription": "Giant being in Aboriginal narrative: sparse in print, strong in place.",
     "related": [
       "thardid-jimbo",
@@ -2043,8 +2054,8 @@
     ],
     "restrained": true,
     "communityNote": "Whether this material should appear in a general catalogue at all is a fair question. We have kept a short entry rather than deleting it silently, because the gap and the reason for it are worth showing, but we would remove or correct it on request from the relevant community. Requests can be sent to hello@giantscodex.com.",
-    "updatedAt": "2026-08-11",
-    "heightMeters": 4.5,
+    "updatedAt": "2026-11-11",
+    "heightMeters": null,
     "hasScholarlyNotes": false
   },
   {
@@ -2102,7 +2113,7 @@
     "region": "Aotearoa / Polynesia",
     "type": "race",
     "freeEntry": false,
-    "height": "Giant / supernatural",
+    "height": "Supernatural scale in the sources. Not a measured height.",
     "shortDescription": "Bands of supernatural giants in Māori tradition: tipua of collective power.",
     "related": [
       "maero",
@@ -2131,8 +2142,8 @@
       "landscape-body",
       "pre-people"
     ],
-    "updatedAt": "2026-08-11",
-    "heightMeters": 4.5,
+    "updatedAt": "2026-11-11",
+    "heightMeters": null,
     "hasScholarlyNotes": false
   },
   {
@@ -2190,7 +2201,7 @@
     "region": "Southern Africa",
     "type": "race",
     "freeEntry": false,
-    "height": "Ogre-giant",
+    "height": "Large in the tales. Not a measured height.",
     "shortDescription": "Cannibal ogres of Zulu and related folklore: shape-shifting eaters of the unwary.",
     "related": [
       "giant-of-the-forest",
@@ -2217,8 +2228,8 @@
       "cannibal",
       "outwitted"
     ],
-    "updatedAt": "2026-08-11",
-    "heightMeters": 4.5,
+    "updatedAt": "2026-11-11",
+    "heightMeters": null,
     "hasScholarlyNotes": false
   },
   {
@@ -2262,7 +2273,7 @@
     ],
     "restrained": true,
     "updatedAt": "2026-08-11",
-    "heightMeters": 4.5,
+    "heightMeters": null,
     "hasScholarlyNotes": false
   },
   {
@@ -2277,7 +2288,7 @@
     "region": "Northern Europe",
     "type": "folklore",
     "freeEntry": false,
-    "height": "Large / troll-giant",
+    "height": "Large in the tales. Not a measured height.",
     "shortDescription": "Sámi giant-troll of the north: strong, dull-witted, dangerous to herders.",
     "related": [
       "svyatogor",
@@ -2311,8 +2322,8 @@
       "outwitted",
       "wild-highland"
     ],
-    "updatedAt": "2026-08-11",
-    "heightMeters": 4.5,
+    "updatedAt": "2026-11-11",
+    "heightMeters": null,
     "hasScholarlyNotes": true,
     "chainSummary": {
       "claim": "The Stállu of Sámi tradition preserves a memory of real outsiders who raided the Sámi: Norse or Christian vikings, robbers and tax collectors, whose iron-clad, plundering violence the tales record and whose abandoned mountain houses are still called Stallo sites.",
@@ -2361,7 +2372,7 @@
       "cannibal"
     ],
     "updatedAt": "2026-11-11",
-    "heightMeters": 4.5,
+    "heightMeters": null,
     "hasScholarlyNotes": false
   },
   {
@@ -2408,7 +2419,7 @@
       "outwitted"
     ],
     "updatedAt": "2026-11-11",
-    "heightMeters": 4.5,
+    "heightMeters": null,
     "hasScholarlyNotes": false,
     "chainSummary": {
       "claim": "Rübezahl is an ancient Germanic mountain god, a pre-Christian deity of the Giant Mountains who survived Christianisation as a folk spirit.",
@@ -2455,7 +2466,7 @@
     ],
     "statusLine": "Contemporary soldiers' tale, unverified.",
     "updatedAt": "2026-11-11",
-    "heightMeters": 4,
+    "heightMeters": null,
     "hasScholarlyNotes": true,
     "chainSummary": {
       "claim": "In 2002 a US special forces patrol in the mountains of Kandahar province, Afghanistan, was attacked by a giant twelve to thirteen feet tall, red-haired, with six fingers on each hand and two rows of teeth. It killed one American with a spear before the team shot it. The body was recovered, flown out of the country, and the incident was classified.",
@@ -2589,7 +2600,7 @@
       "first-and-last"
     ],
     "updatedAt": "2026-11-11",
-    "heightMeters": 30,
+    "heightMeters": null,
     "hasScholarlyNotes": true
   },
   {
@@ -2629,7 +2640,7 @@
       "pre-people"
     ],
     "updatedAt": "2026-11-11",
-    "heightMeters": 3,
+    "heightMeters": null,
     "hasScholarlyNotes": false
   },
   {
@@ -2733,7 +2744,7 @@
       "ended-by-christianity"
     ],
     "updatedAt": "2026-11-11",
-    "heightMeters": 4.5,
+    "heightMeters": null,
     "hasScholarlyNotes": false
   },
   {
@@ -2930,7 +2941,7 @@
     "region": "Patagonia",
     "type": "modern-legend",
     "freeEntry": false,
-    "height": "claimed 12 to 15 feet; measured 5 ft 9 in",
+    "height": "Later reports claimed twelve to fifteen feet. Bougainville, published 1771, gave the tallest as five feet nine French feet, about six English feet.",
     "shortDescription": "European voyage reports of a giant race in Patagonia, ended by measurement in the 1760s.",
     "related": [
       "si-te-cah",
@@ -2957,7 +2968,7 @@
       "pre-people"
     ],
     "updatedAt": "2026-11-11",
-    "heightMeters": 4,
+    "heightMeters": null,
     "hasScholarlyNotes": false,
     "chainSummary": {
       "claim": "The Patagonians were a race of giants twelve to fifteen feet tall, first met by Magellan's crew at Port San Julian in 1520 and reported by European voyagers for the next two and a half centuries.",
@@ -3517,7 +3528,7 @@
       "real-site-attached"
     ],
     "updatedAt": "2026-11-11",
-    "heightMeters": 25,
+    "heightMeters": null,
     "hasScholarlyNotes": false
   },
   {
@@ -3799,7 +3810,7 @@
       "bones-as-proof",
       "real-site-attached"
     ],
-    "updatedAt": "2026-08-11",
+    "updatedAt": "2026-11-11",
     "heightMeters": null,
     "hasScholarlyNotes": false
   },
@@ -3941,7 +3952,7 @@
       "sky-bearer",
       "shaped-the-land-while-living"
     ],
-    "updatedAt": "2026-09-01",
+    "updatedAt": "2026-11-11",
     "heightMeters": null,
     "hasScholarlyNotes": false
   },
@@ -4006,7 +4017,7 @@
     "region": "Canary Islands",
     "type": "folklore",
     "freeEntry": false,
-    "height": "claimed up to fourteen feet; measured 1.75 to 1.82 metres",
+    "height": "claimed up to fourteen feet",
     "shortDescription": "Four chroniclers described the same people in the same century. One called them short. One called them tall. One called them of medium height. Two said they were fourteen feet.",
     "related": [
       "patagonian-giants",
@@ -4043,8 +4054,8 @@
       "colonial-distortion"
     ],
     "statusLine": "Claimed in chronicles, contradicted by measurement.",
-    "updatedAt": "2026-09-01",
-    "heightMeters": 1.82,
+    "updatedAt": "2026-11-11",
+    "heightMeters": null,
     "hasScholarlyNotes": false
   },
   {
@@ -4145,7 +4156,7 @@
       "real-site-attached"
     ],
     "updatedAt": "2026-11-11",
-    "heightMeters": 25,
+    "heightMeters": null,
     "hasScholarlyNotes": false
   },
   {

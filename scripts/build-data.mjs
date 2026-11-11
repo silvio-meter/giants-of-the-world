@@ -40,29 +40,52 @@ const LORE_FIELDS = [
 ];
 
 /**
- * Rough metres for the size chart, derived once here from the free-text
- * `height` field rather than re-guessed in the browser on every render.
- * Returns null when the tradition gives nothing usable — Paul Bunyan is "as
- * tall as the tale requires", which is not a measurement.
+ * Metres for the size chart, derived once here from the free-text `height`
+ * field. A number comes back ONLY for a measure the source actually states
+ * in a unit: feet/foot/ft, metres/meters/m, or cubits (with "and a span").
+ * Descriptive words (Giant, Jötunn, Cosmic, Titanic, Vast, Mountain,
+ * Cyclopean, Gigantic, Colossal...) are not measurements and return null;
+ * the chart then says "No measured height in the sources."
+ *
+ * Also null:
+ * - a claim or an unverified report ("claimed 12 to 15 feet", "Reports claim
+ *   ~12-15 feet (unverified)"): the chart must not draw a rumour as a size,
+ *   nor pick between a claim and a later measurement (Patagonian giants,
+ *   Kandahar, Guanche);
+ * - a dimension of an object rather than a body ("iron bed: ~9 cubits long").
+ *
+ * Cubit: 0.45 m, span: half a cubit, so Goliath's six cubits and a span is
+ * about 2.9 m and four cubits and a span about 2.0 m.
  */
+const NUMBER_WORDS = {
+  one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8,
+  nine: 9, ten: 10, eleven: 11, twelve: 12, thirteen: 13, fourteen: 14,
+  fifteen: 15, sixteen: 16, seventeen: 17, eighteen: 18, nineteen: 19,
+  twenty: 20,
+};
+const NUM = `(\\d+(?:\\.\\d+)?|${Object.keys(NUMBER_WORDS).join("|")})`;
+const CUBIT_M = 0.45;
+const FOOT_M = 0.3048;
+
+function toNumber(s) {
+  return NUMBER_WORDS[s] ?? parseFloat(s);
+}
+
 export function estimateMeters(height) {
   if (!height) return null;
   const l = height.toLowerCase();
-  if (/cosmic|titanic|vast/.test(l)) return 30;
-  if (l.includes("mountain")) return 25;
-  if (/cyclopean|gigantic|colossal/.test(l)) return 12;
-  if (/18 (feet|ft)|12 cubit/.test(l)) return 5.5;
-  if (/15 feet|12[–-]15/.test(l)) return 4;
-  if (/10-foot|ten-foot/.test(l)) return 3;
-  if (l.includes("six cubits")) return 2.9;
-  if (l.includes("four cubits")) return 1.8;
-  const feet = l.match(/(\d+(?:\.\d+)?)\s*(?:feet|ft)/);
-  if (feet) return Number((parseFloat(feet[1]) * 0.3048).toFixed(2));
-  // Both spellings: the catalogue writes "metres", this once matched only
-  // "meters" and silently left those entries off the size chart.
-  const metres = l.match(/(\d+(?:\.\d+)?)\s*m(?:et(?:er|re))?s?\b/);
-  if (metres) return parseFloat(metres[1]);
-  if (/giant|j\u00f6tunn|jotunn/.test(l)) return 4.5;
+  if (/\bclaim|\bunverified\b|\breports?\b|\brumou?r/.test(l)) return null;
+  if (/\blong\b|\bwide\b|\bbroad\b/.test(l)) return null;
+  const round = (m) => Number(m.toFixed(1));
+  const cubits = l.match(new RegExp(`\\b${NUM}\\s*cubits?(\\s+and\\s+a\\s+span)?`));
+  if (cubits) {
+    return round((toNumber(cubits[1]) + (cubits[2] ? 0.5 : 0)) * CUBIT_M);
+  }
+  const feet = l.match(new RegExp(`\\b${NUM}\\s*(?:feet|foot|ft)\\b`));
+  if (feet) return round(toNumber(feet[1]) * FOOT_M);
+  // Both spellings: the catalogue writes "metres".
+  const metres = l.match(new RegExp(`\\b${NUM}\\s*(?:m|metres?|meters?)\\b`));
+  if (metres) return round(toNumber(metres[1]));
   return null;
 }
 
@@ -76,7 +99,20 @@ export function splitMaster(master) {
       if (!LORE_FIELDS.includes(key)) entry[key] = value;
     }
     entry.freeEntry = giant.freeEntry === true;
-    entry.heightMeters = estimateMeters(giant.height);
+    // A stated figure reaches the chart only with a named source for it
+    // ("as told in ..."). No verified source, no chart (Ispolini's 3 m).
+    entry.heightMeters = giant.heightSource ? estimateMeters(giant.height) : null;
+    // Cubit figures depend on the cubit length assumed; the UI says so.
+    if (entry.heightMeters !== null && /cubit/i.test(giant.height ?? "")) {
+      entry.heightCubitBased = true;
+    }
+    // A second textual tradition (Goliath): the chart shows both or none.
+    if (giant.heightAlt) {
+      entry.heightAlt = {
+        ...giant.heightAlt,
+        meters: estimateMeters(giant.heightAlt.height),
+      };
+    }
     entry.hasScholarlyNotes = Boolean(giant.scholarlyNotes?.length);
     /**
      * The free half of the chain: the claim, and the one sentence of verdict.

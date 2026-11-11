@@ -55,11 +55,30 @@ export interface Giant {
   freeEntry: boolean;
   height: string | null;
   /**
-   * Rough metres for the size chart, or null where the tradition gives no
-   * usable figure. Baked into the data so 40 lines of free-text guessing do
-   * not run at render time.
+   * Metres for the size chart, only where a source states a measure in a
+   * unit (feet, metres, cubits); null otherwise, and the chart then says
+   * "No measured height in the sources." Derived by build-data.
    */
   heightMeters: number | null;
+  /**
+   * Where the stated figure comes from, shown as "as told in ..." next to it.
+   * Set only on entries with a heightMeters figure.
+   */
+  heightSource?: string;
+  /** The figure is converted from cubits; shown with CUBIT_ASSUMPTION. */
+  heightCubitBased?: boolean;
+  /**
+   * A second textual tradition for the height (Goliath: LXX and 4QSam(a)
+   * against the Masoretic text). The chart shows both, never one alone.
+   * `meters` is derived by build-data.
+   */
+  heightAlt?: {
+    height: string;
+    source: string;
+    /** Shown wherever the chart is: both readings, with their sources. */
+    note: string;
+    meters: number | null;
+  };
   shortDescription: string;
   fullDescription: string;
   mysteryNote: string;

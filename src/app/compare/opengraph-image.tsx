@@ -8,7 +8,8 @@ export const alt = "Compare Giants · Giants of the World";
 
 export default function Image() {
   const measured = getAllGiants().filter((g) => g.heightMeters).length;
-  const context = `${measured} of ${getAllGiants().length} entries carry a measurable height`;
+  // Same rule as the charts: only heights a source states in a unit count.
+  const context = `${measured} of ${getAllGiants().length} entries have a height stated in the sources`;
 
   return new ImageResponse(
     ogCard({

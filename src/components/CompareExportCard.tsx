@@ -1,10 +1,22 @@
 import { barHeightPx, chartScaleToM, formatMeters } from "@/lib/scale";
+import {
+  CUBIT_ASSUMPTION,
+  NO_MEASURED_HEIGHT,
+  toldIn,
+  type HeightAlt,
+} from "@/lib/height";
 
 export interface ExportGiant {
   name: string;
   culture: string;
   image?: string;
   heightMeters: number | null;
+  /** "as told in ..." source for a figure from a tale. */
+  heightSource?: string;
+  /** Second textual tradition (Goliath); its note always rides with the bar. */
+  heightAlt?: HeightAlt;
+  /** Figure converted from cubits; the card states the cubit assumed. */
+  heightCubitBased?: boolean;
   /** Only passed when the viewer is on a paid plan — the export mirrors what they were shown. */
   fate?: string;
 }
@@ -149,14 +161,30 @@ export function CompareExportCard({
                   }}
                 />
               ) : (
-                <p style={{ fontSize: 8, color: "#8b949e", maxWidth: 70 }}>
-                  Scale beyond measurement
+                <p style={{ fontSize: 8, color: "#8b949e", maxWidth: 90 }}>
+                  {NO_MEASURED_HEIGHT}
                 </p>
               )}
             </div>
             <p style={{ fontSize: 9, color: "#8b949e", margin: "6px 0 0" }}>
               {g.heightMeters ? formatMeters(g.heightMeters) : ""}
             </p>
+            {g.heightMeters && g.heightSource ? (
+              <p
+                style={{
+                  fontSize: 7,
+                  color: "#8b949e",
+                  margin: "2px 0 0",
+                  maxWidth: 110,
+                  textAlign: "center",
+                  lineHeight: 1.3,
+                }}
+              >
+                {toldIn(g.heightSource)}
+                {g.heightCubitBased ? ` (${CUBIT_ASSUMPTION})` : ""}
+                {g.heightAlt?.meters ? `. ${g.heightAlt.note}` : ""}
+              </p>
+            ) : null}
 
             {g.fate && (
               <p
