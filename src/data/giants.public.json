@@ -2155,7 +2155,7 @@
     "culture": "Māori",
     "region": "Aotearoa / Polynesia",
     "type": "race",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Large",
     "shortDescription": "Wild people of early Aotearoa tradition: forest dwellers of great strength.",
     "related": [
