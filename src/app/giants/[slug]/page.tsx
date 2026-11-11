@@ -33,7 +33,7 @@ import { resolveMotifs } from "@/lib/motifs";
 import { getEntrySeo } from "@/lib/seo-entries";
 import { hubPath, hubsForGiant } from "@/lib/hubs";
 import { isFolkloreNoCheckout } from "@/lib/paywall-copy";
-import { isCatalogueHeld, isSuggestableCompareTarget } from "@/lib/catalogue-hold";
+import { isCatalogueHeld, isNeverOpen, isSuggestableCompareTarget } from "@/lib/catalogue-hold";
 import { MEMBERSHIP_SALES_OPEN } from "@/lib/membership";
 
 /**
@@ -78,6 +78,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title,
     description,
     alternates: { canonical: `/giants/${giant.slug}` },
+    // A never-open entry (dzunukwa) stays reachable by URL but out of search.
+    ...(isNeverOpen(giant.slug) ? { robots: { index: false, follow: false } } : {}),
     openGraph: {
       type: "article",
       locale: "en_US",
