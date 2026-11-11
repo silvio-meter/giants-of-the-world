@@ -65,6 +65,8 @@ export interface Giant {
    * Set only on entries with a heightMeters figure.
    */
   heightSource?: string;
+  /** The figure is converted from cubits; shown with CUBIT_ASSUMPTION. */
+  heightCubitBased?: boolean;
   /**
    * A second textual tradition for the height (Goliath: LXX and 4QSam(a)
    * against the Masoretic text). The chart shows both, never one alone.

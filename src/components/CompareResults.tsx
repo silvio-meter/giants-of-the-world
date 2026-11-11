@@ -6,7 +6,7 @@ import { formatType, type GiantCardData } from "@/lib/format";
 import { getProfile } from "@/lib/profile";
 import { sharedMotifs } from "@/lib/motifs";
 import { barHeightPx, chartScaleToM, formatMeters } from "@/lib/scale";
-import { NO_MEASURED_HEIGHT, toldIn } from "@/lib/height";
+import { CUBIT_ASSUMPTION, NO_MEASURED_HEIGHT, toldIn } from "@/lib/height";
 import { CompareExportButton } from "./CompareExportButton";
 import { CompareViewTracker } from "./CompareViewTracker";
 import { PremiumLock } from "./PremiumLock";
@@ -43,6 +43,7 @@ function ScaleBar({
         <span className="mt-2 text-center text-[10px] leading-tight text-text-muted">
           <span className="tabular-nums">{formatMeters(giant.heightMeters)}</span>
           {giant.heightSource ? ` ${toldIn(giant.heightSource)}` : ""}
+          {giant.heightCubitBased ? ` (${CUBIT_ASSUMPTION})` : ""}
           {giant.heightAlt?.meters ? (
             <span className="mt-0.5 block">{giant.heightAlt.note}</span>
           ) : null}
@@ -195,6 +196,7 @@ export async function CompareResults({
             heightMeters: giantA.heightMeters,
             heightSource: giantA.heightSource,
             heightAlt: giantA.heightAlt,
+            heightCubitBased: giantA.heightCubitBased,
             fate: unlocked ? loreA?.fate : undefined,
           }}
           b={{
@@ -204,6 +206,7 @@ export async function CompareResults({
             heightMeters: giantB.heightMeters,
             heightSource: giantB.heightSource,
             heightAlt: giantB.heightAlt,
+            heightCubitBased: giantB.heightCubitBased,
             fate: unlocked ? loreB?.fate : undefined,
           }}
         />

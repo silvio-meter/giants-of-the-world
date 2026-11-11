@@ -155,6 +155,7 @@
     ],
     "updatedAt": "2026-11-11",
     "heightMeters": 2.9,
+    "heightCubitBased": true,
     "hasScholarlyNotes": true,
     "chainSummary": {
       "claim": "Goliath of Gath stood six cubits and a span, about nine feet nine inches, or close to three metres.",
@@ -1038,6 +1039,7 @@
     ],
     "updatedAt": "2026-11-11",
     "heightMeters": 5.4,
+    "heightCubitBased": true,
     "hasScholarlyNotes": true,
     "chainSummary": {
       "claim": "Gogmagog was the last giant of Albion, thrown from the cliffs at Plymouth by Corineus after losing a wrestling match.",
@@ -2611,7 +2613,6 @@
     "type": "race",
     "freeEntry": true,
     "height": "up to 3 metres",
-    "heightSource": "Bulgarian legend, per Българска митология (2006)",
     "shortDescription": "Bulgaria's giants were God's second attempt at people. We are the third.",
     "related": [
       "nephilim",
@@ -2639,7 +2640,7 @@
       "pre-people"
     ],
     "updatedAt": "2026-11-11",
-    "heightMeters": 3,
+    "heightMeters": null,
     "hasScholarlyNotes": false
   },
   {

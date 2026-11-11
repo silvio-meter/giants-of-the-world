@@ -8,13 +8,13 @@ import {
   formatMeters,
 } from "@/lib/scale";
 import { PAYWALL_COPY } from "@/lib/paywall-copy";
-import { NO_MEASURED_HEIGHT, toldIn } from "@/lib/height";
+import { CUBIT_ASSUMPTION, NO_MEASURED_HEIGHT, toldIn } from "@/lib/height";
 import { usePlan } from "./PlanProvider";
 
 interface Props {
   giant: Pick<
     GiantCardData,
-    "name" | "heightMeters" | "heightSource" | "heightAlt"
+    "name" | "heightMeters" | "heightSource" | "heightAlt" | "heightCubitBased"
   >;
   /** Showcase free entries show scale with no checkout CTA. */
   freeEntry?: boolean;
@@ -78,6 +78,11 @@ export function SizeComparison({ giant, freeEntry = false }: Props) {
       {alt?.meters ? (
         <p className="mt-1 text-[11px] leading-snug text-text-muted">
           {alt.note}
+        </p>
+      ) : null}
+      {giant.heightCubitBased ? (
+        <p className="mt-1 text-[11px] leading-snug text-text-muted">
+          Metres: {CUBIT_ASSUMPTION}.
         </p>
       ) : null}
 

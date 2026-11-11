@@ -9,6 +9,9 @@
  */
 export const NO_MEASURED_HEIGHT = "No measured height in the sources.";
 
+/** Shown next to any metre value converted from cubits (Goliath, Gogmagog). */
+export const CUBIT_ASSUMPTION = "approx., assuming a cubit of about 0.45 m";
+
 export type HeightAlt = {
   /** The other tradition's wording, e.g. "Four cubits and a span". */
   height: string;

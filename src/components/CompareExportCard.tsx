@@ -1,5 +1,10 @@
 import { barHeightPx, chartScaleToM, formatMeters } from "@/lib/scale";
-import { NO_MEASURED_HEIGHT, toldIn, type HeightAlt } from "@/lib/height";
+import {
+  CUBIT_ASSUMPTION,
+  NO_MEASURED_HEIGHT,
+  toldIn,
+  type HeightAlt,
+} from "@/lib/height";
 
 export interface ExportGiant {
   name: string;
@@ -10,6 +15,8 @@ export interface ExportGiant {
   heightSource?: string;
   /** Second textual tradition (Goliath); its note always rides with the bar. */
   heightAlt?: HeightAlt;
+  /** Figure converted from cubits; the card states the cubit assumed. */
+  heightCubitBased?: boolean;
   /** Only passed when the viewer is on a paid plan — the export mirrors what they were shown. */
   fate?: string;
 }
@@ -174,6 +181,7 @@ export function CompareExportCard({
                 }}
               >
                 {toldIn(g.heightSource)}
+                {g.heightCubitBased ? ` (${CUBIT_ASSUMPTION})` : ""}
                 {g.heightAlt?.meters ? `. ${g.heightAlt.note}` : ""}
               </p>
             ) : null}

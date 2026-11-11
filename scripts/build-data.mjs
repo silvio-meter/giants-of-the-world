@@ -99,7 +99,13 @@ export function splitMaster(master) {
       if (!LORE_FIELDS.includes(key)) entry[key] = value;
     }
     entry.freeEntry = giant.freeEntry === true;
-    entry.heightMeters = estimateMeters(giant.height);
+    // A stated figure reaches the chart only with a named source for it
+    // ("as told in ..."). No verified source, no chart (Ispolini's 3 m).
+    entry.heightMeters = giant.heightSource ? estimateMeters(giant.height) : null;
+    // Cubit figures depend on the cubit length assumed; the UI says so.
+    if (entry.heightMeters !== null && /cubit/i.test(giant.height ?? "")) {
+      entry.heightCubitBased = true;
+    }
     // A second textual tradition (Goliath): the chart shows both or none.
     if (giant.heightAlt) {
       entry.heightAlt = {

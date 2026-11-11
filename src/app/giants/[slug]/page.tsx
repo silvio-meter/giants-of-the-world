@@ -16,7 +16,7 @@ import { FullDescription } from "@/components/FullDescription";
 import { LockedLore } from "@/components/LockedLore";
 import { FavouriteButton } from "@/components/FavouriteButton";
 import { SizeComparison } from "@/components/SizeComparison";
-import { toldIn } from "@/lib/height";
+import { CUBIT_ASSUMPTION, toldIn } from "@/lib/height";
 import { formatMeters } from "@/lib/scale";
 import { ChainOfCustody } from "@/components/ChainOfCustody";
 import { EmailCapture } from "@/components/EmailCapture";
@@ -387,6 +387,7 @@ export default async function GiantDetailPage({ params }: Props) {
                     {giant.heightAlt?.meters
                       ? `; ${formatMeters(giant.heightAlt.meters)} ${toldIn(giant.heightAlt.source)}`
                       : ""}
+                    {giant.heightCubitBased ? ` (${CUBIT_ASSUMPTION})` : ""}
                   </dd>
                 ) : null}
               </div>

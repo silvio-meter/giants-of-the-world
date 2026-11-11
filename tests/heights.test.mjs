@@ -11,7 +11,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { estimateMeters } from "../scripts/build-data.mjs";
-import { NO_MEASURED_HEIGHT, toldIn } from "../src/lib/height.ts";
+import { CUBIT_ASSUMPTION, NO_MEASURED_HEIGHT, toldIn } from "../src/lib/height.ts";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const read = (p) => readFileSync(join(root, p), "utf8");
@@ -82,12 +82,11 @@ test("every figure on the chart says where it was told, from the entry's own sou
   const measured = publicEntries.filter((g) => g.heightMeters !== null);
   assert.deepEqual(
     measured.map((g) => g.slug).sort(),
-    ["cormoran", "gogmagog", "goliath", "ispolini"]
+    ["cormoran", "gogmagog", "goliath"]
   );
   const expected = {
     cormoran: "English Fairy Tales (1890)",
     gogmagog: "Historia Regum Britanniae I.16",
-    ispolini: "Българска митология",
   };
   for (const [slug, needle] of Object.entries(expected)) {
     const g = masterBySlug.get(slug);
@@ -99,6 +98,36 @@ test("every figure on the chart says where it was told, from the entry's own sou
   }
   for (const g of measured) assert.ok(g.heightSource, `${g.slug} has no heightSource`);
   assert.equal(toldIn("X"), "as told in X");
+});
+
+test("Ispolini: no verified source for 3 m, so no figure and no label", () => {
+  const g = bySlug.get("ispolini");
+  assert.equal(g.heightMeters, null);
+  assert.equal(g.heightSource, undefined);
+  // build-data: a stated figure without a named source never reaches the chart.
+  assert.match(read("scripts/build-data.mjs"), /giant\.heightSource \? estimateMeters\(giant\.height\) : null/);
+});
+
+test("compare OG count follows the chart rule: 3 of 92", () => {
+  assert.equal(publicEntries.filter((g) => g.heightMeters).length, 3);
+  assert.equal(publicEntries.length, 92);
+});
+
+test("cubit figures say which cubit they assume (Goliath, Gogmagog)", () => {
+  assert.equal(CUBIT_ASSUMPTION, "approx., assuming a cubit of about 0.45 m");
+  assert.deepEqual(
+    publicEntries.filter((g) => g.heightCubitBased).map((g) => g.slug).sort(),
+    ["gogmagog", "goliath"]
+  );
+  for (const f of [
+    "src/components/SizeComparison.tsx",
+    "src/components/CompareResults.tsx",
+    "src/components/CompareExportCard.tsx",
+    "src/app/giants/[slug]/page.tsx",
+  ]) {
+    const src = read(f);
+    assert.ok(src.includes("CUBIT_ASSUMPTION") && src.includes("heightCubitBased"), `${f} drops the cubit note`);
+  }
 });
 
 test("null heights show the sentence, never a chart or 'beyond measurement'", () => {
@@ -130,10 +159,15 @@ test("served: Ymir shows no chart, Goliath shows both traditions", { skip }, asy
   assert.ok(goliath.includes("Two traditions: the Masoretic text gives six cubits and a span"));
   const cormoran = await page("/giants/cormoran");
   assert.ok(cormoran.includes("as told in Joseph Jacobs, English Fairy Tales (1890)"));
+  assert.ok(goliath.includes("approx., assuming a cubit of about 0.45 m"));
+  const ispolini = await page("/giants/ispolini");
+  assert.ok(ispolini.includes(NO_MEASURED_HEIGHT));
+  assert.ok(!ispolini.includes("as told in"));
 });
 
 test("served: compare follows the same rule", { skip }, async () => {
   const html = await page("/compare?a=ymir&b=goliath");
   assert.ok(html.includes(NO_MEASURED_HEIGHT));
   assert.ok(html.includes("as told in the Masoretic text"));
+  assert.ok(html.includes("approx., assuming a cubit of about 0.45 m"));
 });
