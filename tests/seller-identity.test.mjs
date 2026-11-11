@@ -14,7 +14,7 @@ const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const read = (p) => readFileSync(join(root, p), "utf8");
 
 const IDENTITY =
-  "LOGOSOM, obrt za informatičke usluge, vl. Silvio Meter, Sunčana 28, 31221 Josipovac, Croatia. MB 99368145, OIB 06729873793.";
+  "LOGOSOM, obrt za informatičke usluge, vl. Silvio Meter, Sunčana 28, Josipovac, 31200 Osijek, Croatia. MB 99368145, OIB 06729873793.";
 
 test("site.ts carries the exact operator identity", () => {
   assert.ok(read("src/lib/site.ts").includes(`"${IDENTITY}"`));

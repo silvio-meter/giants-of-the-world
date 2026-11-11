@@ -15,7 +15,7 @@ export const supportEmail = "hello@giantscodex.com";
  * this is the business that sells and operates them. Never add bank details.
  */
 export const operatorIdentity =
-  "LOGOSOM, obrt za informatičke usluge, vl. Silvio Meter, Sunčana 28, 31221 Josipovac, Croatia. MB 99368145, OIB 06729873793.";
+  "LOGOSOM, obrt za informatičke usluge, vl. Silvio Meter, Sunčana 28, Josipovac, 31200 Osijek, Croatia. MB 99368145, OIB 06729873793.";
 
 /**
  * Official contact for the seller and data controller. Used in Terms and
