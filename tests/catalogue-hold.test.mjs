@@ -40,26 +40,26 @@ const EXPECTED_HOLD = [
   "amazimu", "budj-bim", "chinny-kinik", "dzunukwa", "gaoh", "giant-of-kandahar",
   "giant-of-kunar", "giant-of-the-forest", "guanche-giants", "kahui-tipua",
   "kee-wakw", "maero", "mapinguari", "murkupang", "nawao", "pangu",
-  "papinijuwari", "patagonian-giants", "si-te-cah", "stallo", "thardid-jimbo",
+  "papinijuwari", "patagonian-giants", "stallo", "thardid-jimbo",
   "tsul-kalu",
 ];
 /** Held entries that were already free before the opening; they stay free. */
 const HELD_ALREADY_FREE = [
-  "budj-bim", "chinny-kinik", "giant-of-the-forest", "murkupang", "si-te-cah",
+  "budj-bim", "chinny-kinik", "giant-of-the-forest", "murkupang",
   "thardid-jimbo", "tsul-kalu",
 ];
 /** ENTRY_SEO records that held slugs already had before the opening. */
 const HELD_WITH_PREEXISTING_SEO = [
   "giant-of-kandahar", "giant-of-kunar", "guanche-giants", "mapinguari",
-  "pangu", "patagonian-giants", "si-te-cah",
+  "pangu", "patagonian-giants",
 ];
 const IMAGES_REMOVED = [
   "budj-bim", "murkupang", "papinijuwari", "patagonian-giants", "thardid-jimbo",
   "tsul-kalu",
 ];
 
-test("hold list is the 20 living traditions plus Kandahar and Kunar", () => {
-  assert.equal(HOLD_LIVING_TRADITIONS.length, 20);
+test("hold list is the 19 living traditions plus Kandahar and Kunar", () => {
+  assert.equal(HOLD_LIVING_TRADITIONS.length, 19);
   assert.deepEqual([...HOLD_MODERN_MILITARY], ["giant-of-kandahar", "giant-of-kunar"]);
   assert.deepEqual([...CATALOGUE_HOLD_SLUGS].sort(), EXPECTED_HOLD);
   for (const slug of CATALOGUE_HOLD_SLUGS) {
