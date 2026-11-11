@@ -78,15 +78,6 @@ export function issueEntryUrl(
   return `${base}${issue.entryPath}`;
 }
 
-export function issueMembershipUrl(
-  issue: OneSeamIssue,
-  siteOrigin = "https://www.giantscodex.com"
-): string {
-  const base = siteOrigin.replace(/\/$/, "");
-  const next = `${issue.entryPath}?checkout=monthly`;
-  return `${base}/signup?next=${encodeURIComponent(next)}`;
-}
-
 function issueFooter(
   unsubscribeUrl: string
 ): string[] {
@@ -104,13 +95,11 @@ export function renderIssueText(
   siteOrigin = "https://www.giantscodex.com"
 ): string {
   const entryUrl = issueEntryUrl(issue, siteOrigin);
-  const membershipUrl = issueMembershipUrl(issue, siteOrigin);
   const closing = [
     `${issue.entryLabel}:`,
     entryUrl,
     "",
-    "Sources and the rest of this entry: $4.99 a month. Cancel anytime. 14-day refund, no questions.",
-    membershipUrl,
+    "Sources and the full account are on the same page. Free to read.",
     "",
     ...issueFooter(unsubscribeUrl),
   ];
@@ -180,10 +169,8 @@ function wrapIssueHtml(
   siteOrigin: string
 ): string {
   const entryUrl = issueEntryUrl(issue, siteOrigin);
-  const membershipUrl = issueMembershipUrl(issue, siteOrigin);
   const pre = escapeHtml(issue.preheader);
   const entry = escapeHtml(entryUrl);
-  const membership = escapeHtml(membershipUrl);
   const unsub = escapeHtml(unsubscribeUrl);
 
   return `<!DOCTYPE html>
@@ -207,8 +194,7 @@ function wrapIssueHtml(
     </p>
 
     <p style="margin:0 0 40px;font-family:Helvetica,Arial,sans-serif;font-size:16px;line-height:1.55;">
-      Sources and the rest of this entry: $4.99 a month. Cancel anytime. 14-day refund, no questions.<br/>
-      <a href="${membership}" style="color:#c9a227;">${membership}</a>
+      Sources and the full account are on the same page. Free to read.
     </p>
 
     <hr style="border:none;border-top:1px solid #30363d;margin:0 0 20px;" />
@@ -229,7 +215,7 @@ function wrapIssueHtml(
 
 /**
  * Plain, mobile-first HTML. Dark-archive friendly palette.
- * No hero, no product list, no Lifetime/Yearly pitch. Entry link + monthly membership URL.
+ * No hero, no product list, no Lifetime/Yearly pitch. Entry link only. No price, no checkout.
  */
 export function renderIssueHtml(
   issue: OneSeamIssue,

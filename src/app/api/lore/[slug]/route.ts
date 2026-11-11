@@ -43,6 +43,11 @@ export async function GET(
   // entry whose account text is open. The claim and the verdict are already
   // public, carried as chainSummary on the catalog entry.
   const chainAllowed = canViewChain(plan);
+  // Session Prep encounter seeds are gated on the plan alone, never on
+  // freeEntry. The catalogue opening (11 Nov 2026) set freeEntry on most
+  // entries, including every Session Prep pilot; without this, the open
+  // account would have carried the member-only seeds to anyone who asked.
+  const sessionPrepAllowed = canViewFullDescription(plan);
 
   if (!allowed && !scholarlyAllowed && !chainAllowed) {
     return NextResponse.json(
@@ -58,8 +63,10 @@ export async function GET(
             fullDescription: lore.fullDescription,
             mysteryNote: lore.mysteryNote,
             ...(lore.sections ? { sections: lore.sections } : {}),
-            ...(lore.sessionPrep ? { sessionPrep: lore.sessionPrep } : {}),
           }
+        : {}),
+      ...(sessionPrepAllowed && lore.sessionPrep
+        ? { sessionPrep: lore.sessionPrep }
         : {}),
       /**
        * Rungs and floor, with `evidence` stripped here rather than merely left

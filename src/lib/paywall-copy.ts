@@ -48,6 +48,15 @@ export const PAYWALL_COPY = {
   later: "Sources and scholarly notes come with the same membership.",
   compareLater: "The rest of this comparison comes with the same membership.",
   scaleLater: "Scale comes with the same membership.",
+  /**
+   * Shown instead of the gold wall while MEMBERSHIP_SALES_OPEN is false
+   * (src/lib/membership.ts). No button, no price, no /pricing link.
+   */
+  closed: {
+    entry: "This entry is held for review before its full account opens to every reader.",
+    compare: "The rest of this comparison stays with existing memberships. New memberships are closed.",
+    map: "Motif lines and pin filters stay with existing memberships. New memberships are closed.",
+  },
   folkloreHeadline: "This is unverified folklore, not a membership gate.",
   folkloreBody: "See how this archive treats evidence.",
 } as const;

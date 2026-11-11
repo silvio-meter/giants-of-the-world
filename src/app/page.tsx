@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { isCatalogueHeld } from "@/lib/catalogue-hold";
 import { GiantCard } from "@/components/GiantCard";
 import { RandomGiantButton } from "@/components/RandomGiantButton";
 import { getAllGiants, getFreeGiants } from "@/lib/giants";
@@ -60,8 +61,10 @@ const tools = [
  * Homepage strip only: curated showcase, not "every free entry".
  * freeEntry is a separate access question. Living-community and
  * no-attributable-community free entries stay free to read but are not
- * listed here (see HANDOFF "Free set").
- * Recognition first, then range. Exactly these thirteen, no fallback.
+ * listed here (see HANDOFF "Free set"). Nothing on the Catalogue hold list
+ * and nothing without an image appears here (budj-bim left on 11 Nov 2026);
+ * the filter below enforces both even if a slug is added back by mistake.
+ * Recognition first, then range. Exactly these twelve, no fallback.
  */
 const FREE_STRIP_ORDER = [
   "ymir",
@@ -73,7 +76,6 @@ const FREE_STRIP_ORDER = [
   "oni",
   "jentilak",
   "fomorians",
-  "budj-bim",
   "talos",
   "gargantua",
   "paul-bunyan",
@@ -85,7 +87,8 @@ export default function HomePage() {
   const freeCount = free.length;
   const freeBySlug = new Map(free.map((g) => [g.slug, g]));
   const freeStrip = FREE_STRIP_ORDER.map((s) => freeBySlug.get(s)).filter(
-    (g): g is NonNullable<typeof g> => Boolean(g)
+    (g): g is NonNullable<typeof g> =>
+      g !== undefined && !isCatalogueHeld(g.slug) && Boolean(g.image)
   );
 
   return (
@@ -173,9 +176,8 @@ export default function HomePage() {
                 Open entries
               </h2>
               <p className="mt-3 text-sm text-text-muted sm:text-base">
-                These pages ship the full account free. The rest of the codex
-                opens with a real first paragraph; the deeper layers unlock with
-                a membership.
+                These pages ship the full account free, and so does almost every
+                other entry in the codex.
               </p>
             </header>
             <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -232,8 +234,8 @@ export default function HomePage() {
               How we treat sources
             </Link>
             {" · "}
-            <Link href="/pricing" className="text-accent-gold hover:underline">
-              What membership unlocks
+            <Link href="/bestiary/free-sample" className="text-accent-gold hover:underline">
+              Free bestiary sample
             </Link>
           </p>
         </div>

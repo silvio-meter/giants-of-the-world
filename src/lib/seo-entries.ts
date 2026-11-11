@@ -291,12 +291,12 @@ export const ENTRY_SEO: Record<string, EntrySeo> = {
   "og-of-bashan": {
     title: "Og of Bashan: the iron bed and the last of the Rephaim",
     description:
-      "Og of Bashan in the Hebrew Bible: king called the last of the Rephaim, remembered especially by the iron bed measured in Deuteronomy. Sourced teaser.",
+      "Og of Bashan in the Hebrew Bible: king called the last of the Rephaim, remembered especially by the iron bed measured in Deuteronomy. Sourced entry.",
   },
   enceladus: {
     title: "Enceladus under the mountain",
     description:
-      "Enceladus in Greek Gigantomachy tradition: a giant pinned beneath Sicily (or Etna); quakes and fire read as his movement. Sourced Unlock teaser.",
+      "Enceladus in Greek Gigantomachy tradition: a giant pinned beneath Sicily (or Etna); quakes and fire read as his movement. Sourced entry.",
   },
   antaeus: {
     title: "Antaeus: the giant who drew strength from the earth",
@@ -361,7 +361,7 @@ export const ENTRY_SEO: Record<string, EntrySeo> = {
   balor: {
     title: "Balor of the Evil Eye",
     description:
-      "Balor in Irish tradition: Fomorian king whose eye blighted armies, slain by his grandson Lugh in the battle tales of Mag Tuired. Sourced Unlock teaser.",
+      "Balor in Irish tradition: Fomorian king whose eye blighted armies, slain by his grandson Lugh in the battle tales of Mag Tuired. Sourced entry.",
   },
   cormoran: {
     title: "Cormoran: the giant of St Michael's Mount",
@@ -381,7 +381,7 @@ export const ENTRY_SEO: Record<string, EntrySeo> = {
   kumbhakarna: {
     title: "Kumbhakarna: the sleeper who woke to war",
     description:
-      "Kumbhakarna in the Ramayana: Ravana’s enormous brother, bound to long sleep by a twisted boon, woken to fight Rama’s army. Sourced Unlock teaser.",
+      "Kumbhakarna in the Ramayana: Ravana’s enormous brother, bound to long sleep by a twisted boon, woken to fight Rama’s army. Sourced entry.",
   },
   hiranyakashipu: {
     title: "Hiranyakashipu and the boon that failed",
@@ -446,7 +446,7 @@ export const ENTRY_SEO: Record<string, EntrySeo> = {
   surtr: {
     title: "Surtr: fire at the edge of the world",
     description:
-      "Surtr in the Eddas: the fire giant of Muspelheim who stands at the world’s edge and, in the last battle, brings flame. Sourced teaser; full essay Unlock.",
+      "Surtr in the Eddas: the fire giant of Muspelheim who stands at the world’s edge and, in the last battle, brings flame. Sourced entry.",
   },
   ispolini: {
     title: "Ispolini: the giants of Bulgarian folklore",
@@ -476,7 +476,7 @@ export const ENTRY_SEO: Record<string, EntrySeo> = {
   gigantes: {
     title: "The Gigantes: earth-born enemies of the Olympians",
     description:
-      "The Gigantes of Greek myth: Gaia’s warrior children defeated in the Gigantomachy. Early art often shows them human-formed; snake-legs come later. Teaser.",
+      "The Gigantes of Greek myth: Gaia’s warrior children defeated in the Gigantomachy. Early art often shows them human-formed; snake-legs come later.",
   },
   "patagonian-giants": {
     title: "The Patagonian Giants: a voyage report ended by measurement",

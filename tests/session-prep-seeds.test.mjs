@@ -34,9 +34,14 @@ test("the pilot list is what the tests think it is", () => {
   assert.ok(pilots.length >= 10, `expected at least 10 pilots, found ${pilots.length}`);
 });
 
-test("every Session Prep pilot is a paid entry, so the lore route gates it on plan", () => {
+test("Session Prep pilots are open entries now, so the seeds must be gated on plan, not freeEntry", () => {
+  // Catalogue opening (11 Nov 2026): every pilot is freeEntry. The lore route
+  // used to rely on pilots being paid entries; it now gates sessionPrep on the
+  // plan alone (next test), and the page still mounts the card.
   const free = pilots.filter((slug) => giants.find((g) => g.slug === slug)?.freeEntry);
-  assert.deepEqual(free, [], "a free entry would serve its seeds to anyone via /api/lore");
+  assert.ok(free.length > 0, "expected opened pilots; if none, revisit this guard");
+  const page = read("src/app/giants/[slug]/page.tsx");
+  assert.ok(!page.includes("const sessionPrepCard = !giant.freeEntry"), "Session Prep must not hide on open entries");
 });
 
 test("the card data built on the server never carries seed text", () => {
@@ -57,16 +62,15 @@ test("SessionPrepCard fetches seeds from the entitled lore route, not from props
   assert.ok(page.includes("<SessionPrepCard slug={giant.slug} card={sessionPrepCard} />"));
 });
 
-test("the lore route returns sessionPrep only inside the entitled branch", () => {
+test("the lore route returns sessionPrep only to a paid plan, never on freeEntry alone", () => {
   const src = read("src/app/api/lore/[slug]/route.ts");
   assert.ok(src.includes("const allowed = giant.freeEntry || canViewFullDescription(plan);"));
-  const allowedBranch = src.split("...(allowed")[1]?.split("...(chainAllowed")[0] ?? "";
-  assert.ok(
-    allowedBranch.includes("sessionPrep: lore.sessionPrep"),
-    "sessionPrep should be returned in the allowed branch"
-  );
+  assert.ok(src.includes("const sessionPrepAllowed = canViewFullDescription(plan);"));
+  const allowedBranch = src.split("...(allowed")[1]?.split("...(sessionPrepAllowed")[0] ?? "";
+  assert.ok(!allowedBranch.includes("lore.sessionPrep"), "sessionPrep must not ride on the freeEntry branch");
+  assert.ok(src.includes("...(sessionPrepAllowed && lore.sessionPrep"));
   const occurrences = src.split("lore.sessionPrep").length - 1;
-  assert.equal(occurrences, 2, "sessionPrep should appear only in the allowed branch");
+  assert.equal(occurrences, 2, "sessionPrep should appear only in the plan-gated branch");
 });
 
 test("members are entitled to seeds on a paid entry; free and anonymous readers are not", () => {

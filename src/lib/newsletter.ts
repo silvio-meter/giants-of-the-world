@@ -26,7 +26,8 @@ export type NewsletterSource =
   | "entry"
   | "entry-mid"
   | "welcome"
-  | "journey";
+  | "journey"
+  | "prep-sample";
 
 /** Map UI sourcePage into allowed source tags (scoreboard attribution). */
 export function normalizeNewsletterSource(
@@ -34,6 +35,8 @@ export function normalizeNewsletterSource(
 ): NewsletterSource {
   const raw = (sourcePage ?? "").trim().toLowerCase();
   if (raw === "journey") return "journey";
+  // The optional One Seam form on /bestiary/free-sample.
+  if (raw === "prep-sample") return "prep-sample";
   if (raw === "footer" || raw === "") return "footer";
   if (raw === "welcome" || raw === "welcome-paid") return "welcome";
   if (raw === "entry-mid" || raw.startsWith("entry-mid:")) return "entry-mid";

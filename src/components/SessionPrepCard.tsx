@@ -6,11 +6,14 @@ import { usePlan } from "./PlanProvider";
 import type { SessionPrepCardData } from "@/lib/types";
 
 /**
- * Session Prep block on paid giant pages only (caller skips freeEntry).
+ * Session Prep block on giant pages. Since the catalogue opening (11 Nov
+ * 2026) the caller mounts it on open entries too; it no longer depends on
+ * freeEntry.
  *
- * Members see seeds (when curated), source shelf, and Compare link. No pack teaser
- * once unlocked (that line is locked-only). No second CheckoutButton:
- * PremiumLock / LockedLore already own the gold wall on this page.
+ * Everyone sees the source shelf and the Compare pair: both are derived from
+ * public catalogue fields and were already in the page payload. Encounter
+ * seeds (when curated) stay member-only. No CheckoutButton and no pricing
+ * link: membership sales are closed.
  *
  * The seeds are paid lore, so they are never passed in as props (props end up
  * in the static page payload every anonymous visitor downloads). Members fetch
@@ -67,78 +70,68 @@ export function SessionPrepCard({
         Session Prep
       </h2>
 
-      {!ready ? (
-        <p className="mt-3 text-sm text-text-muted" role="status">
-          Checking membership…
-        </p>
-      ) : unlocked ? (
-        <div className="mt-4 space-y-5">
-          {seedsLoading ? (
+      <div className="mt-4 space-y-5">
+        {card.hasSeeds ? (
+          !ready ? (
             <p className="text-sm text-text-muted" role="status">
-              Loading encounter seeds…
+              Checking membership…
             </p>
-          ) : null}
+          ) : unlocked ? (
+            <>
+              {seedsLoading ? (
+                <p className="text-sm text-text-muted" role="status">
+                  Loading encounter seeds…
+                </p>
+              ) : null}
+              {seeds ? (
+                <div>
+                  <h3 className="text-[10px] tracking-[0.2em] text-text-muted uppercase">
+                    Encounter seeds
+                  </h3>
+                  <ol className="mt-2 list-decimal space-y-2 pl-4 text-sm leading-relaxed text-text-primary/90">
+                    {seeds.map((seed) => (
+                      <li key={seed}>{seed}</li>
+                    ))}
+                  </ol>
+                </div>
+              ) : null}
+            </>
+          ) : (
+            <p className="text-sm text-text-muted">
+              Encounter seeds stay with existing memberships.
+            </p>
+          )
+        ) : null}
 
-          {seeds ? (
-            <div>
-              <h3 className="text-[10px] tracking-[0.2em] text-text-muted uppercase">
-                Encounter seeds
-              </h3>
-              <ol className="mt-2 list-decimal space-y-2 pl-4 text-sm leading-relaxed text-text-primary/90">
-                {seeds.map((seed) => (
-                  <li key={seed}>{seed}</li>
-                ))}
-              </ol>
-            </div>
-          ) : null}
-
-          {card.sourceShelf.length > 0 ? (
-            <div>
-              <h3 className="text-[10px] tracking-[0.2em] text-text-muted uppercase">
-                Source shelf
-              </h3>
-              <ul className="mt-2 list-disc space-y-1 pl-4 font-mono text-xs text-text-muted marker:text-accent-gold/60">
-                {card.sourceShelf.map((s) => (
-                  <li key={s}>{s}</li>
-                ))}
-              </ul>
-            </div>
-          ) : null}
-
-          {card.comparePair ? (
-            <div>
-              <h3 className="text-[10px] tracking-[0.2em] text-text-muted uppercase">
-                Compare
-              </h3>
-              <p className="mt-2 text-sm text-text-muted">
-                <Link
-                  href={`/compare?a=${encodeURIComponent(card.comparePair.a)}&b=${encodeURIComponent(card.comparePair.b)}`}
-                  className="text-accent-gold hover:underline"
-                >
-                  {card.comparePair.aName} vs {card.comparePair.bName}
-                </Link>
-              </p>
-            </div>
-          ) : null}
-        </div>
-      ) : (
-        <div className="mt-4 space-y-3">
-          <div
-            className="rounded border border-border/80 bg-background/40 px-3 py-4 opacity-60"
-            aria-hidden
-          >
-            <div className="h-2 w-24 rounded bg-text-muted/20" />
-            <div className="mt-3 space-y-2">
-              <div className="h-2 w-full rounded bg-text-muted/15" />
-              <div className="h-2 w-11/12 rounded bg-text-muted/15" />
-              <div className="h-2 w-10/12 rounded bg-text-muted/15" />
-            </div>
+        {card.sourceShelf.length > 0 ? (
+          <div>
+            <h3 className="text-[10px] tracking-[0.2em] text-text-muted uppercase">
+              Source shelf
+            </h3>
+            <ul className="mt-2 list-disc space-y-1 pl-4 font-mono text-xs text-text-muted marker:text-accent-gold/60">
+              {card.sourceShelf.map((s) => (
+                <li key={s}>{s}</li>
+              ))}
+            </ul>
           </div>
-          <p className="text-center text-sm text-text-muted">
-            Full prep pack unlocks with membership
-          </p>
-        </div>
-      )}
+        ) : null}
+
+        {card.comparePair ? (
+          <div>
+            <h3 className="text-[10px] tracking-[0.2em] text-text-muted uppercase">
+              Compare
+            </h3>
+            <p className="mt-2 text-sm text-text-muted">
+              <Link
+                href={`/compare?a=${encodeURIComponent(card.comparePair.a)}&b=${encodeURIComponent(card.comparePair.b)}`}
+                className="text-accent-gold hover:underline"
+              >
+                {card.comparePair.aName} vs {card.comparePair.bName}
+              </Link>
+            </p>
+          </div>
+        ) : null}
+      </div>
     </section>
   );
 }

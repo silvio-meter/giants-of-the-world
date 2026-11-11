@@ -35,7 +35,7 @@ export default function ResetPasswordPage() {
         return;
       }
       setDone(true);
-      setTimeout(() => router.push("/pricing"), 1500);
+      setTimeout(() => router.push("/account"), 1500);
     } catch {
       setError("Could not update the password.");
       setLoading(false);

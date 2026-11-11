@@ -237,7 +237,7 @@ export function JourneyPageClient({
       {!isPaid && (
         <p className="rounded border border-border bg-surface/60 px-4 py-3 text-sm text-text-muted">
           {userId
-            ? "These marks are only on this device until you unlock membership."
+            ? "These marks stay on this device. Sync and export stay with existing memberships."
             : "Session marks only. "}
           {!userId && (
             <Link
@@ -247,12 +247,7 @@ export function JourneyPageClient({
               Sign in to keep your marks
             </Link>
           )}
-          {userId && (
-            <Link href="/pricing" className="text-accent-gold hover:underline">
-              Unlock sync and export
-            </Link>
-          )}
-          .
+          {!userId && "."}
         </p>
       )}
 

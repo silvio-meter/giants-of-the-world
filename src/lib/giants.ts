@@ -138,7 +138,7 @@ export interface ComparePickerOption {
   slug: string;
   name: string;
   culture: string;
-  image: string;
+  image?: string;
 }
 
 /**

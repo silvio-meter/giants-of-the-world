@@ -91,6 +91,13 @@ export default async function Image({
     }
   }
 
+  if (!photoSrc) {
+    // Entry without an image (six were withdrawn on 11 Nov 2026, and any
+    // future entry may be text-only by choice). A full-width text card: name,
+    // culture and status line. No photo, no placeholder panel.
+    return new ImageResponse(textOnlyCard(giant), { ...size });
+  }
+
   return new ImageResponse(
     (
       <div
@@ -110,33 +117,17 @@ export default async function Image({
             background: "#121820",
           }}
         >
-          {photoSrc ? (
-            <img
-              src={photoSrc}
-              alt=""
-              width={700}
-              height={630}
-              style={{
-                width: "100%",
-                height: "100%",
-                objectFit: "cover",
-              }}
-            />
-          ) : (
-            <div
-              style={{
-                width: "100%",
-                height: "100%",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                color: MUTED,
-                fontSize: 28,
-              }}
-            >
-              No image
-            </div>
-          )}
+          <img
+            src={photoSrc}
+            alt=""
+            width={700}
+            height={630}
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+            }}
+          />
         </div>
 
         <div
@@ -216,6 +207,75 @@ export default async function Image({
       </div>
     ),
     { ...size }
+  );
+}
+
+function textOnlyCard(giant: {
+  name: string;
+  culture: string;
+  statusLine?: string;
+}) {
+  const nameSize =
+    giant.name.length > 40 ? 64 : giant.name.length > 26 ? 76 : 92;
+  const cultureSize = giant.culture.length > 48 ? 18 : 24;
+  return (
+    <div
+      style={{
+        width: "100%",
+        height: "100%",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        background: BG,
+        padding: "72px 80px",
+        borderLeft: `6px solid ${GOLD}`,
+      }}
+    >
+      <div style={{ display: "flex", flexDirection: "column" }}>
+        <div
+          style={{
+            fontSize: cultureSize,
+            letterSpacing: 8,
+            textTransform: "uppercase",
+            color: GOLD,
+            opacity: 0.85,
+          }}
+        >
+          {giant.culture}
+        </div>
+        <div
+          style={{
+            marginTop: 28,
+            fontSize: nameSize,
+            lineHeight: 1.05,
+            letterSpacing: -1,
+            color: GOLD,
+          }}
+        >
+          {giant.name}
+        </div>
+        <div style={{ marginTop: 32, height: 3, width: 180, background: GOLD }} />
+        {giant.statusLine ? (
+          <div style={{ marginTop: 32, fontSize: 34, color: TEXT }}>
+            {giant.statusLine}
+          </div>
+        ) : null}
+      </div>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          fontSize: 22,
+          letterSpacing: 6,
+          textTransform: "uppercase",
+          color: MUTED,
+        }}
+      >
+        <span>Giants of the World</span>
+        <span style={{ color: GOLD, opacity: 0.8 }}>giantscodex.com</span>
+      </div>
+    </div>
   );
 }
 

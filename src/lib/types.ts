@@ -134,8 +134,20 @@ export interface Giant {
   coordinates: [number, number] | null;
   tags: string[];
   sources: string[];
-  image: string;
-  imageAlt: string;
+  /**
+   * Optional. Empty on entries whose generated image was withdrawn (six
+   * living-tradition entries, 11 Nov 2026); every surface must render a
+   * clean empty frame, never a broken image.
+   */
+  image?: string;
+  imageAlt?: string;
+  /**
+   * Date (YYYY-MM-DD) the entry's content last changed. Stamped from local
+   * git history by scripts/stamp-updated-at.mjs and committed, so the sitemap
+   * never depends on build-time git (Vercel clones shallowly). Bump it by
+   * hand, or re-run the script, when an entry's content changes.
+   */
+  updatedAt?: string;
 }
 
 /** Editorial handling notes, one object per giant (server/lore only). */

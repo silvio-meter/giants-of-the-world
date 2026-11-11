@@ -81,16 +81,20 @@ test("/pricing refund link uses the support address", () => {
   assert.ok(!pricing.includes("operatorContactEmail"));
 });
 
-test("drip email 4 refund line uses the seller contact", () => {
+test("drip email 4 contact line uses the support address, same as /pricing", () => {
+  // Owner decision 11 Nov 2026: one refund address on the page and in the
+  // mail, hello@giantscodex.com (supportEmail). Terms and privacy keep the
+  // operator contact, asserted above.
   const drip = read("src/lib/one-seam/drip.ts");
-  assert.ok(drip.includes(`export const REFUND_CONTACT_EMAIL = "${CONTACT}";`));
+  const site = read("src/lib/site.ts");
+  const support = /export const supportEmail = "([^"]+)";/.exec(site)?.[1];
+  assert.ok(support, "supportEmail not found in site.ts");
+  assert.ok(drip.includes(`export const REFUND_CONTACT_EMAIL = "${support}";`));
   const e4 = drip.split("const E4_BODY = `")[1]?.split("`;")[0] ?? "";
   assert.ok(
-    e4.includes(
-      "14-day refund on every plan, Lifetime included, via ${REFUND_CONTACT_EMAIL}."
-    )
+    e4.includes("Questions or corrections: ${REFUND_CONTACT_EMAIL}")
   );
-  assert.ok(!e4.includes("hello@giantscodex.com"));
+  assert.ok(!e4.includes(CONTACT), "drip contact line must not name the operator contact");
 });
 
 function walk(dir) {
@@ -108,13 +112,13 @@ test("no bank details anywhere in src", () => {
   assert.deepEqual(hits, []);
 });
 
-test("rendered drip email 4 names the seller contact for refunds (no send)", async () => {
+test("rendered drip email 4 names the support address (no send)", async () => {
   const { getDripStep, renderDripText, renderDripHtml } = await import(
     "../src/lib/one-seam/drip.ts"
   );
   const step = getDripStep(4);
   const line =
-    "14-day refund on every plan, Lifetime included, via meter257@gmail.com.";
+    "Questions or corrections: hello@giantscodex.com";
   assert.ok(renderDripText(step, "https://example.invalid/u").includes(line));
   assert.ok(renderDripHtml(step, "https://example.invalid/u").includes(line));
 });

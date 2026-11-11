@@ -157,7 +157,8 @@
       "distortions": "Popular retellings routinely turn Ymir into a straightforward villain slain by a heroic Odin, flattening a cosmology that is really about the gods committing kin-murder against their own ancestor to build the world from his corpse. A second common mangling harmonizes Snorri's tidy Prose Edda narrative with the stranger, contradictory Poetic Edda material (the unresolved Ymir/Aurgelmir identity, the ambiguous á lúðr vessel) into one clean origin story, erasing the genuine textual disagreement between sources written roughly two centuries after Iceland's conversion.",
       "take": "This is freely usable public-domain material: the birth from Ginnungagap's meltwater, Auðumbla's licking, the murder by Odin, Vili and Vé, and the body-becomes-world construction are all fair game for direct adaptation. Be honest in a fiction or nonfiction context that Snorri Sturluson (writing c. 1220, two centuries post-conversion) is a systematizing Christian redactor, not a neutral transcriber, so his tidy version and the older, rougher Poetic Edda poems (Vafþrúðnismál, Grímnismál) can be blended or presented as alternatives, but shouldn't be silently harmonized as though there were one settled canonical account. Avoid asserting the Near Eastern flood-parallel (Bergelmir's escape) as proven borrowing; the scholarship treats it as unresolved.",
       "cite": "Credit Snorri Sturluson's Prose Edda (Gylfaginning, c. 1220) for the narrative version and the Poetic Edda's Vafþrúðnismál and Grímnismál for the older poetic layer; both are long in the public domain in multiple translations."
-    }
+    },
+    "updatedAt": "2026-09-01"
   },
   {
     "id": "nephilim",
@@ -347,7 +348,8 @@
       "distortions": "The single most common distortion is treating the four verses of Genesis 6:1-4 as if they contained the elaborate Watchers mythology (named fallen angels, taught forbidden arts, a war in heaven) that actually comes from the much later Book of Enoch, presenting later Second Temple-period expansion as if it were the biblical text itself. A second is the modern 'giant skeleton' conspiracy genre, which claims physical evidence for the Nephilim; this has no scholarly standing and rests on hoaxes and misidentified fossils, and treating it as a serious historical claim misrepresents both the text and the archaeology.",
       "take": "The biblical text (Genesis 6:1-4, Numbers 13:33) and the Enoch/Jubilees expansions are public-domain ancient texts and fully citable and adaptable; the interpretive question of who the 'sons of God' are (angelic beings, Sethite line, or divine-descent-claiming rulers) is genuinely unresolved among scholars, so present it as an open question rather than picking one reading and asserting it as fact. Treat this as biblical/religious material with respect rather than as generic monster lore, it belongs to living Jewish and Christian scriptural traditions, and clearly separate the sparse canonical text from the much richer non-canonical Enoch elaboration so readers don't mistake one for the other; keep the modern giant-skeleton hoax material out of anything presented as factual.",
       "cite": "Cite Genesis 6:1-4 and Numbers 13:33 (Hebrew Bible) for the canonical material, 1 Enoch (Book of the Watchers, chapters 6-16) and Jubilees 5 for the major Second Temple-period expansion, and Josephus, Antiquities of the Jews I.3.1, for the earliest interpretive gloss connecting them to 'Giants' in the Greek sense."
-    }
+    },
+    "updatedAt": "2026-09-01"
   },
   {
     "id": "goliath",
@@ -543,7 +545,8 @@
       "distortions": "The commonest flattening is treating the story as a simple strength-versus-cunning underdog fable, which erases the text's own point that a trained slinger with range was a real tactical answer to a slow, over-armored close-fighter, not a lucky trick. Retellings also routinely present Goliath's nine-foot height and the Elhanan-killed-Goliath discrepancy (2 Samuel 21:19 vs. the harmonized 1 Chronicles 20:5) as settled or ignore them entirely, when both are genuine, unresolved text-critical problems rather than errors to silently fix.",
       "take": "The narrative beats are freely retellable and have been retold for millennia across all three Abrahamic traditions, but because this is living scripture, not just folklore, avoid mockery or blasphemy-adjacent framing, and distinguish clearly between the biblical text itself and later folk or medical speculation (e.g. the popular pituitary-gigantism theory, which is medically coherent but has zero textual support and should be labeled as speculation, not read back into the story). The height and Elhanan discrepancies are worth keeping visible as genuine manuscript variation rather than resolving them into one \"true\" version.",
       "cite": "Cite 1 Samuel 17 (Masoretic Text) alongside the notably shorter Septuagint version (1 Kingdoms 17) and the Dead Sea Scrolls fragment 4QSam-a for the height variant, plus Aren Maeir's Tell es-Safi/Gath excavation reports for the Philistine-name ostracon evidence."
-    }
+    },
+    "updatedAt": "2026-09-01"
   },
   {
     "id": "og-of-bashan",
@@ -555,7 +558,7 @@
     "culture": "Biblical / Near Eastern",
     "region": "Near East",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Implied by iron bed: ~9 cubits long",
     "shortDescription": "Last of the Rephaim; king of Bashan whose iron bed was a wonder.",
     "fullDescription": "Og, king of Bashan, is the last survivor of the Rephaim. Deuteronomy offers his iron bed as proof of his size, and notes that it can still be seen in Rabbah: a footnote that turns a king into an exhibit.",
@@ -755,7 +758,8 @@
       "distortions": "The most common flattening is presenting the vastly exaggerated rabbinic legend material (surviving the Flood by clinging to the ark, hurling mountains at Israel, a thighbone requiring days to traverse) as if it were in the Torah text itself, when the actual biblical account is a brief conquest narrative with one aside about an iron bedstead of stated dimensions and no stated height for Og. A second distortion is asserting confidently that the iron object was 'really' a basalt sarcophagus rather than a bed, treating a plausible modern scholarly proposal as settled fact when the ancient versions (Septuagint, Vulgate, Targum Onkelos) all read it as a bed.",
       "take": "The biblical text and the rabbinic expansions are both public-domain ancient sources and freely usable, but keep them distinct in your telling: attribute the bedstead-at-Rabbah account to Deuteronomy 3, and attribute the flood-survival, mountain-throwing and giant-thighbone material explicitly to the Talmud and midrash as later homiletic elaboration, not as scripture. Treat this as Hebrew Bible and Talmudic material with the same respect you'd give any actively-studied religious text, present the bed-vs-sarcophagus question as genuinely open rather than resolved, and avoid overstating what's known about the Rephaim, whose status as a historical people versus a term for ancestral shades is itself contested.",
       "cite": "Cite Deuteronomy 3:1-13 and Numbers 21:33-35 for the core narrative, Psalms 135:11 and 136:20 for the liturgical afterlife, and Babylonian Talmud Berakhot 54b, Niddah 24b and Niddah 61a for the rabbinic legendary expansion, clearly marked as later elaboration rather than the biblical account."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "atlas",
@@ -838,7 +842,8 @@
       "distortions": "The commonest mangling is the terrestrial globe: retellings put the whole Earth on his shoulders, when the classical burden is the sky, and the Earth-globe habit descends from Renaissance cartography after Mercator titled his 1595 map book an Atlas. A second mangling is smoothing the tradition into one biography, when the Heracles episode and the petrification by Perseus flatly contradict each other and ancient authors never reconciled them.",
       "take": "Take anything: the tireless sky-bearing, the golden apples trick and its shoulder-padding reversal, the petrification, the mountain, the name itself. Decide consciously which burden you mean, since sky and Earth produce different images and different physics, and the contradiction between the Heracles and Perseus versions is itself usable material rather than an error to fix. The one thing to leave is any confident claim about where the figure originally came from; the name has no secure Greek etymology and scholarship has not settled the question, so rooting him firmly in any single pre-Greek or North African source outruns the evidence.",
       "cite": "The primary texts are the credit: Hesiod, Theogony 517-520 for the punishment, Apollodorus, Bibliotheca II.5.11 for the apples, and Ovid, Metamorphoses IV.627-662 for the petrification, all long in the public domain in multiple translations."
-    }
+    },
+    "updatedAt": "2026-09-01"
   },
   {
     "id": "polyphemus",
@@ -1000,7 +1005,8 @@
       "distortions": "The most common flattening collapses the two wholly separate Polyphemus traditions into one figure: the murderous cave-dwelling Cyclops of Homer and the lovesick, comic herdsman of Theocritus and Ovid are different characters serving different genres, and blending them muddies both. Retellings also routinely present the Nobody trick and the escape-under-the-sheep as Homer's own invention, when comparative folklore scholarship treats these as part of a much older and wider international tale type that Homer was drawing on, not originating.",
       "take": "Everything is freely usable: the guest-right violation, the blinding, the Nobody pun, the escape beneath the flock, and separately the pastoral lover-of-Galatea tradition, each treated as its own distinct strand rather than merged into a single \"true\" version. Present the folktale-type question (whether Homer invented or inherited the trick) as a genuinely open, long-argued scholarly debate rather than settling it, and specifically avoid citing the escape-under-the-sheep detail as proof of Homer's originality, since scholars note that inference is close to circular. The dwarf-elephant-skull theory for the one-eye motif is popular but has no ancient support and should be flagged as speculative if mentioned at all.",
       "cite": "Cite Homer's Odyssey IX.105-566 as the anchor text, with Euripides' Cyclops, Theocritus's Idylls VI and XI, and Ovid's Metamorphoses XIII.750-897 for the separate traditions; for the folktale-type scholarship, note the AaTh 1137 classification and the Nyrop/Hackman comparative tradition along with more recent critiques (O'Sullivan 1987, Gousopoulos 2025)."
-    }
+    },
+    "updatedAt": "2026-10-27"
   },
   {
     "id": "enceladus",
@@ -1010,7 +1016,7 @@
     "culture": "Greek",
     "region": "Mediterranean",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Gigantic",
     "shortDescription": "Giant buried beneath Sicily; his thrashing is said to cause earthquakes.",
     "fullDescription": "Enceladus is one of the Giants who rose against the Olympians and lost. He is buried under Sicily, and Mount Etna is what he does about it.",
@@ -1056,7 +1062,8 @@
       "distortions": "The commonest mangling is merging the Gigantomachy with the Titanomachy, so the Giants become Titans and the wars collapse into one; Roman authors started this and modern retellings inherit it. The snake-legged body is a later artistic convention, and Enceladus is often swapped for or blended with Typhon, a different monster assigned to the same mountain.",
       "take": "Everything here is free: the pinning under Sicily, Athena as his opponent, the breath as Etna's fire, the earthquakes as the giant turning over. The only care needed is internal accuracy, not permission: keep the Giants distinct from the Titans if you want the older Greek scheme, and know that giving Etna to Typhon instead is an equally attested choice, not an error. You may also exploit the fluidity itself, since the ancient sources never settled which giant lies where.",
       "cite": "Credit Apollodorus, Bibliotheca I.6 for the narrative and Virgil, Aeneid III.578-582 for the poetic image, and see the Pergamon Altar frieze in Berlin for the visual tradition."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "antaeus",
@@ -1066,7 +1073,7 @@
     "culture": "Greek",
     "region": "North Africa",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Giant",
     "shortDescription": "Libyan giant who drew strength from the earth: until Heracles lifted him.",
     "fullDescription": "Antaeus, son of Poseidon and Gaia, wrestles every traveller who crosses his country in Libya, kills them all, and roofs a temple to his father with their skulls. He cannot lose while he is touching the ground.",
@@ -1142,7 +1149,8 @@
         "At Tingis they later show a skeleton and call it his. Let the bone be the rumour after the fight, not the proof of it."
       ],
       "compareSlug": "atlas"
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "alcyoneus",
@@ -1152,7 +1160,7 @@
     "culture": "Greek",
     "region": "Mediterranean",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Gigantic",
     "shortDescription": "Immortal on his native soil; slain only when dragged beyond its border.",
     "fullDescription": "Alcyoneus is among the greatest of the Giants, and immortal for as long as he fights on the ground where he was born. Heracles has to drag him out of his own country to kill him.",
@@ -1195,7 +1203,8 @@
       "distortions": "The commonest mangling is to give him Antaeus's rule, revival by touching the earth, when Apollodorus makes the condition territorial: he is deathless inside his homeland, wherever that is. Retellings also weld Pindar's giant herdsman and Apollodorus's war combatant into one fixed biography that no ancient source provides.",
       "take": "Take anything. The jurisdictional immortality, the drag across the border, the theft of the Sun's cattle, the daughters who become halcyon birds, and Gaia reaching after her son are all free, drawn from public-domain texts and a publicly held sculpture, and the material rewards invention because the sources themselves cannot place the boundary the whole story turns on. The one carelessness to avoid is presenting your chosen synthesis as the single ancient canon, since the ancient versions visibly disagree.",
       "cite": "Credit Apollodorus, Bibliotheca I.6.1 for the core episode, and the Staatliche Museen zu Berlin, whose Pergamonmuseum holds the Pergamon Altar frieze."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "porphyrion",
@@ -1205,7 +1214,7 @@
     "culture": "Greek",
     "region": "Mediterranean",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Gigantic",
     "shortDescription": "King of the Gigantes who assailed Hera and fell to Zeus and Heracles.",
     "fullDescription": "Porphyrion is the king of the Giants in most accounts of the war against the gods. He is destroyed at the moment he is most nearly victorious, and by desire rather than by force.",
@@ -1248,7 +1257,8 @@
       "distortions": "Modern retellings usually flatten the Hera episode into simple lust-driven villainy, dropping the pointed detail that Zeus himself induces the desire as a weapon, which makes the scene about divine tactics rather than giant depravity. They also tend to silently pick one death (thunderbolt-and-arrow, or Apollo's bow) and present it as the single canonical version, erasing the six-century gap and real disagreement between Apollodorus and Pindar.",
       "take": "Everything here is freely usable: the Hera scene, the double death, the kingship dispute with Alcyoneus, the Pergamon frieze imagery. Keep the two traditions distinct rather than merging them, since the contradiction between Pindar's archery contest and Apollodorus's lust-and-thunderbolt is real and part of what makes the figure interesting, not a continuity error to smooth over. The moral ambiguity of using Hera as bait without comment from the sources is worth preserving rather than resolving for a modern audience.",
       "cite": "Credit Apollodorus, Bibliotheca I.6.2 for the Hera episode, Pindar, Pythian VIII.12-18 for the archery version, and the Pergamon Altar frieze (2nd c. BCE, Berlin) for the visual tradition, all long public domain."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "polybotes",
@@ -1258,7 +1268,7 @@
     "culture": "Greek",
     "region": "Mediterranean",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Gigantic",
     "shortDescription": "Pursued by Poseidon across the sea; crushed under the island of Nisyros.",
     "fullDescription": "Polybotes is the Giant who ran from Poseidon. He was pursued across the Aegean, and the piece of Kos that was thrown after him is the island of Nisyros, which is still sitting on him.",
@@ -1300,7 +1310,8 @@
       "distortions": "The most common flattening merges Polybotes with the more famous Enceladus-under-Etna story, treating them as one myth or forgetting Polybotes has his own separate geography (Kos and Nisyros rather than Sicily), when the two are structurally parallel but independently attested traditions. Retellings also tend to overstate how developed his character is; he is thinly attested outside Gigantomachy catalogue lists, and inventing a rich individual personality or backstory for him goes well past what the ancient sources actually give.",
       "take": "The chase, the trident-throw and the Nisyros-as-buried-giant explanation are all freely usable, and the geological accuracy of the Kos/Nisyros volcanic-arc relationship is a genuinely interesting detail worth keeping in any retelling. Be honest that Polybotes may be little more than a catalogue name that acquired a story because a striking island needed explaining, so don't manufacture depth or motivation the sources don't support; and don't present the volcanic-giant explanation as unique to him when the identical structure recurs with Enceladus and Etna and other giants elsewhere in the tradition.",
       "cite": "Cite Apollodorus's Bibliotheca I.6.2 for the narrative and Strabo's Geography X.5.16 for the independent geographical attestation of the tradition, both long public domain; Attic vase painting of the Gigantomachy is useful supporting visual evidence."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "briareus",
@@ -1313,7 +1324,7 @@
     "culture": "Greek",
     "region": "Mediterranean",
     "type": "primordial",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Vast",
     "shortDescription": "Hundred-handed giant who aided Zeus against the Titans.",
     "fullDescription": "Briareus has a hundred hands and fifty heads. He is not an enemy of the gods but the reason they hold power, and Zeus keeps him in reserve as a threat that never has to be used twice.",
@@ -1356,7 +1367,8 @@
       "distortions": "The standard mangling is Roman in origin: Virgil and Ovid flattened him into a generic monster, and modern fantasy bestiaries inherit that, casting the hundred-hander as a rampaging enemy when in Hesiod he is the enforcer and jailer of the gods' order. The Homeric detail that his arrival alone ended a coup against Zeus is almost always dropped.",
       "take": "Everything here is free: the hundred hands, the Titanomachy, the Tartarus watch, the double name Briareus and Aegaeon, the Corinthian tradition of him as an arbitrator. What a careless writer loses is not permission but point; if you want the figure Hesiod and Homer built, keep him a guard and a deterrent, the strength that holds the losing side down, rather than another thing for a hero to fight. The unresolved seams, such as whether Aegaeon was once a separate hostile sea-being, are open invitations, not restrictions.",
       "cite": "Credit the primary texts, Hesiod's Theogony (147-153, 617-735) and Homer's Iliad (I.396-406), with Pausanias II.1.6 for the Corinthian judge."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "orion",
@@ -1366,7 +1378,7 @@
     "culture": "Greek",
     "region": "Mediterranean",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Giant",
     "shortDescription": "The hunter so great he was set among the stars.",
     "fullDescription": "Orion is a giant hunter of enormous size who walks through the sea with his head above the water. He is blinded, healed, killed, and finally set among the stars, where he is still hunting.",
@@ -1409,7 +1421,8 @@
       "distortions": "The most common flattening is picking one death story (usually the scorpion) and presenting it as the myth, when the ancient sources themselves preserve at least four incompatible accounts with no attempt at reconciliation. Retellings also tend to skip the Chios blinding-and-healing episode entirely in favor of the constellation origin story, and to invent a confident, singular parentage or backstory where the ancient tradition is genuinely split between the Poseidon lineage and the strange hide-birth pun-story.",
       "take": "Everything is usable: the hunter who wades the sea, the Chios blinding and its unusual reversal by Helios, any or all of the competing death accounts, and the sky-chase with Scorpius. Treat the multiple death traditions as a feature to dramatize rather than a continuity error to fix, since ancient authors themselves left them side by side unreconciled. Avoid asserting a firm Near Eastern or Egyptian origin for the figure; the comparisons rest on the shared obviousness of a bright constellation, not on demonstrated transmission, so that connection should be left as speculative at most.",
       "cite": "Primary sources are the credit: Homer's Odyssey XI.572-575 and Iliad XVIII, Hesiod's Works and Days 598-616, Apollodorus's Bibliotheca I.4.3-5 for the competing death accounts, and Hyginus's Astronomica and Pseudo-Eratosthenes' Catasterismi for the Chios episode, all long public domain."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "geryon",
@@ -1421,7 +1434,7 @@
     "culture": "Greek",
     "region": "Iberia / Mediterranean",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Giant (three-bodied)",
     "shortDescription": "Three-bodied giant of the far west whose cattle Heracles stole.",
     "fullDescription": "Geryon has three bodies joined at the waist, or three heads on one trunk, depending on who is describing him. He keeps a herd of red cattle on an island at the western edge of the world, and Heracles is sent to take them.",
@@ -1465,7 +1478,8 @@
       "distortions": "The commonest flattening is picking one fixed image for Geryon's body (usually three-heads-one-body) and presenting it as canonical, when ancient sources and art disagree genuinely between three joined bodies, one three-headed body, and winged variants, with no consensus ever reached. A second distortion is treating him as a flat monster-of-the-week obstacle, erasing the sympathetic tradition that begins with Stesichorus's Geryoneis, where he is a reluctant fighter who dies far from help, a reading that only became visible again after the poem's fragments resurfaced in the twentieth century.",
       "take": "Take anything: the cattle raid, Orthrus and Eurytion, the Pillars of Heracles, the arrow drawn on Helios and the loan of the sun's golden cup, the poisoned death, and the long cattle-drive home. Feel free to choose any of the inconsistent body configurations, or lean into Stesichorus's sympathetic framing versus Apollodorus's brisker labour-narrative, since the tradition itself never settled on one version. Don't present Erytheia's location in Spain/Cádiz as original or fixed; that identification grew later as Greek geographic knowledge expanded westward, and earlier sources place it simply beyond the sunset.",
       "cite": "Cite Hesiod, Theogony 287-294 and 979-983, for the earliest reference; Stesichorus's Geryoneis (6th c. BCE, papyrus fragments) for the sympathetic treatment; and Apollodorus, Bibliotheca II.5.10, for the standard labour narrative, with Dante's Inferno XVII noted as a distinct medieval reinvention."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "tityus",
@@ -1475,7 +1489,7 @@
     "culture": "Greek",
     "region": "Mediterranean",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Covered nine plethra when stretched",
     "shortDescription": "Giant punished in the underworld; vultures feast forever on his liver.",
     "fullDescription": "Tityus assaulted Leto and was killed for it. His punishment is to lie stretched across nine acres of the underworld while two vultures eat his liver, which grows back.",
@@ -1553,7 +1567,8 @@
       "distortions": "Retellings commonly collapse the Tantalus/Sisyphus/Tityus trio into an undifferentiated \"eternal punishment\" grab-bag, losing what makes each one specific, an unreachable object, a returning task, a regenerating organ, and losing the pointed logic that the liver, held by Greek medicine to be the seat of appetite, is targeted because it is the organ blamed for the crime. A second distortion, encouraged by Lucretius, is presenting the underworld torment as a straightforward ancient allegory for guilty desire, when that reading is a first-century-BCE Epicurean argument, not evidence of what earlier Greeks believed the myth meant.",
       "take": "The core material is freely usable: the assault on Leto, the killing by Apollo and Artemis's arrows, and the underworld punishment with the self-renewing liver and the vultures. Note but don't erase the real variation between sources, Homer's Gaia-born giant versus Apollodorus's Zeus-and-Elara version with its hidden-pregnancy explanation, and the disputed count of birds and even the organ (Apollodorus has the heart, Hyginus a serpent instead of birds), since the entry's own liver-specific reading depends on tracking which variant you're using. Lucretius's allegorical reading is good material to cite as a distinct ancient interpretive layer, not as what the myth \"really means.\"",
       "cite": "Cite Homer, Odyssey XI.576-581, for the earliest account and Apollodorus, Bibliotheca I.4.1, for the fuller narrative and genealogy; Pindar, Pythian IV.90-92, and Lucretius, De Rerum Natura III.984-994, for the divergent details and the philosophical rationalisation respectively."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "talos",
@@ -1635,7 +1650,8 @@
       "distortions": "The commonest mangling is presenting Talos flatly as \"the first robot\" without qualification, importing a modern mechanical category the Greeks did not have; his ichor and divine manufacture place him closer to a living being made by a god than to a machine, and the framing is defensible but should be flagged as an import, not stated as ancient fact. A second flattening collapses the Minos dialogue's law-carrying, thrice-yearly circuit judge into the same figure as Apollonius's daily-patrolling automaton without noting the two versions barely reconcile, and conflating Medea's rival methods of destroying him (madness versus a false immortality promise) into one tidy scene loses what the variation shows about the tradition's instability.",
       "take": "Take the core material freely: the daily patrol, the bronze body heated in fire, the single vein of ichor sealed by an ankle nail, Medea's undoing of him, and his construction by Hephaestus or Daedalus. Use the \"first robot\" framing if useful for a modern audience but mark it as a deliberately anachronistic lens rather than an ancient Greek concept. Leave confident claims about what Talos \"originally\" was, sun personification, Bronze Age metallurgy memory, coastal-defence folk etymology, alone as speculation; no scholarly reading commands agreement, and the Minos dialogue's authorship (widely doubted as Plato's) should not be flattened into a confident attribution.",
       "cite": "Cite Apollonius of Rhodes, Argonautica IV.1638-1688 (3rd c. BCE) for the fullest ancient account, and Apollodorus, Bibliotheca I.9.26, for the competing manufacture-and-death traditions; both are public-domain classical texts in numerous translations."
-    }
+    },
+    "updatedAt": "2026-09-25"
   },
   {
     "id": "thrym",
@@ -1647,7 +1663,7 @@
     "culture": "Norse",
     "region": "Scandinavia",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Jötunn",
     "shortDescription": "Frost giant who stole Mjölnir and demanded Freyja as bride.",
     "fullDescription": "Thrym, lord of the jötnar, steals Thor's hammer and buries it eight leagues deep. His price for returning it is Freyja as his bride, and the story of how the gods answer is the funniest poem in the Edda.",
@@ -1697,7 +1713,8 @@
         "Thrym wants Freyja. What he gets is a hammer to the skull. Stage the gift-opening as the combat start."
       ],
       "compareSlug": "ymir"
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "hrungnir",
@@ -1707,7 +1724,7 @@
     "culture": "Norse",
     "region": "Scandinavia",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Jötunn",
     "shortDescription": "Stone-hearted giant who dueled Thor and left a whetstone in his head.",
     "fullDescription": "Hrungnir is the strongest of the giants, with a head and heart of stone and a shield and hone-stone for weapons. He is killed in the only formal duel Thor ever fights.",
@@ -1748,7 +1765,8 @@
       "distortions": "The most common flattening is treating Snorri's prose account as the whole and only tradition, when it exists specifically to explain skaldic kennings and is demonstrably a retelling of older material (Þjóðólfr's ninth/tenth-century Haustlöng) whose original wording and extent of elaboration we can't fully recover. A second is playing the story straight as heroic combat throughout, missing that details like the mare-hearted clay giant wetting itself in terror, and Thor's three-year-old son casually lifting a dead giant's leg off his neck, read as deliberate comic or bathetic beats within the saga tradition.",
       "take": "Freely usable in full: the horse race, the drunken boasting, the duel arrangement, the absurd clay giant Mökkurkálfi, the mid-air stone-and-hammer collision, and the permanently lodged hone-stone in Thor's head. Feel free to lean into the story's own comic register (it plays as a tall tale about a giant undone by trickery and slapstick) rather than sanitizing it into pure heroic myth, and where you want a \"why is stone associated with this giant\" reading, flag it as one modern interpretive suggestion rather than settled meaning, since the personification reading isn't secure.",
       "cite": "Cite Snorri Sturluson's Prose Edda, Skáldskaparmál 17, for the full narrative, and Þjóðólfr of Hvinir's Haustlöng (9th-10th c., preserved only in Snorri's quotation) as the older attesting source."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "skrymir",
@@ -1761,7 +1779,7 @@
     "culture": "Norse",
     "region": "Scandinavia",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Mountain-vast (illusion)",
     "shortDescription": "The vast wanderer whose glove was a hall: master of illusions.",
     "fullDescription": "Skrymir is the giant so large that Thor and his companions sleep the night in his glove and take it for a hall. He is also not real, and finding that out is the humiliation at the centre of the story.",
@@ -1811,7 +1829,8 @@
         "Utgard's contests are all tricks. Food, drink, and wrestling against the wrong nouns."
       ],
       "compareSlug": "ymir"
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "bestla",
@@ -1821,7 +1840,7 @@
     "culture": "Norse",
     "region": "Scandinavia",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Jötunn",
     "shortDescription": "Frost-giantess mother of Odin: the gods' giant bloodline.",
     "fullDescription": "Bestla is a giantess, daughter of the jötunn Bölthorn, and the mother of Odin. The gods who kill Ymir and build the world from him are themselves half giant, and Bestla is the half.",
@@ -1889,7 +1908,8 @@
       "distortions": "The usual mangling is not misrepresenting Bestla but filling her silence and calling the filler lore: giving her a named brother (usually Mimir, which is conjecture, not text), a personality or a death scene and presenting these as attested. The broader distortion, amplified by Marvel-derived media, is flattening the jotnar into a monster race, which erases the point her entry exists to make, that the gods are descended from them.",
       "take": "Take everything: the genealogy, the giant ancestry of Odin, the nine songs from her father's son, and the structural irony that the gods' war on the giants is a family quarrel. Invent freely into her silence, since the sources leave almost total room, but keep invention labelled as yours; do not pass off the Mimir identification, any etymology of her name, or any episode for her as sourced, because none exists. No community protocol restricts this material; the only obligation is accuracy about what the two surviving attestations actually say.",
       "cite": "Snorri Sturluson's Prose Edda (Gylfaginning) and Edward Pettit's open-access dual-language Poetic Edda (Open Book Publishers, 2023) for Havamal 140."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "balor",
@@ -1902,7 +1922,7 @@
     "culture": "Celtic / Irish",
     "region": "Ireland",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Fomorian giant",
     "shortDescription": "Fomorian king whose eye destroyed armies: slain by his grandson Lugh.",
     "fullDescription": "Balor of the Evil Eye leads the Fomorians. His single eye is kept shut and needs four men to lift the lid, and whatever it looks at dies. He is killed by his own grandson, exactly as prophesied.",
@@ -2070,7 +2090,8 @@
         "Tory Island still names him. Treat the local warning as current, not antiquarian."
       ],
       "compareSlug": "polyphemus"
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "cormoran",
@@ -2080,7 +2101,7 @@
     "culture": "Celtic / Cornish",
     "region": "Britain",
     "type": "folklore",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "About 18 feet (folklore)",
     "shortDescription": "Cornish giant of St Michael's Mount, felled by Jack the Giant Killer.",
     "fullDescription": "Cormoran is the giant of St Michael's Mount who waded ashore to steal Cornish cattle. Jack dug a pit, covered it, blew a horn at dawn, and the giant walked into it: the first kill in a career that gave English a phrase.",
@@ -2144,7 +2165,8 @@
       "distortions": "The commonest mangling is treating the whole Jack the Giant Killer cycle as authentic Cornish oral tradition, when the chapbooks stitched the locally rooted Cormoran episode to unrelated imported material; a related error runs the other way, merging Jack into the Jack and the Beanstalk story. Claimed links to Gogmagog, or readings of the Cornish giants as folk memory of a real displaced people, are speculation sometimes repeated as fact.",
       "take": "The plot machinery is free: the pit trap, the horn at dawn, the pickaxe, the sword and belt reward, and Jack's later kit of invisibility coat, swift shoes, cap of knowledge and sharp sword all come from out-of-copyright chapbook and collected texts and may be reworked, relocated or inverted without asking anyone. If you keep the Cornish setting, keep the strands honest: the Mount, the heart stone and the ox-stealing belong to local legend, so do not present chapbook inventions such as the pudding-bag trick as ancient Cornish tradition. No sacred restrictions apply; the only real obligation is accuracy about what is Cornish and what is commercial print.",
       "cite": "Robert Hunt's Popular Romances of the West of England (1865), free on Project Gutenberg, and Joseph Jacobs's English Fairy Tales (1890) are the standard collected texts; the St Michael's Mount visitor site shows how the legend is presented on the ground today."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "gogmagog",
@@ -2157,7 +2179,7 @@
     "culture": "Celtic / British",
     "region": "Britain",
     "type": "folklore",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "12 cubits (Geoffrey of Monmouth)",
     "shortDescription": "British giant who wrestled Corineus and gave his name to London's guardians.",
     "fullDescription": "Gogmagog is the last giant of Albion, thrown off a Cornish cliff by the Trojan Corineus in a wrestling match. Two carved effigies of him and his conqueror have stood in the Guildhall of London for centuries.",
@@ -2289,7 +2311,8 @@
         "Biblical Gog and Magog share the name and not the story. Keep the two shelves apart at the table."
       ],
       "compareSlug": "fomorians"
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "jentilak",
@@ -2348,7 +2371,8 @@
       "distortions": "Retellings tend to flatten the Jentilak into generic hostile fairy-tale giants, losing the distinctive and rarer inversion at the story's core: they are credited as teachers who bring metalworking, the scythe, the saw and wheat-growing, not obstacles to civilization. The Kixmi departure episode also gets oversimplified into a clean \"pagan giants flee Christianity\" allegory, when whether it reflects genuine pre-Christian memory or is itself a Christian-era construction about conversion is explicitly unresolved, and the material was consolidated fairly late (largely by Barandiarán in the twentieth century) from scattered regional accounts.",
       "take": "The core material is freely usable: the megalith-building and stone-throwing, the technology-teaching role, and especially the Kixmi/withdrawal episode with Olentzero remaining behind, which is unusually vivid and rarely told outside Basque-studies sources. Keep the framing honest about the collection history, Barandiarán and Azkue were organizing scattered oral accounts into a system that may be tidier than what they found, and at least one documented case exists of a detail (the Lesaka effigy burning) being passed on without attribution, and don't claim the dolmens were actually built by the Jentilak, since these are real Neolithic monuments that predate the tradition by millennia and the giants are a folk explanation for them, not evidence of who built them.",
       "cite": "Cite José Miguel de Barandiarán's Basque mythology fieldwork and Resurrección María de Azkue's Euskalerriaren Yakintza (1935-47) as the foundational collections, with Anton Erkoreka's Los gentiles (1976) and Anuntxi Arana's Euskal mitologiaz (2008) for more recent scholarly treatment."
-    }
+    },
+    "updatedAt": "2026-09-01"
   },
   {
     "id": "olentzero",
@@ -2360,7 +2384,7 @@
     "culture": "Basque",
     "region": "Basque Country",
     "type": "folklore",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Large (folklore)",
     "shortDescription": "The Basque charcoal-burner of Christmas: last echo of the jentilak.",
     "fullDescription": "Olentzero is the last of the Jentilak. He stayed when the other giants fled, and he now comes down from the mountains at midwinter with charcoal on his face and presents for children.",
@@ -2422,7 +2446,8 @@
       "distortions": "The commonest flattening is presenting Olentzero as a straightforward Basque Santa Claus, erasing both the older, harsher charcoal-burner who threatens misbehaving children with a sickle and the specific twentieth-century political and cultural process that turned him into a warm gift-bringer. Retellings also tend to treat the modern figure as timeless ancient custom rather than a documented, comparatively recent repurposing, and to skip the Jentilak framing story that gives him his origin as the one giant who stayed behind.",
       "take": "The modern parade figure, the songs, the charcoal-burner details and the older sickle-carrying version are all freely usable folk material with an active living tradition behind it, similar in spirit to how you'd write about any still-celebrated regional festival. Be accurate about the timeline: name the twentieth-century (particularly later Franco-era and post-Franco) revival and repurposing as the reason the friendly modern version exists, rather than presenting it as ageless. Since the etymology and the Jentilak connection are both genuinely unresolved among scholars, flag them as open questions instead of picking one confidently.",
       "cite": "Draw on Barandiarán and Azkue's Basque oral tradition collections and the documented Olentzero song variants (Olentzero joan zaigu), and for the disputed etymology and history consult Fernando Mikelarena's work on Olentzero's uneven local survival, plus Lope de Isasti's 1625 Compendio historial de Guipúzcoa as the earliest written record of the name."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "ravana",
@@ -2591,7 +2616,8 @@
       "distortions": "Pop retellings routinely collapse Ravana into a flat monster-villain, discarding the boon's precise wording, his scholarship and musicianship, and the restraint he shows toward Sita, all of which the epic itself insists on. A second common distortion is treating the Uttara Kanda's material (the Brahma boon, the Kailasa episode, the curse) as if it were uncontested original epic rather than a widely-regarded later addition, and a third is importing modern Dravidian-versus-Aryan political readings into the ancient text as if they were the text's own meaning rather than contemporary argument using it.",
       "take": "The Valmiki narrative details are usable as literature, but this is not free-floating classical myth in the Atlas or Porphyrion sense: it is scripture and devotional material for a living, numerically vast, and internally divided religious tradition, so a writer should represent Ravana's complexity (the learning, the boon's loophole, the restraint, the death-bed statecraft lesson to Lakshmana) rather than reducing him to a cartoon demon, and should not present any single regional or sectarian reading (North Indian effigy-burning, Sri Lankan/Tamil sympathetic reverence, Jain vow-based ethics) as the one true version. Avoid inventing new theology, avoid mocking Dussehra practice or sympathetic devotional practice, and flag clearly when a detail comes from the later Uttara Kanda versus the core epic.",
       "cite": "Cite Valmiki's Ramayana (Sanskrit, with the Uttara Kanda flagged as a later book) as the foundational text, Tulsidas's Ramcharitmanas for the dominant North Indian devotional lens, and regional recensions such as the Thai Ramakien and Cambodian Reamker plus Jain retellings (e.g. Vimalasuri's Paumacariya) to show the range of treatment across living traditions."
-    }
+    },
+    "updatedAt": "2026-08-11"
   },
   {
     "id": "kumbhakarna",
@@ -2601,7 +2627,7 @@
     "culture": "Hindu",
     "region": "South Asia / Lanka",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Colossal",
     "shortDescription": "Ravana's giant brother who slept six months and woke to war.",
     "fullDescription": "Kumbhakarna, brother of Ravana, sleeps six months at a time. He meant to ask for the seat of Indra and asked for sleep instead, and the mistake defines him.",
@@ -2653,7 +2679,8 @@
         "Between bites he remembers dharma. One speech from him can turn allies against the wrong banner."
       ],
       "compareSlug": "ravana"
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "hiranyakashipu",
@@ -2663,7 +2690,7 @@
     "culture": "Hindu",
     "region": "South Asia",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Asura-giant",
     "shortDescription": "Asura king who could not be killed by man or beast: until Narasimha.",
     "fullDescription": "Hiranyakashipu wins a boon that makes his death nearly impossible, and the god he has forbidden finds the one gap in it. The story exists to demonstrate that a clever condition can always be met.",
@@ -2706,7 +2733,8 @@
       "distortions": "Pop retellings routinely flatten Hiranyakashipu into a generic evil-giant villain and lose the story's actual point, which is the precise, deliberately airtight boon and its equally deliberate loophole-defeat (Narasimha as neither man nor beast, killed neither indoors nor outdoors, neither by day nor night, and so on), Hindu tradition frames this as an act of divine wit and devotion, not a technicality being exploited. A second common flattening is treating him as consistently gigantic; the Puranas describe a daitya of immense power rather than a fixed \"giant,\" and \"giant\" is largely a translation convenience layered on by English-language retellers.",
       "take": "The narrative structure (the boon, the persecution of Prahlada, the pillar, the Narasimha avatar) is long-established public religious literature and can be retold, but because this is living scripture for a major world religion, treat it with the same care a careful editor gives Biblical retellings: avoid mockery or reducing Narasimha or Prahlada to punchlines, and be explicit when you're drawing on regional or performance-tradition elaborations (which vary substantially in the details and number of torments) rather than the core Bhagavata Purana narrative. Don't present the boon-loophole mechanism as a rules-lawyering gag; that undersells what the tradition treats as a serious theological point.",
       "cite": "Cite the Bhagavata Purana, Canto 7, as the primary and most influential source, with the Vishnu Purana and Narasimha Purana for parallel versions, and note the earlier, briefer Mahabharata references."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "mahabali",
@@ -2719,7 +2747,7 @@
     "culture": "Hindu",
     "region": "South Asia / Kerala",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Grew to cosmic size",
     "shortDescription": "Generous asura king sent to the underworld by Vamana's three steps.",
     "fullDescription": "Mahabali is a demon king who ruled so well that the gods removed him for it. Every year at Onam, Kerala keeps the promise that lets him come back and look at what he built.",
@@ -2786,7 +2814,8 @@
       "distortions": "Pop retellings tend to flatten Mahabali into either a straightforward villain-tricked-by-god story or a straightforward martyr-of-caste-oppression story, when Kerala itself holds both readings simultaneously and argues about it publicly every Onam. A second common error is treating him primarily as a giant because of the Vamana contrast, when Sanskrit sources barely emphasize his size at all; the giant framing is a side effect of Vamana's chosen smallness, not a core trait, and exaggerating his stature to cartoon-giant scale misrepresents the material.",
       "take": "The core narrative beats (Bali's just rule, the three steps, the submission, the annual return) are freely retellable and are already retold constantly within Kerala's own popular culture, so there is no access barrier here. Write him with real dignity and avoid mockery or reducing him to a punchline giant or a simple loser to a trickster god; this is a beloved figure tied to a living, emotionally significant civic festival, and the Dravidian-versus-Vedic and caste readings are politically live in Kerala, so do not casually pick one and present it as settled fact. If your telling needs to take a side, flag it as one of several sincerely held readings rather than the truth of the story.",
       "cite": "Credit the Bhagavata Purana Canto 8 for the standard Vamana narrative, Rigveda 1.154 for the older three-strides motif (without Bali), and the Malayalam Onam oral tradition (e.g. verses beginning 'Maveli nadu vaneedum kalam') for the folk material that actually ties Onam to Mahabali."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "svyatogor",
@@ -2798,7 +2827,7 @@
     "culture": "Slavic",
     "region": "Eastern Europe",
     "type": "folklore",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Bogatyr-giant",
     "shortDescription": "Mountain-strong bogatyr who could not be lifted by the earth itself.",
     "fullDescription": "Svyatogor is so strong that the earth cannot carry him, so he lives in the mountains and never comes down. His story is about strength that has nowhere to go.",
@@ -2861,7 +2890,8 @@
       "distortions": "Retellings routinely turn Svyatogor into a simple strongman villain or rival for Ilya Muromets to defeat, when the actual stories are about the limits and retirement of raw strength rather than combat; both defining episodes end in his voluntary humbling or death, not a fight he loses. A second flattening symbolically over-explains the earth-bag, presenting one reading (peasant labour, sin, the land) as the fixed meaning, when the songs themselves offer no adjudication between them.",
       "take": "The two defining episodes are freely usable: the unliftable bag belonging to Mikula Selyaninovich, and the stone coffin that fits Svyatogor exactly and becomes his grave, including his passing some but not all of his strength to Ilya. Treat the material's age and pre-Christian roots as an open question rather than settled fact, since the byliny were recorded from a nineteenth-century oral tradition within a nationalist collecting framework, and how far back the songs actually run is not directly measurable.",
       "cite": "Cite the Onega and Karelian bylina tradition as recorded by Pavel Rybnikov, Songs Collected by P.N. Rybnikov (1861-67), and Alexander Gilferding, Onega Byliny (1873), the foundational nineteenth-century collections."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "quinametzin",
@@ -2873,7 +2903,7 @@
     "culture": "Mesoamerican / Aztec",
     "region": "Mesoamerica",
     "type": "race",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Giant (mythic race)",
     "shortDescription": "Giant race of a previous sun who built great structures and fell to divine order.",
     "fullDescription": "The Quinametzin are the giants of central Mexican tradition who inhabited an earlier world-age and built the great structures the Aztecs found already standing. Teotihuacan and Cholula were attributed to them.",
@@ -2917,7 +2947,8 @@
       "distortions": "The most common mangling is presenting the Quinametzin as straightforward pre-conquest Aztec belief, when the surviving accounts are colonial syntheses, often explicitly reconciling Nahua history with Genesis giants and Noah's line; a close second is pseudo-archaeological and ancient-astronaut content that treats the giant-bones material as evidence of a literal lost race, ignoring that the Valley of Mexico's abundant Pleistocene megafauna (mammoth, mastodon) bones are a well-understood physical explanation. Retellings also erase the specific historical puzzle that generated the tradition: Teotihuacan and Cholula were already ancient, abandoned, and unattributed when the Mexica arrived.",
       "take": "The framing device is freely usable and is arguably the best part of the story: a previous giant race explains monumental ruins whose builders were unknown even to the people who found them. Be explicit in any adaptation that the record comes through Spanish-language colonial chroniclers writing generations after conquest, and avoid presenting the biblical-descent framing (Noah, the Nephilim) as if it were the indigenous belief itself rather than a Spanish overlay. Do not lean on ancient-astronaut or lost-race pseudoarchaeology, which has no support in the sources and actively distorts a real, still-active archaeological question about who built Teotihuacan.",
       "cite": "Cite Fernando de Alva Ixtlilxochitl (Relaciones, Historia de la nacion chichimeca), Bernardino de Sahagun's Florentine Codex, and Diego Duran's Historia de las Indias de Nueva Espana as the primary chronicle sources, and note the Pleistocene megafauna deposits of the Valley of Mexico as the physical context behind the giant-bones claims."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "xelhua",
@@ -2927,7 +2958,7 @@
     "culture": "Mesoamerican",
     "region": "Mesoamerica",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Giant",
     "shortDescription": "Giant survivor of the flood who raised the great pyramid of Cholula.",
     "fullDescription": "Xelhua is one of the giants who survived the flood, and he built the Great Pyramid of Cholula to reach the sky. The gods stopped him, which is the part of the story that has caused all the argument.",
@@ -2971,7 +3002,8 @@
       "distortions": "The single biggest distortion is presenting the Xelhua/Cholula flood-and-tower story as straightforwardly indigenous myth, when every surviving version was filtered through Spanish friars and colonial writers steeped in Genesis, and Humboldt's early-nineteenth-century enthusiasm for the Babel parallel is largely responsible for fixing that framing in popular imagination. A second distortion collapses the well-documented, centuries-long archaeological building sequence of the actual pyramid into a single mythic builder-giant, erasing the real history of successive Mesoamerican construction phases in favor of a tidier story.",
       "take": "It is fine to describe the pyramid's real archaeology, the flood-and-giants motif as a genuinely plausible pre-conquest element, and the documented colonial textual history (Duran, de los Rios, Humboldt) as long-public-domain material open to retelling. Do not present the Xelhua-as-Tower-of-Babel narrative as settled indigenous belief or as proof of pre-Columbian contact with biblical tradition; flag explicitly, as this entry's own sourcing does, that the transmission is too compromised to say with confidence how much is Nahua and how much is colonial projection. Avoid inventing indigenous ritual or belief detail to fill the gap; the honest move is to keep the uncertainty visible rather than resolve it in either direction.",
       "cite": "Credit Diego Duran, Historia de las Indias de Nueva España (16th c.), the Pedro de los Rios-associated tradition, and Alexander von Humboldt's Vues des Cordillères (1810) for the textual history, alongside archaeological surveys of the Great Pyramid of Cholula (1930s onward) for the structure's actual, giant-free building sequence."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "kua-fu",
@@ -2983,7 +3015,7 @@
     "culture": "Chinese",
     "region": "East Asia",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Giant",
     "shortDescription": "The giant who chased the sun and died of thirst: staff becoming a forest.",
     "fullDescription": "Kua Fu decides to race the sun. He runs it down across the sky, drinks the Yellow River and the Wei dry, dies of thirst on the way to the northern lakes, and his staff becomes a forest of peach trees.",
@@ -3026,7 +3058,8 @@
       "distortions": "The most common flattening is presenting the story as a simple cautionary tale about the folly of overreach, when the text itself resists that reading: Kua Fu's death produces a forest and fruit trees, an ending generosity that cautionary tales don't usually offer, and the modern idiom carries an undertone of admiration rather than pure censure. A second distortion is treating the Shanhaijing's two internally inconsistent versions (one where heat alone kills him, one involving the dragon Yinglong) as a single smoothed-out narrative, erasing a real textual contradiction. A third is treating the compressed, ambiguous original as settled myth rather than acknowledging that the solar-cult, drought-personification and migration-memory readings are all live scholarly possibilities that the text is simply too short to decide between.",
       "take": "The story is short, ancient, public-domain classical Chinese literature and freely adaptable in full: the chase, the drinking of the Yellow River and Wei, the death short of the marshes, and the staff becoming Dengforest. Preserve the ambiguity rather than resolving it into a clean moral; the peach-forest ending and the idiom's admiring undertone are worth keeping rather than smoothing into straightforward hubris-punished. Where the two Shanhaijing passages disagree (heat-death versus the Yinglong detail), it's fine to pick one for a retelling, but don't present the two as already reconciled.",
       "cite": "Cite the Shanhaijing (Classic of Mountains and Seas), Dahuang Beijing and Haiwai Beijing sections, as the primary text, with Guo Pu's fourth-century CE commentary as the earliest interpretive layer; the Liezi's Tangwen chapter is a secondary classical mention."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "fangfeng",
@@ -3038,7 +3071,7 @@
     "culture": "Chinese",
     "region": "East Asia",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Giant (one of the tallest in lore)",
     "shortDescription": "Giant executed by Yu the Great for arriving late to the flood assembly.",
     "fullDescription": "Fangfeng arrived late to Yu the Great's assembly of the lords and was executed for it. Centuries later a cartload of enormous bones was dug up, and Confucius was asked to identify them.",
@@ -3080,7 +3113,8 @@
       "distortions": "Popular retellings usually collapse the two distinct stories into one, the political execution-for-lateness narrative and the later bone-identification-by-Confucius episode, losing the fact that the second is a separate, much later literary device attaching scholarly authority to a claim, not a continuation of the same scene. A second distortion is presenting the Confucius bone identification as a straightforwardly historical event, when the Guoyu's authorship and the general use of such exchanges as literary devices make its historicity genuinely uncertain.",
       "take": "The core narrative material (Yu's summons, Fangfeng's execution at Kuaiji, the later discovery of giant bones, and Confucius's identification of them) is public-domain classical material freely usable in retellings. Be explicit that the imperial account and the sympathetic local Zhejiang cult tradition tell the story from opposite ends, the centralizing state's version versus a memory of a local ruler destroyed by a conquering power, and that which is older cannot be determined; presenting only the imperial version as \"the\" story flattens a genuine historiographical tension worth keeping. Don't assert what the unearthed bones \"really were\"; large mammal fossil misidentification is plausible but speculative, not established fact.",
       "cite": "Cite the Guoyu (Lu yu section) for the bone-identification exchange, Sima Qian's Shiji (Xia annals, c. 91 BCE) for the execution narrative, and Zhejiang local gazetteers for the surviving regional cult tradition."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "oni",
@@ -3159,7 +3193,8 @@
       "distortions": "Pop retellings routinely collapse oni into a single fixed monster-type (horned, club-wielding, red-skinned) when the word actually spans a huge range from invisible Heian sickness-spirits to Muromachi mountain ogres to modern manga villains, so any single clean picture is already a distortion of the category. Retellings also frequently import Western \"demon = evil\" framing wholesale, missing how thoroughly domesticated and even comic oni are in practice (a father in a mask driven out with soybeans at Setsubun), and they often invent a false etymology or a tidy Buddhist-only origin instead of acknowledging the untangled native/continental syncretism.",
       "take": "The full range of oni imagery, from hell-tormentor to Setsubun mask to folktale man-eater, is freely usable, richly documented public cultural material with no restricted or sacred status. Writers should be explicit that oni is a category label spanning very different beings across centuries rather than one consistent character, and should avoid asserting a single settled etymology or a clean native-versus-imported origin, since scholars have not resolved either. The claim that Enryaku-ji was founded specifically to guard the demon gate is a real popular belief but is chronologically backwards (the temple predates Heian-kyō's founding), so state it as a later-assigned role, not an original purpose.",
       "cite": "Credit the Konjaku Monogatarishu (late Heian tale collection) and Muromachi-period otogizoshi for the narrative tradition, and Kamakura-period Buddhist hell scrolls for the iconography; Setsubun observance is documented from the Muromachi period onward."
-    }
+    },
+    "updatedAt": "2026-08-11"
   },
   {
     "id": "shuten-doji",
@@ -3171,7 +3206,7 @@
     "culture": "Japanese",
     "region": "East Asia",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Oni-giant",
     "shortDescription": "Demon king of Mount Ōe: drunkard oni slain by Raikō's band.",
     "fullDescription": "Shuten-doji is the oni chief of Mount Oe who took women from Kyoto and ate them. He was killed by warriors who arrived disguised as mountain priests and poisoned him at his own banquet.",
@@ -3297,7 +3332,8 @@
       "distortions": "Modern adaptations frequently strip out the moral discomfort of the ending, that Raiko's band wins through disguise, false hospitality, and poisoning a drunk host, and instead recast it as a straightforward heroic monster-slaying, erasing the point that nothing about the method is chivalrous and the source material does not treat that as a problem. Retellings also tend to merge the two competing setting traditions (Mount Oe in Tanba versus Mount Ibuki) and the differing origin stories for Shuten-doji himself (temple acolyte, unusual birth, serpent parent) into one flattened backstory, when the medieval sources genuinely disagree.",
       "take": "This is freely adaptable folklore with a long, open illustrated tradition behind it: the disguise-as-yamabushi plan, the paralysing sake, the beheading and the flying head biting the helmet are all fair game. A writer aiming for texture should preserve the moral ambiguity of the heroes' methods rather than sanitizing it, and should pick and flag one setting/origin tradition (Oe or Ibuki) rather than silently merging incompatible medieval versions.",
       "cite": "Cite the Oeyama ekotoba illustrated handscroll (Nanbokuchō/Muromachi period, 14th c.) as the key early visual-narrative source, otogizoshi prose versions of the tale, and Tsukioka Yoshitoshi's ukiyo-e treatments as the standard later artistic reference."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "dzunukwa",
@@ -3377,7 +3413,8 @@
       "distortions": "The most damaging distortion is comparing or conflating Dzunukwa with Sasquatch/Bigfoot in popular cryptozoology writing, which strips her of the ownership, inheritance, and ceremonial context that define her and reduces a specific culturally-owned being to a generic wildman monster. A second distortion is treating her as a simple \"child-eating monster\" horror trope, flattening out the equally central fact that she is a source of wealth, coppers, and potlatch-legitimating status for the families who hold rights to her.",
       "take": "Do not write new fiction using Dzunukwa's name, image, or masks as generic monster material; she is not public-domain folklore but a figure with active hereditary ownership by specific Kwakwaka'wakw families, and mask designs, cries, and regalia belong to those lineages, not to outside writers. A general reference to her existing within Kwakwaka'wakw cosmology (large, hairy forest-dwelling being who is also a bringer of wealth) is defensible in a descriptive/encyclopedic context like this one, but any storytelling use, visual depiction, or claim to retell \"her story\" should be left alone or done only in direct collaboration with Kwakwaka'wakw knowledge-holders. The Boas-Hunt corpus and Emily Carr's paintings are settler-mediated sources and should not be treated as authoritative substitutes for community voice.",
       "cite": "Credit Kwakwaka'wakw oral tradition and living community sources as primary; cite Franz Boas with George Hunt's ethnographic corpus (with Hunt's under-credited contribution flagged) as the major external documentation, and note Emily Carr's paintings as a settler artistic reception rather than a source on the figure itself."
-    }
+    },
+    "updatedAt": "2026-08-11"
   },
   {
     "id": "si-te-cah",
@@ -3526,7 +3563,8 @@
       "distortions": "The dominant modern distortion is exactly the one this entry's own disputed field documents: retellings insert giant stature that is simply not in Winnemucca's 1883 text, where 'giant' appears only once, dismissively, to describe stories her people file as make-believe, while the word she actually uses is 'small.' This flows directly into pseudoarchaeological and fringe 'lost white race'/Nordic-giant content built on the Lovelock Cave excavations (Hart and Pugh's 1911 guano mining, Loud and Harrington's 1924 dig), which recasts a Paiute account of intertribal conflict into a race-science narrative about a superior vanished people, a framing with a long and ugly pseudoarchaeological pedigree that has nothing to do with Winnemucca's account.",
       "take": "The historically responsible version to tell is Winnemucca's own: a small, violent rival band exterminated after repeated warnings, described as red-haired but explicitly not gigantic, with the postwar naming of her own people as Say-do-carah as the story's real, usually-dropped final beat. Do not present this as a 'giant' legend without immediately noting that the giant framing is a later addition absent from the Paiute-authored source; and do not lean on the Lovelock Cave pseudoarchaeology (oversized skeletons, lost red-haired race) that circulates online, since it has been used to promote race-replacement and 'ancient white civilization' narratives that have no basis in the primary account and are actively harmful to Paiute historical memory.",
       "cite": "Cite Sarah Winnemucca Hopkins, Life Among the Piutes (1883) as the essential primary source, L.L. Loud and M.R. Harrington's Lovelock Cave (UC Publications in American Archaeology and Ethnology, 1929) for the archaeology, and Adrienne Mayor's Fossil Legends of the First Americans (2005) for how the giant-stature claim diverged from the source."
-    }
+    },
+    "updatedAt": "2026-09-01"
   },
   {
     "id": "tsul-kalu",
@@ -3564,8 +3602,6 @@
       "Cherokee oral tradition (Eastern Band; Cherokee Nation)",
       "Judaculla Rock petroglyph site, Jackson County, North Carolina"
     ],
-    "image": "/images/giants/tsul-kalu.jpg",
-    "imageAlt": "Tsul 'Kalu, the Slant-Eyed Giant",
     "sections": {
       "story": "Tsul'kalu, the name is commonly explained as referring to his slanting or oblique eyes, is a great being of the Cherokee highlands who owns the game. Hunters address themselves to him, because success in hunting is not simply a matter of skill.\n\nThe best-known narrative, the Swimmer version as Mooney printed it, concerns his marriage. A woman living with her mother wishes for a husband who is a good hunter. A man arrives at night, brings game, and proves an extraordinary provider, but will not be seen in daylight and refuses to meet her mother. When the mother finally looks, she sees his size and is frightened, and speaks against him. He is offended and leaves, and the woman goes with him, and they are gone into the mountains. Mooney also recorded a second version from John Ax.\n\nHe is associated with specific places. Judaculla Rock in Jackson County, North Carolina, is a soapstone boulder covered in petroglyphs, and Cherokee tradition holds that Tsul'kalu left marks on it: Mooney writes of scratches from his leap toward the stream, not a handprint. Judaculla (Mooney's Jutaculla) is an anglicisation of his name. Tanasee Bald is not merely nearby: in Mooney's gazetteer it is his mountain, Tsul'kalu' Tsunegun'yi, and other Balsam locations hold his townhouse and fields.\n\nThe petroglyphs are real and pre-modern, but not securely dated. The 2011 National Register nomination gives a period of significance running from the Middle Woodland to roughly AD 1830 and notes Cherokee accounts that production may have continued into the historic period. The rock is a protected site.\n\nHe is not a hostile figure in the way most giants in this codex are. He is an owner and a regulator: a being one has a relationship with, and can offend.",
       "origins": "James Mooney's Myths of the Cherokee, published in 1900 by the Bureau of American Ethnology, is the principal published source. Mooney worked with Cherokee informants in North Carolina in the 1880s and 1890s, and his collection remains the largest external compilation.\n\nCherokee oral tradition, in both the Eastern Band and the Cherokee Nation, is the living source and is not confined to what Mooney recorded.\n\nJudaculla Rock has been surveyed and studied archaeologically, with recording projects continuing; it is managed with Eastern Band involvement.\n\nPlace-names throughout the western North Carolina mountains preserve the tradition.",
@@ -3671,7 +3707,8 @@
       "distortions": "Pop retellings tend to flatten Tsul'kalu into a generic \"local Bigfoot\" or regional cryptid, stripping out the hunting-owner relationship, the offense-and-withdrawal logic of the marriage story, and the specific place-ties (Tanasee Bald, Judaculla Rock) that make him a being one has reciprocal obligations toward, not a monster to be spotted. A second common mangling is treating Mooney's 1900 print version as the single canonical text, when Mooney himself recorded variants (Swimmer vs. John Ax) and Cherokee oral tradition continues independently of his corpus; a third is presenting the undated, disputed petroglyphs as confirmed illustrations of the myth rather than a traditional attribution.",
       "take": "Do not write new dialogue, interiority, or invented episodes for Tsul'kalu as though he were public-domain folklore like Atlas or Ymir; he is a specific being within a living Cherokee spiritual and legendary framework, and the Eastern Band and Cherokee Nation are the parties with standing to say how he is portrayed. What is safe to describe factually and with attribution: that Mooney recorded this material in the 1880s-1890s and published it in 1900, that Judaculla Rock exists and is a protected petroglyph site, and that Cherokee place-names across western North Carolina encode this tradition. Anything beyond restating Mooney's documented text (motivations, expanded scenes, claims about what the petroglyphs \"really\" show, or folding him into a generic giant/cryptid roster) should be avoided or explicitly flagged as outside recorder Mooney rather than presented as settled Cherokee belief.",
       "cite": "James Mooney, Myths of the Cherokee (Bureau of American Ethnology 19th Annual Report, 1900) is the documented starting point; a writer should also credit that Cherokee oral tradition in the Eastern Band and Cherokee Nation is the living, primary source and takes precedence over Mooney's framing, and should consult Eastern Band-affiliated interpretive material on Judaculla Rock rather than treating the site as settled archaeology."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "kee-wakw",
@@ -3727,7 +3764,8 @@
       "distortions": "The dominant modern distortion is conflation with the pop-culture \"wendigo,\" a horror-genre invention (video games, streaming shows, creepypasta) that strips out the moral and survival-ethics content and turns a complex, community-specific tradition into a generic antler-skulled slasher monster, frequently with no acknowledgment of source communities. A second distortion is collapsing distinct Wabanaki languages and communities into one pan-Indigenous label, when names, details and meaning genuinely differ between Abenaki, Penobscot, Passamaquoddy, Mi'kmaq and Maliseet tellings. A third is reading these figures as purely literal monsters rather than also as encoded survival ethics around famine, hoarding and cannibalism taboo, which is how the tradition itself frames the transformation.",
       "take": "Stick to the well-documented general pattern (a huge, never-satisfied, winter-associated cannibal being that a person can become through greed or extremity, typically defeated by cleverness or a person of power) and attribute it honestly as Wabanaki/Algonquian tradition with real variation between communities, not a single fixed monster. Do not import wendigo-horror-genre tropes (curses, possession-by-antlers, video-game monster design) into this figure, and do not present kee-wakw as interchangeable with the commercialized wendigo; the entry itself flags this as a live concern among Indigenous writers. Prefer citing or pointing readers to contemporary Wabanaki authors like Joseph Bruchac over nineteenth-century settler compilations, and use Leland (1884) only with the caveat that he reworked material for a literary audience.",
       "cite": "Cite contemporary Wabanaki authors, especially Joseph Bruchac, as the living and authoritative source; use Charles G. Leland's Algonquin Legends of New England (1884) and Frank Speck's early-twentieth-century Penobscot ethnography only with explicit period-and-method caveats, not as neutral transcription."
-    }
+    },
+    "updatedAt": "2026-08-11"
   },
   {
     "id": "gaoh",
@@ -3803,7 +3841,8 @@
       "distortions": "The most common flattening is presenting the four-animal wind scheme (Bear/north, Panther/west, Moose/east, Fawn/south) as a single fixed, canonical system, when names, spellings, and attributes vary between the Six Nations and no version should be treated as definitive. A second distortion is calling Gaoh simply a \"giant,\" which imports a European monster-story frame onto what is actually a powerful being with a specific cosmological office (containing and managing destructive winds), a framing that, while not native to the tradition, is at least traceable to Converse's 1908 text rather than being a pure modern invention.",
       "take": "Treat the widely-published four-animal wind scheme and Gaoh's role as guardian/container of the winds as describable in a reference context like this one, sourced transparently to Converse and Parker, but be explicit that Converse's version passed through significant outsider and posthumous editorial shaping (despite her unusual adoption into the Seneca Snipe Clan and status as an Onondaga-raised sachem) and should not be presented as the Haudenosaunee account. Do not invent new plot, dialogue, or expanded mythology for Gaoh, and do not extract him from the wider cosmology to build an unrelated fictional world, since Haudenosaunee sources treat this material as an interconnected living system rather than separable IP; for anything beyond the bare published record, defer to Confederacy and community publications.",
       "cite": "Cite Harriet Maxwell Converse's Myths and Legends of the New York State Iroquois (1908, ed. Arthur C. Parker) and Parker's own Seneca ethnographic writings as the documented published sources, and note that contemporary Haudenosaunee Confederacy and community publications are the authoritative living reference for anything beyond them."
-    }
+    },
+    "updatedAt": "2026-08-11"
   },
   {
     "id": "budj-bim",
@@ -3842,8 +3881,6 @@
       "Archaeological literature on the Budj Bim aquaculture systems",
       "AIATSIS protocols for Indigenous knowledge"
     ],
-    "image": "/images/giants/budj-bim.jpg",
-    "imageAlt": "Ancestral giants of Budj Bim country",
     "sections": {
       "story": "This entry is different from the others in the codex, because most of it is verifiable.\n\nGunditjmara tradition holds that Budj Bim is a creation being who revealed himself, and the surrounding landscape records that revelation. The name is commonly translated as \"high head\". The volcano erupted, and the lava flow it produced is the ground everything else sits on.\n\nThe eruption is dated by geological methods to roughly thirty-seven thousand years ago. Gunditjmara people were present. That makes the tradition, in the reading now widely accepted by geologists and archaeologists working with the community, one of the oldest continuously held accounts of an actual event anywhere on earth.\n\nWhat the Gunditjmara built on that lava is the other half. Across the wetlands they constructed an extensive system of channels, weirs and holding ponds to trap, store and harvest kooyang: short-finned eel. Parts of it are dated to around six thousand five hundred years old. It supported permanent stone dwellings and a settled population, which comprehensively contradicts the long-standing colonial claim that Aboriginal Australians were universally nomadic and built nothing.\n\nThe Budj Bim Cultural Landscape was inscribed as a UNESCO World Heritage site in 2019, on cultural criteria, nominated with and managed by the Gunditjmara.\n\nSo the \"giant\" here is a mountain that is a person, remembered accurately across an interval that beggars comparison, by people who then engineered the country around it. Almost nothing else in this collection is that solid.",
       "origins": "Gunditjmara oral tradition, held by the community and central to the World Heritage nomination.\n\nGeological dating of the Budj Bim, Mount Eccles, eruption places it in the range of tens of thousands of years before present; published argon-argon dating has given figures around thirty-seven thousand years.\n\nArchaeological work on the aquaculture systems has been conducted over decades in partnership with the Gunditjmara, with radiocarbon dates for parts of the system around six thousand five hundred years old.\n\nUNESCO World Heritage inscription documentation (2019) sets out both the cultural traditions and the physical evidence. The Gunditj Mirring Traditional Owners Aboriginal Corporation is the managing body.",
@@ -3862,7 +3899,8 @@
       "distortions": "Retellings tend to harden the deep-time claim into a headline, stating flatly that the story describes the eruption of thirty-seven thousand years ago, when the published position is an alignment of tradition with geological dating, not a direct chain of evidence. The other common mangling is older: the colonial insistence that Aboriginal people built nothing, which the dated aquaculture system refutes and which still shapes lazy depictions of the region.",
       "take": "The documented public record is free to use: the volcanic landscape, the engineered channels, weirs and ponds for harvesting kooyang, the settled stone-house society, and the general idea of a people accurately remembering a geological event across an interval other traditions cannot match. Leave Budj Bim himself alone as a character: he is an Ancestral Being under active community protocols, some Gunditjmara knowledge is explicitly not for general publication, and the community decides what is shared. If your fiction needs a volcano that is a person, invent your own and let the acknowledged inspiration stand in a note rather than borrowing the name or supplying story details the Traditional Owners have not made public.",
       "cite": "Credit the Gunditjmara people; for anything beyond the published record, approach the Gunditj Mirring Traditional Owners Aboriginal Corporation and work within the AIATSIS Code of Ethics."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "papinijuwari",
@@ -3899,8 +3937,6 @@
       "AIATSIS protocols for Indigenous knowledge",
       "Charles P. Mountford's Tiwi work is bound to its period and its permissions, and is cited here as a record of what was published, not as a grant of consent."
     ],
-    "image": "/images/giants/papinijuwari.jpg",
-    "imageAlt": "Papinijuwari of Tiwi tradition",
     "sections": {
       "story": "Tiwi people live on Bathurst and Melville Islands, north of Darwin, and have a distinct language and culture from the mainland.\n\nThe Papinijuwari are described in publicly available accounts as very large beings with a single eye in the forehead. They are associated with sickness and death: they seek out the ill and dying, and they drink blood. In some accounts they carry a torch, and falling stars are connected with them.\n\nThat is close to the limit of what can responsibly be set out here.\n\nThe Tiwi cosmological system is substantial and includes the creation beings, the Pukumani mortuary ceremony with its carved poles, and a body of song and ritual with specific rights and restrictions attached. The Papinijuwari sit inside that system. Removing them from it and presenting them as a monster entry in a catalogue of world giants is, frankly, a distortion of the kind this codex is supposed to be alert to.\n\nThe external record is also thin and old. Most published description traces to a small number of mid-twentieth-century ethnographic sources, and those were produced under conditions and assumptions that would not be acceptable now.\n\nTiwi art (carving, painting, printmaking) is internationally significant and made by named artists working within their own traditions. That is a far better route into this material than any summary written from outside, and it is where an interested reader should go.",
       "origins": "Tiwi oral tradition, Bathurst and Melville Islands, Northern Territory.\n\nMid-twentieth-century ethnography, principally Charles P. Mountford's work on Tiwi art and belief in the 1950s, is the main external published source and reflects the assumptions of its period.\n\nLater anthropological work on Tiwi society, including Jane Goodale's, provides broader context on ceremony and social organisation.\n\nContemporary Tiwi art centres and artists are the appropriate living source. Tiwi Design and Munupi and Jilamara art centres represent artists working in these traditions today.",
@@ -3918,7 +3954,8 @@
       "distortions": "The main distortion is exactly the one this entry itself already flags: lifting the Papinijuwari out of Tiwi cosmology and dropping it into a generic \"world giants\" catalogue as an isolated one-eyed monster, stripped of its place in Tiwi belief about sickness, death and the ceremonial system around Pukumani. A second distortion is treating the thin mid-twentieth-century ethnographic record (chiefly Mountford, writing under the assumptions of his period) as a complete or authoritative account, when absence from that record is often a sign of appropriate restriction rather than a gap to be filled in by invention.",
       "take": "Do not write new story material, invented details, or dramatized scenes involving the Papinijuwari; the identifiable owning community (the Tiwi people) holds living cultural authority over this figure, and existing published description is thin, dated and produced under conditions that would not meet current ethical standards. If a project needs to reference the figure at all, restrict it to the bare, already-published facts (large one-eyed being, associated with sickness, death and falling stars) with clear attribution to the limits of that source, and point readers toward contemporary Tiwi art and artists as the living, community-controlled expression of Tiwi culture rather than treating this summary as a substitute for it.",
       "cite": "Any serious engagement should go through the Tiwi Land Council and contemporary Tiwi art centres (Tiwi Design, Jilamara, Munupi) and work within the AIATSIS Code of Ethics for Aboriginal and Torres Strait Islander Research; cite Charles P. Mountford's 1950s ethnographic work and Jane Goodale's later anthropology only as a record of what has been published, not as consent to elaborate on it."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "murkupang",
@@ -3953,8 +3990,6 @@
       "20th-c. compilations of Australian Aboriginal legend: unreliable, see disputed",
       "AIATSIS protocols for Indigenous knowledge"
     ],
-    "image": "/images/giants/murkupang.jpg",
-    "imageAlt": "Murkupang",
     "sections": {
       "story": "Accounts describe Murkupang as an enormous being who preys on people, and particularly on children: the standard shape of a cannibal-giant tradition, of which Australia has many, held by many different peoples with distinct languages and laws.\n\nWe are going to be brief, and the reason is the reason we gave for Nawao.\n\n\"Australian Aboriginal\" is not one culture. It covers hundreds of distinct nations and language groups with separate traditions, and the material recorded under a single name in colonial-era or mid-century compilations has frequently been detached from the specific people it belongs to. That has happened here: the sources available to us do not reliably identify the community whose tradition this is, which means we cannot attribute it properly, and improper attribution is not a small error.\n\nA great deal of Australian material was also recorded by people who assumed the cultures were dying, who did not seek permission, and who published knowledge that was restricted. Some of what circulates in general reference works should not be in general reference works.\n\nWhat can be said: cannibal-giant figures are widespread in Aboriginal traditions across the continent; they commonly function partly as warnings to children about wandering and about specific dangerous country; and they belong to living cultures whose members are the appropriate authority.\n\nWhat we will not do is compose a detailed portrait to fill the space. If you hold this tradition and we have it wrong, or should not be carrying it at all, please write to us.",
       "origins": "Australian Aboriginal oral tradition; the specific community is not reliably identified in the sources available to us, which is itself the problem this entry describes.\n\nThe name appears in twentieth-century compilations of Australian Aboriginal legend, a genre that frequently aggregated material across unrelated peoples without adequate attribution.\n\nCommunity-controlled sources, language centres and Indigenous knowledge bodies are the appropriate authority for any specific tradition.\n\nAIATSIS, the Australian Institute of Aboriginal and Torres Strait Islander Studies, maintains protocols and collections relevant to this material.",
@@ -3972,7 +4007,8 @@
       "distortions": "The main distortion is the compilation genre itself: generic 'Australian Aboriginal legend' books flatten hundreds of separate nations, laws and languages into one undifferentiated corpus, stripping out which people a story belongs to and what restrictions might apply to it. Retellings then compound this by treating a cannibal-giant figure as free-floating monster-of-the-week material, ignoring that such figures typically function as place-specific warnings tied to particular country and particular children's education, not interchangeable horror-story furniture.",
       "take": "Do not build a detailed portrait of Murkupang specifically; the owning community cannot be identified from available sources, so proper attribution and any check on restricted content are both impossible, and that gap cuts against free use, not for it. The bare cross-cultural motif of a child-eating giant used as a cautionary figure is a worldwide pattern usable in unattributed, generic form, but the specific name Murkupang and any claim that your version represents an actual Aboriginal tradition should be left alone until the source community is identified and can be asked. If you hold this tradition and this framing is wrong, it should be corrected on request from the relevant community.",
       "cite": "Go through AIATSIS (aiatsis.gov.au) and its 2020 Code of Ethics for Aboriginal and Torres Strait Islander Research; prefer community-controlled and language-centre publications over any twentieth-century general 'Aboriginal legends' compilation, which is not a reliable attribution source here."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "thardid-jimbo",
@@ -4006,8 +4042,6 @@
       "20th-c. legend compilations: unreliable, see disputed",
       "AIATSIS protocols for Indigenous knowledge"
     ],
-    "image": "/images/giants/thardid-jimbo.jpg",
-    "imageAlt": "A gaunt towering figure stalking through red desert scrub at dusk, dust rising around its legs and dead trees on the horizon",
     "sections": {
       "story": "The narrative recorded under this name describes a large man-eating being who takes a woman, in some tellings a woman already married, and is eventually killed, in several versions after his intended prey or her kin outwit him.\n\nAs with Murkupang, the material reaches general reference through twentieth-century compilations that did not adequately identify the community it came from, and we are not able to attribute it with confidence.\n\nThere is a general point worth making here rather than repeating it entry by entry.\n\nAustralian Aboriginal cultures are the oldest continuous cultures on earth, with traditions that in documented cases, Budj Bim in this same codex, preserve accurate memory of events tens of thousands of years old. They are not a source of generic monster stories. Treating them as raw material for a curiosity catalogue, which is exactly what much of the twentieth-century publishing did, is both inaccurate and disrespectful.\n\nThe cannibal-giant figures are real traditions with real functions: marking dangerous country, instructing children, encoding law. Detached from the people, the place and the language, almost all of that is lost, and what remains is a monster with a name.\n\nWe are keeping short entries for these rather than removing them, so that the shape of the problem stays visible instead of being tidied away. Fuller and better-sourced treatment would require working with the relevant communities, which is a real undertaking and not one we can shortcut.",
       "origins": "Australian Aboriginal oral tradition; specific community not reliably identified in available sources.\n\nThe name appears in mid-twentieth-century compilations of Australian Aboriginal legend, with the attribution and consent problems described above.\n\nCommunity-controlled sources and language centres are the appropriate authority.\n\nAIATSIS holds relevant collections and maintains protocols governing use of Indigenous knowledge.",
@@ -4026,7 +4060,8 @@
       "distortions": "Twentieth-century \"legend compilation\" publishing, exemplified by the Ramsay Smith volume this figure traces to, stripped cannibal-giant narratives of their community, language and function (marking dangerous country, instructing children, encoding law) and repackaged them as generic monster-catalogue entries, which is the primary distortion here rather than any single retelling detail. A secondary distortion is treating the resulting flattened fragment as equivalent in status to well-documented public-domain myth, when it is instead an artifact of an extraction process with real ethical costs.",
       "take": "Do not retell this figure's narrative details (the abduction, the killing, the specific plot beats) as free creative material; the chain of custody back to source community is broken, the main published version comes from a source with a documented pattern of uncredited reworking, and general publication of Aboriginal knowledge without community authority has caused real harm. If the topic is wanted at all, write about the documented problem itself, how mid-century compilations detached these stories from their communities, rather than reconstructing or embellishing the tale. Any fuller or corrected treatment should be pursued by working directly with Ngarrindjeri community authorities or other communities that may claim the tradition, not by drawing further on Ramsay Smith or its derivatives.",
       "cite": "Do not cite W. Ramsay Smith (1932) as an authoritative source; note its provenance problems if referenced at all. For proper protocol and any future direct engagement, consult AIATSIS (Australian Institute of Aboriginal and Torres Strait Islander Studies) and, if Ngarrindjeri attribution is confirmed, the relevant Ngarrindjeri community and language authorities."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "chinny-kinik",
@@ -4079,7 +4114,8 @@
       "distortions": "The record itself is the distortion: the story survives mainly through the naturalist Tom Bellchambers, writing in 1921 and 1923, and later legend lists that recycle his account as a generic cannibal giant with the name possibly misheard and the owning community stripped out. Repeating that version does not retell an Aboriginal story; it retells a settler paraphrase of one.",
       "take": "The bare motif of a man-eating giant tracked to a cave and sealed in by fire and cunning is a worldwide folktale pattern and free to use as such, unattributed. The name Chinny-kinik, the Murray River siting, and any framing of your version as an Aboriginal story should be left alone, because the community that owns them is unidentified and cannot consent, and whether specific restrictions apply is unknowable until they are found and asked. Not knowing is the finding here, and it cuts against use, not for it.",
       "cite": "Go through AIATSIS (aiatsis.gov.au) and its 2020 Code of Ethics for Aboriginal and Torres Strait Islander Research, and prefer community-controlled publications from the Murray River region over any legend compilation."
-    }
+    },
+    "updatedAt": "2026-08-11"
   },
   {
     "id": "maero",
@@ -4135,7 +4171,8 @@
       "distortions": "The most common flattening is merging the maero with other forest beings (tipua, ponaturi, and various named local entities) into one generic \"Māori wild man/giant\" category, when the entry itself notes these boundaries are drawn differently by different iwi and English-language sources have habitually collapsed them. A second distortion is the cryptozoology move: reading maero accounts as evidence of a real relict hominid population, which the entry flags as an unsupported nineteenth-century error that keeps resurfacing. A third is presenting John White's or Elsdon Best's colonial-era compilations as neutral transcription rather than period-bound material shaped by settler assumptions and categories.",
       "take": "The general, well-documented pattern (a hairy, clawed, hostile forest-dwelling being, encountered alone or in small numbers, standing for the idea that the bush interior is occupied and dangerous) is usable and broadly attested across iwi, but present it explicitly as varying by iwi rather than as one fixed creature, and don't invent a canonical appearance or backstory the sources don't support. Avoid the cryptozoology framing entirely, and where colonial-era sources (White, Best) are the only route to a detail, flag them as period-bound rather than as neutral ethnography. As with other living Māori material here, iwi sources are the authority, not any single retelling.",
       "cite": "Cite John White's The Ancient History of the Maori (1887-90) and Elsdon Best's early-twentieth-century ethnographic writing with explicit period caveats, and point readers toward Te Ara: The Encyclopedia of New Zealand and contemporary iwi-published sources for current understanding."
-    }
+    },
+    "updatedAt": "2026-08-11"
   },
   {
     "id": "kahui-tipua",
@@ -4191,7 +4228,8 @@
       "distortions": "The most common flattening is treating the Kāhui Tipua as one tidy pantheon with a fixed membership and a single canonical story, when sources disagree on who belongs to the group and how the Matau/Lake Wakatipu tradition relates to it. A second distortion is importing the Budj Bim-style \"encoded geology\" reading (treating the lake-formation stories as disguised memory of actual glacial or seismic events); unlike Budj Bim there is no dating evidence for that here, and the entry itself flags it as speculation, not established fact. A third is the settler habit, visible in Beattie's own fieldwork, of erasing the individual Māori experts who supplied the knowledge, reducing named tohunga to \"one old Maori.\"",
       "take": "The broad pattern (South Island landscape explained through beings of appropriate scale, the recorded Kōpūwai/water-swallower material, the general shape of Stack's 1877 and Beattie's twentieth-century records) is publishable as documented tradition, clearly sourced and clearly marked as Ngāi Tahu and Te Tau Ihu material rather than generic \"Maori myth.\" Do not invent new episodes, do not present the geology-memory reading as settled fact, and do not smooth over the real disagreement between accounts about composition and scope. For anything beyond the published record, treat Ngāi Tahu and the relevant Te Tau Ihu iwi as the people who get to decide what more is said, the same caution used for other living-iwi material in this project.",
       "cite": "Cite James W. Stack (1877), Herries Beattie's \"Nature-lore of the Southern Maori\" (1920), and Ngāi Tahu's own published sources and Claims Settlement documentation as primary; Te Ara: The Encyclopedia of New Zealand is a reasonable general-reader starting point."
-    }
+    },
+    "updatedAt": "2026-08-11"
   },
   {
     "id": "nawao",
@@ -4246,7 +4284,8 @@
       "distortions": "The central distortion happened at the point of collection: nineteenth-century settler writers received an account of an earlier inland people, told for reasons internal to Māori history and whakapapa, and reframed it through their own category of 'monster' or 'giant race,' printing it as a fright story rather than a historical or genealogical tradition. That same colonial material was also mobilized to support a 'pre-Māori population' thesis serving land claims, a thesis later scholarship has rejected, so retellings that treat the Nawao as evidence of a displaced pre-Māori race are repeating a debunked colonial argument, not neutral folklore.",
       "take": "Do not construct a confident, detailed portrait of the Nawao's appearance, numbers, or fate; the source record is thin, colonially filtered, and varies by iwi, and filling those gaps with invented specifics would misrepresent material that isn't fully recoverable at this remove. What can be responsibly used is the general relational shape, a tradition about people already inland when other ancestors arrived, without dressing it as a monster story or citing it as evidence for the rejected pre-Māori settlement thesis; for anything more specific, defer to iwi and Māori-authored sources rather than nineteenth-century settler compilations.",
       "cite": "There is no single canonical text; consult iwi-specific and Māori-authored sources in preference to colonial-era settler compilations, and note the rejection of the pre-Māori settlement thesis in subsequent New Zealand archaeology and history scholarship."
-    }
+    },
+    "updatedAt": "2026-08-11"
   },
   {
     "id": "amazimu",
@@ -4301,7 +4340,8 @@
       "distortions": "Colonial-era ethnography rendered izimu as cannibal and tied the tales to real famine cannibalism, a reading visible in Alice Werner's 1933 Myths and Legends of the Bantu and still repeated, though it has no support. Modern horror retellings run the other way, flattening a shapeshifting antagonist who passes as human, in tales built around a child outwitting it, into a generic fixed monster.",
       "take": "The tale machinery is free to use: capture and escape by trickery, the swallowed recovered alive when the ogre is cut open, the being that seems human until a small mark betrays it, destruction by its own greed. This is public children's entertainment, not restricted knowledge, and no community protocol limiting its use is known to this catalogue. Leave two things: do not present amazimu as Zulu belief in real cannibals or as memory of a hostile people, and do not collapse the Zulu, Xhosa, Swazi and Ndebele variants into one canonical monster whose horror, rather than the child's cleverness, is the point.",
       "cite": "Credit Zulu and wider Nguni oral tradition; for depth use Harold Scheub's The Xhosa Ntsomi and his South African Voices recordings held by the University of Wisconsin-Madison libraries, and contemporary tellers such as Gcina Mhlophe, rather than Callaway's 1868 collection alone."
-    }
+    },
+    "updatedAt": "2026-08-11"
   },
   {
     "id": "giant-of-the-forest",
@@ -4357,7 +4397,8 @@
       "distortions": "The entry itself is the distortion in miniature: an English paraphrase (\"Giant of the Forest\") standing in for the dodo, a broad Hausa category of bush-dwelling ogre-spirit that covers many distinct figures across many tellings, flattened here into a single named character. Retelling it as though it were one specific, well-attested figure misrepresents both the source (unidentified) and the category (not a single being).",
       "take": "There is nothing safely specific to use yet: the entry is an honest placeholder for an unidentified figure, not a documented tradition, so publishing a confident story under this name would be inventing detail no source supports. If you want a bush-ogre figure in this vein, go to Hausa-language tatsuniyoyi collections (or Skinner's partial English translation of Edgar) and build from an actual named dodo story with attribution, rather than filling in this placeholder from imagination.",
       "cite": "Consult Frank Edgar's Litafi na Tatsuniyoyi na Hausa (1911-13) and Neil Skinner's partial English translation, Hausa Tales and Traditions, and prefer more recent Hausa-language scholarship over either, given Edgar's collection was made under colonial administration."
-    }
+    },
+    "updatedAt": "2026-08-11"
   },
   {
     "id": "stallo",
@@ -4531,7 +4572,8 @@
       "distortions": "The most common flattening is merging Stallo with generic Scandinavian trolls or with the Sámi's own separate giant tradition, when Johan Turi explicitly distinguishes them: the giants did not hate mankind the way the stallos did, and Stállu is specifically the hostile outsider figure. Retellings also tend to present the stállotomter stone-wall sites and the outsider-memory theory of the legend as settled fact, when both are live, actively contested scholarly arguments (Wepsäläinen vs. Holm on the sites; Friis/Kjellström vs. Heide on whether the tales encode memory of Norse settlers or tax collectors), and popular sources circulate the Fjellner 'sun-descent' material as authentic oral tradition when it is a nineteenth-century literary epic whose fidelity to oral tradition was challenged by Wiklund as early as 1906.",
       "take": "The trickster-outwits-the-giant story pattern (the sieve, the swapped sleeping places, the stone-filled bag, the reindeer-track deception) is well-documented folklore and reasonably usable, but a writer should credit it as Sámi rather than generic 'Nordic' material, keep Stallo distinct from both trolls and the separate Sámi giants per Turi's own distinction, and avoid presenting contested scholarly questions (the stállotomter's origin, the name's etymology, whether the tales encode real historical outsiders) as settled. Given that much of the written record was produced by missionaries actively working to suppress Sámi religion, prefer Turi's own book and modern Sámi-sourced retellings over older missionary or colonial-era compilations where possible, and do not import the debunked Fjellner sun-descent material as if it were traditional belief.",
       "cite": "Cite Johan Turi, Muitalus sámiid birra (1910), as the essential inside source, J.K. Qvigstad's Lappiske eventyr og sagn (1927-29) as the major external compilation, and Eldar Heide's 2019 Arv article on the Wild Host and Stállu etymology alongside Olof Holm's 2016 Fornvännen piece for the live archaeological and etymological debates."
-    }
+    },
+    "updatedAt": "2026-08-11"
   },
   {
     "id": "ojancanu",
@@ -4543,7 +4585,7 @@
     "culture": "Cantabrian",
     "region": "Iberia",
     "type": "folklore",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Giant",
     "shortDescription": "One-eyed Cantabrian giant of the forest: enemy of the good anjana.",
     "fullDescription": "The ojáncanu is a roughly ten-foot, one-eyed giant of Cantabrian mythology: red-bearded, forest-dwelling, destructive to livestock and people, often given extra fingers as a mark of excess. His female counterpart, the ojáncana, is sometimes fiercer still.",
@@ -4587,7 +4629,8 @@
       "distortions": "The most common flattening reads the ojáncanu as a straight Cyclops knockoff because of the single eye, when the Cantabrian figure has its own inventory (extra digits, the ojáncana's slung breasts, the white-hair death rule) that a lazy Polyphemus comparison erases. Retellings also tend to smooth over how late and literary the record is, presenting Llano's early twentieth-century prose as if it were unmediated ancient oral tradition, and dropping the anjanas entirely even though the destroyer/mender pairing is the actual structure of the tradition.",
       "take": "The ojáncanu, the ojáncana and the anjanas are all freely usable as regional folklore; nothing here is sacred or restricted, and the material has already been popularised in Cantabrian tourism and children's literature. Keep the pairing with the anjanas rather than lifting the ojáncanu alone, since the destroy/mend structure is the point of the tradition, and be honest that the figure as printed is a collaboration between village tradition and early twentieth-century folklorists rather than a fixed ancient text. Resist asserting a direct Polyphemus lineage as fact; treat the one-eye resemblance as an open comparative question, since the same motif recurs independently as far away as Tiwi tradition.",
       "cite": "Credit Manuel Llano's Cantabrian writings and the broader 19th-20th century regional folklore collections as the source of the printed figure; for the comparative one-eye motif, note Homer's Odyssey IX as the reference point rather than a proven origin."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "rubezahl",
@@ -4601,7 +4644,7 @@
     "culture": "German / Silesian / Czech",
     "region": "Central Europe",
     "type": "folklore",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Shapeshifting (giant form common)",
     "shortDescription": "Mountain spirit of the Riesengebirge: trickster, giant, weather-lord.",
     "fullDescription": "Rübezahl is the weather-spirit of the Krkonoše mountains on the Czech-Polish border. He rewards the honest, punishes the arrogant, and takes violent offence at his own name.",
@@ -4697,7 +4740,8 @@
       "distortions": "Retellings routinely present the turnip-counting tale as the true and original explanation for why the giant hates his German name, when the story is Musäus's 1783 literary invention, over a century after Praetorius had already recorded the giant's dislike of the name; the anger predates the joke that explains it. A second common flattening is presenting Rübezahl, Krakonoš and Liczyrzepa as simply three names for one identical folkloric figure, when each national tradition assembled its own version in print at a different date (1662, 1824, and a translation respectively) and each carries its own regional politics.",
       "take": "The core material is freely usable and well suited to adaptation: the shape-shifting mountain lord, the moral sorting of travellers by honesty, the gold-that-turns-to-leaves trick, and the name-taboo storms. Be explicit that the turnip-counting origin story is a known literary joke from Musäus rather than folk etymology if a writer wants historical accuracy, and if drawing on more than one national tradition (German, Czech, Polish), acknowledge that they are related but not interchangeable rather than treating Krakonoš as a mere translation of Rübezahl.",
       "cite": "Cite Johannes Praetorius's Daemonologia Rubinzalii Silesii (1662-65) for the earliest substantial print collection, J.K.A. Musäus's Volksmährchen der Deutschen vol. 2 (1783) for the turnip-counting tale and its literary character, and the Czech Krkonošské pohádky tradition (from Václav Kliment Klicpera's 1824 Krakonoš) for the parallel national version."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "giant-of-kandahar",
@@ -4744,6 +4788,7 @@
       "bones-as-proof"
     ],
     "fate": "No verified fate: the claim has no primary source at all.",
+    "statusLine": "Contemporary soldiers' tale, unverified.",
     "chain": {
       "claim": "In 2002 a US special forces patrol in the mountains of Kandahar province, Afghanistan, was attacked by a giant twelve to thirteen feet tall, red-haired, with six fingers on each hand and two rows of teeth. It killed one American with a spear before the team shot it. The body was recovered, flown out of the country, and the incident was classified.",
       "verdict": "The story is carried by datable broadcasts, articles and podcasts rather than by any record of an event, and the tellings on this ladder contradict one another about where the body went, when the sighting happened and who was present, while the published casualty accounting and the replies given to journalists hold nothing matching the account.",
@@ -4854,7 +4899,8 @@
       "distortions": "The main distortion is the reverse of the usual problem: retellings tend to launder the story's total lack of sourcing by presenting it with false specificity (named-sounding witnesses, precise physical measurements, a classification claim), which manufactures the texture of a real incident report out of nothing. A second distortion is treating the physical details (red hair, six fingers, double tooth rows) as unique to this story, when they are a recognizable stock inventory lifted from nineteenth-century American giant lore and Nephilim literature, including the Lovelock Cave material.",
       "take": "This is safe and freely usable precisely because it is unsourced modern folklore with no living claimants and no identifiable originating author, treat it explicitly as a case study in how contemporary legends form, not as a reported event, and don't dress it up with invented corroborating detail (units, dates, casualty names) that would misrepresent it as documented. It's fair and useful to name its stock-trope ancestry (19th-century giant lore, Nephilim literature) and its media ecosystem (paranormal radio/YouTube from 2016 on) as the actual subject of interest. Avoid implying the Department of Defense's denial (via Snopes, 2016) constitutes an official investigation or that there was ever a FOIA process, since no such docket has been found.",
       "cite": "Cite the Snopes 2016 inquiry to the US Department of Defense as the only documented external check, and note the absence of any verifiable military record, unit, or named participant; for comparative material, cite the established corpus of 19th-century American giant lore and Nephilim literature (including the Lovelock Cave claims)."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "giant-of-kunar",
@@ -4900,6 +4946,7 @@
       "wild-highland"
     ],
     "fate": "No verified fate: the claim has no primary source at all.",
+    "statusLine": "Contemporary soldiers' tale, unverified.",
     "chain": {
       "claim": "US forces operating in the Kunar valley in Afghanistan killed a giant, took casualties doing it, recovered the body, and the evidence was classified and suppressed.",
       "verdict": "The documents that place a giant in Kunar describe something watched at a distance through a thermal sight, with no body and no classification, while the killing and the suppressed evidence attach to the Kandahar telling of the story.",
@@ -4983,7 +5030,8 @@
       "distortions": "The main distortion is genre laundering: broadcast and cable-television amplification gets mistaken for corroboration, and the total absence of a unit, date, casualty or document gets rewritten as \"classified\" rather than \"unsourced.\" The Kunar and Kandahar versions are routinely merged into one story, with specific details (red hair, six fingers, a spear, a recovered body) migrating freely between them despite reporting that keeps the two separate by province, year and teller.",
       "take": "Freely usable as exactly what it is: a documented specimen of a modern, internet-era legend still forming in real time, useful for showing how a legend accretes specificity as it spreads rather than losing it. Do not present it as a suppressed or classified true event, do not invent a unit, witness or casualty to firm it up, and flag clearly wherever you merge details from the Kandahar version rather than silently blending them. Treat the \"formative phase\" angle (a legend we can watch coalesce, unlike centuries-old folklore) as the actual interesting material.",
       "cite": "Cite the traceable circulation points directly: the L.A. Marzulli interview circa 2016, Snopes's debunking coverage, and Ziezulewicz and Simkins's reporting in Military Times (2022), which is the source that keeps the Kunar and Kandahar tellings distinguished by province, year and teller."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "paul-bunyan",
@@ -5059,7 +5107,8 @@
       "distortions": "The most common flattening is presenting Bunyan as ancient, organic American folklore of unknown age, erasing that a great deal of the now-standard material (Babe the Blue Ox especially) was invented wholesale in 1916 by an advertising copywriter for a lumber company. Retellings also tend to smooth away the rough, sometimes offensive character of the actual nineteenth-century logging-camp material in favor of a uniformly wholesome children's-book figure, which is itself a further, undocumented layer of sanitizing invention.",
       "take": "Everything here is freely usable with no restrictions: the feats, Babe, the giant-sized logging exploits, and the advertising origin story itself, which is arguably the most interesting and least-told part of the material. Be upfront that Laughead's 1916 pamphlets, not an unbroken oral tradition, are responsible for most of the specific content readers now think of as \"the\" Bunyan story, and treat the fakelore debate (Dorson versus his critics) as an open, legitimate argument rather than settling it either way. Regional origin claims (Michigan, Minnesota, Wisconsin, Maine, Quebec) are competitive tourism marketing, not scholarly consensus, and should be flagged as such if used.",
       "cite": "Credit William Laughead's Red River Lumber Company pamphlets (1916 onward) as the decisive source of the modern character, James MacGillivray's 1910 Detroit News-Tribune piece as an early print appearance, and Richard Dorson's fakelore critique for the scholarly debate over authenticity."
-    }
+    },
+    "updatedAt": "2026-09-25"
   },
   {
     "id": "surtr",
@@ -5069,7 +5118,7 @@
     "culture": "Norse",
     "region": "Scandinavia",
     "type": "primordial",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Cosmic",
     "shortDescription": "The fire giant who guarded the world's edge before it existed, and will burn it down at the end.",
     "fullDescription": "Where Ymir has an origin, Surtr has none. He is already there: a fire giant standing guard at the border of Muspellheim since before the ordered cosmos began, waiting for the day he leads the sons of Muspell against the gods and burns the nine worlds to ash.",
@@ -5138,7 +5187,8 @@
         "One begins the world, one ends it. Put the table between first and last and make them choose a direction."
       ],
       "compareSlug": "ymir"
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "ispolini",
@@ -5148,7 +5198,7 @@
     "culture": "Bulgarian",
     "region": "Bulgaria",
     "type": "race",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "up to 3 metres",
     "shortDescription": "Bulgaria's giants were God's second attempt at people. We are the third.",
     "fullDescription": "God made three attempts at people, and the dwarves were too small to survive. The ispolini were the correction.",
@@ -5190,7 +5240,8 @@
       "distortions": "Retellings tend to present the dwarves-then-ispolini-then-humans sequence as a fixed, tidy cosmological ladder, when regional tellings actually disagree on basic physical details (three heads versus one central eye versus one leg) and the pattern is closer to a loose family of local variants than one canonical account. A second distortion is treating the etymology (giants named after real historical peoples like the Spali, Greeks, Jews, Latins) as settled, when the Spali derivation is Vasmer's proposal against real competing objections (notably Meillet's), not an agreed fact.",
       "take": "The folklore itself is freely usable: the three-creation sequence, the raw-meat mountain-dwelling giants, the dragon fights, the mountaintop-to-mountaintop shouting, and especially the blackberry vulnerability and the giants propitiating the bramble with offerings, that last detail is distinctive and worth keeping intact rather than genericizing into a generic weakness. Be careful not to present the etymology as resolved; state it as Vasmer's derivation from the Spali against Meillet's Romance-intermediary counterargument, since this is a live philological dispute, and note the folklore's own habit of naming giants after neighboring peoples (Greeks, Jews, Latins) as itself a documented, slightly uncomfortable pattern worth flagging rather than reproducing uncritically.",
       "cite": "Cite Стойнев et al., Българска митология: Енциклопедичен речник (2006) for the folklore synthesis, Атанас Илиев's 1890 Сборник за народни умотворения collection for the primary material, and Max Vasmer's Этимологический словарь русского языка for the etymological debate."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "gargantua",
@@ -5334,7 +5385,8 @@
       "distortions": "The commonest mangling is assuming Rabelais invented Gargantua outright, when the folk figure predates him and left more than four hundred catalogued place-names (quoits, chairs, bowls) across rural France; conversely, some folkloric retellings ignore Rabelais entirely and treat only the oral giant as authentic, when both strands are real and intertwined. A second distortion is treating the Church's rebranding of Gargantua's landscape features as \"the devil's\" as evidence of an ancient demonic tradition, when it was a documented later act of religious relabeling of pre-existing folk sites.",
       "take": "Everything here is freely usable: the literary Rabelais texts, the 1532 anonymous chapbook, and the folk place-name tradition of quoits, distaffs, chairs and bowls scattered across France. Keep the two strands distinguishable if precision matters (the oral/toponymic Gargantua who predates and outlived Rabelais versus the authored 1532-34 literary character), and treat the Celtic-god (\"Gargan\") etymology as speculative rather than established, since it lacks archaeological support and at least one supporting popular etymology (Tombelaine) has been shown to be wrong.",
       "cite": "Cite Paul Sébillot's Gargantua dans les traditions populaires (1883), Henri Gaidoz's 1868 essay on the name's etymology, Henri Dontenville and Guy-Édouard Pillard's Le Vrai Gargantua (1987) for the folk tradition, and Rabelais's own Gargantua (1534) alongside the anonymous 1532 chapbook for the literary strand."
-    }
+    },
+    "updatedAt": "2026-09-25"
   },
   {
     "id": "mouros",
@@ -5350,7 +5402,7 @@
     "culture": "Galician, Asturian, Portuguese",
     "region": "Northwest Iberia",
     "type": "race",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "varies; sometimes giants, sometimes not",
     "shortDescription": "Builders of the megaliths of north-west Iberia: unbaptised people of the earth whose name may mean the dead.",
     "fullDescription": "They raised the standing stones in a single night, and their name may mean the dead.",
@@ -5394,7 +5446,8 @@
       "distortions": "The most common mangling in modern retellings is conflating mouros with actual historical Moors (North African Muslims), which the tradition itself invites via the name but which the philology (a proposed Celtic *mrvos*, 'dead,' rather than *moro*) argues runs backwards, with the Muslim-conquest association layered on later. A second distortion is treating the mouros as a single fixed race of giants, when the sources themselves disagree on scale, some accounts make them enormous, others ordinary-sized people living underground, so imposing uniform giant stature overstates what the folklore actually agrees on.",
       "take": "The recorded material is freely usable: mouros as an underground pre-Christian people credited with megaliths, tumuli and ruins, the mouras encantadas guarding enchanted treasure and shapeshifting into serpents, and the broken-bargain-brings-ruin motif. Keep the size question open rather than flattening it to 'giants' throughout, since the sources themselves waver between giant and ordinary-human-scale depictions, and don't casually equate mouros with historical Moors in your own narration even though characters within a story might make that folk conflation. This is heritage material, not sacred or restricted, so there's no custodial permission issue to navigate.",
       "cite": "Credit José Leite de Vasconcelos (Tradições populares de Portugal, 1882 onward) and Aurelio de Llano Roza de Ampudia (Del folklore asturiano, 1922) as the foundational collectors, and Isidoro Millán González-Pardo for the Celtic etymology proposal."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "dragonja",
@@ -5407,7 +5460,7 @@
     "culture": "Croatian",
     "region": "Istria",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "unmeasured",
     "shortDescription": "Istrian giant who ploughed the Mirna into being; his kind built the hill towns.",
     "fullDescription": "He dragged a plough from the mountains to the sea. Water followed the furrow, and he named it Mirna.",
@@ -5450,7 +5503,8 @@
       "distortions": "The biggest hazard is confusing Dragonja with Veli Jože, the far more famous Istrian giant, who is not folk tradition at all but a 1908 authored novel by Vladimir Nazor; tourist copy routinely presents Veli Jože as ancient folklore, and a writer could easily import his beats into Dragonja's entry by mistake. A second distortion is smoothing the giants' hilltop-building into a single unified myth-cycle, when the record is local place-legend attached town by town rather than one coherent narrative.",
       "take": "The landscape material is freely usable: Dragonja cutting the furrow that becomes the river, the giants building the hill towns and passing stone between hilltops, Hum built from the leftover stone, the rest at Kotli, and the son Gorazd said to still watch from the highlands. Keep Veli Jože entirely out of this entry since he belongs to a different, dated, attributable twentieth-century author, and don't backdate him into the oral record. The De Franceschi/Bošković-Stulli chain is thin compared to song-collecting from the same region, so avoid overstating how much prose documentation actually exists.",
       "cite": "Credit Maja Bošković-Stulli's Istarske narodne priče (Zagreb, 1959) and Carlo De Franceschi's nineteenth-century recording of Motovun-district giant traditions; credit Vladimir Nazor by name and date (1908) if Veli Jože is discussed at all, to keep the literary figure clearly separated from the oral one."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "daidarabotchi",
@@ -5466,7 +5520,7 @@
     "culture": "Japanese",
     "region": "Kantō and Chūbu",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "unmeasured",
     "shortDescription": "Japanese landscape giant: Fuji is his spoil heap, Lake Biwa the hole it came from.",
     "fullDescription": "Mount Fuji is the soil he dug out of one province. Lake Biwa is the hole he left in another.",
@@ -5508,7 +5562,8 @@
       "distortions": "The common manglings are recasting a benevolent land-maker as a rampaging kaiju, and importing the Ghibli Night-Walker's powers over life and death, which belong to the film and not the folklore. A subtler one is flattening dozens of separate regional legends, first assembled by Yanagita in 1927, into a single canonical giant with one fixed biography.",
       "take": "The land-shaping deeds are free: building Fuji, digging Lake Biwa, footprint lakes, shell mounds, weighing mountains, and the whole spread of regional name variants. Leave two things: do not name the eighth-century fudoki giants Daidarabotchi, because those texts call them only ohito and the name is centuries later, and do not present the tatara iron-smelting etymology as settled fact, because it is one proposal among several. Keep his temper; the benevolence is the distinctive feature, and a hostile Daidarabotchi is a different giant wearing his name.",
       "cite": "Credit Yanagita Kunio's 1927 collection of the footprint legends; for an English-language reference, Matthew Meyer's illustrated yokai database at yokai.com."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "baqbaq-devi",
@@ -5522,7 +5577,7 @@
     "culture": "Georgian",
     "region": "Caucasus",
     "type": "race",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "unmeasured",
     "shortDescription": "Many-headed giants of the Georgian mountains: their strongest was outriddled, not outfought.",
     "fullDescription": "Cut off a devi's head and another grows. So the hero did not bring a sword. He brought a riddle.",
@@ -5564,7 +5619,8 @@
       "distortions": "Retellings flatten the devi into dumb ogres who die by the sword, which erases the actual mechanic of the tradition, that severed heads regrow and heroes must win by wit or a strike to the heart. The other common mangle, inherited from the Prometheus parallel, is presenting Amirani as a Georgian copy of a Greek original, when the direction of borrowing is an open scholarly question.",
       "take": "The regrowing heads, the riddle contest, the families of seven or nine brothers in mountain castles, and the earthquake explanation are all free; this is published folk literature, in English since Wardrop in 1894. Treat the chained Amirani complex with more care, because it functions as Georgia's national epic, so name it as Georgian rather than folding it into Greek myth. The Devi Lake rain rite is a reported village practice tied to real places; use the motif if you like, but do not attach it to invented Georgian geography as if it were documentation.",
       "cite": "Start with Marjory Wardrop, Georgian Folk Tales, London, David Nutt, 1894, which is in the public domain and freely readable at the Internet Archive; for the Amirani scholarship the reference collection is Mikheil Chikovani's corpus of recorded variants."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "gigantes",
@@ -5578,7 +5634,7 @@
     "culture": "Greek",
     "region": "Greece",
     "type": "race",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "disputed; possibly human-sized",
     "shortDescription": "Earth-born Greek race defeated by the Olympians: man-sized in the earliest art, snake-legged only later.",
     "fullDescription": "The Greek giants may not have been giants. In the earliest art they are painted as ordinary armed men.",
@@ -5648,7 +5704,8 @@
       "distortions": "The most common mangling is retrojecting the familiar snake-legged, mountain-sized image back onto the earliest material: archaic and classical sources and art show them as human-scaled hoplites, and the serpent legs only appear in art after roughly 380 BCE. A second is treating Gigantes and Titans as interchangeable, which later antiquity already did but Hesiod's texts keep them as separate generations, and treating the Gigantomachy as an original, unified war-story rather than a later assembly built up from Homer's very different \"savage western race\" and Hesiod's bare birth notice.",
       "take": "Take anything: the birth from Ouranos's blood, the individual death-stories (Alcyoneus dragged over his own border, Porphyrion undone by lust for Hera, Ephialtes blinded by twin arrows), the volcano-burial etiology, the whole Gigantomachy as assembled by Apollodorus. Be deliberate about which visual tradition you're using, since hoplite Gigantes and serpent-legged Gigantes are different images with different eras behind them, and don't silently harmonize Homer's version with the later war-narrative, the discontinuity is real and worth keeping visible rather than smoothing over.",
       "cite": "Credit Hesiod's Theogony (line 185) for the birth, Apollodorus's Bibliotheca 1.6 for the fullest connected narrative, and the Pergamon Altar frieze (2nd century BCE, Berlin) for the classic visual Gigantomachy, all long public domain."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "patagonian-giants",
@@ -5688,8 +5745,6 @@
       "Louis de Bougainville, 1771",
       "the official account of the Byron voyage, 1773"
     ],
-    "image": "/images/giants/patagonian-giants.jpg",
-    "imageAlt": "The Patagonian Giants, european accounts of the tehuelche and selk'nam tradition",
     "motifs": [
       "pre-people"
     ],
@@ -5775,7 +5830,8 @@
       "distortions": "The commonest distortion is treating this as a straightforward \"giant race\" fantasy entry like Cyclopes or Fomorians, which erases that real, named, living-descended peoples are the actual subject and effaces the violence involved (measurement-as-spectacle, abduction, death in custody). A second distortion is repeating the exaggerated heights (twelve or fifteen feet) as if they were sincerely-held ancient belief rather than a three-century inflation that collapsed the moment Europeans of the era, themselves shorter on average, actually measured people carefully.",
       "take": "The documented European textual history is freely usable and well worth telling accurately: Pigafetta's 1520s account, the inflation through Drake's-nephew and eighteenth-century voyage narratives, and the collapse via Bougainville's and Byron's more careful measurements. Do not write the Tehuelche or Selk'nam themselves as fantasy giants, and do not stage the Magellan abduction or any encounter scene as adventure color; center the story explicitly as a European perception problem and name the real peoples, since flattening them into interchangeable \"giant natives\" repeats the original colonial error rather than critiquing it. If the piece touches the abduction, treat the deaths of the two Patagonian men taken aboard with the same weight a true account of a death in custody deserves, not as an incidental detail.",
       "cite": "Cite Antonio Pigafetta's account of the Magellan voyage (via the Ramusio 1550 or Amoretti 1800 editions), The World Encompassed (1628), Bougainville's Voyage autour du monde (1771) and the official Byron voyage account (1773) for the European record; for the Tehuelche and Selk'nam themselves, defer to contemporary ethnographic and community sources on those peoples rather than the voyage literature."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "katallani",
@@ -5802,7 +5858,7 @@
     "culture": "Albanian",
     "region": "Albania",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "unmeasured",
     "shortDescription": "One-eyed Albanian man-eater with no knees: he cannot bend his legs to chase you.",
     "fullDescription": "One eye, and no knees. He ate people, but he could not bend his legs to chase them.",
@@ -5846,7 +5902,8 @@
       "distortions": "The most common flattening is reading the Katallani as simply a borrowed or garbled Polyphemus, when the actual scholarly question (independent Balkan/Illyrian origin versus Homeric borrowing versus older shared inheritance) is genuinely unsettled and worth preserving rather than resolving by fiat. A second distortion is losing the kneeless-leg detail, the single most distinctive feature that separates this figure from every other Balkan cyclops, in favor of a generic one-eyed giant. A third is treating the sprawling family of Albanian names (Symadh, Syqorr, Syqen, Vigan, Div/Dif, etc.) as synonyms for one fixed figure rather than as a genuinely plural naming tradition.",
       "take": "This is freely usable folklore material: the kneeless cyclops, the man-eating theme, the toponymic traces at Shllak, and the wider Div/Dif terminology are all documented and safe to adapt. Preserve the genuine scholarly uncertainty about the figure's relationship to Polyphemus rather than flattening it into either \"it's just Homer\" or \"it's wholly independent\"; both are live positions in the literature. Treat Gjeçovi's early-twentieth-century identification with Polyphemus as one influential interpretation, not settled fact.",
       "cite": "Cite Gjon Buzuku's Meshari (1555) for the earliest gjigantë reference, Shtjefën Gjeçovi's early-twentieth-century highland fieldwork, Eqrem Çabej's Diana dhe Zana (1942) and Disa figura të besimeve popullore shqiptare (1972), and Azem Qazimi's Fjalor i mitologjisë dhe demonologjisë shqiptare for the modern summary."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "waligora-wyrwidab",
@@ -5860,7 +5917,7 @@
     "culture": "Polish",
     "region": "Poland",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "unmeasured",
     "shortDescription": "Twin strongmen raised by a wolf and a bear: Polish dragon-slayers who ruled the kingdom they saved.",
     "fullDescription": "Almost every giant in this catalogue is something to be survived. These two are the heroes.",
@@ -5902,7 +5959,8 @@
       "distortions": "The commonest flattening treats the pair as a fixed local etiology (a podanie) pinned to Kraków and the Wawel dragon, when Krzyżanowski's tale-type catalogue (ATU 300B) classifies them as a travelling baśń that different collectors and regions attach to different settings; Gliński's Wawel/Kraków version is one localization, not the tale's origin point. A second distortion is over-reading the Romulus-and-Remus resemblance (animal-suckled twin founders) as proven inheritance or borrowing, when the sources only note the parallel without being able to settle its cause.",
       "take": "This is freely usable public-domain literary folklore: the wolf- and bear-raised twins, the mountain-shouldering and oak-uprooting feats, the dragon-slaying partnership, and the divided kingdom are all fair game for retelling and expansion. Be explicit about which version you're using, since Wójcicki's 1837 text and Gliński's 1853 text differ (only Gliński ties the dragon to Kraków's Wawel and the Panieńskie Rocks), and avoid asserting a direct genetic link to the Romulus and Remus myth as fact rather than as a noted resemblance. Treat it as a baśń that travels rather than a podanie fixed to one place, unless you are specifically retelling the Gliński/Kraków localization.",
       "cite": "Credit Kazimierz Władysław Wójcicki, Klechdy, starożytne podania i powieści ludu polskiego i Rusi (Warsaw, 1837) and Antoni Józef Gliński, Bajarz polski (Wilno, 1853) as the two primary printed versions, and Julian Krzyżanowski's Polska bajka ludowa w układzie systematycznym (tale type T 300B) for its classification."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "milzinai",
@@ -5914,7 +5972,7 @@
     "culture": "Lithuanian",
     "region": "Lithuania",
     "type": "race",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "unmeasured",
     "shortDescription": "Lithuanian giant race: ancestors in local legend, monsters in fairy tale, their graves on the map.",
     "fullDescription": "In local legend they are the ancestors and they are respected. In fairy tales the same beings are monsters to be beaten. The difference is not the region. It is which kind of story is being told.",
@@ -5957,7 +6015,8 @@
       "distortions": "The most common flattening is collapsing the genre split the folklorists themselves insist on: treating the milžinai uniformly as either noble ancestors or monstrous adversaries, when Lithuanian tradition keeps these as two distinct registers (padavimai local-legend ancestors vs. pasakos fairy-tale antagonists) that do different work. A second distortion is over-reading the barrow graves (milžinkapiai) as literal evidence of a giant race rather than folklore attached after the fact to real Bronze Age burial mounds, and a third is importing Greimas's structuralist 'lost mythology' as settled fact rather than one contested interpretive framework among several.",
       "take": "The recorded motifs are free to use: giants as respected ancestors in place-legends, as tricked or defeated adversaries in fairy tales, the giant-graves at named sites like Medvėgalis, and the genre-slot flexibility where a giant can be swapped for a witch, the devil, or trouble itself. Keep the genre distinction visible in your own telling rather than smoothing it away, and don't present the mound-builder folklore as history, the same mounds get attributed to Swedes or Napoleon in other tellings, which is itself good material. If you lean on a 'lost pre-Christian mythology' reading, flag it as Greimas's interpretation, which Lithuanian folklorists like Vėlius and Žygaitė have pushed back on.",
       "cite": "Credit Bronislava Kerbelytė's Milžinai lietuvių padavimuose ir pasakose (Vytautas Magnus University, Kaunas, 2019) for the primary text collection, and Algirdas Julien Greimas's Of Gods and Men (Indiana University Press, 1992) for the interpretive framework, noting it is contested by Norbertas Vėlius and later reviewers."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "troll-iceland",
@@ -5973,7 +6032,7 @@
     "culture": "Icelandic",
     "region": "Iceland",
     "type": "folklore",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "unmeasured",
     "shortDescription": "Icelandic category of giant beings: caught out at sunrise they become the rocks of the landscape.",
     "fullDescription": "Half the strange rocks in Iceland are trolls who misjudged the sunrise.",
@@ -6017,7 +6076,8 @@
       "distortions": "Global pop culture, especially post-Tolkien fantasy and platforms like the Trolls franchise, imports a fixed \"troll\" species with stable traits, when Icelandic tröll is better understood as a broad, overlapping superlative term for large ill-disposed beings that sits alongside jötnar, risar and þursar, and scholars actively disagree about whether these were ever meant as distinct kinds. A second distortion is treating the sunlight-petrification rule and the specific named landscape sites (Drangey, Jóruklettur, Kerlingarfjöll) as generic fantasy tropes divorced from place, when the entire tradition's structure is that it is anchored to real, nameable Icelandic locations.",
       "take": "The landscape material is freely usable and is arguably the most distinctive asset here: the sunrise-petrification rule, and the named sites, Rauðhólar's Tröllabörn, Drangey as a petrified troll-cow, Jóruklettur and the Giantess's Leap, the kerling rock formations. Feel free to note trolls are not always villainous, some legends give them kindness or loyalty, rather than defaulting to pure-menace framing. Avoid asserting a single fixed taxonomy of tröll versus jötunn versus risi versus þurs as settled fact; that is a live, unresolved scholarly argument (Motz versus Jakobsson versus Schulz versus Grant), and avoid presenting Jón Árnason's nineteenth-century printed collection as an unmediated transcript, since the relationship between collectors' manuscripts and the published text is still under active study.",
       "cite": "Cite Jón Árnason, Íslenzkar þjóðsögur og æfintýri (1862-64, with Guðbrandur Vigfússon), as the foundational printed collection, and Sagnagrunnur (Terry Gunnell, Árni Magnússon Institute) for the mapped legend-and-landscape database; for the scholarly debate on troll taxonomy, Ármann Jakobsson's Saga-Book 32 (2008) article and The Troll Inside You (2017)."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "kalev-kalevipoeg",
@@ -6035,7 +6095,7 @@
     "culture": "Estonian, Finnish, Karelian",
     "region": "Baltic and Finnic lands",
     "type": "race",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "unmeasured",
     "shortDescription": "Finnic giant ancestor and his stone-throwing sons, across Estonia, Finland and Karelia.",
     "fullDescription": "In Estonian, the word kalev simply means giant. His wife's tears became the lakes.",
@@ -6079,7 +6139,8 @@
       "distortions": "The commonest mangling is treating Kreutzwald's Kalevipoeg (1857-1861) as a straight transcription of ancient oral epic, when it is a nineteenth-century literary composition built from genuine runic song but shaped, connected and completed with a national-awakening agenda, on the explicit model of Lönnrot's Kalevala. A second distortion is collapsing the Finnish Kalevanpoika, the Estonian Kalevipoeg and the Karelian material into one figure with one biography, when they are related but distinct regional traditions linked mainly by the shared name. A third is the tombstone-at-Untamala problem in miniature: taking a folk explanation (a giant's whetstone) as literal history rather than recognizing the pattern of communities assigning outsized objects to giants.",
       "take": "The pre-nineteenth-century attestations (Agricola's 1551 list, Stahl's 1641 Kalliweh, the Widsith reference) and the general shape of the stone-throwing giant motif are free to use as folklore. Kreutzwald's Kalevipoeg itself is public domain and freely adaptable as a work of literature, but it should be credited as such, a compiled national epic, not presented as pristine ancient myth; if a piece needs the pre-Kreutzwald layer specifically, that requires going to the Jakob Hurt/Eisen archive material rather than the epic. Keep the Finnish and Estonian strands distinguished rather than merging them into a single pan-Finnic giant.",
       "cite": "Credit Friedrich Reinhold Kreutzwald's Kalevipoeg (1857-1861) as a compiled national epic, Mikael Agricola's 1551 Psalter preface for the earliest attestation, and the Estonian Folklore Archives (Tartu, built on Jakob Hurt and Matthias Johann Eisen's collections) for the underlying oral material; Mikko Heikkilä's onomastic work (SKY Journal of Linguistics 25, 2012) is the relevant modern scholarship on the Finnish side."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "suur-toll",
@@ -6095,7 +6156,7 @@
     "culture": "Estonian",
     "region": "Saaremaa",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "unmeasured",
     "shortDescription": "Giant king of Saaremaa who farmed his own land and threw stones at the Devil.",
     "fullDescription": "He was king of the island. He lived as a farmer.",
@@ -6136,7 +6197,8 @@
       "distortions": "The most common flattening is treating Peeter Süda's 1883 literary arrangement, and its descendants like Rein Raamat's 1982 animated film, as if it were the folk tradition itself, when it is one author's continuous narrative stitched from separate legends and modelled on Kalevipoeg. A second distortion is presenting Tõll, Kalevipoeg and Vanapagan as cleanly separate figures with fixed distinct stories, when Estonian scholarship itself documents that motifs migrated between the three giant-hero cycles and the categories blur in the source legends.",
       "take": "The core material is freely usable: the farmer-king who lives on his land rather than ruling from a hall, the wife Piret, the running feud with Vanatühi/the Devil, and the stone-throwing. Feel free to draw on Süda's continuous narrative shape as a storytelling model, but be transparent that it is a nineteenth-century literary synthesis rather than a single ancient tale, and avoid asserting that Tõll preserves the memory of a real historical ruler of Saaremaa, since that rests on the name alone and is not demonstrated.",
       "cite": "Credit the Estonian Folklore Archives (Estonian Literary Museum, Tartu) and the standard scholarly edition, Muistendid Suurest Tõllust ja teistest, ed. Eduard Laugaste, Ellen Liiv and Erna Normann (Tallinn, 1963), alongside Peeter Süda's 1883 Väikene vana varanduse vakk ehk Saaremaa vägimees Suur-Tõll as the source of the popular continuous narrative."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "fomorians",
@@ -6224,7 +6286,8 @@
       "distortions": "Popular retellings tend to flatten the Fomorians into generic \"evil giants/monsters\" opposing the heroic Tuatha Dé Danann, losing the more interesting detail that they are remembered as suppressing education (forbidding scholars, bards, and druids to teach) rather than as simple destroyers. A second distortion is treating Lebor Gabála Érenn as a straightforward record of pagan belief, when it is an eleventh-century Christian pseudo-history deliberately built to give Ireland a biblical-style origin narrative, so its internal contradictions about who the Fomorians were are evidence of its compiled, constructed nature rather than errors to smooth over.",
       "take": "The narrative material is freely usable public-domain myth: the Fomorians as an adversary sea/earth race, their tribute-taking and suppression of learning, Balor's daughter Ethne, Cían, and Lugh's overthrow and killing of his own grandfather Balor. Keep the sourcing honest about layering, the oldest strand casts them as chthonic/undersea beings, later texts recast them as sea-raiders and giants, still later as generic pirates, and don't present one version as the \"original.\" Treat Lebor Gabála Érenn's internal disagreements as a genuine textual seam rather than resolving them into a single clean genealogy.",
       "cite": "Cite Cath Maige Tuired (ed. Elizabeth A. Gray, Irish Texts Society, 1982; also Whitley Stokes's 1891 edition) and Lebor Gabála Érenn (ed. R. A. S. Macalister, Irish Texts Society, 1932-1942) as the primary texts, noting Lebor Gabála's status as a compiled pseudo-history rather than a direct pagan source."
-    }
+    },
+    "updatedAt": "2026-09-01"
   },
   {
     "id": "bendigeidfran",
@@ -6238,7 +6301,7 @@
     "culture": "Welsh",
     "region": "Wales and Britain",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "unmeasured",
     "shortDescription": "Welsh giant king of Britain: his severed head was buried in London to guard against invasion.",
     "fullDescription": "His head is buried under London, facing France, still on duty.",
@@ -6278,7 +6341,8 @@
       "distortions": "Retellings routinely present the Tower of London ravens as his ancient legacy, though no ravens are recorded at the Tower before the late nineteenth century, and routinely state as fact that he was a Celtic raven god, an idea resting on early twentieth-century reconstructions now read as speculation. Both habits come from Victorian and Edwardian mythography layered over the medieval text.",
       "take": "The whole tale is free: the giant king, the ruinous Irish war, the talking severed head, its burial at White Hill facing France, even Arthur digging it up, which the Welsh Triads supply. What to leave is the false framing, so do not pass off the Tower ravens as medieval or the god theory as settled, and do not dissolve the tale into a generic Celtic setting, because it is specifically Welsh and its place names and personal names carry that identity. Get the Welsh names right or use the anglicised Bran the Blessed consistently.",
       "cite": "Sioned Davies's translation of the Mabinogion (Oxford World's Classics, 2007) for the tale, and Rachel Bromwich's Trioedd Ynys Prydein for the Triads material."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "ysbaddaden",
@@ -6292,7 +6356,7 @@
     "culture": "Welsh",
     "region": "Wales",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "unmeasured",
     "shortDescription": "Welsh chief giant of Culhwch and Olwen: his eyelids had to be propped up with forks.",
     "fullDescription": "His eyelids were too heavy to lift on their own. Servants held them open with forks.",
@@ -6331,7 +6395,8 @@
       "distortions": "The most common flattening folds Culhwch and Olwen into generic \"Arthurian legend\" as though it were of a piece with later French romance, obscuring that it is a much earlier, stranger, and distinctly Welsh text with its own narrative logic (the giant's fated death, the escalating list of impossible tasks). A second distortion treats Ysbaddaden's eyelid detail in isolation as quirky color rather than noting its close, likely meaningful parallel to Balor's raised eyelid in Irish tradition, missing a genuine cross-Celtic pattern worth preserving rather than smoothing away.",
       "take": "This is freely usable public-domain medieval literature: the impossible-tasks structure, the eyelids propped with forks, the fated death tied to his daughter's marriage, and the killing by his own nephew are all open to direct adaptation. Be careful about dating claims, since composition is conventionally placed around 1100 following Bromwich and Evans but Simon Rodway has argued on orthographic grounds for the mid-twelfth century instead, so treat the earliest-Arthurian-tale claim as contested rather than settled. Avoid asserting he was originally a pagan deity later demoted into folktale; Hutton's scholarship specifically warns against that move for medieval Welsh material, and Kenneth Jackson's international-tale-type reading is an equally live alternative.",
       "cite": "Credit Culhwch ac Olwen itself (Red Book of Hergest, Oxford, Jesus College MS 111) and the scholarly edition by Rachel Bromwich and D. Simon Evans, Culhwch and Olwen: An Edition and Study of the Oldest Arthurian Tale (University of Wales Press, 1992); Lady Charlotte Guest's Mabinogion translation (1838-1845) is the standard public-domain popular text."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "tombe-dei-giganti",
@@ -6347,7 +6412,7 @@
     "culture": "Sardinian",
     "region": "Sardinia",
     "type": "folklore",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "inferred from the tombs",
     "shortDescription": "Around eight hundred Nuragic collective tombs in Sardinia, named for giants by popular tradition.",
     "fullDescription": "Around eight hundred of them across the island. They are called giants' tombs because nothing else seemed large enough to need one.",
@@ -6410,7 +6475,8 @@
       "distortions": "Popular treatments routinely present the \"giant burial\" name as if it reflected an actual belief that giants were interred there, when the regional archaeological record treats it plainly as folk taxonomy driven by the size of the stones and misidentified large bones, with no ongoing giant-burial belief among Sardinians today. A second distortion, increasingly visible in popular-science and pseudo-archaeology circles, asserts an unidentified form of ancient Sardinian gigantism as if it were an established finding, when it has not been substantiated in the scholarly record and should be treated only as an unverified claim.",
       "take": "The archaeology and the folklore are both freely usable and should be kept clearly distinguished: describe the monuments, the horn-shaped facade, the incubation practice of sleeping on the outer stone seats to dream-contact the dead, and the vernacular naming (sa domu e s'orku) as what they are, real structures and a real naming tradition. Do not present the giant-burial idea as a literal ancient belief in giant occupants, and do not repeat the modern \"Sardinian gigantism\" claim as fact; flag it explicitly as an unsubstantiated fringe claim if you mention it at all.",
       "cite": "Cite Antonio Taramelli's early-twentieth-century site surveys and current Sardinian regional archaeological/superintendency documentation for the monuments; for the incubation reading, cite Aristotle, Physics IV.11, with Raffaele Pettazzoni, La religione primitiva in Sardegna (1912), and Karoly Kerenyi, Miti e misteri (1950)."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "nemri",
@@ -6423,7 +6489,7 @@
     "culture": "Croatian",
     "region": "Velebit and Lika",
     "type": "race",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "unmeasured",
     "shortDescription": "Croatian giant race of Lika and Velebit: the old people, who could not die a natural death.",
     "fullDescription": "They are called the old people. They could not die a natural death.",
@@ -6466,7 +6532,8 @@
       "distortions": "The most common distortion is literalizing the stećci connection, treating the medieval Dinaric tombstones as physical evidence of an actual giant race rather than a folk explanation later attached to unexplained monuments; the entry itself is explicit that this runs backwards. A second distortion is collapsing the Nemri and Grci traditions into one undifferentiated 'old people' legend, when Croatian folklorists (Dronjić, Palavestra) treat their relationship and the origin of the Grci label as live, unresolved scholarly questions rather than settled synonyms.",
       "take": "The recorded motifs are freely usable: a lost people from before the Greeks who could not die naturally, associated with hillforts and standing stones, paired comparatively with traditions like the Kāhui Tipua, Fomorians and Quinametzin as instances of a common 'earlier, larger people explain the landscape' pattern. Don't present the stećci as evidence for the giants, they are documented medieval tombstones, and the giant attribution is folklore about the stones, not information from them, and keep the Nemri/Grci distinction and the unresolved etymology visible rather than smoothing them into a single tidy legend.",
       "cite": "Credit Matija Dronjić, 'Prilog istraživanju predaja o starom narodu na području Like i Podgorja,' Senjski zbornik 39 (2012), and Vlajko Palavestra's work on Dinaric 'old population' traditions, alongside Maja Bošković-Stulli's 1950s field collections from the immediate area."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "klek",
@@ -6479,7 +6546,7 @@
     "culture": "Croatian",
     "region": "Klek, Orjen, Snježnik",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "the mountain",
     "shortDescription": "Croatian giant petrified above Ogulin: the river Dobra runs out of his wound.",
     "fullDescription": "Seen from Ogulin, the mountain is a sleeping man. The peak is his head. The two crags below are his legs.",
@@ -6523,7 +6590,8 @@
       "distortions": "The most common mangling is treating this as generic \"Slavic mythology\" of the elaborate-pantheon, full-creation-myth variety that circulates widely online, when most of that broader material is nineteenth- or twentieth-century reconstruction or outright modern invention; Klek's tradition is unusual precisely because it anchors to a securely attested deity (Perun) and a specific, still-visible landform. A second distortion is treating the petrification story as if it were an unbroken pagan survival, when how old any given detail is, and how much twentieth-century collectors like Sučić shaped the wording, cannot be settled from the popular versions alone. A third is merging the giant-petrification story with the separate witches'-assembly tradition on the same mountain, when the two share only a location.",
       "take": "The core material is usable and comparatively well-grounded: the mountain's giant-shaped silhouette, the Perun-arrow petrification, the river-as-wound imagery, and the separate witches' assembly recorded by Valvasor in the seventeenth century. Flag, rather than erase, the real uncertainty about how far back the petrification story itself goes versus how much is filtered through twentieth-century collecting (Banović 1918, Sučić 1943), and don't borrow the confident tone of invented \"full Slavic pantheon\" content that circulates online, this entry sits on firmer ground than that material but is still popular tradition, not liturgy.",
       "cite": "Cite Johann Weichard von Valvasor's Die Ehre dess Hertzogthums Crain (1689) for the witches' assembly, Stjepan Banović's Vjerovanja (Zaostrog u Dalmaciji, 1918) and Nikola Sučić's Hrvatska narodna mitologija (1943, reprinted 2013 with Tomislav Pletenac's critical afterword) for the petrification story, and Maja Bošković-Stulli's work at the Institute of Ethnology and Folklore Research, Zagreb, as the critical scholarly baseline."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "uriasi",
@@ -6539,7 +6607,7 @@
     "culture": "Romanian",
     "region": "Romania",
     "type": "race",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "the Danube reached their ankles",
     "shortDescription": "Romanian race of giants from before mankind: the Danube reached their ankles, the Flood ended them.",
     "fullDescription": "The Danube came up to their ankles. They could reach the handles of the sky. Their age ended with the Flood.",
@@ -6579,7 +6647,8 @@
       "distortions": "The overwhelming modern distortion is not media flattening but pseudo-archaeology: search results and popular retellings are saturated with fabricated claims of giant skeletons excavated in the Carpathians, secret Soviet removals, and intelligence-service cover-ups, all descending from Nicolae Densușianu's discredited nationalist protochronist tract Dacia preistorică. A secondary distortion collapses the regionally distinct naming (novaci, jidovi, căpcăuni, coloși, tătari) into one generic \"giant race,\" erasing the local specificity that place-names like Novaci or Jidvei actually preserve.",
       "take": "The genuine folk material is freely usable: the flood-ended giant race, the named figures Sfarmă-Piatră and Strâmbă-Lemne, Iovan Iorgovan, and the place-name evidence scattered across Gorj, Alba, and the Eastern Carpathians, all sourced through Ion Taloș's dictionary and legitimate nineteenth/twentieth-century folk collections. Firmly avoid Nicolae Densușianu's Dacia preistorică and the entire protochronist giant-skeleton mythology it spawned (Moscow removals, sealed mine shafts, pink irradiated bones); none of it is folklore in any real sense, it is fabricated nationalist pseudo-history, and repeating it even as \"legend\" lends it false credibility. Also handle the word jidov with care, since it and its cognates carry real ethnic sensitivity in Romanian and the same naming pattern appears in neighboring Bulgarian tradition.",
       "cite": "Credit Ion Taloș's Romanian mythological dictionary and legitimate nineteenth-century Romanian folk collections as the source base; explicitly exclude Nicolae Densușianu's Dacia preistorică (posthumous, protochronist) from anything presented as factual or folkloric record."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "croatian-giants-lesser",
@@ -6594,7 +6663,7 @@
     "culture": "Croatian",
     "region": "Croatia",
     "type": "folklore",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "varies",
     "shortDescription": "Four small Croatian traditions: one-eyed giants, the Vedi, Sambo under Samobor, the Neretva mounds.",
     "fullDescription": "Four smaller Croatian traditions, each too thin to stand alone and too specific to lose.",
@@ -6640,7 +6709,8 @@
       "distortions": "The most common flattening is treating \"div\" traditions as a single uniform Croatian mythology, when the input material is explicit that these are four separate, geographically distinct local traditions with no shared narrative. A second distortion is importing classical cyclops iconography (Polyphemus, Odyssey beats) onto the Brač/Paklenica one-eyed giants as if the connection were settled, when the relationship between them is an open scholarly question, not a borrowing that can be assumed.",
       "take": "The place-legends themselves (Vedi withdrawing into the forest, Hajdi and Sambo credited with the Otruševec church, Sambo petrified beneath Samobor, the Neretva bone-mounds) are folk material safely retellable. Keep the etymology of \"div\" (Turkish/Persian loan versus inherited Proto-Slavic) and the cyclops-independence question presented as unresolved rather than picking a side, since scholarship hasn't settled either. Flag Nikola Sučić's Hrvatska narodna mitologija as a source of unverified scholarly standing if you lean on it, and preserve the Neretva valley detail that the mounds were deliberately left unexcavated, that restraint is the most interesting and citable fact in the set.",
       "cite": "Credit Maja Bošković-Stulli's Institute of Ethnology and Folklore Research archive, Stjepan Banović's 1918 Vjerovanja monograph, and Ana Perinić Lewis's 2019 \"Junaci, divovi i patuljci Gorskoga kotara\"; treat Nikola Sučić as a secondary source needing independent verification."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "british-giants-lesser",
@@ -6656,7 +6726,7 @@
     "culture": "British and Welsh",
     "region": "Britain and Wales",
     "type": "folklore",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "varies",
     "shortDescription": "Four minor British and Welsh giants: a mountain, a beacon, a chapbook villain and a cauldron.",
     "fullDescription": "Britain kept more giants than it had room to remember properly. These are the ones who left a name and not much else.",
@@ -6699,7 +6769,8 @@
       "distortions": "The commonest mangling is merging the Jack the Giant Killer giants with the Jack and the Beanstalk giant into one generic ogre, a confusion the Victorian nursery-book trade produced by printing the tales side by side. The nineteenth-century giant-skeleton reports noted in the disputed section are also still recycled online as physical evidence, which they are not.",
       "take": "All four figures are free to use: medieval literature, an authored chapbook cycle and drolls collected in print carry no community protocols, and none are known for any of them. The Cauldron of Rebirth is free too, but it comes with its own logic, revenants who return mute, and stripping that cost turns a Welsh tragedy into a stock magic item; the Welsh names likewise carry real pronunciation and real places, so keep them or change them, but do not garble them. The one thing that is not simply raw material is the modern Bolster pageant itself, which is a specific ongoing St Agnes event and should be depicted as theirs, not invented over.",
       "cite": "Sioned Davies's translation of the Mabinogion (Oxford World's Classics, 2007) for the Welsh material, and Robert Hunt's Popular Romances of the West of England for the Cornish."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "koljo",
@@ -6713,7 +6784,7 @@
     "culture": "Finnish",
     "region": "Finland",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "unmeasured",
     "shortDescription": "Finnish giant surviving in place-names: possibly a word for death before he was a giant.",
     "fullDescription": "A giant who survives mostly as place-names, and a scholarly argument about whether he was ever a giant at all.",
@@ -6754,7 +6825,8 @@
       "distortions": "The main distortion is treating \"Koljo\" as a settled giant-figure with a fixed identity, when the leading modern scholarship (Ruohonen 2010/2011) argues the word may originally have meant death or notable terrain, with the giant sense a later Christianisation-era development, and the etymology remains genuinely unresolved between Estonian koll, Germanic halja/hel, Permic/Ob-Ugric disease-and-underworld words, and possible influence from biblical Goliath (koljatti). A second distortion is conflating Koljo place-names with the unrelated Kalevanpoika giant-toponym cluster, when the paper's whole point is that these are geographically distinct naming traditions that shouldn't be merged. A third is presenting the rejected kuolio-from-Saami-guolli (fish) etymology as viable when Ruohonen rejects it on archaeological grounds.",
       "take": "This is safe, freely usable material precisely because it's thin and well-sourced: the giant sense of Koljo, the place-name clustering in Häme and eastern Finland, and the open etymological debate are all fair to present, but present the etymology as unresolved rather than picking a winner, since that unresolved status is the actual scholarly finding. Don't manufacture a story or personality for Koljo beyond what the toponyms and Ruohonen's analysis support; the honest entry here is closer to historical linguistics than to narrative myth.",
       "cite": "Cite Juha Ruohonen, \"Jättiläinen, paholainen, kuolema? Koljo kansanperinteessä, nimistössä ja maastossa,\" Sananjalka 52 (2010), and its English version \"Giant, Devil or Death?\" in Culture Crossroads vol. 5 (2011); the Finnish land register of Savo (1560s) is the primary documentary source for the place-name."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "santa-elena-giants",
@@ -6764,7 +6836,7 @@
     "culture": "Manta, recorded by Spanish chroniclers",
     "region": "Punta de Santa Elena, Ecuador",
     "type": "modern-legend",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "knee to ground equal to a grown man",
     "shortDescription": "Giants said to have landed by raft on the Ecuadorian coast: the bones under the story are mastodon.",
     "fullDescription": "In 1553 a Spanish chronicler wrote down what the Manta people told him about the giants who landed on their coast. Four centuries later, someone worked out what the bones were.",
@@ -6865,7 +6937,8 @@
       "distortions": "The most common distortion is treating Cieza de León's full account, including its climactic angel-with-a-sword-of-fire ending, as untouched indigenous tradition, when scholarship (Uribe, Hechler) identifies that ending as Cieza's own Christian interpretive framing layered onto what he was told. A second distortion, shared with the Quinametzin entry, is pseudo-archaeological treatment of the giant bones as literal proof of a giant race, when the region's fossil record of Pleistocene megafauna gives a well-understood physical source for outsized bones and molars found on the peninsula.",
       "take": "The narrative core, the reed-raft arrival, the wells dug into rock, the raiding and cannibalism accusation, and the tie to real fossil and well remains, is usable chronicle material and not the property of an identifiable living community, but a writer should flag the sword-of-fire ending explicitly as Cieza's own Christian gloss rather than presenting the whole account as a transparent record of what coastal Ecuadorian informants said in the 1540s. Avoid stating flatly that this is 'Manta belief' without that caveat, and avoid folding it into modern lost-race pseudoarchaeology.",
       "cite": "Cite Pedro Cieza de León, Crónica del Perú (1553), chapter LII, as the primary source, with Garcilaso de la Vega's Comentarios Reales de los Incas (1609) and Antonio de Herrera's Décadas (1601-15) for the elaborated later versions, and modern scholarship on Ecuadorian mastodon-remains interpretation for the physical context."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "mapinguari",
@@ -6925,7 +6998,8 @@
       "distortions": "Cryptid media tends to strip the Mapinguari of its cultural context entirely and reprocess it as a generic 'Bigfoot of the Amazon' or a straightforward lost-megafauna reveal, presenting Oren's ground-sloth hypothesis as a confirmed answer rather than one unresolved scientific speculation laid over a folk tradition. Retellings also commonly merge it wholesale with unrelated Brazilian figures like the Curupira (backward feet) or Capelobo without noting that the figure is itself already a regional composite that displaced older local beings like the Gorjala and Pé de Garrafa, obscuring which traits are old and which are borrowed.",
       "take": "The physical description (the hide, the vertical mouth, the single eye, day-active habits, the cave-dwelling) and the general folkloric shape are documented in print via Cascudo and Oren and are reasonably safe to use as a folklore figure, not a real cryptid claim. Be careful not to present it as a settled scientific fact that this is 'really' a surviving ground sloth, since that is Oren's and Ameghino's hypothesis, not established science, and avoid attributing the tradition to 'Amazonian Indians' generically; name the actual peoples where you can (Karitiana, Parintintin, and mixed forest communities) rather than treating it as one undifferentiated 'Amazon legend.' Do not invent named specific rituals or community-restricted details beyond what Cascudo and Oren recorded.",
       "cite": "Credit Luís da Câmara Cascudo's Dicionário do Folclore Brasileiro and Geografia dos Mitos Brasileiros for the print synthesis, and David Oren (Museu Paraense Emílio Goeldi, 1993/2001) for the fieldwork and the ground-sloth hypothesis, noting Florentino Ameghino and Ramón Lista as the 19th-century precedent for that idea."
-    }
+    },
+    "updatedAt": "2026-08-11"
   },
   {
     "id": "humbaba",
@@ -6939,7 +7013,7 @@
     "culture": "Sumerian, Akkadian, later Hurrian and Hittite",
     "region": "Mesopotamia, the Cedar Forest",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": null,
     "shortDescription": "The oldest giant in this catalogue by two thousand years. He was not attacking anyone. He was guarding a forest, and two men came to cut it down.",
     "fullDescription": "Huwawa in Sumerian, Humbaba in Akkadian, with the oldest recorded form attested at Mari and Tell Harmal. The origin and meaning of the name are unknown, which is itself a measure of how far back this goes.",
@@ -6993,7 +7067,8 @@
         "Mercy was offered once. Ask whether the sack of cedar is heavier than the guardian they just refused to spare."
       ],
       "compareSlug": "polyphemus"
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "tepegoz",
@@ -7005,7 +7080,7 @@
     "culture": "Oghuz Turkic",
     "region": "Central Asia and Anatolia",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": null,
     "shortDescription": "A one-eyed man-eater, blinded in his cave by a young man who tricked him. When a German scholar read the manuscript in 1815, he concluded that Homer had got the story from the East.",
     "fullDescription": "Tepegöz appears in the eighth of the twelve tales of the Book of Dede Korkut, the great epic cycle of the Oghuz Turks. The tale is named for his killer: the story of Basat, who killed Tepegöz.",
@@ -7063,7 +7138,8 @@
         "A German scholar in 1815 swears this blinding came eastward before Homer. Let the table argue over who stole whose eye."
       ],
       "compareSlug": "polyphemus"
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "pangu",
@@ -7119,7 +7195,8 @@
       "distortions": "The common flattening is turning Pangu into a slain chaos-giant like Ymir, when the Chinese account has him die of the work of holding the sky, not of murder. A second flattening treats Xu Zheng as the origin of the myth rather than the earliest surviving written version of a disputed older layer.",
       "take": "The egg, the axe, the eighteen thousand years, the body becoming sun, moon, rivers, mountains and pillars, and the contrast with Ymir are in the written tradition and usable. Do not present Xu Zheng as the inventor of the myth. Do not invent Miao, Yao or Buyei ritual around him.",
       "cite": "Credit Xu Zheng, Sanwu liji and Wu yun li nianji, 3rd century CE, and Shuyi ji, and note Miao, Yao and Buyei ancestral traditions as a separate living layer."
-    }
+    },
+    "updatedAt": "2026-09-01"
   },
   {
     "id": "ad-thamud",
@@ -7134,7 +7211,7 @@
     "culture": "Arabian and Islamic",
     "region": "the Arabian peninsula and southern Jordan",
     "type": "folklore",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": null,
     "shortDescription": "The peoples the Qur'an says were destroyed for arrogance. It does not say they were giants. That part was added later, and recently.",
     "fullDescription": "The Ad and the Thamud appear repeatedly in the Qur'an, usually together, as prosperous peoples who ignored the prophets sent to them and were destroyed. The Ad were ended by a violent wind. Iram of the Pillars, associated with them, is described as a city whose like had not been created.",
@@ -7180,7 +7257,8 @@
       "distortions": "The giant claim is the distortion. It is not in the Qur'an or the canonical hadith. Popular posts pair Hegra and Baalbek with composite skeleton photographs and a suppressed-archaeology story that this catalogue already rejects elsewhere.",
       "take": "Quote the destruction for arrogance, Al-Jallad on the Ad, and Hegra as Nabataean work of ordinary height. Do not illustrate or narrate Ad and Thamud as a race of giants. The growth in the telling is the point of the entry.",
       "cite": "Qur'an 89:6-14 and the Ad and Thamud passages, Ahmad Al-Jallad 2025 on Wadi Rum, and Nabataean archaeology at Hegra."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "guanche-giants",
@@ -7245,7 +7323,8 @@
       "distortions": "Atlantis, Egyptian mummy-origin, and fourteen-foot giants are the distortions the chronicles and later popular writing attached. The DNA and the skeletons contradict all three. Do not illustrate this entry as a race of giants.",
       "take": "The disagreement among contemporaries, the 1.75 to 1.82 metre series, the forty-six genomes, and the comparison with Patagonia are the usable core. Do not retell the fourteen-foot figures as fact. The falsehood travelling better is the point.",
       "cite": "Le Canarien, Palencia, Torriani, Espinosa, Abreu Galindo, Viera y Clavijo, Canarian museum series, and the published ancient-DNA work on 46 Guanche genomes."
-    }
+    },
+    "updatedAt": "2026-09-01"
   },
   {
     "id": "uj-ibn-anaq",
@@ -7258,7 +7337,7 @@
     "culture": "Islamic tradition, Arabic and Persian",
     "region": "the Near East",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Knee-deep in the ocean in later tellings",
     "shortDescription": "He is the biblical Og, after five centuries of retelling. By the end he was standing knee-deep in the open ocean, catching whales and holding them up to the sun to cook.",
     "fullDescription": "Uj ibn Anaq is not in the Qur'an and not in the canonical hadith. He comes into Arabic literature out of Jewish folklore and the Hebrew Bible, where he is Og, the Amorite king of Bashan whom Moses defeats at Edrei. This catalogue already holds him under that name.",
@@ -7303,7 +7382,8 @@
       "distortions": "The distortion is the growth: treating the whale-cooking giant as if that were the biblical Og, or treating Og's iron bed as if it already contained the ocean. Keep the two stages labelled.",
       "take": "The mother Anaq, the battle with Moses in later tellings, the ocean and the whale, and the manuscript paintings are the later tradition and usable as such. Cross-link Og of Bashan. Do not collapse the two into one height.",
       "cite": "Numbers 21 and Deuteronomy 3 for Og; Arabic and Persian folkloric and exegetical literature and Islamic manuscript painting for Uj; the Book of Giants for Ogias."
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "cailleach",
@@ -7319,7 +7399,7 @@
     "culture": "Gaelic: Irish, Scottish, Manx",
     "region": "Ireland, Scotland, Isle of Man",
     "type": "folklore",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "leapt between mountains",
     "shortDescription": "The Neolithic passage tombs at Loughcrew are said to be stones that fell out of her apron while she was jumping between the hills.",
     "fullDescription": "The Cailleach is the divine hag of Gaelic tradition, and her name means the veiled one. She is Cailleach Bhéara in Ireland, Cailleach Bheur in Scotland, Caillagh on Man, and she appears under Digdi, Digde, Garavogue and other names besides.",
@@ -7378,7 +7458,8 @@
         "At Loughcrew the passage tombs are said to be stones that slipped her apron. Treat the tombs as her inventory, not a ruin."
       ],
       "compareSlug": "jentilak"
-    }
+    },
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "surid",
@@ -7391,7 +7472,7 @@
     "culture": "Coptic and Islamic Egypt, medieval",
     "region": "Egypt",
     "type": "folklore",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": null,
     "shortDescription": "A king who dreamed the Flood was coming, and built the pyramids to keep knowledge safe from the water. His name is a corruption of the name of the pharaoh who actually built them.",
     "fullDescription": "Surid belongs to medieval Coptic and Islamic Egypt, not to ancient Egypt. He is placed roughly three hundred years before the Flood, and in several tellings he is a giant.",
@@ -7443,6 +7524,7 @@
       "distortions": "The distortion is the one the entry exists to name: an antediluvian giant-king archive, still the most repeated modern claim about the pyramids. Kircher is the European pipeline. Do not illustrate a giant building Giza.",
       "take": "The flood-dream, the archive, the hundred thousand men, the Enoch/Idris/Hermes conflation, and the Coptic rejection of Shaddad are in the medieval sources and usable as legend. Keep Khufu visible. Do not present Surid as the historical builder.",
       "cite": "al-Masudi, Ibn Abd al-Hakam, Abu Ma'shar, Murtada ibn al-Afif, al-Maqrizi, Ammianus Marcellinus, and the derivation of Surid from Souphis/Khufu."
-    }
+    },
+    "updatedAt": "2026-11-11"
   }
 ]

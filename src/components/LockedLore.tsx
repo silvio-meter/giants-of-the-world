@@ -187,7 +187,7 @@ export function LockedLore({
                   </p>
                 </div>
               ) : (
-                <PremiumLock variant="entry" next={`/giants/${slug}`} />
+                <PremiumLock variant="entry" slug={slug} next={`/giants/${slug}`} />
               )
             )}
           </div>

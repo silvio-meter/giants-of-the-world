@@ -4,8 +4,9 @@ import Image from "next/image";
 import { useState } from "react";
 
 interface Props {
-  src: string;
-  alt: string;
+  /** Empty or missing: the dark frame and silhouette only, no <img>. */
+  src?: string;
+  alt?: string;
   size?: "card" | "detail" | "hero";
   className?: string;
   priority?: boolean;
@@ -41,8 +42,9 @@ export function ImagePlaceholder({
   return (
     <div
       className={`relative box-border w-full max-w-full overflow-hidden rounded-lg border border-border bg-[#0a0e14] ${heights[size]} ${className}`}
-      role="img"
-      aria-label={alt}
+      // With no image the frame is decoration only: hide it from assistive
+      // tech instead of announcing an unlabelled image.
+      {...(src ? { role: "img", "aria-label": alt ?? "" } : { "aria-hidden": true })}
     >
       {/* Base dark wash */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#121820] via-[#0d1117] to-[#080b10]" />
@@ -63,8 +65,8 @@ export function ImagePlaceholder({
 
       {showImage && (
         <Image
-          src={src}
-          alt={alt}
+          src={src!}
+          alt={alt ?? ""}
           fill
           sizes={sizesAttr}
           priority={priority}

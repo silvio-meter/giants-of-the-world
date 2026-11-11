@@ -28,7 +28,7 @@ test("subjects and Zagreb offsets match the brief", () => {
   assert.ok(drip.includes("offsetDays: 3"));
   assert.ok(drip.includes('subject: "22 cultures, one shape"'));
   assert.ok(drip.includes("offsetDays: 7"));
-  assert.ok(drip.includes('subject: "If the seams were the point"'));
+  assert.ok(drip.includes('subject: "Three splits, and what comes next"'));
   assert.ok(drip.includes("offsetDays: 12"));
   assert.ok(drip.includes('timeZone: "Europe/Zagreb"'));
   assert.ok(drip.includes("if (completed === 1) return 2"));
@@ -46,16 +46,22 @@ test("Email 1 body uses á lúðr and Vafþrúðnismál", () => {
   assert.ok(drip.includes("Unsubscribe: {unsubscribeUrl}"));
 });
 
-test("emails 2-4 keep Thrym monthly as the paid button", () => {
+test("membership closed: no email carries a price, checkout or /pricing", () => {
   assert.ok(drip.includes("export const MONTHLY_CHECKOUT_CTA"));
-  assert.ok(drip.includes(CTA));
-  assert.equal(drip.split("${MONTHLY_CHECKOUT_CTA}").length - 1, 4);
-  assert.ok(drip.includes("https://www.giantscodex.com/compare?a=ymir&b=surtr"));
-  assert.ok(drip.includes("https://www.giantscodex.com/motifs"));
-  assert.ok(drip.includes("Secondary only: https://www.giantscodex.com/pricing"));
-  assert.ok(drip.includes("$4.99"));
-  assert.ok(drip.includes("$49"));
-  assert.ok(drip.includes("$129"));
+  assert.equal(drip.split("${MONTHLY_CHECKOUT_CTA}").length - 1, 0);
+  for (const id of [1, 2, 3, 4]) {
+    const body = drip.split(`const E${id}_BODY = \``)[1]?.split("`;")[0] ?? "";
+    assert.ok(body.length > 0, `E${id} body not found`);
+    assert.ok(!/\$\d/.test(body), `E${id} names a price`);
+    assert.ok(!body.includes("checkout"), `E${id} links checkout`);
+    assert.ok(!body.includes("/pricing"), `E${id} links /pricing`);
+    assert.ok(!/\brefund\b/i.test(body), `E${id} promises a refund`);
+  }
+  assert.ok(drip.includes("Compare puts them side by side:\nhttps://www.giantscodex.com/compare?a=ymir&b=surtr"));
+  assert.ok(!drip.includes("The shared thread is membership."));
+  assert.ok(drip.includes("The whole thread is on one page:\n${MOTIFS_URL}"));
+  assert.ok(drip.includes("https://www.giantscodex.com/giants\n"));
+  assert.ok(drip.includes("https://www.giantscodex.com/bestiary\n"));
 });
 
 test("HTML renderer linkifies https URLs", () => {
