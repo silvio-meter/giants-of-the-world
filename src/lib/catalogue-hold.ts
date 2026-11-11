@@ -64,3 +64,19 @@ const HOLD = new Set(CATALOGUE_HOLD_SLUGS);
 export function isCatalogueHeld(slug: string): boolean {
   return HOLD.has(slug);
 }
+
+const NEVER_OPEN = new Set(NEVER_OPEN_SLUGS);
+
+/** publishable: false entries. No public surface features or links them. */
+export function isNeverOpen(slug: string): boolean {
+  return NEVER_OPEN.has(slug);
+}
+
+/**
+ * May this slug be suggested as the other half of a Compare link
+ * (Session Prep pair, the giant page's "vs" list)? Held and never-open
+ * entries are never suggested.
+ */
+export function isSuggestableCompareTarget(slug: string): boolean {
+  return !HOLD.has(slug) && !NEVER_OPEN.has(slug);
+}

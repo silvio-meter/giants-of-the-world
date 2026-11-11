@@ -2,6 +2,7 @@ import giantsData from "@/data/giants.public.json";
 import findingsData from "@/data/findings.json";
 import type { Finding, GiantType } from "./types";
 import { formatType, type GiantCardData } from "./format";
+import { isNeverOpen } from "./catalogue-hold";
 
 /**
  * Importing this module pulls the whole catalog JSON into whatever bundle
@@ -151,6 +152,7 @@ export interface ComparePickerOption {
  */
 export function getComparePickerOptions(): ComparePickerOption[] {
   return giants
+    .filter((g) => !isNeverOpen(g.slug))
     .map((g) => ({ slug: g.slug, name: g.name, culture: g.culture, image: g.image }))
     .sort((a, b) => a.name.localeCompare(b.name));
 }
