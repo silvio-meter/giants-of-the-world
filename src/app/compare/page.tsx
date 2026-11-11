@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ComparePicker } from "@/components/ComparePicker";
 import { CompareResults } from "@/components/CompareResults";
+import { isNeverOpen } from "@/lib/catalogue-hold";
 import { getComparePickerOptions, getGiantBySlug } from "@/lib/giants";
 
 /** Depends on plan and on which pair is requested — never statically cacheable. */
@@ -50,8 +51,9 @@ export default async function ComparePage({ searchParams }: Props) {
   const sp = await searchParams;
   const options = getComparePickerOptions();
 
-  const giantA = sp.a ? getGiantBySlug(sp.a) : undefined;
-  const giantB = sp.b ? getGiantBySlug(sp.b) : undefined;
+  // A never-open entry is never shown on Compare, even from a typed URL.
+  const giantA = sp.a && !isNeverOpen(sp.a) ? getGiantBySlug(sp.a) : undefined;
+  const giantB = sp.b && !isNeverOpen(sp.b) ? getGiantBySlug(sp.b) : undefined;
   const bothValid = Boolean(giantA && giantB && giantA.slug !== giantB.slug);
 
   return (
