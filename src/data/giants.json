@@ -363,6 +363,12 @@
     "type": "individual",
     "freeEntry": true,
     "height": "Six cubits and a span (Masoretic); four cubits and a span (Dead Sea Scrolls)",
+    "heightSource": "the Masoretic text",
+    "heightAlt": {
+      "height": "Four cubits and a span",
+      "source": "the LXX and 4QSam(a)",
+      "note": "Two traditions: the Masoretic text gives six cubits and a span (≈2.9 m); the LXX and 4QSam(a) give four cubits and a span (≈2.0 m)."
+    },
     "shortDescription": "The Philistine champion of Gath who fell to a shepherd's stone.",
     "fullDescription": "Goliath of Gath stands in the valley of Elah for forty days and challenges Israel to send one man against him. The armour is described piece by piece before the fight, which is how the story tells you what is about to be irrelevant.",
     "mysteryNote": "The brook in the Valley of Elah still runs. The stones there are ordinary. That is the whole point.",
@@ -546,7 +552,7 @@
       "take": "The narrative beats are freely retellable and have been retold for millennia across all three Abrahamic traditions, but because this is living scripture, not just folklore, avoid mockery or blasphemy-adjacent framing, and distinguish clearly between the biblical text itself and later folk or medical speculation (e.g. the popular pituitary-gigantism theory, which is medically coherent but has zero textual support and should be labeled as speculation, not read back into the story). The height and Elhanan discrepancies are worth keeping visible as genuine manuscript variation rather than resolving them into one \"true\" version.",
       "cite": "Cite 1 Samuel 17 (Masoretic Text) alongside the notably shorter Septuagint version (1 Kingdoms 17) and the Dead Sea Scrolls fragment 4QSam-a for the height variant, plus Aren Maeir's Tell es-Safi/Gath excavation reports for the Philistine-name ostracon evidence."
     },
-    "updatedAt": "2026-09-01"
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "og-of-bashan",
@@ -2103,6 +2109,7 @@
     "type": "folklore",
     "freeEntry": true,
     "height": "About 18 feet (folklore)",
+    "heightSource": "Joseph Jacobs, English Fairy Tales (1890)",
     "shortDescription": "Cornish giant of St Michael's Mount, felled by Jack the Giant Killer.",
     "fullDescription": "Cormoran is the giant of St Michael's Mount who waded ashore to steal Cornish cattle. Jack dug a pit, covered it, blew a horn at dawn, and the giant walked into it: the first kill in a career that gave English a phrase.",
     "mysteryNote": "A boy, a pit, a horn. The giant never looked down, and Cornwall made a story of the mistake.",
@@ -2181,6 +2188,7 @@
     "type": "folklore",
     "freeEntry": true,
     "height": "12 cubits (Geoffrey of Monmouth)",
+    "heightSource": "Geoffrey of Monmouth, Historia Regum Britanniae I.16 (c. 1136)",
     "shortDescription": "British giant who wrestled Corineus and gave his name to London's guardians.",
     "fullDescription": "Gogmagog is the last giant of Albion, thrown off a Cornish cliff by the Trojan Corineus in a wrestling match. Two carved effigies of him and his conqueror have stood in the Guildhall of London for centuries.",
     "mysteryNote": "Thrown from a cliff into legend, he stands again every Lord Mayor's Show: death is temporary when a city needs a mascot.",
@@ -5200,6 +5208,7 @@
     "type": "race",
     "freeEntry": true,
     "height": "up to 3 metres",
+    "heightSource": "Bulgarian legend, per Българска митология (2006)",
     "shortDescription": "Bulgaria's giants were God's second attempt at people. We are the third.",
     "fullDescription": "God made three attempts at people, and the dwarves were too small to survive. The ispolini were the correction.",
     "mysteryNote": "The word may be the name of a nation the Goths destroyed.",

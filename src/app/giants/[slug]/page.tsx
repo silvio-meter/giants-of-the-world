@@ -16,6 +16,8 @@ import { FullDescription } from "@/components/FullDescription";
 import { LockedLore } from "@/components/LockedLore";
 import { FavouriteButton } from "@/components/FavouriteButton";
 import { SizeComparison } from "@/components/SizeComparison";
+import { toldIn } from "@/lib/height";
+import { formatMeters } from "@/lib/scale";
 import { ChainOfCustody } from "@/components/ChainOfCustody";
 import { EmailCapture } from "@/components/EmailCapture";
 import { DiscoveryTracker } from "@/components/DiscoveryTracker";
@@ -379,6 +381,14 @@ export default async function GiantDetailPage({ params }: Props) {
                 <dd className="mt-1 text-text-primary">
                   <GlossaryText text={giant.height} />
                 </dd>
+                {giant.heightMeters && giant.heightSource ? (
+                  <dd className="mt-1 text-[11px] text-text-muted">
+                    {formatMeters(giant.heightMeters)} {toldIn(giant.heightSource)}
+                    {giant.heightAlt?.meters
+                      ? `; ${formatMeters(giant.heightAlt.meters)} ${toldIn(giant.heightAlt.source)}`
+                      : ""}
+                  </dd>
+                ) : null}
               </div>
             )}
             {giant.coordinates && (
