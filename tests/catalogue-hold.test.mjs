@@ -134,6 +134,13 @@ test("homepage strip has no hold-list slug and no image-less entry", () => {
   assert.match(page, /!isCatalogueHeld\(g\.slug\) && Boolean\(g\.image\)/);
 });
 
+test("footer: no refund promise, 'Free to read. Corrections:' with the support address", () => {
+  const footer = read("src/components/Footer.tsx");
+  assert.ok(!/refund/i.test(footer));
+  assert.ok(footer.includes('Free to read. Corrections:{" "}'));
+  assert.ok(footer.includes("href={`mailto:${supportEmail}`}"));
+});
+
 test("held entries keep the paywall schema; opened entries drop it", () => {
   const page = read("src/app/giants/[slug]/page.tsx");
   // Schema follows freeEntry: open -> isAccessibleForFree true and no hasPart;
@@ -349,11 +356,13 @@ test("served: sitemap entry lastmod is the entry's updatedAt, not the build time
   }
 });
 
-test("served: homepage strip", { skip }, async () => {
+test("served: homepage strip and footer", { skip }, async () => {
   const html = await (await get("/")).text();
   for (const slug of CATALOGUE_HOLD_SLUGS) {
     assert.ok(!html.includes(`href="/giants/${slug}"`), `${slug} linked from the homepage`);
   }
+  assert.ok(html.includes("Free to read. Corrections:"));
+  assert.ok(!html.includes("-day refund"));
 });
 
 test("served: opened entry is fully open, held entry keeps its paywall schema", { skip }, async () => {

@@ -8,7 +8,6 @@ import {
 } from "./SocialIcons";
 import {
   operatorIdentity,
-  refundDays,
   socialLinks,
   supportEmail,
 } from "@/lib/site";
@@ -34,18 +33,13 @@ export function Footer() {
             Modern military accounts are unverified oral tradition, not fact.
           </p>
           <p className="mt-3 text-sm text-text-muted">
+            Free to read. Corrections:{" "}
             <a
               href={`mailto:${supportEmail}`}
               className="hover:text-accent-gold"
             >
               {supportEmail}
             </a>
-            <span className="mx-2 opacity-40" aria-hidden>
-              ·
-            </span>
-            <Link href="/terms" className="hover:text-accent-gold">
-              {refundDays}-day refund
-            </Link>
           </p>
           <p className="mt-3 max-w-md text-xs text-text-muted/80">
             Operated by {operatorIdentity}
