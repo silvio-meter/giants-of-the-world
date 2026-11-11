@@ -4248,7 +4248,7 @@
     "culture": "Māori",
     "region": "Aotearoa / Polynesia",
     "type": "race",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Large",
     "shortDescription": "Wild people of early Aotearoa tradition: forest dwellers of great strength.",
     "fullDescription": "The Nawao are described in some Māori traditions as a wild, strong people of the interior forests: sometimes framed as an earlier group overcome or absorbed in ancestral history. Accounts vary, and colonial-era writing distorted them badly.",

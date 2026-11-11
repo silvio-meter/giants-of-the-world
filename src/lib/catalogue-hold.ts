@@ -34,7 +34,6 @@ export const HOLD_LIVING_TRADITIONS = [
   "thardid-jimbo",
   "chinny-kinik",
   "kahui-tipua",
-  "nawao",
   "amazimu",
   "giant-of-the-forest",
   "stallo",
