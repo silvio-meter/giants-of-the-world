@@ -13,7 +13,6 @@ import {
   CURRENT_ISSUE,
   FULL_SEND_CONFIRM,
   fullSendConfirmPhrase,
-  issueMembershipUrl,
   renderIssueText,
   renderIssueHtml,
 } from "../src/lib/one-seam/issues.ts";
@@ -108,16 +107,18 @@ test("Issue 3 subject and preheader match the brief", () => {
   assert.equal(ISSUE_03_OG.entryPath, "/giants/og-of-bashan");
 });
 
-test("Issue 3 plain text has the seam and monthly membership URL", () => {
+test("Issue 3 plain text has the seam and the entry link, no price or checkout", () => {
   const text = renderIssueText(ISSUE_03_OG, UNUB);
   assert.match(text, /Nine cubits long/);
   assert.match(text, /iron bed/);
   assert.match(text, /nowhere states his height/);
   assert.match(text, /leaves the man unmeasured/);
   assert.match(text, /giants\/og-of-bashan/);
-  assert.match(text, /\$4\.99 a month/);
-  assert.match(text, /signup\?next=/);
-  assert.match(text, /checkout%3Dmonthly|checkout=monthly/);
+  assert.match(text, /Sources and the full account are on the same page\. Free to read\./);
+  assert.doesNotMatch(text, /\$\d/);
+  assert.doesNotMatch(text, /signup\?next=/);
+  assert.doesNotMatch(text, /checkout/i);
+  assert.doesNotMatch(text, /refund/i);
   assert.match(text, /Unsubscribe:/);
   assert.doesNotMatch(text, /Lifetime/i);
   assert.doesNotMatch(text, /upgrade/i);
@@ -125,12 +126,15 @@ test("Issue 3 plain text has the seam and monthly membership URL", () => {
   assert.doesNotMatch(text, /\u2014/);
 });
 
-test("Issue 3 HTML is archive-style with membership URL and no Lifetime", () => {
+test("Issue 3 HTML is archive-style with the entry link, no price, checkout or Lifetime", () => {
   const html = renderIssueHtml(ISSUE_03_OG, UNUB);
   assert.match(html, /Deuteronomy measures the bed/);
   assert.match(html, /leaves the man unmeasured/);
   assert.match(html, /giants\/og-of-bashan/);
-  assert.match(html, /signup\?next=/);
+  assert.match(html, /Sources and the full account are on the same page\. Free to read\./);
+  assert.doesNotMatch(html, /\$\d/);
+  assert.doesNotMatch(html, /signup\?next=/);
+  assert.doesNotMatch(html, /checkout/i);
   assert.match(html, /Unsubscribe/);
   assert.doesNotMatch(html, /Lifetime/i);
   assert.doesNotMatch(html, /pricing/i);
@@ -138,11 +142,13 @@ test("Issue 3 HTML is archive-style with membership URL and no Lifetime", () => 
   assert.doesNotMatch(html, /\u2014/);
 });
 
-test("issueMembershipUrl follows PR 88 signup next checkout=monthly", () => {
-  const url = issueMembershipUrl(ISSUE_03_OG, "https://www.giantscodex.com");
-  assert.equal(
-    url,
-    "https://www.giantscodex.com/signup?next=" +
-      encodeURIComponent("/giants/og-of-bashan?checkout=monthly")
-  );
+test("no issue (text or HTML) carries a price, refund promise or checkout link", () => {
+  for (const issue of [ISSUE_01_ATLAS, ISSUE_02_HUMBABA, ISSUE_03_OG]) {
+    for (const out of [renderIssueText(issue, UNUB), renderIssueHtml(issue, UNUB)]) {
+      assert.doesNotMatch(out, /\$\d/, issue.id);
+      assert.doesNotMatch(out, /refund/i, issue.id);
+      assert.doesNotMatch(out, /checkout/i, issue.id);
+      assert.match(out, /Free to read\./, issue.id);
+    }
+  }
 });

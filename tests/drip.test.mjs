@@ -57,7 +57,8 @@ test("membership closed: no email carries a price, checkout or /pricing", () => 
     assert.ok(!body.includes("/pricing"), `E${id} links /pricing`);
     assert.ok(!/\brefund\b/i.test(body), `E${id} promises a refund`);
   }
-  assert.ok(drip.includes("https://www.giantscodex.com/compare?a=ymir&b=surtr"));
+  assert.ok(drip.includes("Compare puts them side by side:\nhttps://www.giantscodex.com/compare?a=ymir&b=surtr"));
+  assert.ok(!drip.includes("The shared thread is membership."));
   assert.ok(drip.includes("The whole thread is on one page:\n${MOTIFS_URL}"));
   assert.ok(drip.includes("https://www.giantscodex.com/giants\n"));
   assert.ok(drip.includes("https://www.giantscodex.com/bestiary\n"));

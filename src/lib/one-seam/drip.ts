@@ -51,7 +51,7 @@ Unsubscribe: {unsubscribeUrl}`;
 
 const E2_BODY = `Ymir has an origin. Surtr does not. One is the body the world is made from. The other is already standing at the edge of Muspellheim, waiting to burn the nine worlds. The poems treat them as a pair: the first and the last.
 
-Compare already shows culture, region, type, and height for free. The shared thread is membership.
+Compare puts them side by side:
 https://www.giantscodex.com/compare?a=ymir&b=surtr
 
 Unsubscribe: {unsubscribeUrl}`;
