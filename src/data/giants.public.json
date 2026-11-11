@@ -2067,7 +2067,7 @@
     "culture": "Māori / Polynesian",
     "region": "Aotearoa / Polynesia",
     "type": "race",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Large wild humanoids",
     "shortDescription": "Wild folk of the forest in Māori tradition: long fingers, fierce, untamed.",
     "related": [

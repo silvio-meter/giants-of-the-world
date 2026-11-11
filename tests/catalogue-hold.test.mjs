@@ -39,7 +39,7 @@ const bySlug = new Map(publicEntries.map((g) => [g.slug, g]));
 const EXPECTED_HOLD = [
   "amazimu", "budj-bim", "chinny-kinik", "dzunukwa", "gaoh", "giant-of-kandahar",
   "giant-of-kunar", "giant-of-the-forest", "guanche-giants", "kahui-tipua",
-  "kee-wakw", "maero", "mapinguari", "murkupang", "nawao", "pangu",
+  "kee-wakw", "mapinguari", "murkupang", "nawao", "pangu",
   "papinijuwari", "patagonian-giants", "stallo", "thardid-jimbo",
   "tsul-kalu",
 ];
@@ -60,8 +60,8 @@ const IMAGES_REMOVED = [
 /** Never-open entries whose image was withdrawn too (Silvio, 11 Nov 20:47). */
 const NEVER_OPEN_IMAGES_REMOVED = ["dzunukwa"];
 
-test("hold list is the 19 living traditions plus Kandahar and Kunar", () => {
-  assert.equal(HOLD_LIVING_TRADITIONS.length, 19);
+test("hold list is the 18 living traditions plus Kandahar and Kunar", () => {
+  assert.equal(HOLD_LIVING_TRADITIONS.length, 18);
   assert.deepEqual([...HOLD_MODERN_MILITARY], ["giant-of-kandahar", "giant-of-kunar"]);
   assert.deepEqual([...CATALOGUE_HOLD_SLUGS].sort(), EXPECTED_HOLD);
   for (const slug of CATALOGUE_HOLD_SLUGS) {
@@ -151,7 +151,7 @@ test("held entries keep the paywall schema; opened entries drop it", () => {
   assert.match(page, /\.\.\.\(giant\.freeEntry\s*\?\s*\{\}\s*:\s*\{\s*hasPart:/);
   assert.ok(page.includes('cssSelector: ".paywalled-account"'));
   const lockedHeld = publicEntries.filter((g) => !g.freeEntry).map((g) => g.slug);
-  assert.equal(lockedHeld.length, 15);
+  assert.equal(lockedHeld.length, 14);
   for (const slug of lockedHeld) assert.ok(isCatalogueHeld(slug), `${slug} locked but not held`);
 });
 
