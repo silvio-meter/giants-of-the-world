@@ -131,7 +131,7 @@ test("journey marks membership CTA is checkout=monthly on sealed entries", () =>
   const giant = read("src/app/giants/[slug]/page.tsx");
   assert.ok(marks.includes("checkout=monthly"));
   assert.ok(!marks.includes('href="/pricing"'));
-  assert.ok(giant.includes("allowCheckout={!giant.freeEntry && !isFolkloreNoCheckout(giant.slug)}"));
+  assert.ok(/allowCheckout=\{\s*MEMBERSHIP_SALES_OPEN &&\s*!giant\.freeEntry &&\s*!isFolkloreNoCheckout\(giant\.slug\)\s*\}/.test(giant));
 });
 
 test("checkout-path helpers keep session id raw and encode login next", () => {

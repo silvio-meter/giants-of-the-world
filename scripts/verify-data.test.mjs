@@ -141,7 +141,14 @@ test("images exist on disk", () => {
         `${giant.slug}: missing ${giant.image}`
       );
     }
-    assert.ok(giant.imageAlt?.trim(), `${giant.slug} has no imageAlt`);
+    // Alt text is required wherever there is an image. An entry whose image
+    // was withdrawn (11 Nov 2026: six living-tradition entries) carries
+    // neither field; tests/catalogue-hold.test.mjs pins those six.
+    if (giant.image) {
+      assert.ok(giant.imageAlt?.trim(), `${giant.slug} has no imageAlt`);
+    } else {
+      assert.ok(!giant.imageAlt, `${giant.slug} has imageAlt but no image`);
+    }
   }
 });
 
@@ -187,13 +194,20 @@ test("types are from the known set", () => {
   }
 });
 
-test("free entries exist and are a minority", () => {
-  const free = publicEntries.filter((g) => g.freeEntry);
-  assert.ok(free.length > 0, "no free entries — nothing for search engines");
-  assert.ok(
-    free.length < publicEntries.length / 2,
-    "more than half the codex is free — the paywall is not doing much"
-  );
+/**
+ * The catalogue is open (owner decision, 11 Nov 2026). This used to assert
+ * that free entries were a minority; that guard protected a paywall on the
+ * catalogue text, which no longer exists. Every entry is open except the
+ * Catalogue hold list (src/lib/catalogue-hold.ts), which keeps whatever
+ * access it had before the opening. tests/catalogue-hold.test.mjs pins the
+ * held entries individually.
+ */
+test("every entry outside the catalogue hold list is open", async () => {
+  const { isCatalogueHeld } = await import("../src/lib/catalogue-hold.ts");
+  const closed = publicEntries
+    .filter((g) => !g.freeEntry && !isCatalogueHeld(g.slug))
+    .map((g) => g.slug);
+  assert.deepEqual(closed, [], "entries outside the hold list must render their full account");
 });
 
 test("findings reference real giants", () => {

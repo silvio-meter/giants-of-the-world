@@ -31,11 +31,18 @@ import { resolveMotifs } from "@/lib/motifs";
 import { getEntrySeo } from "@/lib/seo-entries";
 import { hubPath, hubsForGiant } from "@/lib/hubs";
 import { isFolkloreNoCheckout } from "@/lib/paywall-copy";
+import { isCatalogueHeld } from "@/lib/catalogue-hold";
+import { MEMBERSHIP_SALES_OPEN } from "@/lib/membership";
 
 /**
  * Statically prerendered. The page contains no per-user content: open entries
  * render their lore inline, paywalled ones ship only the preview and let
  * <LockedLore> fetch the rest through a server-checked route.
+ *
+ * Since 11 Nov 2026 the catalogue is open: every entry is freeEntry except
+ * the Catalogue hold list (src/lib/catalogue-hold.ts), which keeps the access
+ * it had before. freeEntry decides "is the account open"; it no longer
+ * decides whether Session Prep shows (see sessionPrepCard below).
  */
 
 interface Props {
@@ -103,9 +110,16 @@ export default async function GiantDetailPage({ params }: Props) {
   const motifNames = motifs.map((m) => m.name);
   const related = getRelatedGiants(giant);
   const isModern = giant.type === "modern-legend";
-  const sessionPrepCard = !giant.freeEntry
-    ? getSessionPrepCard(giant, lore.sessionPrep)
-    : null;
+  // Session Prep is decoupled from freeEntry. Before the opening it mounted
+  // only on locked entries; flipping freeEntry for the opened entries would
+  // have removed it from all of them. It now mounts on every entry except a
+  // held entry that was already free (held entries stay exactly as before).
+  // Encounter seeds stay member-only: the card fetches them from
+  // /api/lore/[slug], which gates sessionPrep on the plan, not on freeEntry.
+  const sessionPrepCard =
+    giant.freeEntry && isCatalogueHeld(giant.slug)
+      ? null
+      : getSessionPrepCard(giant, lore.sessionPrep);
 
   const entrySeo = getEntrySeo(giant.slug);
   const graph: Record<string, unknown>[] = [
@@ -119,7 +133,11 @@ export default async function GiantDetailPage({ params }: Props) {
         name: giant.name,
         alternateName: giant.alsoKnownAs,
       },
-      image: giant.image ? `${siteUrl}${giant.image}` : undefined,
+      // Entries without an image (six were withdrawn on 11 Nov 2026) fall
+      // back to the site-wide share image rather than dropping the field.
+      image: giant.image
+        ? `${siteUrl}${giant.image}`
+        : `${siteUrl}/opengraph-image.jpg`,
       inLanguage: "en",
       isPartOf: {
         "@type": "WebSite",
@@ -204,6 +222,13 @@ export default async function GiantDetailPage({ params }: Props) {
           size="detail"
           priority
         />
+        {giant.image ? (
+          // Every remaining catalogue image is generated. Text label only,
+          // no new graphic (owner decision, 11 Nov 2026).
+          <p className="mt-1.5 text-right text-[10px] tracking-[0.15em] text-text-muted/80 uppercase">
+            AI illustration
+          </p>
+        ) : null}
       </div>
 
       <header>
@@ -459,7 +484,11 @@ export default async function GiantDetailPage({ params }: Props) {
 
       <JourneyMarks
         slug={giant.slug}
-        allowCheckout={!giant.freeEntry && !isFolkloreNoCheckout(giant.slug)}
+        allowCheckout={
+          MEMBERSHIP_SALES_OPEN &&
+          !giant.freeEntry &&
+          !isFolkloreNoCheckout(giant.slug)
+        }
       />
 
       {entrySeo?.faqs && entrySeo.faqs.length > 0 ? (

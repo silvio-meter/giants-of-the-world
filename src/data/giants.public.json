@@ -162,7 +162,7 @@
     "culture": "Biblical / Near Eastern",
     "region": "Near East",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Implied by iron bed: ~9 cubits long",
     "shortDescription": "Last of the Rephaim; king of Bashan whose iron bed was a wonder.",
     "related": [
@@ -309,7 +309,7 @@
     "culture": "Greek",
     "region": "Mediterranean",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Gigantic",
     "shortDescription": "Giant buried beneath Sicily; his thrashing is said to cause earthquakes.",
     "related": [
@@ -352,7 +352,7 @@
     "culture": "Greek",
     "region": "North Africa",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Giant",
     "shortDescription": "Libyan giant who drew strength from the earth: until Heracles lifted him.",
     "related": [
@@ -393,7 +393,7 @@
     "culture": "Greek",
     "region": "Mediterranean",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Gigantic",
     "shortDescription": "Immortal on his native soil; slain only when dragged beyond its border.",
     "related": [
@@ -433,7 +433,7 @@
     "culture": "Greek",
     "region": "Mediterranean",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Gigantic",
     "shortDescription": "King of the Gigantes who assailed Hera and fell to Zeus and Heracles.",
     "related": [
@@ -473,7 +473,7 @@
     "culture": "Greek",
     "region": "Mediterranean",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Gigantic",
     "shortDescription": "Pursued by Poseidon across the sea; crushed under the island of Nisyros.",
     "related": [
@@ -515,7 +515,7 @@
     "culture": "Greek",
     "region": "Mediterranean",
     "type": "primordial",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Vast",
     "shortDescription": "Hundred-handed giant who aided Zeus against the Titans.",
     "related": [
@@ -555,7 +555,7 @@
     "culture": "Greek",
     "region": "Mediterranean",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Giant",
     "shortDescription": "The hunter so great he was set among the stars.",
     "related": [
@@ -597,7 +597,7 @@
     "culture": "Greek",
     "region": "Iberia / Mediterranean",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Giant (three-bodied)",
     "shortDescription": "Three-bodied giant of the far west whose cattle Heracles stole.",
     "related": [
@@ -638,7 +638,7 @@
     "culture": "Greek",
     "region": "Mediterranean",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Covered nine plethra when stretched",
     "shortDescription": "Giant punished in the underworld; vultures feast forever on his liver.",
     "related": [
@@ -725,7 +725,7 @@
     "culture": "Norse",
     "region": "Scandinavia",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Jötunn",
     "shortDescription": "Frost giant who stole Mjölnir and demanded Freyja as bride.",
     "related": [
@@ -764,7 +764,7 @@
     "culture": "Norse",
     "region": "Scandinavia",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Jötunn",
     "shortDescription": "Stone-hearted giant who dueled Thor and left a whetstone in his head.",
     "related": [
@@ -805,7 +805,7 @@
     "culture": "Norse",
     "region": "Scandinavia",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Mountain-vast (illusion)",
     "shortDescription": "The vast wanderer whose glove was a hall: master of illusions.",
     "related": [
@@ -844,7 +844,7 @@
     "culture": "Norse",
     "region": "Scandinavia",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Jötunn",
     "shortDescription": "Frost-giantess mother of Odin: the gods' giant bloodline.",
     "related": [
@@ -885,7 +885,7 @@
     "culture": "Celtic / Irish",
     "region": "Ireland",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Fomorian giant",
     "shortDescription": "Fomorian king whose eye destroyed armies: slain by his grandson Lugh.",
     "related": [
@@ -931,7 +931,7 @@
     "culture": "Celtic / Cornish",
     "region": "Britain",
     "type": "folklore",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "About 18 feet (folklore)",
     "shortDescription": "Cornish giant of St Michael's Mount, felled by Jack the Giant Killer.",
     "related": [
@@ -976,7 +976,7 @@
     "culture": "Celtic / British",
     "region": "Britain",
     "type": "folklore",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "12 cubits (Geoffrey of Monmouth)",
     "shortDescription": "British giant who wrestled Corineus and gave his name to London's guardians.",
     "related": [
@@ -1069,7 +1069,7 @@
     "culture": "Basque",
     "region": "Basque Country",
     "type": "folklore",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Large (folklore)",
     "shortDescription": "The Basque charcoal-burner of Christmas: last echo of the jentilak.",
     "related": [
@@ -1158,7 +1158,7 @@
     "culture": "Hindu",
     "region": "South Asia / Lanka",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Colossal",
     "shortDescription": "Ravana's giant brother who slept six months and woke to war.",
     "related": [
@@ -1199,7 +1199,7 @@
     "culture": "Hindu",
     "region": "South Asia",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Asura-giant",
     "shortDescription": "Asura king who could not be killed by man or beast: until Narasimha.",
     "related": [
@@ -1242,7 +1242,7 @@
     "culture": "Hindu",
     "region": "South Asia / Kerala",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Grew to cosmic size",
     "shortDescription": "Generous asura king sent to the underworld by Vamana's three steps.",
     "related": [
@@ -1286,7 +1286,7 @@
     "culture": "Slavic",
     "region": "Eastern Europe",
     "type": "folklore",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Bogatyr-giant",
     "shortDescription": "Mountain-strong bogatyr who could not be lifted by the earth itself.",
     "related": [
@@ -1328,7 +1328,7 @@
     "culture": "Mesoamerican / Aztec",
     "region": "Mesoamerica",
     "type": "race",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Giant (mythic race)",
     "shortDescription": "Giant race of a previous sun who built great structures and fell to divine order.",
     "related": [
@@ -1369,7 +1369,7 @@
     "culture": "Mesoamerican",
     "region": "Mesoamerica",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Giant",
     "shortDescription": "Giant survivor of the flood who raised the great pyramid of Cholula.",
     "related": [
@@ -1412,7 +1412,7 @@
     "culture": "Chinese",
     "region": "East Asia",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Giant",
     "shortDescription": "The giant who chased the sun and died of thirst: staff becoming a forest.",
     "related": [
@@ -1454,7 +1454,7 @@
     "culture": "Chinese",
     "region": "East Asia",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Giant (one of the tallest in lore)",
     "shortDescription": "Giant executed by Yu the Great for arriving late to the flood assembly.",
     "related": [
@@ -1538,7 +1538,7 @@
     "culture": "Japanese",
     "region": "East Asia",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Oni-giant",
     "shortDescription": "Demon king of Mount Ōe: drunkard oni slain by Raikō's band.",
     "related": [
@@ -2288,7 +2288,7 @@
     "culture": "Cantabrian",
     "region": "Iberia",
     "type": "folklore",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Giant",
     "shortDescription": "One-eyed Cantabrian giant of the forest: enemy of the good anjana.",
     "related": [
@@ -2333,7 +2333,7 @@
     "culture": "German / Silesian / Czech",
     "region": "Central Europe",
     "type": "folklore",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Shapeshifting (giant form common)",
     "shortDescription": "Mountain spirit of the Riesengebirge: trickster, giant, weather-lord.",
     "related": [
@@ -2510,7 +2510,7 @@
     "culture": "Norse",
     "region": "Scandinavia",
     "type": "primordial",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Cosmic",
     "shortDescription": "The fire giant who guarded the world's edge before it existed, and will burn it down at the end.",
     "related": [
@@ -2550,7 +2550,7 @@
     "culture": "Bulgarian",
     "region": "Bulgaria",
     "type": "race",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "up to 3 metres",
     "shortDescription": "Bulgaria's giants were God's second attempt at people. We are the third.",
     "related": [
@@ -2650,7 +2650,7 @@
     "culture": "Galician, Asturian, Portuguese",
     "region": "Northwest Iberia",
     "type": "race",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "varies; sometimes giants, sometimes not",
     "shortDescription": "Builders of the megaliths of north-west Iberia: unbaptised people of the earth whose name may mean the dead.",
     "related": [
@@ -2694,7 +2694,7 @@
     "culture": "Croatian",
     "region": "Istria",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "unmeasured",
     "shortDescription": "Istrian giant who ploughed the Mirna into being; his kind built the hill towns.",
     "related": [
@@ -2740,7 +2740,7 @@
     "culture": "Japanese",
     "region": "Kantō and Chūbu",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "unmeasured",
     "shortDescription": "Japanese landscape giant: Fuji is his spoil heap, Lake Biwa the hole it came from.",
     "related": [
@@ -2783,7 +2783,7 @@
     "culture": "Georgian",
     "region": "Caucasus",
     "type": "race",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "unmeasured",
     "shortDescription": "Many-headed giants of the Georgian mountains: their strongest was outriddled, not outfought.",
     "related": [
@@ -2826,7 +2826,7 @@
     "culture": "Greek",
     "region": "Greece",
     "type": "race",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "disputed; possibly human-sized",
     "shortDescription": "Earth-born Greek race defeated by the Olympians: man-sized in the earliest art, snake-legged only later.",
     "related": [
@@ -2934,7 +2934,7 @@
     "culture": "Albanian",
     "region": "Albania",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "unmeasured",
     "shortDescription": "One-eyed Albanian man-eater with no knees: he cannot bend his legs to chase you.",
     "related": [
@@ -2979,7 +2979,7 @@
     "culture": "Polish",
     "region": "Poland",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "unmeasured",
     "shortDescription": "Twin strongmen raised by a wolf and a bear: Polish dragon-slayers who ruled the kingdom they saved.",
     "related": [
@@ -3020,7 +3020,7 @@
     "culture": "Lithuanian",
     "region": "Lithuania",
     "type": "race",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "unmeasured",
     "shortDescription": "Lithuanian giant race: ancestors in local legend, monsters in fairy tale, their graves on the map.",
     "related": [
@@ -3066,7 +3066,7 @@
     "culture": "Icelandic",
     "region": "Iceland",
     "type": "folklore",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "unmeasured",
     "shortDescription": "Icelandic category of giant beings: caught out at sunrise they become the rocks of the landscape.",
     "related": [
@@ -3115,7 +3115,7 @@
     "culture": "Estonian, Finnish, Karelian",
     "region": "Baltic and Finnic lands",
     "type": "race",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "unmeasured",
     "shortDescription": "Finnic giant ancestor and his stone-throwing sons, across Estonia, Finland and Karelia.",
     "related": [
@@ -3162,7 +3162,7 @@
     "culture": "Estonian",
     "region": "Saaremaa",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "unmeasured",
     "shortDescription": "Giant king of Saaremaa who farmed his own land and threw stones at the Devil.",
     "related": [
@@ -3250,7 +3250,7 @@
     "culture": "Welsh",
     "region": "Wales and Britain",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "unmeasured",
     "shortDescription": "Welsh giant king of Britain: his severed head was buried in London to guard against invasion.",
     "related": [
@@ -3291,7 +3291,7 @@
     "culture": "Welsh",
     "region": "Wales",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "unmeasured",
     "shortDescription": "Welsh chief giant of Culhwch and Olwen: his eyelids had to be propped up with forks.",
     "related": [
@@ -3333,7 +3333,7 @@
     "culture": "Sardinian",
     "region": "Sardinia",
     "type": "folklore",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "inferred from the tombs",
     "shortDescription": "Around eight hundred Nuragic collective tombs in Sardinia, named for giants by popular tradition.",
     "related": [
@@ -3376,7 +3376,7 @@
     "culture": "Croatian",
     "region": "Velebit and Lika",
     "type": "race",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "unmeasured",
     "shortDescription": "Croatian giant race of Lika and Velebit: the old people, who could not die a natural death.",
     "related": [
@@ -3419,7 +3419,7 @@
     "culture": "Croatian",
     "region": "Klek, Orjen, Snježnik",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "the mountain",
     "shortDescription": "Croatian giant petrified above Ogulin: the river Dobra runs out of his wound.",
     "related": [
@@ -3466,7 +3466,7 @@
     "culture": "Romanian",
     "region": "Romania",
     "type": "race",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "the Danube reached their ankles",
     "shortDescription": "Romanian race of giants from before mankind: the Danube reached their ankles, the Flood ended them.",
     "related": [
@@ -3508,7 +3508,7 @@
     "culture": "Croatian",
     "region": "Croatia",
     "type": "folklore",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "varies",
     "shortDescription": "Four small Croatian traditions: one-eyed giants, the Vedi, Sambo under Samobor, the Neretva mounds.",
     "related": [
@@ -3557,7 +3557,7 @@
     "culture": "British and Welsh",
     "region": "Britain and Wales",
     "type": "folklore",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "varies",
     "shortDescription": "Four minor British and Welsh giants: a mountain, a beacon, a chapbook villain and a cauldron.",
     "related": [
@@ -3601,7 +3601,7 @@
     "culture": "Finnish",
     "region": "Finland",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "unmeasured",
     "shortDescription": "Finnish giant surviving in place-names: possibly a word for death before he was a giant.",
     "related": [
@@ -3639,7 +3639,7 @@
     "culture": "Manta, recorded by Spanish chroniclers",
     "region": "Punta de Santa Elena, Ecuador",
     "type": "modern-legend",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "knee to ground equal to a grown man",
     "shortDescription": "Giants said to have landed by raft on the Ecuadorian coast: the bones under the story are mastodon.",
     "related": [
@@ -3741,7 +3741,7 @@
     "culture": "Sumerian, Akkadian, later Hurrian and Hittite",
     "region": "Mesopotamia, the Cedar Forest",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": null,
     "shortDescription": "The oldest giant in this catalogue by two thousand years. He was not attacking anyone. He was guarding a forest, and two men came to cut it down.",
     "related": [
@@ -3786,7 +3786,7 @@
     "culture": "Oghuz Turkic",
     "region": "Central Asia and Anatolia",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": null,
     "shortDescription": "A one-eyed man-eater, blinded in his cave by a young man who tricked him. When a German scholar read the manuscript in 1815, he concluded that Homer had got the story from the East.",
     "related": [
@@ -3881,7 +3881,7 @@
     "culture": "Arabian and Islamic",
     "region": "the Arabian peninsula and southern Jordan",
     "type": "folklore",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": null,
     "shortDescription": "The peoples the Qur'an says were destroyed for arrogance. It does not say they were giants. That part was added later, and recently.",
     "related": [
@@ -3979,7 +3979,7 @@
     "culture": "Islamic tradition, Arabic and Persian",
     "region": "the Near East",
     "type": "individual",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "Knee-deep in the ocean in later tellings",
     "shortDescription": "He is the biblical Og, after five centuries of retelling. By the end he was standing knee-deep in the open ocean, catching whales and holding them up to the sun to cook.",
     "related": [
@@ -4027,7 +4027,7 @@
     "culture": "Gaelic: Irish, Scottish, Manx",
     "region": "Ireland, Scotland, Isle of Man",
     "type": "folklore",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": "leapt between mountains",
     "shortDescription": "The Neolithic passage tombs at Loughcrew are said to be stones that fell out of her apron while she was jumping between the hills.",
     "related": [
@@ -4078,7 +4078,7 @@
     "culture": "Coptic and Islamic Egypt, medieval",
     "region": "Egypt",
     "type": "folklore",
-    "freeEntry": false,
+    "freeEntry": true,
     "height": null,
     "shortDescription": "A king who dreamed the Flood was coming, and built the pyramids to keep knowledge safe from the water. His name is a corruption of the name of the pharaoh who actually built them.",
     "related": [
