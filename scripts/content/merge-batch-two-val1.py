@@ -209,7 +209,7 @@ ENTRIES = [
       "publishable": True,
       "living": "The Guanche people as a polity were destroyed in the fifteenth-century conquest. Canarian identity and Amazigh-related ancestry continue. This entry is about the chronicles and the measurements, not a licence to invent surviving giant tribes. Treat descendant Canarian communities as living people, not as a lost race.",
       "distortions": "Atlantis, Egyptian mummy-origin, and fourteen-foot giants are the distortions the chronicles and later popular writing attached. The DNA and the skeletons contradict all three. Do not illustrate this entry as a race of giants.",
-      "take": "The disagreement among contemporaries, the 1.75 to 1.82 metre series, the forty-six genomes, and the comparison with Patagonia are the usable core. Do not retell the fourteen-foot figures as fact. The falsehood travelling better is the point.",
+      "take": "The disagreement among contemporaries and the comparison with Patagonia are the usable core. Do not retell the fourteen-foot figures as fact. The falsehood travelling better is the point.",
       "cite": "Le Canarien, Palencia, Torriani, Espinosa, Abreu Galindo, Viera y Clavijo, Canarian museum series, and the published ancient-DNA work on 46 Guanche genomes.",
     },
   },
