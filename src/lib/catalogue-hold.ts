@@ -25,7 +25,6 @@
 /** (a) Living Indigenous traditions and living communities. */
 export const HOLD_LIVING_TRADITIONS = [
   "dzunukwa",
-  "si-te-cah",
   "tsul-kalu",
   "kee-wakw",
   "gaoh",
