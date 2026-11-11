@@ -6,7 +6,11 @@
  * after subscribers_drip.sql ships. Paid members skip remaining mails.
  *
  * /motifs was HTTP 200 on 27 Aug 2026; Email 3 may name that URL.
- * Paid button stays Thrym monthly checkout, not /pricing as primary.
+ *
+ * Open catalogue, membership sales closed (owner decision, 11 Nov 2026):
+ * no email carries a price, a checkout link or /pricing. E3/E4 copy from
+ * Monetization's draft of 11 Nov 2026; E1/E2 had only their price lines cut.
+ * MONTHLY_CHECKOUT_CTA stays exported for when sales reopen; no body uses it.
  */
 
 export const MONTHLY_CHECKOUT_CTA =
@@ -15,7 +19,7 @@ export const MONTHLY_CHECKOUT_CTA =
 export const MOTIFS_URL = "https://www.giantscodex.com/motifs";
 
 /**
- * Contact for refund requests. Mirrors supportEmail in src/lib/site.ts (not
+ * Contact named in drip email 4 ("Questions or corrections"). Mirrors supportEmail in src/lib/site.ts (not
  * imported, to keep this file free of app imports), the same address /pricing
  * and the bestiary FAQ give (owner decision, 11 Nov 2026). /terms and
  * /privacy keep operatorContactEmail as the legal operator contact.
@@ -42,9 +46,6 @@ That split is the point of this list.
 Ymir's full page is free, including that dispute:
 https://www.giantscodex.com/giants/ymir
 
-When you want the sources and the other giants on that flood thread: $4.99 a month. 14-day refund, no questions. Cancel anytime.
-${MONTHLY_CHECKOUT_CTA}
-
 One seam a week after this.
 Unsubscribe: {unsubscribeUrl}`;
 
@@ -53,29 +54,26 @@ const E2_BODY = `Ymir has an origin. Surtr does not. One is the body the world i
 Compare already shows culture, region, type, and height for free. The shared thread is membership.
 https://www.giantscodex.com/compare?a=ymir&b=surtr
 
-$4.99 a month. 14-day refund, no questions.
-${MONTHLY_CHECKOUT_CTA}
-
 Unsubscribe: {unsubscribeUrl}`;
 
 const E3_BODY = `"The people who came before" is the same shape in 22 cultures and 26 entries: Ymir, Nephilim, Jentilak, Quinametzin, Fomorians, Nemri, and the rest. Giants as an earlier race, used to explain ruins, large bones, or an older population. Recurrence is not evidence of contact. It is still the interesting part.
 
-Motif names are free. Who actually shares the thread is paid.
+The whole thread is on one page:
 ${MOTIFS_URL}
-
-$4.99 a month. 14-day refund, no questions.
-${MONTHLY_CHECKOUT_CTA}
 
 Unsubscribe: {unsubscribeUrl}`;
 
 const E4_BODY = `Three splits: Bergelmir's vessel, Ymir beside Surtr, the people-who-came-before thread.
 
-If those were the reason you confirmed, membership is $4.99 a month. Cancel anytime. 14-day refund on every plan, Lifetime included, via ${REFUND_CONTACT_EMAIL}.
-${MONTHLY_CHECKOUT_CTA}
+The codex is open to read now. No membership, nothing to unlock:
+https://www.giantscodex.com/giants
 
-Yearly is $49, Lifetime $129, same refund. Secondary only: https://www.giantscodex.com/pricing
+If you run tables, a bestiary is on its way: a free sample with Balor, Kumbhakarna and the Cailleach, then Vol. 1 as a PDF.
+https://www.giantscodex.com/bestiary
 
-The weekly seam continues either way.
+Questions or corrections: ${REFUND_CONTACT_EMAIL}
+
+The weekly seam continues.
 Unsubscribe: {unsubscribeUrl}`;
 
 export const DRIP_STEPS: readonly DripStep[] = [
@@ -100,7 +98,7 @@ export const DRIP_STEPS: readonly DripStep[] = [
   {
     id: 4,
     offsetDays: 12,
-    subject: "If the seams were the point",
+    subject: "Three splits, and what comes next",
     body: E4_BODY,
   },
 ];
