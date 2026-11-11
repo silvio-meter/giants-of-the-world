@@ -99,7 +99,7 @@ export default function MotifsPage() {
                 {carriers.some((g) => g.image) && (
                   <ul className="mt-4 flex gap-2 overflow-x-auto pb-1">
                     {carriers
-                      .filter((g) => g.image)
+                      .flatMap((g) => (g.image ? [{ ...g, image: g.image }] : []))
                       .slice(0, 8)
                       .map((g) => (
                         <li key={g.slug} className="shrink-0">

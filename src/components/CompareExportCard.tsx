@@ -3,7 +3,7 @@ import { barHeightPx, chartScaleToM, formatMeters } from "@/lib/scale";
 export interface ExportGiant {
   name: string;
   culture: string;
-  image: string;
+  image?: string;
   heightMeters: number | null;
   /** Only passed when the viewer is on a paid plan — the export mirrors what they were shown. */
   fate?: string;
@@ -75,23 +75,38 @@ export function CompareExportCard({
               width: 105,
             }}
           >
-            {/* eslint-disable-next-line @next/next/no-img-element --
-                This node is rasterized off-screen by html2canvas, never
-                painted to a real viewport; next/image's lazy loading and
-                _next/image proxying would fight the capture step below. */}
-            <img
-              src={g.image}
-              width={90}
-              height={90}
-              style={{
-                width: 90,
-                height: 90,
-                objectFit: "cover",
-                borderRadius: 6,
-                border: "1px solid rgba(201,162,39,0.4)",
-              }}
-              alt=""
-            />
+            {g.image ? (
+              /* eslint-disable-next-line @next/next/no-img-element --
+                 This node is rasterized off-screen by html2canvas, never
+                 painted to a real viewport; next/image's lazy loading and
+                 _next/image proxying would fight the capture step below. */
+              <img
+                src={g.image}
+                width={90}
+                height={90}
+                style={{
+                  width: 90,
+                  height: 90,
+                  objectFit: "cover",
+                  borderRadius: 6,
+                  border: "1px solid rgba(201,162,39,0.4)",
+                }}
+                alt=""
+              />
+            ) : (
+              // No image on this entry: an empty frame the same size, so the
+              // export never carries a broken-image icon.
+              <div
+                aria-hidden
+                style={{
+                  width: 90,
+                  height: 90,
+                  borderRadius: 6,
+                  border: "1px solid rgba(201,162,39,0.4)",
+                  background: "#0a0e14",
+                }}
+              />
+            )}
             <p
               style={{
                 fontSize: 13,

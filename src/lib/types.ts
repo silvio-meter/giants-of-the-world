@@ -134,8 +134,13 @@ export interface Giant {
   coordinates: [number, number] | null;
   tags: string[];
   sources: string[];
-  image: string;
-  imageAlt: string;
+  /**
+   * Optional. Empty on entries whose generated image was withdrawn (six
+   * living-tradition entries, 11 Nov 2026); every surface must render a
+   * clean empty frame, never a broken image.
+   */
+  image?: string;
+  imageAlt?: string;
 }
 
 /** Editorial handling notes, one object per giant (server/lore only). */
