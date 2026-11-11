@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState, type FormEvent } from "react";
 import { umamiEvent } from "@/lib/umami";
+import { normalizeNewsletterSource } from "@/lib/newsletter";
 
 interface Props {
   /** "footer" is a compact single row; "detail" / "journey" have more room;
@@ -83,7 +84,11 @@ export function EmailCapture({ variant, sourcePage }: Props) {
         setStatus("error");
         return;
       }
-      umamiEvent("email_submit_pending");
+      // Normalised source tag only (footer, entry, entry-mid, welcome,
+      // journey, prep-sample). Never the address or a slug-bearing raw value.
+      umamiEvent("email_submit_pending", {
+        source: normalizeNewsletterSource(sourcePage),
+      });
       setStatus("done");
     } catch {
       setError("Could not subscribe. Try again.");

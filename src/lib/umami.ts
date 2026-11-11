@@ -12,11 +12,22 @@ declare global {
  * Umami is cookieless, which is the whole reason it replaced GA4 here: no
  * consent banner is required, so none exists.
  *
- * Deliberately four events, acquisition and conversion:
- *   email_submit_pending  form accepted; confirm still pending
+ * Acquisition and conversion events only:
+ *   email_submit_pending  form accepted; confirm still pending. { source }
+ *                         is the normalised One Seam source tag.
  *   email_signup          confirm link redeemed (true subscriber)
  *   checkout_start        a visitor reached Stripe checkout (not conversion)
  *   purchase              paid=1 return from Stripe (conversion; de-duped)
+ *   lock_view             a wall was shown to a non-member (PremiumLock
+ *                         entry / compare / map). { surface, slug? }
+ *   pdf_sample_download   click on the free bestiary sample download.
+ *                         { sku: "sample-3-giants" }
+ *
+ * Props are enums and catalogue slugs only. Never an email, name, user id,
+ * Stripe id, IP, location or free text from a form. With membership sales
+ * closed (11 Nov 2026) there is no Unlock button, so unlock_click and
+ * pricing_view from the 11 Nov spec are not wired; checkout_start and
+ * purchase stay for existing flows.
  *
  * Product usage events (Compare, Map, My Journey) stay on Vercel Analytics
  * and are not duplicated here. At current traffic a wider Umami dashboard
