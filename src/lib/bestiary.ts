@@ -30,14 +30,14 @@ export const SAMPLE_NEWSLETTER_SOURCE = "prep-sample";
 export const SAMPLE_GIANTS = [
   { slug: "balor", name: "Balor", line: "Fomorian king. Irish tradition." },
   {
-    slug: "kumbhakarna",
-    name: "Kumbhakarna",
-    line: "Brother of Ravana. The Ramayana.",
+    slug: "polyphemus",
+    name: "Polyphemus",
+    line: "Cyclops of the Odyssey. Greek tradition.",
   },
   {
-    slug: "cailleach",
-    name: "The Cailleach",
-    line: "The veiled one. Gaelic tradition of Ireland, Scotland and Man.",
+    slug: "gogmagog",
+    name: "Gogmagog",
+    line: "Last giant of Albion. British tradition.",
   },
 ] as const;
 
@@ -64,7 +64,7 @@ export const BESTIARY_FAQS: Faq[] = [
   {
     question: "Can I try it first?",
     answer:
-      "Yes. The free sample has three full entries: Balor, Kumbhakarna and the Cailleach.",
+      "Yes. The free sample has three full entries: Balor, Polyphemus and Gogmagog.",
   },
   {
     question: "Can I use it at my table?",
@@ -80,9 +80,9 @@ export const BESTIARY_REFUND_FAQ: Faq = {
 };
 
 export const SAMPLE_SEO = {
-  title: "Free giants bestiary sample: Balor, Kumbhakarna, Cailleach",
+  title: "Free giants bestiary sample: Balor, Polyphemus, Gogmagog",
   description:
-    "Download three full entries from the Giants Bestiary for free: Balor of the Evil Eye, Kumbhakarna the sleeper and the Cailleach. Sourced, printable PDF.",
+    "Download three full entries from the Giants Bestiary for free: Balor of the Evil Eye, Polyphemus the Cyclops and Gogmagog, last giant of Albion. Sourced, printable PDF.",
   h1: "A free sample: three giants",
 };
 
@@ -95,6 +95,6 @@ export const SAMPLE_FAQS: Faq[] = [
   {
     question: "Why these three giants?",
     answer:
-      "They come from three traditions, Irish myth, the Ramayana and Gaelic folklore, and each shows a different kind of giant: a war king, a sleeper and a builder of the land.",
+      "They come from three traditions, Irish myth, the Odyssey and British chronicle, and each shows a different kind of giant: a war king, a herdsman and the last giant of Albion.",
   },
 ];

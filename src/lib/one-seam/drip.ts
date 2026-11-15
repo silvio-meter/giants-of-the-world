@@ -68,7 +68,7 @@ const E4_BODY = `Three splits: Bergelmir's vessel, Ymir beside Surtr, the people
 The codex is open to read now. No membership, nothing to unlock:
 https://www.giantscodex.com/giants
 
-If you run tables, a bestiary is on its way: a free sample with Balor, Kumbhakarna and the Cailleach, then Vol. 1 as a PDF.
+If you run tables, a bestiary is on its way: a free sample with Balor, Polyphemus and Gogmagog, then Vol. 1 as a PDF.
 https://www.giantscodex.com/bestiary
 
 Questions or corrections: ${REFUND_CONTACT_EMAIL}
