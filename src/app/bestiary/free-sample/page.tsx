@@ -5,6 +5,7 @@ import Link from "next/link";
 import {
   SAMPLE_FAQS,
   SAMPLE_GIANTS,
+  SAMPLE_ITCH_URL,
   SAMPLE_NEWSLETTER_SOURCE,
   SAMPLE_PDF_PATH,
   SAMPLE_SEO,
@@ -115,6 +116,14 @@ export default function FreeSamplePage() {
 
       <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-5">
         <SampleDownloadLink href={SAMPLE_PDF_PATH} sku={SAMPLE_SKU} available={available} />
+        <a
+          href={SAMPLE_ITCH_URL}
+          target="_blank"
+          rel="noopener"
+          className="text-sm text-text-muted hover:text-accent-gold hover:underline"
+        >
+          Also on itch.io
+        </a>
         <Link href="/bestiary" className="text-sm text-accent-gold hover:underline">
           About the Giants Bestiary
         </Link>

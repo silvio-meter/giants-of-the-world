@@ -24,6 +24,7 @@ import { MEMBERSHIP_SALES_OPEN } from "../src/lib/membership.ts";
 import {
   ITCH_URL,
   SRD_ATTRIBUTION,
+  SAMPLE_ITCH_URL,
   SAMPLE_NEWSLETTER_SOURCE,
   SAMPLE_SKU,
 } from "../src/lib/bestiary.ts";
@@ -291,6 +292,10 @@ test("Umami: lock_view on walls, sample download by sku, no PII keys", () => {
 test("bestiary: no buy button yet, exact SRD attribution, 5E compatible wording only", () => {
   assert.equal(ITCH_URL, null);
   assert.equal(
+    SAMPLE_ITCH_URL,
+    "https://logosom.itch.io/giants-bestiary-free-sample"
+  );
+  assert.equal(
     SRD_ATTRIBUTION,
     "This work includes material from the System Reference Document 5.2 (“SRD 5.2”) by Wizards of the Coast LLC, available at https://www.dndbeyond.com/srd. The SRD 5.2 is licensed under the Creative Commons Attribution 4.0 International License, available at https://creativecommons.org/licenses/by/4.0/legalcode."
   );
@@ -308,6 +313,11 @@ test("bestiary: no buy button yet, exact SRD attribution, 5E compatible wording 
   assert.ok(!/"[^"\n]*\[[A-Za-z][^\]\n]*\][^"\n]*"/.test(read("src/lib/bestiary.ts")));
   const sample = read("src/app/bestiary/free-sample/page.tsx");
   assert.ok(sample.includes("sourcePage={SAMPLE_NEWSLETTER_SOURCE}"));
+  assert.ok(sample.includes("href={SAMPLE_ITCH_URL}"));
+  assert.ok(sample.includes('rel="noopener"'));
+  assert.ok(sample.includes('target="_blank"'));
+  assert.ok(sample.includes("Also on itch.io"));
+  assert.ok(!/(?<![A-Z_])ITCH_URL/.test(sample));
   assert.ok(!/login|signup|required/i.test(sample.split("export default")[1]), "sample download must not need an account");
   assert.equal(SAMPLE_NEWSLETTER_SOURCE, "prep-sample");
   assert.equal(normalizeNewsletterSource("prep-sample"), "prep-sample");
