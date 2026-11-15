@@ -20,6 +20,13 @@ export const ITCH_URL = null as string | null;
 /** Public path of the free sample. The file itself goes in public/downloads/. */
 export const SAMPLE_PDF_PATH = "/downloads/giants-bestiary-sample.pdf";
 
+/**
+ * Public itch.io listing for the free sample. This is not the paid Vol. 1:
+ * leave ITCH_URL unset until that product is for sale.
+ */
+export const SAMPLE_ITCH_URL =
+  "https://logosom.itch.io/giants-bestiary-free-sample";
+
 /** Umami pdf_sample_download sku. */
 export const SAMPLE_SKU = "sample-3-giants";
 
