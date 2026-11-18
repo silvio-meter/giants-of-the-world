@@ -1,4 +1,11 @@
-import { COPYRIGHT_LINE, SRD_ATTRIBUTION, type Faq } from "@/lib/bestiary";
+import {
+  COPYRIGHT_LINE,
+  ITCH_URL,
+  SRD_ATTRIBUTION,
+  VOL1_ENTRY_LINK_LABEL,
+  isInBestiaryVol1,
+  type Faq,
+} from "@/lib/bestiary";
 
 /** Visible FAQ list. FAQPage schema is emitted only next to this. */
 export function BestiaryFaq({ faqs }: { faqs: Faq[] }) {
@@ -52,3 +59,21 @@ export function faqJsonLd(faqs: Faq[], id: string) {
     })),
   };
 }
+
+/** Small, unobtrusive itch.io cross-link on Vol. 1 entry pages. No new images. */
+export function BestiaryVol1EntryLink({ slug }: { slug: string }) {
+  if (!ITCH_URL || !isInBestiaryVol1(slug)) return null;
+  return (
+    <p className="mt-6 text-sm text-text-muted">
+      <a
+        href={ITCH_URL}
+        target="_blank"
+        rel="noopener"
+        className="text-accent-gold underline underline-offset-2 hover:text-accent-gold/80"
+      >
+        {VOL1_ENTRY_LINK_LABEL}
+      </a>
+    </p>
+  );
+}
+

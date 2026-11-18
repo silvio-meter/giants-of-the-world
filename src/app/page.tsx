@@ -4,6 +4,7 @@ import { GiantCard } from "@/components/GiantCard";
 import { RandomGiantButton } from "@/components/RandomGiantButton";
 import { getAllGiants, getFreeGiants } from "@/lib/giants";
 import { siteUrl } from "@/lib/site";
+import { ITCH_BUY_LABEL, ITCH_URL } from "@/lib/bestiary";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -237,6 +238,19 @@ export default function HomePage() {
             <Link href="/bestiary/free-sample" className="text-accent-gold hover:underline">
               Free bestiary sample
             </Link>
+            {ITCH_URL ? (
+              <>
+                {" · "}
+                <a
+                  href={ITCH_URL}
+                  target="_blank"
+                  rel="noopener"
+                  className="text-accent-gold hover:underline"
+                >
+                  {ITCH_BUY_LABEL}
+                </a>
+              </>
+            ) : null}
           </p>
         </div>
       </section>

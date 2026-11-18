@@ -12,17 +12,50 @@
 
 /**
  * The paid Vol. 1 is sold on itch.io first (owner decision, 11 Nov 2026).
- * The buy button, the Product schema and the refund FAQ stay hidden while
- * this is null. Set it to the itch.io product URL to show them.
+ * The listing went live on 18 Nov 2026. The buy button, the Product schema
+ * and the refund FAQ show when this is set. Leave as null to hide them.
  */
-export const ITCH_URL = null as string | null;
+export const ITCH_URL: string | null =
+  "https://logosom.itch.io/giants-bestiary-vol-1";
+
+/** Visible buy-link text. The $6 is the itch.io listing price, not a site checkout. */
+export const ITCH_BUY_LABEL = "Giants Bestiary Vol. 1 ($6 on itch.io)";
+
+/**
+ * The twelve giants in Vol. 1. Entry pages for these slugs show a small
+ * itch.io cross-link. Names were mapped to slugs in src/data/giants.json
+ * on 18 Nov 2026; none are on the catalogue hold list.
+ */
+export const VOL1_SLUGS = [
+  "thrym",
+  "skrymir",
+  "cormoran",
+  "ysbaddaden",
+  "antaeus",
+  "talos",
+  "geryon",
+  "katallani",
+  "baqbaq-devi",
+  "humbaba",
+  "tepegoz",
+  "shuten-doji",
+] as const;
+
+const VOL1_SLUG_SET: ReadonlySet<string> = new Set(VOL1_SLUGS);
+
+export function isInBestiaryVol1(slug: string): boolean {
+  return VOL1_SLUG_SET.has(slug);
+}
+
+/** Small entry-page cross-link label. */
+export const VOL1_ENTRY_LINK_LABEL = "In the Giants Bestiary Vol. 1";
 
 /** Public path of the free sample. The file itself goes in public/downloads/. */
 export const SAMPLE_PDF_PATH = "/downloads/giants-bestiary-sample.pdf";
 
 /**
- * Public itch.io listing for the free sample. This is not the paid Vol. 1:
- * leave ITCH_URL unset until that product is for sale.
+ * Public itch.io listing for the free sample. This is not the paid Vol. 1
+ * (see ITCH_URL).
  */
 export const SAMPLE_ITCH_URL =
   "https://logosom.itch.io/giants-bestiary-free-sample";
