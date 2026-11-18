@@ -4,6 +4,7 @@ import {
   BESTIARY_FAQS,
   BESTIARY_REFUND_FAQ,
   BESTIARY_SEO,
+  ITCH_BUY_LABEL,
   ITCH_URL,
 } from "@/lib/bestiary";
 import { BestiaryFaq, BestiaryLicence, faqJsonLd } from "@/components/BestiaryParts";
@@ -97,10 +98,11 @@ export default function BestiaryPage() {
         {onSale && ITCH_URL ? (
           <a
             href={ITCH_URL}
+            target="_blank"
             rel="noopener"
             className="inline-flex items-center justify-center rounded border border-border px-5 py-2.5 text-sm text-text-muted transition hover:border-accent-gold/50 hover:text-accent-gold"
           >
-            Get Vol. 1 on itch.io
+            {ITCH_BUY_LABEL}
           </a>
         ) : null}
       </div>

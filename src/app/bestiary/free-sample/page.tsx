@@ -3,6 +3,8 @@ import { join } from "node:path";
 import type { Metadata } from "next";
 import Link from "next/link";
 import {
+  ITCH_BUY_LABEL,
+  ITCH_URL,
   SAMPLE_FAQS,
   SAMPLE_GIANTS,
   SAMPLE_ITCH_URL,
@@ -124,6 +126,16 @@ export default function FreeSamplePage() {
         >
           Also on itch.io
         </a>
+        {ITCH_URL ? (
+          <a
+            href={ITCH_URL}
+            target="_blank"
+            rel="noopener"
+            className="text-sm text-accent-gold hover:underline"
+          >
+            {ITCH_BUY_LABEL}
+          </a>
+        ) : null}
         <Link href="/bestiary" className="text-sm text-accent-gold hover:underline">
           About the Giants Bestiary
         </Link>

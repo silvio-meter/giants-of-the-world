@@ -22,6 +22,7 @@ import {
 } from "../src/lib/catalogue-hold.ts";
 import { MEMBERSHIP_SALES_OPEN } from "../src/lib/membership.ts";
 import {
+  ITCH_BUY_LABEL,
   ITCH_URL,
   SRD_ATTRIBUTION,
   SAMPLE_ITCH_URL,
@@ -289,8 +290,9 @@ test("Umami: lock_view on walls, sample download by sku, no PII keys", () => {
   assert.ok(!read("src/lib/umami.ts").includes("pricing_view\","));
 });
 
-test("bestiary: no buy button yet, exact SRD attribution, 5E compatible wording only", () => {
-  assert.equal(ITCH_URL, null);
+test("bestiary: Vol. 1 buy link, exact SRD attribution, 5E compatible wording only", () => {
+  assert.equal(ITCH_URL, "https://logosom.itch.io/giants-bestiary-vol-1");
+  assert.equal(ITCH_BUY_LABEL, "Giants Bestiary Vol. 1 ($6 on itch.io)");
   assert.equal(
     SAMPLE_ITCH_URL,
     "https://logosom.itch.io/giants-bestiary-free-sample"
@@ -314,10 +316,20 @@ test("bestiary: no buy button yet, exact SRD attribution, 5E compatible wording 
   const sample = read("src/app/bestiary/free-sample/page.tsx");
   assert.ok(sample.includes("sourcePage={SAMPLE_NEWSLETTER_SOURCE}"));
   assert.ok(sample.includes("href={SAMPLE_ITCH_URL}"));
+  assert.ok(sample.includes("href={ITCH_URL}"));
+  assert.ok(sample.includes("{ITCH_BUY_LABEL}"));
   assert.ok(sample.includes('rel="noopener"'));
   assert.ok(sample.includes('target="_blank"'));
   assert.ok(sample.includes("Also on itch.io"));
-  assert.ok(!/(?<![A-Z_])ITCH_URL/.test(sample));
+  const bestiaryPage = read("src/app/bestiary/page.tsx");
+  assert.ok(bestiaryPage.includes("href={ITCH_URL}"));
+  assert.ok(bestiaryPage.includes("{ITCH_BUY_LABEL}"));
+  assert.ok(bestiaryPage.includes('rel="noopener"'));
+  assert.ok(bestiaryPage.includes('target="_blank"'));
+  const home = read("src/app/page.tsx");
+  assert.ok(home.includes("href={ITCH_URL}"));
+  assert.ok(home.includes("{ITCH_BUY_LABEL}"));
+  assert.ok(home.includes('rel="noopener"'));
   assert.ok(!/login|signup|required/i.test(sample.split("export default")[1]), "sample download must not need an account");
   assert.equal(SAMPLE_NEWSLETTER_SOURCE, "prep-sample");
   assert.equal(normalizeNewsletterSource("prep-sample"), "prep-sample");

@@ -27,6 +27,7 @@ import { EntryLocationMapLoader } from "@/components/EntryLocationMapLoader";
 import { SourcesSection } from "@/components/SourcesSection";
 import { SessionPrepCard } from "@/components/SessionPrepCard";
 import { RelatedFindingLink } from "@/components/RelatedFindingLink";
+import { BestiaryVol1EntryLink } from "@/components/BestiaryParts";
 import { JourneyMarks } from "@/components/JourneyMarks";
 import { siteUrl } from "@/lib/site";
 import { resolveMotifs } from "@/lib/motifs";
@@ -344,6 +345,8 @@ export default async function GiantDetailPage({ params }: Props) {
           {sessionPrepCard ? <SessionPrepCard slug={giant.slug} card={sessionPrepCard} /> : null}
 
           <RelatedFindingLink giantSlug={giant.slug} />
+
+          <BestiaryVol1EntryLink slug={giant.slug} />
 
           {hubsForGiant(giant.slug).length > 0 ? (
             <section className="mt-8">
