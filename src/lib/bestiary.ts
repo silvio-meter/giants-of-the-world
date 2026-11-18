@@ -21,6 +21,9 @@ export const ITCH_URL: string | null =
 /** Visible buy-link text. The $6 is the itch.io listing price, not a site checkout. */
 export const ITCH_BUY_LABEL = "Giants Bestiary Vol. 1 ($6 on itch.io)";
 
+/** Homepage hero button. Secondary to "Enter the Catalogue"; middle dot, not an em dash. */
+export const ITCH_HERO_BUY_LABEL = "Giants Bestiary Vol. 1 · $6 on itch.io";
+
 /**
  * The twelve giants in Vol. 1. Entry pages for these slugs show a small
  * itch.io cross-link. Names were mapped to slugs in src/data/giants.json

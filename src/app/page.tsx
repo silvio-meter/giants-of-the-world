@@ -4,7 +4,7 @@ import { GiantCard } from "@/components/GiantCard";
 import { RandomGiantButton } from "@/components/RandomGiantButton";
 import { getAllGiants, getFreeGiants } from "@/lib/giants";
 import { siteUrl } from "@/lib/site";
-import { ITCH_BUY_LABEL, ITCH_URL } from "@/lib/bestiary";
+import { ITCH_BUY_LABEL, ITCH_HERO_BUY_LABEL, ITCH_URL } from "@/lib/bestiary";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -132,6 +132,17 @@ export default function HomePage() {
             </Link>
             <RandomGiantButton />
           </div>
+
+          {ITCH_URL ? (
+            <a
+              href={ITCH_URL}
+              target="_blank"
+              rel="noopener"
+              className="mt-4 inline-flex max-w-full items-center justify-center rounded border border-accent-gold bg-accent-gold/10 px-5 py-3 text-center font-[family-name:var(--font-cinzel)] text-sm tracking-wide text-accent-gold transition hover:bg-accent-gold/20"
+            >
+              {ITCH_HERO_BUY_LABEL}
+            </a>
+          ) : null}
 
           <p className="mt-12 font-mono text-xs tracking-wider text-text-muted">
             {count} entries · {freeCount} open to read in full · worldwide
