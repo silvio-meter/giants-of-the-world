@@ -17,6 +17,7 @@ import {
 } from "../src/lib/catalogue-hold.ts";
 import {
   ITCH_BUY_LABEL,
+  ITCH_HERO_BUY_LABEL,
   ITCH_URL,
   VOL1_ENTRY_LINK_LABEL,
   VOL1_SLUGS,
@@ -31,6 +32,7 @@ const bySlug = new Map(master.map((g) => [g.slug, g]));
 test("Vol. 1 itch URL and buy-link copy are exact", () => {
   assert.equal(ITCH_URL, "https://logosom.itch.io/giants-bestiary-vol-1");
   assert.equal(ITCH_BUY_LABEL, "Giants Bestiary Vol. 1 ($6 on itch.io)");
+  assert.equal(ITCH_HERO_BUY_LABEL, "Giants Bestiary Vol. 1 · $6 on itch.io");
   assert.equal(VOL1_ENTRY_LINK_LABEL, "In the Giants Bestiary Vol. 1");
   assert.ok(!/playtest/i.test(read("src/lib/bestiary.ts")));
 });
@@ -79,6 +81,13 @@ test("entry pages and sample spots use the central URL and slug list", () => {
   assert.ok(home.includes("/bestiary/free-sample"));
   assert.ok(home.includes("href={ITCH_URL}"));
   assert.ok(home.includes("{ITCH_BUY_LABEL}"));
+  assert.ok(home.includes("{ITCH_HERO_BUY_LABEL}"));
   assert.ok(home.includes('rel="noopener"'));
   assert.ok(home.includes('target="_blank"'));
+  const heroIdx = home.indexOf("{ITCH_HERO_BUY_LABEL}");
+  const toolsIdx = home.indexOf("{ITCH_BUY_LABEL}");
+  const catalogueIdx = home.indexOf("Enter the Catalogue");
+  assert.ok(catalogueIdx !== -1 && heroIdx !== -1 && toolsIdx !== -1);
+  assert.ok(catalogueIdx < heroIdx, "hero button sits below the main CTA");
+  assert.ok(heroIdx < toolsIdx, "Tools strip link is kept in addition to the hero button");
 });
